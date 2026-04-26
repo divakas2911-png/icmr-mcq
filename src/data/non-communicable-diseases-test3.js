@@ -1,553 +1,548 @@
 const questions = [
   {
     id: 1,
-    question: "According to the IDF Diabetes Atlas (10th Edition, 2021), which country has the highest number of people living with diabetes in the world?",
-    options: ["India", "China", "United States", "Pakistan"],
-    answer: 1,
-    explanation: "China has the highest number of adults living with diabetes globally, followed by India and the United States, according to the IDF Diabetes Atlas 10th Edition (2021). India is often referred to as the 'diabetes capital of the world' in relative terms but China holds the top rank in absolute numbers."
+    question: "According to the IDF Diabetes Atlas 10th Edition (2021), what is the estimated number of adults (20-79 years) living with diabetes globally?",
+    options: ["337 million", "422 million", "537 million", "623 million"],
+    answer: 2,
+    explanation: "The IDF Diabetes Atlas 10th Edition (2021) estimated that 537 million adults aged 20-79 years were living with diabetes globally. This represents approximately 1 in 10 adults worldwide. The Atlas also projected this number to rise to 643 million by 2030 and 783 million by 2045, driven by population growth, aging, and rising prevalence in low- and middle-income countries."
   },
   {
     id: 2,
-    question: "The ICMR-INDIAB study (Phase I, 2011) estimated the overall prevalence of diabetes in India. Which of the following best reflects its key finding regarding urban-rural differences?",
+    question: "The ICMR-INDIAB study is India's largest representative study on diabetes prevalence. Which methodological feature distinguishes ICMR-INDIAB from earlier state-level prevalence studies?",
     options: [
-      "Prevalence was equal in urban and rural areas at approximately 7%",
-      "Urban prevalence was significantly higher than rural prevalence, with urban areas showing nearly double the rates",
-      "Rural prevalence exceeded urban prevalence due to lower healthcare access",
-      "Urban and rural prevalence differed only in southern states"
+      "It used HbA1c as the sole diagnostic criterion",
+      "It used a stratified multistage cluster random sampling design covering urban, rural, and tribal populations across all Indian states and union territories",
+      "It enrolled only adults above 40 years with a family history of diabetes",
+      "It was limited to self-reported diabetes without confirmatory blood glucose testing"
     ],
     answer: 1,
-    explanation: "The ICMR-INDIAB study demonstrated a clear urban-rural gradient, with urban areas showing significantly higher diabetes prevalence compared to rural areas. Urban prevalence was roughly double that in rural areas, attributed to sedentary lifestyle, obesity, and dietary changes in urban populations. This gradient was consistent across studied states."
+    explanation: "ICMR-INDIAB used a stratified multistage cluster random sampling design to ensure representative population coverage across urban, rural, and slum areas, with subsequent phases expanding to cover all 31 states and union territories including tribal populations. Participants underwent fasting plasma glucose and 2-hour post-load glucose (75g OGTT) for diabetes diagnosis using WHO 2006 criteria. This comprehensive sampling methodology makes it the most nationally representative diabetes prevalence study in India."
   },
   {
     id: 3,
-    question: "The ICMR-INDIAB Phase II national study published in 2023 estimated the overall prevalence of diabetes in India. What was the approximate national prevalence reported?",
-    options: ["5.9%", "8.9%", "11.4%", "15.3%"],
-    answer: 2,
-    explanation: "The ICMR-INDIAB Phase II study (Anjana et al., Lancet Diabetes & Endocrinology, 2023) reported a national diabetes prevalence of approximately 11.4% in adults, with pre-diabetes at around 15.3%. This study covered all 31 states and union territories, representing the most comprehensive national diabetes prevalence data for India."
+    question: "The ICMR-INDIAB national phase (published in Lancet Diabetes & Endocrinology, 2023) reported diabetes prevalence across Indian states. Which of the following represents the urban-rural-tribal prevalence gradient observed?",
+    options: [
+      "Tribal > Urban > Rural",
+      "Urban > Rural > Tribal",
+      "Rural > Urban > Tribal",
+      "Urban = Rural > Tribal"
+    ],
+    answer: 1,
+    explanation: "The ICMR-INDIAB study consistently demonstrated an urban > rural > tribal prevalence gradient for diabetes across India. Urban populations had the highest prevalence (approximately 16.2%), followed by rural populations (approximately 8.9%), with tribal populations showing the lowest prevalence (approximately 5.0%). This gradient reflects the impact of urbanization, sedentary lifestyle, dietary transitions, and adiposity on diabetes risk, while tribal populations maintain relatively more active lifestyles and traditional diets."
   },
   {
     id: 4,
-    question: "Which Indian state was found to have the highest prevalence of diabetes in the ICMR-INDIAB study?",
-    options: ["Maharashtra", "Tamil Nadu", "Goa", "Kerala"],
-    answer: 2,
-    explanation: "Goa was found to have the highest prevalence of diabetes among the states studied in the ICMR-INDIAB study, with prevalence rates exceeding those of other states. This is attributed to higher urbanization, dietary patterns including greater fat and alcohol consumption, and lifestyle factors in Goa."
+    question: "In the context of diabetes epidemiology, which of the following states in India showed the highest diabetes prevalence in the ICMR-INDIAB national study (2023)?",
+    options: ["Kerala", "Goa", "Tamil Nadu", "Sikkim"],
+    answer: 1,
+    explanation: "Goa consistently showed the highest diabetes prevalence among Indian states in ICMR-INDIAB, exceeding 26% in some analyses. This is attributed to high levels of urbanization, the unique dietary pattern (higher fat, fish, and alcohol consumption), greater affluence, and sedentary lifestyles. Goa has one of the highest per-capita incomes in India. Tamil Nadu and Kerala also have high prevalences. Northeastern and tribal-majority states generally show lower prevalences."
   },
   {
     id: 5,
-    question: "Type 1 diabetes mellitus shows a bimodal peak in age of onset. What are the two recognized peak periods?",
-    options: [
-      "Ages 2-4 years and ages 10-14 years",
-      "Ages 5-7 years and ages 10-14 years",
-      "Ages 1-3 years and ages 16-20 years",
-      "Ages 5-7 years and ages 20-25 years"
-    ],
+    question: "Global incidence of Type 1 diabetes mellitus shows marked geographic variation. Which region has the highest incidence of Type 1 DM in the world?",
+    options: ["South Asia (India and Bangladesh)", "Scandinavia (Finland and Sweden)", "Sub-Saharan Africa", "East Asia (China and Japan)"],
     answer: 1,
-    explanation: "Type 1 diabetes shows a bimodal age distribution with two peaks: the first at ages 5-7 years (coinciding with school entry and increased viral infections) and the second at ages 10-14 years (around puberty). The pubertal peak is larger and more prominent. Geographic variation exists, with Scandinavian countries (Finland, Sweden) having the highest incidence rates globally."
+    explanation: "Scandinavia, particularly Finland and Sardinia (Italy), has the world's highest incidence of Type 1 diabetes. Finland has an incidence of approximately 60 per 100,000 children per year. The reasons are attributed to genetic susceptibility (high frequency of HLA-DR3 and HLA-DR4 alleles), environmental triggers, and possibly the 'hygiene hypothesis' - reduced early childhood microbial exposure. In contrast, East Asian countries have among the lowest incidence rates. Global Type 1 DM incidence has been increasing at about 3% per year."
   },
   {
     id: 6,
-    question: "Latent Autoimmune Diabetes in Adults (LADA) is characterized by which of the following features that distinguishes it from classical Type 2 diabetes?",
-    options: [
-      "Onset before 30 years of age with ketoacidosis at presentation",
-      "Presence of islet autoantibodies (particularly GAD65) and slow progression to insulin dependence",
-      "Complete insulin deficiency from the time of diagnosis",
-      "Absence of family history and strong association with obesity"
-    ],
+    question: "LADA (Latent Autoimmune Diabetes in Adults) accounts for what estimated proportion of patients clinically diagnosed as Type 2 diabetes in epidemiological surveys?",
+    options: ["Less than 1%", "2-12%", "20-30%", "40-50%"],
     answer: 1,
-    explanation: "LADA (also called Type 1.5 diabetes) is characterized by the presence of islet autoantibodies - most commonly anti-GAD65 (glutamic acid decarboxylase antibodies) - in adults presenting with apparent Type 2 diabetes. These patients have a slow progression to insulin dependence (typically over months to years) unlike classical Type 1, are usually non-obese, and often do not have metabolic syndrome features. C-peptide levels are preserved initially but decline over time."
+    explanation: "Epidemiological studies estimate that LADA accounts for approximately 2-12% of all cases clinically diagnosed as Type 2 diabetes, depending on the population studied and the antibody testing protocol used. The NIRAD (Non-Insulin Requiring Autoimmune Diabetes) study in Italy found approximately 5-10% prevalence among apparent Type 2 diabetics. In India, studies show LADA prevalence of 3-6% among Type 2 diabetics. LADA is likely the most common form of autoimmune diabetes in adults, and is underdiagnosed without routine GAD antibody testing."
   },
   {
     id: 7,
-    question: "Fibrocalculous Pancreatic Diabetes (FCPD) is a form of secondary diabetes particularly prevalent in India and other tropical countries. Which of the following is the most characteristic radiological finding in FCPD?",
+    question: "Which of the following secondary causes of diabetes is most prevalent at the population level in India and other low- and middle-income countries?",
     options: [
-      "Diffuse pancreatic enlargement on ultrasound",
-      "Intraductal pancreatic calculi on plain X-ray of abdomen",
-      "Pancreatic pseudocyst formation",
-      "Pancreatic duct dilation without calculi"
+      "Cystic fibrosis-related diabetes (CFRD)",
+      "Fibrocalculous Pancreatic Diabetes (FCPD) and post-infective chronic pancreatitis",
+      "Hemochromatosis-related diabetes",
+      "Glucocorticoid-induced hyperglycemia"
     ],
     answer: 1,
-    explanation: "Fibrocalculous Pancreatic Diabetes (FCPD), formerly called tropical calcific pancreatitis, is characterized by intraductal pancreatic calculi visible on plain X-ray of the abdomen. The classic triad is abdominal pain, steatorrhea, and diabetes. It occurs predominantly in young, non-obese, malnourished individuals in tropical countries. Previously classified as Type 3c diabetes (pancreatic diabetes). Kerala and coastal Karnataka in India have high prevalence."
+    explanation: "At the population level in India and other tropical LMICs, FCPD (Fibrocalculous Pancreatic Diabetes) and post-infective chronic pancreatitis (secondary to malnutrition, tropical exposures, and infections including chronic alcohol use) represent the most prevalent forms of secondary diabetes. FCPD, classified as Type 3c diabetes, is particularly prevalent in Kerala and coastal Karnataka. In high-income countries, cystic fibrosis-related diabetes (CFRD) and hemochromatosis are more commonly recognized secondary forms, but these conditions are less prevalent in Indian populations."
   },
   {
     id: 8,
-    question: "Maturity Onset Diabetes of the Young (MODY) Type 3, the most common form of MODY in most populations, is caused by a mutation in which gene?",
-    options: ["GCK (Glucokinase) gene", "HNF-1alpha gene", "HNF-4alpha gene", "IPF-1 gene"],
-    answer: 1,
-    explanation: "MODY Type 3 is caused by mutations in the HNF-1alpha (Hepatocyte Nuclear Factor 1-alpha) gene and accounts for 30-70% of MODY cases in most European populations. MODY 2 (GCK mutations) causes mild fasting hyperglycemia that rarely needs treatment. MODY 3 (HNF-1alpha) is progressive and often requires sulfonylureas. All MODY types are autosomal dominant with strong family history across multiple generations."
+    question: "GDM prevalence studies in India using the DIPSI criteria have reported what approximate range of prevalence among pregnant women attending antenatal clinics?",
+    options: ["2-5%", "8-10%", "10-20%", "25-30%"],
+    answer: 2,
+    explanation: "Studies using DIPSI criteria (non-fasting 75g OGTT with 2-hour glucose >=140 mg/dL) in India have reported GDM prevalence ranging from approximately 10-20% in antenatal clinic populations, with some urban studies reporting even higher rates. The HAPO study and subsequent Indian data show that GDM prevalence varies significantly by geographic region, socioeconomic status, and BMI. Urban areas show higher GDM rates. India contributes a large absolute burden of GDM globally due to its population size and elevated background risk from the Asian Indian phenotype."
   },
   {
     id: 9,
-    question: "Neonatal diabetes mellitus (NDM) that persists beyond 6 months is called permanent neonatal diabetes mellitus (PNDM). The most common genetic cause of PNDM involves mutations in which gene?",
-    options: ["INS gene (insulin)", "ABCC8 gene (SUR1)", "KCNJ11 gene (Kir6.2)", "FOXP3 gene"],
-    answer: 2,
-    explanation: "Mutations in KCNJ11 (encoding Kir6.2, the inward rectifier potassium channel subunit of the ATP-sensitive K+ channel) are the most common cause of permanent neonatal diabetes mellitus. ABCC8 (SUR1) mutations are the second most common cause. Importantly, patients with KCNJ11 and ABCC8 mutations can often be successfully treated with high-dose sulfonylureas instead of insulin, as these drugs close the mutated K-ATP channels."
+    question: "In India's diabetes epidemiological data, migrant Indian populations (diaspora) living in Western countries tend to show which pattern compared to non-migrant Indians in India?",
+    options: [
+      "Lower diabetes prevalence due to better healthcare access",
+      "Similar or higher diabetes prevalence compared to non-migrant Indians, with much higher prevalence than the host country's indigenous populations",
+      "Lower prevalence due to adoption of Western diet and loss of traditional risk factors",
+      "Identical prevalence to the host country's indigenous population within one generation"
+    ],
+    answer: 1,
+    explanation: "Studies on Indian migrant populations (UK South Asians, NRIs in USA, Gulf Indian migrants) consistently show that they maintain similar or higher diabetes prevalence compared to Indians living in India, and have markedly higher prevalence than the host country's indigenous populations. UK-based Gujarati migrants show 3-5 times higher diabetes prevalence than white British populations. This demonstrates the strong genetic/biological basis of diabetes risk in people of Indian origin, interacting with environmental exposures. The 'thrifty genotype' hypothesis and intrinsic adiposity are key explanatory factors."
   },
   {
     id: 10,
-    question: "Pre-existing diabetes in pregnancy is associated with which of the following congenital malformations that is distinctly characteristic and rarely seen in Gestational Diabetes Mellitus (GDM)?",
-    options: [
-      "Ventricular septal defect",
-      "Caudal regression syndrome (sacral agenesis)",
-      "Neural tube defects",
-      "Cleft palate"
-    ],
-    answer: 1,
-    explanation: "Caudal regression syndrome (sacral agenesis/hypoplasia) is a rare but pathognomonic complication of pre-existing (pre-gestational) diabetes mellitus in pregnancy. It occurs due to hyperglycemia during the first trimester during organogenesis. GDM begins after the period of organogenesis (typically diagnosed after 24-28 weeks) and therefore is not associated with structural congenital anomalies. However, GDM is associated with macrosomia, hypoglycemia, and other metabolic complications in the neonate."
+    question: "Which decade saw the most dramatic increase in diabetes prevalence in India based on sequential national and state-level survey data?",
+    options: ["1970s-1980s", "1980s-1990s", "1990s-2000s", "2000s-2010s"],
+    answer: 2,
+    explanation: "The most dramatic increase in diabetes prevalence in India occurred during the 1990s-2000s, coinciding with rapid economic liberalization (post-1991), urbanization, motorization, and dietary transitions. Bangalore studies by Ramachandran showed diabetes prevalence tripling in urban areas during this period. The composite effect of economic growth creating sedentary jobs, greater food availability (especially processed foods), reduced physical activity, and a genetically susceptible population created what has been termed the 'perfect storm' for diabetes epidemic acceleration in India during this period."
   },
   {
     id: 11,
-    question: "Which secondary cause of diabetes is associated with excess growth hormone secretion leading to insulin resistance?",
-    options: ["Cushing's syndrome", "Acromegaly", "Pheochromocytoma", "Primary hyperaldosteronism"],
+    question: "Age-sex distribution of Type 2 diabetes in India shows which of the following characteristics compared to Western countries?",
+    options: [
+      "Indian Type 2 diabetes predominantly affects those above 65 years, similar to Western populations",
+      "Indian Type 2 diabetes tends to occur about a decade earlier, with peak prevalence in the 45-64 age group, and shows less sex difference",
+      "Indian males have significantly lower diabetes rates than females at all ages",
+      "Diabetes affects equal proportions in all age groups above 30 years in India"
+    ],
     answer: 1,
-    explanation: "Acromegaly (excess growth hormone in adults from pituitary adenoma) causes diabetes through insulin resistance. Growth hormone is a counter-regulatory hormone that antagonizes insulin action. Cushing's syndrome (excess cortisol) also causes diabetes through glucocorticoid-induced insulin resistance and increased hepatic gluconeogenesis. Pheochromocytoma causes diabetes through catecholamine-induced inhibition of insulin secretion and increased glycogenolysis."
+    explanation: "A key epidemiological characteristic of diabetes in India is earlier age of onset compared to Western populations. Indians develop Type 2 diabetes approximately 10 years earlier than Caucasians at any given BMI level. The ICMR-INDIAB study showed rising prevalence from the 25-34 age group, peaking in the 45-64 age group. This has enormous public health implications as it means more productive life years lost. Sex differences in prevalence are less marked in India compared to Western countries, though urban women show particularly high rates due to lower physical activity."
   },
   {
     id: 12,
-    question: "The prevalence of diabetes in India has been increasing over the decades. Which of the following factors is considered the MOST important driver of this epidemic in India?",
+    question: "Fibrocalculous Pancreatic Diabetes (FCPD) in tropical countries is associated with which of the following epidemiological features at the population level?",
     options: [
-      "Increasing prevalence of Type 1 diabetes due to viral infections",
-      "Rapid urbanization combined with the Asian Indian phenotype of increased visceral adiposity at lower BMI",
-      "Decreasing physical activity exclusively in urban males above 50 years",
-      "High sugar consumption in rural populations due to agricultural practices"
+      "Predominantly affects obese adult males above 50 years with a long history of alcohol use",
+      "Predominantly affects young, non-obese individuals from low socioeconomic backgrounds with cassava consumption and malnutrition",
+      "Affects equally all age groups and is primarily a genetic disorder transmitted in autosomal dominant pattern",
+      "Primarily affects urban professional populations due to processed food consumption"
     ],
     answer: 1,
-    explanation: "The diabetes epidemic in India is driven primarily by rapid urbanization combined with the unique 'Asian Indian phenotype' - a tendency toward higher visceral adiposity, lower muscle mass, and insulin resistance at lower BMI thresholds compared to Caucasians. Indians develop metabolic complications at BMI levels that would be considered normal by Western standards. This thrifty genotype/phenotype combined with environmental changes (sedentary lifestyle, calorie-dense food) explains the epidemic."
+    explanation: "FCPD epidemiologically affects young (teens and twenties), non-obese individuals from low socioeconomic backgrounds, predominantly in tropical coastal areas (Kerala, coastal Karnataka, parts of South India, Sri Lanka, Nigeria, Uganda, Indonesia). Cassava (tapioca) consumption and malnutrition have been implicated as environmental triggers, though the exact etiology remains debated. The classic demographic profile is a young person from a low-income family presenting with recurrent abdominal pain, later developing diabetes. Unlike alcoholic pancreatitis in the West, FCPD predominantly affects non-alcoholic young people."
   },
   {
     id: 13,
-    question: "According to WHO 2006 diagnostic criteria, what is the fasting plasma glucose cutoff for diagnosis of diabetes mellitus?",
+    question: "For population-based epidemiological surveys of diabetes, which diagnostic approach is considered the gold standard according to WHO 2006 guidelines?",
     options: [
-      ">=6.0 mmol/L (>=108 mg/dL)",
-      ">=7.0 mmol/L (>=126 mg/dL)",
-      ">=7.8 mmol/L (>=140 mg/dL)",
-      ">=6.5 mmol/L (>=117 mg/dL)"
+      "HbA1c alone using a cutoff of >=6.5%",
+      "Two-step approach: fasting glucose screening followed by OGTT for those with intermediate values",
+      "75g OGTT measuring fasting and 2-hour plasma glucose, applying WHO 2006 diagnostic thresholds",
+      "Capillary random blood glucose with a cutoff of >11.1 mmol/L"
     ],
-    answer: 1,
-    explanation: "According to WHO 2006 criteria, diabetes is diagnosed when fasting plasma glucose is >=7.0 mmol/L (>=126 mg/dL), 2-hour plasma glucose after 75g OGTT is >=11.1 mmol/L (>=200 mg/dL), or random plasma glucose is >=11.1 mmol/L (>=200 mg/dL) in the presence of symptoms. In 2011, WHO endorsed HbA1c >=6.5% (>=48 mmol/mol) as an additional diagnostic criterion."
+    answer: 2,
+    explanation: "WHO 2006 guidelines recommend the 75g OGTT measuring both fasting plasma glucose (FPG) and 2-hour post-load plasma glucose (2hPG) as the reference diagnostic method for population surveys. This captures both FPG-based diabetes (predominantly hepatic insulin resistance) and IGT/post-load hyperglycemia (predominantly peripheral insulin resistance), ensuring no cases are missed. Relying on FPG alone misses approximately 30-40% of cases with isolated post-load hyperglycemia. HbA1c as a sole criterion may miss additional cases, particularly in populations with hemoglobin variants."
   },
   {
     id: 14,
-    question: "The ADA 2023 criteria for diagnosis of diabetes includes HbA1c. Which of the following correctly states the ADA HbA1c cutoff for diabetes diagnosis AND the pre-diabetes range?",
+    question: "A key methodological challenge in comparing diabetes prevalence data across Indian states in ICMR-INDIAB was standardization. Which analytical approach was used to enable valid comparisons across states with different age structures?",
     options: [
-      "Diabetes: HbA1c >=7.0%; Pre-diabetes: 6.0-6.9%",
-      "Diabetes: HbA1c >=6.5%; Pre-diabetes: 5.7-6.4%",
-      "Diabetes: HbA1c >=6.5%; Pre-diabetes: 6.0-6.4%",
-      "Diabetes: HbA1c >=7.0%; Pre-diabetes: 5.7-6.9%"
+      "Crude prevalence rates without any adjustment",
+      "Age-standardization using the WHO world standard population",
+      "Age-sex-standardization using Indian census population as the standard",
+      "Prevalence ratios adjusted only for sex"
     ],
-    answer: 1,
-    explanation: "ADA criteria define diabetes as HbA1c >=6.5% and pre-diabetes as HbA1c 5.7-6.4%. WHO criteria for pre-diabetes using HbA1c is 6.0-6.4% (higher cutoff), which differs from ADA. This difference is clinically significant: using ADA criteria would identify more people as having pre-diabetes. The ADA lower cutoff of 5.7% for pre-diabetes allows earlier intervention."
+    answer: 2,
+    explanation: "ICMR-INDIAB used age-standardization using the Indian census population as the reference standard to enable valid comparisons across states with different age-sex distributions. States with older population structures would otherwise appear to have higher diabetes prevalence simply due to demographic differences rather than true differences in risk. Age-standardized rates allow assessment of whether differences between states reflect genuine variations in diabetes risk or are artifacts of demographic composition. This is essential methodology for any national epidemiological survey."
   },
   {
     id: 15,
-    question: "NGSP (National Glycohemoglobin Standardization Program) HbA1c values can be converted to IFCC (International Federation of Clinical Chemistry) values. Which of the following conversion approximately applies?",
+    question: "Point-of-care (POC) HbA1c devices used in field surveys for diabetes screening have certain limitations. Which of the following is the most significant quality concern when using POC HbA1c in large-scale field surveys?",
     options: [
-      "IFCC (mmol/mol) = [NGSP (%) - 2.15] x 10.93",
-      "IFCC (mmol/mol) = [NGSP (%) - 2.15] x 10.93, with an HbA1c of 6.5% NGSP corresponding to approximately 48 mmol/mol IFCC",
-      "IFCC (mmol/mol) = NGSP (%) x 11 - 24",
-      "IFCC (mmol/mol) = [NGSP (%) + 1.5] x 9.5"
+      "The devices are too expensive for use in field conditions",
+      "POC HbA1c devices may have higher coefficient of variation and may not meet NGSP performance criteria (CV <3%, bias <7%) compared to laboratory-based methods",
+      "POC HbA1c requires venous blood collection which is impractical in community settings",
+      "POC HbA1c cannot distinguish Type 1 from Type 2 diabetes"
     ],
     answer: 1,
-    explanation: "The IFCC to NGSP conversion uses the formula: NGSP (%) = [0.0915 x IFCC (mmol/mol)] + 2.15, or equivalently IFCC = [NGSP - 2.15] / 0.0915. The diagnostic cutoff of HbA1c 6.5% (NGSP) corresponds to 48 mmol/mol (IFCC). HbA1c 7.0% NGSP = 53 mmol/mol IFCC, and 5.7% NGSP = 39 mmol/mol IFCC. Standardization is critical for consistent diabetes diagnosis globally."
+    explanation: "Point-of-care HbA1c devices used in field settings must meet NGSP/CAP performance standards (total error <7% or bias <6% from reference method, CV <3%). Studies evaluating POC HbA1c devices (Afinion, DCA Vantage, etc.) in Indian field conditions found variable performance, particularly in extreme temperatures and humidity. Hemoglobin variants common in Indian populations (HbS, HbE, HbD, HbC) can interfere with some POC methods but not others, depending on the assay technology (boronate affinity vs. immunoassay vs. capillary electrophoresis). These quality concerns affect prevalence estimates from field surveys."
   },
   {
     id: 16,
-    question: "For the standard 75g Oral Glucose Tolerance Test (OGTT) procedure, which of the following pre-test preparations is mandatory?",
+    question: "The ICMR-INDIAB study used venous plasma glucose as the reference standard. When comparing to capillary blood glucose used in many field surveys, which correction factor is typically applied?",
     options: [
-      "Fasting for at least 4 hours prior to the test",
-      "At least 3 days of unrestricted carbohydrate diet (>=150g/day) followed by overnight fast of 8-14 hours",
-      "24-hour carbohydrate-free diet to maximize glucose challenge",
-      "Administration of 75g glucose in 500mL water over 30 minutes"
+      "Capillary whole blood glucose is approximately 15% higher than venous plasma glucose",
+      "Capillary whole blood glucose is approximately 11-15% lower than venous plasma glucose; conversion factor used to express as plasma equivalent",
+      "Capillary and venous plasma glucose are interchangeable with no correction needed",
+      "Capillary plasma glucose is 20% higher than venous whole blood glucose"
     ],
     answer: 1,
-    explanation: "The standard OGTT requires: (1) at least 3 days of unrestricted diet with carbohydrate intake of at least 150g/day (to prevent false positive results from carbohydrate depletion), (2) overnight fasting of 8-14 hours, (3) the patient should be seated and not smoke during the test, (4) 75g anhydrous glucose dissolved in 250-300mL water consumed within 5 minutes. Blood samples are drawn at 0 and 120 minutes (fasting and 2-hour)."
+    explanation: "Capillary whole blood glucose values are approximately 11-15% lower than venous plasma glucose values due to the higher hematocrit of whole blood diluting glucose concentration. Most modern glucometers are calibrated to report plasma-equivalent values. When interpreting field survey data using capillary whole blood glucose, a conversion factor of approximately 1.11 (multiply by 1.11) is needed to express as venous plasma glucose equivalent. WHO diagnostic thresholds (7.0 mmol/L fasting, 11.1 mmol/L 2-hour) are for venous plasma. This distinction is critical for valid prevalence comparisons between studies."
   },
   {
     id: 17,
-    question: "The IADPSG (International Association of Diabetes and Pregnancy Study Groups) criteria for GDM diagnosis uses a one-step approach with 75g OGTT. What are the diagnostic thresholds?",
+    question: "Pre-diabetes epidemiology shows that Impaired Glucose Tolerance (IGT) and Impaired Fasting Glucose (IFG) have different pathophysiological bases. In terms of progression to diabetes, which pre-diabetes category has the HIGHEST annual conversion rate?",
     options: [
-      "Fasting >=95 mg/dL OR 1-hour >=180 mg/dL OR 2-hour >=155 mg/dL (2 of 3 must be met)",
-      "Fasting >=92 mg/dL OR 1-hour >=180 mg/dL OR 2-hour >=153 mg/dL (any one value is diagnostic)",
-      "Fasting >=100 mg/dL OR 2-hour >=140 mg/dL (either value is diagnostic)",
-      "Fasting >=92 mg/dL AND 2-hour >=153 mg/dL (both values must be met)"
+      "Isolated IFG alone",
+      "Isolated IGT alone",
+      "Combined IFG + IGT",
+      "Elevated HbA1c (5.7-6.4%) alone without IFG or IGT"
     ],
-    answer: 1,
-    explanation: "IADPSG criteria (endorsed by WHO 2013 for GDM diagnosis): Using 75g OGTT at 24-28 weeks, GDM is diagnosed if ANY ONE of the following thresholds is met: Fasting PG >=92 mg/dL (5.1 mmol/L), 1-hour PG >=180 mg/dL (10.0 mmol/L), or 2-hour PG >=153 mg/dL (8.5 mmol/L). This is a one-step approach where a single abnormal value is diagnostic, unlike the older Carpenter-Coustan criteria requiring 2 abnormal values."
+    answer: 2,
+    explanation: "Combined IFG+IGT (both impaired fasting glucose and impaired glucose tolerance present simultaneously) has the highest annual conversion rate to diabetes, approximately 10-15% per year in some cohort studies, compared to 5-10% for isolated IGT and 3-6% for isolated IFG. The combination reflects both hepatic and peripheral insulin resistance together with impaired beta-cell function. The ICMR-INDIAB study found pre-diabetes prevalence of approximately 15.3% nationally. Individuals with combined IFG+IGT should be prioritized for intensive diabetes prevention interventions."
   },
   {
     id: 18,
-    question: "The DIPSI (Diabetes in Pregnancy Study Group India) criteria for GDM screening uses which simplified approach?",
+    question: "For GDM screening in India, how do IADPSG and DIPSI criteria differ in their approach and the populations they identify as GDM?",
     options: [
-      "Fasting blood glucose >90 mg/dL at first antenatal visit",
-      "Non-fasting 75g glucose challenge test with 2-hour plasma glucose >=140 mg/dL as diagnostic cutoff",
-      "Random blood glucose >200 mg/dL at any gestational age",
-      "50g glucose challenge test with 1-hour value >=130 mg/dL"
+      "Both use a one-step approach but with different glucose loads (IADPSG: 100g, DIPSI: 75g)",
+      "IADPSG requires fasting and uses three time-points (0, 1, 2 hours) with any one value diagnostic; DIPSI uses a non-fasting single-step test with 2-hour glucose only",
+      "DIPSI requires two abnormal values for diagnosis while IADPSG requires only one",
+      "IADPSG screens only high-risk women while DIPSI recommends universal screening"
     ],
     answer: 1,
-    explanation: "DIPSI criteria recommend a simplified non-fasting 75g glucose challenge test where a 2-hour plasma glucose of >=140 mg/dL is diagnostic of GDM. This approach is practical for Indian settings as it does not require fasting, making it feasible at peripheral health facilities. Values between 120-139 mg/dL are considered gestational impaired glucose tolerance. This single-step test is recommended for routine GDM screening in India."
+    explanation: "Key differences: IADPSG (endorsed by WHO 2013) requires a fasting state and 75g OGTT with measurements at 0, 1, and 2 hours; any one of three thresholds (FPG >=92 mg/dL, 1h >=180 mg/dL, 2h >=153 mg/dL) is diagnostic. DIPSI (developed in India) uses a non-fasting 75g glucose load with only a 2-hour measurement (>=140 mg/dL), making it more feasible in resource-limited Indian settings. DIPSI criteria are recommended by Government of India maternal health programs due to operational feasibility. IADPSG tends to identify more women as GDM (15-20%) compared to DIPSI (10-14%) in similar populations."
   },
   {
     id: 19,
-    question: "HbA1c measurement is unreliable for diabetes diagnosis in which of the following conditions?",
+    question: "The CBAC (Community Based Assessment Checklist) tool used under NPCDCS for diabetes screening in India assesses which parameters to identify high-risk individuals?",
     options: [
-      "Mild chronic kidney disease (GFR 60-89 mL/min)",
-      "Hemolytic anemia and hemoglobinopathies such as sickle cell disease",
-      "Hypothyroidism",
-      "Mild iron deficiency without anemia"
+      "Only blood pressure and blood glucose measurements",
+      "Age, waist circumference, blood pressure, symptoms of hyperglycemia, history of diabetes, tobacco and alcohol use - a non-invasive risk assessment checklist",
+      "BMI, HbA1c, and fasting glucose",
+      "Family history and oral glucose tolerance test results only"
     ],
     answer: 1,
-    explanation: "HbA1c is unreliable in conditions affecting red blood cell turnover or hemoglobin structure: hemolytic anemia (reduced RBC lifespan falsely lowers HbA1c), hemoglobinopathies like sickle cell disease and thalassemia (interfere with assay methods), recent blood transfusion, G6PD deficiency, and pregnancy (especially 2nd and 3rd trimester). Fasting plasma glucose or OGTT should be used in these situations. Iron deficiency anemia can falsely elevate HbA1c due to decreased RBC turnover."
+    explanation: "The CBAC (Community Based Assessment Checklist) is a non-invasive, non-blood-based screening tool used by ASHAs and health workers under NPCDCS. It captures: age (>=30 years), waist circumference, history of hypertension, history of diabetes in family, symptoms of hyperglycemia (polyuria, polydipsia), physical activity, and tobacco/alcohol use. High-risk individuals identified through CBAC are referred for blood glucose measurement. This approach enables mass screening without requiring laboratory infrastructure at the community level, making it scalable across India's vast community health worker network."
   },
   {
     id: 20,
-    question: "Glycated albumin (GA) and fructosamine reflect glycemic control over what time period, making them useful when HbA1c is unreliable?",
+    question: "In comparing opportunistic vs. systematic population-based screening for diabetes, which evidence-based statement is most accurate?",
     options: [
-      "Glycated albumin: 1-2 weeks; Fructosamine: 3-4 weeks",
-      "Glycated albumin: 2-3 weeks; Fructosamine: 2-3 weeks",
-      "Glycated albumin: 2-3 weeks; Fructosamine: 1-3 weeks (reflecting past 2-3 weeks)",
-      "Glycated albumin: 4-6 weeks; Fructosamine: 6-8 weeks"
+      "Opportunistic screening has consistently higher yield and coverage than systematic screening",
+      "Systematic population-based screening identifies more cases but opportunistic screening reaches higher-risk individuals in clinical settings; both approaches are complementary in India's context",
+      "Population-based screening is not recommended as it identifies too many pre-diabetes cases without capacity for intervention",
+      "Opportunistic screening at health facilities is the only evidence-based approach recommended by WHO"
     ],
-    answer: 2,
-    explanation: "Glycated albumin reflects glycemic control over the past 2-3 weeks (albumin half-life ~20 days). Fructosamine (measures all glycated serum proteins) reflects the past 2-3 weeks. Both are useful alternatives to HbA1c when HbA1c is unreliable (hemolytic anemia, hemoglobinopathies, dialysis patients, pregnancy with rapid glucose changes). Fructosamine is particularly useful in pregnancy where rapid changes in glycemia occur. Normal fructosamine is approximately 200-285 micromol/L."
+    answer: 1,
+    explanation: "Evidence shows both approaches have distinct advantages: systematic population-based screening (as in NPCDCS door-to-door surveys) ensures broader coverage and identifies cases not in contact with health system. Opportunistic screening (testing all individuals attending health facilities for any reason) concentrates resources on those already accessing healthcare. In India's context, where a large proportion of the population does not access formal healthcare regularly, both approaches are complementary. WHO 2023 guidelines suggest risk-based systematic screening is preferred over universal opportunistic screening for resource efficiency."
   },
   {
     id: 21,
-    question: "Continuous Glucose Monitoring (CGM) uses which of the following to measure interstitial glucose levels?",
+    question: "Random blood glucose (RBG) as a screening tool for diabetes has which of the following performance characteristics that makes it useful in community settings?",
     options: [
-      "Electrochemical detection of hydrogen peroxide produced by glucose oxidase reaction in subcutaneous tissue",
-      "Near-infrared spectroscopy of dermal capillary blood",
-      "Fluorescence-based optical detection in subcutaneous tissue",
-      "Microdialysis with enzymatic colorimetric detection"
+      "RBG >=140 mg/dL has sensitivity >90% and specificity >95% for diabetes diagnosis",
+      "RBG >=140 mg/dL post-meal has moderate sensitivity but should be confirmed with FPG or OGTT; it is useful as a first-pass community screening tool due to feasibility",
+      "RBG is not recommended for any screening purpose due to excessive variability",
+      "RBG >=126 mg/dL is diagnostic of diabetes regardless of meal timing"
     ],
-    answer: 0,
-    explanation: "Most commercial CGM devices (e.g., Dexcom, Medtronic Enlite) use an electrochemical biosensor inserted subcutaneously that measures glucose via the glucose oxidase reaction: glucose + O2 -> gluconolactone + H2O2. The H2O2 produced is detected amperometrically. There is a physiological lag of 5-15 minutes between blood glucose and interstitial glucose readings. Factory-calibrated systems (like Dexcom G6, FreeStyle Libre) do not require fingerstick calibration."
+    answer: 1,
+    explanation: "Random blood glucose (RBG) is practical for community screening but has limitations: its interpretation depends on timing relative to last meal. An RBG >=200 mg/dL with symptoms is diagnostic of diabetes per WHO. An RBG of 140-199 mg/dL warrants confirmatory OGTT. Studies in Indian community settings show that using RBG >=140 mg/dL (post-meal equivalent) has a sensitivity of approximately 60-80% and specificity of 70-85% for identifying undetected diabetes. Given its operational simplicity (no fasting required), RBG is recommended as the primary screening test at community and sub-center level in resource-limited Indian settings."
   },
   {
     id: 22,
-    question: "The pre-diabetes category of Impaired Fasting Glucose (IFG) uses different cutoffs according to WHO and ADA. Which of the following correctly states both?",
+    question: "Diabetes surveillance in India is conducted through multiple mechanisms. Which of the following surveillance systems specifically tracks diabetes at the national level in India?",
     options: [
-      "WHO IFG: fasting PG 6.0-6.9 mmol/L (110-125 mg/dL); ADA IFG: fasting PG 5.6-6.9 mmol/L (100-125 mg/dL)",
-      "WHO IFG: fasting PG 5.6-6.9 mmol/L (100-125 mg/dL); ADA IFG: fasting PG 6.0-6.9 mmol/L (110-125 mg/dL)",
-      "WHO IFG: fasting PG 5.5-6.9 mmol/L (99-125 mg/dL); ADA IFG: fasting PG 5.6-6.9 mmol/L (100-125 mg/dL)",
-      "WHO IFG: fasting PG 6.0-7.0 mmol/L; ADA IFG: fasting PG 5.6-7.0 mmol/L"
+      "Integrated Disease Surveillance Programme (IDSP) NCD module",
+      "National Family Health Survey (NFHS) with blood glucose measurement component",
+      "Both IDSP-NCD surveillance and the NFHS provide national-level diabetes prevalence data, along with ICMR sentinel surveillance sites",
+      "Diabetes is not tracked through any national surveillance system in India"
     ],
-    answer: 0,
-    explanation: "WHO uses a higher IFG cutoff of 6.1-6.9 mmol/L (110-125 mg/dL), while ADA uses a lower cutoff of 5.6-6.9 mmol/L (100-125 mg/dL). Impaired Glucose Tolerance (IGT) is defined identically by both: 2-hour OGTT glucose 7.8-11.0 mmol/L (140-199 mg/dL). The lower ADA cutoff identifies more individuals as pre-diabetic. Combined IFG+IGT confers the highest risk of progression to diabetes."
+    answer: 2,
+    explanation: "Multiple systems contribute to diabetes surveillance in India: NFHS-5 (2019-21) included blood glucose measurement using glucometers for the first time in the NFHS series, providing national and state-level prevalence data. IDSP has an NCD module for surveillance. ICMR-INDIAB serves as population-based prevalence data. State-specific NCD surveys provide subnational data. The WHO STEPS surveys have also been conducted in some Indian states. Integration of these data sources is needed for robust national diabetes surveillance, as no single integrated sentinel surveillance network comparable to communicable disease systems exists for NCDs in India."
   },
   {
     id: 23,
-    question: "Regarding diabetes screening recommendations in India, which population should receive targeted/opportunistic screening according to ICMR/Rssdi guidelines?",
+    question: "Diabetes screening in elderly populations (>65 years) presents unique challenges. Which of the following survey considerations is most important when assessing diabetes prevalence in elderly cohorts?",
     options: [
-      "All adults above 18 years irrespective of risk factors",
-      "Adults aged >=30 years with any one risk factor including overweight/obesity, family history, physical inactivity, hypertension, prior GDM, or polycystic ovarian syndrome",
-      "Only symptomatic individuals with polyuria, polydipsia, and weight loss",
-      "Adults above 45 years only, regardless of risk factors"
+      "Elderly cannot perform OGTT so must be excluded from prevalence surveys",
+      "Cognitive impairment and frailty may affect ability to provide informed consent and complete OGTT; HbA1c may be unreliable due to comorbidities; age-specific diagnostic thresholds should be considered",
+      "HbA1c is more reliable in elderly than in younger adults due to stable red cell turnover",
+      "Elderly should only be screened using fasting glucose with a higher cutoff of 130 mg/dL"
     ],
     answer: 1,
-    explanation: "ICMR/RSSDI Indian guidelines recommend opportunistic/targeted screening for diabetes in adults aged >=30 years who have at least one risk factor: overweight (BMI >=23 kg/m2 for Indians), central obesity (waist circumference >90 cm men, >80 cm women), first-degree relative with diabetes, physical inactivity, prior GDM or baby >3.5 kg, hypertension, dyslipidemia, PCOS, or history of cardiovascular disease. High-risk individuals should be screened regardless of age."
+    explanation: "Epidemiological surveys in elderly populations face multiple challenges: cognitive impairment affects consent and protocol compliance; frailty and comorbidities (CKD, anemia) affect HbA1c reliability; the OGTT procedure requires sustained sitting which may be difficult. Additionally, elderly may have atypical diabetes presentation without classic symptoms (polyuria, polydipsia may be blunted). Some experts suggest less stringent diagnostic thresholds for very elderly to avoid over-diagnosis of pre-diabetes. ICMR-INDIAB specifically analyzed elderly sub-groups showing very high diabetes prevalence (>30%) in the 60-70 age group in some regions."
   },
   {
     id: 24,
-    question: "In elderly patients (>65 years), diabetes diagnosis using HbA1c can be challenging because of which specific concern?",
+    question: "The Indian Diabetes Risk Score (IDRS) developed for community-based diabetes screening uses which four parameters, and what score threshold indicates high risk?",
     options: [
-      "HbA1c is always falsely elevated in elderly due to renal failure",
-      "Increasing proportion of HbA1c not reflecting true glycemia due to altered red blood cell survival and age-related hemoglobin glycation differences",
-      "Elderly patients cannot tolerate the OGTT procedure",
-      "Fasting glucose levels are invariably higher in elderly due to hormonal changes, making all elderly appear diabetic"
+      "BMI, blood pressure, family history, age; score >=50 indicates high risk",
+      "Age, waist circumference, physical activity level, family history of diabetes; score >=60 indicates high risk requiring blood glucose testing",
+      "Age, BMI, fasting glucose, HbA1c; score >=70 indicates high risk",
+      "Waist circumference, blood pressure, smoking history, alcohol use; score >=55 indicates high risk"
     ],
     answer: 1,
-    explanation: "In elderly patients, HbA1c may be unreliable due to: (1) age-related increase in RBC lifespan (may falsely elevate HbA1c), (2) higher prevalence of conditions causing hemolysis or nutritional deficiencies, (3) concurrent chronic kidney disease affecting assay, and (4) some studies showing that HbA1c underestimates true glycemia in elderly. Additionally, elderly may have atypical presentations of diabetes and higher prevalence of cognitive impairment making symptom reporting unreliable. OGTT or fasting glucose may be preferred."
+    explanation: "The Indian Diabetes Risk Score (IDRS), validated by Dr. V. Mohan and colleagues at Madras Diabetes Research Foundation, uses four parameters: (1) Age (0-20 points based on age group), (2) Waist circumference (0-20 points based on WC cut-offs for South Asians), (3) Physical activity (0-20 points based on activity level), and (4) Family history of diabetes (0-20 points). Maximum score is 80. A score >=60 indicates high risk requiring blood glucose testing. The IDRS has been validated against OGTT with a sensitivity of approximately 72% and specificity of 60% for detecting undiagnosed diabetes in community settings."
   },
   {
     id: 25,
-    question: "Diabetic retinopathy is classified by the International Clinical Diabetic Retinopathy Disease Severity Scale. Which of the following represents Proliferative Diabetic Retinopathy (PDR)?",
-    options: [
-      "Presence of hard exudates within one disc diameter of the fovea",
-      "Neovascularization anywhere on the retina or vitreous/preretinal hemorrhage",
-      "More than 20 microaneurysms in all four quadrants",
-      "Cotton wool spots with moderate non-proliferative changes"
-    ],
-    answer: 1,
-    explanation: "Proliferative Diabetic Retinopathy (PDR) is defined by the presence of neovascularization (new blood vessel formation) on the disc (NVD), elsewhere on the retina (NVE), in the anterior segment (iris - rubeosis iridis), or vitreous/preretinal hemorrhage. PDR is sight-threatening and requires urgent panretinal photocoagulation (PRP) or anti-VEGF therapy. High-risk PDR includes NVD >=1/3 disc area or any NVD with vitreous hemorrhage."
+    question: "Population-based studies in India on diabetic retinopathy prevalence have found what approximate rate of any diabetic retinopathy among known diabetic patients?",
+    options: ["5-8%", "10-15%", "17-28%", "40-50%"],
+    answer: 2,
+    explanation: "Population-based studies from India (including Chennai Urban Rural Epidemiology Study - CURES, and the Sankara Nethralaya Diabetic Retinopathy Epidemiology and Molecular Genetic Study - SN-DREAMS) have reported prevalence of any diabetic retinopathy in the range of 17-28% among known diabetic patients. The CURES study reported approximately 20.8% prevalence. Sight-threatening retinopathy (PDR and clinically significant macular edema) affects approximately 5% of diabetics. Longer diabetes duration, poor glycemic control, and hypertension are the strongest risk factors. Many cases are detected late due to limited screening programs."
   },
   {
     id: 26,
-    question: "According to KDIGO 2022 staging, Diabetic Kidney Disease (DKD) is staged based on GFR and albuminuria. A patient with GFR 45 mL/min/1.73m2 and urine albumin-to-creatinine ratio (UACR) of 350 mg/g is in which risk category?",
+    question: "The burden of diabetic kidney disease (DKD) in India as determined from population studies shows which of the following patterns?",
     options: [
-      "Moderately increased risk (Green)",
-      "High risk (Yellow)",
-      "Very high risk (Orange)",
-      "Highest risk (Red)"
+      "DKD accounts for less than 5% of end-stage renal disease in India due to low diabetes prevalence",
+      "Diabetes is now the leading or co-leading cause of end-stage renal disease (ESRD) in urban India, contributing 30-40% of ESRD cases requiring dialysis",
+      "DKD in Indian diabetics presents predominantly as rapid progressive glomerulonephritis rather than gradual proteinuria",
+      "DKD prevalence is identical in Type 1 and Type 2 diabetes patients in India"
     ],
-    answer: 3,
-    explanation: "KDIGO CKD heat map: GFR 45 mL/min/1.73m2 corresponds to G3b category. UACR 350 mg/g corresponds to A3 (severely increased albuminuria, >300 mg/g). G3b + A3 places the patient in the 'Red' (Highest risk) category on the KDIGO risk heat map. This patient requires intensive management with RAAS blockade (ACE-I or ARB), SGLT2 inhibitor, and potentially finerenone to slow CKD progression."
+    answer: 1,
+    explanation: "Registry data from urban India (including the Indian CKD Registry) shows that diabetes mellitus has become the leading cause of ESRD in urban India, contributing approximately 30-40% of patients on dialysis, surpassing chronic glomerulonephritis. This epidemiological shift mirrors the diabetes epidemic. Population-based screening studies (SEEK India, CURES) show microalbuminuria (early DKD marker) in 25-30% of diabetics. The huge population of undiagnosed and poorly controlled diabetics represents a large reservoir for future ESRD burden, with enormous healthcare cost implications."
   },
   {
     id: 27,
-    question: "Diabetic neuropathy most commonly presents as which clinical pattern?",
+    question: "The UKPDS (UK Prospective Diabetes Study) was a landmark epidemiological and clinical trial. From an epidemiological perspective, what did the UKPDS 10-year post-trial monitoring (legacy effect study) demonstrate?",
     options: [
-      "Asymmetric proximal motor neuropathy (diabetic amyotrophy)",
-      "Symmetric distal sensorimotor polyneuropathy with 'stocking and glove' distribution",
-      "Autonomic neuropathy with postural hypotension as the first symptom",
-      "Cranial nerve palsy, most commonly involving the oculomotor nerve"
+      "Glycemic benefits of intensive control disappeared completely within 3 years after the trial ended",
+      "Early intensive glycemic control produced sustained reductions in microvascular and cardiovascular outcomes (including myocardial infarction) for years after the intensive control period ended",
+      "The legacy effect was only seen with metformin, not with sulfonylurea or insulin",
+      "Blood pressure control showed no legacy effect while glycemia showed a strong legacy effect"
     ],
     answer: 1,
-    explanation: "The most common form of diabetic neuropathy is chronic sensorimotor distal symmetric polyneuropathy (DSPN), affecting approximately 50% of diabetic patients over their lifetime. It presents with 'stocking and glove' distribution - symptoms beginning in the toes and feet, progressing proximally. Symptoms include burning, tingling, numbness, and pain. Loss of protective sensation (10g monofilament test) is a key risk factor for diabetic foot ulcers. The Michigan Neuropathy Screening Instrument (MNSI) is used for assessment."
+    explanation: "The UKPDS 10-year post-trial monitoring (published 2008 in NEJM) demonstrated 'metabolic memory' or 'legacy effect': despite HbA1c levels equalizing between intensive and conventional groups after the trial ended, the intensive control group maintained significant reductions in: myocardial infarction (15% reduction, statistically significant for the first time), diabetes-related death (13% reduction), and microvascular endpoints. This landmark finding supports aggressive early glycemic management at diagnosis, establishing the concept that early metabolic exposures have lasting consequences on vascular tissue."
   },
   {
     id: 28,
-    question: "Wagner's classification of diabetic foot ulcers is widely used in clinical practice. A patient with a diabetic foot ulcer that extends to tendon, capsule, or bone but without osteomyelitis or abscess is classified as:",
-    options: ["Wagner Grade 1", "Wagner Grade 2", "Wagner Grade 3", "Wagner Grade 4"],
-    answer: 1,
-    explanation: "Wagner Classification: Grade 0 = intact skin, high-risk foot; Grade 1 = superficial ulcer (skin only); Grade 2 = deep ulcer to tendon, capsule, or bone without infection/abscess; Grade 3 = deep ulcer with osteomyelitis, abscess, or joint sepsis; Grade 4 = localized gangrene (forefoot/heel); Grade 5 = gangrene of entire foot. Grades 3-5 require hospitalization and often surgical intervention. Osteomyelitis (Grade 3) is the key distinction from Grade 2."
+    question: "In the DCCT/EDIC study, the 'metabolic memory' concept was further elaborated. What was the approximate duration of follow-up in the EDIC study that demonstrated persistent cardiovascular benefits of early intensive control in Type 1 diabetes?",
+    options: ["3-5 years", "10-15 years", "20-30 years", "Only the original 6.5-year DCCT period showed benefits"],
+    answer: 2,
+    explanation: "The EDIC (Epidemiology of Diabetes Interventions and Complications) study followed DCCT participants for 20-30 years after the trial. By year 17 of EDIC follow-up (approximately 27 years total including DCCT), the intensive control group showed a 57% reduction in non-fatal MI, stroke, or cardiovascular death compared to the conventional group. Remarkably, the HbA1c difference between groups had disappeared within 1-2 years of EDIC start, yet cardiovascular protection persisted. This strongly supports early intensive control in Type 1 diabetes and has shaped current treatment guidelines."
   },
   {
     id: 29,
-    question: "The UKPDS (UK Prospective Diabetes Study) was a landmark trial in Type 2 diabetes. Which of the following was a KEY finding of the UKPDS related to intensive glycemic control?",
+    question: "Population-level epidemiological data on diabetic foot amputations in India shows which concerning trend?",
     options: [
-      "Intensive glucose control significantly reduced macrovascular events (MI and stroke) in all subgroups",
-      "Each 1% reduction in HbA1c was associated with a 35% reduction in microvascular complications",
-      "Metformin in obese patients showed no cardiovascular benefit over conventional treatment",
-      "Intensive control with sulfonylurea or insulin increased the risk of all-cause mortality"
+      "India has among the world's lowest amputation rates due to traditional Indian medicine practices",
+      "India has disproportionately high rates of diabetes-related lower limb amputations due to late presentation, poor glycemic control, limited foot care services, and inadequate footwear",
+      "Amputation rates are declining in India due to improved NCD management programs",
+      "Amputation rates in India are identical to those in Western Europe"
     ],
     answer: 1,
-    explanation: "The UKPDS showed that each 1% reduction in HbA1c was associated with a 35% reduction in microvascular complications (retinopathy, nephropathy, neuropathy) and a 25% reduction in diabetes-related deaths. However, it did not show a significant reduction in macrovascular events (MI) with intensive control at the time of original publication. The 10-year post-trial follow-up (legacy effect) did show reduction in MI. Metformin in obese patients showed cardiovascular benefits beyond glycemia."
+    explanation: "Epidemiological data from tertiary care centers and the Global Lower Extremity Amputation Study indicate that India has disproportionately high diabetes-related lower limb amputation rates. Factors contributing include: late diagnosis, poor glycemic control, inadequate foot care education, poor footwear and walking barefoot in rural areas, delayed treatment-seeking, limited podiatry services, inadequate wound care facilities at primary levels, and high rates of peripheral neuropathy (often asymptomatic). The Chennai-based CURES study found diabetic foot problems in approximately 5.4% of diabetics, with 9.6% having peripheral neuropathy. Amputation prevention through foot care programs is a public health priority."
   },
   {
     id: 30,
-    question: "The DCCT (Diabetes Control and Complications Trial) was conducted in Type 1 diabetes. What was the primary finding regarding intensive versus conventional insulin therapy?",
-    options: [
-      "Intensive therapy reduced HbA1c by 3% and reduced the risk of retinopathy by 76% in primary prevention",
-      "Intensive therapy reduced HbA1c from ~9% to ~7% and reduced risk of retinopathy development by 76% (primary) and progression by 54% (secondary)",
-      "Intensive therapy increased the risk of severe hypoglycemia threefold with no benefit on nephropathy",
-      "Conventional therapy was equivalent to intensive therapy for neuropathy outcomes"
-    ],
+    question: "Diabetes-attributable mortality is estimated using the concept of 'excess mortality.' According to IDF Diabetes Atlas estimates, what proportion of global deaths in adults aged 20-79 years are attributable to diabetes?",
+    options: ["About 2-3%", "About 6-7%", "About 10-12%", "About 20-25%"],
     answer: 1,
-    explanation: "DCCT findings: Intensive insulin therapy reduced HbA1c from ~9% to ~7%. In primary prevention cohort: 76% reduction in development of retinopathy. In secondary intervention cohort: 54% reduction in progression of retinopathy, 39% reduction in microalbuminuria, 54% reduction in clinical neuropathy. The risk of severe hypoglycemia was 3-fold higher with intensive therapy. The EDIC follow-up study demonstrated the 'metabolic memory' or legacy effect, with sustained cardiovascular benefits decades later."
+    explanation: "The IDF Diabetes Atlas 10th Edition (2021) estimated that diabetes caused approximately 6.7 million deaths in adults aged 20-79 years in 2021, representing about 12.2% of all deaths in this age group globally. However, this likely underestimates true diabetes mortality because diabetes is frequently not recorded as the underlying cause of death on death certificates - cardiovascular disease, renal failure, and infections (the proximate causes of death in diabetics) are typically recorded. The true fraction of deaths attributable to diabetes (including as a contributing cause) is substantially higher."
   },
   {
     id: 31,
-    question: "Which SGLT2 inhibitor demonstrated significant reduction in hospitalization for heart failure and cardiovascular death in the EMPA-REG OUTCOME trial?",
-    options: ["Dapagliflozin", "Canagliflozin", "Empagliflozin", "Ertugliflozin"],
-    answer: 2,
-    explanation: "The EMPA-REG OUTCOME trial showed that empagliflozin significantly reduced cardiovascular death by 38%, hospitalization for heart failure by 35%, and all-cause mortality by 32% in patients with Type 2 diabetes and established cardiovascular disease. CANVAS trial showed similar benefits with canagliflozin. DECLARE-TIMI 58 showed dapagliflozin reduced HHF. SGLT2 inhibitors work through glucosuria, natriuresis, and hemodynamic effects beyond glucose lowering. They are now recommended for T2DM with HF or CKD regardless of glucose control."
+    question: "The economic burden of diabetes in India includes both direct and indirect costs. Which of the following best characterizes the economic impact of diabetes complications at the population level?",
+    options: [
+      "Complications account for less than 20% of total diabetes-related costs",
+      "Complications (particularly cardiovascular disease, ESRD, and retinopathy) account for 60-80% of total diabetes-related healthcare expenditure, creating catastrophic out-of-pocket costs for households",
+      "The government bears most diabetes costs through public sector facilities, minimizing household burden",
+      "Indirect costs (productivity losses) are negligible because diabetes primarily affects retired elderly populations"
+    ],
+    answer: 1,
+    explanation: "Economic analyses of diabetes burden in India (including studies by Ramachandran et al. and the IDF Diabetes Atlas) consistently show that complications drive 60-80% of direct diabetes healthcare costs. Dialysis for ESRD, coronary interventions for CAD, surgical treatment of diabetic foot, and anti-VEGF injections for retinopathy impose catastrophic out-of-pocket expenditures. Given that most diabetes care in India is paid out-of-pocket (>60%), complications push households below the poverty line (catastrophic health expenditure). Indirect costs from disability and premature mortality are substantial as diabetes affects working-age adults."
   },
   {
     id: 32,
-    question: "The GLP-1 receptor agonist liraglutide demonstrated cardiovascular benefits in the LEADER trial. The mechanism of cardiovascular protection of GLP-1 RAs is primarily attributed to:",
+    question: "Quality of Life (QoL) studies in diabetic populations in India using validated tools have shown which major determinant of reduced QoL beyond glycemic control?",
     options: [
-      "Direct anti-atherosclerotic effect through reduction of inflammation and endothelial dysfunction, independent of glucose lowering",
-      "Reduction in body weight and blood pressure leading to reduced cardiac workload",
-      "Blockade of cardiac beta receptors reducing arrhythmia risk",
-      "Improved renal function through direct tubular effects similar to SGLT2 inhibitors"
+      "The type of antidiabetic medication used is the primary QoL determinant",
+      "Presence of complications, treatment burden, fear of hypoglycemia, and psychosocial factors (depression, stigma) are major QoL determinants beyond glycemic control",
+      "QoL in Indian diabetics is primarily determined by household income",
+      "Physical activity levels have no significant correlation with QoL in Indian diabetic patients"
     ],
-    answer: 0,
-    explanation: "The cardiovascular benefits of GLP-1 RAs (demonstrated in LEADER for liraglutide, SUSTAIN-6 for semaglutide, REWIND for dulaglutide) are primarily attributed to direct atheroprotective effects: reduction of inflammation, oxidative stress, endothelial dysfunction, and plaque stabilization. These benefits appear to go beyond weight loss and blood pressure reduction, as they emerged early in trials. GLP-1 receptors are expressed in cardiac and vascular tissue. Unlike SGLT2 inhibitors, GLP-1 RAs primarily reduce atherosclerotic MACE rather than hospitalization for heart failure."
+    answer: 1,
+    explanation: "QoL studies in Indian diabetics using tools such as the EQ-5D, WHOQOL-BREF, DQoL (Diabetes Quality of Life measure), and ADDQoL (Audit of Diabetes-Dependent Quality of Life) consistently identify complications as the primary driver of reduced QoL. Depression (comorbid in 15-25% of diabetics), fear of hypoglycemia, treatment burden (multiple medications, monitoring requirements), stigma from chronic disease, and sexual dysfunction also significantly impact QoL. Studies from AIIMS and medical colleges across India highlight that mental health component of diabetes care is grossly neglected in routine NCD management programs."
   },
   {
     id: 33,
-    question: "For HbA1c targets in diabetes management, which patient group should have a LESS STRINGENT target of HbA1c <8% (64 mmol/mol) rather than <7% (53 mmol/mol)?",
+    question: "Population-level data on macrovascular disease burden in Indian diabetics shows which specific pattern compared to Western diabetics?",
     options: [
-      "Young patients with newly diagnosed Type 2 diabetes and no comorbidities",
-      "Elderly patients with long duration of diabetes, multiple comorbidities, limited life expectancy, or hypoglycemia unawareness",
-      "Pregnant women with pre-existing diabetes",
-      "Patients with microalbuminuria only"
+      "Indian diabetics have lower macrovascular risk because their BMI is lower",
+      "Indian diabetics show higher rates of coronary artery disease relative to peripheral vascular disease compared to Western diabetics, with CAD occurring at younger ages and with less BMI-related risk",
+      "Indian diabetics have lower rates of all macrovascular diseases due to protective dietary factors",
+      "Stroke is more common than coronary artery disease in Indian diabetics, unlike Western populations"
     ],
     answer: 1,
-    explanation: "Less stringent HbA1c targets (7.5-8.5%) are appropriate for: elderly patients with functional dependence, long disease duration, severe hypoglycemia unawareness, advanced complications, multiple comorbidities, or limited life expectancy. These patients are at high risk of hypoglycemia harm which may outweigh glycemic benefits. Conversely, more stringent targets (<6.5%) may be appropriate for young, recently diagnosed patients with no complications. Pregnant women require very stringent control (HbA1c <6.5% pre-conception, <6% if achievable safely)."
+    explanation: "Epidemiological studies on Indian diabetics show a specific macrovascular pattern: coronary artery disease (CAD) is the predominant macrovascular manifestation, occurring at younger ages and with less obesity than Western diabetics. Indian diabetics develop premature CAD often before age 50. The CURES study showed CAD prevalence of approximately 21% in urban Chennai diabetics. The pattern of diffuse three-vessel disease, smaller coronary vessel size, and higher rates of sudden cardiac death is characteristic. Peripheral arterial disease is relatively less prevalent, though diabetic foot complications (neuropathic) remain high."
   },
   {
     id: 34,
-    question: "Regarding insulin types, which of the following insulin analogs has the LONGEST duration of action?",
-    options: ["Insulin glargine U100", "Insulin detemir", "Insulin degludec", "NPH insulin"],
-    answer: 2,
-    explanation: "Insulin degludec (Tresiba) has the longest duration of action, exceeding 42 hours (essentially peakless for >24 hours). Insulin glargine U300 and degludec both have ultra-long action. Glargine U100 acts for ~24 hours, detemir for 12-20 hours, and NPH insulin for 10-16 hours with a peak. Ultra-long acting insulins like degludec have lower risk of nocturnal hypoglycemia compared to NPH. Degludec showed cardiovascular safety in the DEVOTE trial."
+    question: "Diabetes complication screening programs in India under NPCDCS recommend which minimum frequency for retinal screening in known diabetics?",
+    options: [
+      "Every 5 years for all diabetics",
+      "Annually for all diabetics, with more frequent follow-up if retinopathy is detected",
+      "Only when visual symptoms develop",
+      "Every 2 years if glycemic control is good (HbA1c <7%)"
+    ],
+    answer: 1,
+    explanation: "NPCDCS guidelines and RSSDI/API consensus recommend annual diabetic retinopathy screening for all known diabetics, with more frequent follow-up (every 3-6 months) if retinopathy is detected. Screening should begin at diagnosis for Type 2 diabetes (as onset of hyperglycemia may precede diagnosis by years) and 5 years after diagnosis for Type 1 diabetes. Fundus photography using non-mydriatic cameras (tele-ophthalmology) has been piloted in several states to scale up screening. Despite guidelines, actual screening coverage in India remains inadequate, with studies showing only 20-40% of diabetics having ever undergone retinal examination."
   },
   {
     id: 35,
-    question: "Severe hypoglycemia in a conscious patient who can swallow should be treated with the 'Rule of 15'. What does this rule state?",
-    options: [
-      "Give 15g of fast-acting carbohydrate, wait 15 minutes, recheck glucose; repeat if still <70 mg/dL",
-      "Give 15g glucose IV push over 15 minutes and recheck in 15 minutes",
-      "Give 15 units of glucagon IM and 15g oral glucose simultaneously",
-      "Give 15 mL of 50% dextrose IV and recheck after 15 minutes"
-    ],
-    answer: 0,
-    explanation: "The '15-15 Rule' for conscious hypoglycemia: Give 15 grams of fast-acting carbohydrate (4 glucose tablets, 150 mL fruit juice, 6-7 regular candies, or 1 tablespoon of sugar/honey), wait 15 minutes, and recheck blood glucose. If still <70 mg/dL (3.9 mmol/L), repeat the treatment. Once glucose is >70 mg/dL, have the patient eat a meal or snack. For unconscious patients: IV dextrose (25-50 mL of 50% dextrose) or glucagon IM/SC 1mg (or 0.5mg if <25kg). Glucagon nasal powder (Baqsimi) is also available."
+    question: "The HbA1c population target concept is used in public health to assess the quality of diabetes care at the health system level. What HbA1c threshold is commonly used to define 'poor glycemic control' in population-level diabetes care audits?",
+    options: ["HbA1c >6.5%", "HbA1c >7.0%", "HbA1c >8.0%", "HbA1c >9.0%"],
+    answer: 2,
+    explanation: "In population-level diabetes care quality assessments and health system audits, HbA1c >8.0% (64 mmol/mol) is commonly used as the threshold for 'poor glycemic control' requiring intensification of management. The ADA quality metric uses HbA1c >9% as a marker of very poor control. Studies from ICMR-INDIAB and hospital-based audits in India show that a substantial proportion (40-60%) of treated diabetics have HbA1c >8.0%, indicating that treatment effectiveness at the population level is suboptimal. This population-level metric helps prioritize health system strengthening efforts."
   },
   {
     id: 36,
-    question: "Diabetic Ketoacidosis (DKA) is a life-threatening complication. Which laboratory finding is required to diagnose DKA according to standard criteria?",
+    question: "Infection-related mortality in diabetic populations compared to non-diabetic populations at the population level shows which pattern from epidemiological studies?",
     options: [
-      "Blood glucose >250 mg/dL, arterial pH <7.30, serum bicarbonate <15 mEq/L, and positive ketones",
-      "Blood glucose >300 mg/dL, arterial pH <7.25, serum bicarbonate <10 mEq/L, and positive ketones",
-      "Blood glucose >200 mg/dL, venous pH <7.35, and urine ketones 2+ or more",
-      "Blood glucose >400 mg/dL, osmolality >320 mOsm/kg, and negative ketones"
+      "Diabetics have identical infection-related mortality to non-diabetics if glycemic control is adequate",
+      "Diabetics have approximately 2-3 times higher risk of infection-related hospitalization and mortality, with tuberculosis, urinary tract infections, skin infections, and lower respiratory infections particularly elevated",
+      "Diabetes reduces infection risk because elevated blood glucose kills bacteria",
+      "Only Type 1 diabetics have elevated infection risk; Type 2 diabetics show no difference"
     ],
-    answer: 0,
-    explanation: "Standard DKA diagnostic criteria (ADA): (1) Blood glucose >250 mg/dL (may be lower in euglycemic DKA with SGLT2 inhibitors or in pregnancy), (2) Arterial pH <7.30 (mild: 7.25-7.30, moderate: 7.00-7.24, severe: <7.00), (3) Serum bicarbonate <15 mEq/L (18 mEq/L per some criteria), (4) Positive urine/serum ketones. Treatment: IV fluid resuscitation, insulin infusion, potassium replacement, and monitoring. Key complication is cerebral edema (especially in children)."
+    answer: 1,
+    explanation: "Large population-based cohort studies and meta-analyses consistently show that diabetics have 2-3 times higher risk of infection-related morbidity and mortality compared to non-diabetics. Specific infections with markedly elevated risk include: tuberculosis (2-3x higher incidence - diabetes is the leading risk factor for TB globally after HIV), urinary tract infections, lower respiratory infections, skin and soft tissue infections, and fungal infections (mucormycosis, candidiasis). Mechanisms include impaired innate immunity, reduced phagocytic function, neuropathy reducing wound detection, and poor vascularity. India's dual burden of diabetes and TB creates significant overlap."
   },
   {
     id: 37,
-    question: "Diabetic patients are at increased risk of which specific infection that is particularly aggressive and caused by Mucor species, often following COVID-19 in India?",
-    options: ["Necrotizing fasciitis", "Rhinocerebral mucormycosis (black fungus)", "Invasive pulmonary aspergillosis", "Candida septicemia"],
-    answer: 1,
-    explanation: "Rhinocerebral mucormycosis (caused by Mucor, Rhizopus, Cunninghamella species) is a rapidly progressive, life-threatening infection with particular predilection for diabetic patients with poor glycemic control. During COVID-19 pandemic in India, 'COVID-19-associated mucormycosis' emerged as a major problem - diabetic patients on steroids for COVID-19 were at extreme risk. Hyperglycemia, acidosis, and impaired phagocyte function in diabetics promote Mucor growth. Treatment requires IV amphotericin B and aggressive surgical debridement. India reported >45,000 cases during the pandemic."
+    question: "The Global Burden of Disease (GBD) study methodology uses Disability-Adjusted Life Years (DALYs) to measure diabetes burden. For diabetes, what is the relative contribution of Years Lived with Disability (YLD) vs. Years of Life Lost (YLL) to total DALYs?",
+    options: [
+      "YLL completely dominates DALY burden for diabetes (>90% of total DALYs)",
+      "YLD and YLL contribute approximately equally to diabetes DALY burden in most regions",
+      "YLD (from non-fatal complications) contributes more to diabetes DALYs than YLL in high-income countries; YLL is relatively more important in LMICs with high premature mortality",
+      "Diabetes generates negligible DALY burden because most diabetics live long lives"
+    ],
+    answer: 2,
+    explanation: "GBD analyses show that for diabetes, the contribution of YLD versus YLL varies by development context: in high-income countries with better cardiovascular and cancer care, patients live longer with diabetes complications (neuropathy, retinopathy, nephropathy), making YLD the dominant component. In LMICs like India, higher premature mortality from cardiovascular and infectious complications means YLL contributes more to the total DALY burden. This has implications for prioritization: YLD reduction requires complication prevention programs; YLL reduction requires emergency and critical care capacity alongside prevention. India shows a mixed pattern given its epidemiological transition."
   },
   {
     id: 38,
-    question: "The Diabetes Prevention Program (DPP) trial in the USA compared intensive lifestyle intervention versus metformin versus placebo in preventing diabetes in high-risk individuals. What was the key finding regarding lifestyle intervention?",
+    question: "The Indian Diabetes Prevention Programme (IDPP-1) was a landmark trial testing lifestyle modification and metformin for diabetes prevention in Indians with IGT. What were the key findings of IDPP-1?",
     options: [
-      "Lifestyle intervention reduced diabetes incidence by 31% compared to placebo",
-      "Lifestyle intervention reduced diabetes incidence by 58% compared to placebo, compared to 31% reduction with metformin",
-      "Metformin and lifestyle intervention were equally effective at 50% diabetes prevention",
-      "Lifestyle intervention was only effective in patients below 45 years of age"
+      "Lifestyle modification reduced diabetes incidence by 58%; metformin reduced it by 31%, similar to the US DPP",
+      "Lifestyle modification alone reduced diabetes incidence by 28.5%; metformin alone by 26.4%; combined lifestyle + metformin by 28.2% - all three compared to control group showing no significant additive benefit",
+      "Only metformin was effective (50% reduction) while lifestyle intervention failed in the Indian context",
+      "IDPP-1 showed no significant diabetes prevention benefit in Indians with IGT"
     ],
     answer: 1,
-    explanation: "The DPP trial showed: Lifestyle intervention (7% weight loss goal + 150 min/week moderate physical activity) reduced diabetes incidence by 58% compared to placebo. Metformin 850mg twice daily reduced incidence by 31% compared to placebo. The lifestyle intervention was most effective in older participants (>60 years: 71% reduction). The Finnish Diabetes Prevention Study (DPS) showed similar 58% reduction with lifestyle intervention. These trials established that Type 2 diabetes is preventable through lifestyle modification."
+    explanation: "IDPP-1 (Ramachandran et al., Diabetologia, 2006) studied 531 Asian Indian men with IGT in Chennai. Key findings: Lifestyle modification reduced diabetes incidence by 28.5% (relative risk reduction), Metformin alone by 26.4%, and combined Lifestyle + Metformin by 28.2% compared to control. Notably, there was NO additive benefit of combining lifestyle and metformin. Effect sizes were smaller than US DPP (58% for lifestyle) and the Finnish DPS (58%), possibly because the control group in IDPP-1 also received standard dietary advice, and Indians already had active lifestyles (no sedentary suburban lifestyle to change significantly)."
   },
   {
     id: 39,
-    question: "The National Programme for Non-Communicable Diseases (NPCDCS) in India targets which diseases for population-based screening and management?",
+    question: "The US Diabetes Prevention Program (DPP) found that lifestyle intervention was most effective in which subgroup of participants?",
     options: [
-      "Diabetes mellitus, hypertension, and cardiovascular diseases only",
-      "Diabetes mellitus, hypertension, cardiovascular diseases (CHD, stroke), and cancer (oral, cervical, breast)",
-      "Diabetes, hypertension, COPD, and mental health disorders",
-      "Diabetes, hypertension, obesity, and chronic kidney disease"
+      "Young adults (18-35 years) with high BMI",
+      "Participants older than 60 years, showing 71% relative risk reduction compared to 58% overall",
+      "Participants with isolated IGT without IFG",
+      "Female participants compared to male participants"
     ],
     answer: 1,
-    explanation: "NPCDCS (National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke) was launched in 2010 and renamed/revised multiple times. It targets: diabetes mellitus, hypertension, cardiovascular diseases (CHD and stroke), and cancer (oral, cervical, and breast cancers). The program focuses on health promotion, opportunistic screening at health facilities, early diagnosis, management, and referral linkages from sub-center to district hospital level."
+    explanation: "The DPP subgroup analysis showed that the lifestyle intervention was most effective in participants aged >60 years, who showed a 71% relative risk reduction in diabetes incidence compared to the overall 58% reduction. This is particularly noteworthy because older adults are often assumed to be less responsive to lifestyle changes. In contrast, metformin was most effective in younger participants (age 25-44) and those with highest BMI (>=35 kg/m2). This has policy implications: intensive lifestyle programs may be particularly valuable for older pre-diabetic individuals."
   },
   {
     id: 40,
-    question: "Under NPCDCS, NCD clinics have been established at which levels of the health system for diabetes and hypertension management?",
+    question: "Under Ayushman Bharat - Health and Wellness Centers (AB-HWCs), diabetes screening and management have been integrated. Which specific service delivery model is used for NCD management at HWCs?",
     options: [
-      "Only at district hospitals (DH)",
-      "At Community Health Centers (CHC) and District Hospitals (DH)",
-      "At Primary Health Centers (PHC), CHC, and DH",
-      "At sub-centers, PHC, CHC, and DH"
+      "HWCs only provide referral slips for diabetes; all management occurs at district hospitals",
+      "Community Health Officers (CHOs/mid-level health providers) at HWCs screen, initiate treatment for hypertension and uncomplicated diabetes, provide lifestyle counseling, and refer complicated cases to higher facilities through a population health management approach",
+      "HWCs only perform point-of-care HbA1c testing and report to district health offices",
+      "Diabetes management at HWCs is limited to distributing government-procured metformin without clinical assessment"
     ],
     answer: 1,
-    explanation: "Under NPCDCS, NCD clinics are established at Community Health Centers (CHC) and District Hospitals (DH). CHC-level NCD clinics provide basic diabetes and hypertension management services with access to essential medicines and basic investigations. District Hospital NCD clinics provide more comprehensive care including specialist consultation. Screening can be done at all levels including sub-centers and PHCs, but formal NCD management clinics are at CHC and DH levels. ASHAs and health workers perform opportunistic screening at community level."
+    explanation: "Ayushman Bharat-HWCs (now Pradhan Mantri Jan Arogya Yojana-HWC) deploy trained Community Health Officers (CHOs/nursing graduates with 6-month bridge course) who provide comprehensive primary care including: universal screening of adults >=30 years for hypertension and diabetes using CBAC, fasting blood glucose testing, basic counseling, initiation of first-line antihypertensives and metformin for uncomplicated cases, chronic disease registers, follow-up care, and teleconsultation linkage. The model aims to shift NCD management from hospitals to community level, covering 30 years+ population in 1.5 lakh HWCs nationally."
   },
   {
     id: 41,
-    question: "Population-based screening for diabetes under NPCDCS in India uses which primary screening tool at the community level?",
+    question: "The NPCDCS diabetes component specifies a referral pathway. How should a newly detected diabetes case identified during community screening by an ASHA be managed?",
     options: [
-      "Universal OGTT for all adults above 30 years",
-      "Indian Diabetes Risk Score (IDRS) for risk stratification, followed by blood glucose testing for high-risk individuals",
-      "Fasting blood glucose for all adults at annual health check",
-      "HbA1c testing at sub-center level using point-of-care devices"
+      "ASHA should initiate metformin therapy and monitor at village level",
+      "Positive screening cases are referred to ANM at sub-center for confirmatory blood glucose, then to PHC Medical Officer for diagnosis and management initiation, with complicated cases referred to CHC or district hospital",
+      "All positive screening cases must be directly referred to district hospital NCD clinic",
+      "ASHA performs OGTT at the village level for confirmatory diagnosis"
     ],
     answer: 1,
-    explanation: "NPCDCS uses a targeted screening approach. The Indian Diabetes Risk Score (IDRS), developed by Dr. V. Mohan at Madras Diabetes Research Foundation, is used for community-level risk stratification. IDRS uses 4 parameters: age, waist circumference, physical activity, and family history. Score >=60 indicates high risk. High-risk individuals are referred for blood glucose testing. This prevents the need for universal blood testing of the entire population and directs resources to those most at risk."
+    explanation: "The NPCDCS referral pathway for diabetes: ASHA performs CBAC/risk assessment and capillary blood glucose screening at village level. Those with high risk or elevated glucose are referred to the sub-center ANM for initial assessment. ANM refers to PHC Medical Officer for confirmatory diagnosis (fasting glucose) and initiation of management. Complicated diabetes (with renal/cardiac complications, need for insulin, etc.) is referred to CHC NCD clinic. Those needing specialist care, advanced investigations, or surgical interventions go to district hospital. This tiered system aims to decentralize uncomplicated diabetes management to PHC level."
   },
   {
     id: 42,
-    question: "Diabetes Self-Management Education and Support (DSMES) is a cornerstone of diabetes care. According to evidence, at which critical time points should DSMES be provided?",
+    question: "Diabetes Self-Management Education (DSME) programs in community settings in India have been evaluated. Which structured DSME model has shown effectiveness in improving glycemic outcomes in Indian studies?",
     options: [
-      "Only at the time of initial diabetes diagnosis",
-      "At diagnosis, annually, when complications arise, and during transitions in care or life changes",
-      "Only when the patient is non-adherent to medication",
-      "Annually in group settings regardless of individual patient needs"
+      "One-time group education session at diagnosis is sufficient for sustained glycemic improvement",
+      "Structured peer-led group education combined with individual counseling sessions (similar to DESMOND or X-PERT models adapted for India) has shown HbA1c reductions of 0.5-1.5% in Indian RCTs",
+      "Individual physician counseling during 5-minute consultations has the strongest evidence",
+      "DSME is not effective in India because of low health literacy"
     ],
     answer: 1,
-    explanation: "DSMES should be provided at four critical time points (ADA Standards of Care): (1) At diagnosis of diabetes, (2) Annually and/or when treatment goals are not met, (3) When complications develop or health status changes that influence self-management, and (4) During transitions in care (hospitalization, new care setting). Key DSMES components include: healthy eating, being active, monitoring, taking medication, problem solving, reducing risks, and healthy coping. DSMES reduces HbA1c by approximately 0.5-1%."
+    explanation: "Indian adaptation studies of structured DSME programs (including adaptations of DESMOND, Look AHEAD education components, and ICMR-funded education programs) show HbA1c reductions of 0.5-1.5% when delivered as structured peer-led group education with individual follow-up. Studies from CMC Vellore, JIPMER, and AIIMS demonstrate effectiveness across educational levels. Key adaptations for India include vernacular language delivery, culturally relevant dietary counseling (rice-based diet, festival foods), and family-inclusive sessions. Peer support models using trained community diabetes educators have shown sustainability advantages."
   },
   {
     id: 43,
-    question: "In India, which community health worker plays a key role in diabetes prevention and early detection at the village level under NPCDCS?",
+    question: "mHealth interventions for diabetes have been studied in India. The ICMR-funded study on mobile health for diabetes management ('mDiabetes' initiative) reported which finding?",
     options: [
-      "Auxiliary Nurse Midwife (ANM) at sub-center",
-      "Accredited Social Health Activist (ASHA) who performs opportunistic screening and facilitates referrals",
-      "Community Health Officer (CHO) at Health and Wellness Center",
-      "Multipurpose Worker (MPW) at PHC"
+      "mHealth interventions had no significant impact on HbA1c in Indian settings",
+      "IVR (Interactive Voice Response)-based health messaging in local languages improved medication adherence and reduced HbA1c by approximately 0.5-1% in community-based Type 2 diabetics",
+      "Smartphone app-based interventions were most effective, reducing HbA1c by 2% in all populations",
+      "mHealth was only effective in urban, educated, smartphone-using patients aged below 40"
     ],
     answer: 1,
-    explanation: "ASHAs (Accredited Social Health Activists) are the frontline community health workers in the NPCDCS for NCD screening. They are trained to use the Indian Diabetes Risk Score (IDRS) to identify high-risk individuals, measure blood pressure, check random blood glucose using glucometers, and refer high-risk individuals to higher health facilities. Under Ayushman Bharat - Health and Wellness Centers, Community Health Officers (CHOs) also play a significant role in NCD management at the primary care level."
+    explanation: "ICMR and WHO India-supported mDiabetes and related mHealth interventions in India using IVR technology (pre-recorded health messages in local language delivered to basic mobile phones) showed improvements in medication adherence, dietary practices, and HbA1c reductions of approximately 0.5-1% in community-based studies. IVR was preferred over SMS in populations with low literacy. Studies from Karnataka, Tamil Nadu, and Maharashtra demonstrated feasibility. The WHO mDiabetes program deployed in India as part of the BeHe@lthy BeMobile initiative used SMS-based behavioral messages and showed improvements in self-care behaviors."
   },
   {
     id: 44,
-    question: "mHealth interventions for diabetes management in India have shown promising results. Which of the following mHealth modalities has the STRONGEST evidence for improving HbA1c in low-resource settings?",
+    question: "ICMR's research priorities for diabetes in India include which of the following specific epidemiological research gaps identified in policy documents?",
     options: [
-      "Wearable fitness tracker apps for step counting",
-      "SMS-based health messaging and reminders for medication adherence and follow-up",
-      "Telemedicine video consultation replacing all in-person visits",
-      "Social media diabetes support groups without clinical oversight"
+      "Research on Type 1 diabetes insulin regimens and pharmacokinetics",
+      "Comprehensive surveillance systems for tracking diabetes incidence (not just prevalence), studies on diabetes in tribal populations, implementation research on the effectiveness of community-based prevention programs, and biomarker studies for early diabetes detection",
+      "Drug discovery for novel oral hypoglycemic agents for Indian populations",
+      "Genomic sequencing of all Type 2 diabetics in India for personalized medicine"
     ],
     answer: 1,
-    explanation: "SMS-based health messaging has the strongest evidence for diabetes management in low-resource settings like India, as it works on basic mobile phones without smartphones or internet connectivity. Multiple RCTs from India and other LMICs have shown that structured SMS reminders for medication adherence, glucose monitoring, dietary advice, and follow-up appointments improve HbA1c. Examples include the WellDoc system and various Indian studies. The Digital Health for Diabetes program by ICMR has explored SMS and IVR (Interactive Voice Response) technologies for scalable diabetes support."
+    explanation: "ICMR's NCD research agenda and the National Diabetes Strategic Action Plan (NDSAP) identify key gaps: (1) Lack of incidence data (only prevalence studies exist - ICMR-INDIAB type studies) requiring prospective cohorts; (2) Paucity of data from tribal, hilly, and northeastern populations; (3) Implementation research evaluating real-world effectiveness of NPCDCS and HWC-based diabetes programs; (4) Low-cost biomarker studies for early detection; (5) Research on diabetes in pregnancy burden; and (6) Cost-effectiveness analyses of different screening strategies. These priorities guide ICMR's intramural and extramural research funding for NCDs."
   },
   {
     id: 45,
-    question: "ICMR guidelines for management of Type 2 diabetes in India recommend which drug as first-line therapy in addition to lifestyle modifications, aligning with international guidelines?",
+    question: "Yoga intervention studies for Type 2 diabetes in India have been conducted by AIIMS and other institutions. From an epidemiological research perspective, which methodological limitation has been most commonly cited in systematic reviews of yoga and diabetes trials from India?",
     options: [
-      "Sulfonylurea (glimepiride) due to low cost",
-      "Metformin (unless contraindicated)",
-      "DPP-4 inhibitor (sitagliptin) due to low hypoglycemia risk",
-      "Alpha-glucosidase inhibitor (acarbose) due to suitability for Indian carbohydrate-rich diet"
+      "Yoga interventions were too short to show any metabolic effects",
+      "Most Indian yoga-diabetes trials suffer from small sample sizes, lack of adequate control groups (waitlist or active exercise comparison), lack of allocation concealment, and high dropout rates - limiting internal validity",
+      "Yoga trials only enrolled Type 1 diabetics making findings inapplicable to Type 2 diabetes",
+      "Yoga trials used non-standardized HbA1c measurement making comparisons impossible"
     ],
     answer: 1,
-    explanation: "ICMR guidelines (RSSDI/Indian guidelines) recommend metformin as first-line pharmacotherapy for Type 2 diabetes in addition to lifestyle modifications, consistent with ADA, EASD, and WHO guidelines. Metformin is preferred due to: proven efficacy, safety profile, cardiovascular benefits (UKPDS), weight neutrality, low cost, and wide availability. It is contraindicated in eGFR <30 mL/min, severe liver disease, and should be used cautiously in eGFR 30-45. Indian patients often have lower BMI but still benefit from metformin."
+    explanation: "Systematic reviews of yoga and diabetes RCTs from India (Singh et al., Thind et al., Innes & Selfe) consistently identify methodological limitations: (1) Small sample sizes (many <50 participants), limiting statistical power; (2) Inadequate control groups - comparison with sedentary controls rather than matched exercise programs overestimates yoga-specific benefits; (3) Poor allocation concealment and blinding (impossible to blind participants to yoga); (4) Short duration (most <3 months); (5) High dropout rates in control groups; and (6) Lack of standardization of yoga protocols across studies. Cochrane reviews call for larger, adequately powered, multi-center RCTs with active exercise comparators."
   },
   {
     id: 46,
-    question: "Evidence from randomized controlled trials on yoga and diabetes shows that yoga interventions can improve glycemic control. What is the most robust finding from meta-analyses on yoga and Type 2 diabetes?",
+    question: "The Barker hypothesis (Developmental Origins of Health and Disease - DOHaD) relates to diabetes epidemiology. What is the key epidemiological evidence supporting this hypothesis in the Indian context?",
     options: [
-      "Yoga reduces HbA1c by approximately 1.0-1.5% and can replace oral hypoglycemic agents",
-      "Yoga reduces HbA1c by approximately 0.3-0.8%, fasting glucose, and improves lipid profiles in Type 2 diabetes",
-      "Yoga has no significant effect on glycemia but improves psychological well-being only",
-      "Yoga is only effective in patients with BMI <25 kg/m2"
+      "Wealthier Indian states have lower diabetes rates, confirming economic development prevents diabetes",
+      "Low birth weight Indian infants who gain weight rapidly in childhood show disproportionately high rates of insulin resistance, metabolic syndrome, and Type 2 diabetes - the 'thin-fat Indian' phenotype representing in-utero programming",
+      "The hypothesis has been refuted in the Indian context because all Indian populations show the same diabetes risk regardless of birth weight",
+      "Only maternal diabetes (GDM) at birth predicts offspring diabetes; other in-utero factors are not significant"
     ],
     answer: 1,
-    explanation: "Meta-analyses of RCTs (including Innes & Selfe 2016, and subsequent reviews) show that yoga interventions in Type 2 diabetes reduce HbA1c by approximately 0.3-0.8%, reduce fasting blood glucose, improve lipid profiles (reduced LDL, triglycerides), reduce body weight, and improve blood pressure. AIIMS, Morarji Desai National Institute of Yoga, and other Indian institutions have conducted trials. However, yoga should be considered adjunctive therapy, not a replacement for standard diabetes management. Effect sizes are modest compared to pharmacotherapy."
+    explanation: "The Barker/DOHaD hypothesis has strong Indian evidence: Indian babies have a characteristic 'thin-fat' phenotype - low birth weight with disproportionately high body fat percentage and visceral adiposity even at low BMI. Yajnik et al.'s Pune Children's Study and Pune Maternal Nutrition Study showed that low birth weight Indian infants who underwent 'catch-up' growth had markedly higher insulin resistance and metabolic risk. The Indian epigenome studies suggest in-utero nutrition programs adipogenesis and glucose metabolism. This creates an intergenerational cycle: malnourished mothers produce low-birth-weight thin-fat babies who develop diabetes in adulthood."
   },
   {
     id: 47,
-    question: "Metabolic/bariatric surgery for diabetes (metabolic surgery) is recommended for Type 2 diabetes patients who meet which criteria according to major diabetes societies including IDF?",
+    question: "GDM as a risk factor for Type 2 diabetes in the mother: population-based cohort studies show that the risk of progression from GDM to Type 2 diabetes is modified by which factor most strongly?",
     options: [
-      "BMI >=25 kg/m2 with uncontrolled diabetes despite one oral agent",
-      "BMI >=40 kg/m2 (or >=35 with obesity-related comorbidities) in adults with inadequately controlled Type 2 diabetes, with lower BMI thresholds (>=27.5 with comorbidities) considered for Asians",
-      "BMI >=30 kg/m2 with any type of diabetes regardless of glycemic control",
-      "BMI >=35 kg/m2 only in patients failing all available pharmacotherapy including GLP-1 RAs"
+      "The sex of the offspring born during the GDM pregnancy",
+      "Postpartum weight retention and breastfeeding - women who retain excess weight and do not breastfeed have substantially higher progression rates",
+      "The specific antidiabetic drug used to treat GDM during pregnancy",
+      "The gestational week at which GDM was first diagnosed"
     ],
     answer: 1,
-    explanation: "IDF (2011) and ADA recommend metabolic surgery for Type 2 diabetes with: BMI >=40 kg/m2 regardless of glycemic control; BMI 35-39.9 kg/m2 with inadequate glycemic control despite optimal medical therapy. For Asian populations: BMI >=37.5 (or >=32.5 with comorbidities) with lower thresholds due to Asian BMI-related risk. IDF specifically notes that for Asians, thresholds of BMI >=27.5 kg/m2 with comorbidities may be considered. Roux-en-Y gastric bypass has the strongest evidence for diabetes remission (60-80% remission rates)."
+    explanation: "Prospective cohort studies on post-GDM women (including the HAPO follow-up study and the Nurses' Health Study cohort analyses) show that postpartum lifestyle factors strongly modify T2DM progression risk: women who retain excess postpartum weight have 2-4 times higher diabetes progression rates. Breastfeeding is associated with 50% lower risk of Type 2 diabetes progression in GDM women (protective through improved insulin sensitivity and weight management). ADA and ICMR recommend intensive lifestyle intervention post-partum for GDM women, with OGTT at 4-12 weeks and annual diabetes screening for life. Metformin can reduce progression in post-GDM women with ongoing pre-diabetes."
   },
   {
     id: 48,
-    question: "A woman diagnosed with GDM during pregnancy has a long-term risk of developing Type 2 diabetes. What is the approximate risk of developing Type 2 diabetes within 10 years of GDM diagnosis?",
-    options: [
-      "5-10%",
-      "15-20%",
-      "35-70%",
-      "80-90%"
-    ],
+    question: "The Finnish Diabetes Prevention Study (DPS) compared lifestyle intervention to control in individuals with IGT. What was the relative risk reduction in diabetes incidence achieved in the Finnish DPS?",
+    options: ["28%", "42%", "58%", "72%"],
     answer: 2,
-    explanation: "Women with GDM have a 35-70% lifetime risk of developing Type 2 diabetes, with most studies showing approximately 50% risk within 5-10 years post-partum. ADA recommends post-partum OGTT at 4-12 weeks for all GDM women, then every 1-3 years. The child born to a GDM mother also has increased risk of obesity, impaired glucose tolerance, and Type 2 diabetes later in life. Breastfeeding, weight management, and physical activity can reduce the mother's progression risk. This intergenerational cycle makes GDM prevention and management a public health priority."
+    explanation: "The Finnish Diabetes Prevention Study (Tuomilehto et al., NEJM, 2001) showed a 58% relative risk reduction in diabetes incidence in the lifestyle intervention group compared to the control group over a mean follow-up of 3.2 years. The lifestyle intervention targeted weight loss >=5%, dietary fat <30% of energy, saturated fat <10% of energy, fiber >=15g/1000kcal, and physical activity >=30 min/day. This 58% reduction is identical to the US DPP lifestyle intervention result (also 58%), strengthening confidence in lifestyle intervention effectiveness across different populations and contexts."
   },
   {
     id: 49,
-    question: "The Finnish Diabetes Prevention Study (DPS) demonstrated that lifestyle intervention could prevent Type 2 diabetes. What were the main lifestyle intervention targets in the Finnish DPS?",
+    question: "Community health worker (ASHA) training for NCD activities under NPCDCS includes specific competencies for diabetes. Which of the following accurately reflects what ASHAs are trained and authorized to do for diabetes in India?",
     options: [
-      "Weight loss of >=5%, fat intake <30% of energy, saturated fat <10% of energy, fiber >=15g/1000kcal, physical activity >=30 min/day",
-      "Weight loss of >=10%, complete elimination of simple sugars, and aerobic exercise 60 min/day",
-      "Low-carbohydrate diet (<50g/day), resistance training 3x/week, and BMI target of <25",
-      "Caloric restriction to 1200 kcal/day, Mediterranean diet, and 10,000 steps per day"
+      "ASHAs are trained to diagnose diabetes, prescribe metformin, and manage uncomplicated cases independently",
+      "ASHAs are trained to identify high-risk individuals using CBAC/IDRS, measure capillary blood glucose using glucometers, counsel on diabetes prevention (diet, physical activity), ensure treatment adherence for known diabetics, and facilitate timely referrals - they do not prescribe medications",
+      "ASHAs are only trained for maternal and child health; NCD activities are exclusively done by ANMs",
+      "ASHAs measure HbA1c using point-of-care devices and report directly to district health offices"
     ],
-    answer: 0,
-    explanation: "Finnish DPS lifestyle intervention targets: (1) Weight reduction of >=5%, (2) Total fat intake <30% of daily energy, (3) Saturated fat <10% of daily energy, (4) Dietary fiber >=15g per 1000 kcal, (5) Moderate-intensity physical activity >=30 minutes per day. These were individualized goals with regular dietary counseling. The intervention achieved 58% relative risk reduction in diabetes incidence over mean 3.2 years. Weight loss was the dominant mediating factor. These targets are similar to DPP and have been adopted in numerous national prevention programs."
+    answer: 1,
+    explanation: "Under NPCDCS and the updated NCD package for ASHAs, their competencies include: (1) CBAC administration for NCD risk stratification; (2) Random capillary blood glucose testing using basic glucometers (after competency training); (3) Counseling on healthy diet, physical activity, tobacco cessation for diabetes prevention; (4) Adherence support and treatment compliance monitoring for known diabetics; (5) Facilitating referrals and return-to-care for defaulters; and (6) Maintaining village-level NCD registers. They are not authorized to prescribe medications - this remains the domain of medical officers at PHC and above. ASHAs receive performance-based incentives for NCD screening activities."
   },
   {
     id: 50,
-    question: "The Diabetes Prevention Program (DPP) in the USA showed long-term benefits in the DPPOS (DPP Outcomes Study). Which of the following reflects the 15-year follow-up findings?",
+    question: "The lifestyle intervention component of the US DPP achieved its 58% diabetes risk reduction through which specific quantified lifestyle targets met by participants?",
     options: [
-      "Benefits of lifestyle intervention completely disappeared after 5 years, with equal diabetes rates in all groups",
-      "Lifestyle intervention group maintained significant diabetes delay (2-4 years), with all groups showing reduced microvascular complications compared to no intervention",
-      "Metformin group had better long-term outcomes than the lifestyle group at 15 years",
-      "The lifestyle group had higher cardiovascular mortality at 15 years due to excessive physical activity"
+      "10% weight loss and 300 minutes of moderate exercise per week were the two targets",
+      "7% weight loss from baseline and at least 150 minutes of moderate-intensity physical activity (e.g., brisk walking) per week were the two primary targets, achieved through 16 individual sessions with a lifestyle coach",
+      "Low-carbohydrate diet (<100g/day) and resistance training 3 times per week were the primary targets",
+      "5% weight loss and complete dietary fat elimination were the primary intervention targets"
     ],
     answer: 1,
-    explanation: "The DPPOS 15-year follow-up showed: All three groups (lifestyle, metformin, placebo) showed lower diabetes rates than expected for general population. Lifestyle intervention delayed diabetes onset by approximately 4 years compared to placebo; metformin delayed by 2 years. Importantly, all three randomized groups showed reduced microvascular complications (nephropathy and neuropathy), with the lifestyle and metformin groups having lower rates than the original placebo group. This suggests diabetes prevention translates into complication prevention. There was no difference in macrovascular outcomes, possibly due to underpowering."
+    explanation: "The US DPP lifestyle intervention had two primary goals: (1) At least 7% weight loss from baseline body weight through caloric reduction and increased physical activity; and (2) At least 150 minutes per week of moderate-intensity physical activity (equivalent to brisk walking). The intervention used 16 individual sessions with a trained lifestyle coach in the first 24 weeks, followed by monthly maintenance sessions. Diet goals included reduced total fat intake and increased fiber. The 7% weight loss goal (not 5% as in Finnish DPS or 10% as in many weight loss programs) was chosen as an achievable and meaningful threshold. Weight loss was the most important mediating factor for diabetes prevention."
   }
 ];
 

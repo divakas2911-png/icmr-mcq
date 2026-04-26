@@ -1,604 +1,604 @@
 const questions = [
   {
     id: 1,
-    question: "As per the Universal Immunization Programme (UIP) schedule in India, which of the following vaccines are given at birth?",
+    question: "Which of the following correctly lists all vaccines given to a newborn at birth under the Universal Immunization Programme (UIP) in India?",
     options: [
-      "BCG, OPV-0, Hepatitis B-1",
-      "BCG, OPV-0, Hepatitis B-1, Vitamin K",
-      "BCG, DPT, OPV-0",
-      "BCG, Hepatitis B-1, IPV"
+      "BCG, OPV-0, Hepatitis B birth dose",
+      "BCG, OPV-0, Hepatitis B birth dose, Vitamin K",
+      "BCG, Hepatitis B birth dose, IPV",
+      "BCG, OPV-0, Hepatitis B birth dose, IPV"
     ],
     answer: 0,
-    explanation: "At birth, UIP recommends BCG (1 dose), OPV-0 (zero dose), and Hepatitis B-1 (first dose). Vitamin K is not part of the UIP schedule. IPV is introduced later (at 6 and 14 weeks). DPT begins at 6 weeks."
+    explanation: "At birth, three vaccines are given under UIP: BCG (prevents tuberculosis), OPV-0 (zero dose of oral polio vaccine), and Hepatitis B birth dose. Vitamin K is a drug, not a vaccine. IPV is given at 6 weeks along with other primary series vaccines, not at birth."
   },
   {
     id: 2,
-    question: "Under the UIP schedule, the pentavalent vaccine (DPT + Hib + Hepatitis B) is given at which time points?",
+    question: "The pentavalent vaccine introduced in India's UIP is classified as which type of vaccine?",
     options: [
-      "6, 10, and 14 weeks",
-      "6, 10, 14 weeks and 16-24 months (booster)",
-      "6, 10, 14 weeks and 9 months",
-      "2, 4, and 6 months"
+      "Live attenuated combination vaccine",
+      "Killed/inactivated combination vaccine containing toxoid components",
+      "Subunit combination vaccine",
+      "Conjugate polysaccharide vaccine"
     ],
     answer: 1,
-    explanation: "Pentavalent vaccine (DPT + Hib + Hepatitis B) is given at 6, 10, and 14 weeks (primary series) and a booster is given at 16-24 months as DPT (not pentavalent). The booster at 16-24 months uses the DPT component only."
+    explanation: "Pentavalent vaccine combines Diphtheria toxoid + Tetanus toxoid + whole-cell killed Pertussis (DTP) + inactivated Hepatitis B surface antigen + conjugated Haemophilus influenzae type b (Hib). It is classified as an inactivated/killed combination vaccine with toxoid components. The Hib component specifically is a conjugate vaccine (polysaccharide coupled to a carrier protein)."
   },
   {
     id: 3,
-    question: "The Measles-Rubella (MR) vaccine under UIP is given at which ages?",
+    question: "Which temperature range must be maintained for oral polio vaccine (OPV) at state vaccine stores in India?",
     options: [
-      "9 months and 16-24 months",
-      "9 months only",
-      "12 months and 4-6 years",
-      "6 months and 12 months"
+      "+2 to +8 degrees Celsius",
+      "0 to +4 degrees Celsius",
+      "-15 to -25 degrees Celsius",
+      "-30 to -40 degrees Celsius"
     ],
-    answer: 0,
-    explanation: "MR vaccine is given at 9 months (first dose) and 16-24 months (second dose) under UIP. India transitioned from measles vaccine to MR vaccine as part of the measles-rubella campaign and subsequent routine immunization."
+    answer: 2,
+    explanation: "OPV is the most heat-sensitive vaccine in the UIP schedule. At state and regional vaccine stores, OPV must be stored at -15 to -25 degrees Celsius (frozen). At district and peripheral health facility (PHC/subcentre) level, OPV is stored at +2 to +8 degrees Celsius but only for the duration of the immunization session period. Freeze-sensitive vaccines such as DPT, TT, and Hepatitis B must never be frozen."
   },
   {
     id: 4,
-    question: "Which of the following correctly describes the recommended temperature for storage of vaccines in the cold chain under the UIP?",
+    question: "A Vaccine Vial Monitor (VVM) showing the inner square darker than the outer circle indicates which stage, and what action should be taken?",
     options: [
-      "0 to 4 degrees Celsius throughout the cold chain",
-      "+2 to +8 degrees Celsius at all levels except for freeze-sensitive vaccines",
-      "+2 to +8 degrees Celsius at district and subdistrict levels; -15 to -25 degrees Celsius at state level for OPV",
-      "+4 to +8 degrees Celsius universally"
+      "Stage 2 - vaccine is safe to use",
+      "Stage 3 - vaccine is approaching discard point but can still be used",
+      "Stage 4 - vaccine must be discarded immediately",
+      "Stage 1 - vaccine has been adequately refrigerated"
     ],
     answer: 2,
-    explanation: "In the UIP cold chain: OPV is stored at -15 to -25 degrees Celsius at state and regional levels. At district and subdistrict (PHC) levels, all vaccines including OPV are stored at +2 to +8 degrees Celsius. Freeze-sensitive vaccines (DPT, TT, Hepatitis B, DT) must never be frozen and are stored at +2 to +8 degrees Celsius."
+    explanation: "VVM has four stages. Stage 1: inner square much lighter than outer circle - safe to use. Stage 2: inner square slightly lighter - still safe, use soon. Stage 3: inner square matches outer circle - discard point reached, do not use. Stage 4: inner square darker than outer circle - vaccine must be discarded. The VVM tracks cumulative heat exposure; darkness of the inner square corresponds to accumulated heat damage."
   },
   {
     id: 5,
-    question: "Vaccine Vial Monitor (VVM) is a heat-sensitive label placed on vaccine vials. Which color change in VVM indicates that the vaccine SHOULD NOT be used?",
+    question: "Under the Open Vial Policy (OVP) in India's UIP, which vaccine CANNOT be used in subsequent immunization sessions after opening?",
     options: [
-      "The inner square is lighter than the outer circle",
-      "The inner square matches the outer circle in color",
-      "The inner square is darker than the outer circle",
-      "The inner square turns blue"
+      "DPT",
+      "Hepatitis B",
+      "OPV",
+      "BCG"
     ],
-    answer: 2,
-    explanation: "VVM works on cumulative heat exposure. The inner square darkens with heat exposure. When the inner square becomes darker than or matches the outer circle, the vaccine should NOT be used (discard point reached). As long as the inner square is lighter than the outer circle, the vaccine can be used if within expiry."
+    answer: 3,
+    explanation: "The Open Vial Policy allows multi-dose vials of OPV, DPT, TT, Hepatitis B, and liquid pentavalent vaccines to be used in subsequent sessions up to 4 weeks if stored properly, cap is intact, VVM has not reached discard point, and sterility is maintained. BCG is excluded from OVP because it is a live freeze-dried vaccine and reconstituted BCG must be discarded within 3-4 hours of reconstitution to prevent loss of viability."
   },
   {
     id: 6,
-    question: "The Open Vial Policy under UIP allows multi-dose vials of which vaccines to be used in subsequent sessions (up to 4 weeks) after opening?",
+    question: "According to the revised WHO/India AEFI classification system, a cluster of similar adverse events occurring at community level following vaccination with the same vaccine lot is classified as:",
     options: [
-      "OPV, BCG, and measles vaccines only",
-      "OPV, DPT, TT, Hepatitis B, and liquid pentavalent vaccines",
-      "All vaccines including BCG and measles-rubella",
-      "Only inactivated vaccines - DPT, TT, Hepatitis B"
+      "Vaccine product-related reaction",
+      "Vaccine quality defect-related reaction",
+      "Immunization error-related reaction",
+      "Immunization anxiety-related reaction"
     ],
     answer: 1,
-    explanation: "Open Vial Policy applies to OPV, DPT, TT, Hepatitis B, and liquid pentavalent vaccines - vaccines that meet WHO criteria (not live freeze-dried vaccines). BCG and MR vaccines (reconstituted) must be discarded within 4 hours of reconstitution. Reconstituted vaccines are excluded from open vial policy."
+    explanation: "The WHO 2013 revised AEFI classification defines a vaccine quality defect-related reaction as one caused by a defect in the vaccine product including its formulation or manufacturing. A cluster of cases with similar symptoms after the same lot or batch is a hallmark of a quality defect. Immunization error reactions are scattered and related to handling or administration technique. Anxiety reactions are individual psychogenic responses unrelated to vaccine chemistry."
   },
   {
     id: 7,
-    question: "Adverse Events Following Immunization (AEFI) surveillance in India classifies AEFI into which categories as per the WHO classification?",
+    question: "The Electronic Vaccine Intelligence Network (eVIN) in India primarily aims to:",
     options: [
-      "Minor, moderate, and major",
-      "Vaccine product-related, vaccine quality defect-related, immunization error-related, immunization anxiety-related, and coincidental",
-      "Local reactions, systemic reactions, and allergic reactions",
-      "Expected, unexpected, and coincidental"
+      "Digitize AEFI reporting and pharmacovigilance at national level",
+      "Provide real-time data on vaccine stocks and cold chain equipment status at all immunization points",
+      "Track immunization status of individual beneficiaries through biometric linking",
+      "Manage procurement and tendering of vaccines at the central government level"
     ],
     answer: 1,
-    explanation: "WHO (2012) classifies AEFI into five categories: (1) Vaccine product-related reaction, (2) Vaccine quality defect-related reaction, (3) Immunization error-related reaction (previously called programmatic error), (4) Immunization anxiety-related reaction, and (5) Coincidental event. India's AEFI surveillance follows this WHO classification."
+    explanation: "eVIN, implemented by UNDP in collaboration with MoHFW, digitizes vaccine stock management and cold chain temperature monitoring across all immunization points. It uses smartphones and a cloud-based dashboard to provide real-time data on vaccine stock levels and cold chain equipment performance, enabling timely replenishment and preventing stockouts or wastage. Individual beneficiary tracking is done under the U-WIN platform."
   },
   {
     id: 8,
-    question: "Electronic Vaccine Intelligence Network (eVIN) was launched in India to address which key challenge in immunization?",
+    question: "Mission Indradhanush was launched in December 2014 with the primary target of achieving what level of full immunization coverage, and by when?",
     options: [
-      "Training of health workers in injection technique",
-      "Real-time tracking of vaccine stocks and cold chain temperature monitoring",
-      "Online registration of children for immunization",
-      "Surveillance of AEFI at the national level"
+      "75% by 2017",
+      "90% by 2018",
+      "85% by 2020",
+      "95% by 2022"
     ],
     answer: 1,
-    explanation: "eVIN (Electronic Vaccine Intelligence Network) was launched in India to digitize vaccine stock management and cold chain temperature monitoring in real time. It uses smartphones and a cloud-based system to track vaccine inventory and temperatures across the cold chain, preventing stockouts and vaccine wastage."
+    explanation: "Mission Indradhanush was launched in December 2014 with the goal of achieving at least 90% full immunization coverage of all children and pregnant women by 2018. It targeted low-performing districts and urban areas with high numbers of unvaccinated or partially vaccinated children. Intensified Mission Indradhanush (IMI) 2.0 and IMI 3.0 (Har Ghar Dastak) were subsequent phases extending this coverage push."
   },
   {
     id: 9,
-    question: "Mission Indradhanush was launched in India in which year, and what was its primary objective?",
+    question: "Pneumococcal Conjugate Vaccine (PCV) was introduced into India's UIP in 2017 in select states. What schedule does it follow?",
     options: [
-      "2012, to introduce new vaccines in UIP",
-      "2014, to achieve 90% immunization coverage for all children by 2020",
-      "2015, to immunize children and pregnant women who were missed or left out",
-      "2016, to eliminate polio and measles from India"
+      "6-10-14 weeks with booster at 9 months",
+      "6 and 14 weeks with booster at 9 months",
+      "6 and 10 weeks with booster at 15 months",
+      "9 months and 15 months only"
     ],
-    answer: 2,
-    explanation: "Mission Indradhanush was launched on December 25, 2014 (implemented from April 2015) with the aim to immunize all unvaccinated and partially vaccinated children (0-2 years) and pregnant women with all available vaccines under UIP. The target was to achieve at least 90% full immunization coverage by 2020. Intensified Mission Indradhanush (IMI) was launched in 2017 with a more focused approach."
+    answer: 1,
+    explanation: "PCV was introduced in India's UIP in 2017 in 5 states (Himachal Pradesh, Bihar, Madhya Pradesh, Rajasthan, Uttar Pradesh) using a 2+1 schedule: primary doses at 6 weeks and 14 weeks, and a booster at 9 months. It has since been progressively expanded nationally. The 6-10-14 week schedule is used for pentavalent and IPV primary series, not for PCV."
   },
   {
     id: 10,
-    question: "Pneumococcal Conjugate Vaccine (PCV) was introduced into India's UIP schedule at which time points?",
+    question: "As per NFHS-5 (2019-21), what was the percentage of children aged 12-23 months who were fully immunized in India, and how did this compare to NFHS-4?",
     options: [
-      "6, 14 weeks, and 9 months",
-      "6, 10, 14 weeks, and 15 months",
-      "9 months and 15 months only",
-      "6, 10, 14 weeks with no booster"
+      "62.0% in NFHS-5, up from 44.0% in NFHS-4",
+      "76.4% in NFHS-5, up from 62.0% in NFHS-4",
+      "83.6% in NFHS-5, up from 76.4% in NFHS-4",
+      "90.0% in NFHS-5, up from 76.4% in NFHS-4"
     ],
-    answer: 0,
-    explanation: "PCV in India's UIP is given on a 2+1 schedule: at 6 weeks, 14 weeks (primary doses), and 9 months (booster dose). PCV was first introduced in select high-burden states in 2017 and has been progressively scaled up nationally. It protects against pneumococcal pneumonia and meningitis."
+    answer: 1,
+    explanation: "NFHS-5 (2019-21) reported that 76.4% of children aged 12-23 months in India were fully immunized, a significant increase from 62.0% in NFHS-4 (2015-16). Full immunization for NFHS survey purposes is defined as receiving BCG, three doses each of DPT and OPV, and one dose of measles-containing vaccine. This 14.4 percentage point increase is attributed partly to Mission Indradhanush interventions."
   },
   {
     id: 11,
-    question: "Rotavirus vaccine was introduced in India's UIP and is given at which schedule?",
+    question: "In immunization program analysis, the dropout rate between DPT1 and DPT3 is calculated using which formula?",
     options: [
-      "6, 10, and 14 weeks (3 doses orally)",
-      "6 and 14 weeks (2 doses)",
-      "9 months and 15 months",
-      "Birth, 6, and 14 weeks"
+      "(DPT1 - DPT3) / DPT3 x 100",
+      "(DPT1 - DPT3) / DPT1 x 100",
+      "(DPT3 - DPT1) / DPT1 x 100",
+      "(DPT1 - DPT3) / Target population x 100"
     ],
-    answer: 0,
-    explanation: "Rotavirus vaccine (Rotavac - indigenously developed by Bharat Biotech) was introduced in India's UIP in 2016. It is given orally at 6, 10, and 14 weeks (3 doses). It was first rolled out in 4 states and progressively expanded to all states."
+    answer: 1,
+    explanation: "Dropout rate = (DPT1 doses - DPT3 doses) / DPT1 doses x 100. This measures the proportion of children who started the vaccine series but did not complete it. A dropout rate greater than 10% indicates a significant program problem. Left-out rate = (target - DPT1) / target x 100, measuring those never reached by the program. Together, dropout and left-out rates diagnose different types of program failure and guide targeted interventions."
   },
   {
     id: 12,
-    question: "Inactivated Polio Vaccine (IPV) was introduced into the UIP schedule in India as which type of schedule?",
+    question: "Which of the following correctly defines a 'fully immunized child' for survey-based coverage assessment (NFHS) for a child aged 12-23 months?",
     options: [
-      "Full IPV replacing OPV completely",
-      "Sequential schedule - 2 doses IPV followed by OPV",
-      "IPV given as a fractional intradermal dose at 6 and 14 weeks along with OPV",
-      "Single IPV dose at 6 weeks followed by OPV at all other time points"
+      "BCG + 3 doses OPV + 3 doses DPT + Measles",
+      "BCG + 3 doses OPV + 3 doses DPT + Measles + Hepatitis B",
+      "BCG + 3 doses OPV + 3 doses Pentavalent + Measles + Vitamin A",
+      "BCG + 3 doses OPV + 3 doses DPT + 3 doses Hepatitis B + Measles"
     ],
-    answer: 2,
-    explanation: "India uses a fractional dose IPV (fIPV) intradermal schedule - 0.1 ml intradermally at 6 weeks and 14 weeks, in addition to the regular OPV doses. This was necessitated by global shortage of IPV. fIPV (1/5th of a full dose given intradermally) produces equivalent immune response to full IM dose due to the immunological richness of the intradermal route."
+    answer: 0,
+    explanation: "For NFHS and coverage survey purposes, a fully immunized child (aged 12-23 months) is one who has received BCG + 3 doses OPV + 3 doses DPT + 1 dose measles-containing vaccine by 12 months of age. While current UIP includes many additional vaccines (rotavirus, PCV, fIPV, MR), the standard NFHS benchmark used to report the 76.4% coverage figure remains this traditional definition."
   },
   {
     id: 13,
-    question: "Herd immunity (community immunity) threshold is calculated by which formula?",
+    question: "The herd immunity threshold for measles is approximately 92-95% because measles has which basic reproduction number (R0)?",
     options: [
-      "1 - (1/R0)",
-      "1/R0",
-      "1 - R0",
-      "(R0 - 1)/R0"
+      "R0 of 2-4",
+      "R0 of 5-7",
+      "R0 of 12-18",
+      "R0 of 20-25"
     ],
-    answer: 3,
-    explanation: "Herd immunity threshold = 1 - 1/R0 = (R0 - 1)/R0. Both expressions are mathematically equivalent: 1 - 1/R0 = (R0-1)/R0. For measles (R0 = 12-18), herd immunity threshold is approximately 92-95%. For polio (R0 = 5-7), threshold is approximately 80-86%. Higher R0 requires higher coverage to achieve herd immunity."
+    answer: 2,
+    explanation: "Herd immunity threshold (HIT) = 1 - (1/R0). Measles has R0 of 12-18, one of the highest of any infectious disease, giving HIT approximately 93-95%. This explains why 95% vaccination coverage is needed to prevent measles outbreaks. For comparison: polio R0 is 5-7 (HIT approximately 80-86%), seasonal influenza R0 is 2-3 (HIT approximately 50-67%), COVID-19 original strain R0 approximately 2-3 (HIT approximately 50-67%)."
   },
   {
     id: 14,
-    question: "Which of the following best describes the primary immune response compared to the secondary immune response?",
+    question: "The primary immune response differs from the secondary (anamnestic) immune response in that the primary response has which characteristics?",
     options: [
-      "Primary response is faster, produces more IgG, and has longer duration",
-      "Secondary response has a longer lag phase, predominantly IgM, and lower antibody titres",
-      "Primary response has a longer lag phase (7-14 days), predominantly IgM, lower peak antibody titres, and shorter duration",
-      "Primary and secondary responses are identical in kinetics but differ only in antibody class"
+      "Shorter lag phase, higher antibody titers, and predominantly IgG",
+      "Longer lag phase, predominantly IgM, and lower antibody titers",
+      "Immediate onset, equal IgM and IgG, and longer duration",
+      "Shorter lag phase, predominantly IgM, and higher affinity antibodies"
     ],
-    answer: 2,
-    explanation: "Primary immune response: long lag phase (7-14 days), predominantly IgM initially then IgG, lower peak antibody titre, shorter duration of antibody. Secondary (anamnestic/booster) response: short lag phase (1-3 days), predominantly IgG (high affinity due to somatic hypermutation), higher peak titre, longer duration. This is why booster doses are given."
+    answer: 1,
+    explanation: "Primary immune response (first antigen exposure): longer lag phase (7-14 days), lower peak antibody titers, predominantly IgM initially followed by low-level IgG, shorter duration. Secondary immune response (re-exposure or booster): shorter lag phase (2-5 days), markedly higher antibody titers, predominantly high-affinity IgG (due to somatic hypermutation and class switching), longer duration from memory B and T cells. This immunological basis underpins the rationale for booster doses in vaccine schedules."
   },
   {
     id: 15,
-    question: "Which of the following vaccines provides passive immunization?",
+    question: "At the population level, which scenario is the most appropriate public health application of passive immunization?",
     options: [
-      "Hepatitis B vaccine",
-      "Hepatitis B immunoglobulin (HBIG)",
-      "BCG vaccine",
-      "Inactivated influenza vaccine"
+      "Mass immunization campaigns for long-term community-level herd protection",
+      "Post-exposure prophylaxis in unimmunized individuals requiring immediate protection",
+      "Routine immunization of neonates to establish long-term immune memory",
+      "Pre-exposure prophylaxis campaigns covering entire high-risk population groups"
     ],
     answer: 1,
-    explanation: "Passive immunization involves administration of pre-formed antibodies (immunoglobulins) - it provides immediate but temporary protection. HBIG is passive immunization. Active immunization involves stimulating the host's own immune system (vaccines). In post-exposure prophylaxis for Hepatitis B, both HBIG (passive) and Hepatitis B vaccine (active) are given simultaneously."
+    explanation: "Passive immunization provides immediate but temporary protection (weeks to months). Its primary population-level application is post-exposure prophylaxis for unimmunized or inadequately immunized individuals: rabies immunoglobulin after animal exposure, Hepatitis B immunoglobulin for unimmunized exposed persons, tetanus immunoglobulin for wound management. Active immunization (vaccines) is used for long-term protection and immune memory. Both can be co-administered in some post-exposure scenarios (e.g., rabies, Hepatitis B)."
   },
   {
     id: 16,
-    question: "What is the key immunological advantage of conjugate vaccines over plain polysaccharide vaccines in children under 2 years?",
+    question: "Why are plain polysaccharide vaccines less effective in children under 2 years compared to conjugate vaccines (such as PCV vs PPSV23)?",
     options: [
-      "Conjugate vaccines contain more antigens and are therefore more immunogenic",
-      "Conjugate vaccines convert T-independent antigen response to T-dependent response, allowing memory cell formation and immune response in children under 2 years",
-      "Polysaccharide vaccines are live attenuated while conjugate vaccines are inactivated",
-      "Conjugate vaccines do not require adjuvants while polysaccharide vaccines do"
+      "Polysaccharide vaccines induce only T-cell responses without antibody production",
+      "Polysaccharide antigens are T-independent and cannot generate immunological memory in infants",
+      "Conjugate vaccines contain more potent adjuvants that polysaccharide vaccines lack",
+      "Maternal antibodies specifically neutralize polysaccharide vaccines but not conjugate vaccines"
     ],
     answer: 1,
-    explanation: "Plain polysaccharide antigens are T-independent antigens - they stimulate B cells directly without T cell help, resulting in no immunological memory and poor response in children under 2 years (immature immune system). Conjugating polysaccharide to a carrier protein (like CRM197 or tetanus toxoid) converts it to a T-dependent antigen, enabling T cell help, memory B cell formation, and effective response in infants. Example: PCV vs PPSV23."
+    explanation: "Polysaccharide antigens are T-independent (TI-2) antigens that stimulate B cells directly without T-cell help, resulting in no immunological memory and poor immunogenicity in children under 2 years whose immune systems cannot mount effective T-independent responses. Conjugating the polysaccharide to a carrier protein (e.g., CRM197 or tetanus toxoid) converts it to a T-dependent antigen, enabling T-cell help, germinal center reactions, memory B-cell formation, and effective responses even in infants."
   },
   {
     id: 17,
-    question: "Aluminum salts (alum) are used as adjuvants in vaccines. What is the primary mechanism by which adjuvants enhance vaccine immunogenicity?",
+    question: "Vaccine efficacy (VE) in a randomized controlled trial is calculated using which formula?",
     options: [
-      "They directly kill pathogens in the vaccine preparation",
-      "They increase antigen persistence at injection site, stimulate innate immunity, and recruit antigen-presenting cells",
-      "They neutralize antibodies that might destroy the vaccine antigen",
-      "They convert T-independent antigens to T-dependent antigens"
+      "VE = (Risk in vaccinated - Risk in unvaccinated) / Risk in vaccinated x 100",
+      "VE = (Risk in unvaccinated - Risk in vaccinated) / Risk in unvaccinated x 100",
+      "VE = Relative risk of disease in vaccinated compared to unvaccinated x 100",
+      "VE = (Cases in vaccinated / Cases in unvaccinated) x 100"
     ],
     answer: 1,
-    explanation: "Adjuvants (from Latin 'adjuvare' - to help) enhance immunogenicity through: (1) Depot effect - slow release of antigen prolonging immune stimulation, (2) Activation of innate immunity via pattern recognition receptors, (3) Recruitment and activation of antigen-presenting cells (dendritic cells, macrophages), (4) Promoting antigen uptake and processing. Common adjuvants: Alum (aluminum hydroxide/phosphate), MF59 (squalene emulsion in influenza vaccines), AS04 (in HPV vaccine)."
+    explanation: "Vaccine Efficacy = (ARU - ARV) / ARU x 100 = (1 - Relative Risk) x 100, where ARU is the attack rate in unvaccinated and ARV is the attack rate in vaccinated groups. This measures the proportional reduction in disease risk under ideal RCT conditions. Vaccine effectiveness is the analogous real-world field measure using observational study designs and is generally somewhat lower than efficacy due to differences in population characteristics and conditions of use."
   },
   {
     id: 18,
-    question: "Which of the following is a TRUE contraindication to vaccination (not a false contraindication)?",
+    question: "In vaccine program evaluation, the Number Needed to Vaccinate (NNV) is the reciprocal of which measure?",
     options: [
-      "Mild upper respiratory tract infection with low-grade fever",
-      "Diarrhea in a child scheduled for OPV",
-      "Anaphylaxis to a previous dose of the same vaccine",
-      "Malnutrition in a child due for routine immunization"
+      "Vaccine efficacy",
+      "Relative risk reduction",
+      "Absolute risk reduction",
+      "Attributable risk in the vaccinated group"
     ],
     answer: 2,
-    explanation: "True contraindications to vaccination: (1) Anaphylaxis/severe allergic reaction to previous dose or vaccine component, (2) Severe combined immunodeficiency (SCID) - for live vaccines, (3) Encephalopathy within 7 days of DPT - contraindication to further pertussis vaccine. False contraindications (vaccines should still be given): mild fever/URTI, diarrhea (OPV is still given and dose repeated), malnutrition, antibiotic use, family history of adverse events, prematurity."
+    explanation: "NNV = 1 / Absolute Risk Reduction (ARR), where ARR = risk in unvaccinated minus risk in vaccinated. NNV represents the number of individuals who need to be vaccinated to prevent one additional case of disease. A lower NNV indicates a more efficient vaccine program. Example: if ARR = 8% (0.08), NNV = 1/0.08 = 12.5. NNV is more useful for public health cost-effectiveness decisions than relative risk reduction, which does not account for baseline risk."
   },
   {
     id: 19,
-    question: "Vaccine efficacy is defined as the percentage reduction in disease incidence in vaccinated versus unvaccinated individuals under ideal conditions. If attack rate in unvaccinated = 20% and attack rate in vaccinated = 5%, what is the vaccine efficacy?",
+    question: "In WHO's 30x7 cluster sampling methodology for vaccine coverage surveys, what do the numbers '30' and '7' represent?",
     options: [
-      "25%",
-      "75%",
-      "80%",
-      "15%"
+      "30 districts and 7 sub-districts per district",
+      "30 clusters selected by PPS sampling and 7 eligible children surveyed per cluster",
+      "30 households per village and 7 children per household",
+      "30 primary sampling units and 7 secondary sampling units per primary unit"
     ],
     answer: 1,
-    explanation: "Vaccine Efficacy = (ARU - ARV) / ARU x 100 = (20% - 5%) / 20% x 100 = 15/20 x 100 = 75%. Here ARU = attack rate in unvaccinated, ARV = attack rate in vaccinated. Vaccine efficacy is measured under ideal (RCT) conditions. Vaccine effectiveness is measured under real-world field conditions and is usually lower than efficacy."
+    explanation: "The WHO 30x7 EPI cluster survey involves selecting 30 clusters (typically villages or urban wards) using probability proportional to size (PPS) sampling, and then systematically surveying 7 children aged 12-23 months per cluster, giving a total sample of 210 children. This design provides estimates with acceptable confidence intervals and is the standard for immunization coverage surveys in low- and middle-income countries. It is used to assess both coverage levels and equity."
   },
   {
     id: 20,
-    question: "In a vaccine trial, the attack rate in the unvaccinated group is 10% and in the vaccinated group is 2%. What is the Absolute Risk Reduction (ARR) and Number Needed to Vaccinate (NNV)?",
+    question: "WHO identified vaccine hesitancy as one of the top 10 threats to global health in 2019. The WHO SAGE Working Group described vaccine hesitancy using which conceptual framework?",
     options: [
-      "ARR = 8%, NNV = 12.5",
-      "ARR = 80%, NNV = 1.25",
-      "ARR = 8%, NNV = 125",
-      "ARR = 2%, NNV = 50"
+      "The 4C model: Confidence, Complacency, Convenience, and Calculation",
+      "The 3C model: Confidence, Complacency, and Convenience",
+      "The VACC model: Vaccine Access, Affordability, Communication, and Capacity",
+      "The Health Belief Model applied to vaccine decision-making"
     ],
-    answer: 0,
-    explanation: "ARR (Absolute Risk Reduction) = ARU - ARV = 10% - 2% = 8% = 0.08. NNV (Number Needed to Vaccinate) = 1/ARR = 1/0.08 = 12.5. Relative Risk Reduction (RRR) = ARR/ARU = 8%/10% = 80% (this equals vaccine efficacy). NNV is the number of individuals who need to be vaccinated to prevent one case of disease. Lower NNV indicates more efficient vaccine."
+    answer: 1,
+    explanation: "The WHO SAGE Working Group on Vaccine Hesitancy developed the 3C model with three main determinants: (1) Confidence - trust in vaccine effectiveness and safety, and in the health system; (2) Complacency - low perceived risk of vaccine-preventable diseases; (3) Convenience - physical availability, affordability, and willingness to accept vaccination. Some later frameworks added a 4th C for Calculation (risk-benefit assessment), but the WHO SAGE canonical framework is the 3C model."
   },
   {
     id: 21,
-    question: "Which immunization coverage indicator is used to assess the performance of immunization programs and represents children who received all recommended vaccines in the first year of life?",
+    question: "Gavi, the Vaccine Alliance, supports vaccine introduction in countries with per capita GNI at or below approximately what threshold (World Bank classification)?",
     options: [
-      "DPT3 coverage",
-      "Full immunization coverage (FIC)",
-      "BCG coverage",
-      "OPV3 coverage"
+      "USD 1,000",
+      "USD 1,580",
+      "USD 2,000",
+      "USD 4,000"
     ],
     answer: 1,
-    explanation: "Full Immunization Coverage (FIC) is the key indicator for immunization program performance. A child is 'fully immunized' if they have received BCG, OPV (3 doses), DPT (3 doses), and measles vaccine by 12 months of age. In India, the National Family Health Survey (NFHS) and Coverage Evaluation Survey (CES) track FIC. DPT3/Penta3 coverage is used as a proxy indicator by WHO/UNICEF for global tracking."
+    explanation: "Gavi supports low-income countries with a GNI per capita at or below approximately USD 1,580 (based on current World Bank low-income country thresholds). Countries with GNI between this threshold and approximately USD 7,000 are in a co-financing and transition phase. India graduated from Gavi support in 2016-2017, reflecting its economic growth and strong domestic vaccine manufacturing capacity. Post-graduation, India funds its own UIP vaccines while continuing to support global vaccine access through its manufacturing sector."
   },
   {
     id: 22,
-    question: "Live attenuated vaccines are contraindicated in which of the following situations?",
+    question: "In vaccine clinical trials, what is the primary efficacy endpoint used in Phase III trials to determine whether a vaccine should be licensed?",
     options: [
-      "HIV-positive child with CD4 count above 25%",
-      "Child on low-dose inhaled corticosteroids",
-      "Pregnant women (for most live vaccines) and severely immunocompromised individuals",
-      "Children with egg allergy receiving MMR vaccine"
+      "Antibody titer levels at 28 days post-vaccination (immunogenicity endpoint)",
+      "T-cell immune response measured by ELISPOT assay",
+      "Incidence of laboratory-confirmed disease in vaccinated versus placebo group (clinical endpoint)",
+      "Reduction in disease severity scores in breakthrough infections"
     ],
     answer: 2,
-    explanation: "Live attenuated vaccines are contraindicated in: (1) Pregnancy (most live vaccines - MMR, varicella, yellow fever) due to theoretical risk to fetus, (2) Severely immunocompromised individuals (primary immunodeficiencies, HIV with low CD4, high-dose immunosuppressants, chemotherapy) due to risk of vaccine-strain disease. Exceptions: BCG and OPV are given to HIV-positive children with adequate CD4. Egg allergy is NOT a contraindication to MMR. Low-dose inhaled steroids are not a contraindication."
+    explanation: "Phase III vaccine trials are large-scale RCTs powered to detect a statistically significant reduction in disease incidence. The primary endpoint is a clinical outcome: laboratory-confirmed disease cases. Phase I trials assess safety and dose; Phase II assess immunogenicity and optimize dosing; Phase III assess efficacy against clinical disease in thousands of participants; Phase IV (post-marketing surveillance) assess real-world effectiveness, long-term safety, and rare adverse events at population scale."
   },
   {
     id: 23,
-    question: "Which of the following is a KILLED (inactivated) vaccine used in India's UIP?",
+    question: "The Brighton Collaboration was established to create what type of scientific resource for vaccine safety surveillance?",
     options: [
-      "BCG",
-      "OPV (oral polio vaccine)",
-      "Hepatitis B vaccine",
-      "MR (measles-rubella) vaccine"
+      "Standardized procurement and cold chain logistics protocols for low-income countries",
+      "Standardized case definitions for adverse events following immunization to enable international safety data comparison",
+      "WHO prequalification criteria for vaccine manufacturers and production facilities",
+      "Vaccine schedule harmonization recommendations for developing country programs"
     ],
-    answer: 2,
-    explanation: "Hepatitis B vaccine is a recombinant subunit vaccine (killed/inactivated type) containing HBsAg produced in yeast. Inactivated vaccines in UIP: Hepatitis B, IPV, DPT (DT, TT are toxoids - also inactivated). Live attenuated vaccines in UIP: BCG, OPV, MR (measles-rubella), rotavirus, yellow fever. Toxoids are chemically inactivated toxins (DT component of DPT, TT)."
+    answer: 1,
+    explanation: "The Brighton Collaboration (established 2000) is a global network that develops standardized case definitions and guidelines for collecting, analyzing, and presenting adverse events following immunization (AEFI). These standardized case definitions enable international comparison of vaccine safety data across trials and post-marketing surveillance programs, support regulatory decision-making, and are used by national AEFI committees worldwide including India's."
   },
   {
     id: 24,
-    question: "What is the recommended site and route for BCG vaccination in newborns under the UIP?",
+    question: "Post-marketing (Phase IV) surveillance of vaccines for safety signals in India is primarily coordinated through which mechanism?",
     options: [
-      "Right deltoid region, intradermal, 0.1 ml",
-      "Left deltoid region or left upper arm, intradermal, 0.05 ml in neonates (under 1 month) and 0.1 ml after 1 month",
-      "Outer aspect of thigh, subcutaneous, 0.1 ml",
-      "Right upper arm, subcutaneous, 0.05 ml"
+      "Indian Pharmacopoeia Commission (IPC) vaccine batch release testing",
+      "Pharmacovigilance Programme of India (PvPI) under CDSCO, alongside the national AEFI surveillance programme",
+      "ICMR Clinical Trial Registry and post-trial monitoring",
+      "Directorate General of Health Services (DGHS) hospital-based surveillance"
     ],
     answer: 1,
-    explanation: "BCG is given intradermally in the left upper arm (over the insertion of left deltoid muscle). Dose: 0.05 ml for neonates and infants under 1 month of age; 0.1 ml for children over 1 month. The intradermal route is essential - BCG given subcutaneously or IM does not produce the characteristic wheal and may cause abscess. A raised bleb of 7mm indicates correct intradermal injection."
+    explanation: "Post-marketing vaccine safety surveillance in India operates through two parallel systems: (1) Pharmacovigilance Programme of India (PvPI) under CDSCO, which handles spontaneous adverse drug reaction reporting including vaccines; and (2) the national AEFI surveillance programme under UIP, with district, state, and national AEFI committees reviewing and classifying cases. ICMR provides research and evidence synthesis support but does not coordinate routine pharmacovigilance."
   },
   {
     id: 25,
-    question: "The National Tuberculosis Elimination Programme (NTEP), formerly RNTCP, targets TB elimination in India by which year, using which definition of elimination?",
+    question: "Under NTEP, which indicator specifically measures the proportion of bacteriologically-confirmed TB patients who were smear or culture negative at the end of treatment AND on at least one previous occasion?",
     options: [
-      "2025, defined as zero TB cases",
-      "2030, defined as less than 10 cases per 100,000 population",
-      "2025, defined as less than 1 case per million population (incidence) and zero deaths",
-      "2030, defined as eradication (zero cases globally)"
+      "Treatment success rate",
+      "Cure rate",
+      "Case notification rate",
+      "Treatment completion rate"
     ],
-    answer: 2,
-    explanation: "India's National Strategic Plan for TB Elimination targets: TB-free India by 2025 (5 years ahead of SDG target of 2030). The definition of elimination is: incidence less than 1 case per million population per year (same as WHO global elimination target for 2050, but India aims to achieve it by 2025). This is an ambitious target given India's current burden (~210/100,000). NTEP uses the NIKSHAY portal for digital notification."
+    answer: 1,
+    explanation: "Cure rate specifically refers to bacteriologically-confirmed TB patients who were smear/culture negative at the end of treatment AND on at least one previous occasion during treatment. Treatment success rate is broader and includes both 'cured' and 'treatment completed' (for those without bacteriological confirmation at end of treatment). NTEP targets a treatment success rate of greater than 90% for new DS-TB cases. The distinction is important for program evaluation and is tracked in the Ni-kshay digital system."
   },
   {
     id: 26,
-    question: "Under NTEP (National TB Elimination Programme), the treatment regimen for new drug-susceptible TB (DS-TB) in adults is:",
+    question: "India's NACP monitoring framework tracks progress toward HIV epidemic control using which primary population-level surveillance indicator?",
     options: [
-      "2HRZE/4HR (2 months intensive phase + 4 months continuation phase)",
-      "2HRZES/1HRZE/5HRE",
-      "6 months of HRZE daily throughout",
-      "2HRZ/4HR"
+      "Number of people on antiretroviral therapy (ART) as a proxy for epidemic size",
+      "HIV prevalence among antenatal clinic (ANC) attendees through sentinel surveillance",
+      "CD4 count at ART initiation as an indicator of late diagnosis",
+      "Number of HIV testing and counselling centres operational per district"
     ],
-    answer: 0,
-    explanation: "NTEP treatment for new DS-TB: 2HRZE (Intensive Phase - 2 months) / 4HR (Continuation Phase - 4 months) = total 6 months. H=Isoniazid, R=Rifampicin, Z=Pyrazinamide, E=Ethambutol. India uses daily fixed-dose combination (FDC) tablets. DOTS (Directly Observed Treatment Short course) is the strategy. For MDR-TB, longer regimens with second-line drugs are used."
+    answer: 1,
+    explanation: "HIV prevalence among antenatal clinic (ANC) attendees through sentinel surveillance is the primary epidemiological indicator used in India's NACP to track HIV epidemic trends at population level. ANC attendees serve as a proxy for the general reproductive-age population. India's sentinel surveillance network covers both high-risk groups (HRG) and general population sites. The UNAIDS 95-95-95 targets measure the treatment cascade indicators, which complement the epidemiological surveillance."
   },
   {
     id: 27,
-    question: "The National AIDS Control Programme (NACP) in India is in which phase currently, and what is India's target for HIV?",
+    question: "The National Centre for Vector Borne Disease Control (NCVBDC) was established in 2021. Which combination of diseases does it cover?",
     options: [
-      "NACP-IV, target is to eliminate HIV by 2025",
-      "NACP-V, target is 95-95-95 by 2025 (95% of PLHIV know status, 95% of those on ART, 95% of those virally suppressed)",
-      "NACP-IV, target is zero new HIV infections by 2030",
-      "NACP-III, target is universal ART coverage by 2020"
+      "Malaria and filariasis only",
+      "Malaria, filariasis, kala-azar, dengue, chikungunya, Japanese encephalitis, and Zika",
+      "All vector-borne diseases including rabies and leptospirosis",
+      "Malaria, filariasis, kala-azar, dengue, and tuberculosis"
     ],
     answer: 1,
-    explanation: "India is currently under NACP-V (2021-2026), implementing the UNAIDS 95-95-95 targets by 2025: 95% of all PLHIV (People Living with HIV) know their HIV status, 95% of those diagnosed receive ART, and 95% of those on ART achieve viral suppression. This replaces the earlier 90-90-90 target. NACO (National AIDS Control Organization) under Ministry of Health implements NACP."
+    explanation: "NCVBDC (formed in 2021 by renaming NVBDCP) covers: Malaria, Lymphatic Filariasis, Kala-azar (Visceral Leishmaniasis), Dengue, Chikungunya, Japanese Encephalitis (JE), and Zika virus disease. Rabies (transmitted by animal bites, not arthropod vectors) is handled under a separate National Rabies Control Programme. Leptospirosis is managed under state programs. NCVBDC coordinates with state vector control programs and ICMR for research support."
   },
   {
     id: 28,
-    question: "The National Vector Borne Disease Control Programme (NVBDCP) has been reorganized as NCVBDC. Which of the following diseases does NCVBDC NOT cover?",
+    question: "India achieved national leprosy elimination in 2005. The elimination criterion is defined as prevalence below which threshold?",
     options: [
-      "Malaria",
-      "Dengue",
-      "Kala-azar (Visceral Leishmaniasis)",
-      "Rabies"
+      "1 case per 10,000 population at national level",
+      "1 case per 100,000 population at national level",
+      "1 case per 10,000 population at district level",
+      "Zero new cases of grade-2 disability nationally"
     ],
-    answer: 3,
-    explanation: "NCVBDC (National Centre for Vector Borne Diseases Control) covers: Malaria, Dengue, Chikungunya, Japanese Encephalitis (JE), Lymphatic Filariasis, Kala-azar (Visceral Leishmaniasis), and Zika virus disease. Rabies is NOT a vector-borne disease (it is transmitted by animal bites) and is handled under the National Rabies Control Programme, which is separate."
+    answer: 0,
+    explanation: "Leprosy elimination is defined as prevalence below 1 case per 10,000 population. India achieved national-level elimination in December 2005. However, post-elimination surveillance revealed continued transmission in several districts. The current goal under NLEP is achieving sub-national (district-level) elimination. Over 150 districts still exceed the 1/10,000 threshold. Global leprosy strategy targets interruption of transmission (zero new autochthonous cases) by 2030, which is a higher bar than elimination."
   },
   {
     id: 29,
-    question: "India's target for kala-azar (visceral leishmaniasis) elimination is defined as:",
+    question: "Under IDSP/IHIP, the 'P', 'L', and 'S' reporting forms are used for surveillance. What do these three forms capture?",
     options: [
-      "Zero cases in endemic districts",
-      "Less than 1 case per 10,000 population at block/sub-district level per year",
-      "Less than 1 case per 100,000 population at district level",
-      "Less than 1 case per million population nationally"
+      "Primary care, Laboratory, and Secondary care case data",
+      "Presumptive/Syndromic cases, Laboratory-confirmed cases, and weekly Summary reports",
+      "Patient demographics, Lab results, and Surveillance trends",
+      "Population-based data, Lab-based data, and Sample survey data"
     ],
     answer: 1,
-    explanation: "India's kala-azar elimination target: less than 1 case per 10,000 population per year at the block (sub-district) level. This is the WHO-recommended elimination threshold for visceral leishmaniasis. India along with Bangladesh and Nepal had committed to eliminate kala-azar by 2015 (subsequently extended to 2023). The disease is endemic in Bihar, Jharkhand, West Bengal, and UP."
+    explanation: "IDSP uses three complementary reporting forms: P-form (Presumptive/Syndromic) - reported by community health workers and peripheral health workers based on clinical syndromes without laboratory confirmation; L-form (Laboratory) - reported by laboratories confirming diagnoses through tests; S-form (Summary) - weekly compiled summary of confirmed cases reported by Medical Officers at facility level. IHIP is the digital platform that replaced the older IDSP online portal for real-time case-based data entry and analysis."
   },
   {
     id: 30,
-    question: "National Leprosy Eradication Programme (NLEP) defines elimination of leprosy as achieving which prevalence rate?",
+    question: "AFP (Acute Flaccid Paralysis) surveillance is the cornerstone of polio eradication monitoring. The minimum non-polio AFP rate threshold indicating adequate surveillance sensitivity is:",
     options: [
-      "Less than 1 case per 10,000 population",
-      "Zero new cases nationally",
-      "Less than 1 case per 100,000 population",
-      "Less than 1 case per 1,000 population"
+      "1 per 100,000 children under 15 years",
+      "2 per 100,000 children under 15 years",
+      "5 per 100,000 children under 15 years",
+      "1 per 100,000 total population"
     ],
-    answer: 0,
-    explanation: "Leprosy elimination is defined by WHO as a prevalence rate of less than 1 case per 10,000 population. India achieved this national elimination target in 2005. However, several states/districts still have higher burden. Current focus of NLEP is on reducing new cases with Grade 2 disability and child leprosy cases. The target is now zero leprosy (interruption of transmission) globally by 2030 under WHO's Global Leprosy Strategy."
+    answer: 1,
+    explanation: "WHO standards require a non-polio AFP (NPAFP) rate of at least 2 per 100,000 children under 15 years to demonstrate adequate surveillance sensitivity. Additionally, adequate stool specimen collection (2 specimens within 14 days of paralysis onset, properly transported) in at least 80% of AFP cases is required. A high NPAFP rate indicates the surveillance system would detect wild poliovirus circulation if it occurred, giving confidence in certification of polio-free status."
   },
   {
     id: 31,
-    question: "Integrated Disease Surveillance Programme (IDSP) was launched in India in which year, and which platform has upgraded IDSP?",
+    question: "India's kala-azar elimination target defines success at which administrative level and what threshold?",
     options: [
-      "2004, upgraded to IHIP (Integrated Health Information Platform) in 2019",
-      "2005, upgraded to NIKSHAY in 2012",
-      "2007, integrated with HMIS",
-      "2010, upgraded to eVIN"
+      "National level - less than 1 case per 100,000 population by 2030",
+      "District level - less than 1 case per 10,000 population by 2025",
+      "Sub-district (block) level - less than 1 case per 10,000 population",
+      "Village level - zero indigenous transmission"
     ],
-    answer: 0,
-    explanation: "IDSP was launched in 2004 under the Ministry of Health and Family Welfare with World Bank funding to decentralize disease surveillance and detect outbreaks early. It uses 'S' (Syndromic), 'P' (Presumptive), and 'L' (Laboratory) forms for reporting. IHIP (Integrated Health Information Platform) was launched in 2019 to upgrade IDSP with real-time digital case-based surveillance, replacing the older weekly reporting system."
+    answer: 2,
+    explanation: "India's kala-azar elimination target is less than 1 case per 10,000 population at the sub-district (block) level. This granular geographic target reflects the focal nature of kala-azar transmission concentrated in specific blocks of Bihar, Jharkhand, West Bengal, and Uttar Pradesh. Annual Parasitic Incidence (API) is the key monitoring indicator. India, Bangladesh, and Nepal jointly committed to this elimination target under a regional framework coordinated with WHO SEARO."
   },
   {
     id: 32,
-    question: "Pulse Polio Immunization Programme in India was launched in which year, and India was declared polio-free in which year?",
+    question: "Lot Quality Assurance Sampling (LQAS) methodology is used for immunization program evaluation. How does it classify program performance?",
     options: [
-      "1994 launched; 2012 declared polio-free",
-      "1995 launched; 2014 certified polio-free",
-      "1995 launched; 2011 (last wild poliovirus case); 2014 certified polio-free by WHO",
-      "1994 launched; 2011 last case; 2012 polio-free"
+      "High, medium, or low performing areas based on a continuous percentage scale",
+      "Acceptable or not acceptable based on a pre-defined decision threshold using small sample size",
+      "Red, yellow, or green zones based on coverage quartile ranking",
+      "Priority or non-priority districts based on disease burden indicators"
     ],
-    answer: 2,
-    explanation: "Pulse Polio Immunization (PPI) was launched in India in 1995 with the aim to eradicate polio. National Immunization Days (NIDs) were held twice yearly giving OPV to all children under 5 years. The last case of wild poliovirus in India was in January 2011 (Howrah, West Bengal). India was certified polio-free by WHO on March 27, 2014. India is in the WHO South-East Asia Region which was certified polio-free in 2014."
+    answer: 1,
+    explanation: "LQAS classifies program units (called lots) as acceptable or not acceptable using small, fixed samples (usually 19 per lot). A decision threshold (d) is pre-specified; if the number of non-covered individuals in the sample exceeds d, the lot is classified as not acceptable. This binary classification is achieved without requiring a full coverage survey. LQAS is used in immunization and nutrition programs to rapidly identify poorly-performing geographic areas for targeted remedial action."
   },
   {
     id: 33,
-    question: "Under the National Programme for Control of Blindness and Visual Impairment (NPCB&VI), which indicator is used to define 'blindness' in India for program purposes?",
+    question: "The National Programme for Climate Change and Human Health (NPCCHH) under NCDC primarily conducts surveillance for which categories of health outcomes?",
     options: [
-      "Visual acuity less than 6/60 in the better eye with best correction",
-      "Visual acuity less than 3/60 in the better eye with best correction",
-      "Visual acuity less than 6/18 in the better eye",
-      "Complete absence of light perception"
+      "Non-communicable diseases aggravated by air pollution only",
+      "Vector-borne diseases, heat-related illness, and waterborne diseases most sensitive to climate variability",
+      "Respiratory infections due to seasonal cold waves across northern India",
+      "Occupational diseases in climate-sensitive agricultural and industrial sectors"
     ],
     answer: 1,
-    explanation: "India's definition of blindness for program purposes (NPCB): visual acuity less than 3/60 in the better eye with best correction (or visual field less than 10 degrees). This is stricter than the previous definition of 6/60. WHO's current definition uses the same threshold of less than 3/60. Cataract is the leading cause of blindness in India (approximately 62-66% of all blindness)."
+    explanation: "NPCCHH under the National Centre for Disease Control (NCDC) focuses on health impacts of climate change. Core surveillance domains include: vector-borne diseases (malaria, dengue, chikungunya - influenced by temperature, rainfall, and humidity patterns); heat-related illness (heatstroke, heat exhaustion during heatwaves); and waterborne diseases (cholera, typhoid - linked to floods and water contamination events). It also covers food security, extreme weather health impacts, and air quality-related morbidity."
   },
   {
     id: 34,
-    question: "Which of the following is the correct elimination target for lymphatic filariasis (LF) in India?",
+    question: "The U-WIN platform in India's immunization program is designed to serve which primary function?",
     options: [
-      "Microfilaria rate less than 1% and antigenemia rate less than 2% in all endemic districts",
-      "Zero new cases of lymphedema",
-      "Microfilaria rate less than 0.5% at district level",
-      "Transmission Assessment Survey (TAS) passing threshold of less than 2% in 6-7 year olds"
+      "Track tuberculosis treatment outcomes digitally under NTEP",
+      "Provide a digital beneficiary tracking system for universal immunization with a unique ID for pregnant women and children",
+      "Monitor cold chain equipment and vaccine stock levels in real time",
+      "Manage AEFI reporting and causality assessment at national level"
     ],
-    answer: 3,
-    explanation: "LF elimination is validated using Transmission Assessment Survey (TAS): if antigenemia/microfilaria prevalence in 6-7 year old children is less than 2% (critical cut-off), mass drug administration (MDA) can be stopped. India uses a Triple Drug Therapy (IDA - Ivermectin + DEC + Albendazole) under the Accelerated Plan for Elimination of Lymphatic Filariasis (APELF). The criteria for stopping MDA includes microfilaria rate less than 1% in baseline surveys."
+    answer: 1,
+    explanation: "U-WIN (Universal Immunization - WIN) is India's digital beneficiary tracking platform developed to assign unique IDs to pregnant women and children enrolled in UIP, enabling tracking across geographic locations and health facilities. It is designed to replace paper-based Mother and Child Protection (MCP) cards with a digital system, preventing missed doses when families migrate. U-WIN integrates with the CoWIN platform architecture and complements eVIN (which tracks vaccines and cold chain, not beneficiaries)."
   },
   {
     id: 35,
-    question: "The National Programme on Climate Change and Human Health (NPCCHH) focuses primarily on which aspect of communicable disease control?",
+    question: "In routine district-level UIP monitoring, HMIS-based immunization coverage is calculated using which denominator when recent census data is unavailable?",
     options: [
-      "Control of antibiotic-resistant infections",
-      "Surveillance and control of climate-sensitive diseases including vector-borne, water-borne diseases, and heat-related illness",
-      "Prevention of occupational infections in healthcare workers",
-      "Control of zoonotic diseases transmitted from livestock"
+      "Anganwadi registration data from the district",
+      "HMIS target population derived from total population multiplied by crude birth rate",
+      "Sample Registration System (SRS) birth cohort projection",
+      "NFHS survey-based population estimate for the district"
     ],
     answer: 1,
-    explanation: "NPCCHH (National Programme on Climate Change and Human Health) was launched to address health impacts of climate change including: (1) Increased burden of vector-borne diseases (malaria, dengue, chikungunya) due to changing vector habitats, (2) Water-borne diseases due to floods/droughts, (3) Heat-related illness, (4) Air pollution-related diseases, (5) Food security impacts. It involves disease surveillance under climate-sensitive scenarios."
+    explanation: "HMIS targets for immunization at district level are derived from estimated beneficiary numbers calculated as: Total population x Crude Birth Rate = birth cohort, adjusted for survival to the target age group. When census data is outdated between census years, projected populations using annual growth rates are applied. This HMIS-based administrative coverage is the routine monitoring tool, while coverage surveys (NFHS, DLHS, state-level CES) provide independent survey-based verification of coverage claims."
   },
   {
     id: 36,
-    question: "India's measles elimination target (as per WHO SEARO) is to eliminate measles and control rubella/CRS by which year?",
+    question: "The Malaria Elimination Research Alliance India (MERA-India) coordinated by ICMR targets malaria elimination by 2030 under which phased framework?",
     options: [
-      "2020",
-      "2023",
-      "2023 (revised from original 2020 target)",
-      "2030"
+      "NFME (National Framework for Malaria Elimination) 2016-2030, with phased state-by-state elimination based on Annual Parasite Incidence",
+      "NVBDCP Strategic Plan 2017-2022 targeting high-burden states first",
+      "WHO SEARO Regional Malaria Elimination Framework 2020-2030",
+      "NCVBDC Malaria Action Plan 2021-2025"
     ],
-    answer: 2,
-    explanation: "WHO SEARO set the measles elimination target for the South-East Asia Region as 2020, subsequently revised to 2023 due to the COVID-19 pandemic's impact on immunization services. India conducted a nationwide Measles-Rubella (MR) campaign (2017-2020) targeting 9 months to 15 years age group. India's HMIS shows improvement in measles coverage but elimination (incidence less than 1 per million) has not yet been achieved."
+    answer: 0,
+    explanation: "India's National Framework for Malaria Elimination (NFME) 2016-2030, coordinated by NCVBDC with research support from ICMR through MERA-India (Malaria Elimination Research Alliance), targets the elimination of malaria (zero indigenous transmission) by 2030. The phased approach classifies states by Annual Parasite Incidence (API): states with API less than 1 targeted for elimination first, with progressive phases through 2030. ICMR's MERA-India consortium links field research to programmatic implementation."
   },
   {
     id: 37,
-    question: "Which of the following is the key indicator for NTEP (National TB Elimination Programme) performance?",
+    question: "India's measles elimination target (as defined by WHO SEARO for the region) requires achieving incidence below what threshold?",
     options: [
-      "Case Fatality Rate",
-      "Treatment Success Rate (TSR) - target greater than 90% for DS-TB",
-      "Case Notification Rate only",
-      "Sputum conversion rate at 2 months"
+      "Less than 5 cases per million population per year",
+      "Less than 1 case per million population per year",
+      "Zero reported cases nationally",
+      "Less than 1 case per 100,000 population per year"
     ],
     answer: 1,
-    explanation: "Treatment Success Rate (TSR) is the key output indicator for NTEP. WHO target: TSR greater than or equal to 90% for new DS-TB cases. TSR = (Cured + Treatment Completed) / Total Enrolled x 100. Other important NTEP indicators: Case Notification Rate (CNR), Proportion of private sector notifications, CBNAAT (cartridge-based NAAT) testing rates, treatment initiation within 24 hours of diagnosis. India's TSR for DS-TB is approximately 82-86%."
+    explanation: "WHO's measles elimination definition requires reducing measles incidence to less than 1 confirmed case per million population per year in every region. The WHO SEARO regional elimination target was originally 2020, revised to 2023 due to COVID-19 pandemic disruptions to immunization. India conducted a nationwide Measles-Rubella (MR) campaign (2017-2020) targeting 9 months to 15 years, but elimination has not yet been achieved given ongoing transmission and sub-optimal coverage in some states."
   },
   {
     id: 38,
-    question: "Which of the following is the most accurate definition of an 'emerging infectious disease'?",
+    question: "Which of the following most accurately defines a 're-emerging infection' as distinct from an 'emerging infection'?",
     options: [
-      "Any disease caused by a newly discovered pathogen",
-      "Infections that have newly appeared in a population, or have existed but are rapidly increasing in incidence or geographic range",
-      "Diseases that have re-appeared after a period of decline",
-      "Infections that cross species barriers from animals to humans"
+      "A previously unknown pathogen causing infection in humans for the first time",
+      "A known infection that was previously controlled or declining but is increasing again in incidence, geographic range, or drug resistance",
+      "A laboratory-engineered pathogen inadvertently released into the environment",
+      "Any infection that has crossed species barriers from animals to humans"
     ],
     answer: 1,
-    explanation: "Emerging infectious diseases (EIDs) are infections that: (1) Have newly appeared in a population (e.g., HIV, COVID-19, Nipah), or (2) Have existed but are rapidly increasing in incidence or geographic range (e.g., dengue, Zika). Re-emerging diseases (like plague, cholera) are those that had declined but returned. Factors driving emergence include: ecological changes, human demographics, international travel/trade, antimicrobial resistance, failure of public health, and microbial evolution."
+    explanation: "Re-emerging infections are known infections previously controlled, declining, or geographically restricted that are now increasing in incidence, geographic range, or drug resistance. Examples: drug-resistant tuberculosis (MDR-TB), dengue (geographic spread to new continents), kala-azar (drug resistance), measles (vaccination coverage gaps), cholera (new genetic variants). Emerging infections are caused by new pathogens or known pathogens appearing in new host species or geographic areas for the first time (e.g., SARS-CoV-2, Nipah, Ebola in West Africa)."
   },
   {
     id: 39,
-    question: "The One Health approach for managing emerging zoonotic diseases recognizes the interconnection between:",
+    question: "The International Health Regulations (IHR 2005) require countries to report which category of public health events to WHO within 24 hours of assessment?",
     options: [
-      "Human health and pharmaceutical industry",
-      "Human health, animal health, and ecosystem/environmental health",
-      "Communicable diseases and non-communicable diseases",
-      "Primary, secondary, and tertiary healthcare"
+      "Any cluster of unexplained illness with more than 10 cases in a district",
+      "Events meeting IHR Annex 2 decision instrument criteria for potential Public Health Emergency of International Concern (PHEIC)",
+      "All outbreaks of WHO-designated priority pathogens regardless of size",
+      "Any new disease with a case fatality rate exceeding 10% in the first 100 cases"
     ],
     answer: 1,
-    explanation: "One Health is a collaborative, multisectoral approach that recognizes that human health, animal health (domestic and wildlife), and ecosystem health are interconnected. About 75% of emerging infectious diseases are zoonotic. One Health is particularly relevant for: zoonoses (Nipah, Ebola, avian influenza, COVID-19), antimicrobial resistance (shared antibiotic use in humans, animals, agriculture), and food safety. FAO-WHO-OIE (now WOAH) implement the One Health framework."
+    explanation: "IHR 2005 requires member states to notify WHO within 24 hours of assessing any event that may constitute a PHEIC, using the IHR Annex 2 decision instrument. Four criteria are assessed: seriousness of public health impact, unusualness or unexpectedness, significant risk of international spread, and risk of restrictions on international travel or trade. Additionally, four specific diseases (smallpox, wild poliovirus, human influenza with new subtype, SARS) always require immediate notification regardless of the decision instrument outcome."
   },
   {
     id: 40,
-    question: "WHO pandemic phases (for influenza pandemic preparedness) include which sequence?",
+    question: "India's National One Health Mission and the One Health Consortium under ICMR-DBT operationalize the One Health approach by focusing research on which interface?",
     options: [
-      "Interpandemic phase, Alert phase, Pandemic phase, Transition phase",
-      "Pre-pandemic, Pandemic alert, Pandemic, Post-pandemic",
-      "Phases 1-6 with phase 6 being pandemic",
-      "Endemic, Epidemic, Pandemic, Post-pandemic"
+      "Human disease burden and pharmaceutical sector capacity building",
+      "Human-animal-environment interface to address zoonoses, AMR, and emerging infections",
+      "Primary healthcare strengthening and disease surveillance integration",
+      "Environmental pollution and occupational disease prevention"
     ],
-    answer: 0,
-    explanation: "WHO revised the pandemic phases in 2013 to: (1) Interpandemic phase (between pandemics), (2) Alert phase (new influenza subtype causing human cases), (3) Pandemic phase (global spread in at least 2 WHO regions), (4) Transition phase (risk decreasing, moving toward interpandemic). The older 6-phase classification (phases 1-6) has been replaced. National pandemic preparedness plans are developed based on these phases."
+    answer: 1,
+    explanation: "The One Health Consortium, established under ICMR and DBT with ICAR and MoEF participation, and the National One Health Mission (announced 2022 Union Budget) conduct research at the human-animal-environment interface. Core focus areas include: zoonotic disease surveillance, antimicrobial resistance (shared across human, veterinary, and agricultural antibiotic use), and emerging infections at wildlife-human interfaces. This differs from disease-specific vertical programs; One Health uses cross-sectoral coordination and shared research infrastructure."
   },
   {
     id: 41,
-    question: "Antimicrobial Resistance (AMR) - India's National Action Plan (NAP-AMR) was launched in which year, and it follows which global framework?",
+    question: "The Global Antimicrobial Resistance and Use Surveillance System (GLASS), which India participates in through ICMR's NARS-Net, is coordinated by which organization?",
     options: [
-      "2012, following WHO Global Action Plan on AMR 2011",
-      "2017, following WHO Global Action Plan on AMR 2015",
-      "2015, following GLASS (Global Antimicrobial Resistance Surveillance System) framework",
-      "2019, following G20 AMR commitments"
+      "Centers for Disease Control and Prevention (CDC), USA",
+      "World Health Organization (WHO)",
+      "Global Antibiotic Research and Development Partnership (GARDP)",
+      "Wellcome Trust Global AMR Programme"
     ],
     answer: 1,
-    explanation: "India's NAP-AMR (National Action Plan on Antimicrobial Resistance) was launched in April 2017, aligned with WHO's Global Action Plan on AMR (2015). The five strategic priorities of NAP-AMR mirror the Global Action Plan: (1) Improve awareness and understanding, (2) Strengthen knowledge through surveillance (India joined GLASS - Global AMR Surveillance System), (3) Reduce infection through IPC, (4) Optimize use of antimicrobials, (5) Develop investments in R&D."
+    explanation: "GLASS (launched 2015) is WHO's global platform for AMR surveillance, aggregating national AMR data from participating countries to monitor trends and guide global policy. India participates in GLASS through ICMR's National AMR Surveillance Network (NARS-Net), which collects AMR data from sentinel hospital sites across India. India's National Action Plan on AMR (NAP-AMR), launched in 2017 and aligned with WHO's 2015 Global Action Plan on AMR, is the policy framework guiding India's participation."
   },
   {
     id: 42,
-    question: "Biosafety Level 4 (BSL-4) laboratory is required for handling which of the following pathogens?",
+    question: "BSL-4 (Biosafety Level 4) laboratory containment is required specifically for working with which category of pathogens?",
     options: [
-      "Mycobacterium tuberculosis",
-      "HIV",
-      "Ebola virus and Marburg virus",
-      "Salmonella typhi"
+      "HIV, Hepatitis B virus, and Salmonella typhi",
+      "Mycobacterium tuberculosis, Bacillus anthracis, and Yersinia pestis",
+      "Ebola virus, Marburg virus, and Crimean-Congo Hemorrhagic Fever virus",
+      "SARS-CoV-2, influenza A (H5N1), and dengue virus"
     ],
     answer: 2,
-    explanation: "BSL-4 is the highest containment level for pathogens that cause severe, often fatal disease for which no vaccine or therapy is available: Ebola virus, Marburg virus, Nipah virus, Lassa fever virus, Crimean-Congo Hemorrhagic Fever virus. BSL-1: non-pathogenic (E. coli K12). BSL-2: moderate risk (Salmonella, HIV, Hepatitis B). BSL-3: serious/potentially lethal, treatment available (M. tuberculosis, SARS-CoV-2, anthrax, yellow fever). BSL-4: life-threatening, no available vaccines or therapy."
+    explanation: "BSL-4 is required for agents causing life-threatening disease with a high risk of aerosol transmission for which no available vaccine or specific therapy exists: Ebola virus, Marburg virus, Crimean-Congo Hemorrhagic Fever (CCHF) virus, Lassa fever virus, Hendra virus, Nipah virus (select strains). BSL-3 is used for MTB, B. anthracis, Y. pestis, SARS-CoV-2. BSL-2 for HIV and HBV. BSL-1 for non-pathogenic organisms. ICMR's NIV Pune has operational BSL-3 labs and is the primary site for India's BSL-4 capability development."
   },
   {
     id: 43,
-    question: "Standard Precautions in infection prevention and control (IPC) apply to:",
+    question: "Standard precautions in research laboratory settings handling human specimens apply to which materials?",
     options: [
-      "Only patients known to have infectious diseases",
-      "All patients regardless of diagnosis or presumed infectious status",
-      "Only bodily fluids that are visibly blood-stained",
-      "Healthcare workers with active infections only"
+      "Only specimens from patients known to have bloodborne infections",
+      "All human blood, body fluids, secretions, excretions, and potentially infectious materials regardless of known infection status",
+      "Only aerosol-generating procedures involving clinical research specimens",
+      "Only procedures involving sharp instruments and needlestick-prone activities"
     ],
     answer: 1,
-    explanation: "Standard Precautions (previously called Universal Precautions) apply to ALL patients regardless of their diagnosis or presumed infectious status. They are based on the principle that any blood, body fluid, secretion, or excretion (except sweat) may contain transmissible infectious agents. Components include: hand hygiene, PPE (gloves, gown, mask, eye protection), safe injection practices, respiratory hygiene, environmental cleaning, and safe handling of sharps."
+    explanation: "Standard precautions (formerly Universal Precautions) assume ALL human blood, body fluids, secretions, excretions (except sweat), non-intact skin, and mucous membranes may contain transmissible infectious agents, regardless of the known infection status of the source. In research lab settings, this applies to all human specimens. Components include: hand hygiene, appropriate PPE (gloves, gown, eye protection, mask), respiratory hygiene, safe sharps management, environmental decontamination, and regulated medical waste disposal."
   },
   {
     id: 44,
-    question: "Healthcare-Associated Infections (HAIs) - which of the following is the most common HAI globally and is also a key indicator for IPC program effectiveness?",
+    question: "Regarding healthcare-associated infection (HAI) surveillance in India, which statement best reflects the current situation?",
     options: [
-      "Surgical Site Infection (SSI)",
-      "Catheter-Associated Urinary Tract Infection (CAUTI)",
-      "Ventilator-Associated Pneumonia (VAP)",
-      "Central Line-Associated Bloodstream Infection (CLABSI)"
+      "India has a fully operational mandatory national HAI surveillance system coordinated by NCDC",
+      "HAI surveillance in India is primarily facility-based with no mandatory national coordination system currently operational",
+      "ICMR's NARS-Net serves as the national HAI surveillance system capturing all HAI data",
+      "NABH accreditation requirements have led to uniform national HAI data collection"
     ],
     answer: 1,
-    explanation: "Catheter-Associated Urinary Tract Infection (CAUTI) is the most common HAI globally, accounting for approximately 30-40% of all HAIs. The urinary catheter is the most frequently used invasive device in hospitalized patients. However, all four are important HAIs tracked as part of IPC programs. In ICU settings, VAP and CLABSI have higher mortality. Hand hygiene is the single most important intervention for preventing all HAIs."
+    explanation: "India currently lacks a formal, mandatory nationally coordinated HAI surveillance program. HAI surveillance is largely facility-based, driven by NABH accreditation requirements for individual hospitals, infection control committees, and individual research studies. ICMR's NARS-Net captures AMR data from clinical isolates (some of which are HAI-related), but this is not a comprehensive HAI surveillance system. National Infection Control Guidelines exist but a mandatory national HAI surveillance registry with standardized reporting is not yet operational across India."
   },
   {
     id: 45,
-    question: "CDC/WHO classifies bioterrorism agents into Category A, B, and C. Which of the following is a Category A bioterrorism agent (highest priority)?",
+    question: "The CDC classifies bioterrorism agents into Category A, B, and C. Category A agents (highest priority) share which defining characteristics?",
     options: [
-      "Salmonella (typhoid fever)",
-      "Brucella species",
-      "Bacillus anthracis (anthrax) and Variola major (smallpox)",
-      "Ricin toxin"
+      "They are easily synthesized in makeshift laboratory settings with widely available materials",
+      "They have documented prior use as biological weapons in twentieth-century warfare",
+      "They can be easily disseminated, cause high mortality, have potential for major public health impact, and may cause public panic",
+      "They have no available medical countermeasures and cause invariably fatal disease"
     ],
     answer: 2,
-    explanation: "Category A bioterrorism agents: Bacillus anthracis (anthrax), Clostridium botulinum (botulism), Yersinia pestis (plague), Variola major (smallpox), Francisella tularensis (tularemia), Viral hemorrhagic fever viruses (Ebola, Marburg, Lassa). These are highest priority because they can be easily disseminated, cause high mortality, have major public health impact, and require special action. Category B (second priority): Brucella, Salmonella, food/water safety threats. Category C: emerging pathogens like Nipah."
+    explanation: "CDC Category A bioterrorism agents are highest priority because they: (1) can be easily disseminated or transmitted person-to-person, (2) cause high mortality with major public health impact, (3) might cause public panic and social disruption requiring special public health preparedness actions. Category A includes: anthrax (Bacillus anthracis), botulism, plague (Yersinia pestis), smallpox (Variola major), tularemia (Francisella tularensis), and viral hemorrhagic fevers (Ebola, Marburg, Lassa). Category B agents such as Brucella are second priority. Category C includes emerging pathogens like Nipah."
   },
   {
     id: 46,
-    question: "The Global Health Security Agenda (GHSA) launched in 2014 aims to achieve which overall goal?",
+    question: "The Global Health Security Agenda (GHSA), launched in 2014, builds country capacity across which three strategic pillars?",
     options: [
-      "Eradication of all communicable diseases by 2030",
-      "Universal health coverage for infectious disease treatment",
-      "A world safe and secure from infectious disease threats through building capacity to prevent, detect, and respond",
-      "Standardization of vaccine schedules globally"
+      "Prevention, Detection, and Response",
+      "Surveillance, Laboratory, and Emergency Operations",
+      "Prevent, Prepare, and Respond",
+      "Detect, Contain, and Recover"
     ],
-    answer: 2,
-    explanation: "GHSA (Global Health Security Agenda) was launched in February 2014 by 44 countries (now 70+), international organizations, and NGOs. Its goal is to build countries' capacities to prevent, detect, and respond to infectious disease threats - whether natural, accidental, or deliberate. It operationalizes the International Health Regulations (IHR 2005) by building core capacities. India joined GHSA in 2014. JEE (Joint External Evaluation) tool assesses country IHR core capacities under GHSA."
+    answer: 0,
+    explanation: "GHSA is organized around three strategic pillars: (1) Prevent - prevent avoidable epidemics including AMR, zoonotic diseases, and biosafety/biosecurity; (2) Detect - real-time surveillance, laboratory capacity, reporting; (3) Respond - emergency operations, linking public health with security authorities, medical countermeasures and personnel deployment. The Joint External Evaluation (JEE) tool measures country-level IHR core capacity across 19 technical areas mapped to these pillars. India joined GHSA in 2014 and has undergone JEE assessment."
   },
   {
     id: 47,
-    question: "Transmission-Based Precautions in IPC are added when Standard Precautions are insufficient. Which precaution category requires negative pressure rooms?",
+    question: "ICMR's high-consequence pathogen research, including BSL-3 diagnostics and research for outbreak pathogens, is anchored at which institution?",
     options: [
-      "Contact precautions",
-      "Droplet precautions",
-      "Airborne precautions",
-      "Both contact and droplet precautions"
+      "All India Institute of Medical Sciences (AIIMS), New Delhi",
+      "National Institute of Virology (NIV), Pune",
+      "National Centre for Disease Control (NCDC), New Delhi",
+      "Rajiv Gandhi Centre for Biotechnology (RGCB), Thiruvananthapuram"
     ],
-    answer: 2,
-    explanation: "Airborne Precautions are required for pathogens transmitted by airborne particles (droplet nuclei less than 5 microns) that remain suspended in air: tuberculosis, measles, varicella, COVID-19 (aerosol-generating procedures). Requirements include: N95 respirator (not just surgical mask), negative pressure isolation room (at least 6-12 air changes per hour), HEPA filtration. Droplet precautions (greater than 5 microns): surgical mask, 1 meter distance. Contact precautions: gloves and gown."
+    answer: 1,
+    explanation: "ICMR's National Institute of Virology (NIV), Pune is the apex institution for high-consequence pathogen research in India, housing operational BSL-3 facilities and India's most advanced viral diagnostic and research capabilities. NIV played central roles in characterizing Nipah virus outbreaks, SARS-CoV-2 variants, and other emerging infections. India's planned BSL-4 Maximum Containment Laboratory is also being established at NIV Pune. NCDC functions under DGHS (not ICMR) and has separate, complementary biosafety capabilities."
   },
   {
     id: 48,
-    question: "Re-emerging infectious diseases are best described as:",
+    question: "Whole Genome Sequencing (WGS) in outbreak investigation provides which critical advantage over conventional molecular typing methods such as MLST or PFGE?",
     options: [
-      "New pathogens discovered for the first time causing outbreaks",
-      "Diseases that were previously controlled but have returned due to factors like drug resistance, waning immunity, or ecological changes",
-      "Diseases that have spread geographically to new areas for the first time",
-      "Laboratory-created pathogens accidentally released"
+      "Faster turnaround time than PCR-based diagnostic methods",
+      "Ability to detect antigens without the need to culture organisms",
+      "Higher resolution phylogenetic analysis enabling precise transmission chain reconstruction and source attribution",
+      "Real-time field deployment capability without need for central laboratory infrastructure"
     ],
-    answer: 1,
-    explanation: "Re-emerging infectious diseases are those that were previously controlled or declining but have returned as a significant public health problem. Examples: tuberculosis (MDR-TB), cholera, dengue (new areas), plague, diphtheria (post-Soviet states), polio (VDPV), yellow fever. Causes include: antimicrobial resistance, breakdown of public health infrastructure, waning vaccination coverage, climate change altering vector habitats, and human encroachment into new ecosystems."
+    answer: 2,
+    explanation: "WGS provides complete genomic information enabling high-resolution phylogenomics: (1) precise cluster identification and transmission chain reconstruction, (2) source attribution - linking outbreak strains to reservoir, food source, or index case, (3) simultaneous detection of AMR genes and virulence factors, (4) real-time tracking of pathogen evolution during outbreaks. WGS was central to COVID-19 variant surveillance through India's INSACOG network. While WGS has slower turnaround than PCR, it provides far higher discriminatory power than MLST or PFGE for outbreak investigation."
   },
   {
     id: 49,
-    question: "GLASS (Global Antimicrobial Resistance and Use Surveillance System) was established by WHO to:",
+    question: "Wastewater-based epidemiology (WBE) for pathogen surveillance gained global prominence for tracking which pathogens, and what is its primary public health advantage?",
     options: [
-      "Monitor antibiotic use in livestock and agriculture only",
-      "Provide a standardized approach for global surveillance of AMR in humans and coordinate AMR data globally",
-      "Regulate international trade of antibiotics between countries",
-      "Certify hospitals as antibiotic stewardship compliant"
+      "Hepatitis A virus; advantage is detecting foodborne clusters before clinical cases occur",
+      "Poliovirus and SARS-CoV-2; advantage is detecting community-level pathogen circulation including from asymptomatic individuals before clinical surveillance signals emerge",
+      "Vibrio cholerae; advantage is mapping the specific water distribution system contamination point",
+      "Salmonella typhi; advantage is identifying specific households harboring chronic typhoid carriers"
     ],
     answer: 1,
-    explanation: "GLASS (Global Antimicrobial Resistance and Use Surveillance System) was established by WHO in 2015 following the Global Action Plan on AMR. It provides a standardized approach to the collection, analysis, and sharing of AMR data globally from human infections. GLASS also monitors antimicrobial consumption/use data. India participates in GLASS through its AMR surveillance network (ICMR-AMR network with sentinel sites). GLASS data informs WHO's global AMR reports."
+    explanation: "WBE gained global prominence for two pathogens: (1) Poliovirus - environmental surveillance of sewage has long complemented AFP surveillance to detect circulating poliovirus; (2) SARS-CoV-2 - wastewater surveillance proved effective for early warning of surges and variant detection 4-14 days before clinical case signals. The primary advantage is detecting population-level pathogen circulation including from asymptomatic and pre-symptomatic individuals who never seek healthcare, providing epidemiological early warning without relying solely on healthcare-seeking behavior. ICMR conducted WBE studies for SARS-CoV-2 across Indian cities."
   },
   {
     id: 50,
-    question: "The R0 (basic reproduction number) of an infectious disease represents:",
+    question: "India's INSACOG (Indian SARS-CoV-2 Genomics Consortium), established in December 2020, demonstrated which key pandemic preparedness principle relevant to ICMR's research mandate?",
     options: [
-      "The number of secondary cases produced by one infected individual in a fully susceptible population",
-      "The rate of recovery from infection in the population",
-      "The proportion of the population that needs to be immune to prevent epidemic spread",
-      "The generation time of the pathogen"
+      "A single centralized laboratory is more efficient than a distributed network for timely outbreak genomic analysis",
+      "Genomic surveillance networks require mandatory private sector participation to achieve national scale",
+      "Distributed national genomic surveillance networks enable geographically representative variant monitoring and rapid public health response during pandemics",
+      "International collaboration must precede establishment of national genomic surveillance capability"
     ],
-    answer: 0,
-    explanation: "R0 (basic reproduction number) is the average number of secondary infections produced by one infectious case in a completely susceptible population with no interventions. R0 greater than 1: epidemic potential. R0 less than 1: infection dies out. R0 examples: measles (12-18), COVID-19 Delta (5-6), COVID-19 Omicron (8-15), influenza (2-3), SARS (2-5), Ebola (1.5-2.5). The effective reproduction number (Rt or Re) accounts for existing immunity and interventions. Herd immunity threshold = 1 - 1/R0."
-  },
+    answer: 2,
+    explanation: "INSACOG, established under ICMR, DBT, CSIR, and MoHFW as a network of 54 laboratories across India for SARS-CoV-2 WGS, demonstrated that distributed national genomic surveillance networks enable: (1) geographically representative sampling across diverse populations, (2) rapid identification of variants of concern (Delta and Omicron detected through INSACOG), (3) surge sequencing capacity during waves, and (4) integration of genomic data with clinical and epidemiological information for real-time public health response. This model is now being extended to other priority pathogens under India's broader pandemic preparedness and One Health genomic surveillance framework."
+  }
 ];
 
 export default questions;

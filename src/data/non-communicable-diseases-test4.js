@@ -1,558 +1,568 @@
 const questions = [
   {
     id: 1,
-    question: "According to WHO data, cardiovascular diseases account for approximately what percentage of global deaths annually?",
-    options: ["17%", "32%", "45%", "51%"],
-    answer: 1,
-    explanation: "Cardiovascular diseases are the leading cause of death globally, accounting for approximately 32% of all global deaths. This translates to about 17.9 million deaths per year, with heart disease and stroke being the two dominant contributors."
+    question: "According to the WHO Global Health Estimates, the total number of deaths attributable to cardiovascular diseases globally per year is approximately:",
+    options: ["9.4 million", "12.6 million", "17.9 million", "22.3 million"],
+    answer: 2,
+    explanation: "WHO estimates that cardiovascular diseases (CVDs) kill approximately 17.9 million people every year, representing 32% of all global deaths. Of these, 85% are due to heart attacks and strokes. More than three quarters of CVD deaths occur in low- and middle-income countries. This figure makes CVD the leading cause of death globally, ahead of all infectious diseases, cancers, and other non-communicable diseases."
   },
   {
     id: 2,
-    question: "The ICMR-GBD India study (2017) found that cardiovascular diseases contributed to what percentage of total disease burden (DALYs) in India?",
-    options: ["8.7%", "14.1%", "22.9%", "31.4%"],
+    question: "The ICMR-GBD India study published in The Lancet (2017) found that among Indian states, which group showed the highest proportional CVD burden as percentage of total DALYs?",
+    options: [
+      "Empowered Action Group (EAG) states like UP and Bihar",
+      "Southern states and high-income states like Kerala, Tamil Nadu, and Punjab",
+      "North-eastern states with tribal populations",
+      "All states showed a uniform CVD burden of approximately 14% of DALYs"
+    ],
     answer: 1,
-    explanation: "The ICMR-GBD India study published in The Lancet (2017) found that cardiovascular diseases contributed approximately 14.1% of total DALYs in India. The burden varied significantly across states, with more developed states showing higher proportional CVD burden consistent with epidemiological transition."
+    explanation: "The ICMR-GBD India study found that more epidemiologically advanced states - particularly southern and high-income states like Kerala, Tamil Nadu, Andhra Pradesh, Punjab, and Goa - showed the highest proportional CVD burden as a percentage of total DALYs, consistent with their more advanced epidemiological transition. In contrast, EAG states like UP, Bihar, Rajasthan, and Madhya Pradesh had a lower proportional CVD burden but higher burden from communicable diseases and child health conditions. This heterogeneity within India reflects simultaneous stages of epidemiological transition across states."
   },
   {
     id: 3,
-    question: "India accounts for approximately what proportion of premature cardiovascular deaths globally (in persons aged 30-69 years)?",
-    options: ["1 in 10", "1 in 6", "1 in 4", "1 in 3"],
+    question: "In terms of premature cardiovascular mortality (deaths in 30-69 year age group), India compared to high-income countries shows:",
+    options: [
+      "Similar rates of premature CVD deaths after age-standardization",
+      "Lower premature CVD mortality due to predominantly vegetarian dietary patterns",
+      "Two to three times higher age-standardized premature CVD mortality rates",
+      "Higher premature CVD mortality only in men, not in women"
+    ],
     answer: 2,
-    explanation: "India accounts for approximately one in four (25%) premature cardiovascular deaths globally among those aged 30-69 years. This disproportionate burden, given India's share of world population, reflects early onset of CVD in South Asians and risk factor clustering."
+    explanation: "India has substantially higher age-standardized premature CVD mortality (in the 30-69 year age group) compared to high-income countries - approximately 2 to 3 times higher. South Asians develop CVD a decade earlier than Western populations. This translates to enormous lost productive years - the GBD study estimates India loses significantly more years of life lost (YLL) per capita from CVD than high-income countries. The premature CVD mortality burden reflects inadequate primary prevention, late diagnosis, poor risk factor control, and limited access to emergency cardiac care."
   },
   {
     id: 4,
-    question: "The 'South Asian paradox' in cardiovascular disease refers to:",
+    question: "The thin-fat phenotype in South Asians, relevant to the South Asian paradox in CVD risk, is characterized by:",
     options: [
-      "Higher CVD mortality in rural South Asians despite lower caloric intake",
-      "Greater CVD risk in South Asians at lower BMI due to thin-fat phenotype with excess visceral adiposity",
-      "Lower rates of hypertension in South Asians despite high salt consumption",
-      "Paradoxically low cholesterol levels in South Asian populations with high CVD rates"
+      "Low BMI with proportionally low muscle mass but also low fat mass",
+      "Normal or low BMI with disproportionately high visceral and truncal adiposity, insulin resistance, and elevated triglycerides",
+      "High waist circumference due to skeletal frame differences rather than excess fat",
+      "Normal body composition but elevated inflammatory markers from genetic predisposition"
     ],
     answer: 1,
-    explanation: "The South Asian paradox refers to the observation that South Asians develop CVD at lower BMI thresholds compared to Western populations. This is attributed to the 'thin-fat phenotype' - normal or low BMI with disproportionately high visceral and ectopic fat deposition, insulin resistance, and metabolic dysfunction. WHO has recommended lower BMI cut-offs for obesity in Asians (23 kg/m2 for overweight, 27.5 kg/m2 for obesity)."
+    explanation: "The thin-fat phenotype describes South Asians who appear lean by conventional BMI standards but have: excess visceral (intra-abdominal) fat, increased ectopic fat deposits in liver and skeletal muscle, lower skeletal muscle mass, insulin resistance, dyslipidemia (elevated triglycerides and low HDL), and higher fasting glucose. This phenotype confers high metabolic and cardiovascular risk despite a 'normal' BMI. Barker's hypothesis and developmental programming (nutritional deprivation in utero followed by nutritional abundance in adulthood) partially explains this. WHO now recommends lower BMI cut-offs for Asians: overweight at 23 kg/m2, obesity at 27.5 kg/m2."
   },
   {
     id: 5,
-    question: "The INTERHEART study identified 9 potentially modifiable risk factors. Which combination accounts for over 90% of attributable risk for acute myocardial infarction?",
+    question: "In the INTERHEART study, among the 9 modifiable risk factors identified, which single factor had the highest population attributable risk (PAR%) for acute MI globally?",
     options: [
-      "Smoking, hypertension, diabetes, obesity, dyslipidemia, diet, exercise, alcohol, psychosocial factors",
-      "Smoking, hypertension, diabetes, obesity, dyslipidemia, diet, exercise, family history, psychosocial factors",
-      "Smoking, hypertension, diabetes, obesity, C-reactive protein, diet, exercise, alcohol, psychosocial factors",
-      "Smoking, hypertension, diabetes, obesity, dyslipidemia, diet, exercise, atrial fibrillation, psychosocial factors"
+      "Hypertension (PAR ~43%)",
+      "Dyslipidemia - abnormal ApoB/ApoA1 ratio (PAR ~49%)",
+      "Smoking (PAR ~36%)",
+      "Psychosocial factors including stress and depression (PAR ~33%)"
     ],
-    answer: 0,
-    explanation: "The INTERHEART study (Yusuf et al., Lancet 2004), a case-control study in 52 countries, identified 9 modifiable risk factors accounting for over 90% of the population attributable risk for first MI: smoking, dyslipidemia (ApoB/ApoA1 ratio), hypertension, diabetes, abdominal obesity, psychosocial factors, daily consumption of fruits and vegetables, regular physical activity, and alcohol consumption. Family history is a non-modifiable factor not in the INTERHEART 9."
+    answer: 1,
+    explanation: "In the INTERHEART study (Yusuf et al., Lancet 2004), a case-control study spanning 52 countries with over 27,000 participants, abnormal lipids (measured as ApoB/ApoA1 ratio) had the highest PAR% at approximately 49% globally for first MI. Smoking was second (~36%), followed by psychosocial factors (~33%), abdominal obesity (~20%), hypertension (~18%), diabetes (~10%), low daily fruit/vegetable consumption (~14%), physical inactivity (~12%), and alcohol (~7%). Combined, the 9 factors accounted for >90% PAR for first MI. Protective factors (fruit/vegetable consumption, regular exercise, alcohol in moderation) reduced risk."
   },
   {
     id: 6,
-    question: "The epidemiological transition model as applied to cardiovascular disease in India is best described as:",
+    question: "Omran's model of epidemiological transition describes four stages. Which stage is characterized by degenerative and man-made diseases (CVD, cancer) as the predominant causes of mortality, with life expectancy at 50-75 years?",
     options: [
-      "India has fully transitioned to Stage 4 with degenerative diseases predominating",
-      "India is experiencing a dual burden - high rates of both infectious diseases and NCDs simultaneously",
-      "Most Indian states remain in Stage 2 (receding pandemics) with low CVD rates",
-      "Urban India is in Stage 3 while rural India remains in Stage 1 of transition"
+      "Stage 1: Age of Pestilence and Famine",
+      "Stage 2: Age of Receding Pandemics",
+      "Stage 3: Age of Degenerative and Man-made Diseases",
+      "Stage 4: Age of Delayed Degenerative Diseases"
     ],
-    answer: 1,
-    explanation: "India is experiencing a dual burden of disease - the so-called 'stage 4B' or 'polarized' model. While infectious diseases and malnutrition remain significant (stages 1-2 features), CVD, diabetes and other NCDs are rising rapidly (stages 3-4 features). This occurs simultaneously across and within states, unlike the sequential transition seen in Western countries. The ICMR-GBD study confirms this heterogeneous transition across Indian states."
+    answer: 2,
+    explanation: "Omran's epidemiological transition model (1971): Stage 1 (Age of Pestilence and Famine) - infectious diseases dominate, high mortality, life expectancy 20-40 years; Stage 2 (Age of Receding Pandemics) - declining infectious disease mortality, life expectancy 30-50 years; Stage 3 (Age of Degenerative and Man-made Diseases) - NCDs including CVD and cancer become predominant, life expectancy 50-75 years; Stage 4 (Age of Delayed Degenerative Diseases) - CVD mortality declines due to prevention and treatment advances, life expectancy >75 years. Olshansky and Ault added Stage 5 (re-emerging infectious diseases). India is heterogeneously distributed across stages 2-4."
   },
   {
     id: 7,
-    question: "According to Registrar General of India (RGI) data from the Sample Registration System (SRS), what proportion of deaths in India are attributed to cardiovascular diseases?",
-    options: ["8-10%", "18-20%", "28-30%", "38-40%"],
+    question: "The Sample Registration System (SRS) Medical Certificate of Cause of Death (MCCD) system in India has a major limitation in estimating CVD mortality because:",
+    options: [
+      "The SRS only covers urban areas, missing rural CVD deaths entirely",
+      "Less than 25% of deaths in India are registered with a medically certified cause, with majority assigned through verbal autopsy leading to misclassification",
+      "CVD deaths are systematically over-reported because hospitals inflate CVD mortality data",
+      "The MCCD system only collects data every 10 years, like the census"
+    ],
     answer: 1,
-    explanation: "According to RGI-SRS data, cardiovascular diseases account for approximately 18-20% of all deaths in India. The SRS-based Mortality Schedule provides cause of death data through verbal autopsy. However, this is likely an underestimate due to poor attribution of cause of death at community level, especially in rural areas."
+    explanation: "A critical limitation of CVD mortality estimation from SRS-MCCD data is that only about 20-25% of all registered deaths in India have a medically certified cause of death. The vast majority of deaths - especially in rural areas - are assigned cause of death through verbal autopsy, which has significant limitations in accurately classifying CVD versus other causes. Additionally, complete death registration coverage itself is incomplete in many states. This leads to substantial uncertainty in CVD cause-specific mortality estimates. The RGI-SRS verbal autopsy-based data show CVD as responsible for about 18-20% of deaths, but this is considered an underestimate by most experts."
   },
   {
     id: 8,
-    question: "Urban-rural differences in CVD prevalence in India show which pattern?",
+    question: "The Prospective Urban Rural Epidemiology (PURE) study's findings on CVD risk factors in India showed which important urban-rural pattern?",
     options: [
-      "CVD prevalence is uniformly distributed between urban and rural areas",
-      "Urban areas have 2-3 times higher CVD prevalence than rural areas, with the gap narrowing",
-      "Rural areas now have higher CVD burden due to poor healthcare access",
-      "The urban-rural divide applies only to stroke, not coronary artery disease"
+      "Urban populations in India had dramatically higher CVD event rates, 4-5 times that of rural populations",
+      "CVD risk factors like hypertension, obesity, and physical inactivity were higher in urban areas, but absolute CVD event rates were converging between urban and rural areas",
+      "Rural populations in India had lower CVD risk due to predominantly agricultural diets with high grain and vegetable content",
+      "Urban-rural differences in CVD risk factors in India were not statistically significant when controlling for income"
     ],
     answer: 1,
-    explanation: "Studies consistently show 2-3 times higher CVD prevalence in urban compared to rural India. Urban areas have higher rates of hypertension, diabetes, obesity, sedentary lifestyle, and stress. However, the gap is narrowing as rural areas undergo lifestyle changes (dietary transition, reduced physical activity). Rural CVD may also be underdiagnosed due to limited healthcare access. The India Heart Watch and CARRS studies documented this urban-rural gradient."
+    explanation: "The PURE study (Prospective Urban Rural Epidemiology, a large multinational prospective cohort including India) found that while CVD risk factors (hypertension, dyslipidemia, diabetes, obesity, physical inactivity) were consistently higher in urban populations, CVD event rates and case fatality were also significantly influenced by healthcare access. Rural populations in India have fewer CVD risk factors on average, but when CVD occurs, case fatality is higher due to poor healthcare access. The urban-rural gap in risk factors is narrowing over time as rural populations undergo nutritional and lifestyle transition, suggesting future rural CVD burden will rise substantially."
   },
   {
     id: 9,
-    question: "Which of the following is a CVD risk factor unique to or more prominent in women compared to men?",
+    question: "The unique epidemiological feature of CVD in women, specifically regarding the timing of cardiovascular disease onset, is:",
     options: [
-      "Smoking and dyslipidemia",
-      "Hypertension and obesity",
-      "Premature menopause, preeclampsia history, and autoimmune diseases like lupus",
-      "Diabetes and physical inactivity"
+      "Women develop CVD at the same age as men but have more severe disease",
+      "Women develop CVD on average 10 years later than men, but this protective effect is lost in women with premature menopause, diabetes, or autoimmune conditions",
+      "Women are completely protected from CVD before age 65 due to estrogen",
+      "Women have lower CVD mortality than men at all ages because of hormonal and behavioral differences"
     ],
-    answer: 2,
-    explanation: "Women have unique or sex-specific CVD risk factors: premature menopause (before age 40) increases CVD risk 2-fold; history of preeclampsia/gestational hypertension doubles future CVD risk; polycystic ovarian syndrome (PCOS); gestational diabetes; autoimmune conditions (lupus, rheumatoid arthritis) have higher prevalence in women and confer CVD risk. Women also present differently (atypical MI symptoms) and are underdiagnosed and undertreated for CVD."
+    answer: 1,
+    explanation: "Women develop clinical CVD approximately 10 years later than men on average, attributed to the cardioprotective effects of endogenous estrogen. However, this protection is substantially reduced or eliminated in women with: premature menopause (before age 40, 2-fold higher CVD risk), diabetes (which eliminates the sex-based protection - diabetic women have equal or higher CVD risk than diabetic men), autoimmune conditions (lupus, rheumatoid arthritis), history of preeclampsia or gestational hypertension (2-3 fold higher future CVD risk), and PCOS. Post-menopausal women rapidly approach male CVD risk levels. Women also have higher CVD mortality after events due to under-diagnosis and under-treatment."
   },
   {
     id: 10,
-    question: "The prevalence of rheumatic heart disease (RHD) in India is estimated at:",
+    question: "Echocardiographic screening for rheumatic heart disease (RHD) in Indian schoolchildren using the World Heart Federation (WHF) 2012 criteria for definite RHD requires:",
     options: [
-      "0.01-0.05 per 1000 population",
-      "0.5-1 per 1000 population",
-      "5-8 per 1000 population",
-      "15-20 per 1000 population"
+      "Presence of mitral regurgitation on color Doppler alone is sufficient for definite RHD diagnosis",
+      "Morphological valve changes on 2D echocardiography plus pathological regurgitation meeting WHF criteria (regurgitant jet length, velocity, duration) in at least one valve",
+      "Clinical auscultation findings (murmur) confirmed by any echocardiographic valve abnormality",
+      "Elevated ASO titer plus any echocardiographic valve abnormality"
     ],
-    answer: 2,
-    explanation: "India has one of the highest burdens of rheumatic heart disease globally. Population-based studies using echocardiographic screening show prevalence of 5-8 per 1000 children. The burden is higher in lower socioeconomic groups, slums, and areas with overcrowding facilitating Group A Streptococcal transmission. RHD accounts for a significant proportion of heart failure and valvular disease in young Indians, unlike in Western countries where degenerative causes predominate."
+    answer: 1,
+    explanation: "The WHF 2012 echocardiographic criteria classify RHD as Definite or Borderline: Definite RHD requires morphological mitral valve changes (anterior leaflet thickening, restricted mobility of posterior leaflet, excessive leaflet tip motion in systole, chordal thickening) AND pathological mitral regurgitation (jet length >/=2 cm, velocity >2.5 m/s, pansystolic), or any degree of mitral stenosis with mean gradient >4 mmHg, or pathological aortic regurgitation. Borderline RHD includes cases meeting some but not all criteria. These echocardiographic screening criteria have been used in India-based studies showing 5-8 per 1000 prevalence, much higher than clinical (auscultatory) screening alone."
   },
   {
     id: 11,
-    question: "Chagas cardiomyopathy is caused by which organism and is endemic to which region?",
+    question: "Global CVD projections for India indicate that by 2030, CVD deaths in India are expected to:",
     options: [
-      "Toxoplasma gondii - Sub-Saharan Africa",
-      "Trypanosoma cruzi - Latin America (Southern Cone countries)",
-      "Leishmania donovani - Indian subcontinent",
-      "Plasmodium falciparum - Southeast Asia"
+      "Decline due to successful implementation of NCD prevention programs",
+      "Remain stable at current levels due to improved risk factor control",
+      "Increase to approximately 4 million deaths per year, with greatest rise in premature deaths in the working-age population",
+      "Increase only in women due to lifestyle changes, while men's CVD mortality will stabilize"
     ],
-    answer: 1,
-    explanation: "Chagas cardiomyopathy is caused by Trypanosoma cruzi, transmitted by triatomine bugs ('kissing bugs'). It is endemic to Latin America, particularly the Southern Cone countries (Argentina, Brazil, Bolivia, Chile). It affects 6-7 million people worldwide. Cardiac manifestations include dilated cardiomyopathy, arrhythmias, and sudden cardiac death. It is a major cause of heart failure in Latin America. Due to migration, cases are increasingly seen in non-endemic countries."
+    answer: 2,
+    explanation: "Multiple modeling studies project that India's CVD mortality will increase to approximately 4 million deaths annually by 2030, up from the current approximately 2.8-3 million. The greatest projected increase is in premature CVD deaths (30-69 years), particularly in urban populations. Key drivers of this projection include: rising prevalence of diabetes, hypertension, and obesity; ageing population; urbanization and nutritional transition; and insufficient progress in CVD prevention and treatment coverage. Conversely, optimistic scenarios (with effective risk factor control and treatment scale-up) show potential to avert 1-2 million deaths annually, highlighting the importance of preventive action now."
   },
   {
     id: 12,
-    question: "The inverse socioeconomic gradient in cardiovascular disease means:",
+    question: "The socioeconomic gradient in CVD in India differs from high-income countries in which important way?",
     options: [
-      "CVD affects the wealthy more because they can afford unhealthy processed foods",
-      "In high-income countries CVD disproportionately affects lower socioeconomic groups; in LMICs the pattern is reversing",
-      "Higher education is uniformly protective against CVD across all countries",
-      "CVD rates are highest in middle-income countries regardless of individual socioeconomic status"
+      "In India, the socioeconomic gradient is identical to that in the UK - the poor have higher CVD burden",
+      "In India, CVD was historically concentrated in higher socioeconomic groups, but with epidemiological transition, a reverse gradient is emerging with increasing CVD burden in lower socioeconomic groups who cannot afford treatment",
+      "In India, middle socioeconomic groups have the highest CVD burden due to food transitions without income for healthcare",
+      "Socioeconomic gradients do not apply to CVD in India because traditional diet practices are protective at all income levels"
     ],
     answer: 1,
-    explanation: "In high-income countries, CVD disproportionately affects lower socioeconomic groups (lower education, income, occupational class) due to higher risk factor prevalence, poor healthcare access, psychosocial stress, and unhealthy behaviours. In LMICs including India, the pattern is more complex - historically CVD was a disease of the affluent, but with epidemiological transition, the poor bear increasing burden due to risk factor exposure, inability to afford medications, and poor healthcare. This convergence means the poorest are now doubly disadvantaged globally."
+    explanation: "The socioeconomic-CVD relationship in India is undergoing a transition. Historically, CVD (especially coronary artery disease) was a disease of the affluent in India due to sedentary urban lifestyles, rich diets, and tobacco use. However, with the epidemiological transition, CVD risk factors are increasingly prevalent in lower socioeconomic groups (cheaper processed foods, passive entertainment, unregulated tobacco). Simultaneously, lower socioeconomic groups have less access to preventive care, medications, and emergency cardiac services - leading to higher case fatality. This 'double burden' on the poor mirrors what occurred in high-income countries decades ago."
   },
   {
     id: 13,
-    question: "According to ACC/AHA 2017 guidelines, hypertension is defined as blood pressure at or above:",
-    options: ["130/80 mmHg", "140/90 mmHg", "150/95 mmHg", "160/100 mmHg"],
-    answer: 0,
-    explanation: "The 2017 ACC/AHA guidelines lowered the definition of hypertension from 140/90 mmHg to 130/80 mmHg. Stage 1 hypertension is 130-139/80-89 mmHg and Stage 2 is ≥140/90 mmHg. Elevated BP (formerly prehypertension) is 120-129/<80 mmHg. JNC 7 (2003) defined hypertension as ≥140/90 mmHg. India and WHO still largely use the 140/90 mmHg threshold for clinical management decisions. The ACC/AHA 2017 threshold is important for ICMR/PG exam context."
+    question: "The NFHS-5 (2019-21) measurement protocol for hypertension involved taking blood pressure readings at which intervals, and hypertension was defined as elevated BP on which reading(s)?",
+    options: [
+      "Single BP reading; hypertension defined as SBP >/=140 or DBP >/=90 mmHg",
+      "Three consecutive readings at 5-minute intervals; average of all three readings used",
+      "Two readings after 5 minutes rest; average of second and third readings (if three taken) or second reading used; >/=140/90 or on antihypertensive medication",
+      "Two readings on separate days; hypertension confirmed only on repeat measurement"
+    ],
+    answer: 2,
+    explanation: "In NFHS-5, blood pressure was measured using a digital sphygmomanometer. Two readings were taken after 5 minutes of rest in a seated position, with a 2-minute interval between readings. The average of the two readings was used. If the first two readings differed significantly, a third reading was taken and the average of the last two was used. Hypertension was defined as average SBP >/=140 mmHg or average DBP >/=90 mmHg, or currently taking antihypertensive medication. This methodology differs from clinical guidelines recommending multiple readings on multiple visits for diagnosis, making NFHS-5 data a population survey estimate rather than a clinical diagnostic tool."
   },
   {
     id: 14,
-    question: "White coat hypertension is defined as:",
+    question: "The 'awareness-treatment-control cascade' for hypertension in India from NFHS-5 data shows which approximate pattern?",
     options: [
-      "BP ≥140/90 mmHg in clinic but normal on ambulatory blood pressure monitoring (ABPM) with <135/85 mmHg awake average",
-      "BP ≥130/80 mmHg in clinic with normal home readings",
-      "BP that normalizes with antihypertensive therapy but rebounds when medications are stopped",
-      "Hypertension caused by anxiety specifically in healthcare settings requiring no treatment"
+      "Awareness 75%, treatment 65%, control 45% - indicating a relatively mature hypertension control program",
+      "Awareness 45%, treatment 35%, control 15% - showing large gaps at every step of the cascade",
+      "Awareness 25%, treatment 70% of aware, control 30% of treated - with the primary gap being awareness",
+      "Awareness 60%, treatment 55%, control 50% - consistent with middle-income country average performance"
     ],
-    answer: 0,
-    explanation: "White coat hypertension (WCH) is defined as persistently elevated BP in clinical settings (≥140/90 mmHg) but normal on 24-hour ABPM (awake average <135/85 mmHg, 24-hour average <130/80 mmHg). Prevalence is 15-30% of those with office hypertension. WCH carries intermediate cardiovascular risk between normotension and sustained hypertension. Masked hypertension is the reverse - normal office BP with elevated out-of-office BP, which carries higher cardiovascular risk than WCH."
+    answer: 1,
+    explanation: "NFHS-5 (2019-21) data reveals a poor hypertension awareness-treatment-control cascade in India: approximately 45% of hypertensive men and 56% of hypertensive women are aware of their condition; among those aware, approximately 35-45% are receiving treatment; and among those on treatment, only about 15-25% have controlled BP (</=140/90 mmHg). This means only roughly 10-13% of all hypertensives in India have their BP controlled. This cascade - sometimes called the 'Rule of Halves' - shows gaps at every step: awareness, treatment initiation, and treatment effectiveness. Significant state-wise variation exists, with Kerala performing best."
   },
   {
     id: 15,
-    question: "Which of the following is NOT a standard indication for ambulatory blood pressure monitoring (ABPM)?",
+    question: "Masked hypertension, in contrast to white coat hypertension, is epidemiologically important because:",
     options: [
-      "Suspected white coat hypertension",
-      "Evaluation of nocturnal hypertension (non-dipping pattern)",
-      "Monitoring response to antihypertensive therapy in all treated hypertensives",
-      "Suspected masked hypertension"
+      "It is more common than white coat hypertension, affecting about 30-40% of the general population",
+      "It carries lower cardiovascular risk than sustained hypertension since BP is only intermittently elevated",
+      "It is detected as normal office BP but elevated out-of-office BP (ABPM or home BP), and carries cardiovascular risk comparable to sustained hypertension",
+      "It is exclusively caused by recreational drug use and is not a true hypertensive state"
     ],
     answer: 2,
-    explanation: "ABPM is not indicated for routine monitoring of all treated hypertensives. Standard indications include: suspected white coat hypertension, suspected masked hypertension, evaluation of nocturnal BP patterns (non-dipping associated with higher cardiovascular risk), assessment of BP variability, evaluation of drug-resistant hypertension, symptomatic hypotension, BP assessment in pregnancy, autonomic dysfunction evaluation, and episodic hypertension. Home BP monitoring (HBPM) is used for routine follow-up of treated hypertension."
+    explanation: "Masked hypertension (MH) is defined as normal office/clinic BP (</=140/90 mmHg) but elevated out-of-office blood pressure on ABPM (24-hour average >/=130/80, awake average >/=135/85 mmHg) or home BP monitoring (>/=135/85 mmHg). Prevalence is approximately 10-15% of the general population with normal office BP. MH is clinically important because it carries cardiovascular risk comparable to sustained hypertension (2-3 times higher than true normotension) and is associated with target organ damage. It is more common in men, smokers, those with stress, heavy alcohol use, physical inactivity, and diabetes. Home BP monitoring can help detect MH."
   },
   {
     id: 16,
-    question: "National Family Health Survey (NFHS-5, 2019-21) data on hypertension prevalence in India shows:",
+    question: "The National Salt Reduction Programme (NSRP) evidence base for India is supported by data showing average dietary salt (sodium chloride) intake in India is approximately:",
     options: [
-      "Overall hypertension prevalence of 5-8% in adults, with urban-rural parity",
-      "Hypertension in approximately 24% of men and 21% of women aged 15 years and above",
-      "Hypertension prevalence of 35% in urban and 15% in rural areas",
-      "Hypertension is more common in women than men across all age groups in India"
+      "4-5 grams per day (within WHO recommended limit of 5 g/day)",
+      "8-10 grams per day - approximately double the WHO recommended limit",
+      "12-15 grams per day - nearly triple the WHO limit, the highest globally",
+      "6-7 grams per day - slightly above WHO recommendation"
     ],
     answer: 1,
-    explanation: "NFHS-5 (2019-21) found hypertension (≥140/90 mmHg or on medication) in approximately 24% of men and 21% of women aged 15+ years in India. Earlier NFHS surveys showed much lower rates, partly reflecting improved detection. State-wise variation is significant, with higher rates in Kerala, Punjab, and Goa. Urban prevalence is higher than rural. Hypertension control rates remain poor - only about 1 in 10 hypertensives have controlled BP in India, highlighting the treatment gap."
+    explanation: "Dietary salt intake surveys in India, including ICMR-led studies and global data, consistently show average intake of approximately 8-10 grams per day in adult Indians, approximately double the WHO recommended maximum of 5 grams per day (or 2 grams sodium). Sources include: table salt added during cooking (major source), processed and packaged foods, pickles, and papads. Regional variation exists - some studies show higher intake in Maharashtra, Punjab, and Andhra Pradesh. India's population-level salt reduction strategy is important given the high prevalence of hypertension and the known 2-3 mmHg systolic BP reduction achievable with salt reduction."
   },
   {
     id: 17,
-    question: "Salt sensitivity, relevant to hypertension pathophysiology, is defined as a change in mean arterial pressure of more than how many mmHg with dietary sodium loading/depletion?",
-    options: ["3 mmHg", "10 mmHg", "20 mmHg", "30 mmHg"],
+    question: "The DASH (Dietary Approaches to Stop Hypertension) dietary pattern, when evaluated at the population level as a public health intervention, has the greatest evidence for which outcome?",
+    options: [
+      "Reversal of atherosclerotic plaques in coronary arteries",
+      "Reduction of blood pressure comparable to low-dose antihypertensive monotherapy, achievable through dietary pattern change alone",
+      "Prevention of type 2 diabetes but not cardiovascular disease",
+      "Benefit only in those with established hypertension, not in normotensive individuals"
+    ],
     answer: 1,
-    explanation: "Salt sensitivity is defined as a change in mean arterial pressure (MAP) of ≥10 mmHg (some define as ≥5% change in MAP) in response to acute sodium loading versus sodium depletion protocols. Approximately 50% of hypertensives and 25% of normotensives are salt-sensitive. Salt sensitivity is more common in elderly, Black populations, diabetics, those with chronic kidney disease, and obese individuals. South Asians also show higher salt sensitivity. It is associated with higher cardiovascular risk independent of resting BP."
+    explanation: "Population-level evidence for the DASH dietary pattern (rich in fruits, vegetables, low-fat dairy, whole grains, lean protein; low in saturated fat, red meat, sweets) shows: systolic BP reduction of 8-14 mmHg in hypertensives (comparable to low-dose antihypertensive monotherapy), and 3-4 mmHg in normotensives. The DASH-Sodium trial demonstrated additive benefits of combining DASH diet with sodium restriction. Population-wide adoption of DASH-like dietary patterns could substantially reduce hypertension prevalence and CVD events. However, the DASH diet was developed in US context and requires adaptation for Indian food culture. The Mediterranean diet also shows CVD risk reduction."
   },
   {
     id: 18,
-    question: "The DASH (Dietary Approaches to Stop Hypertension) trial demonstrated that the DASH diet reduced systolic blood pressure by approximately how much in hypertensives?",
-    options: ["2-3 mmHg", "5-6 mmHg", "11-12 mmHg", "18-20 mmHg"],
+    question: "Hypertension in pregnancy (including gestational hypertension, preeclampsia, and chronic hypertension) contributes to global maternal mortality by causing approximately what percentage of maternal deaths?",
+    options: ["2-5%", "10-14%", "20-25%", "35-40%"],
     answer: 2,
-    explanation: "The DASH trial (Appel et al., NEJM 1997) showed that the DASH diet (rich in fruits, vegetables, low-fat dairy, whole grains, poultry, fish; low in saturated fat, red meat, sweets, sugar-sweetened beverages) reduced systolic BP by approximately 11-12 mmHg and diastolic BP by 5-6 mmHg in hypertensives compared to a control diet. In normotensives, reduction was about 3 mmHg systolic. Combined with sodium restriction (DASH-Sodium trial), reductions were even greater."
+    explanation: "Hypertensive disorders of pregnancy (HDP) - including gestational hypertension, preeclampsia, eclampsia, and HELLP syndrome - account for approximately 20-25% of global maternal deaths, making them one of the leading causes of maternal mortality. In India, HDP causes approximately 5-8% of maternal deaths, though eclampsia remains a significant contributor. Preeclampsia affects 2-8% of pregnancies globally and is more common in first pregnancies, multiple gestations, pre-existing hypertension, diabetes, obesity, and in women with prior preeclampsia. Beyond immediate maternal-fetal risk, women with preeclampsia have 2-4 times higher lifetime CVD risk."
   },
   {
     id: 19,
-    question: "Target organ damage (TOD) assessment in hypertension includes all of the following EXCEPT:",
-    options: [
-      "Electrocardiogram for left ventricular hypertrophy",
-      "Urine albumin-to-creatinine ratio for nephropathy",
-      "Serum HDL cholesterol as marker of vascular damage",
-      "Fundoscopy for hypertensive retinopathy"
-    ],
+    question: "The population attributable risk (PAR%) of hypertension as a risk factor for stroke globally is estimated at approximately:",
+    options: ["15-20%", "25-30%", "35-50%", "55-65%"],
     answer: 2,
-    explanation: "Serum HDL cholesterol is a cardiovascular risk factor but not a marker of hypertensive target organ damage (TOD). Standard TOD assessment includes: ECG (LVH - Sokolow-Lyon or Cornell criteria), echocardiogram (LVH, diastolic dysfunction), urine ACR (microalbuminuria ≥30 mg/g indicates nephropathy), serum creatinine and eGFR (renal damage), fundoscopy (Keith-Wagener-Barker retinopathy grades), ankle-brachial index (peripheral vascular disease), carotid intima-media thickness (subclinical atherosclerosis), and pulse wave velocity (arterial stiffness)."
+    explanation: "Hypertension is the single largest modifiable risk factor for stroke, accounting for approximately 35-50% of the population attributable risk for stroke globally. This varies by region - in low-income countries and South Asia, the PAR% may be even higher (up to 50-55%) given higher hypertension prevalence and poorer control rates. The INTERSTROKE study (global case-control study analogous to INTERHEART but for stroke) found that hypertension had the highest PAR% among all stroke risk factors. Effective hypertension control at the population level would prevent approximately one-third to half of all strokes, making it the most impactful single intervention for stroke prevention."
   },
   {
     id: 20,
-    question: "A hypertensive urgency is distinguished from a hypertensive emergency by:",
-    options: [
-      "The level of blood pressure - urgency is 160-179 mmHg systolic and emergency is ≥180 mmHg",
-      "The presence of acute target organ damage - emergency has acute TOD, urgency does not",
-      "The need for IV vs oral antihypertensives - urgency uses oral agents",
-      "The duration of hypertension - urgency is acute onset, emergency is chronic"
-    ],
-    answer: 1,
-    explanation: "The critical distinction between hypertensive emergency and urgency is the presence or absence of acute target organ damage (TOD), not the BP level alone. Hypertensive emergency: severely elevated BP (usually >180/120 mmHg) WITH acute TOD (hypertensive encephalopathy, acute MI, aortic dissection, acute HF/pulmonary edema, acute kidney injury, eclampsia, hypertensive retinopathy grade III/IV). Requires IV antihypertensives and ICU admission. Hypertensive urgency: severely elevated BP WITHOUT acute TOD. Managed with oral agents and outpatient follow-up."
+    question: "The pediatric hypertension epidemic in India is epidemiologically significant because community-based studies show hypertension or prehypertension in approximately what percentage of school-aged children?",
+    options: ["0.5-1%", "3-5%", "10-14%", "20-25%"],
+    answer: 2,
+    explanation: "Community-based screening studies in Indian school-children (typically 6-18 year age group) have found prehypertension or hypertension (using age-sex-height specific 90th/95th percentile thresholds) in approximately 10-14% of children. This is substantially higher than expected and is driven by rising obesity, increased salt intake, physical inactivity, and possible low-birth-weight/catch-up growth in many children (Barker hypothesis). The ICMR task force has highlighted this emerging concern. Pediatric hypertension frequently tracks into adult hypertension, making early identification and lifestyle intervention crucial for primordial CVD prevention."
   },
   {
     id: 21,
-    question: "Resistant hypertension is defined as BP above target despite treatment with:",
+    question: "The India Hypertension Control Initiative (IHCI) simplified treatment protocol uses which first-line antihypertensive combination strategy?",
     options: [
-      "Two antihypertensive drugs at maximum tolerated doses",
-      "Three antihypertensive drugs of different classes at optimal doses, including a diuretic",
-      "Four antihypertensive drugs at any dose",
-      "Any antihypertensive drug for more than 6 months"
+      "Atenolol + hydrochlorothiazide as first-line, ACE inhibitor added as second line",
+      "Amlodipine monotherapy, then adding losartan, then adding hydrochlorothiazide in a step-up protocol",
+      "Ramipril as first-line for all hypertensives given India's high diabetes prevalence",
+      "Fixed-dose combination of any two drugs chosen by the prescribing physician"
     ],
     answer: 1,
-    explanation: "Resistant hypertension is defined as BP remaining above target (≥140/90 mmHg for most, ≥130/80 mmHg per ACC/AHA 2017) despite concurrent use of three antihypertensive agents of different classes at optimal/maximally tolerated doses, one of which must be a diuretic. Prevalence is about 10-15% of treated hypertensives. Before diagnosing true resistance, pseudo-resistance must be excluded (poor medication adherence, white coat effect, inadequate doses/combinations, interfering substances like NSAIDs/OCPs). Refractory hypertension requires ≥5 drugs."
+    explanation: "The IHCI simplified treatment protocol, adapted from WHO HEARTS, uses a standardized step-up algorithm to reduce clinical decision variability: Step 1 - Amlodipine 5 mg; if uncontrolled, Step 2 - add Losartan 50 mg; if still uncontrolled, Step 3 - add Hydrochlorothiazide 12.5-25 mg. This evidence-based, simple, three-step protocol reduces therapeutic inertia and enables task-shifting to non-physician providers for follow-up. Generic medications keep costs low. IHCI reported that in facilities implementing this protocol with good adherence, BP control rates improved from approximately 13% to 40-50% within 12-18 months of implementation."
   },
   {
     id: 22,
-    question: "Regarding hypertension in pregnancy, the HELLP syndrome is characterized by:",
-    options: [
-      "Hypertension, Elevated Liver enzymes, Low Platelet count",
-      "Hemolysis, Elevated Liver enzymes, Low Platelet count",
-      "Hemolysis, Edema, Low Protein in urine",
-      "Hypertension, Edema, Low Platelet count, Proteinuria"
-    ],
+    question: "Resistant hypertension in population-based studies has a true prevalence (after excluding pseudo-resistance) of approximately:",
+    options: ["1-2% of all adults", "5-10% of hypertensive individuals", "15-25% of hypertensive individuals", "30-40% of treated hypertensives"],
     answer: 1,
-    explanation: "HELLP syndrome stands for Hemolysis, Elevated Liver enzymes, and Low Platelet count. It is a severe complication of preeclampsia/eclampsia occurring in 0.5-0.9% of all pregnancies and 10-20% of severe preeclampsia cases. Features: microangiopathic hemolytic anemia, elevated AST/ALT >70 IU/L, platelets <100,000/mm3. Definitive treatment is delivery. Pre-eclampsia is defined as hypertension (≥140/90 mmHg) after 20 weeks gestation with proteinuria (≥300 mg/24 hours or ACR ≥30 mg/mmol) or other features of end-organ damage."
+    explanation: "True resistant hypertension (BP above target despite 3 optimally dosed antihypertensives of different classes including a diuretic, with confirmed medication adherence and exclusion of white coat effect) has a true prevalence of approximately 5-10% of hypertensive individuals. Studies often report apparent resistant hypertension at 10-20% of treated hypertensives, but after rigorous exclusion of pseudo-resistance (poor adherence, white coat effect, suboptimal drug doses/combinations, interfering medications like NSAIDs), true resistance drops to 5-10%. Important secondary causes to screen: primary aldosteronism (most common, 5-10% of resistant cases), obstructive sleep apnea, renovascular disease, and chronic kidney disease."
   },
   {
     id: 23,
-    question: "Pediatric hypertension is defined based on:",
+    question: "Primary aldosteronism (Conn's syndrome) is now recognized to be far more common than previously thought, and is an important cause of hypertension to screen for because:",
     options: [
-      "Absolute BP values of ≥120/80 mmHg for all children above 10 years",
-      "BP ≥95th percentile for age, sex, and height on three separate occasions",
-      "BP >140/90 mmHg at any age above 5 years",
-      "Systolic BP >2 standard deviations above the mean for age group"
+      "It exclusively causes severe hypertension (>180/110 mmHg) that is easily recognized clinically",
+      "It causes hypokalemia in all cases, making laboratory screening straightforward",
+      "It is present in approximately 5-10% of all hypertensives and up to 20% of resistant hypertension, with excess cardiovascular risk beyond BP elevation, and is potentially curable surgically",
+      "It only occurs in patients with adrenal adenomas and is confirmed by CT scan of the adrenal glands alone"
     ],
-    answer: 1,
-    explanation: "Pediatric hypertension (ages 1-13 years) is defined as average systolic and/or diastolic BP ≥95th percentile for age, sex, and height on 3 or more separate occasions. Elevated BP (formerly prehypertension) is 90th-95th percentile. For adolescents ≥13 years, adult thresholds (≥130/80 mmHg for Stage 1, ≥140/90 mmHg for Stage 2 per AAP 2017) apply. Height-based normative tables (from Task Force on Blood Pressure Control in Children) are used. Secondary hypertension is more common in children than adults, with renal disease being the leading cause."
+    answer: 2,
+    explanation: "Primary aldosteronism (PA) is now estimated to affect 5-10% of all hypertensives and 15-20% of those with resistant hypertension - far more common than previously appreciated. Critically, PA causes cardiovascular damage (myocardial fibrosis, endothelial dysfunction, arrhythmias) beyond that attributable to BP elevation alone due to direct mineralocorticoid receptor activation. Importantly, only 30-40% of PA patients have hypokalemia, so normokalemia does not exclude PA. Screening with aldosterone-renin ratio (ARR) is recommended in: resistant hypertension, young-onset hypertension, hypertension with spontaneous hypokalemia, and incidentally discovered adrenal adenoma. Unilateral adenoma is potentially curable by adrenalectomy."
   },
   {
     id: 24,
-    question: "Which is the most common identifiable cause of secondary hypertension?",
+    question: "In the epidemiology of hypertension, the concept of 'J-curve' phenomenon refers to:",
     options: [
-      "Primary aldosteronism (Conn's syndrome)",
-      "Renal parenchymal disease (chronic kidney disease)",
-      "Renovascular hypertension (renal artery stenosis)",
-      "Pheochromocytoma"
+      "The J-shaped distribution of blood pressure in the population with a peak at 140/90 mmHg",
+      "The observation that at very low achieved diastolic BP (especially <65-70 mmHg) during treatment, cardiovascular event rates may paradoxically rise, particularly in those with established coronary artery disease",
+      "The J-shaped temporal trend of hypertension prevalence peaking in middle age and declining in elderly",
+      "The relationship between salt intake and BP that shows a J-curve with very low salt intake also increasing BP"
     ],
     answer: 1,
-    explanation: "Renal parenchymal disease (chronic kidney disease, glomerulonephritis, polycystic kidney disease) is the most common identifiable cause of secondary hypertension, accounting for 2-5% of hypertension cases. Primary aldosteronism is the most common endocrine cause (5-10% of hypertensives, much more common than previously thought). Renovascular hypertension (fibromuscular dysplasia in young women, atherosclerosis in elderly) accounts for 1-5%. Pheochromocytoma is rare (<0.5%). Other causes: obstructive sleep apnea, hypothyroidism, Cushing's syndrome, coarctation of aorta."
+    explanation: "The 'J-curve' or 'J-shaped curve' in hypertension management refers to the observation that when diastolic BP is lowered too aggressively (typically below 65-70 mmHg), cardiovascular event rates (particularly coronary events) may paradoxically increase in patients with established coronary artery disease. This is thought to occur because coronary perfusion (occurring during diastole) is compromised at very low diastolic pressures in those with fixed atherosclerotic coronary stenosis. This phenomenon was highlighted in the ONTARGET and ACCORD trials. Debate continues on the clinical significance of the J-curve, and most guidelines advise not lowering diastolic BP below 65 mmHg in high-risk patients, particularly the elderly."
   },
   {
     id: 25,
-    question: "Which of the following is a non-modifiable risk factor for coronary artery disease?",
+    question: "The Pooled Cohort Equations (PCE) for ASCVD risk estimation differ from the Framingham Risk Score in which important way relevant to population surveillance in India?",
     options: [
-      "Smoking",
-      "Dyslipidemia",
-      "Family history of premature CAD in first-degree male relative before age 55",
-      "Physical inactivity"
+      "PCE uses LDL cholesterol rather than total cholesterol, making it more accurate in Indian populations",
+      "PCE was derived from diverse US cohorts and includes race as a variable, but has not been validated in South Asian populations and may underestimate CVD risk in Indians",
+      "PCE includes family history of premature CVD, which makes it more sensitive than Framingham for South Asians",
+      "PCE is preferred in India because it uses clinic-based rather than laboratory-based variables"
     ],
-    answer: 2,
-    explanation: "Family history of premature CAD (in a first-degree male relative before age 55, or female relative before age 65) is a non-modifiable risk factor for CAD. Other non-modifiable factors include: age (men ≥45 years, women ≥55 years), male sex (women have lower risk pre-menopause, higher post-menopause), and ethnicity (South Asians have higher risk). Modifiable risk factors include smoking, dyslipidemia, hypertension, diabetes, obesity, physical inactivity, unhealthy diet, and psychosocial factors."
+    answer: 1,
+    explanation: "The ACC/AHA 2013 Pooled Cohort Equations were derived from multiple US prospective cohorts (ARIC, CHS, CARDIA, Framingham) and include race (African American vs White) as a variable. They have not been prospectively validated in South Asian populations and have been shown in some studies to both under- and overestimate CVD risk in different South Asian subgroups. The WHO/ISH CVD risk charts and the European SCORE have also not been adequately validated in India. There is a recognized need for India-specific CVD risk prediction models derived from Indian prospective cohort data. ICMR has called for development of such models as a research priority. The CARRS and UDAY studies provide some Indian data."
   },
   {
     id: 26,
-    question: "The Framingham Risk Score (FRS) calculates 10-year risk for cardiovascular events and includes which variables?",
+    question: "The Framingham Heart Study made which specific methodological contribution to cardiovascular epidemiology that transformed the field?",
     options: [
-      "Age, sex, total cholesterol, HDL cholesterol, systolic BP, BP treatment status, smoking status, diabetes",
-      "Age, sex, LDL cholesterol, triglycerides, diastolic BP, smoking, obesity, family history",
-      "Age, sex, BMI, waist circumference, fasting glucose, blood pressure, smoking, alcohol use",
-      "Age, sex, C-reactive protein, total cholesterol, BP, smoking, renal function"
+      "It was the first randomized controlled trial demonstrating that antihypertensive treatment reduces stroke",
+      "It pioneered the prospective cohort study design for studying chronic disease etiology and introduced the concept of 'risk factors' for disease",
+      "It developed the case-control methodology for studying rare cardiovascular outcomes efficiently",
+      "It first demonstrated that population-based screening programs for hypertension are cost-effective"
     ],
-    answer: 0,
-    explanation: "The Framingham Risk Score (Wilson et al., 1998; updated 2001) calculates 10-year cardiovascular risk using: age, sex, total cholesterol, HDL cholesterol, systolic blood pressure, whether BP is treated, current smoking status, and diabetes status (in some versions). Low risk: <10%; intermediate: 10-20%; high: >20%. The Pooled Cohort Equations (PCE/ASCVD risk calculator, ACC/AHA 2013) uses similar variables but also includes race. FRS was derived from predominantly White populations and may underestimate risk in South Asians."
+    answer: 1,
+    explanation: "The Framingham Heart Study (FHS, began 1948) made landmark contributions to cardiovascular epidemiology: it pioneered the prospective cohort design for studying CVD in a defined community population; William Kannel et al. coined the term 'risk factor' in their 1961 Framingham paper, transforming how chronic disease etiology and prevention were conceptualized; FHS identified smoking, hypertension, hypercholesterolemia, diabetes, and obesity as major CHD risk factors; demonstrated HDL's protective role; developed sex-specific risk prediction; linked atrial fibrillation to stroke; and documented heart failure epidemiology. The concept of quantifying cumulative risk and developing risk prediction tools originated from FHS methodology."
   },
   {
     id: 27,
-    question: "The 2013 ACC/AHA Pooled Cohort Equations (ASCVD Risk Calculator) is indicated for which primary prevention population?",
-    options: [
-      "All adults aged 18-75 years without established cardiovascular disease",
-      "Adults aged 40-79 years without established CVD or diabetes, with LDL 70-189 mg/dL",
-      "Adults aged 30-80 years with at least one cardiovascular risk factor",
-      "Adults aged 21-70 years with hyperlipidemia requiring statin therapy"
-    ],
+    question: "Dyslipidemia prevalence data from India-based population surveys indicate that elevated total cholesterol (>/=200 mg/dL) is present in approximately what percentage of Indian adults?",
+    options: ["10-15%", "25-30%", "40-45%", "55-60%"],
     answer: 1,
-    explanation: "The ACC/AHA 2013 Pooled Cohort Equations are validated for primary prevention in adults aged 40-79 years, without established atherosclerotic cardiovascular disease (ASCVD), with LDL cholesterol 70-189 mg/dL. It estimates 10-year risk for first atherosclerotic CVD event (non-fatal MI, coronary heart disease death, or stroke). For those aged <40 or >79 years, or those with established CVD/diabetes/very high LDL, different approaches apply. Notably, the ASCVD calculator includes race (African American vs White) as a variable."
+    explanation: "Community-based surveys in India (ICMR-INDIAB study, CARRS study, state-level STEPS surveys) find elevated total cholesterol (>/=200 mg/dL) in approximately 25-30% of Indian adults, with significant urban-rural and state-based variation. Urban populations, particularly in southern and western states, show higher dyslipidemia prevalence. A distinctive Indian pattern is the 'atherogenic dyslipidemia' - relatively modest elevations in LDL-C but high triglycerides and low HDL-C, associated with the thin-fat phenotype and insulin resistance. Dyslipidemia awareness is poor - only about 10-20% of dyslipidemic Indians are aware of their condition, fewer are treated, and treatment control rates are very low."
   },
   {
     id: 28,
-    question: "In acute myocardial infarction, cardiac troponin (cTnI or cTnT) is preferred over CK-MB because:",
+    question: "The incidence of acute myocardial infarction (AMI) in urban India compared to rural India and compared to Western populations shows which pattern?",
     options: [
-      "Troponin rises faster than CK-MB (within 1 hour of MI onset)",
-      "Troponin has greater cardiac specificity and remains elevated for 7-14 days (longer diagnostic window)",
-      "Troponin levels directly correlate with infarct size, making it useful for monitoring therapy",
-      "Troponin does not rise in non-cardiac conditions like renal failure, unlike CK-MB"
+      "Urban India AMI incidence is similar to rural India but both are lower than Western populations",
+      "Urban India AMI incidence is 2-4 times higher than rural India; South Asians in India have comparable or higher AMI incidence than Western populations and present at younger ages",
+      "AMI incidence in India is uniformly lower than Western countries due to predominantly vegetarian dietary practices",
+      "AMI incidence in India has been declining since 2000 due to successful NPCDCS implementation"
     ],
     answer: 1,
-    explanation: "Cardiac troponin (cTnI and cTnT) is preferred over CK-MB for MI diagnosis because of greater cardiac specificity and prolonged elevation (7-14 days for standard assay, allowing late presentation diagnosis). Both rise at similar time (3-6 hours after MI onset); high-sensitivity troponin (hs-cTn) can rise within 1-3 hours. CK-MB returns to normal within 48-72 hours and has lower specificity (skeletal muscle also expresses some CK-MB). Troponin does rise in non-cardiac conditions (Type 2 MI, renal failure, PE, myocarditis, heart failure) - these are considered 'Type 2 MI' or 'myocardial injury'."
+    explanation: "AMI incidence in urban India (approximately 60-100 per 100,000 person-years in various studies) is 2-4 times higher than rural India (approximately 15-30 per 100,000 person-years). Crucially, South Asians in general have higher age-standardized AMI incidence and mortality than White Europeans and Americans, with onset occurring approximately 5-10 years earlier. Indian AMI registries (CREATE registry, STEMI India registry) document that the mean age of AMI in India is approximately 55-60 years, compared to 65-70 years in Western countries. The burden of premature AMI (in those <50 years) is disproportionately high in India, with smoking, diabetes, and stress as major contributors."
   },
   {
     id: 29,
-    question: "The ECG finding most specific for STEMI that mandates immediate reperfusion therapy is:",
+    question: "The STEMI-NSTEMI ratio in India (proportion of all acute MI that are STEMI) compared to Western countries shows:",
     options: [
-      "ST-segment depression >1 mm in two contiguous leads",
-      "ST-segment elevation ≥1 mm in two or more contiguous limb leads or ≥2 mm in two or more contiguous precordial leads (or LBBB)",
-      "New Q waves in two or more leads",
-      "T-wave inversions in precordial leads V1-V4"
+      "STEMI comprises approximately 25-30% of AMI in India, similar to Western countries",
+      "STEMI comprises approximately 50-60% of all AMI in India - higher than the 30-40% seen in high-income countries - reflecting delayed presentation and less prior antiplatelet use",
+      "NSTEMI has become more common than STEMI in India as in Western countries due to statin and antiplatelet use",
+      "STEMI and NSTEMI are equally common in India (50:50 ratio) regardless of geography"
     ],
     answer: 1,
-    explanation: "STEMI is defined by new ST-elevation ≥1 mm (0.1 mV) in two or more contiguous limb leads or ≥2 mm (0.2 mV) in two or more contiguous precordial leads, OR new (or presumed new) left bundle branch block (LBBB). This ECG finding mandates immediate reperfusion (primary PCI within 90 minutes of first medical contact, or thrombolysis if PCI unavailable within 120 minutes). ST depression indicates NSTEMI or unstable angina. New Q waves indicate completed infarction. De Winter T-waves (anterior ST depression with hyperacute T-waves) is an equivalent of LAD occlusion."
+    explanation: "STEMI comprises approximately 50-60% of all AMI presentations in India (based on CREATE registry, STEMI India registry, and state-based studies), compared to approximately 30-40% in high-income countries. In high-income countries, the proportion of NSTEMI has been rising relative to STEMI due to: widespread statin and antiplatelet use (which may convert potential STEMIs to NSTEMIs), earlier presentation due to awareness, and improved diagnostic capability with high-sensitivity troponin. In India, higher STEMI proportions reflect: later presentation (patients reaching hospitals hours after symptom onset), less background antiplatelet/statin use, and different disease patterns. NSTEMI in India may also be underdiagnosed due to limited troponin testing access."
   },
   {
     id: 30,
-    question: "The preferred reperfusion strategy for STEMI, when available, is primary PCI. If PCI is not available within the recommended time window, fibrinolysis should be administered within:",
+    question: "Stroke epidemiology in India shows which important pattern regarding stroke subtypes compared to Western populations?",
     options: [
-      "30 minutes of first medical contact (FMC)",
-      "60 minutes of FMC ('door-to-needle' within 30 minutes of hospital arrival)",
-      "12 hours of symptom onset if PCI facility is >120 minutes away",
-      "24 hours of symptom onset as late thrombolysis is still beneficial"
+      "Ischemic stroke predominates in India (>85%), similar to Western populations",
+      "India has a higher proportion of hemorrhagic stroke (~25-30% of all strokes) compared to Western populations (~15%), attributed to less-controlled hypertension",
+      "Subarachnoid hemorrhage is the predominant stroke subtype in India due to genetic predisposition",
+      "Lacunar infarcts are virtually absent in Indian stroke populations due to dietary patterns"
     ],
     answer: 1,
-    explanation: "If primary PCI cannot be performed within 120 minutes of first medical contact (FMC), fibrinolysis should be administered. The target is FMC-to-needle time of ≤30 minutes ('door-to-needle' ≤30 minutes). Fibrinolysis is most effective within 2-3 hours of symptom onset (reduces mortality by ~25%) and can be used up to 12 hours. After successful fibrinolysis, coronary angiography should be performed within 3-24 hours (pharmacoinvasive strategy). Absolute contraindications include prior hemorrhagic stroke, recent surgery, active bleeding, severe uncontrolled hypertension."
+    explanation: "India and other South/East Asian countries have a higher proportion of hemorrhagic stroke compared to Western countries. While ischemic stroke still predominates in India (~65-75% of strokes), hemorrhagic stroke comprises approximately 25-30% of all strokes in India, compared to approximately 15% in Western populations (intracerebral hemorrhage ~10-15%, subarachnoid hemorrhage ~5%). The higher hemorrhagic stroke proportion in India is attributed to: higher prevalence of poorly controlled hypertension (which is the main cause of intracerebral hemorrhage), younger age at stroke onset, and possible genetic factors. This epidemiological difference has implications for acute stroke management and thrombolysis protocols."
   },
   {
     id: 31,
-    question: "Cardiac rehabilitation (CR) consists of how many phases, and what does Phase II involve?",
-    options: [
-      "Two phases; Phase II is outpatient supervised exercise training for 3-6 months",
-      "Three phases; Phase II is supervised outpatient exercise program lasting 6-12 weeks starting weeks after discharge",
-      "Four phases; Phase II is the inpatient phase during hospitalization for MI",
-      "Three phases; Phase II is long-term maintenance exercise at home"
-    ],
-    answer: 1,
-    explanation: "Cardiac rehabilitation has three phases: Phase I (inpatient, during hospitalization) - early mobilization, patient education, risk stratification; Phase II (outpatient, supervised) - structured exercise training (ECG-monitored), risk factor modification, education, psychosocial support, typically 6-12 weeks, starting 1-6 weeks post-discharge; Phase III (maintenance, long-term) - independent unsupervised exercise, lifelong risk factor management. CR reduces mortality by 20-30% and hospital readmissions, improves functional capacity and quality of life. It is vastly underutilized in India and other LMICs."
+    question: "The concept of TIA as 'brain angina' - a warning for imminent stroke - is epidemiologically supported by data showing that the 90-day stroke risk after TIA is approximately:",
+    options: ["0.5-1%", "3-5%", "10-15%", "25-30%"],
+    answer: 2,
+    explanation: "Large cohort studies demonstrate that TIA is associated with approximately 10-15% risk of stroke within 90 days, with the highest risk in the first 48-72 hours (approximately 3-5% within 48 hours, 5-8% within 7 days). The ABCD2 score (Age >/=60 =1pt, BP >/=140/90 =1pt, Clinical features - unilateral weakness =2pts/speech only =1pt, Duration >/=60min =2pts/10-59min =1pt, Diabetes =1pt; score 0-7) stratifies 90-day stroke risk: low (0-3) ~1%, moderate (4-5) ~4%, high (6-7) ~8%. TIA should be managed as an emergency with immediate brain imaging, ECG, antiplatelet therapy, and risk factor control. The EXPRESS and SOS-TIA studies showed rapid TIA clinic intervention reduces 90-day stroke risk by 80%."
   },
   {
     id: 32,
-    question: "Globally, approximately what percentage of strokes are ischemic (as opposed to hemorrhagic)?",
-    options: ["50%", "65%", "85%", "95%"],
-    answer: 2,
-    explanation: "Approximately 85% of all strokes are ischemic (caused by arterial occlusion - thrombotic or embolic), while 15% are hemorrhagic (intracerebral hemorrhage 10-15%, subarachnoid hemorrhage 5%). Ischemic strokes are further classified by TOAST criteria: large artery atherosclerosis, cardioembolic (e.g., AF), small vessel occlusion (lacunar), other determined etiology, and undetermined etiology (cryptogenic). The proportion of hemorrhagic stroke is higher in low-income countries and in Asian populations, where hypertension is more prevalent and less controlled."
+    question: "The prevalence of atrial fibrillation (AF) in India compared to Western populations and the resulting stroke risk implications are:",
+    options: [
+      "AF prevalence in India (~0.5-1%) is similar to Western countries (~1-2%), making AF-attributable stroke equally important",
+      "AF prevalence in India (~0.2-0.5%) is lower than in Western countries (~1-2%), but AF-related strokes are more severe due to under-anticoagulation",
+      "AF prevalence is higher in India due to the higher prevalence of rheumatic heart disease as a cause of AF",
+      "AF-related stroke is uncommon in India because valvular AF (rheumatic) predominates and these patients receive anticoagulation at high rates"
+    ],
+    answer: 1,
+    explanation: "AF prevalence in India (~0.2-0.5% from community studies) is lower than Western countries (~1-2% in adults >65 years in Europe/North America). However, AF-related strokes in India are clinically significant for several reasons: rheumatic heart disease (particularly mitral stenosis) is a common cause of AF in India (unlike degenerative AF in Western countries), and rheumatic AF carries 17-fold higher stroke risk; anticoagulation rates for AF in India are very low (estimated <10-20% of eligible patients receive OAC); many AF patients are undetected in the community. The net result is that AF-attributable stroke in India may represent approximately 15-20% of ischemic strokes, comparable to Western data."
   },
   {
     id: 33,
-    question: "Atrial fibrillation (AF) increases the risk of cardioembolic stroke by approximately:",
-    options: ["Twofold", "Fivefold", "Tenfold", "Twentyfold"],
-    answer: 1,
-    explanation: "Atrial fibrillation increases the risk of stroke approximately 5-fold compared to age-matched controls without AF. AF is responsible for about 20-25% of all ischemic strokes (cardioembolic mechanism - stasis of blood in left atrial appendage leading to thrombus formation and embolism). Older patients, those with hypertension, heart failure, prior stroke/TIA, diabetes, or vascular disease have even higher stroke risk (quantified by CHA2DS2-VASc score). Anticoagulation with warfarin or DOACs reduces stroke risk by about 60-65% in AF."
+    question: "Secondary prevention coverage for coronary artery disease (CAD) in India - defined as the proportion of post-MI patients on evidence-based medications (antiplatelet, statin, beta-blocker, ACE inhibitor) at 1 year after discharge - is approximately:",
+    options: [
+      "65-75% - comparable to high-income country benchmarks",
+      "45-55% - moderate coverage with room for improvement",
+      "20-35% - substantially lower than high-income countries, with rapid medication discontinuation",
+      "5-10% - critically low, with most patients not receiving any secondary prevention medications"
+    ],
+    answer: 2,
+    explanation: "Secondary prevention medication coverage in India for post-MI patients is a significant concern. Cross-sectional surveys and registry data (CREATE registry, OASIS-7 India data, STEMI India follow-up data) consistently show that secondary prevention medication use drops dramatically after discharge. At 1 year post-MI, approximately 20-35% of patients remain on all four recommended medication classes (antiplatelet, statin, beta-blocker, ACE inhibitor/ARB). Cost (inability to afford long-term medications), poor health literacy, asymptomatic nature of secondary prevention benefits, and inadequate follow-up systems contribute to this gap. Cardiac rehabilitation - which supports secondary prevention - reaches fewer than 5% of eligible post-MI patients in India."
   },
   {
     id: 34,
-    question: "A Transient Ischemic Attack (TIA) is currently defined as:",
+    question: "Stroke case-fatality rates in India compared to high-income countries show which pattern based on available registry and population data?",
     options: [
-      "Focal neurological deficit lasting less than 24 hours with no infarction on imaging",
-      "Focal neurological deficit lasting less than 1 hour that completely resolves",
-      "Any temporary neurological deficit caused by cerebrovascular disease, regardless of imaging findings",
-      "Focal neurological deficit lasting <24 hours without imaging requirement"
+      "India's 30-day stroke case-fatality is approximately 5%, lower than the 10-12% in Western countries due to younger patient age",
+      "India's 30-day stroke case-fatality is approximately 20-25%, substantially higher than the 10-15% in Western countries, reflecting poor acute stroke care infrastructure",
+      "Stroke case-fatality in India and Western countries are equivalent (around 12-15% at 30 days)",
+      "India's stroke case-fatality is immeasurable due to the large proportion of home deaths without medical contact"
     ],
-    answer: 0,
-    explanation: "The tissue-based definition of TIA (replacing the old time-based <24 hour definition) defines TIA as: transient episode of neurological dysfunction caused by focal brain, spinal cord, or retinal ischemia WITHOUT acute infarction on imaging (CT or MRI). The time-based definition (<24 hours) is outdated - many events lasting <1 hour have infarction on DWI-MRI ('TIA mimic'). TIA is a medical emergency: 10-15% risk of stroke within 3 months, half within 48 hours. ABCD2 score (Age, BP, Clinical features, Duration, Diabetes) stratifies early stroke risk post-TIA."
+    answer: 1,
+    explanation: "Available data from Indian stroke registries (INSPIRE, Ludhiana ICMR multicenter study, Kolkata hospital-based registry) and community-based studies suggest 30-day stroke case-fatality in India is approximately 20-25%, higher than the 10-15% reported from high-income countries. Contributing factors include: delayed presentation to hospitals; lack of organized stroke units and stroke pathways (fewer than 5% of Indian hospitals have dedicated stroke units); limited access to thrombolysis (<5% of eligible ischemic stroke patients receive rt-PA in India) and mechanical thrombectomy; poor post-stroke complication management; and high hemorrhagic stroke proportion. Community-based death-to-event ratios are difficult to measure as many strokes occur and die outside hospital settings."
   },
   {
     id: 35,
-    question: "The time window for IV thrombolysis (rt-PA/alteplase) in acute ischemic stroke is:",
+    question: "The Global Burden of Disease (GBD) study metric that best captures the combined effect of premature mortality AND disability from cardiovascular diseases at the population level is:",
     options: [
-      "Within 3 hours of symptom onset for all eligible patients",
-      "Within 4.5 hours of symptom onset in eligible patients per guidelines",
-      "Within 6 hours of symptom onset",
-      "Within 24 hours if DWI-FLAIR mismatch is present on MRI"
+      "Crude mortality rate (deaths per 100,000 population)",
+      "Age-standardized mortality rate",
+      "Disability-Adjusted Life Years (DALYs) = Years of Life Lost (YLL) + Years Lived with Disability (YLD)",
+      "Potential Years of Life Lost (PYLL) before age 70"
     ],
-    answer: 1,
-    explanation: "IV alteplase (rt-PA, 0.9 mg/kg, max 90 mg) is indicated within 4.5 hours of ischemic stroke onset in eligible patients (per AHA/ASA 2019 and ESO guidelines). The original NINDS trial established 3-hour benefit; ECASS III extended this to 4.5 hours with additional exclusions (age >80, prior stroke + diabetes, on anticoagulants, NIHSS >25). Endovascular thrombectomy (EVT) extends to 24 hours in selected patients with large vessel occlusion and favorable perfusion imaging (DAWN, DEFUSE-3 trials). India has very low thrombolysis rates (<5%) due to delayed presentation, lack of stroke units, and cost."
+    answer: 2,
+    explanation: "Disability-Adjusted Life Years (DALYs) = Years of Life Lost (YLL) due to premature mortality + Years Lived with Disability (YLD) due to morbidity and disability. DALYs are the GBD study's preferred summary measure of population health loss because they capture both the fatal and non-fatal burden of disease. For CVD, this is important because: stroke survivors often live with significant disability (hemiplegia, aphasia, cognitive impairment); heart failure patients have reduced functional capacity; these non-fatal sequelae contribute substantially to YLD. Age-standardized DALY rates allow comparison across populations. India's CVD DALY burden from ICMR-GBD is approximately 14.1% of total DALYs, with significant contribution from both YLL and YLD."
   },
   {
     id: 36,
-    question: "Dyslipidemia management targets for very high cardiovascular risk patients (established CVD or diabetes with target organ damage) per ESC/EAS 2019 guidelines recommend LDL-C to be reduced to:",
+    question: "The concept of 'lifetime risk' versus '10-year risk' of cardiovascular disease is important for population-level CVD prevention because:",
     options: [
-      "Less than 100 mg/dL (<2.6 mmol/L)",
-      "Less than 70 mg/dL (<1.8 mmol/L) AND ≥50% reduction from baseline",
-      "Less than 55 mg/dL (<1.4 mmol/L) AND ≥50% reduction from baseline",
-      "Less than 40 mg/dL (<1.0 mmol/L) for secondary prevention only"
+      "Lifetime risk and 10-year risk are equivalent measures and can be used interchangeably",
+      "10-year risk overestimates true CVD risk in most populations due to competing causes of death",
+      "Young adults with risk factors may have low 10-year CVD risk but high lifetime risk, and 10-year risk-based intervention thresholds may miss young high-risk individuals who would benefit most from early prevention",
+      "Lifetime risk is always lower than 10-year risk because longer time periods allow more preventive interventions"
     ],
     answer: 2,
-    explanation: "ESC/EAS 2019 guidelines (most current at ICMR exam level) recommend: Very high risk (established ASCVD, DM with TOD, severe CKD, familial hypercholesterolemia with CVD, 10-year risk ≥10%): LDL-C <55 mg/dL (<1.4 mmol/L) AND ≥50% reduction from baseline. High risk (DM without TOD, moderate CKD, 10-year risk 5-10%): LDL-C <70 mg/dL (<1.8 mmol/L) AND ≥50% reduction. Moderate risk: <100 mg/dL. Low risk: <116 mg/dL. ACC/AHA 2018 uses a risk-based approach with high-intensity statins for high-risk patients."
+    explanation: "The 10-year CVD risk calculation (Framingham, ASCVD, SCORE) is age-dependent - a 35-year-old with multiple risk factors may have a low 10-year absolute risk (<5%) yet have very high lifetime CVD risk (>40-50%). Sole reliance on 10-year risk thresholds for treatment decisions may result in under-treating young adults with established risk factors who would accumulate decades of risk factor exposure. Lifetime risk estimates (developed from FHS and other cohorts) better capture the long-term burden for young patients. This is particularly important in India where CVD onset is earlier. Current guidelines (ACC/AHA 2019) recommend considering lifetime risk as a patient-physician shared decision-making tool alongside 10-year risk, especially in those aged 40-59."
   },
   {
     id: 37,
-    question: "Secondary prevention pharmacotherapy after acute MI includes all of the following EXCEPT:",
+    question: "The proportion of global CVD deaths occurring in low- and middle-income countries (LMICs) like India, and the implication for global CVD prevention strategy, is:",
     options: [
-      "Dual antiplatelet therapy (aspirin + P2Y12 inhibitor) for 12 months",
-      "High-intensity statin therapy regardless of baseline LDL-C",
-      "Beta-blocker therapy for all patients with reduced LVEF",
-      "Calcium channel blocker as preferred antihypertensive agent post-MI"
+      "Approximately 40% of CVD deaths occur in LMICs, suggesting high-income countries still bear the majority of the CVD burden",
+      "Over 75-80% of CVD deaths occur in LMICs, necessitating that global CVD prevention strategies be LMIC-appropriate in terms of cost, infrastructure, and human resources",
+      "LMIC CVD mortality is rising but is still lower than high-income country CVD deaths in absolute numbers",
+      "CVD deaths are equally distributed between high-income and low-income countries on a per capita basis"
     ],
-    answer: 3,
-    explanation: "Calcium channel blockers (specifically non-dihydropyridine CCBs like verapamil and diltiazem) are generally avoided post-MI, especially in patients with reduced ejection fraction (EF), as they have negative inotropic effects. Standard post-MI secondary prevention includes: dual antiplatelet therapy (aspirin + clopidogrel/ticagrelor/prasugrel) for 12 months; high-intensity statin (regardless of baseline LDL-C); ACE inhibitor or ARB (especially if LVEF <40%, hypertension, diabetes, CKD); beta-blocker (especially if LVEF <40%, arrhythmia, hypertension); aldosterone antagonist if LVEF <40% with heart failure symptoms or diabetes."
+    answer: 1,
+    explanation: "WHO estimates that over 75-80% of all CVD deaths now occur in low- and middle-income countries (LMICs). This dramatic shift occurred because: high-income countries have successfully reduced CVD mortality through risk factor control, evidence-based treatment, and emergency cardiac care over recent decades; simultaneously, LMICs like India, China, and sub-Saharan Africa are experiencing rapid rises in CVD risk factors with insufficient healthcare infrastructure to manage the resulting disease burden. This epidemiological reality mandates that global CVD prevention research, tools (WHO PEN, HEARTS), and strategies prioritize LMIC-appropriate, low-cost, scalable, and task-shiftable solutions rather than replicating resource-intensive high-income country models."
   },
   {
     id: 38,
-    question: "Primordial prevention of cardiovascular disease focuses on:",
+    question: "Primordial prevention of CVD at the national policy level is best exemplified by which intervention?",
     options: [
-      "Treating established risk factors in high-risk individuals to prevent cardiovascular events",
-      "Preventing the development of risk factors in the first place through population-wide measures",
-      "Screening asymptomatic individuals for subclinical atherosclerosis",
-      "Rehabilitating patients after cardiovascular events to prevent recurrence"
+      "Prescribing statins to all adults above 40 years with a family history of heart disease",
+      "Universal neonatal screening for congenital heart disease to enable early surgical correction",
+      "National legislation banning industrially produced trans-fatty acids (partially hydrogenated oils) from the food supply",
+      "Mandatory hypertension screening for all adults attending government hospitals"
     ],
-    answer: 1,
-    explanation: "Primordial prevention aims to prevent the emergence of risk factors themselves in a population or individual before they develop. It targets the social, environmental, economic, and behavioural determinants: healthy urban planning, school-based nutrition and physical activity programs, food policy (reducing salt/sugar/trans fats in processed food), tobacco control legislation, physical activity-friendly environments. This is distinguished from: Primary prevention (preventing CVD events in those with risk factors), Secondary prevention (preventing recurrence in those with established CVD), and Tertiary prevention (rehabilitation after events)."
+    answer: 2,
+    explanation: "Primordial prevention targets the upstream determinants to prevent risk factors from ever developing. National legislation banning industrial trans-fatty acids (iTFA/PHO - partially hydrogenated oils) from the food supply is a classic example: it acts before hypercholesterolemia (the risk factor) develops, at the population level, without requiring individual action. WHO's REPLACE action package aims to eliminate iTFA globally by 2023. India's FSSAI has progressively lowered permissible iTFA in foods, with a target of <2% by weight. In contrast, statin prescribing treats established dyslipidemia (primary prevention), screening identifies existing hypertension (not primordial), and neonatal cardiac screening addresses congenital rather than acquired CVD risk factors."
   },
   {
     id: 39,
-    question: "The WHO PEN (Package of Essential NCD Interventions) for primary healthcare includes which cardiovascular component?",
+    question: "The WHO PEN (Package of Essential NCD Interventions) for primary healthcare uses CVD risk charts that have a 'non-laboratory-based' version (Chart B). The primary purpose of this non-laboratory version is:",
     options: [
-      "Universal echocardiography screening for all adults above 40 years",
-      "Risk stratification using WHO CVD risk charts and treatment protocols for hypertension, diabetes, and high cardiovascular risk",
-      "Coronary artery calcium scoring for all hypertensives",
-      "Mandatory lipid panel screening every 5 years from age 20"
+      "To screen for CVD risk using biomarkers not requiring blood collection",
+      "To enable CVD risk assessment in low-resource settings where blood tests are unavailable, using age, sex, smoking status, systolic BP, BMI/waist circumference, and presence of diabetes by history",
+      "To assess CVD risk in emergency settings when laboratory results are unavailable",
+      "To perform rapid CVD risk screening in large community camps without individual patient consultation"
     ],
     answer: 1,
-    explanation: "WHO PEN is designed for low-resource primary healthcare settings and includes protocols for: cardiovascular risk assessment using WHO/ISH CVD risk prediction charts (which don't require laboratory tests in chart B version), treatment of hypertension and diabetes, lifestyle counseling, and management of people at high CVD risk (≥20% 10-year risk). It emphasizes task-sharing/task-shifting (non-physician healthcare workers can implement protocols), affordable essential medicines, and integration into primary care. PEN was updated in 2020 and is the basis for many LMIC NCD programs."
+    explanation: "The WHO/ISH CVD risk prediction charts come in two versions: Chart A (laboratory-based) requires total cholesterol measurement; Chart B (non-laboratory-based) uses clinical and anthropometric variables only - age, sex, smoking status, systolic blood pressure, and BMI (as a proxy for cholesterol in the absence of lab data). Chart B was developed specifically for low-resource primary care settings in LMICs where laboratory cholesterol testing is routinely unavailable. While less accurate than lab-based charts, Chart B enables risk-stratified care decisions at the community level. It classifies 10-year CVD risk as <10%, 10-20%, 20-30%, or >30%, guiding decisions on antihypertensive initiation, aspirin recommendation, and referral. WHO updated these charts in 2019."
   },
   {
     id: 40,
-    question: "The WHO HEARTS technical package for cardiovascular disease management in primary care is organized around which framework?",
+    question: "The WHO HEARTS technical package has been implemented in India primarily through which existing program structure?",
     options: [
-      "HEARTS: Healthy lifestyle counseling, Evidence-based protocols, Access to medicines, Risk factor monitoring, Team-based care, Systems for patient follow-up",
-      "HEARTS: Hypertension management, Evidence-based protocols, Access to essential medicines and technology, Risk stratification, Team-based care, Systems for monitoring",
-      "HEARTS: H - Healthy lifestyle, E - Evidence-based treatment protocols, A - Access to essential medicines, R - Risk-based CVD management, T - Team-based care, S - Systems for monitoring and evaluation",
-      "HEARTS: H - Hypertension screening, E - Emergency response for MI/stroke, A - Aspirin therapy, R - Rehabilitation, T - Tobacco cessation, S - Statin therapy"
+      "The National AIDS Control Organisation (NACO) infrastructure adapted for NCD management",
+      "The India Hypertension Control Initiative (IHCI) which uses HEARTS principles within the National Health Mission framework at government primary health facilities",
+      "Private sector hospital networks that adopted HEARTS as a quality improvement framework",
+      "The ASHA home visit program, with HEARTS protocols adapted for community-level implementation"
     ],
-    answer: 2,
-    explanation: "The WHO HEARTS technical package (2018) provides a systematic approach to CVD management in primary care: H - Healthy lifestyle counseling (tobacco cessation, diet, physical activity, alcohol); E - Evidence-based treatment protocols (standardized treatment algorithms); A - Access to essential medicines and technology (availability of affordable medications and diagnostics); R - Risk-based CVD management (stratification using CVD risk scores); T - Team-based care (task-sharing with non-physician providers); S - Systems for monitoring and evaluation (data systems to track coverage and outcomes). HEARTS has been adopted in over 30 countries including India."
+    answer: 1,
+    explanation: "India adopted the WHO HEARTS technical package framework through the India Hypertension Control Initiative (IHCI), a partnership of MoHFW, ICMR, WHO India, and Resolve to Save Lives, implemented within the National Health Mission. IHCI applies HEARTS principles in government primary health facilities: standardized step-up antihypertensive treatment protocol (Amlodipine + Losartan + HCTZ), reliable drug supply, patient registration and digital tracking (electronic health records), team-based care with ANMs/ASHAs for follow-up and medication adherence support, and facility/district-level performance monitoring dashboards. IHCI expanded from 5 pilot states in 2017 to national scale by 2022-23, demonstrating that HEARTS-based approaches improve hypertension control in LMIC settings."
   },
   {
     id: 41,
-    question: "Geoffrey Rose's population strategy for CVD prevention versus the high-risk strategy: which statement is correct?",
+    question: "Geoffrey Rose's 'prevention paradox' in CVD has the following implication for designing population-level CVD prevention programs:",
     options: [
-      "High-risk strategy is superior because it is more efficient in identifying who will benefit",
-      "Population strategy shifts the entire risk distribution, benefiting many but giving small individual benefit; high-risk strategy gives large benefit to few",
-      "Population strategy is less cost-effective than high-risk strategy for CVD prevention",
-      "Both strategies are equivalent in total cardiovascular events prevented at the population level"
+      "High-risk individuals should be the exclusive focus of prevention because they account for the majority of CVD events",
+      "Most CVD events actually occur among the large segment of the population at moderate risk, not the small segment at very high risk, therefore population-wide strategies are essential to complement high-risk strategies",
+      "Population-wide strategies are only applicable to physical activity promotion, not to dietary or pharmaceutical interventions",
+      "The paradox means that preventive interventions paradoxically increase CVD awareness anxiety without actually reducing events"
     ],
     answer: 1,
-    explanation: "Geoffrey Rose's 'prevention paradox': population strategy (universal interventions to shift entire risk distribution - e.g., reducing population salt intake) produces small individual benefit but large population benefit ('a large number of people at small risk may give rise to more cases of disease than a small number who are at high risk'). High-risk strategy (identifying and treating those at highest risk) gives large individual benefit to few. Both strategies are complementary. Rose advocated for population strategy as the foundation because most CVD events occur in the large number at moderate risk, not the small number at very high risk."
+    explanation: "Geoffrey Rose's prevention paradox states: 'a large number of people at a small risk may give rise to more cases of disease than a small number who are at high risk.' Applied to CVD: while the individual relative risk at any moderate BP level is low, the majority of CVD events in the population occur among the large number of people with borderline-to-moderate hypertension - not the small high-risk tail. Therefore, population-wide strategies (reducing average population BP by 2-3 mmHg through salt reduction, dietary improvement, and physical activity) would prevent more total CVD events than treating only those at highest risk. Both strategies are complementary: high-risk strategy for individual clinical benefit, population strategy for population-level CVD burden reduction."
   },
   {
     id: 42,
-    question: "Under the National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke (NPCDCS), cardiovascular disease-specific activities include:",
+    question: "The NPCDCS (National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke) screening targets which population for CVD risk factor detection under the population-based screening initiative?",
     options: [
-      "Universal cardiac catheterization for all MI patients in district hospitals",
-      "Population-level screening for hypertension, diabetes, and common NCDs at health and wellness centers with referral pathways",
-      "Provision of free statins and aspirin to all adults above 40 years in India",
-      "Mandatory cardiovascular risk scoring for all government employees"
+      "All Indians above age 18 years for annual BP measurement",
+      "Adults aged 30 years and above for hypertension, diabetes, and common cancers through opportunistic and outreach screening at Health and Wellness Centers",
+      "Only those with a family history of CVD or diabetes attending government tertiary hospitals",
+      "Women aged 25-45 years through reproductive health program integration"
     ],
     answer: 1,
-    explanation: "NPCDCS (launched 2010, integrated with NHM) focuses on: population-level NCD risk factor screening (opportunistic screening for hypertension, diabetes, and cancers at NCD clinics/Health and Wellness Centers), promotive and preventive care, establishment of NCD clinics at district hospitals and CHCs, treatment of common NCDs, and referral to tertiary care. The Ayushman Bharat component (Health and Wellness Centers) now conducts comprehensive primary healthcare including hypertension/diabetes management. Universal free statins/aspirin for all adults is not part of the program - targeting is based on risk stratification."
+    explanation: "Under NPCDCS integrated with the Ayushman Bharat Health and Wellness Centers (HWC) initiative, population-based NCD screening targets all adults aged 30 years and above for hypertension and diabetes; all women aged 30+ for cervical cancer (VIA), breast cancer (CBE), and oral cancer; and risk factor screening for all adults. HWCs are mandated to conduct wellness activities, record BP and random blood sugar for adults >/=30 years attending for any purpose (opportunistic screening), maintain NCD registers, and provide follow-up care. Screening is linked to referral pathways to CHC/district hospital NCD clinics for diagnosis confirmation and treatment initiation. This is supported by the IT-based electronic health record (ABHA/ABPM) system."
   },
   {
     id: 43,
-    question: "A community-based cardiovascular intervention using task-shifting to ASHAs and ANMs for hypertension management in India would most appropriately involve:",
+    question: "Evidence supporting task-shifting for hypertension management to non-physician health workers in LMICs is best summarized by which landmark study?",
     options: [
-      "ASHAs independently prescribing antihypertensive medications and adjusting doses",
-      "ASHAs and ANMs conducting BP measurement, identifying hypertensives, counseling on lifestyle modification, ensuring medication adherence, and facilitating referral under medical supervision",
-      "ASHAs performing ECGs and interpreting results in the community",
-      "ANMs independently diagnosing and managing hypertensive emergencies at sub-center level"
+      "ACCOMPLISH trial showing combination antihypertensive therapy superiority",
+      "SPRINT trial demonstrating intensive BP target benefits in high-risk patients",
+      "TASMC and HOPE-4 trials showing that community health worker-led interventions can achieve BP control rates comparable to physician-led care in LMIC settings",
+      "ALLHAT trial establishing chlorthalidone as first-line antihypertensive"
     ],
-    answer: 1,
-    explanation: "Task-shifting for hypertension in India appropriately involves ASHAs and ANMs in: blood pressure measurement and screening, identifying and tracking hypertensives in the community, counseling on lifestyle modification (DASH diet, salt reduction, physical activity, tobacco cessation, alcohol reduction), medication adherence support and follow-up, and facilitating referral to Medical Officers for diagnosis and prescription. Prescribing and dose adjustment remain with licensed medical practitioners. This model is supported by evidence from the India Hypertension Control Initiative (IHCI) and WHO HEARTS implementation experience."
+    answer: 2,
+    explanation: "The HOPE-4 trial (Colombia and Malaysia) demonstrated that a community health worker (CHW)-delivered CVD risk reduction program, using standardized treatment algorithms and CHW follow-up, achieved significantly better BP and cholesterol control compared to standard physician-led care. The Simplified Hypertension Initiative by teams study (TASMC) and similar task-shifting trials in India (ASHA-delivered IHCI interventions), sub-Saharan Africa, and Southeast Asia support this evidence base. WHO HEARTS, WHO PEN, and global evidence reviews recommend task-shifting as a core strategy for hypertension and CVD management in primary care settings in LMICs, with physicians retaining oversight and prescription authority while CHWs handle measurement, adherence, and follow-up."
   },
   {
     id: 44,
-    question: "The fixed-dose combination (FDC) 'polypill' for cardiovascular prevention typically contains which combination of drugs?",
+    question: "The TIPS (The Indian Polycap Study) trial evaluated the Polycap fixed-dose combination pill. The Polycap used in this trial contained which combination and showed which primary finding?",
     options: [
-      "Aspirin + metformin + beta-blocker + statin",
-      "Aspirin + ACE inhibitor/ARB + statin + beta-blocker (with or without hydrochlorothiazide)",
-      "Aspirin + calcium channel blocker + ACE inhibitor + diuretic",
-      "Statin + ACE inhibitor + diuretic + metformin"
+      "Aspirin + atorvastatin + ramipril + metformin; reduced CVD events by 50% in diabetics",
+      "Hydrochlorothiazide + atenolol + ramipril + simvastatin + aspirin; demonstrated safety and tolerability with potential for significant risk factor reduction",
+      "Amlodipine + losartan + simvastatin + aspirin; proved superior to individual components in adherence",
+      "Aspirin + statin + ACE inhibitor only (3-in-1 pill); demonstrated 40% reduction in primary CVD endpoints"
     ],
     answer: 1,
-    explanation: "The polypill concept (proposed by Wald and Law in 2003) suggests a fixed-dose combination containing: aspirin (75 mg) + statin (e.g., simvastatin 40 mg) + one or more antihypertensives (ACE inhibitor, beta-blocker, thiazide diuretic). Clinical trials (TIPS, UMPIRE, IMPACT, PolyIran, HOPE-3) show polypills improve medication adherence by 30-40% and reduce cardiovascular events. The Polycap (TIPS trial, India) contains hydrochlorothiazide + atenolol + ramipril + simvastatin + aspirin. The polypill is particularly relevant for LMIC settings where pill burden and cost are barriers to secondary prevention. India's generic pharmaceutical capability makes polypill production feasible."
+    explanation: "The TIPS trial (Indian Polycap Study, Yusuf et al., Lancet 2009) tested the Polycap - a single capsule containing hydrochlorothiazide 12.5 mg + atenolol 50 mg + ramipril 5 mg + simvastatin 20 mg + aspirin 100 mg - versus individual components in adults aged 45-80 years with at least one CVD risk factor. Primary findings: Polycap was safe and well-tolerated; it produced significant reductions in BP, heart rate, cholesterol, and urinary thromboxane. The TIPS-3 trial (2020) subsequently demonstrated that Polycap + aspirin significantly reduced CVD events in intermediate-risk individuals (HR 0.79, 95% CI 0.63-0.99). These results support the polypill concept for affordable CVD prevention in LMICs."
   },
   {
     id: 45,
-    question: "The India Hypertension Control Initiative (IHCI) was launched in 2017 as a collaboration between which organizations?",
+    question: "The PolyIran study (published 2019 in The Lancet) demonstrated which important finding regarding the polypill for CVD prevention?",
     options: [
-      "ICMR, WHO India, Resolve to Save Lives, and Ministry of Health and Family Welfare",
-      "AIIMS, CDC Atlanta, and National Heart Institute",
-      "WHO Geneva, World Heart Federation, and Indian Medical Association",
-      "Ministry of Health, Indian Council of Medical Research, and World Bank"
+      "Polypill was inferior to individually prescribed medications in patients with established CVD",
+      "Polypill reduced major adverse cardiovascular events (MACE) by approximately 34% compared to minimal care in a community setting in Iran, with the greatest benefit from medication adherence improvements",
+      "Polypill benefit was limited to patients with prior MI and did not help primary prevention populations",
+      "Polypill showed only BP reduction benefits without any reduction in clinical CVD endpoints"
     ],
-    answer: 0,
-    explanation: "The India Hypertension Control Initiative (IHCI) was launched in 2017 as a collaboration between the Ministry of Health and Family Welfare (MoHFW), Indian Council of Medical Research (ICMR), WHO India, and Resolve to Save Lives (a global public health initiative). IHCI implemented in 5 initial states (later expanded) uses: standardized treatment protocols (simple algorithm with amlodipine + losartan + hydrochlorothiazide), fixed-drug supply, digital patient tracking, task-sharing with ASHAs, and quarterly performance monitoring. It follows the WHO HEARTS model and aims to achieve 80% hypertension control in enrolled patients."
+    answer: 1,
+    explanation: "The PolyIran trial (Roshandel et al., Lancet 2019) was a randomized controlled trial in Golestan Province, Iran. Participants aged >/=50 years were randomized to polypill (aspirin 81 mg + atorvastatin 20 mg + hydrochlorothiazide 12.5 mg + enalapril 5 mg OR valsartan 40 mg) plus minimal care, versus minimal care alone. Results: polypill group had approximately 34% lower rate of major adverse cardiovascular events (MACE) (HR 0.66, 95% CI 0.52-0.83). Polypill significantly improved medication adherence (~80% vs ~50%). The benefit was seen in both primary and secondary prevention groups. This trial, alongside TIPS-3 and HOPE-3 results, provides strong evidence for polypill use for CVD prevention in LMIC primary care settings."
   },
   {
     id: 46,
-    question: "A STEMI network (hub-and-spoke model) for improving MI outcomes in India functions by:",
+    question: "The STEMI care network model in India faces which specific operational challenge that limits its population-level impact in reducing STEMI mortality?",
     options: [
-      "Performing primary PCI at all spoke hospitals to reduce treatment delays",
-      "Identifying STEMI at spoke hospitals via telemedicine ECG transmission, transporting directly to PCI-capable hub, or administering thrombolysis at spoke with pharmacoinvasive strategy",
-      "Establishing cardiac ICUs at all district hospitals for STEMI management",
-      "Training all physicians at spoke hospitals to perform emergency PCI"
+      "Lack of evidence that primary PCI is superior to thrombolysis in Indian settings",
+      "Very low first medical contact at healthcare facilities - majority of STEMI patients either die before reaching hospital or arrive after the optimal reperfusion window (>12 hours from symptom onset)",
+      "Over-reliance on expensive imported stents making STEMI networks unsustainable",
+      "STEMI networks have successfully covered all urban areas but cannot be adapted to rural settings"
     ],
     answer: 1,
-    explanation: "STEMI networks in India (e.g., Tamil Nadu STEMI program, Kerala STEMI network, Stemi India) use a hub-and-spoke model: Spoke (district/community hospital) - 12-lead ECG at first medical contact, telemedicine transmission to hub cardiologist for diagnosis, dual antiplatelet loading, thrombolysis if PCI hub >120 minutes away (pharmacoinvasive strategy); Hub (tertiary PCI center) - receives pre-activated catheterization lab alert, performs primary PCI or rescue PCI after thrombolysis, then pharmacoinvasive PCI within 3-24 hours. These networks have dramatically reduced door-to-balloon times and mortality in India. STEMI India registry has documented outcomes."
+    explanation: "The primary operational challenge limiting STEMI network impact in India is extreme pre-hospital delay. Population-based studies show: median symptom-to-hospital arrival time in India is approximately 4-6 hours (vs <2 hours in high-income countries); 20-30% of STEMI patients arrive >12 hours after symptom onset (beyond optimal reperfusion window); community-level STEMI awareness is poor (patients do not recognize symptoms or self-transport to appropriate hospitals); healthcare-seeking behavior (visiting local practitioners before hospitals) adds further delay. Even where STEMI networks exist with good door-to-balloon times, the proportion of STEMI patients actually benefiting from reperfusion therapy remains low. Community-level STEMI awareness campaigns and call-112 emergency medical services integration are essential complements to STEMI networks."
   },
   {
     id: 47,
-    question: "Barriers to cardiac rehabilitation (CR) uptake in Low and Middle Income Countries (LMICs) like India include all of the following EXCEPT:",
+    question: "Cost-effectiveness analysis of cardiovascular prevention interventions in India shows which intervention is most cost-effective (lowest cost per DALY averted)?",
     options: [
-      "Low patient awareness and physician referral rates for CR",
-      "High cost and poor insurance coverage for CR programs",
-      "Lack of CR facilities - India has very few accredited CR programs",
-      "Overabundance of CR centers leading to competition and fragmented care"
+      "Coronary artery bypass grafting (CABG) for three-vessel disease",
+      "Aspirin therapy for all adults above 50 years (chemoprevention strategy)",
+      "Population-level interventions targeting CVD risk factors (salt reduction, tobacco taxation, trans-fat elimination) combined with primary care-based cardiovascular risk management",
+      "Cardiac catheterization laboratory establishment in all district hospitals"
     ],
-    answer: 3,
-    explanation: "Cardiac rehabilitation is severely underutilized in India and other LMICs. There is certainly no overabundance of CR centers - this is a fictitious option. Real barriers include: Patient-level: low awareness, cultural factors, transportation, inability to take time off work, financial constraints; System-level: very few CR facilities (India has <50 formal CR programs for >1 billion population), inadequate insurance coverage for CR, poor physician referral rates (<10% of eligible post-MI patients are referred), no standardized CR protocols; Societal-level: lack of safe exercise facilities, misconception that rest is better than exercise after MI. Home-based and digital/mobile CR are being explored to overcome these barriers."
+    answer: 2,
+    explanation: "Economic analyses (including WHO-CHOICE analysis, DCP3 estimates, and India-specific models) consistently show that population-level CVD prevention interventions are the most cost-effective strategies. Tobacco taxation, salt reduction policies, trans-fat elimination, and hypertension control through primary care collectively avert large numbers of CVD DALYs at costs of <$100-1000 per DALY averted - well within standard cost-effectiveness thresholds (<1-3x per capita GDP, approximately $2000-6000 for India). In contrast, invasive procedures (PCI, CABG) cost $10,000-50,000 per DALY averted. The World Bank DCP3 CVD chapter and ICMR health technology assessments support prioritizing preventive and primary care CVD interventions in India's constrained health budget context."
   },
   {
     id: 48,
-    question: "The population attributable risk (PAR%) for hypertension in causing stroke in India is approximately:",
+    question: "Community-based CVD intervention trials in India, such as the ICMR-sponsored collaborative studies, have primarily demonstrated:",
     options: [
-      "10-15%",
-      "25-30%",
-      "45-55%",
-      "65-70%"
+      "That community-based interventions can eliminate CVD risk in Indian populations within 5 years",
+      "That community health education combined with risk factor screening and management can reduce CVD risk factor prevalence and CVD events, but sustained impact requires integration into the health system",
+      "That community interventions are ineffective in India due to cultural barriers to lifestyle change",
+      "That community-level drug therapy distribution is more effective than lifestyle intervention in Indian rural populations"
     ],
-    answer: 2,
-    explanation: "Hypertension is the single largest modifiable risk factor for stroke globally and in India. Population attributable risk (PAR%) of hypertension for stroke in India is approximately 45-55%, meaning nearly half of all strokes could theoretically be prevented if hypertension were eliminated. This is higher in India than in Western countries due to higher prevalence of untreated/poorly controlled hypertension. Studies from India (INSPIRE, Ludhiana ICMR study) confirm hypertension as the dominant stroke risk factor, present in 60-70% of stroke patients. Effective hypertension control would have the single largest impact on stroke burden reduction in India."
+    answer: 1,
+    explanation: "Community-based CVD intervention trials in India (including ICMR multicenter studies in Trivandrum, Chennai, Delhi, and Dibrugarh; the CARRS intervention study; and state-level programs) have demonstrated that structured interventions combining: health education on CVD risk factors, community-level blood pressure and glucose screening, counseling on lifestyle modification, and linkage to primary care treatment can significantly reduce CVD risk factor burden over 3-5 years. However, studies consistently show that effects are maintained only with sustained intervention and health system integration - benefits wane when research intervention ends. This highlights the need to embed community CVD prevention within the mainstream health system (NHM/HWC framework) rather than relying on project-based approaches."
   },
   {
     id: 49,
-    question: "The Framingham Heart Study's contribution to understanding CVD epidemiology included which landmark finding?",
+    question: "ICMR's identified research priorities for CVD epidemiology and prevention in India include which specific gap that remains inadequately addressed?",
     options: [
-      "Discovery that low-dose aspirin prevents first MI in all adults above 45 years",
-      "First demonstration that cholesterol-lowering with statins reduces cardiovascular mortality",
-      "Identification that cigarette smoking, hypertension, and hypercholesterolemia are major risk factors for CHD and the concept of 'risk factors' itself",
-      "Proof that Mediterranean diet reduces cardiovascular events more than drug therapy"
+      "The need for more tertiary cardiac centers to perform complex interventional procedures",
+      "Development and validation of India-specific CVD risk prediction models, understanding state-wise CVD epidemiology through representative data, and implementation science research on scale-up of proven interventions",
+      "Translational research on novel biomarkers for early CVD detection applicable to specialist clinics",
+      "International collaborative trials on new drug classes for acute coronary syndrome management"
     ],
-    answer: 2,
-    explanation: "The Framingham Heart Study (began 1948, Framingham, Massachusetts) is one of the most important cardiovascular epidemiology studies in history. Its landmark contributions include: coining the term 'risk factors' (Kannel et al., 1961); demonstrating that smoking, hypertension, hypercholesterolemia, obesity, diabetes, and physical inactivity are major risk factors for CHD; developing the Framingham Risk Score; establishing that HDL is protective and LDL is atherogenic; linking atrial fibrillation to stroke risk; and identifying heart failure risk factors. It enrolled 5,209 adults and now continues with third-generation participants."
+    answer: 1,
+    explanation: "ICMR's CVD research priorities (as reflected in ICMR task force reports and NCD research agenda documents) identify critical gaps including: absence of validated India-specific CVD risk prediction models (current tools like Framingham were derived in non-Indian populations and may misclassify risk); limited representative epidemiological data on CVD incidence, prevalence, and mortality across Indian states (most data are from urban hospital-based studies, not community-based); implementation science research needed to understand how to scale up proven interventions (hypertension control, cardiac rehabilitation, STEMI networks) to full population coverage; research on the thin-fat phenotype and South Asian-specific risk factors; and mixed-methods research on behavior change and health-seeking patterns for CVD in Indian populations."
   },
   {
     id: 50,
-    question: "The 'Rule of Halves' applied to hypertension in India states:",
+    question: "The HOPE-3 trial (Heart Outcomes Prevention Evaluation-3), published in the New England Journal of Medicine (2016), is relevant to CVD prevention in intermediate-risk populations because it found:",
     options: [
-      "Only half of hypertensives in India have systolic hypertension, the rest have diastolic hypertension",
-      "Of all hypertensives: half are unaware, of those aware half are untreated, of those treated half are uncontrolled",
-      "Hypertension control can be achieved in 50% of patients with a single drug",
-      "Half of all CVD events in India occur in hypertensives, the other half in normotensives"
+      "Combination of statin + antihypertensive (candesartan + HCTZ) significantly reduced CVD events in all intermediate-risk adults",
+      "Rosuvastatin 10 mg significantly reduced CVD events in intermediate-risk adults (without established CVD) irrespective of baseline LDL, while candesartan + HCTZ showed no benefit; but the combination showed benefit in those with elevated systolic BP (>143 mmHg)",
+      "Fixed-dose combination polypill was superior to individual drugs for primary prevention in intermediate-risk populations globally",
+      "Intensive statin therapy (rosuvastatin 40 mg) was required for CVD prevention in intermediate-risk populations, with no benefit from lower doses"
     ],
     answer: 1,
-    explanation: "The 'Rule of Halves' (originally described in UK, widely applied to India) states that among all hypertensives in the community: approximately half are undiagnosed/unaware of their condition; of those aware, approximately half are not on treatment; of those on treatment, approximately half have uncontrolled BP. This means only about 12.5% (1/8th) of all hypertensives in the community have controlled BP. NFHS-5 data for India broadly confirms this pattern - large treatment and control gaps persist. The India Hypertension Control Initiative (IHCI) specifically targets improving each step of this cascade (awareness, treatment, control)."
+    explanation: "The HOPE-3 trial enrolled intermediate-risk adults without established CVD from 21 countries. It had a 2x2 factorial design testing rosuvastatin 10 mg vs placebo AND candesartan 16 mg + hydrochlorothiazide 12.5 mg vs placebo. Key findings: Rosuvastatin 10 mg significantly reduced the primary CVD outcome by 24% (HR 0.76) regardless of baseline LDL-C level, supporting statin use for primary prevention in intermediate-risk individuals based on overall cardiovascular risk rather than just LDL level. The antihypertensive combination showed no significant benefit in the overall population, but showed benefit in the subgroup with systolic BP >143 mmHg. The combination arm showed significant benefit in this hypertensive subgroup. HOPE-3 informed guidelines on primary prevention statin use in intermediate-risk individuals."
   },
 ];
 

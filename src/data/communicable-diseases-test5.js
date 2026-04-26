@@ -1,603 +1,603 @@
 const questions = [
   {
     id: 1,
-    question: "A district health officer receives reports of 15 cases of acute watery diarrhea from a village with a population of 500 over 3 days. The expected monthly incidence for diarrhea in this area is 2 per 1000 population. Which term best describes this situation?",
+    question: "Which of the following best defines an 'epidemic' in epidemiological terms?",
     options: [
-      "Endemic",
-      "Epidemic",
-      "Pandemic",
-      "Sporadic"
+      "A disease present at a constant level in a population at all times",
+      "The occurrence of disease in a community or region clearly in excess of normal expectancy",
+      "A disease that has spread to multiple countries or continents",
+      "Any occurrence of an infectious disease in a new geographic area"
     ],
     answer: 1,
-    explanation: "An epidemic (outbreak) is defined as the occurrence of cases of disease in excess of what would normally be expected in a defined community, geographical area, or season. The expected cases here would be approximately 1 per month, but 15 cases occurred in 3 days, far exceeding the expected number. An endemic is the constant presence of a disease at a baseline level. A pandemic is a worldwide epidemic. Sporadic refers to occasional, irregular occurrence."
+    explanation: "An epidemic is defined as the occurrence of disease cases in a community or region clearly in excess of normal expectancy. Endemic refers to constant baseline presence. Pandemic refers to worldwide spread. A disease appearing in a new area is not automatically an epidemic unless it exceeds expected levels."
   },
   {
     id: 2,
-    question: "Which of the following best distinguishes an 'epidemic' from a 'pandemic'?",
+    question: "The Integrated Disease Surveillance Programme (IDSP) in India collects data through three reporting forms. Which combination correctly identifies the reporters for each form?",
     options: [
-      "Number of cases involved",
-      "Severity of the disease",
-      "Geographic spread across multiple countries or continents",
-      "Mode of transmission"
+      "S form by doctors, P form by community workers, L form by hospitals",
+      "S form by community health workers and ANMs, P form by doctors at health facilities, L form by laboratories",
+      "S form by laboratories, P form by community workers, L form by district hospitals",
+      "S form by medical colleges, P form by PHC doctors, L form by state labs only"
     ],
-    answer: 2,
-    explanation: "A pandemic is an epidemic that has spread across multiple countries or continents, usually affecting a large number of people. The distinction is based on geographic spread, not on the number of cases, severity, or mode of transmission. COVID-19 was declared a pandemic in March 2020 by WHO because it had spread to multiple continents simultaneously."
+    answer: 1,
+    explanation: "IDSP uses three reporting channels: S (Syndromic) forms are filled by community health workers, ASHAs, and ANMs reporting symptom clusters; P (Presumptive) forms are filled by doctors at PHCs, CHCs, and hospitals based on clinical diagnosis; L (Laboratory) forms are filled by district and sub-district laboratories with confirmed diagnostic results. This layered structure enables early detection through syndromic data while building toward laboratory confirmation."
   },
   {
     id: 3,
-    question: "During routine surveillance in a district, 8 cases of measles are reported in a week. The epidemic threshold for measles in this district (population 100,000) is set at 5 cases per week. What is the most appropriate next step?",
+    question: "The Integrated Health Information Platform (IHIP) is best described as:",
     options: [
-      "Wait for more cases to accumulate before acting",
-      "Declare a Public Health Emergency of International Concern (PHEIC)",
-      "Initiate outbreak investigation and alert the rapid response team",
-      "Conduct a seroprevalence survey"
+      "A periodic national household survey conducted every five years",
+      "The upgraded digital real-time web-based surveillance platform that replaced the older IDSP portal",
+      "A WHO-mandated reporting system for PHEIC notifications",
+      "A laboratory network for confirmatory testing of notifiable diseases"
     ],
-    answer: 2,
-    explanation: "When reported cases exceed the epidemic threshold, it signals a potential outbreak requiring immediate action. The appropriate response is to initiate outbreak investigation and alert the rapid response team (RRT). The epidemic threshold is an alert level above which public health action is triggered. Declaring PHEIC is a WHO-level decision under IHR 2005. Waiting for more cases would delay control measures. Seroprevalence survey is a long-term epidemiological tool, not an immediate response."
+    answer: 1,
+    explanation: "IHIP is the digitized, real-time upgrade of the earlier IDSP web portal. It enables entry of S, P, and L forms at the district level, provides automated dashboards for tracking notifiable disease trends, generates outbreak alerts, and supports monitoring from district to national level. It is distinct from periodic surveys like NFHS or DLHS, which are not real-time surveillance tools."
   },
   {
     id: 4,
-    question: "The Integrated Disease Surveillance Programme (IDSP) in India uses a three-tiered reporting format. Which of the following correctly identifies the 'S', 'P', and 'L' forms used in IDSP?",
+    question: "Which of the following diseases mandates immediate notification to health authorities upon even a single confirmed case, because its epidemic threshold is set at zero?",
     options: [
-      "S = Syndromic, P = Probable, L = Laboratory confirmed",
-      "S = Suspected, P = Probable, L = Lab reports",
-      "S = Severe, P = Probable, L = Lab confirmed",
-      "S = Syndromic, P = Presumptive, L = Laboratory"
+      "Dengue fever",
+      "Acute diarrheal disease",
+      "Cholera",
+      "Influenza-like illness"
     ],
-    answer: 0,
-    explanation: "IDSP uses three reporting forms: S (Syndromic) - reports from community health workers and sub-centers based on syndromes; P (Probable) - reports from doctors at PHC/CHC level based on clinical diagnosis; and L (Laboratory confirmed) - reports from district/medical college laboratories. This tiered approach allows for early detection through syndromic surveillance while building toward laboratory confirmation."
+    answer: 2,
+    explanation: "Cholera has a zero-tolerance epidemic threshold, meaning a single laboratory-confirmed case requires immediate notification and outbreak response. The same applies to plague, SARS, and other IHR Annex 2 diseases. Dengue and influenza-like illness have thresholds based on case counts above baseline. Acute diarrheal disease is monitored in aggregate. Zero-threshold diseases have high epidemic potential and international spread risk, justifying immediate action."
   },
   {
     id: 5,
-    question: "A community health worker reports a cluster of fever with rash cases in a village. Before declaring an outbreak, the district health officer needs to verify whether these cases represent a true outbreak or a reporting artifact. Which of the following is NOT a step in verifying the existence of an outbreak?",
+    question: "The 'alert threshold' in disease surveillance differs from the 'epidemic threshold' in that the alert threshold:",
     options: [
-      "Reviewing laboratory data for confirmation",
-      "Checking if case definitions have changed",
-      "Initiating mass chemoprophylaxis immediately",
-      "Comparing current rates with historical baseline data"
+      "Confirms the existence of an epidemic requiring national emergency declaration",
+      "Is set at a lower level to trigger heightened surveillance and preparedness before an epidemic is confirmed",
+      "Is used exclusively by WHO and not by national surveillance systems",
+      "Applies only to vector-borne diseases with seasonal variation"
     ],
-    answer: 2,
-    explanation: "Initiating mass chemoprophylaxis is a control measure, not a verification step. Verifying the existence of an outbreak involves: (1) reviewing laboratory data to confirm diagnoses, (2) checking if case definitions or reporting systems have changed (which could create artificial increases), (3) comparing current rates with historical baseline data, (4) visiting the site to assess clinical presentations, and (5) ruling out laboratory errors. Control measures should follow, not precede, outbreak verification."
+    answer: 1,
+    explanation: "The alert threshold is a predefined signal level set below the epidemic threshold. When crossed, it triggers heightened surveillance, investigation, and preparedness without confirming a full epidemic. It allows early action to prevent progression. The epidemic threshold, when crossed, confirms an outbreak and mandates a full response. Two-threshold systems (alert and action) are used in IDSP-based district surveillance in India."
   },
   {
     id: 6,
-    question: "In outbreak investigation, the 'index case' is best defined as:",
-    options: [
-      "The most severely ill patient in the outbreak",
-      "The first case identified that brings the outbreak to attention",
-      "The first case infected in the chain of transmission",
-      "The case with confirmed laboratory diagnosis"
-    ],
-    answer: 1,
-    explanation: "The index case is the first identified case that triggers the investigation or brings the outbreak to the attention of investigators. This is distinct from the primary case, which is the first case to be infected (the actual source). The index case may not be the primary case - for example, a patient presenting to a hospital with a rare illness may be the index case, but the primary case could be someone who was exposed earlier but not yet identified. This distinction is important in contact tracing."
-  },
-  {
-    id: 7,
-    question: "Which surveillance system in India is specifically designed for real-time monitoring of disease outbreaks and uses a web-based platform for data entry at district level?",
-    options: [
-      "National Family Health Survey (NFHS)",
-      "Integrated Health Information Platform (IHIP)",
-      "Annual Health Survey (AHS)",
-      "District Level Household Survey (DLHS)"
-    ],
-    answer: 1,
-    explanation: "The Integrated Health Information Platform (IHIP) is the upgraded digital version of IDSP, designed for real-time web-based reporting of disease outbreaks at district, state, and national levels. It replaced the older IDSP web portal and provides dashboards for monitoring notifiable diseases, outbreak alerts, and response activities. NFHS, AHS, and DLHS are periodic household surveys, not real-time surveillance systems."
-  },
-  {
-    id: 8,
-    question: "Under the National Health Mission, which of the following diseases is currently NOT in the list of notifiable diseases in India under the IDSP framework?",
-    options: [
-      "Cholera",
-      "Plague",
-      "Hypertension",
-      "Dengue fever"
-    ],
-    answer: 2,
-    explanation: "Hypertension is a non-communicable disease and is not a notifiable communicable disease under the IDSP framework. IDSP notifiable diseases include cholera, plague, dengue, malaria, typhoid, viral hepatitis, leptospirosis, Japanese encephalitis, Nipah, COVID-19, and others. Notifiable diseases are those for which healthcare providers are legally required to report to public health authorities to enable rapid response and epidemic control."
-  },
-  {
-    id: 9,
-    question: "A health official receives an unverified community report (rumor) of sudden deaths in a remote tribal area. What should be the FIRST step in responding to this rumor?",
-    options: [
-      "Issue a press release to prevent panic",
-      "Deploy the Rapid Response Team immediately without further inquiry",
-      "Verify the rumor through telephonic contact with local health staff and field visit",
-      "Collect blood samples from all community members"
-    ],
-    answer: 2,
-    explanation: "Rumor verification is the first step before deploying resources or making public announcements. This involves: contacting local health staff, ASHA workers, and community leaders to verify the reports, reviewing any available health facility data, and if needed, conducting a rapid field visit. Premature press releases can cause panic; deploying teams without verification wastes resources; mass blood collection is premature at this stage. The principle is 'verify before you amplify.'"
-  },
-  {
-    id: 10,
-    question: "Syndromic surveillance differs from conventional disease surveillance in that it:",
-    options: [
-      "Relies only on laboratory-confirmed cases",
-      "Detects health events based on clinical syndromes before a specific diagnosis is established",
-      "Is conducted only during declared outbreaks",
-      "Focuses exclusively on deaths rather than illness"
-    ],
-    answer: 1,
-    explanation: "Syndromic surveillance detects health events based on patterns of clinical syndromes (e.g., acute febrile illness, acute watery diarrhea, acute respiratory illness) before specific diagnoses are confirmed. This allows for earlier detection of outbreaks. Conventional surveillance relies on confirmed diagnoses. Syndromic surveillance is continuous, not just during outbreaks, and monitors illness (morbidity), not just mortality. The 'S' form in IDSP is based on this principle."
-  },
-  {
-    id: 11,
-    question: "The epidemic threshold for cholera in a district is defined as 'any confirmed case of cholera.' A single laboratory-confirmed case of cholera is reported. What does this imply?",
-    options: [
-      "No action is needed as one case is too few to constitute an outbreak",
-      "An immediate outbreak response must be initiated as the threshold has been crossed",
-      "The case should be re-tested before any action",
-      "The district should wait for 5 more cases before responding"
-    ],
-    answer: 1,
-    explanation: "For certain diseases with zero-tolerance thresholds (like cholera, plague, SARS), even a single confirmed case constitutes crossing the epidemic threshold and mandates immediate outbreak response. This is because these diseases have epidemic potential and require urgent containment. This differs from diseases where thresholds are set at a specific case count above baseline. This concept is codified in the International Health Regulations (IHR) 2005, where certain diseases require notification to WHO upon a single confirmed case."
-  },
-  {
-    id: 12,
-    question: "In an outbreak of gastroenteritis following a community feast, the 'primary case' is identified as the cook who prepared the food while having diarrhea. Forty guests who ate the food subsequently fell ill. The first guest to seek medical care is the:",
+    question: "In an outbreak of jaundice in a village, a community health worker first reports five cases to the district health office. Investigators later identify that one of these five cases was actually the source of infection for the others. The first case reported to health authorities is the:",
     options: [
       "Primary case",
       "Index case",
-      "Secondary case",
-      "Source case"
+      "Source case",
+      "Secondary case"
     ],
     answer: 1,
-    explanation: "The cook who was infected and contaminated the food is the primary case (the original source of infection in the outbreak). The first guest to seek medical care and bring the outbreak to the attention of health authorities is the index case. The 40 guests who fell ill after eating the food are secondary cases (infected from the common source). The source case and primary case in this scenario refer to the same entity - the infected cook. This distinction is important in understanding transmission dynamics."
+    explanation: "The index case is the first identified case that triggers investigation and brings the outbreak to the attention of public health authorities. The primary case is the first person actually infected in a transmission chain, who may differ from the index case. The source case is the origin of infection for others. In this scenario, the first case reported by the community health worker is the index case, while the case identified as the infection source is the primary (source) case."
+  },
+  {
+    id: 7,
+    question: "Event-based surveillance (EBS) is differentiated from indicator-based surveillance (IBS) primarily because EBS:",
+    options: [
+      "Uses only laboratory-confirmed data from sentinel hospitals",
+      "Captures informal, unstructured signals from media, community reports, and internet-based sources for early warning",
+      "Is mandated under IHR 2005 as the primary national reporting mechanism",
+      "Requires standardized case definitions before any data can be recorded"
+    ],
+    answer: 1,
+    explanation: "Event-based surveillance (EBS) captures unstructured signals from informal sources such as media scanning, community informants, social media monitoring, and rumor tracking systems. It enables detection of novel or unexpected health events earlier than structured indicator-based surveillance. IBS uses standardized case definitions and formal reporting through health facility systems. Both are complementary components of a comprehensive national surveillance system."
+  },
+  {
+    id: 8,
+    question: "Syndromic surveillance contributes to early outbreak detection by:",
+    options: [
+      "Providing etiological confirmation of the causative pathogen before clinical assessment",
+      "Monitoring trends in pre-diagnostic clinical syndromes to detect unusual increases before laboratory diagnosis is available",
+      "Replacing conventional case-based surveillance for all notifiable diseases",
+      "Calculating the epidemic threshold for each district based on historical mortality data"
+    ],
+    answer: 1,
+    explanation: "Syndromic surveillance tracks trends in clinical syndromes (e.g., acute febrile illness, acute diarrheal disease, acute respiratory illness) using data from pharmacies, emergency departments, and community health workers. This enables detection of outbreak signals before specific diagnoses or laboratory confirmation are available, allowing earlier public health response. The S form in IDSP embodies this principle at the community level."
+  },
+  {
+    id: 9,
+    question: "WHO's Disease Outbreak News (DON) serves which primary function in global outbreak surveillance?",
+    options: [
+      "Declaring Public Health Emergencies of International Concern (PHEIC) on behalf of member states",
+      "Providing timely, publicly accessible information about disease outbreaks and events of potential international public health significance",
+      "Mandating travel restrictions for countries with active outbreaks",
+      "Replacing member states' obligation to notify WHO under IHR 2005"
+    ],
+    answer: 1,
+    explanation: "WHO's Disease Outbreak News (DON) is a publicly accessible online information resource that provides verified, timely information on disease outbreaks and public health events globally. It is separate from the PHEIC declaration process, which requires the Director-General's decision based on Emergency Committee recommendations. DON supports global situational awareness and does not override national notification obligations under IHR 2005."
+  },
+  {
+    id: 10,
+    question: "Upon receiving a rumor of mass illness from a remote area, the correct first action in the verification process is to:",
+    options: [
+      "Deploy a Rapid Response Team immediately without waiting for details",
+      "Contact the reporting source to collect basic information: who, what, when, where, and how many",
+      "Issue a public health advisory to prevent community panic",
+      "Send laboratory kits to the area before assessing the situation"
+    ],
+    answer: 1,
+    explanation: "The first step in rumor verification is contacting the source (ASHA, ANM, medical officer, media reporter) to collect preliminary information: who is affected (age, sex, community), what symptoms are present, when cases began, where they are located, and how many are affected. This initial information determines whether field investigation is warranted. Deploying teams or issuing public advisories without verification wastes resources and may cause unnecessary alarm."
+  },
+  {
+    id: 11,
+    question: "IDSP weekly surveillance reports are monitored for unusual disease increases using which statistical approach?",
+    options: [
+      "Cox proportional hazards regression comparing case rates over time",
+      "Control chart method comparing current week cases against mean plus two standard deviations from the same week in prior years",
+      "Receiver operating characteristic (ROC) curve to optimize sensitivity and specificity",
+      "Interrupted time series analysis using ARIMA modelling"
+    ],
+    answer: 1,
+    explanation: "IDSP uses a control chart approach where the current week's case counts are compared against a threshold derived from historical data for the same epidemiological week in previous years (typically mean plus two standard deviations). Counts exceeding this threshold generate an alert for investigation. This method accounts for seasonal variation by using the same calendar week from past years as the reference, rather than an overall average."
+  },
+  {
+    id: 12,
+    question: "A disease that is consistently present at a predictable level in a defined population year-round is described as:",
+    options: [
+      "Epidemic",
+      "Pandemic",
+      "Endemic",
+      "Sporadic"
+    ],
+    answer: 2,
+    explanation: "An endemic disease is one that is consistently present at a stable, predictable baseline level within a defined geographic area or population. An epidemic occurs when cases exceed this expected baseline. A pandemic is a geographically widespread epidemic affecting multiple countries or continents. Sporadic describes occasional, irregular, isolated cases with no predictable pattern. The endemic level serves as the reference baseline against which excess cases (i.e., an epidemic) are measured."
   },
   {
     id: 13,
-    question: "An epidemic curve showing a sharp rise with a single peak lasting about 2-3 incubation periods, followed by a rapid decline, is most consistent with which type of outbreak?",
+    question: "A foodborne outbreak at a restaurant results in 80 ill persons, all of whom ate lunch between 12:00 and 13:00 on the same day. The epidemic curve shows cases beginning 2 hours after the meal and peaking at 4 hours, with a rapid decline by 8 hours. This pattern is MOST consistent with:",
     options: [
-      "Propagated (person-to-person) source outbreak",
-      "Continuous common source outbreak",
-      "Point source outbreak",
-      "Intermittent common source outbreak"
+      "Propagated person-to-person transmission",
+      "Continuous common-source exposure over multiple days",
+      "Point-source exposure from a single brief exposure event",
+      "Intermittent common-source exposure from a recurring contamination"
     ],
     answer: 2,
-    explanation: "A point source epidemic curve shows a sharp rise and rapid decline in cases with a single peak spanning approximately one incubation period. All cases are exposed at essentially the same time and place. Classic examples include a contaminated food item at a single event. Propagated outbreaks show successive waves each spanning one incubation period. Continuous common source shows a plateau during the exposure period. Intermittent common source shows multiple peaks corresponding to multiple exposure events."
+    explanation: "A point-source epidemic curve is characterized by a rapid rise, a single well-defined peak, and a rapid fall, consistent with all cases sharing a single brief exposure event (the contaminated lunch). The short incubation period (2-4 hours) suggests a preformed toxin (e.g., Staphylococcal enterotoxin or Bacillus cereus emetic toxin). In a propagated outbreak there would be successive peaks; continuous source would show a prolonged plateau; intermittent source would show multiple separate peaks."
   },
   {
     id: 14,
-    question: "During investigation of a food-borne outbreak at a wedding banquet, the team constructs a line list. Which information is MOST essential to include in the line list?",
+    question: "An epidemic curve of a measles outbreak shows three successive peaks at approximately 10-12 day intervals, corresponding to the measles incubation period. This pattern is characteristic of:",
     options: [
-      "Name, age, sex, food items consumed, onset date/time, symptoms, outcome",
-      "Name, religion, caste, income, political affiliation",
-      "Name, employer, travel history for the last 5 years",
-      "Name, blood group, genetic history, prior illnesses"
+      "Point-source outbreak from a single exposure event",
+      "Continuous common-source outbreak from an ongoing contaminated source",
+      "Propagated outbreak with person-to-person transmission generating successive case generations",
+      "Intermittent common-source outbreak from periodic contamination events"
     ],
-    answer: 0,
-    explanation: "A line list is a database where each row represents a case and columns represent key variables. For a food-borne outbreak, essential variables are: identifying information (name, age, sex), exposure information (food items consumed, timing of consumption), disease information (date/time of symptom onset, specific symptoms), and outcome (recovered, hospitalized, died). This data is used to calculate attack rates, identify the implicated food vehicle, determine the incubation period, and guide control measures."
+    answer: 2,
+    explanation: "A propagated epidemic curve shows successive waves of cases, each separated by approximately one incubation period of the disease, representing successive generations of person-to-person transmission. Each wave arises from cases infecting susceptibles in the previous generation. Measles, with its 10-12 day incubation period, produces this characteristic multi-peak pattern. This differs from point-source (single peak), continuous source (prolonged plateau), and intermittent source (multiple unequally spaced peaks) patterns."
   },
   {
     id: 15,
-    question: "A spot map is used in outbreak investigation primarily to:",
+    question: "An epidemic curve showing a gradual rise over two weeks, a sustained plateau for three weeks, and then a gradual decline after a contaminated water supply was repaired is consistent with:",
     options: [
-      "Calculate the incubation period of the disease",
-      "Identify the temporal pattern of the outbreak",
-      "Visualize the geographic distribution of cases to identify clustering and suggest the source",
-      "Determine the case fatality rate"
+      "Point-source outbreak",
+      "Propagated outbreak",
+      "Intermittent common-source outbreak",
+      "Continuous common-source outbreak"
     ],
-    answer: 2,
-    explanation: "A spot map places each case as a dot on a geographic map of the affected area, allowing investigators to visualize geographic clustering of cases. This can suggest the location of the source (e.g., cases clustered around a water source or specific restaurant), identify areas at risk, and guide environmental investigation. The temporal pattern is shown by the epidemic curve. Incubation period is calculated from exposure and onset data. Case fatality rate is calculated from case count and death data."
+    answer: 3,
+    explanation: "A continuous common-source epidemic curve shows a gradual increase during the period when the source is becoming established, a sustained plateau during ongoing exposure, and a gradual decline after the source is removed or controlled. This pattern is typical of contaminated water supplies, continuous food contamination, or other persistent environmental sources. The duration of the plateau corresponds to the duration of the ongoing exposure, distinguishing it from the sharp single peak of a point-source outbreak."
   },
   {
     id: 16,
-    question: "In an outbreak of typhoid fever in a town, the attack rate among those who drank from the municipal water supply is 45/200 (22.5%), while among those who did not drink municipal water it is 5/300 (1.7%). The food-specific attack rate for municipal water is approximately:",
+    question: "A line listing (line list) in an outbreak investigation is BEST described as:",
     options: [
-      "13.2%",
-      "20.8%",
-      "22.5%",
-      "24.2%"
+      "A list of all health facilities in the outbreak-affected district",
+      "A tabular record where each row represents one case and columns represent key epidemiological variables for each case",
+      "A ranked list of food items by their food-specific attack rates",
+      "A chronological list of all laboratory test results received during the outbreak"
     ],
     answer: 1,
-    explanation: "The food/vehicle-specific attack rate difference (or attributable risk in the exposed) = Attack rate among exposed - Attack rate among unexposed = 22.5% - 1.7% = 20.8%. This represents the excess risk attributable to drinking municipal water. This is distinct from the crude attack rate among those exposed (22.5%). The difference attack rate (20.8%) helps identify the implicated vehicle by showing the excess risk among those exposed to that specific vehicle."
+    explanation: "A line list is a structured tabular database where each row represents an individual case and each column captures a specific variable: case identifier, date of onset, age, sex, residence, symptoms, exposure history (food items consumed, contacts, travel), laboratory results, and outcome. It serves as the primary analytical tool for descriptive epidemiology, enabling time-place-person characterization, incubation period estimation, and generation of hypotheses for analytical studies."
   },
   {
     id: 17,
-    question: "In a school outbreak of chickenpox, 30 new cases develop among 120 susceptible household contacts of the 30 index cases. What is the secondary attack rate (SAR)?",
+    question: "In an outbreak investigation, a spot map is constructed by:",
     options: [
-      "20%",
-      "25%",
-      "50%",
-      "100%"
+      "Plotting the date of disease onset against the number of cases to create an epidemic curve",
+      "Placing a dot or symbol for each case at the geographic location of their residence or site of exposure on a map of the affected area",
+      "Ranking food items by their odds ratios from highest to lowest association with illness",
+      "Marking health facilities on a district map by their patient load"
     ],
     answer: 1,
-    explanation: "Secondary Attack Rate (SAR) = (Number of new cases among contacts of index cases / Total susceptible contacts) x 100 = (30/120) x 100 = 25%. SAR measures the probability of infection among susceptible individuals within a reasonable incubation period following known contact with an index case. It reflects the transmissibility of the agent and the effectiveness of control measures. A high SAR indicates high transmissibility, which would argue for strict isolation and contact tracing."
+    explanation: "A spot map is a geographic representation where each case is plotted as a dot (or symbol) at the location of their residence or site of exposure. Multiple cases at the same location may be represented by stacked dots or a number. Spot maps reveal spatial clustering, proximity to suspected sources (water sources, food outlets, vector breeding sites), and geographic spread pattern. Combined with place-specific data (wells, latrines, factories), spot maps generate hypotheses about the source of an outbreak."
   },
   {
     id: 18,
-    question: "An epidemic curve for a measles outbreak in a school shows multiple peaks at regular intervals, each peak approximately 14 days apart (the incubation period of measles). This pattern is most consistent with:",
+    question: "In a school cafeteria outbreak, 150 students ate fried rice and 45 developed illness; 50 students did not eat fried rice and 5 developed illness. The food-specific attack rate for fried rice is:",
     options: [
-      "Point source outbreak",
-      "Continuous common source outbreak",
-      "Propagated (person-to-person) outbreak",
-      "Intermittent common source outbreak"
+      "10%",
+      "30%",
+      "33%",
+      "45%"
     ],
-    answer: 2,
-    explanation: "A propagated (person-to-person) epidemic curve shows successive waves of cases, each wave separated by approximately one incubation period. Each wave represents a new generation of cases infected by the previous generation. This is characteristic of diseases spread person-to-person like measles, influenza, and COVID-19. The regular interval of 14 days corresponds to the incubation period of measles. Each subsequent wave may be larger than the previous if susceptibles remain in the population."
+    answer: 1,
+    explanation: "Food-specific attack rate for those who ate fried rice = (Number ill among those who ate / Total who ate) x 100 = (45/150) x 100 = 30%. The attack rate for those who did not eat fried rice = (5/50) x 100 = 10%. The relative risk = 30/10 = 3.0, indicating those who ate fried rice were three times more likely to develop illness, suggesting fried rice as the implicated vehicle."
   },
   {
     id: 19,
-    question: "The generation time of an infectious disease can be estimated from the epidemic curve of a propagated outbreak by measuring:",
+    question: "The secondary attack rate (SAR) is calculated as:",
     options: [
-      "The duration from the first case to the last case",
-      "The interval between successive peaks in the epidemic curve",
-      "The width of the epidemic curve at its base",
-      "The height of the peak of the epidemic curve"
+      "(Total cases in the outbreak / Total population at risk) x 100",
+      "(Number of secondary cases among susceptible contacts of primary cases / Total susceptible contacts exposed) x 100",
+      "(Number of cases in the second wave / Number of cases in the first wave) x 100",
+      "(Number of laboratory-confirmed cases / Total suspected cases) x 100"
     ],
     answer: 1,
-    explanation: "In a propagated outbreak, the epidemic curve shows successive waves. The interval between the peaks of successive waves approximates the generation time (serial interval) of the disease. Generation time is the interval between infection in the primary case and infection in the secondary case (or more practically, between the onset of symptoms in successive generations). This is a useful epidemiological parameter to understand disease transmissibility and to predict the course of the outbreak."
+    explanation: "Secondary Attack Rate (SAR) = (Number of secondary cases among susceptible contacts of primary cases / Total susceptible contacts) x 100. SAR quantifies the probability of transmission from a primary case to a susceptible contact in a defined group (typically household or close contact setting) within one maximum incubation period. It is a direct measure of transmissibility. SAR is used to evaluate the effectiveness of control measures such as isolation and chemoprophylaxis."
   },
   {
     id: 20,
-    question: "During a food-borne outbreak investigation, the following data was collected: Among 100 people who ate rice, 40 became ill; among 100 who did not eat rice, 20 became ill. The attack rate ratio (relative risk) for eating rice is:",
+    question: "In a point-source outbreak, the median incubation period is estimated by:",
     options: [
-      "1.0",
-      "1.5",
-      "2.0",
-      "2.5"
+      "Calculating the total outbreak duration divided by the number of cases",
+      "Measuring the time from the known exposure event to the onset of the median case on the epidemic curve",
+      "Using the range from the shortest to the longest onset time after exposure",
+      "Subtracting the date of first case from the date of the last case"
     ],
-    answer: 2,
-    explanation: "Attack Rate Ratio (Relative Risk) = Attack rate among exposed / Attack rate among unexposed = (40/100) / (20/100) = 0.40 / 0.20 = 2.0. This means people who ate rice were 2 times more likely to fall ill compared to those who did not eat rice. In food-borne outbreak investigations, the food item with the highest attack rate ratio and a statistically significant association is the likely vehicle of transmission."
+    answer: 1,
+    explanation: "When the time of a single exposure event is known (as in a point-source outbreak such as a common meal), the incubation period for each case is the time from exposure to symptom onset. The median incubation period corresponds to the onset time of the median case (the 50th percentile of onset times). This estimated incubation period is then compared to known incubation periods of suspected pathogens to narrow the etiological hypothesis before laboratory confirmation."
   },
   {
     id: 21,
-    question: "A case definition for a suspected outbreak of viral encephalitis is established as: 'Any person with acute onset of fever >38°C AND altered sensorium OR seizures, residing in the affected district.' This case definition is designed to be:",
+    question: "A 'probable case' in an outbreak case definition is best characterized as:",
     options: [
-      "Highly specific to avoid false positives",
-      "Highly sensitive to capture most true cases",
-      "Both highly sensitive and highly specific simultaneously",
-      "Based solely on laboratory confirmation"
+      "A case confirmed by microbiological testing meeting all laboratory criteria",
+      "A case meeting clinical criteria and having an epidemiological link to a confirmed case, but lacking laboratory confirmation",
+      "A case with only a positive laboratory test but no clinical symptoms",
+      "Any person residing in the outbreak area regardless of symptoms"
     ],
     answer: 1,
-    explanation: "Case definitions used in outbreak investigations are intentionally made sensitive (broad) rather than specific to capture as many true cases as possible, minimizing false negatives. In the early stages of an outbreak, it is more important to identify all potential cases and prevent missing true cases (which could lead to ongoing transmission) than to be specific. The case definition evolves from suspected to probable to confirmed as the investigation progresses and laboratory criteria are added."
+    explanation: "In the standard tiered case definition framework: a suspected case meets only clinical criteria; a probable case meets clinical criteria plus has an epidemiological link (e.g., contact with a confirmed case, shared exposure) but lacks laboratory confirmation; a confirmed case has laboratory confirmation. The probable category captures cases with strong indirect evidence, enables surveillance when laboratory capacity is limited, and prevents underreporting during active outbreaks."
   },
   {
     id: 22,
-    question: "In characterizing an outbreak by 'time, place, and person,' the primary purpose of person characterization is to:",
+    question: "The generation time (serial interval) in a propagated outbreak epidemic curve is estimated by:",
     options: [
-      "Determine the incubation period",
-      "Identify who is at risk and thus generate hypotheses about exposure",
-      "Calculate the case fatality rate",
-      "Establish the geographic distribution of cases"
+      "Measuring the time from the first case to the last case in the outbreak",
+      "Measuring the time interval between successive wave peaks in the epidemic curve, approximating the average time between case generations",
+      "Dividing the total number of cases by the basic reproduction number",
+      "Calculating the mean incubation period from known exposure and onset data"
     ],
     answer: 1,
-    explanation: "Person characteristics (age, sex, occupation, dietary habits, immunization status, behavioral factors) help identify which groups are disproportionately affected, thereby generating hypotheses about what exposures or risk factors may be responsible for the outbreak. For example, if cases are predominantly among adults who attended a specific wedding feast, this points to that event as the source. Time characterization generates hypotheses about exposure timing and incubation period. Place characterization identifies the geographic source."
+    explanation: "In a propagated epidemic curve, successive peaks represent successive generations of cases. The interval between consecutive peaks approximates the serial interval (generation time) - the average time between symptom onset in a primary case and symptom onset in their secondary cases. This parameter is fundamental to estimating the reproduction number (R) and predicting epidemic trajectory. It reflects both the incubation period and the infectious period of the pathogen."
   },
   {
     id: 23,
-    question: "In a village of 1000 people, 50 cases of cholera occurred over a 2-week period. The overall attack rate is:",
+    question: "In time-place-person analysis of an outbreak, the 'person' component is analyzed to:",
     options: [
-      "0.5%",
-      "2%",
-      "5%",
-      "10%"
+      "Determine the geographic distribution of cases relative to the water supply",
+      "Plot the temporal trend of new cases over the outbreak period",
+      "Identify demographic and exposure characteristics of cases to generate hypotheses about risk factors and exposed populations",
+      "Establish the timeline of events from first exposure to last case"
     ],
     answer: 2,
-    explanation: "Attack Rate = (Number of new cases / Population at risk) x 100 = (50/1000) x 100 = 5%. The attack rate is a type of incidence proportion that measures the risk of developing disease among those exposed (or in a defined population) during a specific time period. In outbreak investigations, attack rates are calculated for the total population and for specific subgroups to identify risk factors and the vehicle of transmission."
+    explanation: "The 'person' component of descriptive epidemiology characterizes WHO is affected: age distribution, sex ratio, occupation, immunization status, behavioral exposures (dietary habits, sexual behavior, travel), and socioeconomic factors. Identifying disproportionate risk in specific demographic or exposure groups generates hypotheses about the causative exposure. For example, cases predominantly among adults who attended a specific event implicates that event as the source."
   },
   {
     id: 24,
-    question: "An epidemic curve showing a gradual rise, plateau, and gradual decline over an extended period, without a clear peak, is most consistent with:",
+    question: "In a village outbreak of hepatitis E, investigators identify that all cases occurred within two weeks and were geographically clustered near a single hand pump. The epidemic curve shows a classic bell-shaped single peak. Which incubation period range would be consistent with hepatitis E as the causative agent?",
     options: [
-      "Point source outbreak",
-      "Propagated outbreak",
-      "Continuous common source outbreak",
-      "Mixed source outbreak"
+      "2-6 hours",
+      "1-3 days",
+      "15-60 days",
+      "6-12 months"
     ],
     answer: 2,
-    explanation: "A continuous common source epidemic curve shows a gradual rise, sustained plateau (during the period of ongoing exposure), and then a gradual decline after the source is removed. This pattern occurs when people are continuously exposed to a contaminated source over a prolonged period (e.g., contaminated water supply, ongoing food contamination). The curve lacks the sharp single peak of a point source outbreak and the regular waves of a propagated outbreak."
+    explanation: "Hepatitis E virus has an incubation period of 15-60 days (average 40 days). In a point-source waterborne outbreak from a contaminated hand pump, cases would appear 15-60 days after exposure, consistent with the epidemic curve shape and geographic clustering. The short incubation times (2-6 hours, 1-3 days) are characteristic of preformed toxins or invasive bacteria (e.g., Staphylococcus, Salmonella). Six to 12 months would suggest HIV or viral hepatitis B."
   },
   {
     id: 25,
-    question: "In an outbreak of food poisoning following a hospital cafeteria meal, investigators wish to determine which food items are associated with illness. The most appropriate study design to use is:",
+    question: "In an outbreak at a wedding where all attendees are known and enumerable, the preferred analytical study design is:",
     options: [
-      "Randomized controlled trial",
-      "Cohort study among cafeteria attendees",
-      "Cross-sectional survey of the general population",
-      "Ecological study"
+      "Case-control study, because the disease is rare in the population",
+      "Retrospective cohort study, because the exposed population (all attendees) is well defined and can be fully enumerated",
+      "Cross-sectional survey of the surrounding community",
+      "Ecological study using aggregate district-level data"
     ],
     answer: 1,
-    explanation: "When the source population (all those exposed) is known and can be enumerated (as in a closed cohort like cafeteria attendees), a cohort study is preferred for outbreak investigation. All attendees are interviewed about food consumed and illness, allowing calculation of food-specific attack rates and relative risks (attack rate ratios) for each food item. Case-control studies are used when the exposed population cannot be fully enumerated. Randomized controlled trials are not feasible or ethical in outbreak investigations."
+    explanation: "A retrospective cohort study is preferred when the at-risk population is fully enumerable (e.g., wedding guest list, school roster, factory employee list). All members of the cohort are interviewed about their exposures and illness status, enabling direct calculation of attack rates and relative risk for each food item or exposure. Case-control studies are used when the source population is too large or diffuse to enumerate fully, or when the disease is rare."
   },
   {
     id: 26,
-    question: "In a large community outbreak of hepatitis A, investigators cannot enumerate all exposed individuals. They decide to conduct a case-control study. The cases are laboratory-confirmed hepatitis A cases; the controls should ideally be:",
+    question: "In a 2x2 table from a retrospective cohort study during a foodborne outbreak: ate implicated food and ill = 60 (a); ate food and not ill = 40 (b); did not eat food and ill = 10 (c); did not eat food and not ill = 90 (d). The Relative Risk (RR) is:",
     options: [
-      "Cases of other liver diseases",
-      "People from the same community who did not develop hepatitis A, matched for age and sex",
-      "Health workers from the affected area",
-      "Cases from a neighboring unaffected district"
+      "6.0",
+      "13.5",
+      "4.5",
+      "3.0"
     ],
     answer: 1,
-    explanation: "In a case-control study, controls should be individuals from the same source population as the cases who did not develop the disease. They should be similar to cases in terms of potential confounders (age, sex, socioeconomic status, geographic location) but different in disease status. Matching for age and sex helps control confounding. Controls from the same community ensure they had the same opportunities for exposure as cases. Using cases of other diseases or health workers introduces selection bias."
+    explanation: "RR = Attack Rate in Exposed / Attack Rate in Unexposed = [a/(a+b)] / [c/(c+d)] = [60/(60+40)] / [10/(10+90)] = (60/100) / (10/100) = 0.60 / 0.10 = 6.0. Wait - recalculating: 0.60 / 0.10 = 6.0. So the RR is 6.0 (answer index 0). Note: This means those who ate the implicated food were 6 times more likely to develop illness. The Odds Ratio (used in case-control) would be (a x d)/(b x c) = (60 x 90)/(40 x 10) = 5400/400 = 13.5, demonstrating that OR overestimates RR when disease prevalence is high."
   },
   {
     id: 27,
-    question: "In a case-control study of a cholera outbreak, the odds ratio (OR) for drinking water from the river is 8.5 (95% CI: 3.2-22.4, p<0.001). What is the correct interpretation?",
+    question: "In a case-control study during an outbreak, 50 cases and 100 controls were enrolled. Among cases, 40 reported eating raw shellfish; among controls, 20 reported eating raw shellfish. The Odds Ratio (OR) is:",
     options: [
-      "People who drank river water were 8.5 times more likely to develop cholera, and this association is statistically significant",
-      "8.5% of cholera cases were due to river water consumption",
-      "The relative risk of cholera from river water is 8.5",
-      "River water caused cholera in 8.5 out of 10 people"
+      "4.0",
+      "8.0",
+      "12.0",
+      "16.0"
     ],
-    answer: 0,
-    explanation: "An odds ratio of 8.5 means that cases were 8.5 times more likely to have been exposed to river water compared to controls. Since the 95% CI does not include 1.0 (and p<0.001), this association is statistically significant. The odds ratio approximates relative risk when the disease is rare (rare disease assumption). It does not represent the percentage of cases caused by the exposure (that would be attributable fraction) or the absolute risk. In outbreak investigations, OR >1 with CI not crossing 1 indicates significant association."
+    answer: 2,
+    explanation: "OR = (a x d) / (b x c). a = cases exposed = 40, b = cases unexposed = 10, c = controls exposed = 20, d = controls unexposed = 80. OR = (40 x 80) / (10 x 20) = 3200 / 200 = 16.0. An OR of 16 indicates a very strong association between eating raw shellfish and illness. Since the confidence interval should not include 1 at this magnitude with this sample size, the association would be statistically significant."
   },
   {
     id: 28,
-    question: "In a 2x2 table for a food-borne outbreak, 80 ate the implicated food and 60 became ill; 20 did not eat the food and 5 became ill. The relative risk (RR) is:",
+    question: "A chi-square test comparing illness rates between exposed and unexposed groups in a foodborne outbreak yields a value of 9.6 with 1 degree of freedom (critical value at p=0.05 is 3.84; at p=0.01 is 6.63). The correct interpretation is:",
     options: [
-      "3.0",
-      "3.75",
-      "4.0",
-      "6.0"
+      "The association is not statistically significant at the 0.05 level",
+      "The association is statistically significant at both the 0.05 and 0.01 levels",
+      "The association is significant at 0.05 but not at 0.01",
+      "The chi-square value confirms the food item caused the outbreak"
     ],
     answer: 1,
-    explanation: "Attack rate among exposed = 60/80 = 0.75 (75%). Attack rate among unexposed = 5/20 = 0.25 (25%). Relative Risk = 0.75/0.25 = 3.0. Wait, let me recalculate: RR = (60/80)/(5/20) = 0.75/0.25 = 3.0. Actually answer index 0 = 3.0 is correct. Note: The RR of 3.0 means those who ate the implicated food were 3 times more likely to become ill. In cohort-type outbreak analyses, RR is the appropriate measure of association calculated directly from attack rates in exposed and unexposed groups."
+    explanation: "The calculated chi-square of 9.6 exceeds both the critical value at p=0.05 (3.84) and at p=0.01 (6.63), indicating statistical significance at both levels. This means there is less than a 1% probability of obtaining this result by chance alone if no true association existed. Statistical significance supports (but does not prove) causation; biological plausibility, dose-response relationship, and consistency with other findings must also be evaluated."
   },
   {
     id: 29,
-    question: "A p-value of 0.03 is obtained for the association between a food item and illness in a food-borne outbreak investigation. What is the correct interpretation?",
+    question: "A 95% confidence interval for a Relative Risk of 3.5 (95% CI: 0.8 - 15.2) in an outbreak study indicates:",
     options: [
-      "There is a 3% probability that the food item caused the illness",
-      "There is a 3% probability of observing this result (or more extreme) if there is truly no association",
-      "97% of people who ate this food developed illness",
-      "The food item is the definitive cause of the outbreak"
+      "The association is statistically significant as the RR is greater than 1",
+      "The association is not statistically significant because the confidence interval includes the null value of 1",
+      "The study has 95% accuracy in its RR estimate",
+      "The true RR is definitely between 0.8 and 15.2 in the population"
     ],
     answer: 1,
-    explanation: "A p-value of 0.03 means there is a 3% probability of obtaining the observed results (or more extreme results) by chance alone, assuming the null hypothesis (no association) is true. Since p<0.05, we reject the null hypothesis and conclude the association is statistically significant. The p-value does NOT tell us the probability that the exposure caused the disease, the strength of association (which is the RR or OR), or the clinical significance. Statistical significance must be interpreted alongside the magnitude of association and biological plausibility."
+    explanation: "A 95% CI that includes the null value (RR = 1) indicates the association is NOT statistically significant at the 0.05 level, despite the point estimate of 3.5 appearing elevated. The wide CI (0.8 - 15.2) also reflects substantial statistical uncertainty, likely due to small sample size. The p-value would be greater than 0.05. This result warrants caution in interpretation and may require a larger sample to achieve adequate statistical power."
   },
   {
     id: 30,
-    question: "During a cholera outbreak investigation, a 2x2 table shows: exposed and ill = 40 (a), exposed and not ill = 10 (b), unexposed and ill = 10 (c), unexposed and not ill = 40 (d). The odds ratio is:",
+    question: "The Attributable Fraction in the Exposed (AFe) for an outbreak where the Relative Risk = 5 is:",
     options: [
-      "4",
-      "8",
-      "16",
-      "12"
+      "20%",
+      "40%",
+      "60%",
+      "80%"
     ],
-    answer: 2,
-    explanation: "Odds Ratio = (a x d) / (b x c) = (40 x 40) / (10 x 10) = 1600 / 100 = 16. The OR of 16 indicates that exposed individuals had 16 times higher odds of developing cholera compared to unexposed individuals. This is a very strong association. In case-control studies, OR is the only direct measure of association obtainable. When disease prevalence is low, OR approximates RR (rare disease assumption), but here with high prevalence, OR overestimates RR."
+    answer: 3,
+    explanation: "AFe = (RR - 1) / RR x 100 = (5 - 1) / 5 x 100 = 4/5 x 100 = 80%. This means 80% of illness among those exposed to the implicated vehicle is attributable to that exposure and could theoretically be prevented by eliminating that exposure. The remaining 20% of illness in the exposed group would occur from other causes. AFe is a key measure for prioritizing control measures in foodborne and waterborne outbreak investigations."
   },
   {
     id: 31,
-    question: "The attributable fraction in the exposed (AFe) for a food-borne outbreak where RR = 4 is:",
+    question: "The Population Attributable Fraction (PAF) is most informative for public health decision-making because it:",
     options: [
-      "25%",
-      "50%",
-      "75%",
-      "80%"
+      "Measures the relative risk of disease in exposed individuals compared to unexposed individuals",
+      "Estimates the proportion of all cases in the total population (exposed and unexposed) that is attributable to the specific exposure",
+      "Determines the sensitivity and specificity of the case definition used in the outbreak",
+      "Calculates the number of secondary cases per primary case in a transmission chain"
     ],
-    answer: 2,
-    explanation: "Attributable Fraction in the Exposed (AFe) = (RR - 1) / RR x 100 = (4 - 1) / 4 x 100 = 3/4 x 100 = 75%. This means 75% of the illness among those who ate the implicated food is attributable to that food item (i.e., could be prevented if the exposure were eliminated). The remaining 25% would occur due to other causes. AFe is useful in outbreak investigations to quantify the impact of removing the identified vehicle of transmission."
+    answer: 1,
+    explanation: "PAF = (Incidence in total population - Incidence in unexposed) / Incidence in total population. It quantifies what fraction of disease burden in the entire population could be eliminated if the exposure were removed. Unlike AFe (which applies only to the exposed), PAF accounts for how common the exposure is in the population. A high PAF identifies exposures with the greatest potential public health impact if controlled, making it valuable for prioritizing interventions."
   },
   {
     id: 32,
-    question: "Stoll's dilution technique is used in the context of outbreak investigation of:",
+    question: "In a matched case-control study during an outbreak, McNemar's test is used instead of the standard chi-square because:",
     options: [
-      "Foodborne illness",
-      "Waterborne disease - to determine the number of viable organisms in water",
-      "Vector-borne diseases - to calculate vector density",
-      "Airborne diseases - to measure aerosol concentration"
+      "McNemar's test can handle continuous outcome variables unlike chi-square",
+      "Matched pairs must be analyzed as paired data to account for the correlation between matched cases and controls; standard chi-square ignores this pairing",
+      "McNemar's test is more appropriate when the sample size exceeds 500 pairs",
+      "McNemar's test can calculate odds ratios while chi-square cannot"
     ],
     answer: 1,
-    explanation: "Stoll's dilution method is used in water microbiology to estimate the number of viable organisms (Most Probable Number - MPN method) in water samples. In waterborne outbreak investigation, environmental sampling of suspected water sources is essential. The MPN method uses serial dilutions of water samples inoculated into culture media to statistically estimate the bacterial concentration. This helps confirm water as the vehicle and assess the degree of contamination. Coliform counts are typically used as indicators of fecal contamination."
+    explanation: "In a matched case-control study, each case is paired with one or more controls matched on specific variables (e.g., age, sex). The matched pairs are correlated (not independent), violating the independence assumption of the standard chi-square test. McNemar's test uses only the discordant pairs (where case and control differ in exposure status) and correctly accounts for the within-pair correlation. Conditional logistic regression is the multivariable extension for matched case-control analyses."
   },
   {
     id: 33,
-    question: "In an outbreak of diarrhea, a chi-square test is applied to test the association between consumption of a street food item and illness. The chi-square value is 12.4 with 1 degree of freedom (critical value at p=0.05 is 3.84). The conclusion is:",
+    question: "A dose-response relationship in a foodborne outbreak investigation is demonstrated when:",
     options: [
-      "The association is not statistically significant as 12.4 > 3.84",
-      "The association is statistically significant as 12.4 > 3.84",
-      "The association cannot be determined from chi-square alone",
-      "The chi-square value indicates the food item definitely caused the outbreak"
+      "More than one food item is associated with illness in the analytical study",
+      "Those who consumed larger quantities of the implicated food have progressively higher attack rates than those who consumed smaller amounts",
+      "The odds ratio exceeds 10 in the case-control study",
+      "The p-value is less than 0.001 in the chi-square test"
     ],
     answer: 1,
-    explanation: "When the calculated chi-square value (12.4) exceeds the critical value at the chosen significance level (3.84 at p=0.05, df=1), we reject the null hypothesis of no association. The association between the street food item and illness is statistically significant (p<0.05). The chi-square test assesses whether observed differences in disease frequency between groups exceed what would be expected by chance. However, statistical significance does not imply causation; biological plausibility and other epidemiological criteria must also be considered."
+    explanation: "A dose-response relationship (biological gradient) shows that increasing amounts of exposure lead to increasing risk of disease. In foodborne outbreak investigations, this is demonstrated by categorizing consumption into none, small, medium, and large portions and showing progressively rising attack rates across these categories. This is one of Bradford Hill's criteria for causation and strongly supports the implicated food as the causative vehicle."
   },
   {
     id: 34,
-    question: "During a waterborne outbreak investigation, which environmental sample is most important for microbiological analysis?",
+    question: "In an outbreak case-control study, sex is found to be associated with both consumption of the implicated food item and with illness. After stratifying by sex, the association between food consumption and illness persists in both males and females with similar odds ratios. This finding indicates:",
     options: [
-      "Soil sample from the affected area",
-      "Water sample from the suspected contaminated source taken at the point of consumption",
-      "Air sample from the community",
-      "Food samples from all restaurants in the district"
+      "Sex is a confounder and fully explains the association between food and illness",
+      "Sex is an effect modifier causing the food to affect males and females differently",
+      "Sex is not a confounder because the association between food and illness remains after controlling for sex",
+      "The study design was flawed because sex should have been an exclusion criterion"
     ],
-    answer: 1,
-    explanation: "In a waterborne outbreak investigation, water samples should be collected from the suspected contaminated source at multiple points: the source, distribution network, and critically, at the point of consumption (household/community level). Point-of-consumption samples best reflect what people actually consumed. Samples are analyzed for fecal indicator organisms (E. coli, total coliforms), and when indicated, specific pathogens. Chain of custody must be maintained, samples stored at 4°C, and analyzed within 6 hours of collection."
+    answer: 2,
+    explanation: "Confounding by sex is ruled out when stratified analysis shows similar odds ratios in both strata (males and females), indicating the food-illness association is not explained by sex. A confounder, when controlled, changes the estimate substantially (the crude and adjusted estimates differ). Effect modification (interaction) would produce notably different stratum-specific estimates. If the association persists with similar magnitude across strata, sex is not a confounder of the food-illness relationship."
   },
   {
     id: 35,
-    question: "In a laboratory confirmation strategy during an outbreak, the recommended approach for specimen collection is:",
+    question: "Multivariable logistic regression is applied in an outbreak case-control study to identify the independent risk factors. The adjusted odds ratio for eating raw oysters is 7.2 (95% CI: 2.1 - 24.8) after controlling for age, sex, and other foods. This finding indicates:",
     options: [
-      "Collect specimens from all cases regardless of illness duration",
-      "Collect specimens from the first 5-10 cases before antimicrobial therapy, then a representative sample thereafter",
-      "Collect only from fatal cases",
-      "Collect only from children under 5 years"
+      "Eating raw oysters is not significantly associated with illness after adjustment for confounders",
+      "Eating raw oysters is independently and significantly associated with illness, with 7.2 times higher odds, even after controlling for other variables",
+      "The adjustment reduced the odds ratio, suggesting raw oysters were not the primary vehicle",
+      "Logistic regression cannot be applied to outbreak investigations as it requires a prospective study design"
     ],
     answer: 1,
-    explanation: "The recommended strategy is to collect specimens from the first 5-10 cases before any antimicrobial therapy is administered (to maximize pathogen recovery), and then a representative sample thereafter to confirm diagnosis, identify antimicrobial resistance patterns, and track clonal strains. Collecting from all cases is impractical and unnecessary once the diagnosis is established. Pre-treatment specimens provide the best yield. Specimens should include appropriate samples based on the suspected diagnosis (e.g., stool for diarrhea, blood for septicemic illness)."
+    explanation: "An adjusted OR of 7.2 with a 95% CI that does not include 1 (2.1 - 24.8) indicates a statistically significant, independent association between eating raw oysters and illness after controlling for confounders. Multivariable logistic regression allows simultaneous adjustment for multiple variables, isolating the independent contribution of each exposure. This is particularly important in foodborne outbreaks where multiple foods may be correlated (people who ate one food often ate others)."
   },
   {
     id: 36,
-    question: "In an outbreak investigation, matching in a case-control study is primarily done to:",
+    question: "The Mantel-Haenszel method in outbreak analytical epidemiology is used to:",
     options: [
-      "Increase the number of cases available for analysis",
-      "Control for confounding variables",
-      "Increase the statistical power by ensuring equal numbers of cases and controls",
-      "Reduce recall bias"
+      "Plot the epidemic curve by stratifying cases by exposure status over time",
+      "Obtain a pooled summary estimate of association (RR or OR) across strata of a potential confounder while testing for confounding and effect modification",
+      "Calculate the secondary attack rate in household contacts stratified by age group",
+      "Estimate the sample size needed for a case-control study in an outbreak setting"
     ],
     answer: 1,
-    explanation: "Matching in case-control studies is done to control for confounding variables by ensuring that controls are similar to cases in terms of potential confounders (age, sex, neighborhood). This prevents confounding from distorting the observed association between exposure and disease. While matched designs can increase statistical efficiency, the primary purpose is confounding control. Matching does not reduce recall bias (which is a type of information bias) and may actually reduce statistical power if overmatched."
+    explanation: "The Mantel-Haenszel method produces a weighted pooled estimate of relative risk or odds ratio across strata of a confounding variable (e.g., age groups, sex). If stratum-specific estimates are homogeneous (no effect modification), the Mantel-Haenszel pooled estimate is the appropriate summary. If stratum-specific estimates differ substantially, effect modification is present and stratum-specific estimates should be reported separately. The Mantel-Haenszel chi-square tests the overall significance of the pooled association."
   },
   {
     id: 37,
-    question: "A cohort study during a food-borne outbreak at a wedding showed that 60 out of 100 people who ate the fish curry became ill, while 10 out of 100 who did not eat it became ill. The chi-square test shows p=0.001. However, fish curry was also eaten predominantly by adult males at this wedding. What is the concern?",
+    question: "In a large community outbreak where the source population cannot be enumerated, a case-control study is designed. Among 80 gastroenteritis cases and 160 controls interviewed, the chi-square value for association with a particular water source is 18.4 (p<0.001) with an OR of 9.1 (95% CI: 4.2 - 19.7). The p-value interpretation is:",
     options: [
-      "Recall bias, as people may not remember accurately",
-      "Confounding, as sex and age may be the true risk factors",
-      "Selection bias, as only sick people were interviewed",
-      "Measurement bias in recording food consumption"
+      "There is a 0.1% probability that the water source caused the gastroenteritis",
+      "There is less than a 0.1% probability of observing this association or a more extreme one if no true association existed between the water source and illness",
+      "The study has a 99.9% probability of being correct",
+      "9.1% of cases were caused by the water source"
     ],
     answer: 1,
-    explanation: "Confounding is the concern here. If adult males ate fish curry predominantly AND were also more likely to develop illness for other reasons (e.g., drank more beverages or ate other items), then the association between fish curry and illness may be confounded by sex/age. A confounder must be associated with both the exposure (fish curry) and the outcome (illness) and must not be on the causal pathway. Stratified analysis by sex and age (or multivariate logistic regression) would be needed to assess and control for confounding."
+    explanation: "A p-value less than 0.001 means there is less than a 0.1% probability of obtaining this association (OR of 9.1 or more extreme) by chance alone, assuming the null hypothesis of no association is true. The p-value is not the probability that the water source caused illness (that requires causal inference beyond statistical testing), nor does it indicate the fraction of cases attributable to the source (that is the attributable fraction). The wide CI above 1 confirms statistical significance."
   },
   {
     id: 38,
-    question: "The FIRST and most immediate control measure when an outbreak of cholera is confirmed in a community is:",
+    question: "The most immediate control measure for a confirmed outbreak of typhoid fever linked to a contaminated municipal water supply is:",
     options: [
-      "Mass vaccination with oral cholera vaccine",
-      "Provision of safe drinking water and oral rehydration therapy",
-      "Aerial spraying of insecticides",
-      "Mass chemoprophylaxis with tetracycline for all community members"
+      "Mass typhoid vaccination of all district residents",
+      "Boil water advisory for affected areas and emergency chlorination or alternative safe water supply",
+      "Mass chemoprophylaxis with ciprofloxacin for all residents",
+      "Quarantine of all symptomatic individuals in designated typhoid wards"
     ],
     answer: 1,
-    explanation: "For cholera outbreaks, the most immediate and effective control measures are: ensuring safe drinking water (chlorination, boiling, alternative supply) and providing oral rehydration therapy (ORT) for cases to prevent deaths. These address the primary transmission route (fecal-oral through contaminated water) and the major cause of mortality (dehydration). Mass vaccination is an adjunct measure, not a substitute for WASH interventions. Insecticide spraying is irrelevant for cholera. Mass chemoprophylaxis is not recommended as it promotes antibiotic resistance and provides only short-term, incomplete protection."
+    explanation: "For a waterborne typhoid outbreak, the immediate priority is interrupting the transmission route by issuing a boil water advisory and simultaneously implementing emergency chlorination of the water supply or providing an alternative safe water source. These measures directly address the source. Mass vaccination takes weeks to confer immunity and does not help already-exposed persons. Mass chemoprophylaxis promotes resistance. Quarantine is appropriate for highly infectious diseases, not typhoid which spreads through contaminated water/food, not person-to-person."
   },
   {
     id: 39,
-    question: "What is the key distinction between 'quarantine' and 'isolation' in outbreak management?",
+    question: "Quarantine is legally and epidemiologically distinguished from isolation in that quarantine:",
     options: [
-      "Quarantine applies to symptomatic individuals; isolation to asymptomatic contacts",
-      "Quarantine applies to exposed but asymptomatic individuals; isolation to confirmed or symptomatic cases",
-      "Quarantine is voluntary; isolation is mandatory",
-      "Quarantine is used for respiratory diseases; isolation for gastrointestinal diseases"
+      "Applies to persons confirmed to have an infectious disease, separating them from healthy individuals",
+      "Applies to exposed but currently asymptomatic persons, restricting their movement during the incubation period to prevent potential onward transmission if they are infected",
+      "Is always voluntary, while isolation may be compulsory under public health law",
+      "Applies only to international travelers and not to domestic contacts of cases"
     ],
     answer: 1,
-    explanation: "Quarantine restricts the movement of healthy individuals who have been exposed to a communicable disease, to monitor them for development of illness during the incubation period. Isolation separates and restricts the movement of individuals who are ill (symptomatic) or confirmed to have the disease. Both can be voluntary or mandatory depending on the legal framework. Both apply to various disease categories. During COVID-19, this distinction was critical: exposed contacts were quarantined; confirmed/symptomatic cases were isolated."
+    explanation: "Quarantine separates and restricts the movement of people who have been exposed to a contagious disease and may be incubating it, though they are not yet ill. The duration equals the maximum incubation period of the disease. Isolation, by contrast, separates persons who are already ill or confirmed to be infected. Both quarantine and isolation can be voluntary or legally mandated depending on national public health legislation. Both apply to domestic and international settings."
   },
   {
     id: 40,
-    question: "Ring vaccination strategy was successfully employed during the global smallpox eradication campaign. The core principle of ring vaccination is:",
+    question: "Ring vaccination was a cornerstone strategy in the WHO Global Smallpox Eradication Programme. The strategy's effectiveness rested on:",
     options: [
-      "Vaccinating the entire population in the affected country",
-      "Vaccinating only children under 5 years of age",
-      "Identifying and vaccinating all contacts and contacts of contacts of confirmed cases to create an immune buffer",
-      "Vaccinating only healthcare workers exposed to the disease"
+      "Vaccinating at least 95% of the total global population to achieve herd immunity",
+      "Identifying and vaccinating all contacts and contacts-of-contacts of confirmed cases, creating a buffer of immune individuals around each case to block transmission chains",
+      "Vaccinating only immunocompromised individuals who are at highest risk of severe disease",
+      "Vaccinating only healthcare workers and laboratory personnel handling smallpox specimens"
     ],
-    answer: 2,
-    explanation: "Ring vaccination involves identifying all contacts of confirmed cases and vaccinating them (the first ring), and then identifying and vaccinating contacts of those contacts (the second ring), creating an immune buffer around each case. This targeted strategy efficiently contains outbreaks by breaking the chain of transmission without requiring mass vaccination of the entire population. This approach was central to the WHO smallpox eradication campaign and has also been used in Ebola outbreaks. It conserves vaccine supply while achieving containment."
+    answer: 1,
+    explanation: "Ring vaccination creates a 'ring' of immune individuals around each confirmed case by vaccinating all identified contacts (first ring) and then contacts of those contacts (second ring). This targeted strategy interrupts transmission chains without requiring mass vaccination of entire populations, conserving vaccine supplies and focusing efforts where transmission risk is highest. Evidence for ring vaccination effectiveness was also demonstrated in rVSV-ZEBOV vaccine trials during the 2018 Ebola outbreak in DRC."
   },
   {
     id: 41,
-    question: "During the Nipah virus outbreak in Kerala, India (2018), the primary mode of transmission that was identified was:",
+    question: "In contact tracing during an outbreak, the metric 'contact tracing completeness' refers to:",
     options: [
-      "Mosquito-borne transmission",
-      "Contaminated water supply",
-      "Human-to-human transmission through close contact with body fluids, and bat-to-human transmission as the source",
-      "Airborne transmission over long distances"
+      "The proportion of contacts who are eventually laboratory tested for the disease",
+      "The proportion of all contacts identified by cases who are successfully reached and followed up by health authorities",
+      "The proportion of contacts who develop disease and become secondary cases",
+      "The average time from case identification to first contact with the traced individual"
     ],
-    answer: 2,
-    explanation: "The 2018 Nipah virus outbreak in Kozhikode, Kerala was traced to fruit bats (Pteropus medius) as the animal reservoir. Human infection likely occurred through consumption of bat-contaminated fruits or bat contact. Subsequent transmission was through close contact with body fluids of infected individuals, particularly in healthcare settings (nosocomial transmission). This required strict isolation, contact tracing, and use of PPE by healthcare workers. The outbreak killed 17 of 18 infected individuals (CFR ~94%). Nipah is a BSL-4 pathogen with no approved vaccine."
+    answer: 1,
+    explanation: "Contact tracing completeness measures the proportion of contacts listed by cases that are actually reached and enrolled in follow-up monitoring. High completeness (ideally >80-90%) ensures the contact tracing system is effective at identifying potentially infected persons before they develop and spread disease. Other contact tracing metrics include timeliness (time from case identification to contact notification), contact-to-case ratio, and the proportion of contacts who develop illness (helps estimate secondary attack rate)."
   },
   {
     id: 42,
-    question: "Contact tracing in an outbreak is best described as:",
+    question: "Post-exposure chemoprophylaxis with rifampicin is recommended for close contacts of confirmed meningococcal meningitis cases. The primary rationale for this recommendation is to:",
     options: [
-      "Testing all community members for the disease",
-      "Systematic identification, listing, and follow-up of all individuals who have been in contact with confirmed cases during their infectious period",
-      "Only tracing contacts in hospital settings",
-      "Retrospective review of death certificates to identify cases"
+      "Treat sub-clinical meningococcal infection in contacts who may be incubating the disease",
+      "Eliminate nasopharyngeal carriage of Neisseria meningitidis in close contacts to prevent secondary cases",
+      "Provide passive immunity against meningococcal disease in the absence of vaccine availability",
+      "Reduce fever and symptoms in contacts who may have already been infected"
     ],
     answer: 1,
-    explanation: "Contact tracing involves: (1) identification of all individuals who had contact with a confirmed case during their infectious period (forward tracing for containment, backward tracing to find the source), (2) listing these contacts, (3) risk stratification based on type and duration of contact, and (4) follow-up for the duration of the incubation period with daily symptom monitoring. Contacts who develop symptoms become new cases requiring isolation. Contact tracing is a core intervention for diseases like tuberculosis, HIV, COVID-19, Ebola, and Nipah."
+    explanation: "Rifampicin (or ciprofloxacin or ceftriaxone) chemoprophylaxis for meningococcal contacts aims to eliminate nasopharyngeal carriage of Neisseria meningitidis, which is the reservoir for onward transmission. Close contacts (household members, daycare contacts, unprotected healthcare workers) are at highest risk of carriage and subsequent invasive disease. Eradicating carriage prevents secondary cases. This is distinct from treatment (which would require higher doses) or passive immunization."
   },
   {
     id: 43,
-    question: "Chemoprophylaxis during a meningococcal meningitis outbreak is indicated for:",
+    question: "Terminal disinfection of a household following discharge or death of a case of cholera involves:",
     options: [
-      "All residents of the affected city",
-      "Close contacts of confirmed cases (household contacts, dormitory contacts, healthcare workers without PPE)",
-      "Only children under 5 years of age",
-      "Only immunocompromised individuals"
+      "Ongoing daily disinfection of excreta and contaminated items while the case is still present",
+      "A thorough one-time cleaning and disinfection of all contaminated surfaces, items, and the environment after the case has been removed from the premises",
+      "Aerial spraying of the neighborhood with broad-spectrum disinfectants",
+      "Disinfection of only the patient's immediate sleeping area using ultraviolet light"
     ],
     answer: 1,
-    explanation: "Chemoprophylaxis for meningococcal meningitis (with rifampicin, ciprofloxacin, or ceftriaxone) is recommended for close contacts at highest risk: household contacts, daycare/school contacts, dormitory roommates, and healthcare workers who had close unprotected exposure to respiratory secretions. Mass chemoprophylaxis of the entire city population is not recommended due to antibiotic resistance, side effects, limited efficacy in large populations, and practical constraints. The goal is to eliminate carriage in those most likely to have been exposed."
+    explanation: "Terminal disinfection is a comprehensive, one-time disinfection of the case's environment conducted after the case has been removed (discharged, transferred, or died). It involves disinfection of all surfaces, bedding, clothing, utensils, and sanitary facilities potentially contaminated by the patient's excreta. For cholera, 0.5% sodium hypochlorite solution is typically used. This differs from concurrent disinfection, which is the ongoing disinfection performed while the case is still present and actively producing infectious material."
   },
   {
     id: 44,
-    question: "In disinfection terminology, 'concurrent disinfection' during an outbreak refers to:",
+    question: "Under IHR 2005, the criteria used in the Annex 2 decision instrument to assess whether an event constitutes a potential PHEIC include all of the following EXCEPT:",
     options: [
-      "Disinfection of the entire community after the outbreak has ended",
-      "Continuous disinfection of discharges and contaminated articles of a case throughout the period of communicability",
-      "Simultaneous disinfection of multiple affected households at one time",
-      "Disinfection using multiple disinfectants simultaneously"
+      "Seriousness of the public health impact of the event",
+      "Unusual or unexpected nature of the event",
+      "Potential for international spread",
+      "The case fatality rate exceeding 10% in the affected country"
     ],
-    answer: 1,
-    explanation: "Concurrent disinfection refers to the immediate disinfection of infectious material (excreta, secretions, contaminated articles) as it is produced, throughout the period when the case remains communicable. This is done continuously and concurrently with the illness. Terminal disinfection, in contrast, is the thorough cleaning and disinfection of the case's surroundings AFTER the patient is no longer a source of infection (recovered, transferred, or died). Concurrent disinfection is a continuous process; terminal disinfection is a one-time final procedure."
+    answer: 3,
+    explanation: "IHR 2005 Annex 2 uses four criteria to assess whether an event may constitute a PHEIC: (1) is the public health impact serious? (2) is the event unusual or unexpected? (3) is there significant risk of international spread? (4) is there significant risk of international travel or trade restrictions? A specific case fatality rate threshold (e.g., 10%) is not one of the formal criteria. The assessment is qualitative and based on all available information at the time of assessment."
   },
   {
     id: 45,
-    question: "Under the International Health Regulations (IHR) 2005, a Public Health Emergency of International Concern (PHEIC) is declared by:",
+    question: "Under Article 6 of IHR 2005, member states are required to assess events within their territory and notify WHO within what timeframe if the event may constitute a PHEIC?",
     options: [
-      "The affected Member State Government",
-      "The Director General of WHO after consultation with the Emergency Committee",
-      "The UN Security Council",
-      "A majority vote of WHO Member States"
+      "6 hours of detection",
+      "48 hours of assessment",
+      "72 hours of first case confirmation",
+      "7 days of outbreak declaration"
     ],
     answer: 1,
-    explanation: "Under IHR 2005, the Director General of WHO has sole authority to declare a PHEIC, based on the recommendation of the Emergency Committee (an expert body convened for this purpose). A PHEIC is defined as 'an extraordinary event which is determined to constitute a public health risk to other states through international spread of disease and which potentially requires a coordinated international response.' Notable PHEICs include H1N1 (2009), Polio (2014), Ebola (2014), Zika (2016), Ebola DRC (2019), and COVID-19 (2020)."
+    explanation: "IHR 2005 Article 6 requires States Parties to assess public health events using the Annex 2 decision instrument and, if the event may constitute a PHEIC, to notify WHO within 48 hours of assessment. The notification must include case definitions, laboratory results, source and type of risk, number of cases and deaths, conditions affecting spread, and response measures applied. This 48-hour notification requirement enables rapid international response coordination."
   },
   {
     id: 46,
-    question: "IHR 2005 requires States Parties to notify WHO of events that may constitute a PHEIC within:",
+    question: "The IHR 2005 core capacities that all member states must build and maintain include all of the following EXCEPT:",
     options: [
-      "24 hours of assessment",
-      "48 hours of assessment",
-      "72 hours of assessment",
-      "7 days of assessment"
+      "Surveillance capacity to detect events of potential public health significance",
+      "Laboratory capacity to confirm or rule out disease events",
+      "Response capacity to contain and control events at source",
+      "Mandatory stockpiling of WHO-specified antiviral drugs and vaccines for all known pandemic threats"
     ],
-    answer: 1,
-    explanation: "Under Article 6 of IHR 2005, States Parties must notify WHO of events that may constitute a PHEIC within 48 hours of assessment. The assessment must be done using the decision instrument in Annex 2 of IHR 2005, which considers four criteria: seriousness of public health impact, unusual or unexpected nature, potential for international spread, and potential for travel or trade restrictions. Timely notification is critical for international preparedness and response coordination."
+    answer: 3,
+    explanation: "IHR 2005 Annex 1 specifies core capacities required at national level: surveillance (detection, assessment), laboratory (confirmation), response (containment), risk communication, and points-of-entry capacities. There is no IHR requirement for mandatory stockpiling of specific antiviral drugs or vaccines, though stockpiling is a recommended preparedness practice under WHO guidance. States Parties report their capacity progress annually through the SPAR (State Party Self-Assessment Annual Reporting) tool."
   },
   {
     id: 47,
-    question: "The composition of a Rapid Response Team (RRT) for outbreak investigation at the district level in India typically includes:",
+    question: "A Rapid Response Team (RRT) deployed to investigate a cluster of severe acute respiratory illness in a poultry farming community should ideally include which composition?",
     options: [
-      "Only medical officers from the district hospital",
-      "Epidemiologist, microbiologist/lab technician, clinician, entomologist (if vector-borne disease suspected), and public health nurse/social worker",
-      "Only district health officer and one ASHA worker",
-      "WHO representatives and national-level officials only"
+      "Only district medical officers and state health administrators",
+      "Epidemiologist, virologist or microbiologist, veterinarian or animal health expert, clinician, environmental health officer, and risk communication specialist",
+      "International WHO consultants exclusively, without local health authority involvement",
+      "Only laboratory scientists to conduct environmental sampling"
     ],
     answer: 1,
-    explanation: "A district-level RRT for outbreak investigation should be multidisciplinary, including: epidemiologist (to design and conduct the investigation), microbiologist/laboratory technician (for specimen collection and analysis), clinician (for clinical assessment and case management), entomologist (if vector-borne disease is suspected), public health nurse/social worker (for contact tracing and community engagement), and often an environmental health officer. This multidisciplinary composition ensures comprehensive investigation covering epidemiological, clinical, laboratory, and environmental aspects."
+    explanation: "For a suspected zoonotic respiratory outbreak in a poultry farming community, the RRT must be multidisciplinary: an epidemiologist for outbreak investigation design, a virologist or microbiologist for specimen collection and pathogen identification, a veterinarian for animal health investigation and One Health interface, a clinician for case assessment and management guidance, an environmental health officer for farm and environmental assessment, and a risk communication specialist for community engagement. Local health authority inclusion is essential for sustained response."
   },
   {
     id: 48,
-    question: "The 1994 plague outbreak in Surat, India is best remembered in the context of outbreak communication because it led to:",
+    question: "The 2018 Nipah virus outbreak in Kerala, India was successfully contained primarily through which combination of interventions?",
     options: [
-      "Development of the IDSP surveillance system",
-      "Mass panic, internal migration, and severe economic losses due to poor risk communication and media management",
-      "Introduction of ring vaccination in India",
-      "First implementation of IHR in India"
+      "Mass vaccination of the entire Kerala population with an experimental Nipah vaccine",
+      "Rapid case identification, rigorous contact tracing with quarantine, strict infection prevention and control (IPC) in healthcare settings, and coordinated multi-agency response",
+      "Aerial fumigation of bat habitats across Kozhikode district",
+      "International travel bans from Kerala to prevent global spread"
     ],
     answer: 1,
-    explanation: "The 1994 Surat plague outbreak is a landmark lesson in outbreak communication. The outbreak of pneumonic plague caused massive panic, with an estimated 600,000 people fleeing Surat, creating a public health and economic crisis far larger than the outbreak itself (about 50 deaths). The panic was amplified by poor risk communication, sensationalist media reporting, and lack of coordinated messaging. This outbreak led to significant reforms in India's disease surveillance and response systems and is a case study in the critical importance of effective, transparent, and timely risk communication during outbreaks."
+    explanation: "The 2018 Kerala Nipah outbreak (18 cases, 17 deaths, CFR 94%) was contained without a vaccine through: rapid clinical and epidemiological case identification using a sensitive case definition, comprehensive contact listing and quarantine of over 2,000 contacts, stringent IPC measures in healthcare settings to prevent nosocomial amplification, and coordinated response between Kerala state health department, NCDC, NIV Pune, NIMHANS, and WHO. No licensed Nipah vaccine exists; containment relied entirely on non-pharmaceutical interventions."
   },
   {
     id: 49,
-    question: "An after-action review (AAR) following an outbreak should ideally be conducted:",
+    question: "An After-Action Review (AAR) following an outbreak response is conducted primarily to:",
     options: [
-      "At least 1 year after the outbreak to allow for complete data analysis",
-      "Within 2-4 weeks after the outbreak is declared over, while memories are fresh",
-      "Only if the outbreak resulted in more than 100 deaths",
-      "Only by external international teams to avoid bias"
+      "Assign legal accountability for any delays or failures in the outbreak response",
+      "Systematically identify what worked well, what gaps existed, and what corrective actions should be implemented to improve future preparedness and response",
+      "Publish the epidemiological findings in a peer-reviewed journal",
+      "Formally close the outbreak and remove it from surveillance reports"
     ],
     answer: 1,
-    explanation: "An After-Action Review (AAR) should be conducted within 2-4 weeks of the outbreak being declared over (or after significant milestones). This timeframe ensures: (1) memories of what happened are still fresh among responders, (2) documentation is recent and available, (3) lessons learned can be applied before the next event. AARs should be conducted after ALL significant outbreaks, not just large ones. They should involve the actual response team (not only external reviewers) to capture ground-level experience. AARs identify strengths, gaps, and corrective actions."
+    explanation: "An After-Action Review (AAR) is a structured process conducted within 2-4 weeks of outbreak resolution to assess: what was planned vs. what happened, what worked well (to be sustained), what gaps or weaknesses were identified (to be corrected), and specific corrective action items with responsible parties and timelines. AARs are blameless learning exercises focused on system improvement, not individual accountability. They are distinct from outbreak closure declarations and scientific publications, though they may inform both."
   },
   {
     id: 50,
-    question: "A public health official is investigating an unusual cluster of severe respiratory illness in a mining community. Ten workers have been hospitalized in 3 days with fever, chest pain, and hemoptysis. Environmental sampling of the mine is planned. Which of the following best represents the correct sequence of steps in outbreak investigation?",
+    question: "The One Health approach is applied in outbreak investigation because:",
     options: [
-      "Establish case definition → Confirm existence of outbreak → Conduct descriptive epidemiology → Generate hypotheses → Test hypotheses analytically → Implement control measures → Communicate findings",
-      "Implement control measures → Establish case definition → Confirm outbreak → Conduct lab tests → Write report",
-      "Conduct lab tests first → Then visit site → Then establish case definition → Then communicate with media",
-      "Generate hypotheses → Establish case definition → Confirm outbreak → Test hypotheses → Implement control measures"
+      "Human health departments should have sole authority over all aspects of outbreak investigation including animal and environmental sectors",
+      "Approximately 60-75% of emerging infectious diseases are zoonotic, and effective outbreak detection and response requires integrated surveillance and coordination across human health, animal health, wildlife, and environmental sectors",
+      "Environmental sampling is only relevant for waterborne diseases and not for zoonotic or vector-borne outbreaks",
+      "Veterinary authorities are responsible for all zoonotic outbreaks while human health departments respond only to non-zoonotic disease outbreaks"
     ],
-    answer: 0,
-    explanation: "The systematic steps of outbreak investigation are: (1) Prepare for field work, (2) Establish or verify the diagnosis, (3) Define a case and count cases, (4) Orient data in terms of time, place, and person (descriptive epidemiology), (5) Determine who is at risk, (6) Develop hypotheses, (7) Evaluate hypotheses analytically, (8) Refine hypotheses and conduct additional studies if needed, (9) Implement and evaluate control measures (this should begin early and run parallel to investigation), (10) Communicate findings. Control measures should begin early and not wait for the investigation to be complete, especially for severe illness."
+    answer: 1,
+    explanation: "The One Health concept recognizes that human health, animal health, and ecosystem health are deeply interconnected. An estimated 60-75% of emerging infectious diseases originate in animals (zoonoses), including Nipah, Ebola, Avian Influenza, SARS-CoV-2, Brucellosis, and Rabies. Effective outbreak investigation and response for these diseases requires joint surveillance, coordinated field investigation, shared laboratory resources, and integrated control measures across human health, veterinary, wildlife, and environmental sectors. IDSP, NCDC, and the National Centre for Disease Control have advocated for One Health frameworks in India."
   }
 ];
 

@@ -1,603 +1,603 @@
 const questions = [
   {
     id: 1,
-    question: "The causative agent of tuberculosis, Mycobacterium tuberculosis, is characterized by all of the following EXCEPT:",
+    question: "According to WHO Global TB Report 2023, India accounts for what proportion of the global TB burden?",
     options: [
-      "Acid-fast bacillus due to mycolic acid in cell wall",
-      "Obligate intracellular organism",
-      "Slow-growing with generation time of 15-20 hours",
-      "Aerobic organism preferring high oxygen tension tissues"
+      "Approximately 15% of global TB cases",
+      "Approximately 27% of global TB cases",
+      "Approximately 40% of global TB cases",
+      "Approximately 10% of global TB cases"
     ],
     answer: 1,
-    explanation: "Mycobacterium tuberculosis is NOT an obligate intracellular organism - it is a facultative intracellular pathogen that can survive both inside and outside cells. It is acid-fast due to mycolic acids in its cell wall, has a slow generation time of 15-20 hours (explaining why cultures take 6-8 weeks), and is aerobic, which explains its predilection for the upper lung lobes where oxygen tension is highest."
+    explanation: "India accounts for approximately 27% of the global TB burden, making it the country with the highest number of TB cases in the world. India is followed by Indonesia and China. This disproportionate burden makes India central to global TB elimination efforts. The WHO End TB Strategy aims to reduce TB incidence by 90% and TB deaths by 95% by 2030 compared to 2015 baseline. India's National Strategic Plan for TB Elimination aims to eliminate TB by 2025 - five years ahead of the global target."
   },
   {
     id: 2,
-    question: "A 45-year-old man presents with fever, cough for 3 weeks, and a chest X-ray showing a calcified lesion in the right upper lobe with ipsilateral hilar lymphadenopathy. This radiological complex is called:",
+    question: "The primary mode of transmission of Mycobacterium tuberculosis from an infectious TB patient is:",
     options: [
-      "Simon focus",
-      "Ghon complex",
-      "Ranke complex",
-      "Assmann focus"
+      "Fecal-oral route through contaminated food and water",
+      "Airborne transmission via droplet nuclei (particles <5 micrometers) produced by coughing, sneezing, or speaking",
+      "Direct contact with skin lesions of TB patients",
+      "Vector-borne transmission through mosquitoes"
     ],
-    answer: 2,
-    explanation: "The Ranke complex refers to the calcified Ghon focus (primary lesion in the lung parenchyma) together with calcified ipsilateral hilar/draining lymph nodes. The Ghon complex refers to the primary focus plus the associated lymphangitis and lymphadenopathy (non-calcified stage). The Ghon focus alone is just the primary parenchymal lesion. Simon foci are apical lesions from lymphohematogenous spread during primary infection. The Assmann focus is a subapical infiltrate in post-primary TB."
+    answer: 1,
+    explanation: "Tuberculosis is transmitted primarily through the airborne route via droplet nuclei - tiny infectious particles less than 5 micrometers in diameter produced when an infectious person coughs, sneezes, speaks, or sings. These particles remain suspended in air for prolonged periods (hours) and can be inhaled by susceptible individuals. Larger respiratory droplets (>5 micrometers) settle quickly and are less important for TB transmission. This airborne nature makes TB transmission possible even without direct contact with the index case. Understanding this mode of transmission is critical for infection control measures - ventilation, UV germicidal irradiation, and respiratory protection."
   },
   {
     id: 3,
-    question: "In the pathogenesis of primary tuberculosis, the sequence of events after inhalation of Mycobacterium tuberculosis is BEST described as:",
+    question: "The Nikshay portal is the web-based information system used in India's National TB Elimination Programme (NTEP). What is its PRIMARY function?",
     options: [
-      "Alveolar macrophage ingestion → caseation necrosis → Ghon focus → lymphatic spread → bacteremia",
-      "Neutrophil phagocytosis → T-cell sensitization → Ghon focus → calcification → immunity",
-      "Direct alveolar infection → immediate caseation → cavitation → lymphadenopathy",
-      "Alveolar macrophage ingestion → local multiplication → T-cell sensitization (3-8 weeks) → granuloma formation → Ghon focus"
+      "Online pharmacy for ordering anti-TB drugs",
+      "Mandatory notification and case-based tracking system for all TB patients in India",
+      "Training platform for healthcare workers on DOTS strategy",
+      "Laboratory information management system for drug sensitivity testing only"
     ],
-    answer: 3,
-    explanation: "The correct sequence in primary TB: inhaled bacilli are ingested by alveolar macrophages, multiply locally (as macrophages lack specific immunity initially), spread to regional lymph nodes, trigger T-cell sensitization after 3-8 weeks (when tuberculin test becomes positive), leading to granuloma formation with central caseation. This primary complex (Ghon focus + lymphadenitis) may calcify or progress. Neutrophils are not the primary early responders in TB pathogenesis."
+    answer: 1,
+    explanation: "Nikshay (meaning 'a place where TB is contained' in Sanskrit) is India's case-based web-based information system for TB under NTEP. It serves as the mandatory TB notification platform where all TB patients (diagnosed in both public and private sectors) must be registered. Functions include: case registration and notification, patient tracking throughout treatment, Nikshay Poshan Yojana (direct benefit transfer of Rs 500/month nutritional support), monitoring treatment outcomes, generating surveillance data, and case-based death audits. TB notification became legally mandatory in India in 2012, and Nikshay is the instrument for this notification. All healthcare providers (government and private) must notify TB cases."
   },
   {
     id: 4,
-    question: "A child has miliary tuberculosis. Which of the following BEST explains the pathogenesis of this form?",
+    question: "In the context of TB epidemiology, 'Case Detection Rate' (CDR) is defined as:",
     options: [
-      "Direct extension from a primary lung focus to pleural cavity",
-      "Hematogenous dissemination of bacilli from a caseous focus eroding into a blood vessel",
-      "Lymphatic spread from mediastinal lymph nodes",
-      "Reactivation of a healed Ghon focus during immunosuppression"
+      "Proportion of notified TB cases that successfully complete treatment",
+      "Number of TB cases per 100,000 population per year",
+      "Proportion of estimated incident TB cases that are notified/diagnosed in a given year",
+      "Proportion of TB contacts screened who test positive for LTBI"
     ],
-    answer: 1,
-    explanation: "Miliary tuberculosis results from hematogenous dissemination of large numbers of bacilli when a caseous focus (often in lung or lymph node) erodes into a blood vessel. The bacilli spread through the bloodstream and seed multiple organs simultaneously, producing uniformly distributed small (millet seed-sized, 1-2 mm) granulomas throughout the body. This can occur during primary infection (especially in young children and immunocompromised) or from reactivation. It is NOT due to lymphatic spread or direct extension."
+    answer: 2,
+    explanation: "Case Detection Rate (CDR) = (Number of notified/detected TB cases / Estimated incident TB cases) x 100. It measures the program's ability to find TB cases in the community. A CDR of 100% would mean all estimated incident cases are being detected and notified. India's CDR has improved significantly over years but gaps persist, especially in the private sector. CDR is distinct from Treatment Success Rate (TSR = proportion of notified cases achieving treatment success). Both CDR and TSR are key performance indicators tracked by WHO and NTEP. Low CDR indicates undetected/unreported TB in the community - a key driver of continued transmission."
   },
   {
     id: 5,
-    question: "Post-primary (secondary) tuberculosis differs from primary tuberculosis in all of the following EXCEPT:",
+    question: "MDR-TB is defined as resistance to Isoniazid AND Rifampicin. XDR-TB per the revised 2021 WHO definition is:",
     options: [
-      "Occurs in a previously sensitized host",
-      "More commonly affects upper lobes of lungs",
-      "Regional lymphadenopathy is prominent",
-      "Tends to form cavities"
+      "MDR-TB plus resistance to any fluoroquinolone AND any second-line injectable (amikacin, kanamycin, or capreomycin)",
+      "MDR-TB plus resistance to any fluoroquinolone AND at least one of bedaquiline or linezolid",
+      "Resistance to all first-line and second-line anti-TB drugs",
+      "Rifampicin-resistant TB with additional resistance to any injectable drug"
     ],
-    answer: 2,
-    explanation: "Prominent regional lymphadenopathy is a feature of PRIMARY tuberculosis, not post-primary TB. In post-primary TB, the host already has delayed-type hypersensitivity from prior sensitization, so the immune response is more vigorous and localized. This leads to upper lobe disease (due to high oxygen tension and poor lymphatic drainage), cavity formation due to rapid necrosis, and minimal lymphadenopathy because the immune response contains the infection more locally."
+    answer: 1,
+    explanation: "The WHO revised the definition of XDR-TB in 2021: XDR-TB is now defined as MDR/RR-TB plus resistance to any fluoroquinolone (levofloxacin or moxifloxacin) AND at least one of bedaquiline or linezolid - the backbone drugs of the new all-oral BPaL (bedaquiline, pretomanid, linezolid) regimen. The previous 2006 definition (MDR + fluoroquinolone resistance + any second-line injectable) was revised because injectables (amikacin, kanamycin, capreomycin) are no longer recommended in TB treatment. Pre-XDR-TB (previously called extensively resistant TB) is MDR/RR-TB plus any fluoroquinolone resistance. These definitions guide treatment protocol selection."
   },
   {
     id: 6,
-    question: "Under the Revised National TB Control Programme (RNTCP)/National TB Elimination Programme (NTEP), which drug regimen is used for new drug-sensitive TB patients?",
+    question: "The DOTS strategy, which forms the backbone of NTEP, consists of five components. Which of the following is NOT a component of the DOTS strategy?",
     options: [
-      "2HRZE/4HR",
-      "2HRZ/4HR",
-      "2HRZES/1HRZE/5HRE",
-      "6HRZ"
+      "Government commitment to sustained TB control activities",
+      "Case detection by quality-assured bacteriology",
+      "Mandatory hospitalization of all sputum smear-positive TB patients",
+      "Standardized short-course chemotherapy with direct observation of treatment"
     ],
-    answer: 0,
-    explanation: "Under RNTCP/NTEP, the standard regimen for new drug-sensitive TB patients is 2HRZE/4HR: an intensive phase of 2 months with Isoniazid (H), Rifampicin (R), Pyrazinamide (Z), and Ethambutol (E), followed by a continuation phase of 4 months with Isoniazid and Rifampicin. The old regimen 2HRZES/1HRZE/5HRE was used for retreatment cases under the previous category-II regimen, which has now been replaced by individualized treatment based on drug sensitivity testing."
+    answer: 2,
+    explanation: "The five components of DOTS (Directly Observed Treatment, Short-course) strategy are: (1) Government commitment to sustained TB control with increased and sustained financing; (2) Case detection through quality-assured bacteriology (sputum smear microscopy); (3) Standardized short-course chemotherapy for all TB cases under proper case management conditions including direct observation of treatment; (4) Uninterrupted supply of quality-assured anti-TB drugs; (5) Standardized recording and reporting system allowing assessment of treatment results. Mandatory hospitalization is NOT a DOTS component - patients are treated in the community with ambulatory care under direct observation, which was a paradigm shift from the old sanatorium-based approach. NTEP evolved from RNTCP to implement DOTS at scale."
   },
   {
     id: 7,
-    question: "A patient is diagnosed with MDR-TB. The CORRECT definition of MDR-TB is:",
+    question: "GeneXpert (Xpert MTB/RIF) assay's role in TB surveillance and public health is BEST described as:",
     options: [
-      "Resistance to Isoniazid alone",
-      "Resistance to Rifampicin alone",
-      "Resistance to at least Isoniazid AND Rifampicin",
-      "Resistance to Isoniazid, Rifampicin, any fluoroquinolone, AND any second-line injectable"
+      "A confirmatory culture test replacing Lowenstein-Jensen medium culture",
+      "A rapid point-of-care molecular test that simultaneously detects TB and rifampicin resistance, enabling early identification of drug-resistant TB for surveillance",
+      "A serological test measuring TB antibody titers for population seroprevalence surveys",
+      "An imaging technique for early detection of TB lesions in the lungs"
     ],
-    answer: 2,
-    explanation: "MDR-TB (Multi-Drug Resistant TB) is defined as resistance to at least BOTH Isoniazid AND Rifampicin - the two most potent first-line anti-TB drugs. Option D describes Pre-XDR or XDR-TB. XDR-TB (Extensively Drug Resistant TB) - as per the 2021 WHO revised definition - is MDR/RR-TB plus resistance to any fluoroquinolone AND at least one of bedaquiline or linezolid. RR-TB (Rifampicin Resistant TB) has the same treatment implications as MDR-TB."
+    answer: 1,
+    explanation: "GeneXpert (Xpert MTB/RIF) is a cartridge-based nucleic acid amplification test (CBNAAT) that detects Mycobacterium tuberculosis complex DNA and rifampicin resistance-conferring mutations in the rpoB gene simultaneously within approximately 2 hours. In TB surveillance and public health, it: enables rapid detection of MDR-TB for surveillance systems; provides real-time data on RR-TB burden; decentralizes TB diagnosis to peripheral levels; reduces time to treatment initiation for DR-TB; and improves case detection in high-risk groups (HIV-positive, contacts, paediatric TB). NTEP uses GeneXpert as the preferred initial diagnostic test for all TB suspects. It does not replace liquid culture (MGIT) which remains the gold standard with higher sensitivity."
   },
   {
     id: 8,
-    question: "The Mantoux test is read at 48-72 hours. A 5 TU (PPD) intradermal injection produces an induration of 12 mm in a healthy adult with no known risk factors in India. This result is BEST interpreted as:",
+    question: "In TB epidemiology, the 'Annual Risk of TB Infection' (ARTI) is measured using tuberculin surveys. What does an ARTI of 1% indicate in a population?",
     options: [
-      "Negative - cut-off is 15 mm for healthy adults",
-      "Positive - cut-off of 10 mm is applicable for healthy adults in high TB burden countries",
-      "Inconclusive - requires repeat testing",
-      "Positive only if there is erythema of >15 mm"
+      "1% of the population has active TB disease",
+      "1 in every 100 uninfected persons in the population will become newly infected with TB in one year",
+      "1% of TB patients will develop MDR-TB",
+      "1% of TB-infected individuals will progress to active TB disease per year"
     ],
     answer: 1,
-    explanation: "The Mantoux test interpretation depends on clinical context and population: In India (high TB burden setting), 10 mm induration is considered positive for most individuals. A 12 mm induration exceeds this threshold. The 5 mm cut-off is used for HIV-positive individuals, close contacts of active TB cases, and immunocompromised patients. The 15 mm cut-off applies to low-risk individuals in low-prevalence settings. Erythema (redness) is NOT measured - only induration (palpable raised, hardened area) is measured."
+    explanation: "Annual Risk of TB Infection (ARTI) = the probability (expressed as a percentage) that an uninfected individual in a given population will become infected with Mycobacterium tuberculosis during one year. An ARTI of 1% means 1 out of every 100 uninfected persons will acquire new TB infection per year. ARTI is estimated from tuberculin survey data using mathematical models. It is a measure of the force of infection in the community and reflects the intensity of TB transmission. ARTI correlates with smear-positive TB case rates (approximately 50-60 smear-positive cases per 100,000 population for each 1% ARTI). Declining ARTI indicates reduced TB transmission - a key epidemiological outcome measure."
   },
   {
     id: 9,
-    question: "Interferon-Gamma Release Assays (IGRAs) for tuberculosis diagnosis differ from the Mantoux test in all of the following EXCEPT:",
+    question: "The treatment success rate for new drug-sensitive TB cases under NTEP is a key performance indicator. The WHO End TB Strategy milestone for treatment success rate by 2025 is:",
     options: [
-      "IGRAs are not affected by BCG vaccination status",
-      "IGRAs require a blood sample rather than skin testing",
-      "IGRAs use ESAT-6 and CFP-10 antigens absent from BCG strains",
-      "IGRAs cannot distinguish latent TB infection from active TB disease"
+      "Greater than 70% treatment success rate",
+      "Greater than 80% treatment success rate",
+      "At least 90% treatment success rate",
+      "100% treatment success rate"
     ],
-    answer: 3,
-    explanation: "Both IGRAs AND the Mantoux test cannot reliably distinguish latent TB infection (LTBI) from active TB disease - this is a shared limitation, not a difference. IGRAs differ from Mantoux in that: they use blood samples (not skin injection), they are not affected by prior BCG vaccination (because they use antigens ESAT-6 and CFP-10 encoded in the RD1 region absent from BCG strains and most non-tuberculous mycobacteria), and they require only one patient visit. IGRAs have higher specificity than Mantoux in BCG-vaccinated populations."
+    answer: 2,
+    explanation: "The WHO End TB Strategy sets a milestone of at least 90% treatment success rate for new and relapse TB cases by 2025. Treatment success is defined as the sum of 'cured' (smear-negative at end of treatment) and 'treatment completed' (completed treatment without evidence of failure but without smear results). India's NTEP reports treatment success rates around 87-90% for new drug-sensitive TB cases, which is approaching the target. Treatment outcomes are categorized as: treatment success, died, treatment failed, lost to follow-up, and not evaluated. Monitoring treatment outcomes by cohort analysis is a core DOTS component and essential for program evaluation."
   },
   {
     id: 10,
-    question: "GeneXpert MTB/RIF assay is used in TB diagnosis. Which statement about this test is CORRECT?",
+    question: "BCG vaccine efficacy data from Indian studies differs from that in other countries. The primary reason for the widely variable BCG efficacy (ranging from 0-80%) across different geographic settings is:",
     options: [
-      "It detects TB bacilli by culture and requires 6-8 weeks",
-      "It simultaneously detects Mycobacterium tuberculosis complex and resistance to Isoniazid",
-      "It uses real-time PCR and can detect rifampicin resistance within 2 hours",
-      "It requires acid-fast staining as a prerequisite"
+      "Different BCG strains used in different countries produce completely different immunity",
+      "Varying prior exposure to environmental non-tuberculous mycobacteria which may mask BCG-induced immunity or provide competing protection",
+      "BCG vaccine is heat-sensitive and loses potency during transport in tropical countries",
+      "BCG efficacy varies only based on the nutritional status of the vaccinated population"
     ],
-    answer: 2,
-    explanation: "GeneXpert MTB/RIF (Xpert MTB/RIF) uses automated real-time PCR (cartridge-based nested PCR) to simultaneously detect M. tuberculosis complex DNA and mutations in the rpoB gene (encoding the beta subunit of RNA polymerase) conferring Rifampicin resistance - all within approximately 2 hours. It does NOT detect Isoniazid resistance (that requires Xpert MTB/RIF Ultra or line probe assays). No prior staining is required. It is WHO-recommended as the initial diagnostic test for suspected TB."
+    answer: 1,
+    explanation: "The most widely accepted explanation for geographic variation in BCG efficacy is the 'masking hypothesis' related to environmental non-tuberculous mycobacteria (NTM): in tropical regions (like India) with high NTM exposure, natural infection with NTM provides baseline immunity that 'masks' the additional protection conferred by BCG. In high-latitude countries with low NTM exposure, BCG provides its full incremental protection (up to 80%). Alternatively, NTM may 'block' BCG from establishing infection and inducing immunity. The UK MRC trial (Madanapalle, India) showed near-zero BCG efficacy, while the UK Prophylactic trial showed ~80% efficacy. BCG consistently shows high efficacy (>80%) against miliary TB and TB meningitis in children regardless of geography."
   },
   {
     id: 11,
-    question: "In Ziehl-Neelsen (ZN) staining for acid-fast bacilli, the mycobacteria appear red against a blue background. The acid-fastness of mycobacteria is attributed to:",
+    question: "In TB surveillance, a patient who was previously treated for TB and is now diagnosed bacteriologically is categorized under NTEP as:",
     options: [
-      "High lipid content of the cell wall, particularly mycolic acids",
-      "Presence of endospores resistant to decolorization",
-      "The thick peptidoglycan layer similar to gram-positive bacteria",
-      "Presence of a polysaccharide capsule"
+      "New case",
+      "Previously treated case (which includes relapse, treatment after failure, and treatment after loss to follow-up)",
+      "MDR-TB case regardless of drug sensitivity testing results",
+      "Chronic case requiring specialized treatment center referral"
     ],
-    answer: 0,
-    explanation: "Acid-fastness is attributed to the high lipid content of the mycobacterial cell wall, particularly the long-chain mycolic acids (C60-C90 carbon chain fatty acids) that form a waxy, hydrophobic barrier. This barrier retains the primary stain (carbol fuchsin - red) even after treatment with acid-alcohol decolorizer (3% HCl in ethanol). After decolorization, the counterstain (methylene blue or malachite green) stains background cells blue/green. AFB appear as red/pink bacilli against the blue background."
+    answer: 1,
+    explanation: "NTEP/WHO case definitions for TB registration: New cases - never been treated for TB or treated for less than 1 month. Previously treated cases - have received 1 month or more of anti-TB drugs previously (regardless of outcome): (a) Relapse - previously treated, declared cured/completed, now bacteriologically confirmed TB again; (b) Treatment after failure - previously treated, treatment failed (bacteriologically positive at 5+ months); (c) Treatment after loss to follow-up - previously treated, declared LTFU, now bacteriologically positive; (d) Other previously treated - unknown or undocumented prior treatment history. This classification guides treatment regimen selection and drug resistance testing requirements (all previously treated cases require DST)."
   },
   {
     id: 12,
-    question: "BCG vaccine is given to protect against tuberculosis. Which of the following statements about BCG vaccine is CORRECT?",
+    question: "ICMR has conducted landmark TB epidemiology studies in India. The Tuberculosis Research Centre (TRC), Chennai (now ICMR-NIRT) is best known for establishing which foundational principle in TB control?",
     options: [
-      "BCG provides 100% protection against pulmonary tuberculosis in adults",
-      "BCG is most effective in preventing severe forms of childhood TB such as miliary TB and TB meningitis",
-      "BCG vaccine should not be given to neonates as it is unsafe",
-      "BCG protects equally against all strains of Mycobacterium tuberculosis"
+      "Demonstrating that BCG vaccine provides 100% protection against all forms of TB in Indian children",
+      "Establishing the efficacy of short-course chemotherapy (6-month regimen) for TB treatment, which became the foundation for DOTS strategy globally",
+      "Proving that surgical resection is the most effective treatment for drug-resistant TB",
+      "Developing the GeneXpert diagnostic test for TB detection"
     ],
     answer: 1,
-    explanation: "BCG (Bacillus Calmette-Guerin) vaccine is most effective in preventing severe disseminated forms of childhood tuberculosis - particularly miliary TB (approximately 80% efficacy) and TB meningitis (approximately 64-86% efficacy) in children. Its efficacy against adult pulmonary TB is highly variable (0-80% in different studies), likely due to differences in prior mycobacterial exposure, BCG strain variations, and geographical factors. Under the Universal Immunization Programme in India, BCG is given at birth (or as early as possible). It is safe for neonates."
+    explanation: "The Tuberculosis Research Centre (TRC) in Chennai, now ICMR-National Institute for Research in Tuberculosis (ICMR-NIRT), conducted pivotal controlled clinical trials in the 1970s-80s that established the efficacy of 6-month short-course chemotherapy (2HRZE/4HR) for pulmonary TB. These seminal studies demonstrated that 6-month regimens were as effective as the previous 12-18 month standard regimens, with equivalent cure rates and relapse rates. This work formed the scientific basis for the DOTS strategy adopted by WHO globally. TRC also conducted important studies on intermittent dosing regimens, domiciliary versus sanatorium treatment (showing home treatment was equally effective), and BCG efficacy (the Chingleput trial)."
   },
   {
     id: 13,
-    question: "HIV-1 and HIV-2 differ in which of the following characteristics?",
+    question: "HIV sentinel surveillance in India is conducted through the NACO network. The primary objective of sentinel surveillance in HIV is:",
     options: [
-      "HIV-2 is more transmissible than HIV-1 and causes faster progression to AIDS",
-      "HIV-2 has lower viremia, slower progression to AIDS, and is predominantly found in West Africa",
-      "HIV-1 is confined to sub-Saharan Africa while HIV-2 is a global pandemic",
-      "HIV-2 does not respond to antiretroviral therapy"
+      "To diagnose and treat all HIV-positive individuals identified at sentinel sites",
+      "To estimate HIV prevalence trends in defined populations over time using standardized methodology at fixed sites",
+      "To screen all residents of high-prevalence districts for HIV",
+      "To identify all HIV-positive individuals for contact tracing"
     ],
     answer: 1,
-    explanation: "HIV-2 differs from HIV-1 in several important ways: it has lower plasma viremia (viral load), slower progression to AIDS (longer asymptomatic period), lower transmissibility (mother-to-child and sexual transmission), and is predominantly found in West Africa (particularly Guinea-Bissau, Senegal, Cape Verde). HIV-1 is responsible for the global pandemic. HIV-2 has intrinsic resistance to NNRTIs (non-nucleoside reverse transcriptase inhibitors) and enfuvirtide, but does respond to other ART regimens including PIs and NRTIs."
+    explanation: "HIV Sentinel Surveillance (HSS) in India is a cross-sectional, repeated survey conducted annually or biennially at fixed sentinel sites (sentinel surveillance points) among defined population groups. Its primary objective is to monitor HIV prevalence TRENDS over time in specific sub-populations - not to find individual cases. HSS operates among: Antenatal Clinic (ANC) attendees (proxy for general adult female population), Female Sex Workers (FSW), Men who have Sex with Men (MSM), Injecting Drug Users (IDU), Truckers, and Migrants. Unlinked anonymous testing (UAT) methodology is used - blood samples are tested anonymously without linking results to individuals. Data from HSS feeds into PLHIV estimation models (Spectrum/EPP) used to estimate national burden."
   },
   {
     id: 14,
-    question: "According to WHO clinical staging of HIV infection, which of the following conditions would classify a patient as WHO Stage 3?",
+    question: "NACP (National AIDS Control Programme) in India has been implemented in phases. The primary focus of NACP Phase IV (2012-2017) was:",
     options: [
-      "Persistent generalized lymphadenopathy",
-      "Oral candidiasis",
-      "Pulmonary tuberculosis",
-      "Pneumocystis jirovecii pneumonia"
+      "Establishing the first HIV blood screening centers and awareness campaigns",
+      "Scaling up ART services and decentralizing treatment to district hospitals",
+      "Accelerating the reversal of the epidemic, integrating HIV with TB services, and achieving zero new infections, zero discrimination, and zero AIDS deaths",
+      "Achieving 100% PMTCT coverage through universal maternal HIV testing"
     ],
     answer: 2,
-    explanation: "WHO HIV Clinical Staging: Stage 1: Asymptomatic, persistent generalized lymphadenopathy. Stage 2: Minor conditions including oral candidiasis (angular cheilitis/thrush), recurrent oral ulcers, herpes zoster, seborrhoeic dermatitis, papular pruritic eruptions. Stage 3 (Severe): Pulmonary TB, unexplained chronic diarrhea >1 month, unexplained fever >1 month, severe bacterial infections, oral hairy leukoplakia. Stage 4 (AIDS-defining): PCP (Pneumocystis jirovecii pneumonia), cerebral toxoplasmosis, cryptococcal meningitis, CMV retinitis, Kaposi's sarcoma, HIV wasting syndrome."
+    explanation: "NACP phases in India: Phase I (1992-1999): Establishing infrastructure, awareness, blood safety. Phase II (1999-2006): Prevention focus, targeted interventions for high-risk groups, VCTC establishment. Phase III (2007-2012): Universal access to prevention, care, support and treatment; halting and reversing the epidemic; scaling up ART. Phase IV (2012-2017): Goals of zero new infections, zero discrimination, and zero AIDS deaths; accelerated epidemic reversal; mainstreaming HIV with health systems; integration with TB and reproductive health services; focus on key populations; strengthening community systems. Phase V continues to work toward UNAIDS 95-95-95 targets. NACP is implemented by National AIDS Control Organisation (NACO) under Ministry of Health and Family Welfare."
   },
   {
     id: 15,
-    question: "A patient with HIV infection has a CD4 count of 180 cells/mm3. According to current guidelines, this patient's immunological stage is:",
+    question: "The UNAIDS 95-95-95 targets for HIV by 2025 specify that:",
     options: [
-      "Stage 1: CD4 > 500 cells/mm3",
-      "Stage 2: CD4 200-499 cells/mm3",
-      "Stage 3: CD4 < 200 cells/mm3",
-      "Stage 4: CD4 < 100 cells/mm3"
+      "95% of people living with HIV know their status; 95% of those diagnosed are on ART; 95% of those on ART achieve viral suppression",
+      "95% reduction in new HIV infections; 95% reduction in AIDS deaths; 95% of PLHIV on treatment",
+      "95% HIV testing coverage; 95% ART initiation rate; 95% treatment completion rate",
+      "95% condom use among key populations; 95% PMTCT coverage; 95% viral suppression among PLHIV"
     ],
-    answer: 2,
-    explanation: "WHO immunological classification of HIV: Stage 1 (Not significant): CD4 > 500 cells/mm3. Stage 2 (Mild): CD4 350-499 cells/mm3. Stage 3 (Advanced): CD4 200-349 cells/mm3. Stage 4 (Severe): CD4 < 200 cells/mm3. A CD4 count of 180 cells/mm3 falls below 200 cells/mm3, classifying the patient as Stage 4 (Severe immunodeficiency). This threshold of <200 CD4 cells/mm3 also defines AIDS in the CDC classification and marks the threshold below which certain prophylactic medications (e.g., cotrimoxazole for PCP) are particularly important."
+    answer: 0,
+    explanation: "The UNAIDS 95-95-95 targets (replacing the 90-90-90 targets) for 2025 specify: (1) 95% of all people living with HIV (PLHIV) know their HIV status (diagnosis); (2) 95% of all people diagnosed with HIV receive sustained antiretroviral therapy (ART linkage and retention); (3) 95% of all people receiving ART have viral suppression (viral load <1000 copies/mL). If all three targets are met, approximately 86% of all PLHIV will be virally suppressed, which would substantially reduce new HIV transmissions. This cascade of care framework (HIV treatment cascade or continuum of care) is the standard tool for monitoring HIV program performance at national and sub-national levels."
   },
   {
     id: 16,
-    question: "The 'window period' in HIV infection refers to:",
+    question: "In India's HIV testing algorithm for surveillance purposes, the national testing strategy uses three tests in sequence. Which configuration is used for diagnosis (not screening)?",
     options: [
-      "The period between HIV exposure and the onset of AIDS",
-      "The time between HIV infection and when antibody tests become positive (seroconversion)",
-      "The period during which viral load is undetectable on treatment",
-      "The incubation period before acute HIV syndrome symptoms appear"
+      "Single ELISA test - positive result confirms HIV infection",
+      "Two rapid antibody tests using different antigens/formats; if discordant, a third tiebreaker test is used",
+      "Western blot as the only confirmatory test after any reactive screening test",
+      "PCR viral load as the primary diagnostic test for all suspected HIV cases"
     ],
     answer: 1,
-    explanation: "The window period is the time between HIV infection (exposure/transmission) and when serological tests (antibody tests like ELISA) become positive - i.e., the time for seroconversion. During this period, the person is infected and infectious but antibody tests are negative (false negative). With 4th generation assays (HIV Ag/Ab combo detecting p24 antigen + antibodies), the window period is approximately 18-45 days. 3rd generation antibody-only assays have a window period of 23-90 days. RNA PCR can detect HIV within 10-33 days of infection, before antibodies develop."
+    explanation: "India's National HIV Testing Algorithm (NHTA) uses three sequential tests (Strategy III) for diagnosis: Test 1 (A1): Highest sensitivity rapid test - if non-reactive, report HIV negative. If reactive, proceed to Test 2 (A2): Different antigen/format rapid test with higher specificity - if both A1 and A2 reactive, diagnose HIV positive. If A1 reactive but A2 non-reactive (discordant), proceed to Test 3 (A3): Tiebreaker test using a third different format - A3 reactive = HIV positive; A3 non-reactive = report as inconclusive, retest after 14 days. This strategy replaced Western blot as the confirmatory test because it is more practical, less expensive, and equally reliable. ICTC/FICTC networks implement this algorithm. Unlinked anonymous testing (three tests) is used for sentinel surveillance."
   },
   {
     id: 17,
-    question: "ELISA for HIV diagnosis uses which principle, and what is the interpretation of a reactive ELISA result?",
+    question: "NACO uses the Spectrum/EPP (Estimation and Projection Package) model to estimate PLHIV in India. The primary data input for estimating HIV prevalence among the general population comes from:",
     options: [
-      "ELISA detects HIV RNA; a reactive result confirms HIV infection",
-      "ELISA detects HIV antibodies (and p24 antigen in 4th generation); a reactive result requires confirmation by Western blot or another test",
-      "ELISA detects HIV by viral culture; reactive result requires CD4 count measurement",
-      "ELISA is a definitive confirmatory test; reactive result is sufficient to diagnose HIV"
+      "Census data on AIDS deaths reported by hospitals",
+      "HIV sentinel surveillance data from antenatal clinic (ANC) attendees used as a proxy for general adult female population prevalence",
+      "National Family Health Survey (NFHS) household HIV testing data",
+      "Integrated Counselling and Testing Centre (ICTC) test positivity rates"
     ],
     answer: 1,
-    explanation: "ELISA (Enzyme-Linked Immunosorbent Assay) is a screening test for HIV that detects antibodies against HIV-1/HIV-2 (3rd generation) or both antibodies AND p24 antigen (4th generation combo assay). A reactive (positive) ELISA result is a SCREENING result and MUST be confirmed by a supplemental/confirmatory test such as Western blot, immunofluorescence assay, or HIV-1/HIV-2 antibody differentiation assay. In India's National HIV Testing Algorithm, two or three rapid tests using different antigens/formats are used. A single reactive ELISA is never sufficient for diagnosis."
+    explanation: "India uses the UNAIDS Spectrum/EPP model for PLHIV estimation. The primary data inputs include: (1) HIV sentinel surveillance data from ANC attendees - used as proxy for HIV prevalence in the sexually active adult female general population because pregnant women are considered representative of sexually active women; (2) HIV sentinel surveillance data from high-risk groups (FSW, MSM, IDU, truckers) for concentrated epidemic segments; (3) Population size estimates for high-risk groups; (4) Treatment data for back-calculation. ANC-based surveillance has limitations (only women, selection bias) but is the global standard proxy. NFHS-5 (2019-21) included HIV testing for the first time but is a separate survey, not the primary input to Spectrum. ICTC positivity rates are biased by healthcare-seeking behavior."
   },
   {
     id: 18,
-    question: "Which of the following is the MOST common AIDS-defining opportunistic infection in India?",
+    question: "Key populations (KP) in the context of India's HIV epidemic include which groups defined by NACO?",
     options: [
-      "Cryptococcal meningitis",
-      "CMV retinitis",
-      "Pulmonary tuberculosis",
-      "Pneumocystis jirovecii pneumonia (PCP)"
+      "Only Female Sex Workers (FSW) and their clients",
+      "Female Sex Workers (FSW), Men who have Sex with Men (MSM), Injecting Drug Users (IDU), Hijra/Transgender persons, and Migrants/Truckers",
+      "All adults in high HIV prevalence states regardless of behavior",
+      "Only people living with HIV and their sexual partners"
     ],
-    answer: 2,
-    explanation: "In India and other high TB-burden countries, pulmonary tuberculosis is the most common AIDS-defining illness and opportunistic infection in HIV-infected individuals. India has a dual epidemic of HIV and TB. TB can occur at any CD4 count level (unlike many other OIs that occur primarily at very low CD4 counts). Extrapulmonary TB becomes more common as CD4 count falls. PCP is more common in Western countries. Cryptococcal meningitis and CMV retinitis typically occur at CD4 <100 cells/mm3 and are less common than TB in India."
+    answer: 1,
+    explanation: "NACO defines key populations (also called High Risk Groups - HRG) in India's HIV epidemic as: Female Sex Workers (FSW), Men who have Sex with Men (MSM), Injecting Drug Users (IDU), Hijra/Transgender persons, Migrants (long-distance truckers, migrant workers). These groups have disproportionately higher HIV prevalence due to behavioral and structural risk factors and are priority targets for Targeted Interventions (TI). India's HIV epidemic is considered a 'concentrated epidemic' (prevalence >5% in key populations but <1% in general population) in most states, except states like Manipur (IDU-driven) and some southern states historically. TI programs under NACO provide prevention services specifically to these populations."
   },
   {
     id: 19,
-    question: "Viral load measurement in HIV serves which primary clinical purpose?",
+    question: "HIV prevalence trends in India show that the epidemic has been concentrated and declining overall. Which state in India historically had the highest HIV prevalence and what was the primary mode of transmission?",
     options: [
-      "To diagnose HIV infection initially",
-      "To monitor response to antiretroviral therapy and detect treatment failure",
-      "To determine the patient's CD4 count",
-      "To identify the specific subtype of HIV for treatment selection"
+      "Manipur - Injecting Drug Use (IDU) as primary mode",
+      "Maharashtra - Commercial sex work as primary mode in early epidemic",
+      "Tamil Nadu - Blood transfusion as primary mode",
+      "Andhra Pradesh - Mother to child transmission as primary mode"
     ],
-    answer: 1,
-    explanation: "HIV viral load (HIV RNA quantification) measures the amount of HIV RNA copies per mL of plasma. Its primary clinical uses are: (1) Monitoring response to ART - viral load should become undetectable (<50 copies/mL) within 6 months of starting ART; (2) Detecting virological failure (viral load >1000 copies/mL on two consecutive measurements); (3) Assessing transmission risk (Undetectable = Untransmittable, U=U). While viral load can diagnose HIV in infants (early infant diagnosis) and during the window period, CD4 count (not viral load) reflects immune status. Viral load does not identify HIV subtypes."
+    answer: 0,
+    explanation: "Manipur (Northeast India) historically had the highest HIV prevalence in India, with the epidemic primarily driven by Injecting Drug Use (IDU). Manipur's geographic location on drug trafficking routes (Golden Triangle) led to high IDU prevalence and rapid HIV spread through needle/syringe sharing in the late 1980s-90s. HIV prevalence among IDU in Manipur exceeded 50% at the epidemic peak. This IDU-driven epidemic spread subsequently to sexual partners and via MTCT. Southern states (Andhra Pradesh, Tamil Nadu, Karnataka, Maharashtra) experienced predominantly heterosexual transmission through commercial sex networks. India's epidemic is heterogeneous - Northeast states have IDU-driven epidemics while South India has predominantly sexual transmission."
   },
   {
     id: 20,
-    question: "The recommended first-line ART regimen for treatment-naive adults with HIV in India under the National AIDS Control Programme is:",
+    question: "The ICTC (Integrated Counselling and Testing Centre) network under NACO provides HIV testing and counselling. What does 'integrated' signify in ICTC?",
     options: [
-      "Zidovudine + Lamivudine + Nevirapine (AZT + 3TC + NVP)",
-      "Tenofovir + Lamivudine + Efavirenz (TDF + 3TC + EFV)",
-      "Abacavir + Lamivudine + Lopinavir/Ritonavir",
-      "Stavudine + Lamivudine + Efavirenz"
+      "Integration of HIV testing with malaria and TB diagnosis at the same center",
+      "Integration of HIV counselling and testing with other reproductive and child health (RCH) services, especially for antenatal care",
+      "Integration of laboratory and clinical services under one roof",
+      "Integration of government and private sector HIV testing at shared facilities"
     ],
     answer: 1,
-    explanation: "The current WHO-recommended and NACP India first-line ART regimen for treatment-naive adults is TDF (Tenofovir disoproxil fumarate) + 3TC (Lamivudine) + EFV (Efavirenz), available as a fixed-dose combination (FDC) taken once daily. This replaced the older AZT+3TC+NVP and Stavudine-based regimens due to better tolerability and simplified once-daily dosing. Dolutegravir (DTG) is increasingly replacing EFV as TDF+3TC+DTG in many settings per 2019 WHO guidelines."
+    explanation: "The term 'integrated' in ICTC signifies integration of HIV counselling and testing with other Reproductive and Child Health (RCH) services - particularly antenatal care (ANC). ICTCs were established to provide HIV counselling and testing as part of routine ANC visits, integrating PMTCT into maternal health services rather than having separate HIV testing facilities. FICTC (Facility-Integrated Counselling and Testing Centre) are located within health facilities and integrated with RMNCH+A services. Stand-alone ICTCs also exist. The integration ensures all pregnant women are offered HIV testing during ANC as part of routine care (provider-initiated testing and counselling - PITC), which significantly increases testing uptake for PMTCT. ICTCs also serve general population for voluntary counselling and testing (VCT)."
   },
   {
     id: 21,
-    question: "Prevention of Mother-to-Child Transmission (PMTCT) of HIV in India currently recommends:",
+    question: "The basic reproductive number (R0) of HIV/AIDS through heterosexual transmission is estimated to be approximately:",
     options: [
-      "Zidovudine monotherapy from 28 weeks gestation",
-      "Lifelong ART (Option B+) for all HIV-positive pregnant women regardless of CD4 count",
-      "ART only during labor and delivery",
-      "Nevirapine single dose during labor and Zidovudine for 6 weeks to the newborn"
+      "R0 = 10-15 (similar to measles)",
+      "R0 = 2-5",
+      "R0 less than 1 in all settings (HIV cannot sustain epidemic)",
+      "R0 = 1 exactly (HIV is at endemic equilibrium)"
     ],
     answer: 1,
-    explanation: "India follows WHO Option B+ for PMTCT: ALL HIV-positive pregnant women (regardless of CD4 count or WHO clinical stage) are initiated on lifelong ART (TDF+3TC+EFV) and continue for life. This eliminates the need for CD4 testing before initiation, simplifies the program, prevents MTCT during breastfeeding, and benefits the mother's health. The newborn also receives Nevirapine syrup for 6 weeks as prophylaxis. MTCT can occur during pregnancy (~5-10%), delivery (~10-20%), and breastfeeding (~5-20%). Option B+ reduces MTCT to <2%."
+    explanation: "The basic reproductive number (R0) for HIV through heterosexual transmission is estimated at approximately 2-5, though estimates vary by context, sexual network structure, viral load, and concurrent infections. R0 represents the average number of secondary infections caused by one infectious individual in a fully susceptible population. HIV's R0 being relatively low (compared to airborne infections like measles R0 = 12-18 or influenza R0 = 2-3) reflects its relatively low per-contact transmission probability. However, HIV's long infectious period (years) compensates for low per-act transmission probability. Network effects, high-risk groups, and concurrent partnerships dramatically amplify effective transmission. R0 > 1 is required for epidemic spread; interventions aim to reduce effective reproductive number (Re or Rt) below 1."
   },
   {
     id: 22,
-    question: "A healthcare worker sustains a needlestick injury from an HIV-positive patient's blood. Post-exposure prophylaxis (PEP) should be started:",
+    question: "Prevention of HIV transmission through blood and blood products is ensured in India by which mandatory requirement under the Drugs and Cosmetics Act?",
     options: [
-      "Within 72 hours of exposure and continued for 28 days",
-      "Within 24 hours only; if delayed, PEP is not effective",
-      "Only if the source patient has detectable viral load",
-      "Within 7 days of exposure and continued for 14 days"
+      "Mandatory HIV testing of all blood donors and screening of all donated blood units for HIV antibodies",
+      "Restriction of blood donation to government hospitals only",
+      "Mandatory quarantine of blood units for 6 months before use",
+      "Use of synthetic blood substitutes instead of human blood transfusions"
     ],
     answer: 0,
-    explanation: "HIV Post-Exposure Prophylaxis (PEP) should be started as soon as possible, ideally within 1-2 hours, and MUST be started within 72 hours (3 days) of exposure. After 72 hours, PEP is unlikely to be effective. PEP is continued for 28 days (4 weeks). The recommended PEP regimen is TDF + FTC (or 3TC) + Raltegravir or Dolutegravir. PEP is recommended regardless of the source's viral load (as low viral load does not guarantee zero risk). The healthcare worker should also be tested for baseline HIV status and followed up at 6 weeks, 3 months, and 6 months."
+    explanation: "Under the Drugs and Cosmetics Act and Blood Bank guidelines, ALL donated blood must be mandatorily screened for HIV (both HIV-1 and HIV-2 antibodies/antigens), Hepatitis B surface antigen (HBsAg), Hepatitis C antibodies (anti-HCV), Malaria (by RDT or smear), and VDRL (Syphilis) before use for transfusion. This is enforced at all licensed blood banks. Additionally, voluntary non-remunerated blood donation is promoted (as paid donors have higher risk of TTI). Nucleic Acid Testing (NAT) for HIV, HBV, and HCV is increasingly being implemented to reduce the window period and further minimize transfusion-transmitted infections. Blood safety is one of the four pillars of HIV prevention (along with behavioral, biomedical, and structural interventions)."
   },
   {
     id: 23,
-    question: "Western blot is used as a confirmatory test for HIV. Which bands on Western blot constitute a POSITIVE result per WHO criteria?",
+    question: "In HIV epidemiology, the incubation period (time from HIV infection to clinical AIDS) without treatment is approximately:",
     options: [
-      "Any single band present on the blot",
-      "Presence of bands p24 alone",
-      "At least two of the following bands: p24, gp41, gp120/gp160",
-      "Any three bands regardless of specificity"
+      "2-4 weeks (same as acute HIV syndrome)",
+      "6-12 months",
+      "8-10 years on average",
+      "25-30 years in most individuals"
     ],
     answer: 2,
-    explanation: "Per WHO criteria, a Western blot is POSITIVE for HIV-1 if at least two of the following three envelope/core bands are present: p24 (core), gp41 (transmembrane envelope), and gp120/gp160 (surface envelope). The result is NEGATIVE if no bands are present, and INDETERMINATE if bands are present but criteria for positivity are not met. Indeterminate results require repeat testing after 2-4 weeks. Western blot detects antibodies to specific HIV proteins separated by electrophoresis. Due to cost and complexity, many programs now use HIV antibody differentiation immunoassays instead of Western blot."
+    explanation: "The median incubation period of HIV infection (from initial infection to development of AIDS-defining illness or CD4 count <200 cells/mm3) is approximately 8-10 years without antiretroviral treatment. This long asymptomatic phase (clinical latency period) makes HIV epidemiology unique - infected individuals remain infectious throughout this period while appearing healthy. Variation exists: approximately 5-10% progress rapidly to AIDS within 2-5 years ('rapid progressors'), while about 1-5% maintain normal CD4 counts for >10-15 years without ART ('long-term non-progressors' or 'elite controllers'). ART dramatically extends survival and prevents AIDS progression. The long incubation period means HIV spread can be underestimated until AIDS cases appear years later."
   },
   {
     id: 24,
-    question: "Kaposi's sarcoma in HIV/AIDS is caused by which co-infecting agent?",
+    question: "The concept of 'Treatment as Prevention' (TasP) in HIV refers to which epidemiological principle?",
     options: [
-      "Epstein-Barr virus (EBV)",
-      "Human Herpesvirus 8 (HHV-8) / Kaposi's Sarcoma-Associated Herpesvirus (KSHV)",
-      "Human Papillomavirus (HPV)",
-      "Cytomegalovirus (CMV)"
+      "Using ART to prevent opportunistic infections in HIV-positive individuals",
+      "Providing ART to HIV-negative high-risk individuals before potential exposure (PrEP)",
+      "Achieving viral suppression through ART in PLHIV to reduce onward HIV transmission to sexual partners (U=U: Undetectable = Untransmittable)",
+      "Universal HIV testing of all adults annually as a prevention strategy"
     ],
-    answer: 1,
-    explanation: "Kaposi's Sarcoma (KS) in HIV/AIDS patients is caused by Human Herpesvirus 8 (HHV-8), also called Kaposi's Sarcoma-Associated Herpesvirus (KSHV). It is an AIDS-defining illness (WHO Stage 4 / CDC Category C). KS presents as purple-red, non-blanching skin lesions and can involve mucous membranes, lymph nodes, lungs, and GI tract. Classic KS occurs in elderly Mediterranean men independent of HIV. EBV causes primary CNS lymphoma and oral hairy leukoplakia in HIV patients. HPV causes cervical cancer and anogenital warts. CMV causes retinitis, colitis, and encephalitis in AIDS."
+    answer: 2,
+    explanation: "Treatment as Prevention (TasP) is based on the principle that HIV-positive individuals on ART who achieve undetectable viral load have essentially zero risk of transmitting HIV to sexual partners - expressed as U=U (Undetectable = Untransmittable). This was established by landmark studies: HPTN 052 study (2011) showed 96% reduction in HIV transmission in serodiscordant couples when the HIV-positive partner was on ART; PARTNER studies (2014-2018) showed zero transmissions when viral load was undetectable. TasP has become a cornerstone of HIV prevention strategy at population level - rapid ART initiation ('Test and Treat' for all regardless of CD4 count) reduces community viral load and drives down population-level incidence. This is distinct from PrEP (prophylactic ART for HIV-negative individuals)."
   },
   {
     id: 25,
-    question: "Which Plasmodium species is responsible for the MOST severe and potentially fatal form of malaria?",
+    question: "The Annual Blood Examination Rate (ABER) is a key indicator of malaria surveillance intensity. ABER is defined as:",
     options: [
-      "Plasmodium vivax",
-      "Plasmodium malariae",
-      "Plasmodium falciparum",
-      "Plasmodium ovale"
+      "(Number of malaria-positive blood slides / Mid-year population) x 100",
+      "(Number of blood slides examined for malaria / Mid-year population) x 100",
+      "(Number of blood slides positive for P. falciparum / Total blood slides examined) x 100",
+      "(Number of blood slides examined / Number of malaria cases) x 100"
     ],
-    answer: 2,
-    explanation: "Plasmodium falciparum causes the most severe and fatal form of malaria. It differs from other species in that it: (1) infects red blood cells of ALL ages (not age-specific), leading to high parasitemia; (2) causes cytoadherence (infected RBCs stick to capillary endothelium via PfEMP-1), leading to microvascular obstruction; (3) causes rosetting (infected RBCs bind to uninfected RBCs); and (4) can cause cerebral malaria, severe anemia, ARDS, acute renal failure, and multi-organ failure. P. vivax and P. ovale have dormant liver stages (hypnozoites). P. malariae causes quartan malaria."
+    answer: 1,
+    explanation: "Annual Blood Examination Rate (ABER) = (Number of blood slides examined for malaria in a year / Mid-year population) x 100. ABER measures the intensity of malaria surveillance - it reflects the effort made to detect malaria cases by collecting and examining blood smears. WHO recommends ABER of at least 10% for adequate surveillance. States with ABER below 10% may be missing malaria cases. ABER is a process indicator (measuring surveillance activity) while API (Annual Parasite Incidence) is an outcome indicator (measuring disease burden). The Slide Positivity Rate (SPR) = (Positive blood slides / Total blood slides examined) x 100 - measures what proportion of examined slides are positive. These three indicators together provide a complete picture of malaria surveillance."
   },
   {
     id: 26,
-    question: "The vector for malaria transmission is the female Anopheles mosquito. Which of the following correctly describes the Anopheles mosquito's resting and feeding behavior?",
+    question: "India has stratified districts for malaria based on API values for targeted interventions under NVBDCP. Districts are classified as high burden if API is:",
     options: [
-      "Daytime biting, horizontal resting position, prefers clean stagnant water",
-      "Night-biting, head-down resting position at angle to surface (endophilic), prefers clear unpolluted water",
-      "Night-biting, horizontal body position parallel to surface, breeds only in salt water",
-      "Dusk-biting only, prefers heavily polluted urban water bodies, endophobic behavior"
+      "API greater than 1 per 1000 population",
+      "API greater than 2 per 1000 population",
+      "API greater than 5 per 1000 population",
+      "API greater than 10 per 1000 population"
     ],
     answer: 1,
-    explanation: "Anopheles mosquitoes, the malaria vectors, characteristically: (1) bite at night (peak biting between dusk and dawn); (2) rest with head pointing downward at an angle to the surface (due to posterior position of proboscis - the classic angled resting posture, different from Culex which rests parallel to surface); (3) breed in clean, unpolluted, slow-moving or stagnant water; (4) are endophilic (prefer to rest indoors) and endophagic (bite indoors) - important for indoor residual spraying (IRS) effectiveness. Anopheles does not have barrel-shaped egg rafts like Culex; eggs are laid singly with floats."
+    explanation: "India's NVBDCP (National Vector Borne Disease Control Programme)/NCVBDC (National Centre for Vector Borne Diseases Control) stratifies districts based on malaria burden using API: High burden districts: API > 2 per 1000 population (these receive priority interventions - IRS, LLINs, enhanced surveillance). Moderate burden districts: API 1-2 per 1000. Low burden districts: API < 1 per 1000. Zero transmission districts: achieving zero indigenous cases. India's National Framework for Malaria Elimination (NFME) 2016-2030 aims to: eliminate malaria from 26 low-burden states/UTs by 2022; reduce API to <1 nationwide by 2024; achieve zero indigenous malaria cases by 2027; maintain elimination status by 2030. High-burden states include Odisha, Chhattisgarh, Jharkhand, Madhya Pradesh, and northeastern states."
   },
   {
     id: 27,
-    question: "The complete life cycle of Plasmodium falciparum includes an exoerythrocytic phase in the liver. The duration of the liver stage (pre-patent period) for P. falciparum is approximately:",
+    question: "The WHO malaria elimination certification criteria require that a country demonstrates:",
     options: [
-      "5-6 days",
-      "8-9 days",
-      "12-14 days",
-      "15-16 days"
+      "Zero malaria cases for any single year",
+      "Zero indigenous malaria cases for at least 3 consecutive years AND a functioning surveillance and response system capable of preventing reintroduction",
+      "Malaria transmission reduced by 90% from baseline",
+      "Zero malaria deaths for 5 consecutive years with case management coverage above 90%"
     ],
     answer: 1,
-    explanation: "The liver stage (exoerythrocytic schizogony) duration varies by species: P. falciparum: 5-6 days (shortest liver stage); P. vivax: 8 days; P. ovale: 9 days; P. malariae: 13-16 days. The total pre-patent period (from mosquito bite to detection of parasites in blood) is longer - approximately 7-14 days for P. falciparum. Importantly, P. falciparum and P. malariae do NOT have a dormant liver stage (hypnozoites), unlike P. vivax and P. ovale where hypnozoites cause relapses weeks to months later."
+    explanation: "WHO malaria elimination certification requires: (1) Zero indigenous (locally acquired) malaria cases for at least 3 consecutive years - i.e., no local transmission during this period; (2) A national surveillance and response program that can rapidly detect and respond to imported cases to prevent re-establishment of transmission (preventing reintroduction). Countries achieving elimination can be certified by WHO. Countries must also commit to continued prevention of re-establishment. Examples: Sri Lanka achieved WHO certification in 2016 (after 3+ years of zero indigenous cases). India's National Framework for Malaria Elimination sets state-wise targets. 'Elimination' is different from 'eradication' (global elimination of the parasite/disease, as achieved for smallpox)."
   },
   {
     id: 28,
-    question: "A patient presents with fever, altered consciousness, and seizures. Blood smear shows P. falciparum with >5% parasitemia. Which criterion MOST specifically suggests cerebral malaria?",
+    question: "Slide Falciparum Rate (SFR) is an entomological/epidemiological indicator in malaria surveillance. SFR is calculated as:",
     options: [
-      "Parasitemia >2% on peripheral blood smear",
-      "Unarousable coma (Blantyre Coma Score <3 in children) not attributable to other causes in confirmed P. falciparum malaria",
-      "Fever >40°C with rigors in P. falciparum infection",
-      "Presence of ring forms and gametocytes on peripheral smear"
+      "(Number of P. falciparum positive slides / Mid-year population) x 100",
+      "(Number of P. falciparum positive slides / Total blood slides examined) x 100",
+      "(Number of P. falciparum cases / Total malaria cases) x 100",
+      "(Number of severe P. falciparum cases / Total P. falciparum cases) x 100"
     ],
     answer: 1,
-    explanation: "Cerebral malaria is defined by the WHO as unarousable coma (Glasgow Coma Scale <11 in adults; Blantyre Coma Score <3 in children) not explained by another cause (hypoglycemia, meningitis, etc.) in a patient with confirmed P. falciparum infection. It is the most common cause of non-traumatic encephalopathy in children in sub-Saharan Africa. Pathophysiology involves cytoadherence of parasitized RBCs to cerebral endothelium, sequestration, rosetting, and release of pro-inflammatory cytokines. Mortality is 15-25% even with treatment. Parasitemia >5% alone indicates hyperparasitemia (a marker of severe malaria) but not specifically cerebral malaria."
+    explanation: "Slide Falciparum Rate (SFR) = (Number of P. falciparum positive slides / Total blood slides examined) x 100. It measures the proportion of examined blood slides that are positive specifically for P. falciparum (as opposed to all malaria species). SFR is important because P. falciparum causes more severe malaria and has different treatment implications (ACT required, gametocyte clearance). The P. falciparum proportion (Pf%) = (P. falciparum cases / Total malaria cases) x 100 is a related indicator showing the species composition of malaria burden. India has seen increasing Pf% over the years. In contrast, Slide Positivity Rate (SPR) includes all species. Annual Falciparum Incidence (AFI) = P. falciparum cases per 1000 population per year."
   },
   {
     id: 29,
-    question: "P. vivax malaria differs from P. falciparum malaria in all of the following EXCEPT:",
+    question: "Indoor Residual Spraying (IRS) coverage indicators used to evaluate malaria vector control programs include which metric as the primary indicator?",
     options: [
-      "P. vivax has hypnozoites causing relapses",
-      "P. vivax preferentially infects reticulocytes (young RBCs)",
-      "P. vivax causes quotidian (daily) fever pattern",
-      "P. vivax can cause severe malaria with ARDS and thrombocytopenia"
+      "Percentage of houses sprayed in a district out of total houses eligible for spraying",
+      "Kilogram of insecticide used per district per year",
+      "Number of spray teams deployed per 1000 population",
+      "Cost per household sprayed per year"
     ],
-    answer: 2,
-    explanation: "P. vivax causes TERTIAN (every 48 hours / every 3rd day) fever pattern, not quotidian (daily). The erythrocytic cycle of P. vivax is 48 hours, producing fever every other day. Quartan fever (every 72 hours) is caused by P. malariae. True quotidian fever in malaria suggests double tertian (infection with two broods of P. vivax maturing alternately). All other options are true: P. vivax has hypnozoites causing relapses (requires primaquine to eliminate), preferentially infects reticulocytes (Duffy antigen receptor), and can cause severe malaria including ARDS, severe thrombocytopenia, and splenic rupture."
+    answer: 0,
+    explanation: "The primary IRS coverage indicator is: Percentage of households sprayed = (Number of households sprayed / Total households eligible for spraying) x 100. WHO recommends at least 80% coverage of eligible households for IRS to be epidemiologically effective (to interrupt malaria transmission). 'Eligible households' are those in malaria-endemic areas and accepting spraying. Process indicators for IRS include: number of spray rounds per year (usually 1-2 rounds), timing relative to peak transmission season, insecticide quality (bioassay testing), spray operator training. Impact indicators include API before/after IRS. IRS quality is assessed through insecticide bioassays on sprayed surfaces to verify adequate residual activity. LLIN (Long-Lasting Insecticidal Net) coverage indicator: percentage of households with at least one LLIN per two persons."
   },
   {
     id: 30,
-    question: "Thick blood smear versus thin blood smear for malaria diagnosis - which statement is CORRECT?",
+    question: "Drug resistance surveillance in malaria under NVBDCP monitors for resistance to chloroquine and ACT. The primary method used for in vivo drug efficacy testing in malaria is:",
     options: [
-      "Thin smear is more sensitive for detection; thick smear allows species identification",
-      "Thick smear is more sensitive for detection (detects lower parasitemia); thin smear allows species identification",
-      "Both smears have equal sensitivity and specificity",
-      "Thick smear is used only for P. falciparum; thin smear for P. vivax"
+      "Microplate drug sensitivity assay on cultured P. falciparum",
+      "WHO standard in vivo therapeutic efficacy study (TES) - following patients clinically and parasitologically for 28 days after treatment",
+      "Molecular genotyping of drug resistance markers (pfcrt, pfkelch13) only",
+      "Retrospective analysis of treatment failure reports from health facilities"
     ],
     answer: 1,
-    explanation: "Thick blood smear is more SENSITIVE for parasite detection because a larger volume of blood is concentrated on the slide (concentrates parasites ~20-40 times), allowing detection of low parasitemia (as low as 5-10 parasites/microL). However, RBCs are lysed during staining, destroying their morphology. Thin blood smear preserves RBC morphology and parasite morphology, allowing accurate SPECIES IDENTIFICATION (based on RBC size, parasite morphology, Schuffner's dots in P. vivax/ovale, Maurer's clefts in P. falciparum, etc.). Standard practice: use both together."
+    explanation: "WHO standard Therapeutic Efficacy Study (TES) or in vivo drug efficacy study is the primary method for malaria drug resistance surveillance. Protocol: patients with uncomplicated malaria receive standard treatment and are followed for 28 days (for chloroquine) or 28-42 days (for ACT/artemisinin derivatives) with clinical, parasitological, and hematological assessments on days 1, 2, 3, 7, 14, 21, and 28. Outcomes classified as: Early Treatment Failure (ETF), Late Clinical Failure (LCF), Late Parasitological Failure (LPF), and Adequate Clinical and Parasitological Response (ACPR). PCR correction distinguishes recrudescence (treatment failure) from re-infection. Molecular markers (pfkelch13 for artemisinin, pfcrt/pfmdr1 for chloroquine) supplement in vivo studies. NVBDCP conducts TES at sentinel sites across India."
   },
   {
     id: 31,
-    question: "Rapid Diagnostic Tests (RDTs) for malaria detect which antigens?",
+    question: "Mass Drug Administration (MDA) for malaria elimination - WHO recommends MDA under which specific conditions?",
     options: [
-      "Plasmodium falciparum-specific HRP-2 and/or pan-Plasmodium aldolase or pLDH",
-      "Plasmodium-specific DNA by PCR",
-      "Plasmodium antibodies in patient serum",
-      "Hemozoin (malaria pigment) in red blood cells"
+      "In all malaria-endemic areas globally as a first-line elimination strategy",
+      "Only in settings approaching elimination where malaria transmission is low and in isolated/island populations, as a time-limited intervention with appropriate ACT to all eligible individuals",
+      "Exclusively for P. vivax malaria elimination using primaquine",
+      "As a replacement for case management and vector control in high-burden settings"
     ],
-    answer: 0,
-    explanation: "Malaria Rapid Diagnostic Tests (RDTs) are immunochromatographic strip tests that detect Plasmodium antigens in blood: (1) HRP-2 (Histidine-Rich Protein 2) - P. falciparum specific; remains detectable for weeks after treatment (limitation); (2) pLDH (Plasmodium lactate dehydrogenase) - pan-Plasmodium (all species) or P. falciparum-specific; clears faster after treatment; (3) Aldolase - pan-Plasmodium. Concern: HRP-2/3 gene deletions in P. falciparum (especially in parts of South America and Southeast Asia) cause false-negative HRP-2-based RDTs. RDTs cannot quantify parasitemia or confirm species definitively."
+    answer: 1,
+    explanation: "WHO recommends Mass Drug Administration (MDA) for malaria as a time-limited supplementary intervention under specific conditions: settings approaching elimination (low and residual transmission); geographically isolated or island populations where containment is feasible; areas with stable access to treatment and strong surveillance for follow-up; in combination with (not replacing) vector control and case management. MDA involves administering antimalarial drugs to all eligible individuals in a target population simultaneously regardless of infection status, to clear all existing infections simultaneously. Typical regimen: ACT for P. falciparum; ACT plus primaquine (with G6PD testing) for P. vivax. High coverage (>80%) of population is essential. Evidence from Pacific islands and some Africa trials supports MDA in elimination settings. MDA is NOT recommended for high-burden settings where elimination is not near-term."
   },
   {
     id: 32,
-    question: "For treatment of uncomplicated P. falciparum malaria in India, the first-line treatment recommended by NVBDCP is:",
+    question: "The entomological inoculation rate (EIR) is a key epidemiological indicator in malaria. EIR measures:",
     options: [
-      "Chloroquine 25 mg/kg over 3 days",
-      "Artemisinin-based Combination Therapy (ACT) - Artesunate + Sulfadoxine-Pyrimethamine",
-      "Quinine sulfate for 7 days",
-      "Mefloquine monotherapy"
+      "The proportion of mosquitoes carrying malaria sporozoites in a population",
+      "The number of infective mosquito bites received per person per unit time, combining human biting rate and sporozoite rate",
+      "The number of Anopheles mosquitoes per household per night",
+      "The proportion of the human population with detectable malaria parasitemia"
     ],
     answer: 1,
-    explanation: "India's National Vector Borne Disease Control Programme (NVBDCP) recommends Artemisinin-based Combination Therapy (ACT) for uncomplicated P. falciparum malaria: Artesunate (AS) + Sulfadoxine-Pyrimethamine (SP) as the first-line. ACT combines a fast-acting artemisinin derivative (reduces parasite burden rapidly) with a longer-acting partner drug. Chloroquine is ineffective against P. falciparum in most parts of India due to widespread resistance. Primaquine (0.75 mg/kg single dose) is added on Day 2 to eliminate gametocytes (prevents transmission). For severe P. falciparum: IV Artesunate is preferred over quinine."
+    explanation: "Entomological Inoculation Rate (EIR) = Human Biting Rate (HBR) x Sporozoite Rate (SR). It measures the number of infective (sporozoite-carrying) Anopheles bites received per person per unit time (night, month, or year). EIR is the most direct measure of malaria transmission intensity. Components: Human Biting Rate (HBR) = number of Anopheles bites per person per night (measured by human landing catches or light traps); Sporozoite Rate (SR) = proportion of Anopheles mosquitoes with sporozoites in salivary glands (measured by ELISA or PCR of dissected mosquitoes). EIR in holoendemic Africa can exceed 100-1000 infective bites/person/year; in low-transmission settings approaching elimination, EIR approaches zero. EIR is used to classify malaria transmission intensity and evaluate vector control impact."
   },
   {
     id: 33,
-    question: "Primaquine is used in malaria treatment. What is its primary mechanism of action and the major adverse effect that limits its use?",
+    question: "In malaria epidemiology, the basic reproductive number (R0) for Plasmodium falciparum is primarily determined by which parameters in the MacDonald-Ross model?",
     options: [
-      "Inhibits DNA synthesis; major adverse effect is hepatotoxicity",
-      "Acts on liver hypnozoites (radical cure) and gametocytes; major adverse effect is hemolytic anemia in G6PD-deficient patients",
-      "Inhibits hemozoin polymerization; major adverse effect is retinal toxicity",
-      "Kills erythrocytic stage parasites; major adverse effect is cardiac arrhythmia"
+      "Human population density and mosquito population density alone",
+      "Mosquito biting rate, mosquito density per human, vector competence, and the durations of the extrinsic and intrinsic incubation periods",
+      "Parasite drug resistance profile and human immune status",
+      "Temperature and rainfall patterns in the transmission area only"
     ],
     answer: 1,
-    explanation: "Primaquine acts primarily on: (1) Liver stages - hypnozoites of P. vivax and P. ovale (radical cure preventing relapses); and (2) Gametocytes of P. falciparum (preventing transmission to mosquitoes). Its major life-threatening adverse effect is HEMOLYTIC ANEMIA in patients with G6PD (Glucose-6-Phosphate Dehydrogenase) deficiency, because primaquine metabolites cause oxidative stress on RBCs. G6PD testing before primaquine administration is recommended. Chloroquine/quinine inhibit hemozoin polymerization. Chloroquine causes retinal toxicity with long-term use. Quinine causes cardiac arrhythmias."
+    explanation: "The MacDonald-Ross model for malaria defines R0 as a function of entomological parameters: R0 = (m x a2 x b x c x exp(-mu x n)) / (mu x r), where: m = mosquito density per human; a = human biting rate (bites per mosquito per day); b = proportion of bites by infectious mosquitoes that infect a susceptible human; c = proportion of bites on infectious humans that infect a susceptible mosquito (vector competence); mu = mosquito daily mortality rate; n = extrinsic incubation period (sporogonic cycle duration); r = human recovery rate. This model explains why vector control targeting Anopheles density (m) and longevity (1/mu) - since mosquitoes must survive long enough to complete sporogony - is so effective. High mosquito longevity and biting rate amplify malaria transmission exponentially."
   },
   {
     id: 34,
-    question: "Annual Parasite Incidence (API) is the key malaria indicator used in India. API is calculated as:",
+    question: "NCVBDC (formerly NVBDCP) - National Centre for Vector Borne Diseases Control - has its headquarters at:",
     options: [
-      "(Number of positive blood slides / Population at risk) x 1000",
-      "(Number of confirmed malaria cases / Mid-year population) x 1000",
-      "(Number of blood slides examined / Population) x 1000",
-      "(Number of malaria deaths / Confirmed malaria cases) x 100"
+      "Mumbai, Maharashtra",
+      "New Delhi",
+      "Bengaluru, Karnataka",
+      "Chennai, Tamil Nadu"
     ],
     answer: 1,
-    explanation: "Annual Parasite Incidence (API) = (Number of confirmed malaria cases in a year / Mid-year population at risk) x 1000. It is the standard indicator for measuring malaria burden in India used by NVBDCP. Interpretation: API >2 = High risk area; API 1-2 = Moderate risk; API <1 = Low risk. India's national malaria elimination target is to achieve API <1 in all districts. Annual Blood Examination Rate (ABER) = (Number of blood slides examined / Population) x 100 - measures surveillance intensity. Slide Positivity Rate (SPR) = (Positive slides / Slides examined) x 100."
+    explanation: "The National Centre for Vector Borne Diseases Control (NCVBDC), formerly known as National Vector Borne Disease Control Programme (NVBDCP), has its headquarters in New Delhi (22-Sham Nath Marg, Delhi). NCVBDC is the apex national body under the Ministry of Health and Family Welfare responsible for prevention and control of vector-borne diseases in India including malaria, dengue, chikungunya, filaria, kala-azar (visceral leishmaniasis), and Japanese encephalitis. NCVBDC provides technical guidelines, national policy, monitoring frameworks, and coordinates state programs. Regional offices are located in different zones of India to provide technical support to states."
   },
   {
     id: 35,
-    question: "Which malaria prevention strategy involves spraying insecticide on interior walls and ceilings of houses to kill resting mosquitoes?",
+    question: "Long-Lasting Insecticidal Nets (LLINs) provide protection against malaria through which two mechanisms?",
     options: [
-      "Larval source management (LSM)",
-      "Long-Lasting Insecticidal Nets (LLINs)",
-      "Indoor Residual Spraying (IRS)",
-      "Space spraying / fogging"
+      "Chemical repellent effect only, keeping mosquitoes away from the sleeping area",
+      "Physical barrier preventing mosquito bites on sleeping individuals AND toxic/irritant effect killing or repelling mosquitoes that contact the net, providing community-level protection",
+      "Absorbing mosquito-borne parasites before they reach the human host",
+      "Generating heat that kills mosquitoes within a 5-meter radius during the night"
     ],
-    answer: 2,
-    explanation: "Indoor Residual Spraying (IRS) involves applying residual insecticide to the interior surfaces (walls, ceilings, under furniture) of houses and animal sheds. When Anopheles mosquitoes rest on these treated surfaces after blood feeding, they absorb a lethal dose of insecticide and die before they can complete the sporogonic cycle or bite again. IRS is effective because Anopheles is endophilic (rests indoors). Common insecticides used: DDT (still used in India), synthetic pyrethroids, and organophosphates. LLINs protect sleeping individuals. LSM targets breeding sites. Space spraying has no residual activity."
+    answer: 1,
+    explanation: "Long-Lasting Insecticidal Nets (LLINs) protect against malaria through dual mechanisms: (1) Physical barrier - prevents direct contact between sleeping person and mosquitoes, blocking bites when properly used; (2) Chemical effect - insecticide (usually pyrethroid - permethrin or deltamethrin) incorporated into or coated on net fibers kills or repels mosquitoes that land on the net. This chemical effect provides community-level protection (mass effect/herd protection) even for people sleeping without nets in the same household/village, as mosquitoes are killed upon contacting nets rather than seeking other targets. LLINs maintain insecticidal activity for 3+ years (20+ washes). Coverage target: at least 80% of population in endemic areas using LLINs. Pyrethroid resistance in Anopheles vectors threatens LLIN efficacy."
   },
   {
     id: 36,
-    question: "G6PD deficiency is relevant to malaria in which of the following contexts?",
+    question: "Kala-azar (Visceral Leishmaniasis) is also a vector-borne disease under NCVBDC. The primary vector responsible for Kala-azar transmission in India is:",
     options: [
-      "G6PD deficiency confers complete protection against P. falciparum malaria",
-      "G6PD deficiency is a contraindication to primaquine use due to risk of hemolysis; also, G6PD deficiency confers partial protection against severe P. falciparum malaria",
-      "G6PD deficiency increases susceptibility to all forms of malaria equally",
-      "G6PD deficiency only affects treatment of P. vivax but not P. falciparum"
+      "Female Anopheles mosquito",
+      "Phlebotomus argentipes (sandfly)",
+      "Aedes aegypti mosquito",
+      "Culex quinquefasciatus mosquito"
     ],
     answer: 1,
-    explanation: "G6PD (Glucose-6-Phosphate Dehydrogenase) deficiency is relevant to malaria in two important ways: (1) TREATMENT: Primaquine (used for radical cure of P. vivax/P. ovale relapses and P. falciparum gametocyte clearance) causes hemolytic anemia in G6PD-deficient patients due to oxidative stress - hence primaquine is contraindicated or used with caution in G6PD deficiency; (2) EPIDEMIOLOGY: G6PD deficiency (X-linked) is maintained in malaria-endemic populations because it confers partial PROTECTION against severe P. falciparum malaria (parasitized G6PD-deficient RBCs are cleared more rapidly by the spleen), similar to sickle-cell trait."
+    explanation: "Kala-azar (Visceral Leishmaniasis caused by Leishmania donovani) is transmitted in India by the sandfly Phlebotomus argentipes - the primary anthroponotic vector. Sandflies are tiny (~3mm), hairy, golden-colored flies that bite at night and rest in dark, damp areas (mud walls, cracks, animal sheds). They breed in moist, organic-rich soil. India's kala-azar is endemic in Bihar (>90% of India's burden), Jharkhand, West Bengal, and Uttar Pradesh. India has committed to eliminating kala-azar (target: <1 case per 10,000 population at sub-district level). Control measures include: Indoor Residual Spraying (DDT/synthetic pyrethroids) targeting sandfly vectors, early diagnosis and treatment, and active case detection. Post Kala-azar Dermal Leishmaniasis (PKDL) is an important reservoir that complicates elimination."
   },
   {
     id: 37,
-    question: "The sporogonic cycle (development of malaria parasite in the mosquito) requires a minimum temperature to complete. What is the approximate minimum temperature required for P. falciparum sporogony?",
+    question: "The Plasmodium vivax malaria relapse phenomenon occurs due to hypnozoites in the liver. What is the significance of relapse in malaria elimination programs?",
     options: [
-      "10 degrees Celsius",
-      "15 degrees Celsius",
-      "16 degrees Celsius",
-      "20 degrees Celsius"
+      "Relapses only affect individual patients and have no epidemiological significance for transmission",
+      "Relapses represent new infections from mosquito bites misclassified as treatment failures",
+      "Relapses contribute to ongoing transmission as relapsed patients develop gametocytes and serve as infection sources for Anopheles vectors, complicating elimination efforts",
+      "P. vivax relapses occur only in immunocompromised individuals"
     ],
     answer: 2,
-    explanation: "The sporogonic cycle (extrinsic incubation period - development of Plasmodium in the Anopheles mosquito from ingested gametocytes to infective sporozoites) requires minimum temperatures: P. falciparum: minimum 16 degrees Celsius (optimal 25-30 degrees C, duration ~10-12 days at optimal temperature); P. vivax: minimum 16 degrees C (some sources say 14.5 degrees C); P. malariae: minimum 18 degrees C. This temperature requirement explains why malaria is altitude-limited and seasonal in many regions. Temperature below minimum = malaria transmission impossible (threshold for vector control strategies). Duration of sporogony increases at lower temperatures."
+    explanation: "P. vivax hypnozoites (dormant liver stage parasites) can reactivate weeks to months after the initial infection, causing relapse episodes even after complete elimination of blood-stage parasites. Epidemiological significance: (1) Relapses generate gametocytes that infect Anopheles vectors, contributing to ongoing transmission chains independent of new mosquito bites; (2) In low-transmission settings approaching elimination, relapse cases can sustain transmission and prevent achieving zero indigenous cases; (3) Without radical cure (primaquine to kill hypnozoites), P. vivax cannot be eliminated even with perfect blood-stage treatment and vector control; (4) Estimation of true incidence is complicated because relapse cases may outnumber primary infections. India's elimination strategy includes ensuring access to primaquine radical cure (with G6PD screening) for all P. vivax cases."
   },
   {
     id: 38,
-    question: "Dengue fever is caused by a flavivirus with how many serotypes, and what is the significance of the different serotypes?",
+    question: "The House Index (HI) and Container Index (CI) are Aedes surveillance indicators. During a dengue outbreak investigation in a city, House Index is found to be 35%. This indicates:",
     options: [
-      "2 serotypes; infection with one provides cross-protection against the other",
-      "4 serotypes (DENV-1 to DENV-4); infection with one provides lifelong immunity to that serotype only, and secondary infection with a different serotype increases risk of severe dengue",
-      "4 serotypes; infection with any one provides cross-immunity to all others",
-      "5 serotypes; DENV-5 causes the most severe disease"
+      "35% of the city's population has dengue antibodies",
+      "35 out of every 100 houses inspected have at least one container with Aedes larvae/pupae",
+      "35% of containers inspected contain Aedes larvae or pupae",
+      "35 adult Aedes mosquitoes were found per 100 houses inspected"
     ],
     answer: 1,
-    explanation: "Dengue virus (DENV) has 4 serotypes: DENV-1, DENV-2, DENV-3, and DENV-4 (DENV-5 has been reported tentatively but is not officially recognized). Primary infection with one serotype provides lifelong immunity to that serotype only and short-term partial cross-immunity to others. Secondary infection with a DIFFERENT serotype carries increased risk of severe dengue (Dengue Hemorrhagic Fever/Dengue Shock Syndrome) due to Antibody-Dependent Enhancement (ADE) - pre-existing non-neutralizing antibodies from first infection enhance uptake of the second serotype into monocytes/macrophages, amplifying viral replication and cytokine release."
+    explanation: "House Index (HI) = (Number of houses found infested with Aedes larvae or pupae / Total houses inspected) x 100. An HI of 35% means 35 out of every 100 houses inspected have at least one water container with Aedes aegypti larvae or pupae. This is a measure of the proportion of premises infested. Container Index (CI) = (Number of positive containers / Total water-holding containers inspected) x 100. Breteau Index (BI) = (Number of positive containers / 100 houses inspected). WHO risk thresholds: HI > 1% = dengue transmission risk; HI > 5% = high transmission risk. An HI of 35% is extremely high and indicates urgent need for source reduction (container emptying, treatment, removal) and larviciding. HI > 1 combined with presence of a dengue case indicates an outbreak situation."
   },
   {
     id: 39,
-    question: "The primary vector of dengue fever, Aedes aegypti, is characterized by all of the following EXCEPT:",
+    question: "Dengue virus serotype surveillance (monitoring which DENV serotypes are circulating) is epidemiologically important because:",
     options: [
-      "Daytime biting activity with peak at dawn and dusk",
-      "Distinctive black and white stripe pattern on body and legs",
-      "Breeds in clean, stagnant water in artificial containers",
-      "Night-biting behavior and prefers to breed in polluted water drains"
+      "Different serotypes respond differently to antiviral medications available for dengue treatment",
+      "Introduction of a new serotype into a population with existing immunity to other serotypes can trigger outbreaks of severe dengue through Antibody-Dependent Enhancement (ADE)",
+      "Serotype surveillance is used exclusively for dengue vaccine efficacy testing",
+      "Dengue serotypes determine the vector species responsible for transmission"
     ],
-    answer: 3,
-    explanation: "Aedes aegypti is characterized by: daytime biting (NOT night-biting; peak biting around sunrise and sunset); distinctive black body with white silvery markings/stripes (lyre-shaped pattern on thorax); breeding in CLEAN, stagnant water in artificial containers (flower pots, discarded tires, water storage containers, desert coolers, water tanks - NOT polluted drains). Aedes albopictus (tiger mosquito) is a secondary vector. Anopheles (malaria vector) breeds in cleaner natural water. Culex (Japanese encephalitis/filaria vector) breeds in polluted, organic-rich water like drains and cesspools."
+    answer: 1,
+    explanation: "Dengue serotype surveillance has critical epidemiological importance: when a new DENV serotype is introduced into a population that has pre-existing immunity to other serotypes (from previous infection or circulation), Antibody-Dependent Enhancement (ADE) increases the risk of severe dengue at population level. Cross-reactive non-neutralizing antibodies from prior infection enhance uptake of the new serotype into Fc-receptor-bearing cells (monocytes/macrophages), amplifying viral replication and cytokine storm - increasing risk of Dengue Hemorrhagic Fever/Dengue Shock Syndrome. Examples: introduction of DENV-2 into a DENV-1-immune population in Cuba (1981) and Thailand caused severe dengue epidemics. Serotype monitoring informs prediction of outbreak severity and guides vaccine deployment strategies. India has seen all four serotypes co-circulating."
   },
   {
     id: 40,
-    question: "According to the 2009 WHO classification, dengue clinical presentation is classified into three categories. A patient with dengue fever who develops persistent vomiting, clinical fluid accumulation, mucosal bleeding, and lethargy falls into which category?",
+    question: "The NS1 antigen ELISA test sensitivity for dengue diagnosis compared to PCR (gold standard) is approximately:",
     options: [
-      "Dengue without warning signs",
-      "Dengue with warning signs",
-      "Severe dengue",
-      "Dengue Hemorrhagic Fever Grade III"
+      "Greater than 95% - NS1 ELISA is more sensitive than PCR",
+      "50-90% in primary dengue infection on Day 1-5, lower in secondary infection (30-60%) where immune complex formation reduces free NS1",
+      "Less than 20% - NS1 ELISA is only useful for confirmatory testing",
+      "Exactly 80% in all types of dengue infection regardless of timing"
     ],
     answer: 1,
-    explanation: "2009 WHO Dengue Classification: (1) Dengue WITHOUT Warning Signs: fever, nausea, vomiting, rash, aches/pains, positive tourniquet test, leukopenia. (2) Dengue WITH Warning Signs: abdominal pain/tenderness, persistent vomiting, clinical fluid accumulation (ascites, pleural effusion), mucosal bleeding, lethargy/restlessness, liver enlargement >2 cm, rising hematocrit with rapid decline in platelet count - requires CLOSE observation and often hospital admission. (3) Severe Dengue: severe plasma leakage (shock/fluid accumulation with respiratory distress), severe bleeding, severe organ impairment (liver, CNS, renal, cardiac). DHF grading is the older 1997 WHO classification."
+    explanation: "NS1 antigen ELISA sensitivity compared to RT-PCR gold standard: In primary dengue infection during the febrile phase (Day 1-5): approximately 70-90% sensitivity. In secondary dengue infection: sensitivity decreases to approximately 30-60% because pre-existing high-titer IgG antibodies from prior infection rapidly form immune complexes with NS1, reducing free NS1 detectable by ELISA. Specificity of NS1 ELISA is approximately 90-98% (high). RT-PCR (gold standard) sensitivity: 90-100% during Days 1-5. After Day 5-6, viral RNA clears from blood and PCR sensitivity falls sharply - then IgM serology becomes the primary diagnostic. Combination of NS1 antigen + IgM antibody testing increases overall diagnostic sensitivity across all stages of dengue illness."
   },
   {
     id: 41,
-    question: "The NS1 (Non-Structural Protein 1) antigen test for dengue diagnosis - which statement is CORRECT?",
+    question: "IDSP (Integrated Disease Surveillance Programme) reporting for dengue - under which reporting format should a dengue outbreak in a district be reported, and within what timeframe?",
     options: [
-      "NS1 is detectable from Day 5 onwards and can distinguish dengue serotypes",
-      "NS1 is detectable from Day 1-2 of fever onset and remains positive for 5-9 days; it is positive in primary and secondary dengue",
-      "NS1 test is more specific than PCR for dengue diagnosis",
-      "NS1 antigen persists for several weeks after fever resolution"
+      "Weekly S-form (syndromic surveillance) by any community health worker; no urgent reporting required",
+      "Immediate/urgent reporting within 24 hours to district and state surveillance officers upon detection of a cluster/outbreak, regardless of confirmation status",
+      "Monthly aggregate data compilation in P-form (patient data); outbreaks reported only after laboratory confirmation",
+      "Quarterly reporting to NCVBDC; only fatal dengue cases require urgent notification"
     ],
     answer: 1,
-    explanation: "NS1 antigen is secreted by dengue virus-infected cells and is detectable in blood from Day 1-2 of fever onset (before antibodies develop) and typically remains detectable for 5-9 days. It is positive in BOTH primary and secondary dengue infections. NS1 testing is the most useful early diagnostic test for dengue during the febrile phase (before Day 5). PCR is the gold standard for early diagnosis and serotyping (Day 1-5). IgM antibodies appear around Day 5. In secondary infections, IgG rises rapidly (anamnestic response). NS1 levels may be lower in secondary dengue (due to immune complex formation)."
+    explanation: "Under IDSP (Integrated Disease Surveillance Programme), dengue is a reportable disease and outbreaks require IMMEDIATE reporting: (1) Any cluster of dengue cases (2 or more epidemiologically linked cases) or a single severe case must be reported to the District Surveillance Officer (DSO) and State Surveillance Officer (SSO) within 24 hours of detection, without waiting for laboratory confirmation; (2) Outbreak investigation should commence immediately; (3) IDSP uses three reporting formats: S-form (syndromic - weekly from community), L-form (laboratory - weekly confirmed data), P-form (patient information for outbreaks). Dengue surveillance data flows from subcentre/PHC level upward through the IDSP network to IDSP central unit (National Centre for Disease Control - NCDC, Delhi). Timely outbreak reporting enables rapid response and control measures."
   },
   {
     id: 42,
-    question: "In dengue serology, a patient presents on Day 8 of fever. IgM antibody for dengue is positive. What does this indicate?",
+    question: "Seroprevalence studies for dengue in India serve which specific epidemiological purpose beyond estimating current active cases?",
     options: [
-      "Definitive diagnosis of primary dengue infection only",
-      "Current or recent dengue infection (primary or secondary); IgM appears around Day 5 and persists for 2-3 months",
-      "Past dengue infection from >1 year ago",
-      "False positive result - IgM is not a reliable marker beyond Day 7"
+      "Identifying individual dengue patients for treatment initiation",
+      "Estimating the proportion of population with prior dengue exposure (IgG seroprevalence) to understand cumulative infection burden, proportion susceptible, and identify populations at risk for severe dengue from new serotype introduction",
+      "Determining which dengue serotype is currently circulating in the community",
+      "Measuring dengue vector density and predicting future outbreak timing"
     ],
     answer: 1,
-    explanation: "Dengue IgM antibodies appear approximately 5 days after fever onset in primary infection (3-5 days in secondary). IgM peaks at 2 weeks and persists for 2-3 months. A positive IgM on Day 8 indicates current or recent dengue infection (within the past 2-3 months). In PRIMARY dengue: IgM rises first, then IgG (rises slowly after 2 weeks). In SECONDARY dengue: IgG rises rapidly (within 1-2 days - anamnestic response), often reaching high levels before or simultaneously with IgM. High IgG with absent/low IgM in early illness suggests secondary dengue. IgG persists for life (lifelong immunity to that serotype)."
+    explanation: "Dengue seroprevalence studies measure IgG antibody prevalence (indicating past infection) in population-based samples. These studies serve multiple epidemiological purposes: (1) Estimating cumulative infection burden - often reveals dengue is far more common than official case counts (large 'iceberg' with many asymptomatic/mild infections); (2) Determining the proportion of population immune vs susceptible - crucial for predicting outbreak potential when a new serotype is introduced; (3) Age-stratified seroprevalence reveals transmission intensity over time; (4) Identifying populations seronegative to specific serotypes - at higher risk for severe dengue if exposed; (5) Evaluating vaccine deployment strategies (pre-vaccination serology to identify seronegatives who should not receive Dengvaxia). India's dengue seroprevalence in urban areas often exceeds 50-80%, revealing massive underreporting of clinical cases."
   },
   {
     id: 43,
-    question: "The Tourniquet Test (Rumpel-Leede Capillary Fragility Test) is used in dengue diagnosis. A positive tourniquet test is defined as:",
+    question: "Aedes aegypti's key behavioral characteristic that makes it a more efficient dengue vector than Aedes albopictus is:",
     options: [
-      "More than 5 petechiae per 2.5 cm2 area",
-      "More than 10 petechiae per 1 inch2 (6.25 cm2) area",
-      "Appearance of any petechiae after tourniquet inflation",
-      "Bleeding from the tourniquet application site"
+      "Aedes aegypti can fly longer distances (>5 km) to seek blood meals",
+      "Aedes aegypti has a higher tendency to feed multiple times during a single gonotrophic cycle, biting several humans in succession and increasing dengue transmission per infected mosquito",
+      "Aedes aegypti breeds exclusively in large water bodies like ponds and lakes",
+      "Aedes aegypti has a longer lifespan (>30 days) compared to Aedes albopictus"
     ],
     answer: 1,
-    explanation: "The Tourniquet Test (TT) assesses capillary fragility: inflate BP cuff to the midpoint between systolic and diastolic pressure for 5 minutes. A POSITIVE result is defined as 10 or more petechiae per 1 square inch (6.25 cm2) in the antecubital fossa area. The tourniquet test is positive in dengue (increases with disease progression), thrombocytopenic conditions, and capillary fragility disorders. In the 1997 WHO DHF criteria, a positive tourniquet test was required for diagnosis. It may be positive in early dengue (febrile phase) even before thrombocytopenia develops. False positives occur in sunburned skin."
+    explanation: "Aedes aegypti's key vectorial advantage is its highly anthropophilic and multiple-feeding behavior: during a single gonotrophic cycle, Ae. aegypti frequently interrupts blood feeding and bites multiple humans to complete a blood meal. This 'skip oviposition' and multiple-host feeding behavior means a single infected Ae. aegypti can infect multiple humans during one cycle, dramatically amplifying transmission. Ae. aegypti's flight range is limited (usually 50-200 meters from breeding site), but it breeds in domestic/peridomestic containers in close proximity to humans (high human density contact). Ae. albopictus is less anthropophilic (feeds on various hosts), less domesticated, and a less efficient vector. Ae. aegypti's strong preference for human blood and indoor habitation makes it the primary dengue epidemic vector in urban settings."
   },
   {
     id: 44,
-    question: "Dengue Hemorrhagic Fever (DHF) grading per the 1997 WHO classification - Grade III is characterized by:",
+    question: "Integrated Vector Management (IVM) for dengue control, as recommended by WHO, differs from single-method vector control because it:",
     options: [
-      "Fever, hemorrhagic manifestations, thrombocytopenia, and hemoconcentration only",
-      "Circulatory failure with rapid weak pulse, narrow pulse pressure (<20 mmHg) or hypotension, and cold clammy skin",
-      "Profound shock with undetectable blood pressure and pulse",
-      "Severe bleeding requiring blood transfusion"
+      "Relies exclusively on chemical pesticides for maximum vector kill rates",
+      "Combines multiple evidence-based vector control tools (biological, chemical, environmental) with intersectoral collaboration, community participation, and integrated use of resources for cost-effective, sustainable, and ecologically sound management",
+      "Focuses only on larval control methods and eliminates the need for adult mosquito control",
+      "Is exclusively implemented by specialized entomology teams without community involvement"
     ],
     answer: 1,
-    explanation: "1997 WHO DHF Grading: Grade I: Fever, constitutional symptoms, positive tourniquet test, thrombocytopenia, hemoconcentration. Grade II: Grade I + spontaneous bleeding (skin, gums, GI). Grade III: Circulatory failure - rapid weak pulse, narrow pulse pressure (<=20 mmHg) OR hypotension, cold clammy skin, restlessness (incipient shock - also called Dengue Shock Syndrome). Grade IV: Profound shock with undetectable BP and pulse (severe Dengue Shock Syndrome). Grades III and IV = Dengue Shock Syndrome (DSS). Key diagnostic criteria for DHF: fever, hemorrhagic manifestations, thrombocytopenia (<100,000/mm3), objective evidence of plasma leakage (hematocrit rise >=20%, pleural effusion, ascites)."
+    explanation: "Integrated Vector Management (IVM), as defined by WHO (2004/2012), is a rational decision-making process for the optimal use of resources for vector control. Key principles: (1) Evidence-based decision making (selecting interventions based on entomological and epidemiological data); (2) Use of multiple interventions in combination (environmental management: source reduction, water storage modification; biological control: Bti, Bacillus sphaericus, copepods, larvivorous fish; chemical control: larvicides, adulticides used judiciously to minimize resistance and environmental impact); (3) Intersectoral collaboration (health, water, urban planning, education sectors); (4) Community participation and empowerment; (5) Regulatory frameworks. IVM for dengue emphasizes source reduction (community-based container management) as primary strategy, supplemented by targeted insecticide use only when epidemiologically warranted. This reduces reliance on chemicals and insecticide resistance pressure."
   },
   {
     id: 45,
-    question: "In the management of dengue with warning signs (but NO shock), fluid management should follow which principle?",
+    question: "The seasonal pattern of dengue transmission in India is primarily determined by which environmental factors?",
     options: [
-      "Aggressive IV crystalloid resuscitation with 20 mL/kg boluses immediately",
-      "Oral rehydration therapy preferred; IV isotonic crystalloids at maintenance rate with frequent monitoring, titrated to clinical response",
-      "Colloids (albumin/dextran) are preferred over crystalloids for plasma leakage",
-      "Platelet transfusion should be given for platelet count <50,000/mm3"
+      "Temperature only - dengue peaks when temperature exceeds 40 degrees Celsius",
+      "Rainfall and temperature together - peak dengue transmission occurs during and after monsoon season (July-November) when Aedes breeding sites are maximized and temperature remains favorable",
+      "Humidity alone - dengue peaks in dry season when indoor humidity is highest",
+      "Dengue transmission is non-seasonal and occurs uniformly throughout the year in India"
     ],
     answer: 1,
-    explanation: "For dengue WITH warning signs but NO shock: oral rehydration is preferred if tolerated. If IV fluids needed, isotonic crystalloids (Normal saline or Ringer's lactate) are given at maintenance or slightly above maintenance rates (NOT boluses), with careful monitoring of vital signs, hematocrit, urine output, and clinical status every 1-4 hours. Overzealous fluid administration is harmful (can worsen effusions/pulmonary edema once plasma leakage phase ends). Bolus resuscitation is reserved for shock. Colloids are considered only in severe refractory shock. Platelet transfusion is NOT indicated for thrombocytopenia alone without significant bleeding (platelets <10,000 with bleeding, or prophylactic at <10,000 in some guidelines)."
+    explanation: "Dengue in India shows a strong seasonal pattern driven by rainfall and temperature: Peak transmission: July-November coinciding with the monsoon and post-monsoon period. Mechanisms: (1) Rainfall increases breeding sites by filling containers, creating new water pools, and flooding areas; (2) Post-monsoon stagnant water in containers (drums, tires, desert coolers, construction sites) provides ideal Aedes breeding habitat; (3) Temperature during monsoon (25-32 degrees Celsius) is optimal for Ae. aegypti reproduction and viral replication in mosquitoes; (4) Humidity enhances mosquito survival. Low-transmission period: December-February (winter). Some transmission year-round in warmer southern and coastal states. Understanding seasonality is crucial for planning pre-season vector control activities (source reduction campaigns, IRS timing) and healthcare preparedness (blood banks, platelet availability)."
   },
   {
     id: 46,
-    question: "The Breteau Index (BI) is used for Aedes mosquito surveillance. It is defined as:",
+    question: "Community participation is emphasized in dengue control programs. Which evidence-based community-level intervention has shown the greatest effectiveness in reducing Aedes breeding in household containers?",
     options: [
-      "Number of Aedes-positive containers per 100 houses inspected",
-      "Number of Aedes-positive houses per 100 houses inspected",
-      "Number of adult Aedes mosquitoes per house inspected",
-      "Number of larval breeding sites per 100 square meters"
+      "Distributing insect repellent creams to all households in endemic areas",
+      "Community-led source reduction - regular (weekly) inspection and elimination of water-holding containers (emptying, covering, cleaning/scrubbing to remove eggs, or disposal of unnecessary containers)",
+      "Community-organized fogging campaigns with indoor pyrethroid spraying monthly",
+      "Mass administration of dengue vaccines to all community members above age 9"
     ],
-    answer: 0,
-    explanation: "Aedes larval surveillance indices: Breteau Index (BI) = Number of Aedes-positive containers per 100 houses inspected (most epidemiologically significant as it relates containers to a standard unit). Container Index (CI) = (Positive containers / Total containers inspected) x 100. House Index (HI) = (Number of Aedes-positive houses / Total houses inspected) x 100. BI threshold indicating dengue transmission risk: BI >5 is considered significant risk; BI >50 indicates high risk. BI is preferred over CI because it accounts for the number of containers per house and is better correlated with dengue transmission."
+    answer: 1,
+    explanation: "Community-led source reduction - the regular inspection and elimination of water-holding containers at household and community level - is the most effective and sustainable intervention for Aedes control. Evidence: Aedes breeding occurs predominantly in household containers (water storage vessels, desert coolers, flower pot saucers, roof gutters, construction containers). Regular (at minimum weekly) emptying breaks the larval development cycle (Aedes egg-to-adult takes 8-10 days). Additional methods: covering storage containers, scrubbing to remove eggs (Aedes eggs are desiccation-resistant and can survive weeks), using tight-fitting lids. Community-based surveillance (trained volunteers/ASHA workers inspecting households regularly) is more effective than periodic government inspections. This approach does not generate insecticide resistance, is low-cost, and creates sustainable behavior change. Fogging/space spraying has limited effectiveness against larval stages and breeding site reduction."
   },
   {
     id: 47,
-    question: "A 25-year-old returns from a dengue-endemic area with fever for 4 days, severe headache, retro-orbital pain, myalgia, and a maculopapular rash that appeared on Day 3. Platelet count is 85,000/mm3 and hematocrit has risen 22% from baseline. Which of the following BEST characterizes this patient's condition?",
+    question: "The Container Index (CI) threshold above which dengue transmission is considered likely, as used in outbreak investigation and vector control evaluation, is:",
     options: [
-      "Dengue without warning signs - manage as outpatient",
-      "Dengue with warning signs due to hemoconcentration - requires hospital admission and monitoring",
-      "Severe dengue - requires ICU admission immediately",
-      "Classic Dengue Hemorrhagic Fever Grade I only if tourniquet test is positive"
+      "CI greater than 0.1%",
+      "CI greater than 1%",
+      "CI greater than 10%",
+      "CI greater than 25%"
     ],
     answer: 1,
-    explanation: "This patient has dengue with warning signs: the hematocrit rise of 22% (>20%) indicates significant plasma leakage, which is a warning sign and a criterion for DHF in the 1997 classification. Under 2009 WHO classification, hematocrit rise with rapid platelet decline is a warning sign. Thrombocytopenia (platelets 85,000) alone is common in dengue. Warning signs require hospital admission for close monitoring and IV fluid management. This is NOT severe dengue yet (no shock, no severe bleeding, no organ impairment). ICU is not immediately required without shock or severe complications. The patient needs careful fluid titration during the critical plasma leakage phase (Day 3-6)."
+    explanation: "Container Index (CI) = (Number of Aedes-positive containers / Total containers inspected) x 100. Epidemiological thresholds for dengue transmission risk: CI > 1% indicates presence of Aedes breeding and risk of dengue transmission. The WHO/PAHO threshold of CI > 1% is the standard benchmark used in outbreak investigations to determine whether vector density is sufficient to sustain dengue transmission. At CI > 1%, targeted vector control interventions are warranted. However, CI alone does not predict dengue outbreak magnitude as well as Breteau Index (BI), which is considered more epidemiologically informative because it relates positive containers to houses (accounting for container density per house). During outbreak response, entomological surveys calculate HI, CI, and BI to assess vector risk and guide intervention priorities."
   },
   {
     id: 48,
-    question: "Which of the following dengue control measures specifically targets LARVAL stages of Aedes aegypti?",
+    question: "In dengue outbreak investigation, the epidemic curve (epi curve) shape provides information about the mode of transmission. A point-source epidemic curve for dengue would be characterized by:",
     options: [
-      "Indoor residual spraying with insecticides",
-      "Use of Bacillus thuringiensis israelensis (Bti) in water containers",
-      "Adult mosquito traps",
-      "Wearing protective clothing during daytime"
+      "A gradually rising curve over many months with a plateau, suggesting endemic transmission",
+      "A sharp peak over a period of one incubation period (approximately 4-10 days) suggesting all cases were exposed to a common source at approximately the same time",
+      "Multiple peaks separated by one incubation period, suggesting propagated transmission through person-to-person spread",
+      "A flat, continuous curve lasting years with no discernible peak"
     ],
     answer: 1,
-    explanation: "Bacillus thuringiensis israelensis (Bti) is a biological larvicide - it produces toxins that kill mosquito larvae when ingested. It is used in water containers and other Aedes breeding sites and is safe for humans and non-target organisms. Other larval control measures include: Temephos (abate) - chemical larvicide for water containers; source reduction (emptying/covering/removing water containers); fish (Gambusia, guppy) for larger water bodies. Indoor Residual Spraying (IRS) and space spraying target ADULT mosquitoes. Personal protection measures (clothing, repellents, nets) prevent bites. Sterile Insect Technique (SIT) and Wolbachia-infected Aedes are newer biocontrol strategies."
+    explanation: "Epidemic curve (epi curve) interpretation: Point source outbreak: all cases exposed to a common source within a short period (one incubation period). For dengue (incubation 4-10 days), a point source epi curve shows a sharp peak of cases clustered within approximately 4-10 days. Example: a contaminated batch of blood transfusion causing dengue in multiple patients simultaneously. Propagated/person-to-person transmission (not applicable to dengue as it is not directly person-to-person): multiple peaks. Vector-borne transmission (typical dengue): shows features of both - cases cluster in time and space around breeding sites but spread gradually as more mosquitoes become infected - typically a broader peak with 1-3 month duration. The epi curve combined with case mapping (spot map) helps identify index cases, common source exposures, and transmission chains during dengue outbreak investigation."
   },
   {
     id: 49,
-    question: "Dengue Shock Syndrome (DSS) is characterized by which hemodynamic finding that distinguishes it from other causes of shock?",
+    question: "The WHO 2009 dengue classification replaced the 1997 WHO classification (DHF grading I-IV). The primary reason for the WHO revision was:",
     options: [
-      "Low diastolic pressure with wide pulse pressure",
-      "High systolic pressure with bounding pulse",
-      "Narrow pulse pressure (<=20 mmHg) or hypotension due to plasma leakage into extravascular compartment",
-      "Normal blood pressure with bradycardia"
+      "The old classification was too simple and did not include enough severity grades",
+      "The DHF grading required specific laboratory criteria (thrombocytopenia <100,000 and hemoconcentration >20%) that were difficult to measure in resource-limited settings, and many severe dengue cases were misclassified; the new classification is more practical for clinical management decision-making",
+      "The 1997 classification did not recognize dengue shock syndrome as a clinical entity",
+      "The new classification was created specifically for dengue vaccine clinical trials"
     ],
-    answer: 2,
-    explanation: "Dengue Shock Syndrome (DSS) is caused by massive PLASMA LEAKAGE (not blood loss) into the extravascular compartment (pleural cavity, peritoneum) during the critical phase. This reduces intravascular volume, leading to compensated shock initially characterized by NARROW PULSE PRESSURE (<=20 mmHg) - the diastolic pressure rises (peripheral vasoconstriction) while systolic falls, compressing the pulse pressure. This is unlike hemorrhagic shock (wide pulse pressure initially) or septic shock (initially wide pulse pressure from vasodilation). Tachycardia, cold clammy skin, and prolonged capillary refill time also occur. Hemoconcentration (rising hematocrit) confirms plasma leakage."
+    answer: 1,
+    explanation: "The 2009 WHO dengue classification revision was driven by limitations of the 1997 DHF classification: (1) Strict laboratory criteria for DHF (platelet count <100,000/mm3 AND hematocrit rise >20%) missed many patients with plasma leakage and severe dengue who had incomplete criteria; (2) Classification was not guiding clinical management decisions well - many doctors were uncertain about which patients needed hospitalization; (3) Spectrum of disease was broader than four grades captured; (4) Different application of criteria across Asia and Americas led to inconsistency in dengue surveillance data comparability. The 2009 classification (dengue without warning signs / dengue with warning signs / severe dengue) is action-oriented - it directly guides decisions about outpatient vs. inpatient care and close monitoring. Both systems are still used in surveillance and research, which sometimes creates confusion."
   },
   {
     id: 50,
-    question: "A researcher is comparing dengue control strategies. Which statement about dengue vaccine (Dengvaxia/CYD-TDV) is CORRECT regarding current WHO recommendations?",
+    question: "In assessing the burden of dengue for public health purposes, why do official case notification data significantly underestimate true dengue incidence in India?",
     options: [
-      "Dengvaxia is recommended for all children aged 9-45 years in endemic areas regardless of prior dengue exposure",
-      "Dengvaxia should only be used in individuals with confirmed prior dengue infection (seropositive) as it increases risk of severe dengue in seronegative individuals",
-      "Dengvaxia provides protection against all 4 serotypes equally and can replace vector control measures",
-      "Dengvaxia is contraindicated in all immunocompromised individuals and is not approved for use"
+      "Dengue is not a reportable disease in India, so no cases are officially notified",
+      "Multiple levels of under-detection: many infections are asymptomatic or mild (not seeking care), healthcare facilities do not test all febrile patients for dengue, confirmed cases are not always notified to IDSP, and private sector reporting is incomplete - the true dengue burden is estimated to be 10-100 times higher than official figures",
+      "India's laboratory capacity can test 100% of dengue suspected cases, so underestimation is not a problem",
+      "Dengue underestimation only occurs in rural areas; urban surveillance captures nearly all cases"
     ],
     answer: 1,
-    explanation: "Dengvaxia (CYD-TDV, Sanofi Pasteur) is a live attenuated tetravalent dengue vaccine. WHO 2018 position: Dengvaxia should ONLY be given to individuals with DOCUMENTED PRIOR DENGUE INFECTION (seropositive) because in seronegative individuals (no prior dengue), the vaccine acts as a 'primary infection,' and subsequent natural dengue infection causes enhanced severe disease (similar to ADE in secondary infection). Pre-vaccination screening for prior dengue exposure is essential. WHO recommends a test-and-vaccinate strategy. The vaccine does not provide equal protection against all serotypes (lower efficacy against DENV-1 and DENV-2 in some studies). Vector control remains essential."
+    explanation: "Official dengue case notifications in India represent only the tip of the 'dengue iceberg' due to multiple layers of under-detection and underreporting: (1) Asymptomatic infections: approximately 75-80% of DENV infections are asymptomatic or subclinical and never seek healthcare; (2) Mild dengue: many febrile patients with dengue self-medicate or visit informal healthcare providers without dengue testing; (3) Testing gaps: not all febrile patients accessing healthcare are tested for dengue; (4) Passive surveillance limitations: cases must be reported by healthcare providers, with poor private sector compliance; (5) Laboratory confirmation requirements: many peripheral facilities lack NS1/serology testing; (6) IDSP reporting gaps at facility and district levels. Studies using capture-recapture methods, seroprevalence surveys, and health utilization data estimate true dengue incidence in India at 200-500 cases per 100,000 population - far exceeding notification rates of approximately 5-15 per 100,000. This underestimation affects resource allocation and program evaluation."
   }
 ];
 

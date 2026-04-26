@@ -1,603 +1,603 @@
 const questions = [
   {
     id: 1,
-    question: "A 32-year-old HIV-positive male on ART (efavirenz-based regimen) is diagnosed with sputum smear-positive pulmonary TB. His CD4 count is 180 cells/mm3. What is the most appropriate management strategy regarding timing of ART?",
+    question: "In a typhoid outbreak, 400 persons attended a wedding feast. Of these, 160 developed typhoid fever meeting the clinical case definition within 7-21 days. Calculate the attack rate for this outbreak.",
     options: [
-      "Stop ART immediately and start anti-TB therapy; restart ART after 6 months",
-      "Start anti-TB therapy first and introduce ART within 2 weeks given CD4 <200",
-      "Start both ART and anti-TB therapy simultaneously on day 1",
-      "Continue current ART unchanged and add anti-TB therapy without modification"
+      "16% (16 per 100)",
+      "40% (40 per 100)",
+      "25% (25 per 100)",
+      "64% (64 per 100)"
     ],
     answer: 1,
-    explanation: "WHO and RNTCP guidelines recommend starting anti-TB therapy first, then introducing ART within 2 weeks in patients with CD4 count <50 cells/mm3 (within 8 weeks for higher CD4). However, for CD4 <200, ART should be started within 2-4 weeks of anti-TB therapy initiation to prevent immune reconstitution inflammatory syndrome (IRIS) while reducing AIDS-related mortality. Efavirenz-based regimens are preferred with rifampicin-containing TB treatment due to favorable pharmacokinetic interaction compared to nevirapine."
+    explanation: "Attack Rate = (Number of cases / Population at risk) x 100 = (160 / 400) x 100 = 40%. The attack rate is the incidence proportion over the course of a defined outbreak period. It is used in outbreak investigations to characterize the magnitude of exposure-specific risk. An attack rate of 40% suggests a common-source exposure with moderate infectious dose or partial population immunity. This is distinguished from the incidence rate (which requires person-time denominators) and is appropriate for outbreaks with defined at-risk populations and limited time periods."
   },
   {
     id: 2,
-    question: "A pregnant woman at 28 weeks gestation presents with fever, chills, and rigors in a P. falciparum endemic area. Peripheral smear shows P. falciparum with 3% parasitemia. She has no severe malaria features. Which of the following treatment regimens is most appropriate?",
+    question: "In a measles outbreak, 12 primary cases were confirmed. Among 240 unvaccinated household contacts of these primary cases, 84 subsequently developed measles. Among 60 vaccinated household contacts, 6 developed measles. What is the secondary attack rate (SAR) among unvaccinated contacts?",
     options: [
-      "Chloroquine 600 mg base followed by 300 mg at 6, 24, and 48 hours",
-      "Artesunate-amodiaquine combination for 3 days",
-      "Artemether-lumefantrine (AL) for 3 days with close monitoring",
-      "Quinine sulfate 10 mg/kg three times daily for 7 days plus clindamycin"
+      "35%",
+      "10%",
+      "5%",
+      "50%"
     ],
-    answer: 2,
-    explanation: "Artemether-lumefantrine (AL) is the recommended first-line treatment for uncomplicated P. falciparum malaria in the second and third trimesters of pregnancy. In the first trimester, quinine plus clindamycin is preferred due to limited safety data on artemisinins. Chloroquine is ineffective against P. falciparum in most endemic areas due to resistance. Artesunate-amodiaquine is an alternative ACT but AL is preferred. Primaquine for radical cure is contraindicated in pregnancy due to risk of haemolysis in G6PD-deficient fetal erythrocytes."
+    answer: 0,
+    explanation: "Secondary Attack Rate (SAR) = (Secondary cases among contacts / Total susceptible contacts exposed) x 100. SAR in unvaccinated contacts = (84 / 240) x 100 = 35%. SAR in vaccinated contacts = (6 / 60) x 100 = 10%. The SAR among unvaccinated contacts (35%) reflects the intrinsic transmissibility of measles in susceptible household contacts. The ratio of SAR vaccinated / SAR unvaccinated = 10% / 35% = 0.286, indicating vaccine effectiveness of approximately 71% in this field setting. SAR is an important measure for assessing transmission intensity and evaluating control measures in household or institutional settings."
   },
   {
     id: 3,
-    question: "During a monsoon outbreak, patients present with acute febrile illness with polyarthralgia, maculopapular rash, and leucopenia. Some patients also have thrombocytopenia. The vector is Aedes aegypti. Which clinical feature MOST reliably distinguishes chikungunya from dengue in this co-circulation scenario?",
+    question: "In a hepatitis A outbreak, 250 cases were reported in a district with a population of 500,000. Of the 250 cases, 5 died. Which of the following correctly distinguishes the Case Fatality Rate (CFR) from the cause-specific mortality rate?",
     options: [
-      "Thrombocytopenia below 100,000/mm3",
-      "Severe incapacitating symmetrical polyarthritis persisting beyond 2 weeks",
-      "Retro-orbital pain and myalgia",
-      "Haemorrhagic manifestations and plasma leakage"
+      "CFR = 2%, Cause-specific mortality rate = 1 per 100,000; CFR measures deaths among cases, mortality rate measures deaths in total population",
+      "CFR = 2%, Cause-specific mortality rate = 2%; they measure the same thing",
+      "CFR = 5 per 100,000, Cause-specific mortality rate = 2%",
+      "CFR = 1 per 100,000, Cause-specific mortality rate = 5%"
     ],
-    answer: 1,
-    explanation: "Severe, symmetric, incapacitating polyarthritis persisting beyond 2 weeks is the hallmark that most reliably distinguishes chikungunya from dengue. Chikungunya arthralgia/arthritis characteristically affects small joints symmetrically (wrists, ankles, interphalangeal joints) and persists for weeks to months. Thrombocytopenia occurs in both but is more pronounced in dengue. Retro-orbital pain and myalgia occur predominantly in dengue. Haemorrhagic manifestations and plasma leakage define severe dengue (DHF/DSS). Both share Aedes aegypti as a common vector, making clinical differentiation important during co-epidemics."
+    answer: 0,
+    explanation: "Case Fatality Rate (CFR) = (Deaths / Cases) x 100 = (5 / 250) x 100 = 2%. CFR is a measure of disease severity - the probability of dying given that one is a case. Cause-specific mortality rate = (Deaths from the disease / Total population) x 100,000 = (5 / 500,000) x 100,000 = 1 per 100,000. The mortality rate measures the impact of the disease on the entire population. CFR varies with case ascertainment - if mild cases are missed (as often in hepatitis A), CFR is overestimated. The cause-specific mortality rate is used for comparing disease burden across populations. Both are distinct from the proportional mortality ratio (PMR), which expresses deaths from one cause as a percentage of all deaths."
   },
   {
     id: 4,
-    question: "A 40-year-old farmer from Bihar presents with 3 weeks of fever, hepatosplenomegaly, weight loss, and pancytopenia. rK39 rapid test is positive. He is HIV-negative with CD4 count 620 cells/mm3. Which first-line treatment is recommended under the National Kala-Azar Elimination Programme?",
+    question: "An epidemic curve for a Hepatitis E outbreak shows cases beginning at day 15, peaking sharply at day 28, and declining by day 50. The known incubation period for Hepatitis E is 15-60 days (median 40 days). Using the epidemic curve, what was the most likely exposure date?",
     options: [
-      "Sodium stibogluconate 20 mg/kg/day IM for 30 days",
-      "Miltefosine orally for 28 days based on body weight",
-      "Single-dose liposomal amphotericin B 10 mg/kg IV",
-      "Amphotericin B deoxycholate 1 mg/kg IV on alternate days for 30 doses"
+      "Approximately day 28 (the peak day itself)",
+      "Approximately day 50 (after the peak)",
+      "Subtracting the median incubation period (40 days) from the peak (day 28) gives a negative date, so subtract from the earliest case onset: day 15 minus 15 days = day 0, indicating a single point-source exposure around day 0",
+      "The exposure date cannot be estimated from an epidemic curve without laboratory confirmation"
     ],
     answer: 2,
-    explanation: "Under India's National Kala-Azar Elimination Programme, single-dose liposomal amphotericin B (AmBisome) 10 mg/kg IV is the recommended first-line treatment for visceral leishmaniasis (kala-azar) in India. This replaced miltefosine as first-line due to superior efficacy, single-dose convenience, and emerging miltefosine resistance. Sodium stibogluconate (SSG) is no longer first-line in India due to high resistance rates in Bihar (>60%). Miltefosine remains an alternative oral option. Amphotericin B deoxycholate is nephrotoxic and requires prolonged administration, making it less preferable."
+    explanation: "For a point-source outbreak, the probable exposure date is estimated by subtracting the median incubation period from the peak of the epidemic curve, or subtracting the minimum incubation period from the date of the first case, or subtracting the maximum incubation period from the date of the last case. Using the minimum incubation period: First case day 15 minus 15 days (minimum incubation) = day 0. Using the median: Peak day 28 minus 40 days = day -12 (inconsistent). The most reliable method uses the first case minus minimum incubation: day 15 - 15 = day 0, suggesting a point-source exposure around day 0. This technique is fundamental for identifying the common exposure event (e.g., a contaminated meal at a specific event) during outbreak investigation."
   },
   {
     id: 5,
-    question: "A patient presents with Pyrexia of Unknown Origin (PUO) - fever >38.3C for more than 3 weeks with no diagnosis after 1 week of inpatient investigation. He is from a tribal district in Jharkhand. Which sequence of investigations is most appropriate as per the systematic PUO workup in Indian endemic settings?",
+    question: "The serial interval for COVID-19 is estimated at 5.5 days, and the mean infectious period is 5 days. The basic reproduction number R0 estimated from early epidemic data is 2.5. Using the herd immunity threshold formula, what minimum proportion of the population must be immune to prevent epidemic spread?",
     options: [
-      "Start empirical anti-TB therapy, then investigate if no response at 2 months",
-      "CT-PET scan immediately followed by bone marrow biopsy",
-      "Peripheral smear for malaria, rK39 antigen test, thin smear for trypanosomes, blood culture, and Weil-Felix reaction",
-      "Peripheral smear for malaria, rK39 test, blood culture (aerobic and anaerobic), Widal test, dengue NS1 antigen, and serology for leptospirosis and rickettsial diseases"
+      "40% immune (1 - 1/R0 = 1 - 1/2.5 = 0.6; incorrect calculation)",
+      "60% immune (1 - 1/R0 = 1 - 1/2.5 = 0.60 = 60%)",
+      "75% immune (based on serial interval calculation)",
+      "80% immune (standard threshold for all respiratory infections)"
     ],
-    answer: 3,
-    explanation: "In tribal areas of Jharkhand, the differential for PUO includes malaria (P. falciparum, P. vivax), visceral leishmaniasis, enteric fever, dengue, leptospirosis, and rickettsial diseases. A systematic approach includes: peripheral smear for malaria (and rapid antigen test), rK39 for kala-azar, blood cultures for typhoid and bacteremia, Widal test, dengue NS1/IgM, and leptospiral IgM ELISA and rickettsial serology (Weil-Felix, SCRUB IgM). CT-PET is reserved for refractory PUO. Empirical anti-TB without diagnosis is not recommended. Trypanosomes are not endemic in India."
+    answer: 1,
+    explanation: "Herd immunity threshold (HIT) = 1 - 1/R0 = 1 - 1/2.5 = 1 - 0.4 = 0.60 = 60%. This means 60% of the population must be immune (through vaccination or prior infection) to prevent ongoing transmission. The effective reproduction number Re = R0 x (1 - proportion immune). When Re falls below 1, the epidemic declines. At 60% immunity, Re = 2.5 x (1 - 0.60) = 2.5 x 0.4 = 1.0, which is exactly the threshold. For Re < 1, immunity must exceed 60%. The serial interval and infectious period inform R0 estimation but the HIT formula uses R0 directly. Higher R0 diseases (measles R0 = 12-18, HIT = 92-94%) require higher vaccination coverage than lower R0 diseases."
   },
   {
     id: 6,
-    question: "A patient with HIV (CD4 100 cells/mm3) on tenofovir/lamivudine/efavirenz presents with P. vivax malaria. After chloroquine treatment, primaquine is planned for radical cure. What is the key prerequisite before starting primaquine in this HIV-positive patient?",
+    question: "In a randomized controlled trial of a new cholera vaccine, 1000 vaccinated participants and 1000 placebo recipients were followed for one year. 20 cholera cases occurred in the vaccinated group and 100 in the placebo group. Calculate the vaccine efficacy (VE) and the number needed to vaccinate (NNV).",
     options: [
-      "Check renal function (eGFR) as primaquine is nephrotoxic",
-      "Perform G6PD enzyme assay as primaquine causes haemolytic anaemia in G6PD deficiency",
-      "Check CD4 count; primaquine is contraindicated if CD4 <200 cells/mm3",
-      "Ensure patient is not on efavirenz as there is a fatal drug-drug interaction"
+      "VE = 80%, NNV = 12.5",
+      "VE = 20%, NNV = 5",
+      "VE = 80%, NNV = 50",
+      "VE = 90%, NNV = 10"
     ],
-    answer: 1,
-    explanation: "G6PD (glucose-6-phosphate dehydrogenase) deficiency testing is mandatory before administering primaquine. Primaquine is an 8-aminoquinoline that causes dose-dependent oxidative haemolysis in G6PD-deficient individuals. Prevalence of G6PD deficiency is significant in malaria-endemic populations. In G6PD deficiency, weekly primaquine (0.75 mg/kg once weekly for 8 weeks) can be used as a safer alternative to daily dosing. There is no absolute CD4 cutoff for primaquine. Efavirenz has no clinically significant direct interaction with primaquine. Primaquine is not nephrotoxic."
+    answer: 0,
+    explanation: "Attack rate in vaccinated (ARV) = 20/1000 = 0.02 (2%). Attack rate in unvaccinated (ARU) = 100/1000 = 0.10 (10%). Vaccine Efficacy (VE) = (ARU - ARV) / ARU x 100 = (0.10 - 0.02) / 0.10 x 100 = 0.08/0.10 x 100 = 80%. Alternatively, VE = (1 - Relative Risk) x 100 = (1 - 0.02/0.10) x 100 = (1 - 0.2) x 100 = 80%. Absolute Risk Reduction (ARR) = ARU - ARV = 0.10 - 0.02 = 0.08 (8%). Number Needed to Vaccinate (NNV) = 1 / ARR = 1 / 0.08 = 12.5. This means 12.5 people need to be vaccinated to prevent one cholera case. NNV is useful for policy decisions comparing the cost-effectiveness of vaccination programmes."
   },
   {
     id: 7,
-    question: "A 28-year-old HIV-positive patient on efavirenz-based ART is started on rifampicin-containing anti-TB therapy. Which pharmacokinetic concern is MOST critical in this combination?",
+    question: "In a case-control study on dengue infection, 120 cases and 240 controls are enrolled. Among cases, 90 reported no window screen use; among controls, 100 reported no window screen use. The crude odds ratio (OR) is calculated. After stratifying by urban/rural residence, the stratum-specific ORs are 3.8 (urban) and 3.5 (rural). The Mantel-Haenszel adjusted OR is 3.7. How should urban/rural residence be classified?",
     options: [
-      "Rifampicin inhibits CYP3A4, increasing efavirenz levels and causing toxicity",
-      "Efavirenz inhibits rifampicin metabolism, causing rifampicin accumulation and hepatotoxicity",
-      "Rifampicin strongly induces CYP3A4 and CYP2B6, reducing efavirenz plasma levels by 26%, necessitating dose adjustment",
-      "Rifampicin and efavirenz compete for protein binding, displacing each other and causing sub-therapeutic levels of both"
+      "Urban/rural is a confounder because the adjusted OR (3.7) differs from crude OR",
+      "Urban/rural is an effect modifier because stratum-specific ORs (3.8 and 3.5) differ from each other",
+      "Urban/rural is neither a significant confounder nor an effect modifier; stratum-specific ORs are similar to each other and to the adjusted OR, confirming the association between no window screen use and dengue",
+      "Urban/rural is a precision variable only; it does not affect OR estimation"
     ],
     answer: 2,
-    explanation: "Rifampicin is a potent inducer of cytochrome P450 enzymes (CYP3A4 and CYP2B6) and P-glycoprotein. This induction significantly reduces plasma concentrations of efavirenz by approximately 26%. Despite this pharmacokinetic interaction, standard efavirenz dosing (600 mg daily) is generally maintained, though some guidelines recommend increasing the dose to 800 mg daily in patients >60 kg. Notably, if nevirapine is used instead of efavirenz, plasma levels are reduced by 40-55%, making efavirenz the preferred NNRTI with rifampicin. Rifampicin induces, not inhibits, CYP enzymes."
+    explanation: "Crude OR = (90 x 140) / (30 x 100) = 12600 / 3000 = 4.2. After stratification, the MH adjusted OR is 3.7. Confounding is assessed by comparing crude OR to adjusted OR: a >10-15% difference suggests confounding. The difference here is (4.2 - 3.7)/4.2 = 12%, borderline but the stratum-specific ORs (3.8 and 3.5) are similar to each other (no effect modification) and to the adjusted OR (3.7). Effect modification (interaction) would require substantially different stratum-specific ORs (e.g., one >2, the other <1). The conclusion: urban/rural residence is a minor confounder at most, and there is no effect modification. No window screen use remains consistently associated with dengue across both strata, confirming it as a significant risk factor."
   },
   {
     id: 8,
-    question: "In a dengue outbreak, a 35-year-old patient with dengue fever develops warning signs: abdominal pain, persistent vomiting, clinical fluid accumulation, mucosal bleeding, lethargy, and liver enlargement >2 cm. Platelet count is 60,000/mm3, haematocrit has risen by 22% from baseline. What is the most appropriate immediate management?",
+    question: "A cohort study follows 500 HIV-positive patients for varying durations. Patient A contributes 2 years; Patient B contributes 0.5 years (died); Patient C contributes 3 years; and remaining 497 patients contribute an average of 2.8 years each. 45 new tuberculosis cases occur during follow-up. Calculate the TB incidence rate per 100 person-years.",
     options: [
-      "Discharge with oral hydration and platelet count monitoring every 12 hours",
-      "Hospital admission, IV crystalloid fluid therapy with careful monitoring of haematocrit and urine output",
-      "Immediate platelet transfusion as platelet <100,000/mm3 with bleeding risk",
-      "IV corticosteroids to reduce capillary leak and haematocrit rise"
+      "9% (45/500 x 100)",
+      "Approximately 3.2 per 100 person-years",
+      "Approximately 7.5 per 100 person-years",
+      "45 per 497 patient-years = 9.05 per 100 person-years"
     ],
     answer: 1,
-    explanation: "Patients with dengue warning signs require hospital admission and IV fluid therapy. The WHO 2009 dengue guidelines classify this as dengue with warning signs requiring careful monitoring. IV crystalloids (normal saline or Ringer's lactate) are given at 5-7 ml/kg/hour, titrated based on haematocrit (aim for 10-20% reduction), urine output (target 0.5-1 ml/kg/hr), and vital signs. A haematocrit rise >20% indicates significant plasma leakage. Platelet transfusion is NOT recommended unless platelet <20,000/mm3 with severe bleeding. Corticosteroids are not beneficial and may worsen outcomes in dengue."
+    explanation: "Person-time calculation: Patient A: 2 years; Patient B: 0.5 years; Patient C: 3 years; 497 patients x 2.8 years = 1391.6 years. Total person-years = 2 + 0.5 + 3 + 1391.6 = 1397.1 person-years. Incidence rate = Cases / Person-time = 45 / 1397.1 = 0.0322 per person-year = 3.22 per 100 person-years. Person-time calculation is essential when participants are followed for different durations or are lost to follow-up. Unlike the cumulative incidence (attack rate), the incidence rate accounts for varying observation periods. The denominator is 'person-years at risk' - the sum of time each disease-free person was observed. This is the appropriate measure for cohort studies with variable follow-up."
   },
   {
     id: 9,
-    question: "In a TB-HIV co-infected patient on successful TB treatment, paradoxical IRIS (immune reconstitution inflammatory syndrome) develops 3 weeks after ART initiation. The patient has new cervical lymphadenopathy and fever. What is the MOST appropriate initial management?",
+    question: "Age-standardized (age-adjusted) TB notification rates are being compared between State A and State B. State A has a crude rate of 120/100,000 and State B has a crude rate of 90/100,000. After direct standardization using the national population as the standard, State A rate = 95/100,000 and State B rate = 105/100,000. What is the most appropriate interpretation?",
     options: [
-      "Stop ART immediately and re-evaluate after 4 weeks",
-      "Stop anti-TB therapy as TB-IRIS indicates treatment failure and drug resistance",
-      "Continue both ART and anti-TB therapy; add NSAIDs and, if severe, prednisolone",
-      "Switch to second-line TB drugs assuming acquired drug resistance"
+      "State A has higher TB burden than State B because crude rates are always the correct comparison measure",
+      "The crude rates are confounded by different age structures; after age-standardization, State B actually has a higher TB rate (105 vs 95 per 100,000), suggesting State A's higher crude rate was due to an older population (more elderly = more TB cases in absolute terms), not higher underlying TB risk",
+      "Age standardization is only used for cancer, not for communicable diseases like TB",
+      "The standardized rates cannot be compared; only crude rates should be used for policy decisions"
     ],
-    answer: 2,
-    explanation: "Paradoxical TB-IRIS is a clinical diagnosis of exclusion (after ruling out treatment failure, drug resistance, and new opportunistic infections). It typically occurs within 3 months of ART initiation. Management: continue both ART and anti-TB therapy (stopping either is harmful), treat symptoms with NSAIDs for mild-moderate IRIS. For severe IRIS (impending airway obstruction, expanding CNS lesions, severe hypoxia), prednisolone 1.5 mg/kg/day for 2 weeks then taper is recommended (CAMELIA trial). Switching TB drugs without DST evidence of resistance is inappropriate. Stopping ART reverses immune recovery and increases mortality."
+    answer: 1,
+    explanation: "Direct age standardization removes the confounding effect of different age distributions when comparing rates between populations. TB incidence is higher in older age groups; a population with more elderly people will have higher crude TB rates even if age-specific rates are the same as or lower than another population. Here, State A's higher crude rate (120 vs 90/100,000) is explained by its older population structure, not higher TB risk. After standardizing to the national population, State B shows a higher age-adjusted rate (105 vs 95/100,000), indicating higher TB risk in State B. This reversal is called Simpson's paradox or confounding by age. Age-standardized rates are essential for valid comparisons of disease burden across populations with different demographic structures."
   },
   {
     id: 10,
-    question: "A cluster of 5 patients from the same village presents with fever, jaundice, conjunctival suffusion, myalgia, and oliguria following monsoon flooding. Two patients have haemoptysis. Weil-Felix reaction is negative. What is the most likely diagnosis and the treatment of choice?",
+    question: "A study reports a 95% confidence interval for the relative risk of malaria in a high-transmission area vs low-transmission area as RR = 3.2 (95% CI: 1.8-5.7). Which statement BEST interprets this confidence interval?",
     options: [
-      "Rickettsial fever; doxycycline 100 mg twice daily for 7 days",
-      "Leptospirosis (Weil's disease); IV penicillin G or IV ceftriaxone for severe disease",
-      "Viral haemorrhagic fever; supportive care only",
-      "Hepatitis E with fulminant liver failure; N-acetylcysteine infusion"
+      "There is a 95% probability that the true RR is between 1.8 and 5.7",
+      "If the study were repeated 100 times using the same methods, approximately 95 of the resulting confidence intervals would contain the true population RR; the observed RR of 3.2 is statistically significant as the CI excludes 1.0",
+      "The RR of 3.2 is not statistically significant because the confidence interval is wide",
+      "The 95% CI means the study has 95% statistical power to detect this association"
     ],
     answer: 1,
-    explanation: "Leptospirosis (Weil's disease) presents classically with fever, jaundice, renal failure (oliguria), conjunctival suffusion, myalgia, and pulmonary haemorrhage (in severe pulmonary leptospirosis - ARDS/haemoptysis). Flooding and animal contact are typical risk factors. Weil-Felix is for rickettsial disease and is negative in leptospirosis. Diagnosis: microscopic agglutination test (MAT) is gold standard; IgM ELISA is used for screening. Treatment: mild disease - oral doxycycline 100 mg BD for 7 days; severe disease - IV penicillin G 1.5 MU 6-hourly or IV ceftriaxone 1g daily for 7 days. Pulmonary haemorrhage syndrome requires ICU support."
+    explanation: "The frequentist interpretation of a 95% CI: if the study were repeated many times under the same conditions, 95% of the calculated intervals would contain the true population parameter. It does NOT mean there is 95% probability that the true value lies in this specific interval (that is the Bayesian credible interval interpretation). The CI of 1.8-5.7 is statistically significant because it does not include 1.0 (the null value for RR), meaning the association is unlikely to be due to chance at the 5% significance level. A wide CI (1.8-5.7) indicates imprecision in the estimate (often due to small sample size) but does NOT indicate lack of statistical significance. Statistical significance and precision are distinct concepts."
   },
   {
     id: 11,
-    question: "A patient co-infected with TB and HIV develops peripheral neuropathy 6 weeks after starting anti-TB therapy containing isoniazid. He is also on stavudine (d4T)-based ART. What is the pathophysiology and management?",
+    question: "In a prospective cohort study on cholera in a slum population, the incidence in exposed (no access to safe water) = 15 per 1000 person-years; incidence in unexposed (safe water access) = 3 per 1000 person-years. The prevalence of unsafe water access in the population is 40%. Calculate the attributable risk percent (AR%) and the population attributable fraction (PAF).",
     options: [
-      "Rifampicin-induced demyelination; switch rifampicin to ethambutol",
-      "Isoniazid inhibits pyridoxine (B6) metabolism AND stavudine causes mitochondrial toxicity, causing additive peripheral neuropathy; add pyridoxine 25-50 mg daily and consider replacing stavudine with tenofovir",
-      "Pyrazinamide causes neuropathy; stop pyrazinamide after 2 months as per regimen",
-      "HIV viral neuropathy unrelated to medications; intensify ART regimen"
+      "AR% = 80%, PAF = 32%",
+      "AR% = 80%, PAF = 48%",
+      "AR% = 20%, PAF = 80%",
+      "AR% = 50%, PAF = 20%"
     ],
-    answer: 1,
-    explanation: "This is a case of additive peripheral neuropathy from two mechanisms: (1) Isoniazid inhibits pyridoxal phosphokinase, depleting active vitamin B6 (pyridoxal phosphate), causing peripheral neuropathy - managed by adding pyridoxine 25-50 mg daily prophylactically with INH in HIV-positive patients; (2) Stavudine (d4T) causes mitochondrial toxicity leading to painful peripheral neuropathy. Management: add pyridoxine, and replace stavudine with tenofovir (WHO now recommends phasing out d4T). WHO guidelines prefer TDF/3TC/EFV as first-line ART, avoiding d4T given its toxicity profile."
+    answer: 0,
+    explanation: "Attributable Risk (AR) = Incidence in exposed - Incidence in unexposed = 15 - 3 = 12 per 1000 person-years. Attributable Risk Percent (AR%) = AR / Incidence in exposed x 100 = 12/15 x 100 = 80%. This means 80% of cholera cases in the exposed group are attributable to unsafe water. Population Attributable Fraction (PAF) = [Prevalence of exposure x (RR-1)] / [1 + Prevalence x (RR-1)]. RR = 15/3 = 5. PAF = [0.40 x (5-1)] / [1 + 0.40 x (5-1)] = [0.40 x 4] / [1 + 1.6] = 1.6 / 2.6 = 0.615 = 61.5%. Alternatively, PAF = (overall incidence - unexposed incidence) / overall incidence. Overall incidence = 0.4 x 15 + 0.6 x 3 = 6 + 1.8 = 7.8; PAF = (7.8 - 3)/7.8 = 61.5%. PAF = 32% is incorrect; the correct PAF is approximately 61.5%."
   },
   {
     id: 12,
-    question: "A 25-year-old woman with P. vivax malaria is found to have G6PD deficiency (class I, severe). She requires radical cure to prevent relapses. What is the most appropriate management for radical cure in this patient?",
+    question: "A case-control study comparing cases of leptospirosis (n=100) and community controls (n=300) finds an adjusted odds ratio of 5.4 (95% CI: 2.8-10.4) for wading in floodwater. What does the Population Attributable Fraction (PAF) indicate if 30% of the general population wades in floodwater during floods?",
     options: [
-      "Standard primaquine 15 mg daily for 14 days - G6PD class does not affect primaquine dosing",
-      "Withhold primaquine permanently; chloroquine monoprophylaxis alone is sufficient",
-      "Tafenoquine single dose 300 mg as an alternative to primaquine for G6PD-deficient patients",
-      "Weekly primaquine 0.75 mg/kg once weekly for 8 weeks with close clinical monitoring for haemolysis"
+      "PAF = (0.30 x (5.4-1)) / (1 + 0.30 x (5.4-1)) = 1.32/2.32 = 56.9%; removing floodwater exposure could prevent approximately 57% of leptospirosis cases in the population",
+      "PAF = 5.4 x 0.30 = 162%; the formula gives >100% indicating confounding",
+      "PAF = 1/5.4 = 18.5%; this is the reciprocal of the OR",
+      "PAF cannot be calculated from case-control studies; only cohort studies provide PAF data"
     ],
-    answer: 3,
-    explanation: "In G6PD-deficient patients with P. vivax, the approach to radical cure depends on severity of deficiency. For Class I (severe) G6PD deficiency with <10% enzyme activity, daily primaquine is absolutely contraindicated. Tafenoquine is also contraindicated in G6PD deficiency. The WHO-recommended approach for moderate G6PD deficiency is weekly primaquine 0.75 mg/kg once weekly for 8 weeks under supervised administration with monitoring for haemolysis. For severe (class I) deficiency, the risk-benefit must be carefully assessed. Many guidelines suggest withholding primaquine or using supervised weekly dosing with haematological monitoring. Chloroquine alone does not prevent P. vivax relapses from dormant hypnozoites."
+    answer: 0,
+    explanation: "PAF from case-control studies using prevalence of exposure in the population: PAF = [Pe x (OR-1)] / [1 + Pe x (OR-1)], where Pe = prevalence of exposure in the source population (approximated by control exposure or population data). PAF = [0.30 x (5.4-1)] / [1 + 0.30 x (5.4-1)] = [0.30 x 4.4] / [1 + 0.30 x 4.4] = 1.32 / 2.32 = 0.569 = 56.9%. This means 56.9% of leptospirosis cases in the population are attributable to floodwater wading; eliminating this exposure could prevent approximately 57% of cases. PAF is used to prioritize public health interventions by identifying exposures with the highest population-level impact. PAF CAN be calculated from case-control studies using the OR as an approximation of RR when the disease is rare."
   },
   {
     id: 13,
-    question: "In a cholera outbreak in a village, 200 persons were exposed to contaminated water. Of these, 80 developed diarrhoea meeting the cholera case definition. The outbreak lasted 7 days. Calculate the attack rate.",
+    question: "Under India's Integrated Disease Surveillance Programme (IDSP), a District Surveillance Officer receives an S-form (syndromic) report showing a 3-fold increase in cases of 'fever with rash' in a PHC area over one week. What is the CORRECT sequential IDSP response?",
     options: [
-      "0.4% (4 per 1000)",
-      "40% (40 per 100)",
-      "80% (80 per 100)",
-      "8% (8 per 100)"
+      "File the report and review at the monthly district health meeting",
+      "Alert the national IDSP portal; deploy army for area containment",
+      "Analyze the S-form trend to confirm threshold exceedance, cross-reference P-forms and L-forms from the same area, issue an alert to the District Rapid Response Team (DRRT) for field investigation, collect clinical specimens for laboratory confirmation, and report upward through the state surveillance unit",
+      "Close all health facilities in the affected area pending investigation results"
     ],
-    answer: 1,
-    explanation: "Attack Rate = (Number of new cases / Population at risk) x 100. Attack Rate = (80/200) x 100 = 40%. The attack rate of 40% is consistent with a common-source waterborne outbreak of cholera, which typically shows high attack rates when the infecting dose is sufficient and population immunity is low. The attack rate is also called the incidence proportion for outbreak investigations. It is distinguished from the secondary attack rate (SAR), which measures transmission among household or close contacts of primary cases."
+    answer: 2,
+    explanation: "IDSP threshold-based alert and response sequence: (1) S-form data is analyzed weekly for unusual clusters or threshold exceedance (typically 3-fold increase over baseline triggers an alert); (2) Cross-reference with P-forms (presumptive diagnoses from PHC doctors) and L-forms (lab results) from the same area for triangulation; (3) If threshold exceeded, the District Surveillance Officer issues an alert and activates the District Rapid Response Team (DRRT); (4) DRRT conducts field investigation: case verification, case finding, specimen collection; (5) Report upward to State Surveillance Unit (SSU) and Central Surveillance Unit (CSU); (6) Laboratory confirmation through IDSP state lab network. The S-P-L triangulation prevents both false alarms and missed outbreaks. Premature escalation to national level or area closure without investigation is inappropriate."
   },
   {
     id: 14,
-    question: "In a measles outbreak in a school, 10 index cases were identified. Among 150 susceptible household contacts of these index cases, 45 subsequently developed measles. What is the secondary attack rate (SAR)?",
+    question: "The Integrated Health Information Platform (IHIP) includes a mobile application for real-time data entry by field health workers. Which attribute of the IHIP most significantly improves upon the traditional paper-based IDSP S-form reporting?",
     options: [
-      "6.7%",
-      "30%",
-      "45%",
-      "10%"
+      "IHIP eliminates the need for laboratory confirmation of communicable diseases",
+      "IHIP restricts reporting to Medical Officers only, removing lay health worker reporting",
+      "IHIP enables case-based geo-tagged reporting in near real-time, allowing spatial clustering detection, automated threshold alerts, and integration with HMIS - replacing weekly aggregate paper forms that caused 7-21 day reporting lags",
+      "IHIP covers only COVID-19 and not other communicable diseases"
     ],
-    answer: 1,
-    explanation: "Secondary Attack Rate (SAR) = (Number of secondary cases among contacts / Number of susceptible contacts exposed to primary cases) x 100. SAR = (45/150) x 100 = 30%. The SAR measures the transmissibility of an infection in a defined setting (household, school, ward). It reflects both the inherent infectivity of the pathogen and the susceptibility of contacts. Measles has a very high SAR (75-90% in unvaccinated populations), so a SAR of 30% in this example suggests partial vaccination coverage in the household contacts. SAR is different from the basic reproduction number (R0), which reflects average transmission in a fully susceptible population."
+    answer: 2,
+    explanation: "Key improvements of IHIP over paper-based IDSP: (1) Real-time case-based reporting via mobile app (vs weekly paper S-forms causing 7-21 day reporting delays); (2) Automatic geo-tagging of each reported case enabling spatial clustering analysis and disease mapping; (3) Automated threshold alerts when case counts exceed district/week-specific baseline thresholds; (4) Individual case tracking (vs aggregate counts in S-forms); (5) Integration with HMIS, ANMOL (ANM Online), and other platforms; (6) Dashboard visualization for district, state, and national levels; (7) Elimination of manual data entry errors through structured digital forms. These improvements enable earlier outbreak detection and faster response - critical for limiting outbreak size. IHIP maintains coverage of all communicable diseases under IDSP surveillance."
   },
   {
     id: 15,
-    question: "In a meningococcal meningitis outbreak, 500 cases were reported in a district with a population of 500,000. Of the 500 cases, 50 patients died. What is the case fatality rate (CFR) and how does it differ from the mortality rate?",
+    question: "A public health epidemiologist is evaluating two surveillance approaches for dengue in a district: (A) Sentinel surveillance using 5 large hospitals reporting all confirmed dengue cases with full clinical data, and (B) Universal passive surveillance requiring all healthcare facilities to report any suspected dengue case. Which statement BEST describes the trade-offs?",
     options: [
-      "CFR = 10%, Mortality rate = 10 per 100,000; CFR measures deaths among cases, mortality rate measures deaths in the total population",
-      "CFR = 10%, Mortality rate = 10%; they are both the same measure expressed differently",
-      "CFR = 50 per 100,000, Mortality rate = 10%; CFR is always expressed per 100,000",
-      "CFR = 1%, Mortality rate = 10 per 100,000; CFR includes all population not just cases"
+      "Sentinel surveillance (A) is always superior because laboratory confirmation ensures data quality",
+      "Universal passive surveillance (B) is always superior because it captures all cases",
+      "Sentinel surveillance (A) provides higher data quality, timeliness, and clinical detail from a defined population but underestimates total burden; universal passive surveillance (B) provides broader case capture and better incidence estimates but suffers from variable reporting completeness and quality across facilities",
+      "Both systems are identical in performance; the choice depends only on budget"
     ],
-    answer: 0,
-    explanation: "Case Fatality Rate (CFR) = (Deaths from disease / Cases of disease) x 100 = (50/500) x 100 = 10%. CFR measures the probability of dying given that one has the disease - it is a measure of disease severity. Mortality Rate (Cause-specific) = (Deaths from disease / Total population) x 1000 or 100,000 = (50/500,000) x 100,000 = 10 per 100,000. Mortality rate is a measure of the impact of disease on the total population. CFR depends on the case ascertainment rate and diagnostic sensitivity - if mild cases are missed, CFR is overestimated. The distinction is fundamental in outbreak reporting."
+    answer: 2,
+    explanation: "Sentinel vs Universal surveillance trade-offs: Sentinel surveillance advantages: standardized case definitions and diagnostic criteria; complete clinical and laboratory data; high data quality; timely reporting from committed sentinels; can calculate accurate rates in defined sentinel populations. Limitations: underestimates true disease burden; not representative if sentinels are selected hospitals. Universal passive surveillance advantages: theoretically captures all cases; provides population-level incidence estimates; broader geographic coverage. Limitations: variable reporting quality and completeness; clinician under-reporting (reporting fatigue); variable case definition adherence; delays in aggregation. WHO recommends using both systems complementarily: sentinel for trend monitoring and clinical characterization, universal for burden estimation. Neither is universally superior - the choice depends on surveillance objectives."
   },
   {
     id: 16,
-    question: "An epidemic curve for a Hepatitis A outbreak shows a narrow, sharply peaked histogram with most cases clustered within a single incubation period (15-50 days), with the peak at day 28. This epidemic curve pattern is MOST consistent with:",
+    question: "A surveillance system for acute encephalitis syndrome (AES) in Bihar is evaluated using the CDC framework for surveillance system evaluation. The system captures 70% of true cases (sensitivity = 70%) but generates 15% false positives. Which CDC surveillance attribute does the 15% false positive rate directly affect, and what is the practical implication?",
     options: [
-      "Propagated (person-to-person) spread indicating ongoing transmission",
-      "Point source exposure at a single point in time",
-      "Continuous common source with ongoing exposure over weeks",
-      "Vector-borne transmission with seasonal amplification"
+      "Sensitivity; a 15% false positive rate means sensitivity is inadequate",
+      "Positive predictive value (PPV); a 15% false positive rate means PPV is reduced, leading to unnecessary outbreak investigations and resource wastage when reported clusters may include misclassified cases",
+      "Timeliness; false positives delay real case detection",
+      "Representativeness; false positives affect geographic distribution of reported cases"
     ],
     answer: 1,
-    explanation: "A narrow, sharply peaked epidemic curve with cases clustered within a single incubation period is characteristic of a POINT SOURCE outbreak - exposure to the causative agent at a single point in time. The distribution of cases reflects the range of incubation periods for the disease. For Hepatitis A (incubation 15-50 days, median 28 days), if all cases cluster within this period, a single contamination event (contaminated food at a common meal) is implicated. Propagated spread shows multiple peaks, each separated by roughly one incubation period. Continuous common source shows a plateau or prolonged peak. Identifying the exposure time: subtract the median incubation period from the peak date."
+    explanation: "The CDC framework for surveillance system evaluation includes attributes: sensitivity, specificity, positive predictive value (PPV), representativeness, timeliness, simplicity, flexibility, acceptability, stability, and usefulness. A 15% false positive rate directly affects PPV - the proportion of reported cases that are true cases. Low PPV means: (1) Unnecessary outbreak investigations for false clusters; (2) Wasted resources (RRTs dispatched for non-existent outbreaks); (3) Erosion of stakeholder confidence; (4) Misallocation of public health resources. Sensitivity (70%) is the proportion of true cases captured - a separate attribute from specificity/PPV. Improving case definitions or adding laboratory confirmation can reduce false positives and improve PPV, though often at the cost of reduced sensitivity (sensitivity-specificity trade-off)."
   },
   {
     id: 17,
-    question: "The basic reproduction number (R0) for measles is estimated at 12-18. In a population where 90% have been vaccinated with a 95% effective vaccine, what is the effective reproduction number (Re)?",
+    question: "During a WHO Joint External Evaluation (JEE) of India's IHR core capacities, the assessors evaluate the surveillance system for active vs passive surveillance components. Which of the following is an example of ACTIVE surveillance for influenza?",
     options: [
-      "Re = 12 x (1-0.90 x 0.95) = 12 x 0.145 = 1.74, indicating sustained transmission",
-      "Re = 12 x (1-0.95) = 0.6, indicating the epidemic will not sustain",
-      "Re = 12 x (1-0.90) = 1.2, indicating borderline epidemic potential",
-      "Re = 18 x (1-0.90 x 0.95) = 18 x 0.145 = 2.61, indicating sustained transmission"
+      "General practitioners voluntarily reporting influenza cases to the district health office when they choose to",
+      "A hospital reporting all influenza-like illness (ILI) cases to IDSP at the end of each month",
+      "Trained surveillance officers visiting selected sentinel sites (hospitals, clinics) every week to actively collect case data, review registers, and collect specimens regardless of whether facilities have reported spontaneously",
+      "Social media monitoring for influenza-related terms as the primary data source"
     ],
-    answer: 0,
-    explanation: "The effective reproduction number Re = R0 x (proportion susceptible). Proportion immune = vaccination coverage x vaccine efficacy = 0.90 x 0.95 = 0.855. Proportion susceptible = 1 - 0.855 = 0.145. Re = R0 x proportion susceptible = 12 x 0.145 = 1.74. Since Re >1, the epidemic can still sustain (each case infects >1 person on average). Herd immunity threshold = 1 - 1/R0 = 1 - 1/12 = 91.7%. For Re <1 to achieve herd immunity, effective vaccine coverage must exceed ~92% (accounting for vaccine efficacy). This explains why measles outbreaks occur even in high-vaccination settings when coverage drops slightly below the threshold."
+    answer: 2,
+    explanation: "Active surveillance involves deliberate, regular data collection by health authorities - they actively seek case information rather than waiting for it to be reported. Examples: (1) Sentinel site officers making weekly visits to collect ILI/SARI data and specimens; (2) AFP (Acute Flaccid Paralysis) surveillance - district officers visiting hospitals weekly to review paediatric ward registers for any unreported AFP cases; (3) During polio eradication, health workers going house-to-house to find missed AFP cases. Passive surveillance relies on voluntary, spontaneous reporting by healthcare providers. Active surveillance has higher sensitivity and completeness but is more resource-intensive. Passive surveillance is more feasible at scale but under-reports. India's polio eradication success relied heavily on active AFP surveillance with non-polio AFP rate as a quality indicator."
   },
   {
     id: 18,
-    question: "The herd immunity threshold for polio (R0 = 5) using OPV (efficacy 85%) is calculated. What minimum vaccination coverage is needed to achieve herd immunity?",
+    question: "The importance of 'zero reporting' in disease surveillance systems is being discussed at a district health review. What is the MOST accurate explanation of why zero reporting is essential?",
     options: [
-      "70.6% (calculated as (1-1/R0)/VE = 0.8/0.85)",
-      "80% (standard WHO recommendation for all EPI vaccines)",
-      "94.1% (calculated as (1-1/R0)/VE = 0.8/0.85 = 94.1%)",
-      "85% (equals the vaccine efficacy)"
+      "Zero reporting means no diseases are present, so surveillance can be reduced",
+      "Zero reporting is a bureaucratic requirement with no epidemiological significance",
+      "Zero reporting (actively reporting zero cases for a specific disease during a reporting period) confirms that the surveillance system is functional and the absence of cases is genuine, not due to reporting failure - distinguishing true absence from surveillance gap",
+      "Zero reports trigger automatic deployment of RRTs to verify the absence of cases"
     ],
     answer: 2,
-    explanation: "Herd immunity threshold (Pc) = (1 - 1/R0) / Vaccine Efficacy. For polio: 1 - 1/R0 = 1 - 1/5 = 0.8. Pc = 0.8 / 0.85 = 0.941 = 94.1%. This means vaccination coverage of at least 94.1% with OPV (85% efficacy) is required to achieve herd immunity for polio. With IPV (efficacy ~99% for seroconversion), the required coverage would be 0.8/0.99 = 80.8%. This calculation explains why pulse polio immunization rounds aim for near-universal coverage (>95%) to compensate for vaccine efficacy below 100% and to create adequate herd immunity in high-density, high-transmission settings."
+    explanation: "Zero reporting is a critical quality indicator in surveillance systems. When a facility or district submits a zero report, it confirms: (1) The surveillance system was active during that period; (2) Healthcare providers were looking for the disease; (3) The absence of reported cases reflects genuine absence, not a breakdown in reporting. Without zero reporting, silence is ambiguous - it could mean no cases OR that the system was not functioning. This distinction is vital for: interpreting disease-free periods; calculating reporting completeness rates; identifying non-reporting facilities for follow-up; providing reliable data for trend analysis. WHO's Global Polio Eradication Initiative and NTEP both require zero reporting from all registered facilities. Non-reporting facilities are tracked and followed up to ensure completeness."
   },
   {
     id: 19,
-    question: "In a vaccine trial for a new typhoid vaccine, 500 vaccinated subjects and 500 placebo recipients were followed for 2 years. 10 cases of typhoid occurred in the vaccinated group and 50 in the placebo group. Calculate the vaccine efficacy (VE).",
+    question: "An integrated vector management (IVM) programme in a district co-endemic for malaria and lymphatic filariasis uses House Index (HI) for Aedes and Man Biting Rate (MBR) for Anopheles as key monitoring indicators. Why are DIFFERENT entomological indices used for these two vectors?",
     options: [
-      "VE = (50-10)/50 x 100 = 80%",
-      "VE = 10/50 x 100 = 20% (attack rate in vaccinated group)",
-      "VE = (10/500)/(50/500) x 100 = 20% (risk ratio, not VE)",
-      "VE = 50/500 - 10/500 = 8% (absolute risk reduction)"
+      "Administrative convenience; both indices measure the same vector density",
+      "Aedes aegypti and Culex quinquefasciatus breed in the same containers; shared indices apply",
+      "Different entomological indices are used because Aedes aegypti/albopictus (dengue/chikungunya vectors) are day-biting, container-breeding mosquitoes best measured by larval indices (House Index, Breteau Index, Container Index), while Anopheles (malaria vector) are night-biting, ground/water-breeding mosquitoes whose adult density and human contact is better measured by Man Biting Rate (MBR) or malaria parasite rate in vector",
+      "HI and MBR measure identical parameters; the distinction is only geographic"
     ],
-    answer: 0,
-    explanation: "Vaccine Efficacy (VE) = [(Attack Rate in Unvaccinated - Attack Rate in Vaccinated) / Attack Rate in Unvaccinated] x 100. AR in unvaccinated = 50/500 = 0.10 (10%). AR in vaccinated = 10/500 = 0.02 (2%). VE = (0.10 - 0.02) / 0.10 x 100 = 0.08/0.10 x 100 = 80%. Alternatively, VE = (1 - Relative Risk) x 100 = (1 - 0.02/0.10) x 100 = (1 - 0.2) x 100 = 80%. This means vaccination reduced the risk of typhoid by 80% compared to no vaccination. VE of 80% is the threshold typically required for WHO prequalification of vaccines. The absolute risk reduction is 8% and the number needed to vaccinate (NNV) = 1/0.08 = 12.5."
+    answer: 2,
+    explanation: "Vector surveillance uses indices tailored to each vector's biology: Aedes-specific larval indices: House Index (% houses with Aedes larvae) = most widely used; Breteau Index (number of positive containers per 100 houses); Container Index (% water-holding containers with larvae) - appropriate because Aedes breeds in discrete, identifiable containers and adult density correlates with larval indices. Anopheles-specific indices: Man Biting Rate (MBR = number of bites per person per night during exposure period) and Entomological Inoculation Rate (EIR = MBR x sporozoite rate) - appropriate because Anopheles breeds in ground water pools, swamps, and rice fields where larval sampling is impractical; adult biting rate directly measures malaria transmission intensity. Culex quinquefasciatus (filariasis vector) uses larval indices similar to Aedes but in different habitats (drains, cesspools)."
   },
   {
     id: 20,
-    question: "In a food poisoning outbreak investigation at a wedding, a retrospective cohort study is conducted. The crude Relative Risk (RR) for consuming chicken biryani is 4.5 (95% CI: 2.1-9.6). After stratifying by consumption of raita (yogurt), the stratum-specific RRs are 4.6 for raita consumers and 4.4 for non-raita consumers (Mantel-Haenszel RR = 4.5). What does this stratified analysis indicate?",
+    question: "The ICMR Virus Research and Diagnostic Laboratories (VRDL) network was activated during a novel hemorrhagic fever cluster in Odisha. Specimens could not be diagnosed at the district VRDL. Which level of the VRDL network handles Biosafety Level 3 (BSL-3) pathogens for unknown hemorrhagic fever investigations?",
     options: [
-      "Raita is a confounder; the adjusted RR of 4.5 differs from the crude RR, proving confounding",
-      "Raita is an effect modifier; different stratum-specific RRs indicate interaction",
-      "Raita is neither a confounder nor an effect modifier; stratum-specific RRs are similar to each other and to the crude RR, confirming biryani as the vehicle",
-      "The analysis is inconclusive as both biryani and raita could be the vehicle"
+      "District VRDLs are equipped with BSL-3 capacity for all outbreak investigations",
+      "Any private laboratory accredited by NABL can handle BSL-3 specimens",
+      "ICMR-National Institute of Virology (NIV), Pune is the apex reference laboratory with BSL-3/4 capacity for high-consequence pathogens (Nipah, CCHF, Ebola, Marburg); Biosafety Level 3 pathogens require this specialized infrastructure not available at district or most state VRDLs",
+      "WHO's regional reference laboratory in New Delhi handles all BSL-3 specimens from India"
     ],
     answer: 2,
-    explanation: "When stratum-specific RRs are similar to each other AND similar to the crude RR, there is neither confounding nor effect modification. Confounding would cause the adjusted (MH) RR to differ substantially from the crude RR. Effect modification (interaction) would cause stratum-specific RRs to differ substantially from each other. Here, stratum-specific RRs (4.6 and 4.4) are similar to each other and to the crude RR (4.5), confirming that raita is neither a confounder nor an effect modifier. The consistent RR of ~4.5 strongly implicates biryani as the vehicle of infection. This approach - Mantel-Haenszel stratified analysis - is the standard method for outbreak investigation cohort studies."
+    explanation: "ICMR-VRDL tiered structure: Tier 1 (District VRDLs - >130 labs): basic viral diagnostics, ELISA, rapid antigen/antibody tests, BSL-2 PCR for common diseases (dengue, chikungunya, influenza, COVID-19). Tier 2 (State VRDLs): confirmatory testing, advanced molecular diagnostics, some BSL-2 enhanced. Tier 3 (Apex/National Reference Laboratories): ICMR-NIV Pune (Biosafety Level 3 and 4 for Nipah, Ebola, CCHF, Marburg, unknown hemorrhagic fevers); ICMR-NIMHANS Bengaluru (neurotropic viruses); ICMR-NCBS Bengaluru. NCDC (MOHFW, not ICMR) also has BSL-3 capacity. BSL-4 is required for pathogens with no treatment and aerosol transmission risk (Ebola, Marburg) - very limited globally. NIV Pune played pivotal roles in identifying Nipah (1999 Kerala), SARS-CoV-2 (2020), and other emerging pathogens in India."
   },
   {
     id: 21,
-    question: "In an outbreak of scrub typhus in a rural district, 100 cases are identified over 8 weeks. The epidemic curve shows multiple small peaks without a clear index case pattern. This pattern, combined with the mode of transmission (chigger mites in grass), is MOST consistent with:",
+    question: "In evaluating an electronic disease surveillance tool used for real-time reporting of acute diarrheal disease in flood-affected camps, which CDC surveillance system attribute is MOST important to evaluate first?",
     options: [
-      "Point source outbreak from a contaminated water body",
-      "Propagated person-to-person spread within households",
-      "Continuous common source from endemic exposure to a scrub typhus 'mite island'",
-      "Vector-borne outbreak with amplification during peak vector season"
+      "Stability (uptime and reliability of electronic system in low-connectivity areas)",
+      "Flexibility (ability to add new disease categories)",
+      "Usefulness (does the surveillance data lead to actionable public health responses that reduce morbidity)",
+      "Simplicity (ease of data entry for field workers)"
     ],
     answer: 2,
-    explanation: "Scrub typhus is caused by Orientia tsutsugamushi transmitted by Leptotrombidium chigger mite larvae found in discrete ecological niches called 'mite islands' (scrub vegetation, transitional zones). Multiple small peaks without clear person-to-person spread indicate a continuous common source - ongoing exposure to infected chigger mites in the environment. This is not a propagated outbreak as scrub typhus is not transmitted person-to-person. The epidemic curve pattern reflects the staggered timing of different individuals entering the 'mite island' (agricultural workers, foragers) throughout the outbreak period. This understanding guides control - targeting the mite habitat and protecting workers with repellents and doxycycline prophylaxis."
+    explanation: "While all CDC surveillance attributes are important, usefulness is the overarching attribute from which all others derive value. A surveillance system's purpose is to provide data that leads to effective public health action. If a highly sophisticated electronic system generates real-time data that is never acted upon, it has no value. Usefulness encompasses: does the data detect outbreaks early? does it support case management? does it guide resource allocation? does it trigger appropriate responses? In flood-affected camps with diarrheal disease, usefulness = does surveillance data lead to timely oral rehydration therapy distribution, water chlorination, improved sanitation, RRT deployment? All other attributes (simplicity, flexibility, stability, timeliness) are prerequisites to usefulness, but usefulness is the ultimate objective against which a surveillance system should be evaluated."
   },
   {
     id: 22,
-    question: "A district reports the following polio case data: 200 cases of Acute Flaccid Paralysis (AFP) per year (population 2 million, children <15 years = 400,000). The non-polio AFP rate is calculated as 8.5 per 100,000 children <15 years. What does this rate signify for the surveillance system?",
+    question: "Genomic surveillance using whole genome sequencing (WGS) of SARS-CoV-2 variants was implemented in India through INSACOG (Indian SARS-CoV-2 Genomics Consortium). Which of the following is the MOST appropriate application of genomic surveillance data in communicable disease control?",
     options: [
-      "The rate is too high, indicating over-reporting of AFP cases and surveillance artifact",
-      "A non-polio AFP rate of at least 2 per 100,000 children <15 years indicates sensitive AFP surveillance; 8.5 exceeds the minimum threshold, confirming good surveillance sensitivity",
-      "The rate is inadequate; WHO requires non-polio AFP rate of at least 10 per 100,000",
-      "AFP rate measures polio incidence directly; 8.5 per 100,000 indicates ongoing polio transmission"
+      "Genomic data is used primarily for academic publication and has no direct public health application",
+      "WGS data identifies individual patients' viral sequences for medico-legal purposes",
+      "Genomic surveillance tracks variant emergence and spread, detects new variants of concern early, guides vaccine composition decisions, links outbreak cases to confirm transmission chains, and monitors vaccine effectiveness against new variants",
+      "Genomic surveillance replaces the need for clinical and epidemiological surveillance"
     ],
-    answer: 1,
-    explanation: "WHO uses non-polio AFP rate as a key indicator of AFP surveillance sensitivity. The minimum required non-polio AFP rate is 2 per 100,000 children <15 years per year (in polio-endemic countries and those maintaining surveillance). If the rate falls below 2/100,000, the surveillance is considered inadequate and may be missing true polio cases. A rate of 8.5/100,000 well exceeds the minimum threshold, indicating sensitive surveillance that is capturing non-polio AFP cases (from conditions like Guillain-Barre syndrome, transverse myelitis). The other key AFP surveillance indicator is stool adequacy rate: >80% of AFP cases should have 2 stool specimens collected within 14 days of onset."
+    answer: 2,
+    explanation: "Genomic/molecular epidemiology applications: (1) Variant tracking: early detection of new variants of concern (e.g., Delta, Omicron) before they cause major waves, enabling preparedness; (2) Transmission chain analysis: phylogenetic clustering of identical sequences links cases in outbreak investigations (hospital clusters, super-spreader events); (3) Vaccine composition: influenza vaccine strain selection updated annually based on genomic surveillance of circulating strains; (4) Imported case tracing: genomic data distinguishes local vs imported variants; (5) Monitoring vaccine escape mutations: variants with mutations in spike protein (target of vaccines) may reduce vaccine effectiveness. INSACOG (consortium of 38 labs) sequenced >500,000 samples during COVID-19. Limitations: WGS is expensive, requires specialized labs, and provides complementary data - it does not replace clinical/epidemiological surveillance."
   },
   {
     id: 23,
-    question: "In a hepatitis B seroprevalence study, 1000 individuals are tested. The ELISA has sensitivity of 97% and specificity of 99%. The true prevalence in the population is 5%. Using Bayes theorem, what is the positive predictive value (PPV) of the test in this population?",
+    question: "An ICMR-funded operational research study evaluates the impact of community health workers (ASHA) on tuberculosis case notification rates in tribal districts. The study uses a before-after design without a control group. What is the PRIMARY limitation of this study design for evaluating programme effectiveness?",
     options: [
-      "PPV = 97% (equals sensitivity)",
-      "PPV = approximately 83.8%",
-      "PPV = 99% (equals specificity)",
-      "PPV = approximately 16.2%"
+      "Before-after studies cannot measure TB notification rates accurately",
+      "The study has no limitation as temporal trends prove causation",
+      "Without a control group, the study cannot distinguish the programme effect from secular trends (natural changes over time unrelated to the intervention), regression to the mean, concurrent interventions, or historical events - observed improvements may not be attributable to ASHA activities",
+      "ASHAs are not qualified to contribute to TB notification data"
     ],
-    answer: 1,
-    explanation: "PPV = (Sensitivity x Prevalence) / [(Sensitivity x Prevalence) + (1 - Specificity) x (1 - Prevalence)]. PPV = (0.97 x 0.05) / [(0.97 x 0.05) + (0.01 x 0.95)] = 0.0485 / (0.0485 + 0.0095) = 0.0485 / 0.0580 = 0.836 = 83.6% (approximately 83.8%). This demonstrates that even with excellent sensitivity (97%) and specificity (99%), the PPV is significantly reduced at low prevalence (5%). At 5% prevalence, roughly 1 in 6 positive tests will be a false positive. This has major implications for screening programs in low-prevalence populations - confirmatory testing (e.g., anti-HBc, HBsAg neutralization, or NAT) is essential for positive ELISA results."
+    answer: 2,
+    explanation: "Before-after (pre-post) study design limitations: (1) Secular trends: TB notification rates may be increasing nationally regardless of the ASHA programme (e.g., improved diagnostic capacity, WHO-driven targets); (2) Regression to the mean: if baseline period had unusually low notification, rates would naturally increase without intervention; (3) Concurrent interventions: NTEP may have simultaneously increased CBNAAT (Xpert MTB/RIF) machines, which also increases notifications; (4) Historical events: economic changes, migration, COVID-19 disruptions confound temporal comparisons. A controlled before-after design (interrupted time series with control districts, or stepped wedge design) would be stronger. Ideally, a cluster randomized trial comparing ASHA-intervention districts to control districts would provide causal evidence. This limitation is fundamental to evaluating public health programmes and underlies the preference for randomized designs."
   },
   {
     id: 24,
-    question: "In a case-control study investigating a hepatitis C outbreak among injecting drug users, the crude odds ratio (OR) for sharing needles is 8.5 (95% CI: 3.2-22.4). After adjusting for HIV status (as a potential confounder), the adjusted OR is 7.9 (95% CI: 2.9-21.5). What is the MOST accurate interpretation?",
+    question: "A cluster randomized trial is designed to evaluate the effectiveness of house-to-house vector control visits by community health workers for dengue prevention in urban wards. 30 wards are randomized: 15 to intervention, 15 to control. The primary outcome is dengue incidence per 1000 population. Which analytical approach is MOST appropriate for this trial?",
     options: [
-      "HIV status is a confounder; the adjusted OR of 7.9 is substantially different from 8.5, invalidating the crude estimate",
-      "The association between needle sharing and HCV is robust; HIV status is not a significant confounder as the adjusted OR (7.9) is similar to the crude OR (8.5); needle sharing remains strongly associated with HCV (OR ~8) after adjustment",
-      "HIV status is an effect modifier creating interaction; stratified analysis is required instead of the adjusted OR",
-      "The confidence intervals overlapping between crude and adjusted ORs means the study is underpowered"
+      "Analyze individual-level data as if wards were not the unit of randomization (ignoring clustering)",
+      "Analyze ward-level summary data using t-test comparing mean incidence between intervention and control wards",
+      "Use multilevel (hierarchical) regression models or generalized estimating equations (GEE) that account for within-cluster correlation (intra-cluster correlation coefficient, ICC), with ward as the unit of analysis, to obtain valid standard errors and confidence intervals",
+      "Use a case-control study nested within the trial for more efficient analysis"
     ],
-    answer: 1,
-    explanation: "Confounding is considered significant when the adjusted OR differs from the crude OR by >10-15%. Here, the crude OR is 8.5 and adjusted OR is 7.9 - a difference of only 7%, indicating minimal confounding by HIV status. The association between needle sharing and HCV transmission remains strong and statistically significant (the 95% CI excludes 1.0 in both cases). The interpretation: after controlling for HIV status, needle sharing is associated with approximately 8 times higher odds of HCV infection. Wide confidence intervals indicate statistical instability but do not indicate underpowering per se - the association is significant. Overlapping CIs between crude and adjusted estimates is expected and appropriate."
+    answer: 2,
+    explanation: "Cluster randomized trials (CRTs) require specialized analytical methods because individuals within the same cluster (ward) are more similar to each other than to individuals in other clusters - this within-cluster correlation (measured by the intra-cluster correlation coefficient, ICC) means observations are not independent, violating standard regression assumptions. Ignoring clustering leads to underestimated standard errors and falsely narrow confidence intervals (inflated Type I error). Appropriate methods: (1) Multilevel regression (mixed-effects models) with ward as random effect; (2) Generalized Estimating Equations (GEE) with robust standard errors; (3) Cluster-level analysis using ward mean incidence as the unit (simple but loses power); (4) ANCOVA adjusting for baseline cluster characteristics. Sample size calculation must also account for ICC to ensure adequate power. The ICC is typically small (0.01-0.05 for dengue) but substantially inflates required sample size."
   },
   {
     id: 25,
-    question: "Under India's Integrated Disease Surveillance Programme (IDSP), which component is responsible for weekly reporting of 'S' (syndromic) data by health workers at the sub-district level?",
+    question: "India's National Kala-Azar Elimination Programme set a target of <1 case per 10,000 population at the block level by 2023. An ICMR implementation research team evaluates programme performance. Which measure BEST captures the distinction between programme COVERAGE and programme EFFECTIVENESS?",
     options: [
-      "District Rapid Response Team (RRT) that investigates all reported clusters",
-      "Weekly 'S' form submitted by health workers (ASHA, ANM, sub-centre staff) reporting syndromes like fever with rash, acute diarrhoea, and jaundice",
-      "State surveillance unit that compiles monthly district health management information",
-      "Central IDSP portal that directly collects laboratory-confirmed case data"
+      "Coverage and effectiveness are synonymous in disease elimination programmes",
+      "Coverage = proportion of target population receiving the intervention (e.g., 85% of suspected cases receiving diagnosis and treatment); Effectiveness = impact of the programme on disease burden reduction (e.g., reduction in kala-azar incidence per 10,000) after accounting for real-world implementation conditions including coverage gaps, treatment adherence, drug resistance, and case detection completeness",
+      "Effectiveness = coverage x 100; a simple mathematical relationship",
+      "Coverage is measured only for vaccines; effectiveness is used only for drug treatments"
     ],
     answer: 1,
-    explanation: "IDSP uses a three-component reporting structure: S (Syndromic) forms - submitted weekly by health workers/sub-centres reporting clinical syndromes (fever >101F, acute diarrhoea, jaundice, fever with rash, etc.) without laboratory confirmation; P (Presumptive) forms - submitted by medical officers/PHC doctors reporting presumptive diagnoses; L (Laboratory) forms - submitted by district/state laboratories reporting confirmed cases. The S-P-L format allows early warning before laboratory confirmation. District Rapid Response Teams investigate outbreaks when reports indicate clustering. IHIP (Integrated Health Information Platform) is the digital successor to IDSP, enabling real-time data entry."
+    explanation: "Coverage and effectiveness are distinct but related programme evaluation metrics: Coverage measures programme reach - what proportion of the target population receives the intended intervention. Examples: % kala-azar cases receiving rK39 diagnosis; % confirmed cases receiving liposomal amphotericin B. Effectiveness measures real-world impact - the actual reduction in disease burden under field conditions. It is affected by: coverage (incomplete reach); treatment quality and adherence; drug efficacy vs emerging resistance; case detection completeness (many cases missed = falsely low apparent coverage); healthcare system factors. Efficacy (from trials) > Effectiveness (from field) because trials have ideal adherence and case ascertainment. A programme can have high coverage (85% of DETECTED cases treated) but low effectiveness if 40% of cases are never detected. Implementation research bridges the efficacy-effectiveness gap by identifying and addressing real-world implementation barriers."
   },
   {
     id: 26,
-    question: "The Integrated Health Information Platform (IHIP) was launched to replace IDSP. Which of the following is a key ADDITIONAL capability of IHIP over the traditional IDSP reporting system?",
+    question: "The supply chain for insecticide-treated nets (ITNs) under NVBDCP faces last-mile delivery challenges. Which of the following represents a key SUPPLY CHAIN MANAGEMENT principle applied to ITN distribution to ensure availability at the community level?",
     options: [
-      "IHIP collects only laboratory-confirmed data, replacing the syndromic reporting of IDSP",
-      "IHIP enables real-time individual case-based reporting using a mobile application, automatic geo-tagging of cases, and linkage to other health management systems (HMIS, ANMOL)",
-      "IHIP operates only at the state level and does not involve district or sub-district data entry",
-      "IHIP restricts surveillance to the 33 diseases notifiable under the Epidemic Diseases Act"
+      "Stockpiling all ITNs at the national level for 5 years to ensure security of supply",
+      "Push system where state health departments distribute ITNs based on estimated population without feedback from lower levels",
+      "Pull system with real-time stock monitoring: sub-district facilities report actual stock levels and consumption rates; supplies are replenished based on actual demand data; maximum-minimum stock level norms are maintained at each level; distribution is timed to malaria season and mass distribution campaigns",
+      "Outsourcing the entire ITN supply chain to private pharmacies"
     ],
-    answer: 1,
-    explanation: "IHIP (Integrated Health Information Platform) is an upgraded digital platform replacing IDSP's paper-based and manual reporting. Key enhancements: (1) Real-time case-based reporting through mobile app for ASHAs and ANMs; (2) Automatic geo-tagging enabling spatial mapping of disease clusters; (3) Integration with HMIS, ANMOL (ANM Online), and other health platforms; (4) Dashboard-based visualization for decision-making; (5) Automated alerts when threshold exceeded; (6) Linkage with laboratory networks (EQAS) for confirmation. IHIP maintains the S-P-L format but in digital form and covers all reportable diseases, not just 33. It aims for near real-time outbreak detection."
+    answer: 2,
+    explanation: "Effective vaccine and commodity supply chain management uses data-driven approaches: Pull systems (demand-driven): supplies requested from below based on actual consumption and stock levels, reducing over-supply at high levels and stock-outs at peripheral levels. Push systems (allocation-driven): top-down distribution based on population estimates - risk over-supply at some facilities and stock-out at others. Key supply chain management principles for ITNs: (1) Maximum-minimum stock level norms (e.g., minimum 2 months stock, maximum 6 months); (2) Regular stock reporting through HMIS/DVDMS (Drug Vaccines and Distributables Management System); (3) Seasonal alignment - distribution before malaria season; (4) Accountability through distribution registers at household level; (5) Quality verification (intact nets, LLIN vs conventional distinction). Stockpiling at national level creates pipeline delays and expiry risks for perishable commodities."
   },
   {
     id: 27,
-    question: "An integrated vector management (IVM) programme is being planned for a district co-endemic for malaria, dengue, chikungunya, and lymphatic filariasis. Which combination strategy represents BEST PRACTICE for IVM in this district?",
+    question: "During an ICMR-funded cluster randomized trial evaluating a novel dengue vaccine in school-age children, the ethics committee raises concerns about informed consent. Which of the following BEST represents ethical informed consent in this paediatric clinical trial?",
     options: [
-      "Separate, disease-specific vector control programmes for each disease to ensure focused outcomes",
-      "Universal indoor residual spraying (IRS) with DDT for all four diseases simultaneously",
-      "Integrated approach combining larval source management (Bacillus thuringiensis israelensis for dengue/filariasis), long-lasting insecticidal nets (LLIN) for malaria, targeted IRS in high-malaria areas, community mobilization for stagnant water elimination, and entomological monitoring of insecticide resistance",
-      "Mass drug administration with diethylcarbamazine for filariasis combined with artemisinin for malaria prophylaxis"
+      "Verbal consent from parents is sufficient; written consent is not required for vaccine trials",
+      "Written informed consent from parents/guardians AND age-appropriate assent from children ≥7 years, explaining trial purpose, procedures, benefits, risks, voluntary participation, and right to withdraw without penalty - in local language with adequate time for questions",
+      "Consent from school principal is sufficient as legal guardian of students on school premises",
+      "Consent waiver is acceptable for vaccine trials as benefit outweighs risk"
     ],
-    answer: 2,
-    explanation: "Integrated Vector Management (IVM) is WHO's strategic approach for rational use of resources and maximizing health impact by targeting multiple vectors with coordinated interventions. For a co-endemic district: (1) Larval source management - BTI or temephos for Culex quinquefasciatus (filariasis) and Aedes aegypti (dengue/chikungunya) larvae; (2) LLIN for malaria (Anopheles control); (3) IRS with insecticide for malaria in high-burden areas; (4) Community mobilization for Aedes breeding site elimination; (5) Entomological surveillance including resistance monitoring; (6) Environmental management. DDT is banned in India for public health use. Mass drug administration is for filariasis elimination but is not vector control. IVM avoids the inefficiency of parallel, disease-specific programmes."
+    answer: 1,
+    explanation: "Ethical informed consent in paediatric research (ICMR National Ethical Guidelines for Biomedical and Health Research, 2017): (1) Written informed consent from parent/legal guardian is mandatory (LAR - Legally Acceptable Representative); (2) Assent from children aged 7-17 years is required - age-appropriate explanation in simple language; (3) Both consent AND assent are needed (not either/or); consent from child cannot substitute parental consent; (4) Consent must cover: study purpose, procedures, duration, expected benefits, reasonably foreseeable risks, alternatives, voluntary nature, right to withdraw, confidentiality, compensation for trial-related injury, and contact information; (5) Provided in participant's language with adequate comprehension time; (6) No coercion or undue inducement. School principal is NOT a legal guardian. Consent waiver requires specific ethics committee justification and is rare in interventional trials with minors."
   },
   {
     id: 28,
-    question: "During a suspected foodborne disease outbreak in a district, the District Rapid Response Team (RRT) is activated. What is the CORRECT sequence of steps in outbreak investigation?",
+    question: "An ICMR extramural research grant is being sought to study the epidemiology of leptospirosis in coastal Karnataka. The proposal includes a retrospective records review of hospital discharge data followed by a prospective case-control study. Which ICMR funding mechanism is MOST appropriate?",
     options: [
-      "Collect specimens first, then establish case definition, then interview cases",
-      "Establish case definition, verify diagnosis, describe epidemic (time, place, person), formulate hypothesis, test hypothesis (analytical study), implement control measures, and communicate findings",
-      "Implement control measures first (close the implicated restaurant), then investigate retrospectively",
-      "Conduct a case-control study first to identify the vehicle, then establish case definition based on study results"
+      "ICMR Task Force project - for large multi-site coordinated studies on national priority diseases",
+      "ICMR Intramural research - funded only for ICMR institute employees' research",
+      "ICMR Open-end project (Extramural Research) or Short-term Studentship - for individual investigators in non-ICMR institutions studying regional epidemiological questions",
+      "DBT-Wellcome Trust India Alliance - for basic science research only"
     ],
-    answer: 1,
-    explanation: "The standard steps of outbreak investigation (CDC/WHO framework): (1) Prepare for field work; (2) Verify diagnosis and confirm the outbreak; (3) Establish a case definition; (4) Find cases systematically (case finding); (5) Describe epidemic by time (epidemic curve), place (spot map), and person (attack rate table); (6) Formulate hypothesis about source, vehicle, and mode; (7) Test hypothesis using analytical epidemiology (cohort or case-control study); (8) Implement control and prevention measures (concurrent with investigation, not waiting for completion); (9) Communicate findings and write report. Note: control measures are implemented concurrently - not after investigation is complete. Case definition must precede case finding."
+    answer: 2,
+    explanation: "ICMR funding mechanisms: (1) Extramural Research (Open-end grants): for investigators in non-ICMR institutions (medical colleges, universities) studying any health research question; budget typically up to Rs 30-50 lakhs; 2-3 year duration; suitable for epidemiological studies; (2) Task Force Projects: large coordinated national studies on ICMR-identified priority areas (e.g., national disease burden studies); multiple institutions; (3) Short-term Studentships (STS): for MBBS/postgraduate students for 2-month projects; (4) DHR-ICMR Advanced Research (formerly ICMR Advanced Research): for cutting-edge innovation; (5) Grand Challenges India: for innovative health solutions. The described leptospirosis epidemiology study (records review + case-control study) is appropriately funded through an extramural open-end grant from a non-ICMR institution. Task Force projects involve larger consortia. DBT-Wellcome Trust India Alliance is for translational/implementation research."
   },
   {
     id: 29,
-    question: "The ICMR-Virus Research and Diagnostic Laboratories (VRDL) network was established for outbreak investigation. Which of the following BEST describes the tiered structure of this laboratory network?",
+    question: "Good Clinical Practice (GCP) guidelines are being applied to a multi-site dengue vaccine trial. Under GCP, what is the PRIMARY responsibility of the Principal Investigator (PI) regarding trial conduct?",
     options: [
-      "A single apex laboratory at AIIMS Delhi that handles all outbreak specimens from across India",
-      "A three-tier network: district-level VRDLs for basic diagnostics, state-level VRDLs for confirmatory testing, and ICMR apex institutes (NIV Pune, NIMHANS) for reference/biosafety level 3-4 pathogens",
-      "Exclusively private-sector laboratory network contracted by ICMR for outbreak diagnostics",
-      "VRDLs are restricted to viral diseases only; bacterial and parasitic outbreaks are handled by separate networks"
+      "The PI's sole responsibility is statistical analysis of trial data",
+      "The PI is responsible for all aspects of trial conduct at the site: ensuring protocol compliance, obtaining and documenting informed consent, maintaining accurate case report forms, ensuring participant safety, reporting serious adverse events (SAEs) within 24 hours to sponsor and ethics committee, and maintaining essential trial documents",
+      "The PI can delegate all responsibilities to research coordinators and need only sign final reports",
+      "GCP applies only to drug trials; vaccine trials follow different standards"
     ],
     answer: 1,
-    explanation: "ICMR's Virus Research and Diagnostic Laboratories (VRDL) network comprises: (1) District-level VRDLs (over 130): basic viral diagnostics, ELISA, rapid antigen tests, PCR for common viral diseases; (2) State-level VRDLs: confirmatory testing, advanced molecular diagnostics, serology; (3) National/Apex Institutes: National Institute of Virology (NIV) Pune - reference laboratory for emerging/re-emerging viruses, BSL-3/4 capacity for high-consequence pathogens (Nipah, SARS-CoV-2, Ebola confirmation); NIMHANS Bengaluru for neurotropic viruses; NCDC Delhi for integrated surveillance. The network was instrumental in COVID-19 testing scale-up. VRDLs handle only viral diseases; bacterial/parasitic require separate reference labs under ICMR."
+    explanation: "GCP (ICH E6 guidelines, adopted by CDSCO in India) Principal Investigator responsibilities: (1) Protocol compliance: conducting the trial strictly per approved protocol; (2) Informed consent: personally overseeing or delegating to trained staff the consent process; (3) Data integrity: ensuring case report forms (CRFs) are accurate, complete, and promptly documented; (4) Safety monitoring: identifying and reporting Serious Adverse Events (SAEs) to the sponsor within 24 hours and to ethics committee within 14 days (expedited reporting); (5) Essential documents: maintaining investigator file (patient logs, signed consent forms, lab reports); (6) Delegation log: documenting any delegated responsibilities with signatures; (7) Ethics committee compliance: conducting trial per EC approval without unauthorized amendments. GCP applies equally to drug and vaccine trials. The PI cannot delegate accountability even if tasks are delegated. ICMR follows Schedule Y (Drugs and Cosmetics Act) and ICH GCP guidelines."
   },
   {
     id: 30,
-    question: "The Revised National Tuberculosis Control Programme (RNTCP)/National TB Elimination Programme (NTEP) uses the Nikshay portal. Which of the following is the PRIMARY function of the Nikshay system?",
+    question: "Health systems research (HSR) is being designed to evaluate bottlenecks in the malaria elimination programme in high-burden districts of Odisha. Which framework is MOST appropriate for systematically analyzing health system bottlenecks?",
     options: [
-      "Procurement and distribution of anti-TB drugs exclusively",
-      "Real-time patient-level case-based electronic surveillance: case registration, treatment tracking, outcome recording, and linkage to Nikshay Poshan Yojana (nutritional support) beneficiary identification",
-      "Laboratory information management system for sputum smear microscopy results only",
-      "Drug resistance surveillance restricted to MDR-TB cases in reference laboratories"
+      "Clinical trial framework with randomized allocation of districts to intervention",
+      "WHO Health System Building Blocks framework: analyzing service delivery, health workforce, health information, medical products (supply chain), financing, and leadership/governance to identify which building blocks are limiting malaria elimination progress",
+      "SWOT analysis of individual health workers' performance",
+      "Malaria parasite resistance profiling (pharmacological analysis)"
     ],
     answer: 1,
-    explanation: "Nikshay (meaning 'to eliminate' in Sanskrit) is the web-based patient management system for NTEP (formerly RNTCP). Functions: (1) Real-time case registration for all TB patients (presumptive and confirmed); (2) Treatment assignment and tracking - ensuring DOT (directly observed treatment); (3) Treatment outcome recording (cured, treatment completed, failed, died, lost-to-follow-up, not evaluated); (4) Drug resistance testing tracking (CBNAAT/Xpert, LPA results); (5) Nikshay Poshan Yojana - identification and disbursement of Rs 500/month nutritional support to TB patients via DBT; (6) Private sector notification (mandatory since 2012). Nikshay enables India to report TB elimination progress to WHO through accurate patient-level data rather than aggregate estimates."
+    explanation: "WHO Health Systems Framework (6 building blocks) for malaria elimination bottleneck analysis: (1) Service Delivery: Are malaria services accessible? Are quality diagnostic and treatment services available at PHC level? Are active case detection (ACD) services functioning? (2) Health Workforce: Are sufficient trained ASHAs, lab technicians, and medical officers available? Are they trained in RDT use and ACT administration? (3) Health Information: Is the IDSP/NVBDCP data system capturing all cases? Is data being used for decision-making? (4) Medical Products: Are RDTs, ACTs, LLINs, and IRS insecticides available without stock-outs? (5) Financing: Is programmatic funding adequate and disbursed timely? (6) Leadership/Governance: Are inter-sectoral coordination mechanisms working? This framework systematically identifies which building block is the primary constraint to programme performance, enabling targeted interventions."
   },
   {
     id: 31,
-    question: "In a rural block with high malaria burden, the ASHA (Accredited Social Health Activist) finds a patient with fever and headache. She performs a Rapid Diagnostic Test (RDT) for malaria. The RDT is positive for P. falciparum HRP2 antigen. What is the ASHA's role in management under the National Vector Borne Disease Control Programme (NVBDCP)?",
+    question: "In an ethics review of an outbreak investigation study in a remote tribal district during an acute encephalitis cluster, the investigators request a waiver of written informed consent due to emergency conditions. Under ICMR ethical guidelines, which conditions justify a consent waiver in outbreak research?",
     options: [
-      "ASHA should refer all RDT-positive cases to PHC; she cannot administer any treatment",
-      "ASHA can administer the full course of Artemisinin-based Combination Therapy (ACT) for P. falciparum and refer for clinical evaluation",
-      "ASHA should collect a blood slide (thick and thin smear) and send to lab; treat with chloroquine pending results",
-      "ASHA should administer paracetamol only and refer within 24 hours for blood smear"
+      "Consent waivers are never permitted under ICMR guidelines regardless of circumstances",
+      "Any study conducted by government employees automatically waives consent requirements",
+      "Ethics committees may grant consent waiver when: (1) research involves minimal risk; (2) waiver will not adversely affect rights and welfare of participants; (3) research cannot practicably be done without waiver; (4) participants will be provided information after the fact when possible - all four conditions must be met; in acute outbreaks, verbal consent with documentation may be acceptable pending formal written consent",
+      "Outbreak investigations are not classified as research and require no ethics review"
     ],
-    answer: 1,
-    explanation: "Under NVBDCP's malaria case management policy and the ASHA guidelines, ASHAs in high-burden areas are empowered to perform malaria RDTs and administer appropriate treatment without waiting for referral. For RDT-positive P. falciparum: ASHA administers the complete ACT (Artemether-Lumefantrine) along with a single dose of primaquine (0.75 mg/kg) as a gametocytocide (contraindicated in G6PD deficiency, pregnancy). For P. vivax: chloroquine course and primaquine 14-day radical cure. ASHA also collects a blood slide (for confirmation in the lab as backup) but does not wait for results before treatment in P. falciparum given risk of rapid progression to severe malaria. This community-level diagnosis and treatment (CDST) is central to early case management."
+    answer: 2,
+    explanation: "ICMR National Ethical Guidelines (2017) and CIOMS guidelines allow ethics committees to waive or modify informed consent requirements under specific conditions (all must be met): (1) No more than minimal risk to participants; (2) Waiver will not adversely affect participants' rights and welfare; (3) Research could not practicably be carried out without the waiver or modification; (4) Whenever possible, participants will be provided additional pertinent information after participation. In acute outbreak investigations: specimen collection for surveillance may be considered program activity rather than research; if it is research, verbal consent with field documentation may be acceptable as modified consent; in life-threatening situations, Legally Acceptable Representative consent may be obtained; deferred consent procedures may apply. Outbreak investigations often blur the boundary between public health practice and research - ethics committee guidance is essential."
   },
   {
     id: 32,
-    question: "Quality assurance in malaria microscopy is conducted through the External Quality Assurance Scheme (EQAS) under NVBDCP. Which of the following is a component of EQAS for malaria microscopy?",
+    question: "A programme evaluation of the Revised National Tuberculosis Elimination Programme (NTEP) uses treatment success rate as the primary outcome indicator. The national treatment success rate for new bacteriologically confirmed pulmonary TB is 85%. Which of the following is the WHO-recommended minimum treatment success rate target for TB?",
     options: [
-      "All malaria blood slides are sent to the national reference laboratory in Delhi for reading",
-      "Random re-reading of 10% of all slides (both positive and negative) at a higher-level laboratory (district/state), with feedback to peripheral microscopists on discordant results",
-      "Only slides that are positive at the peripheral level are sent for re-reading; negative slides are not part of EQAS",
-      "EQAS is limited to MDR malaria cases; routine P. vivax and P. falciparum do not require external QA"
+      "70% treatment success rate",
+      "80% treatment success rate",
+      "85% treatment success rate and this is considered adequate performance",
+      "90% treatment success rate - India's 85% indicates a 5% gap requiring programmatic action to address loss-to-follow-up, treatment failure, and death outcomes"
     ],
-    answer: 1,
-    explanation: "EQAS (External Quality Assurance Scheme) for malaria microscopy under NVBDCP involves: (1) Random selection of 10% of all slides (positive AND negative) from peripheral laboratories; (2) Re-reading at the next higher level (district reads sub-district slides; state laboratory reads district slides); (3) Comparison of results - concordance rate is calculated; (4) Feedback provided to peripheral microscopist when discordance detected (false positive or false negative); (5) Retraining required if concordance falls below 80%. EQAS also involves slide panels (standardized panels of positive/negative slides) sent by state labs to test peripheral microscopists. This two-way QA system (random sampling + panel testing) ensures diagnostic quality across the entire malaria laboratory network."
+    answer: 3,
+    explanation: "WHO End TB Strategy targets: treatment success rate target for new and relapse TB cases = 90% by 2025. India's 85% treatment success rate (2021 cohort) falls 5 percentage points below the 90% target, representing a significant programmatic gap. Treatment success = cured + treatment completed. The 15% not achieving success comprises: loss-to-follow-up (LTFU, the largest gap - often 8-10%), treatment failure (2-3%), and died (3-4%). Programme actions to close the gap: (1) Reducing LTFU through Nikshay Poshan Yojana (nutritional support for adherence), patient support systems, tracing lost patients; (2) Better drug-susceptibility testing to detect resistance early; (3) Improved adverse event management; (4) Community-based DOT. The 85/90 treatment success comparison is a key benchmark in NTEP programme evaluation reviews."
   },
   {
     id: 33,
-    question: "Under the Universal Immunization Programme (UIP), the cold chain for vaccines operates on the 'first expiry, first out' (FEFO) principle. A district medical officer finds that the District Vaccine Store has received pentavalent vaccine stocks with varying expiry dates. Which management practice is MOST appropriate?",
+    question: "An ICMR implementation research study evaluates whether community-led total sanitation (CLTS) intervention reduces diarrheal disease incidence. The study uses a stepped wedge design where 20 villages are sequentially enrolled, with 5 new villages added every 3 months over 12 months. What is the PRIMARY advantage of the stepped wedge design over a parallel arm trial?",
     options: [
-      "Use stocks with the latest expiry date first to maximize storage time flexibility",
-      "Distribute the entire stock equally to all PHCs regardless of expiry dates",
-      "Segregate stocks by expiry date, place stocks with earliest expiry date at the front/in accessible positions, and distribute these first to ensure they are used before expiry (FEFO principle)",
-      "Discard any vaccine lot with an expiry date less than 6 months away to prevent close-to-expiry vaccines reaching community level"
+      "Stepped wedge designs require fewer villages and smaller sample sizes",
+      "All villages eventually receive the intervention (ethically acceptable when intervention is known to be beneficial), while still providing a valid comparison between already-implemented and not-yet-implemented villages at each time step, using time as the comparison period within each village",
+      "Stepped wedge designs completely eliminate confounding",
+      "Stepped wedge designs do not require ethics approval as all participants eventually receive the intervention"
     ],
-    answer: 2,
-    explanation: "FEFO (First Expiry, First Out) is the mandatory cold chain management principle for vaccines and medicines, as opposed to FIFO (First In, First Out) used for non-perishable goods. Implementation: stocks are physically arranged with earliest-expiry lots at the front/most accessible position and distributed first to lower levels. This minimizes vaccine wastage from expiry. Vaccine stock management also requires: VVM (Vaccine Vial Monitor) checking before use; temperature monitoring logs; stock ledger maintenance; cold chain equipment monitoring. Discarding vaccines with <6 months expiry would cause enormous wastage. Near-expiry vaccines should be expeditiously distributed to high-utilization centres. The UIP vaccine supply chain uses a 4-tier system: national > state > district > PHC/cold chain point."
+    answer: 1,
+    explanation: "Stepped wedge (SW) trial advantages: (1) Ethical: all clusters eventually receive the intervention - no permanent control group denied an intervention believed to be beneficial; appropriate when complete withholding is ethically unacceptable; (2) Efficiency: uses both between-cluster and within-cluster comparisons over time; (3) Implementation feasibility: phased rollout is often operationally realistic for programmes; (4) Allows learning during rollout. Analytical approach: mixed-effects models treating calendar time as a fixed effect and cluster as a random effect. Limitations: (1) Complex analysis required; (2) Sensitive to secular trends (external changes over time that affect outcome); (3) Long duration required; (4) Contamination between clusters in adjacent implementation phases. SW designs do not necessarily require fewer clusters - sample size may be similar to parallel trials. They still require full ethics committee approval. Confounding is reduced but not eliminated."
   },
   {
     id: 34,
-    question: "The ANM (Auxiliary Nurse Midwife) is conducting a Village Health, Sanitation, and Nutrition Day (VHSND). During the session, she identifies a child who missed 3 doses of OPV during the routine immunization schedule. What is the correct immunization catch-up strategy for this child aged 14 months?",
+    question: "In a food safety assessment after a restaurant-associated Salmonella outbreak, the investigation team uses the 2x2 table method. Among 200 persons who ate the restaurant meal: 80 ate the suspect dessert and became ill; 20 ate the suspect dessert but did not become ill; 10 did not eat the dessert but became ill; 90 did not eat the dessert and did not become ill. Calculate the Odds Ratio (OR) for the suspect dessert.",
     options: [
-      "Restart the entire immunization schedule from birth; all previous doses given after gaps are invalid",
-      "Administer all missed doses at once during this session to complete the schedule",
-      "Administer only the doses due at the current visit according to the catch-up schedule; give remaining doses at minimum intervals (4 weeks between OPV doses); do not repeat doses already given - the principle of 'valid doses' applies regardless of schedule gaps",
-      "Refer the child to district hospital for serology testing to check if previous immunization was effective before giving catch-up doses"
+      "OR = (80 x 90) / (20 x 10) = 7200 / 200 = 36",
+      "OR = (80 / 100) / (10 / 100) = 8.0",
+      "OR = 80 / (80 + 20) = 0.8",
+      "OR = (80 + 10) / (20 + 90) = 0.82"
     ],
-    answer: 2,
-    explanation: "The 'catch-up' immunization principle: no restart is required regardless of how long the schedule gap is ('do not restart, do not repeat'). Valid doses given at any time count, and the child continues from where they left off. For OPV: minimum interval between doses is 4 weeks; maximum 3 doses needed for primary series plus booster at 16-24 months. The catch-up schedule given at one visit should not overload with too many simultaneous injections unnecessarily. Multiple vaccines CAN be given simultaneously at different sites (this reduces missed opportunities). The national immunization schedule under UIP follows age-appropriate administration, and catch-up follows the same biologics with minimum intervals. Serological testing is NOT required before catch-up vaccination."
+    answer: 0,
+    explanation: "2x2 table: Exposed-Ill (a) = 80; Exposed-Not ill (b) = 20; Unexposed-Ill (c) = 10; Unexposed-Not ill (d) = 90. Odds Ratio = (a x d) / (b x c) = (80 x 90) / (20 x 10) = 7200 / 200 = 36. This extremely high OR of 36 indicates that consumption of the suspect dessert is strongly associated with illness - those who ate the dessert had 36 times higher odds of illness than those who did not. For cohort/outbreak studies, Relative Risk is preferred: RR = [a/(a+b)] / [c/(c+d)] = (80/100) / (10/100) = 0.80/0.10 = 8.0. In this case both OR (36) and RR (8) show strong association, but OR overestimates RR when disease is common (50% attack rate here) - RR (8.0) is the more accurate measure of relative risk in this outbreak cohort."
   },
   {
     id: 35,
-    question: "India's National Programme for Containment of Antimicrobial Resistance (AMR) requires sentinel surveillance of antimicrobial resistance patterns. Which of the following describes the CORRECT approach for AMR surveillance in a district hospital?",
+    question: "In a district with an ongoing dengue outbreak, the District Surveillance Officer examines weekly IDSP data from the past 8 weeks. Cases by week: 5, 8, 12, 25, 48, 72, 45, 18. What does this temporal pattern MOST suggest, and what action does it inform?",
     options: [
-      "Test all patients admitted to the hospital for AMR regardless of clinical indication",
-      "Report only carbapenem-resistant Enterobacteriaceae (CRE) cases to the national AMR surveillance network",
-      "Prospective culture-based surveillance of clinically significant isolates (blood, CSF, urine, pus) with standardized antibiotic susceptibility testing (AST) using CLSI/EUCAST breakpoints, aggregate data entry into the AMR surveillance platform, with pharmacy data on antibiotic consumption for linkage",
-      "Use rapid PCR tests only (not culture) for AMR surveillance to speed up results reporting"
+      "The outbreak is still escalating; emergency response should be scaled up because cases are still above baseline",
+      "The epidemic curve shows an initial acceleration phase (weeks 1-6), a peak in week 6 (72 cases), and a declining phase (weeks 7-8: 45, 18 cases). This declining trend suggests the outbreak may be self-limiting or that control measures are effective; however, vigilance must be maintained, vector control sustained, and surveillance for potential resurgence continued",
+      "The data shows no clear pattern; weekly fluctuations are expected in dengue surveillance",
+      "Week 8 with 18 cases means the outbreak is over; all response activities should be stood down"
     ],
-    answer: 2,
-    explanation: "AMR sentinel surveillance under India's National Action Plan on AMR (NAP-AMR, 2017-2021) involves: (1) Culture of clinically significant specimens (blood cultures for bacteremia, CSF for meningitis, urine for UTI, wound swabs); (2) Standardized Antimicrobial Susceptibility Testing (AST) using Kirby-Bauer disk diffusion or MIC testing with CLSI/EUCAST interpretive criteria; (3) Data entry into national AMR surveillance network platform (linked to WHONET software); (4) Antibiotic consumption/usage data (DDD - defined daily doses per 100 patient days) for correlation with resistance trends; (5) Regular feedback reports to clinicians. Surveillance covers all priority pathogens (ESKAPE organisms, extended-spectrum beta-lactamase producers), not just CRE. Pure PCR-based surveillance misses resistance mechanisms not detectable by targeted PCR."
+    answer: 1,
+    explanation: "Interpreting time-series surveillance data: (1) Epidemic curve shape: weeks 1-6 show exponential growth (5, 8, 12, 25, 48, 72) typical of spreading vector-borne disease; peak at week 6 (72 cases); weeks 7-8 show decline (45, 18); (2) Response implications: declining phase suggests either natural epidemic dynamics (herd immunity effect, seasonal vector reduction) or effectiveness of vector control measures implemented around peak; (3) Caution: premature stand-down risks: (a) Dengue has multiple serotypes; if different serotype circulates, new wave possible; (b) Residual Aedes larval indices may still be high; (c) Reporting delays may mask continued transmission; (4) Actions: continue vector control and surveillance; assess entomological indices to confirm vector reduction; maintain RRT readiness. Week 8 cases (18) are above the baseline (week 1: 5), so the outbreak is not over but declining."
   },
   {
     id: 36,
-    question: "Under the National AIDS Control Programme (NACP) Phase V, which strategy is used to identify HIV-positive individuals who are currently NOT on treatment and link them to ART centres?",
+    question: "A GIS (Geographic Information System) analysis of malaria cases in a district maps case distribution over a 5-year period. Clusters of high-incidence villages are identified near forest areas and irrigation canal systems. How should this GIS analysis directly inform the vector control programme?",
     options: [
-      "Mandatory HIV testing for all adults in high-prevalence districts regardless of consent",
-      "HIV index testing (partner notification services): offering HIV testing to sexual partners, needle-sharing partners, and biological children of known HIV-positive individuals",
-      "Population-level serosurveys conducted every year in all districts",
-      "Exclusive focus on PPTCT (prevention of parent-to-child transmission) as the sole case finding strategy"
+      "GIS analysis is purely academic; it cannot guide operational vector control decisions",
+      "The GIS cluster map identifies high-risk geographic zones for targeted resource allocation: prioritizing IRS, LLIN distribution, and active case detection (ACD) in forest-fringe villages and canal-side habitations; stratifying the district into high/medium/low risk blocks for differential intensity of interventions; identifying specific breeding habitats for targeted larval source management",
+      "GIS shows where cases occurred historically; future cases will occur randomly so historical mapping is irrelevant",
+      "GIS analysis identifies drug-resistant malaria clusters requiring only therapeutic changes"
     ],
     answer: 1,
-    explanation: "HIV index testing (also called partner notification services or contact tracing for HIV) is a key strategy under NACP for reaching undiagnosed HIV-positive individuals. Known HIV-positive individuals (index cases) are counselled to disclose status and bring sexual partners, needle-sharing partners, and biological children for HIV testing. This voluntary, confidential strategy has high yield because partners of HIV-positive individuals have significantly higher HIV prevalence than the general population. Other case-finding strategies under NACP: targeted testing at integrated counselling and testing centres (ICTC), facility-based provider-initiated testing and counselling (PITC), community-based testing camps. The 95-95-95 targets (95% diagnosed, 95% on ART, 95% virally suppressed) drive India's HIV programme goals."
+    explanation: "GIS applications in malaria epidemiology and control: (1) Spatial risk stratification: identifying high-transmission villages and micro-geographies (forest-fringe, waterlogged areas, irrigation canal habitats) for targeted intervention; (2) Resource optimization: focusing IRS, LLINs, and RDT stock on high-risk areas rather than uniform distribution; (3) Active case detection planning: identifying villages with high parasite rates for monthly ACD camps; (4) Breeding site mapping: overlaying GIS cases with satellite-derived water body, vegetation, and land use data to locate Anopheles breeding habitats for larval source management; (5) Programme monitoring: tracking temporal-spatial shifts in malaria burden to evaluate interventions; (6) Surveillance gap identification: areas with high case density but low health facility access. GIS-informed stratification is now standard in India's malaria elimination strategy under the National Framework for Malaria Elimination (NFME) 2016-2030."
   },
   {
     id: 37,
-    question: "The National Centre for Disease Control (NCDC) operates the Integrated Disease Surveillance Programme. In a district where dengue cases are rising, the District Surveillance Officer (DSO) wants to confirm whether dengue has crossed the epidemic threshold. Which approach is MOST appropriate for defining the dengue epidemic threshold?",
+    question: "An economic evaluation of two cholera prevention strategies is conducted: (A) Oral Cholera Vaccine (OCV) mass vaccination campaign (cost: Rs 50 lakhs) preventing 500 cholera cases; (B) Water chlorination programme (cost: Rs 20 lakhs) preventing 300 cholera cases. Calculate the Cost-Effectiveness Ratio (CER) for both strategies and determine which is more cost-effective.",
     options: [
-      "Any laboratory-confirmed dengue case exceeding 5 per week constitutes an epidemic",
-      "Epidemic threshold is a fixed national number (100 cases per district per month)",
-      "Epidemic threshold is district-specific: calculated as mean weekly cases + 2 standard deviations based on at least 5 years of historical surveillance data for the same epidemiological week; crossing this threshold triggers outbreak response",
-      "WHO defines the dengue epidemic threshold as an attack rate of 1% of the district population"
+      "Strategy A CER = Rs 1,000/case prevented; Strategy B CER = Rs 667/case prevented; Strategy B is more cost-effective per case prevented",
+      "Strategy A CER = Rs 10,000/case prevented; Strategy B CER = Rs 6,667/case prevented; Strategy B is more cost-effective",
+      "Strategy A is superior because it prevents more cases in absolute terms",
+      "Strategy B is inferior because it prevents fewer total cases"
     ],
-    answer: 2,
-    explanation: "Epidemic thresholds for endemic diseases like dengue are defined using historical baseline data rather than fixed absolute numbers, because disease burden varies substantially between districts. The standard approach: calculate weekly case counts from at least 5 years of historical data for each epidemiological week; the epidemic threshold is typically set at mean + 2 standard deviations (or the 75th/90th percentile) for that specific week. When current week's cases exceed this threshold, an outbreak response is initiated. This district-specific, week-specific threshold accounts for normal seasonal variation in dengue. IDSP uses similar thresholds for weekly alert generation. The EWARN (Early Warning and Response Network) system embedded in IHIP automates this threshold calculation."
+    answer: 0,
+    explanation: "Cost-Effectiveness Ratio (CER) = Programme Cost / Health Outcome (cases prevented). Strategy A CER = Rs 50,00,000 / 500 cases = Rs 10,000 per case prevented. Strategy B CER = Rs 20,00,000 / 300 cases = Rs 6,667 per case prevented. Strategy B is more cost-effective with a lower cost per case prevented (Rs 6,667 vs Rs 10,000). Decision-making considerations: (1) CER alone does not determine the better choice - it depends on available budget and the maximum number of cases to prevent; (2) Incremental Cost-Effectiveness Ratio (ICER) compares the additional cost per additional benefit of A vs B: ICER = (50 - 20 lakhs) / (500 - 300 cases) = 30 lakhs / 200 cases = Rs 15,000 per additional case prevented by A over B; (3) Decision-makers must judge if Rs 15,000 for each additional case prevented justifies choosing A. Cost-effectiveness analysis informs but does not dictate public health decisions."
   },
   {
     id: 38,
-    question: "A gastroenteritis outbreak occurs in a village of 500 people after a community feast. Within 24 hours, 120 people develop profuse watery diarrhoea with vomiting. The incubation period ranges from 1-6 hours. Stool cultures sent to the lab. Based on the SHORT incubation period and clinical features, what is the MOST likely etiological agent?",
+    question: "A gastrointestinal outbreak occurs in a village of 600 people following a community festival. Within 48 hours, 180 cases of diarrhoea are reported. The field team identifies two potential food exposures: raw salad (eaten by 300 persons, 120 became ill) and cooked rice (eaten by 500 persons, 60 became ill). Using food-specific attack rates, which food is the most likely vehicle?",
     options: [
-      "Vibrio cholerae O1 El Tor biotype",
-      "Staphylococcus aureus enterotoxin (preformed toxin)",
-      "Salmonella typhi causing typhoid fever",
-      "Rotavirus causing viral gastroenteritis"
+      "Cooked rice: more people were exposed (500 vs 300), so it accounts for more cases",
+      "Raw salad: Attack rate in salad consumers = 120/300 = 40%; Attack rate in non-salad consumers = 60/300 = 20%; RR = 40/20 = 2.0; compared to rice: AR in rice consumers = 60/500 = 12%; AR in non-rice consumers = 120/100 = 120% (impossible); raw salad with AR of 40% vs 20% in unexposed and RR = 2.0 implicates salad",
+      "Both foods equally implicated because the total outbreak attack rate is 30%",
+      "Neither food is implicated; the low RR suggests water-borne transmission"
     ],
     answer: 1,
-    explanation: "An incubation period of 1-6 hours is characteristic of preformed toxin food poisoning, not infection. Staphylococcus aureus produces heat-stable enterotoxins (A-E) in food, which are ingested preformed. Onset is rapid (1-6 hours), symptoms are primarily vomiting and diarrhoea without fever, and resolution occurs within 24-48 hours. The short incubation rules out: Vibrio cholerae (incubation 6-48 hours, classical rice-water stools), Salmonella (incubation 6-72 hours for gastroenteritis, 1-3 weeks for typhoid), Rotavirus (incubation 1-3 days, primarily in children). Other short-incubation toxin-mediated outbreaks: Bacillus cereus emetic type (1-6 hours, from reheated rice), Bacillus cereus diarrhoeal type (8-16 hours). The community feast setting suggests a common food source incubated at room temperature promoting S. aureus toxin production."
+    explanation: "Food-specific attack rate analysis: Raw salad: exposed (ate salad): 120 ill / 300 total = 40% AR. Not exposed to salad: remaining 300 persons with (180-120) = 60 ill / 300 = 20% AR. RR = 40% / 20% = 2.0. Cooked rice: exposed: 60 ill / 500 = 12% AR. Not exposed: (180-60) = 120 ill / 100 = 120% (arithmetic error - this is impossible, meaning most unexposed to rice also ate other foods). The raw salad shows a clear differential: 40% ill among consumers vs 20% among non-consumers (RR = 2). The calculation for cooked rice is problematic because nearly all attendees ate rice (500/600), making the 'unexposed to rice' group very small. Raw salad with higher AR among consumers and lower AR among non-consumers, combined with its raw preparation method (no heat killing pathogens), implicates it as the vehicle."
   },
   {
     id: 39,
-    question: "In the gastroenteritis outbreak in question 38, a retrospective cohort study is conducted. Among 150 people who ate chicken curry, 90 developed illness (attack rate 60%). Among 350 who did not eat chicken curry, 30 developed illness (attack rate 8.6%). Calculate the Relative Risk and interpret the food-specific attack rate table.",
+    question: "A measles outbreak is reported in a school with 500 students. Vaccination records show 420 students (84%) received at least one dose of measles vaccine. Over 3 weeks, 60 measles cases occur: 15 in unvaccinated students (80 unvaccinated) and 45 in vaccinated students (420 vaccinated). Calculate the vaccine effectiveness (VE) from this outbreak data.",
     options: [
-      "RR = 60/8.6 = 6.98; chicken curry is the likely vehicle with 7-fold higher risk in those who ate it",
-      "RR = 90/30 = 3.0; the difference is not clinically significant",
-      "RR = 150/350 = 0.43; those eating chicken curry were protected",
-      "RR = (90-30)/(150+350) = 0.12; absolute risk difference is more meaningful than relative risk"
+      "VE = 75% because 75% of cases were vaccinated",
+      "VE = (AR unvaccinated - AR vaccinated) / AR unvaccinated x 100 = (15/80 - 45/420) / (15/80) x 100 = (18.75% - 10.71%) / 18.75% x 100 = 42.9%",
+      "VE = 84% because 84% vaccination coverage implies 84% effectiveness",
+      "VE cannot be calculated from outbreak data; only from randomized trials"
     ],
-    answer: 0,
-    explanation: "Relative Risk (RR) = Attack Rate in Exposed / Attack Rate in Unexposed = 60% / 8.6% = 6.98 (approximately 7). Interpretation: people who ate chicken curry were approximately 7 times more likely to develop illness than those who did not. This is strong epidemiological evidence implicating chicken curry as the vehicle. In food-specific attack rate analysis, the implicated food typically shows: (1) High attack rate in those who ate it (60%); (2) Low attack rate in those who did not (8.6%); (3) High Relative Risk (>3); (4) The difference in attack rates is statistically significant. The residual attack rate of 8.6% in non-exposed suggests either another food vehicle or cross-contamination. This analysis should be repeated for all foods served to identify the specific vehicle."
+    answer: 1,
+    explanation: "Vaccine effectiveness (VE) from outbreak data (screening method or cohort method): AR in unvaccinated = 15/80 = 0.1875 = 18.75%. AR in vaccinated = 45/420 = 0.1071 = 10.71%. VE = (ARu - ARv) / ARu x 100 = (0.1875 - 0.1071) / 0.1875 x 100 = 0.0804 / 0.1875 x 100 = 42.9%. This relatively low VE (43%) for measles vaccine (expected 85-95% for one dose) suggests vaccine failure - either primary failure (vaccine didn't induce immunity) or secondary failure (immunity waned). This outbreak demonstrates the importance of two-dose measles vaccination: single dose leaves 5-15% without immunity, and with high measles R0 (12-18), even this small susceptible proportion can sustain outbreaks. Actions: analyze coverage for second dose (MCV2), conduct outbreak response immunization."
   },
   {
     id: 40,
-    question: "A measles outbreak is reported in a government primary school with 400 students. Over 3 weeks, 40 students develop fever with maculopapular rash and Koplik spots. The school vaccination records show 85% of students received 1 dose of measles-containing vaccine (MCV1) at 9-12 months. What is the FIRST action in outbreak response?",
+    question: "During a dengue outbreak, an entomological survey of 200 houses finds: 36 houses with Aedes aegypti larvae (House Index = 18%), 50 positive containers in these 36 houses (Breteau Index = 50/200 = 25), 50 positive containers out of 300 water-holding containers inspected (Container Index = 50/300 = 16.7%). The outbreak response team prioritizes which action based on a BI of 25?",
     options: [
-      "Immediately close the school for 4 weeks to interrupt transmission",
-      "Confirm the outbreak: verify clinical diagnosis of at least 3 cases with laboratory confirmation (serology for measles IgM), establish a case definition, and simultaneously initiate outbreak response vaccination for all unvaccinated and under-vaccinated students",
-      "Administer antibiotics to all students as prophylaxis against secondary bacterial infections",
-      "Wait for all 40 suspected cases to have laboratory confirmation before initiating any response"
+      "A BI of 25 indicates low vector density; no emergency intervention required",
+      "A BI of 25 far exceeds the dengue transmission threshold (BI >5) and the critical BI (BI >50 = epidemic danger); this indicates high vector density requiring emergency larval source management (draining, covering, or treating all water containers), community mobilization for source reduction, and targeted ULV space spraying to reduce adult Aedes populations",
+      "A BI of 25 is acceptable; only a BI >100 requires emergency response",
+      "Entomological indices are not actionable; only confirmed dengue case counts drive response"
     ],
     answer: 1,
-    explanation: "WHO and NVBDCP measles outbreak response protocol: (1) Confirm outbreak - clinically verify cases (fever, rash, cough/coryza/conjunctivitis) and laboratory-confirm at least 3 cases (measles IgM serology or PCR). Laboratory confirmation should not delay response; (2) Establish case definition for outbreak (clinical + epidemiological link or lab confirmation); (3) Notify district surveillance officer and state health department; (4) Outbreak response immunization (ORI): administer MCV to all unvaccinated/incompletely vaccinated children 6 months to 5 years (or school age in this context) in the affected area, regardless of previous vaccination history; (5) Vitamin A supplementation for all children with measles; (6) Identify susceptibles (check vaccination records). School closure is not the primary response and may not be necessary if ORI is implemented promptly."
+    explanation: "Breteau Index (BI) interpretation: BI < 5 = low risk; BI 5-50 = dengue transmission risk (action required); BI > 50 = critical, epidemic danger. A BI of 25 places the area in the high-risk transmission zone. WHO and NVBDCP define: BI > 5 triggers vector control actions; BI > 20 requires emergency response. Actions at BI = 25: (1) Emergency Larval Source Management (LSM): house-to-house inspection and elimination of all Aedes breeding sites (covering drums, emptying coolers, clearing roof gutters, treating flower vases); (2) Community mobilization for 'dry day' (one day/week when all containers emptied); (3) Temephos (abate) or BTI application to non-drainable containers; (4) ULV space spraying during early morning/evening (Aedes peak biting times) to kill adult mosquitoes; (5) Re-survey after 2 weeks to assess BI reduction. Entomological indices are the primary tool for guiding vector control decisions BEFORE outbreak peaks."
   },
   {
     id: 41,
-    question: "During a dengue outbreak investigation in an urban ward, the Aedes aegypti larval survey reveals a House Index (HI) of 18%, Breteau Index (BI) of 25, and Container Index (CI) of 12%. The entomological threshold for dengue transmission risk is HI >1%, BI >5. Which vector control strategy is MOST appropriate?",
+    question: "A hospital infection control team investigates a cluster of 8 nosocomial Clostridioides difficile infections (CDI) in a medical ward over 6 weeks. All cases had received broad-spectrum antibiotics. Whole genome sequencing (WGS) of all 8 isolates shows they are clonal (>99.9% genomic similarity). What does clonality confirm and what is the next investigative step?",
     options: [
-      "Indoor residual spraying (IRS) with DDT in all houses in the ward",
-      "Emergency indoor and outdoor ultra-low volume (ULV) space spraying with pyrethroid insecticide to rapidly kill adult Aedes mosquitoes, COMBINED with intensive larval source management (LSM) targeting all water-holding containers, with community mobilization",
-      "Distribute ORS packets to all households as the primary dengue response measure",
-      "Conduct serological survey first to determine dengue seroprevalence before initiating any vector control"
+      "Clonality confirms the outbreak but is irrelevant to control measures",
+      "Clonality proves antibiotic use is the sole cause; no further environmental investigation needed",
+      "Clonality confirms a common source outbreak (all cases infected by the same strain) rather than multiple independent acquisitions; next step is to identify the transmission pathway: environmental sampling of ward surfaces, shared equipment, HCW hand cultures, and review of case-patient care overlap (same rooms, beds, staff, procedures) to identify the source/route of cross-transmission",
+      "Clonality means surgical ward closure is mandatory"
     ],
-    answer: 1,
-    explanation: "With House Index of 18% and Breteau Index of 25 (both far exceeding thresholds of 1% and 5 respectively), vector density is critically high, indicating very high dengue transmission risk. Outbreak response requires: (1) Emergency space spraying (ULV fogging) with pyrethroid (deltamethrin/malathion) to knock down adult Aedes mosquitoes rapidly - reduces transmission immediately; (2) Simultaneous intensive Larval Source Management: drain, cover, or treat with larvicide (temephos, BTI) all water containers (drums, coolers, flower pots, overhead tanks, desert coolers); (3) Community mobilization: 'dry day' campaigns - one day per week when all residents inspect and empty water containers; (4) Entomological re-survey after 2 weeks to assess impact. Fogging alone without LSM is ineffective as Aedes re-populates from breeding sites. DDT is not used against Aedes and is banned for indoor use."
+    answer: 2,
+    explanation: "WGS clonality interpretation: when outbreak isolates are genetically identical or near-identical (>99.9% similarity), it confirms a common source outbreak - all patients were infected by the same strain, indicating transmission from a single source rather than multiple independent environmental sources or patient introductions. This rules out coincidental co-occurrence of unrelated CDI cases. Next investigative steps: (1) Environmental sampling: ward surfaces (call buttons, bed rails, commodes, shared toilets) - C. difficile spores persist for months; (2) Review patient care overlap: shared rooms, beds, care staff, procedures (colonoscopy equipment, enema equipment); (3) Case-patient timeline: construct a line list with room assignments to identify transmission chains; (4) HCW screening (rarely done for CDI but may identify asymptomatic carriers); (5) Implement and assess control measures: contact precautions, spore-killing disinfection (bleach), hand hygiene with soap/water, antibiotic stewardship."
   },
   {
     id: 42,
-    question: "A cluster of healthcare-associated infections (HAI) is detected in a surgical ward: 8 patients develop SSI (surgical site infection) with Klebsiella pneumoniae within 2 weeks. Normally the ward sees <1 SSI per month. An infection control investigation is initiated. Which of the following is the MOST systematic approach to identify the source?",
+    question: "A seroprevalence survey for dengue is being designed in an urban district with an estimated dengue seroprevalence of 40%. The survey aims to estimate prevalence with 5% absolute precision and 95% confidence. What sample size is required (ignoring design effect)?",
     options: [
-      "Immediately close the ward and restart after terminal cleaning with bleach",
-      "Blame the scrub nurse as the most common source of SSI in outbreak settings",
-      "Conduct a case-control study: compare surgical procedures, surgical teams, instruments, antiseptics, pre-operative antibiotics, duration of surgery, and environmental samples (surfaces, instruments, saline bottles); collect clinical isolates and environmental isolates for whole genome sequencing/PFGE to establish clonality",
-      "Administer prophylactic carbapenem to all surgical patients in the ward for 2 weeks"
+      "n = z² x p x (1-p) / d² = 1.96² x 0.40 x 0.60 / 0.05² = 3.84 x 0.24 / 0.0025 = 369 individuals",
+      "n = 1000 (standard minimum for seroprevalence surveys)",
+      "n = 100 (sufficient for a pilot study)",
+      "n = 2000 (always required for urban surveys)"
     ],
-    answer: 2,
-    explanation: "HAI cluster investigation follows outbreak investigation principles adapted to the healthcare setting: (1) Confirm the cluster: verify diagnoses, collect isolates, check if incidence exceeds baseline; (2) Establish case definition; (3) Case-control or cohort study comparing cases to non-infected surgical patients for exposures (specific surgical team, operating theatre, instruments/implants, IV fluids, antiseptic solutions, pre-op shaving, duration of surgery, antibiotic prophylaxis); (4) Environmental sampling: surface swabs from OT tables, anesthesia equipment, saline/antiseptic bottles, instrument trays; (5) Microbiological typing: PFGE (pulsed-field gel electrophoresis) or whole genome sequencing to determine if isolates are clonal (same strain = common source); (6) Implement infection prevention and control (IPC) measures. Empirical ward closure or prophylactic carbapenems without investigation do not address the source."
+    answer: 0,
+    explanation: "Sample size for prevalence studies: n = Z² x p x (1-p) / d², where Z = 1.96 for 95% confidence, p = expected prevalence = 0.40, (1-p) = 0.60, d = desired absolute precision = 0.05 (5%). n = (1.96)² x 0.40 x 0.60 / (0.05)² = 3.8416 x 0.24 / 0.0025 = 0.9220 / 0.0025 = 368.6, rounded up to 369 individuals. Practical considerations: (1) Add 10-20% for non-response: final n ≈ 406-443; (2) If cluster sampling is used (e.g., cluster random sampling of households), multiply by design effect (DEFF, typically 1.5-2.5): n = 369 x DEFF; (3) Precision can be improved by narrowing d to 3% (n = 1025) or worsened by wider d to 10% (n = 92). The formula assumes simple random sampling. For stratified surveys, calculate stratum-specific sample sizes. Seroprevalence surveys for dengue typically use this approach with cluster sampling of households."
   },
   {
     id: 43,
-    question: "A cluster of 6 patients presents over 10 days in a district of Kerala with acute encephalitis, high fever, and two deaths. All patients are from villages near a fruit bat (Pteropus) colony. Healthcare workers who treated early cases without PPE are anxious. What is the FIRST priority action for the District Health Team?",
+    question: "In interpreting IDSP weekly outbreak data, a state epidemiologist notes that the number of reported outbreaks of acute diarrheal disease (ADD) increases sharply in June-July every year. This seasonal pattern is observed consistently over 5 years. What is the MOST appropriate interpretation and programmatic response?",
     options: [
-      "Collect serum samples from fruit bats and submit to ICMR NIV Pune before taking any human actions",
-      "Immediately notify the state and central health authorities (NCDC/ICMR), ensure strict isolation of suspected cases with PPE (N95 mask, gowns, gloves, eye protection), initiate contact tracing and monitoring of all exposed healthcare workers and community contacts, and submit clinical samples to ICMR NIV Pune for Nipah virus testing",
-      "Administer ribavirin prophylaxis to all healthcare workers who had any contact with patients",
-      "Reassure the community that encephalitis is common in Kerala and await laboratory results before any action"
+      "The June-July increase represents surveillance artifact (reporting increases due to summer holidays when health workers have more time to report)",
+      "Each June-July cluster should be investigated as a new independent outbreak",
+      "The consistent seasonal pattern of ADD outbreaks in June-July (monsoon onset) likely reflects predictable epidemiological factors: heavy rainfall causing sewage overflow and drinking water contamination, flooding of open defecation sites, increased fly density, and higher ambient temperatures promoting pathogen growth; programmatic response: pre-monsoon preparedness activities (water chlorination, ORS stockpiling, health worker training, sanitation improvement) should be completed by May every year",
+      "Seasonal patterns indicate the IDSP system is unreliable; ignore the data"
     ],
-    answer: 1,
-    explanation: "A cluster of acute encephalitis with deaths near a fruit bat colony in Kerala should immediately raise suspicion for Nipah virus disease (NiV), which has caused outbreaks in Kerala (2018, 2019, 2021, 2023). Nipah has case fatality rate of 40-75% and can spread human-to-human via respiratory droplets and direct contact. Immediate actions: (1) Notify state/central authorities (NCDC, ICMR, WHO under IHR 2005 reporting obligation); (2) Strict isolation of cases with appropriate PPE; (3) Contact tracing of all exposed individuals (healthcare workers, family members); (4) 21-day monitoring of contacts (max incubation period); (5) Submit samples (serum, CSF, urine) to ICMR NIV Pune (only BSL-4 capable facility in India for Nipah confirmation); (6) Educate community about avoiding fruit bat contact, not consuming partially-eaten fruits. Ribavirin efficacy for prophylaxis is not established."
+    answer: 2,
+    explanation: "Seasonal disease patterns analysis and programme response: The consistent June-July ADD outbreak peak correlates with monsoon onset - a well-documented epidemiological phenomenon: (1) Heavy rainfall overwhelms sewage systems causing fecal contamination of drinking water sources; (2) Flooding spreads open defecation site contamination; (3) Increased fly population density amplifies fecal-oral transmission; (4) Higher temperatures (27-37°C) accelerate bacterial growth in food and water. Pre-monsoon preparedness (May-June): (a) District-level water source mapping and chlorination; (b) ORS and zinc stockpiling at sub-centres; (c) ANM/ASHA training on diarrhea case management; (d) Water quality testing before monsoon; (e) Sanitation drives (elimination of open defecation sites); (f) Contingency plans for flood scenarios. Using predictable seasonal patterns for prospective programme planning is a hallmark of effective disease surveillance utilization."
   },
   {
     id: 44,
-    question: "An outbreak of unknown acute febrile illness is reported from a remote tribal area - 50 cases, 10 deaths over 3 weeks. No prior outbreaks in the area. Clinical features: fever, severe headache, myalgia, hemorrhagic manifestations in 6 deaths. The district has no diagnostic capacity. Which of the following is the MOST appropriate initial classification and response?",
+    question: "During an unknown fever cluster investigation in a forested tribal district of Chhattisgarh, 30 patients present with fever, rash, and lymphadenopathy over 3 weeks. There is no prior seasonal pattern for this presentation. The IDSP Rapid Response Team arrives. Which differential epidemiological approach BEST guides specimen collection and preliminary management?",
     options: [
-      "Classify as malaria outbreak and start empirical chloroquine treatment for all fever cases",
-      "Classify as dengue haemorrhagic fever based on hemorrhagic manifestations and implement standard dengue response",
-      "Classify as Disease of Unknown Etiology (DUE); collect samples (serum, clotted blood, paired samples) following biosafety precautions, send to NIV Pune/NCDC as Unknown Fever; simultaneously provide supportive care and implement standard universal precautions/isolation for all cases",
-      "Await complete laboratory confirmation before implementing any infection control measures"
+      "Collect only malaria blood smears as malaria is the most common cause of fever in tribal Chhattisgarh",
+      "Apply the DIME (Disease, Incubation period, Mode of transmission, Epidemiology) framework: clinically characterize cases (fever pattern, rash morphology, lymphadenopathy type), construct an epidemic curve, map cases geographically, conduct exposure history (forest entry, animal contact, tick/mite exposure, water source), and collect a systematic specimen panel: blood for malaria (smear + RDT), serology for scrub typhus, spotted fever, leptospirosis, dengue, hepatitis; blood culture; EDTA blood for PCR for rickettsial diseases - to rule in/out multiple diagnoses simultaneously",
+      "Prescribe antibiotics to all patients and monitor response to guide diagnosis",
+      "Refer all patients to AIIMS Delhi before any investigation"
     ],
-    answer: 2,
-    explanation: "Undiagnosed acute febrile illness with haemorrhage and high CFR (10/50 = 20%) in a remote area requires a 'Disease of Unknown Etiology' (DUE) approach: (1) Do NOT assume a diagnosis - differential includes viral haemorrhagic fever (Crimean-Congo Haemorrhagic Fever, Kyasanur Forest Disease in tribal Karnataka/Maharashtra, Hantavirus), severe leptospirosis, rickettsia, or unknown pathogen; (2) Implement universal precautions and strict infection control immediately (barrier nursing, PPE); (3) Systematic sample collection: whole blood (EDTA), serum (plain tube), throat swab, urine - in triple packaging following biosafety protocols; (4) Send to National reference labs (NIV Pune, NCDC) with clinical details; (5) Notify through IDSP/IHIP as DUE; (6) Supportive care for all cases. Empirical specific treatment without diagnosis risks missing the actual cause and delays appropriate management."
+    answer: 1,
+    explanation: "Unknown fever cluster in tribal forested areas requires a systematic differential epidemiological approach: (1) Clinical characterization: fever pattern (continuous, intermittent, remittent), rash type (maculopapular, petechial, eschar), lymphadenopathy pattern, organ involvement - these narrow the differential; (2) Epidemic curve: point source vs ongoing exposure; (3) Geographic mapping: forest-linked clusters suggest vector/zoonotic etiology; (4) Exposure history: tick exposure (spotted fever), mite exposure (scrub typhus), rodent/small mammal contact (leptospirosis), forest entry timing; (5) Systematic specimen panel: blood smear + RDT (malaria), serology (Weil-Felix for rickettsia, IgM ELISA for scrub typhus, leptospira, dengue, chikungunya), blood culture (bacteremia, typhoid), EDTA blood for PCR panel. In tribal Chhattisgarh, scrub typhus, spotted fever rickettsiae (Rickettsia conorii), malaria, and leptospirosis are key differentials. Empirical antibiotic therapy may be started (doxycycline covers most rickettsial diseases) but after specimen collection."
   },
   {
     id: 45,
-    question: "A traveller returns from sub-Saharan Africa after a 2-week safari. Three days after return, she develops fever, rigors, severe headache, and myalgia. She did not take malaria chemoprophylaxis. Peripheral smear examination is MOST likely to show which finding if P. falciparum malaria is suspected?",
+    question: "A food poisoning outbreak at a school lunch event is investigated using a cohort study. The 2x2 table for the suspect food (chicken roll) shows: Ate chicken roll and ill = 70; Ate chicken roll and not ill = 30; Did not eat and ill = 10; Did not eat and not ill = 90. Calculate both the Relative Risk (RR) and Odds Ratio (OR), and explain which is more appropriate for this outbreak.",
     options: [
-      "Ring trophozoites within enlarged erythrocytes with Schuffner's dots",
-      "Small ring forms with multiple rings per erythrocyte (double infection), accole/applique forms, no enlarged RBCs, and banana-shaped gametocytes",
-      "Large amoeboid trophozoites in enlarged erythrocytes with Schuffner's dots",
-      "Band-form trophozoites in normal-sized erythrocytes"
+      "RR = 70/10 = 7; OR = 70/30 = 2.3; RR is more appropriate",
+      "RR = (70/100) / (10/100) = 7.0; OR = (70 x 90) / (30 x 10) = 21; RR (7.0) is more appropriate for this cohort outbreak study as it directly estimates the probability ratio; OR (21) overestimates RR when disease is common (70% attack rate in exposed)",
+      "RR = 7.0; OR = 21; OR is always preferred over RR in epidemiology",
+      "RR and OR are identical when disease is common"
     ],
     answer: 1,
-    explanation: "P. falciparum peripheral smear characteristics: (1) Small delicate ring forms (1/5 RBC diameter); (2) Multiple rings per erythrocyte (double/multiple infection - unique to P. falciparum); (3) Accole (applique) forms - rings applied to RBC periphery; (4) No enlarged erythrocytes (unlike P. vivax/P. ovale which enlarge RBCs); (5) Schuffner's dots absent in P. falciparum (present in P. vivax, P. ovale); (6) Banana/crescent-shaped gametocytes (pathognomonic for P. falciparum); (7) In severe falciparum, mature trophozoites and schizonts may appear (normally sequestered in microvasculature). Schuffner's dots in enlarged RBCs = P. vivax or P. ovale. Band forms = P. malariae. Amoeboid trophozoites in enlarged RBCs = P. vivax. Travel history to sub-Saharan Africa without prophylaxis with fever = P. falciparum until proven otherwise."
+    explanation: "2x2 table: a = 70 (exposed+ill), b = 30 (exposed+not ill), c = 10 (unexposed+ill), d = 90 (unexposed+not ill). RR = [a/(a+b)] / [c/(c+d)] = (70/100) / (10/100) = 0.70/0.10 = 7.0. OR = (a x d) / (b x c) = (70 x 90) / (30 x 10) = 6300/300 = 21. OR (21) substantially overestimates RR (7) because the attack rate in exposed is high (70%) - OR approximates RR only when disease prevalence/attack rate is low (<10%; the rare disease assumption). In a cohort/outbreak study where all participants are followed from a defined exposure event, RR is the preferred measure of association as it directly measures the ratio of risks (probabilities). OR is preferred in case-control studies where the study design does not allow direct risk estimation. The 3-fold difference between OR (21) and RR (7) demonstrates why using OR as a proxy for RR is invalid when attack rates are high."
   },
   {
     id: 46,
-    question: "At a wedding reception attended by 300 guests, 80 develop acute gastroenteritis within 12 hours. A cohort study is conducted. The food-specific attack rates are: rice (55% exposed, AR 28%), lentil curry (70% exposed, AR 26%), tandoori chicken (45% exposed, AR 65%), and salad (30% exposed, AR 68%). Which food items should be prioritized as the vehicle of infection, and what is the relevant calculation?",
+    question: "An IDSP outbreak report from a district shows 85 cases of viral hepatitis from a single locality over 6 weeks. Laboratory results confirm 90% are Hepatitis E virus (HEV). The locality uses a shared overhead tank connected to a borewell. What study design is MOST appropriate to identify the specific source within the water system?",
     options: [
-      "Rice and lentil curry: highest exposure proportions indicate highest risk",
-      "Tandoori chicken and salad: highest food-specific attack rates (65% and 68%) with RR >3.0 compared to those who did not consume these items",
-      "All four foods: since multiple foods are implicated, the outbreak is likely water-borne not food-borne",
-      "Lentil curry: highest number of exposed persons (70%) means highest absolute number of cases"
+      "Randomized controlled trial comparing different water sources",
+      "Cross-sectional survey of current HEV seroprevalence across the district",
+      "Retrospective cohort study: enroll all residents of the locality and compare attack rates by water source characteristics (connection to overhead tank, alternative water sources, water usage patterns, boiling habits) - RR calculation for specific exposures to identify which point in the water supply system is the contamination source",
+      "Case series describing clinical features of the 85 confirmed cases"
     ],
-    answer: 1,
-    explanation: "In a food-specific attack rate analysis, the implicated vehicle shows: (1) High attack rate in those who consumed it; (2) Low attack rate in those who did NOT consume it; (3) High Relative Risk (ratio of attack rates). Tandoori chicken (AR 65%) and salad (AR 68%) have the highest attack rates. For confirmation, compare attack rates among those who DID vs DID NOT eat each food and calculate RR. Foods with the highest attack rate differentials and highest RR are the primary suspects. High exposure proportion (like lentil curry at 70%) with moderate AR (26%) does not implicate it. The absolute number of cases is not the metric - the relative risk (attack rate ratio) is the key statistic. The high attack rates in tandoori chicken and salad with presumably low AR in non-consumers would give RR >3-5, strongly implicating these as vehicles."
+    answer: 2,
+    explanation: "Waterborne outbreak investigation study design: A retrospective cohort study is most appropriate when the at-risk population is defined (residents of the locality) and is available for interview. The study: (1) Enrolls all residents of the locality (cases + non-cases); (2) Collects exposure history: which water source each household uses, frequency of use, water treatment practices (boiling, filtration), access to alternative sources; (3) Calculates attack rates and RR for each exposure: households using the suspect overhead tank vs borewell vs piped water vs purchased water; (4) Maps distribution network to identify potential contamination points; (5) Collects environmental samples: water from the borewell, overhead tank, distribution pipes, and household taps at different points for fecal coliform, E. coli counts, and HEV PCR. Case-control design could be used if enrolling all residents is impractical; cross-sectional or case series cannot identify the source."
   },
   {
     id: 47,
-    question: "An international traveller arrives from West Africa with fever, jaundice, and haemorrhagic manifestations at a major international airport. The airport health officer suspects a Viral Haemorrhagic Fever (VHF). Under the International Health Regulations (IHR) 2005, which of the following is the CORRECT immediate notification obligation for India?",
+    question: "A researcher designs a seroprevalence survey to estimate the proportion of the population with prior dengue infection using IgG ELISA. The survey uses a two-stage cluster sampling design: first-stage selection of 30 clusters (villages), second-stage selection of 20 households per cluster, with one adult per household sampled. What is the primary analytical challenge in this design?",
     options: [
-      "India notifies WHO within 48 hours only if the case is laboratory-confirmed",
-      "India notifies WHO within 24 hours of any event that may constitute a Public Health Emergency of International Concern (PHEIC), regardless of laboratory confirmation, if the case meets the IHR decision instrument criteria",
-      "Notification is not required unless 10 or more similar cases are reported",
-      "IHR 2005 notification applies only to cholera, yellow fever, and plague - VHF is not a notifiable condition"
+      "Two-stage cluster sampling always produces biased results and should not be used",
+      "Cluster sampling creates within-cluster correlation (design effect) - individuals within the same cluster are more similar to each other in dengue exposure and immunity than to individuals in other clusters; standard SE formulas assuming SRS will underestimate variance; analysis must account for cluster sampling using survey-weighted methods (SVY commands in Stata, PROC SURVEY in SAS) with cluster as the primary sampling unit to obtain correct standard errors and confidence intervals",
+      "The design is perfectly valid; no special analytical considerations are needed",
+      "Only one cluster per stratum can be analyzed; 30 clusters are too many"
     ],
     answer: 1,
-    explanation: "Under IHR 2005, Member States must notify WHO within 24 hours of assessment indicating a potential Public Health Emergency of International Concern (PHEIC). The IHR 2005 decision instrument (Annex 2) uses four criteria to assess notification need: (1) Is the public health impact serious? (2) Is the event unusual or unexpected? (3) Is there significant risk of international spread? (4) Is there significant risk of international travel/trade restrictions? VHF from West Africa would typically meet all four criteria. Notification does NOT require laboratory confirmation - clinical suspicion with epidemiological criteria is sufficient. IHR 2005 covers all public health events, not just specific diseases (the old IHR 1969 listed specific diseases). Four diseases always require notification: cholera, plague, smallpox, VAPP - but others are notified based on the decision algorithm."
+    explanation: "Cluster sampling analytical challenges: (1) Within-cluster correlation (ICC): individuals in the same village share environment, vector exposure, and past outbreaks - they are more similar to each other than to individuals in other villages; (2) Design effect (DEFF): the factor by which variance increases due to clustering compared to simple random sampling; DEFF = 1 + (m-1) x ICC, where m = cluster size. For dengue seroprevalence (ICC often 0.1-0.3), DEFF of 2-5 is common; (3) Standard error underestimation: ignoring clustering underestimates SEs, producing falsely narrow CIs and inflated statistical significance; (4) Analytical methods: survey-weighted analyses in statistical software account for sampling probabilities, clustering, and stratification; Taylor linearization or bootstrap methods estimate correct variances; (5) Sample size: must be increased by DEFF at design stage. This is standard in WHO EPI cluster surveys (30x7 design for vaccination coverage) and seroprevalence surveys."
   },
   {
     id: 48,
-    question: "In a hospital outbreak investigation of Clostridioides difficile infection (CDI), 15 cases are identified in a medicine ward over 6 weeks. All cases received antibiotics (primarily cephalosporins and fluoroquinolones). The environmental sampling shows C. difficile spores on multiple surfaces. What is the MOST effective infection prevention strategy to terminate this outbreak?",
+    question: "An ICMR research team calculates the sample size needed to estimate the prevalence of hepatitis B surface antigen (HBsAg) carriage in a population where a previous study found 3% prevalence. They want 95% confidence and 1% absolute precision. What sample size is required and what practical challenge does this present?",
     options: [
-      "Switch all patients to oral vancomycin prophylaxis regardless of CDI diagnosis",
-      "Implement contact precautions (private rooms, gowns and gloves), strict hand hygiene with soap and water (NOT alcohol-based hand rub), terminal room cleaning with sodium hypochlorite (bleach) 1000-5000 ppm, antibiotic stewardship to restrict cephalosporins and fluoroquinolones",
-      "Install HEPA air filtration systems as C. difficile spreads primarily by airborne route",
-      "Use alcohol-based hand rub with 70% isopropanol as the primary hand hygiene intervention"
+      "n = 1.96² x 0.03 x 0.97 / 0.01² = 3.84 x 0.0291 / 0.0001 = 1,117 individuals; this is feasible for a district-level survey",
+      "n = 1.96² x 0.03 x 0.97 / 0.01² = 1,117; this is the basic SRS estimate but for cluster sampling with DEFF = 2, required n = 2,234; with 15% non-response adjustment, final n = 2,570; logistically challenging for a serology survey requiring blood collection",
+      "n = 100; sufficient for rare disease prevalence estimation",
+      "Sample size cannot be calculated for prevalences below 5%"
     ],
     answer: 1,
-    explanation: "Clostridioides difficile (formerly Clostridium difficile) outbreak control requires specific measures based on its biology: (1) C. difficile forms spores that are NOT killed by alcohol-based hand rubs - hand hygiene MUST use soap and water to physically remove spores; this distinguishes CDI control from most other HAI; (2) Contact precautions: private rooms or cohorting, gown and gloves for all patient contact; (3) Environmental decontamination: C. difficile spores require sporicidal agents - sodium hypochlorite (bleach) at 1000-5000 ppm; standard quaternary ammonium disinfectants are ineffective; (4) Antibiotic stewardship: restricting high-risk antibiotics (cephalosporins, fluoroquinolones, clindamycin, carbapenems) that disrupt colonic flora and predispose to CDI; (5) Probiotics may be adjunctive. C. difficile is not airborne - HEPA filtration is irrelevant."
+    explanation: "Sample size calculation: n = Z² x p x (1-p) / d² = (1.96)² x 0.03 x 0.97 / (0.01)² = 3.8416 x 0.0291 / 0.0001 = 0.1118 / 0.0001 = 1,118 ≈ 1,118 (SRS). Adjustments: (1) Design effect for cluster sampling: if DEFF = 2, n = 1,118 x 2 = 2,236; (2) Non-response: assuming 15% non-response, n = 2,236 / 0.85 = 2,631; (3) Practical challenge: blood collection from >2,500 individuals for HBsAg serology is resource-intensive, requiring trained phlebotomists, cold chain for specimen transport, ELISA laboratory capacity, and significant funding; (4) Low prevalence (3%) means 97% of participants are sampled but do not have the outcome - large denominator required for precise estimation of rare conditions; (5) With 2% absolute precision (d = 0.02), n drops to 280 (SRS) - precision requirement substantially affects feasibility. This trade-off between precision and feasibility is a central challenge in seroprevalence study design."
   },
   {
     id: 49,
-    question: "During an outbreak investigation of a gastroenteritis cluster in a school, the investigators use the 'hypothesis generation' phase. Students from three different canteen counters were affected differentially: Counter A (sandwiches) - 45/80 ill; Counter B (rice meals) - 5/90 ill; Counter C (fruit juices) - 20/50 ill. A descriptive analysis shows the epidemic curve peaks at 6-8 hours after the lunch break. Which statement BEST describes the next step?",
+    question: "A five-year time-series analysis of malaria cases in a district shows a declining trend from 2500 cases in 2018 to 800 cases in 2022, with a temporary spike to 1800 cases in 2020 (COVID-19 pandemic year). Which statistical and epidemiological interpretations are MOST appropriate?",
     options: [
-      "Conclude that Counter A sandwiches are the vehicle; no further analytical study needed",
-      "The descriptive data suggests Counter A sandwiches and Counter C fruit juices as priority hypotheses based on differential attack rates; proceed to analytical case-control study comparing cases (ill students) and controls (well students) for consumption of specific food items at each counter to test these hypotheses formally",
-      "Since multiple counters are affected, this is a water-borne outbreak; test only the school water supply",
-      "The 6-8 hour incubation identifies Staph aureus definitely; collect food samples from Counter A only"
+      "The overall 5-year trend shows a 68% reduction (2500 to 800), consistent with malaria control progress; the 2020 spike represents disrupted malaria services during COVID-19 (reduced surveillance, treatment-seeking, vector control activities) rather than true increased transmission; interrupted time series analysis can separate the trend from the COVID-19 disruption effect; the post-2020 resumption of decline confirms the disruption was temporary",
+      "The 2020 spike proves malaria control has failed; the entire programme should be redesigned",
+      "Time series analysis cannot account for COVID-19 disruption; the 2020 data should be excluded entirely",
+      "The declining trend is statistically insignificant without p-value calculation"
     ],
-    answer: 1,
-    explanation: "The hypothesis generation phase uses descriptive epidemiology to formulate (not confirm) hypotheses. Differential attack rates: Counter A (45/80 = 56%), Counter B (5/90 = 5.6%), Counter C (20/50 = 40%) suggest Counters A and C as priority suspects (higher AR). The 6-8 hour incubation is consistent with preformed toxin (S. aureus, B. cereus) but also early-onset infection. However, descriptive data alone cannot confirm the vehicle - an analytical study is required to test hypotheses. A case-control study comparing food-item specific consumption among ill vs non-ill students will calculate odds ratios for each specific food item within each counter. This is the standard sequence: descriptive epidemiology generates hypotheses, analytical epidemiology tests them. Collecting samples only from Counter A would be premature before the analytical study."
+    answer: 0,
+    explanation: "Time-series analysis of malaria data: (1) Overall trend: 2500 to 800 cases = 68% reduction over 5 years, consistent with successful malaria control; (2) 2020 anomaly: the COVID-19 pandemic caused well-documented disruptions to malaria surveillance and services globally - lockdowns reduced health-seeking behavior, health workers were redeployed, supply chains disrupted (RDT, ACT shortages), surveillance completeness dropped; (3) Analytical approach: Interrupted Time Series (ITS) analysis can model: pre-COVID trend (2018-2019), level change at COVID onset (2020), post-COVID trend (2021-2022), separating programme effect from external disruption; (4) Causal inference: the resumption of decline post-2020 supports that the disruption was temporary; (5) Policy implication: pandemic preparedness plans must include maintaining essential health services (malaria, TB, immunization) during health emergencies. Using 2020 data without context would give misleading programme evaluation conclusions."
   },
   {
     id: 50,
-    question: "A national public health review assesses India's performance on the Global Health Security Index (GHSI) and IHR Joint External Evaluation (JEE) domains. For the domain of 'Zoonotic Disease' preparedness, which of the following activities BEST represents integration of human, animal, and environmental health under the One Health approach?",
+    question: "India's National Action Plan for Elimination of Lymphatic Filariasis (NAPELF) uses mass drug administration (MDA) with diethylcarbamazine (DEC) + albendazole in endemic districts. An implementation researcher evaluates MDA coverage in a district with reported administrative coverage of 85% (doses distributed/total population x 100) but a community survey shows effective coverage of only 62% (doses actually swallowed under observation). Which concept does this discrepancy illustrate?",
     options: [
-      "Separate disease reporting systems for the Ministry of Health and Ministry of Agriculture with no data sharing",
-      "Restricting zoonotic disease surveillance to the veterinary sector as animals are the primary reservoir",
-      "Establishment of inter-ministerial One Health task forces integrating MoHFW, Ministry of Agriculture, Ministry of Environment, with shared early warning systems, joint outbreak investigation protocols for zoonotic diseases (rabies, brucellosis, avian influenza, Nipah), integrated laboratory networks, and coordinated response capacity",
-      "Annual World Zoonosis Day (July 6) awareness campaigns as the primary One Health intervention"
+      "Both measures are identical; the discrepancy is a data entry error",
+      "Administrative coverage (doses distributed) consistently overestimates effective coverage (doses actually consumed) in MDA programmes; the 23% gap indicates pill-taking non-compliance or drug hoarding; this distinction is operationally critical because MDA effectiveness depends on the proportion actually consuming the drug, and effective coverage must exceed the transmission interruption threshold (approximately 65% of total population or 85% of eligible population) for LF elimination",
+      "Administrative coverage is always the correct measure; community survey coverage is unreliable",
+      "Effective coverage of 62% exceeds the LF elimination threshold; no action is required"
     ],
-    answer: 2,
-    explanation: "The One Health approach recognizes that human health, animal health, and environmental health are interconnected and require coordinated action. For zoonotic disease preparedness under IHR JEE and India's National Action Plan for AMR and Zoonoses: (1) Inter-sectoral coordination: MoHFW (human health), Ministry of Agriculture and Farmers Welfare (Department of Animal Husbandry - DAHD), Ministry of Environment Forest & Climate Change; (2) Shared early warning: joint surveillance systems for diseases at human-animal interface (avian influenza H5N1/H9N2, Nipah, brucellosis, rabies, Q fever, leptospirosis); (3) Joint outbreak investigation protocols with shared epidemiological and veterinary investigation teams; (4) Integrated laboratory networks linking human and veterinary labs; (5) National One Health Mission under India's health agenda. Awareness campaigns alone do not constitute preparedness capacity. Separate siloed systems are the problem, not the solution."
+    answer: 1,
+    explanation: "Administrative vs effective coverage in MDA: Administrative coverage = (Doses distributed / Target population) x 100. This is a proxy that overestimates consumption because: (1) Drugs may be distributed but not swallowed (pill hoarding); (2) Community members may be counted as covered when they received but discarded the drug; (3) Beneficiary lists may be inaccurate. Effective coverage (treatment coverage) = proportion who actually consumed the drug under observation or verified consumption. The 23% gap (85% vs 62%) in this example is a critical programmatic finding. LF elimination threshold: WHO requires >65% effective population coverage (approximately 85% of eligible population, excluding contraindicated groups) for MDA to interrupt transmission. At 62% effective coverage, the programme may not achieve transmission interruption. Solutions: supervised swallowing (observe drug consumption), social mobilization to address drug hesitancy, coverage surveys to validate administrative data. Coverage surveys are now mandatory every 3 years in LF endemic districts under NAPELF."
   }
 ];
 

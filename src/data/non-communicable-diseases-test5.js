@@ -1,353 +1,353 @@
 const questions = [
   {
     id: 1,
-    question: "According to GLOBOCAN 2020, which cancer ranks as the most common cancer in India overall (both sexes combined)?",
-    options: ["Lung cancer", "Breast cancer", "Oral cavity cancer", "Cervical cancer"],
-    answer: 1,
-    explanation: "According to GLOBOCAN 2020, breast cancer is the most common cancer in India overall when both sexes are combined, accounting for the highest number of new cases. It surpassed cervical cancer in incidence in recent years."
+    question: "According to GLOBOCAN 2020, what is the estimated number of new cancer cases globally per year?",
+    options: ["10 million", "14.1 million", "19.3 million", "23 million"],
+    answer: 2,
+    explanation: "GLOBOCAN 2020 estimated approximately 19.3 million new cancer cases globally (excluding non-melanoma skin cancers), with 10 million cancer deaths. This represented a significant increase from the 14.1 million estimated in GLOBOCAN 2012. Asia accounted for nearly half of all new cases, partly due to its large population. These figures underscore the global cancer burden and the need for comprehensive cancer control strategies."
   },
   {
     id: 2,
-    question: "The National Cancer Registry Programme (NCRP) in India is coordinated by which organization?",
-    options: ["Indian Council of Medical Research (ICMR)", "ICMR-National Centre for Disease Informatics and Research (ICMR-NCDIR)", "Ministry of Health and Family Welfare", "National Institute of Epidemiology"],
+    question: "The ICMR-NCDIR (National Centre for Disease Informatics and Research) was previously known as:",
+    options: ["National Institute of Cancer Prevention and Research (NICPR)", "National Cancer Registry Programme (NCRP)", "Cancer Institute Coordinating Authority", "Indian Cancer Society Registry Directorate"],
     answer: 1,
-    explanation: "The National Cancer Registry Programme (NCRP) in India is coordinated by ICMR-NCDIR (National Centre for Disease Informatics and Research), formerly known as National Cancer Registry Programme. It collects cancer data through a network of Population-Based Cancer Registries (PBCRs) and Hospital-Based Cancer Registries (HBCRs)."
+    explanation: "ICMR-NCDIR was previously known as the National Cancer Registry Programme (NCRP), which was established in 1981. It was restructured and renamed to ICMR-NCDIR (formerly ICMR-NCRP) to reflect its expanded mandate beyond cancer registries to include disease informatics and research. It coordinates the network of Population-Based Cancer Registries (PBCRs) and Hospital-Based Cancer Registries (HBCRs) across India and publishes the annual cancer statistics report."
   },
   {
     id: 3,
-    question: "What is the key distinguishing feature of a Population-Based Cancer Registry (PBCR) compared to a Hospital-Based Cancer Registry (HBCR)?",
-    options: ["PBCR collects data only from government hospitals", "PBCR captures all cancer cases in a defined geographic population regardless of where they are treated", "PBCR focuses only on childhood cancers", "PBCR is limited to metropolitan cities"],
+    question: "Hospital-Based Cancer Registries (HBCRs) are primarily used for which purpose?",
+    options: ["Calculating age-standardized cancer incidence rates for the population", "Monitoring hospital workload, treatment patterns, and institutional survival outcomes", "Estimating cancer prevalence in rural areas", "Calculating population attributable fractions for cancer risk factors"],
     answer: 1,
-    explanation: "A Population-Based Cancer Registry (PBCR) captures all new cancer cases occurring in a defined geographic population (city or district), regardless of where the patient is treated. This allows calculation of true incidence rates. Hospital-Based Cancer Registries (HBCRs) collect data only from patients attending specific hospitals, introducing selection bias."
+    explanation: "HBCRs collect data on all cancer patients attending a specific hospital, making them suitable for monitoring hospital workload, treatment patterns, stage distribution at presentation, and institutional survival rates. They cannot be used to calculate true population incidence rates (which require a defined denominator population) - that is the function of PBCRs. HBCRs are valuable for quality of care assessment, training programs, and identifying referral patterns within the health system."
   },
   {
     id: 4,
-    question: "In Indian males, which five cancers together account for the majority of cancer burden (ranked by incidence)?",
-    options: ["Lung, mouth, prostate, stomach, colorectum", "Mouth/oral cavity, lung, stomach, colorectum, oesophagus", "Prostate, bladder, kidney, lung, colorectum", "Liver, lung, stomach, pancreas, brain"],
+    question: "Which statement about cancer incidence data from PBCR Annual Report (2012-2016) for Indian females is CORRECT?",
+    options: ["Cervical cancer remains the leading cancer in all cities", "Breast cancer is the leading cancer in most urban PBCRs while cervical cancer leads in rural PBCRs", "Ovarian cancer has overtaken cervical cancer nationally", "Colorectal cancer is the second most common female cancer nationally"],
     answer: 1,
-    explanation: "In Indian males, the top five cancers by incidence are: mouth/oral cavity, lung, stomach, colorectum, and oesophagus. Tobacco-related cancers (oral, lung, oesophagus) dominate the male cancer burden in India, reflecting high rates of tobacco use in various forms."
+    explanation: "PBCR data (2012-2016) shows a clear urban-rural divide for female cancers in India: breast cancer is the leading cancer in most urban PBCRs (Delhi, Mumbai, Bengaluru, Chennai, Kolkata), while cervical cancer remains the leading cancer in rural and semi-urban PBCRs (Barshi, Bhopal rural). This reflects the epidemiological transition occurring in urban areas with changing reproductive patterns, obesity, and reduced breastfeeding, contrasted with persistent HPV infection risk in rural areas with limited screening."
   },
   {
     id: 5,
-    question: "In Indian females, which cancer has the highest age-standardized incidence rate?",
-    options: ["Cervical cancer", "Breast cancer", "Ovarian cancer", "Colorectal cancer"],
+    question: "Mizoram consistently reports among the highest cancer incidence rates in India, especially for which cancer in males?",
+    options: ["Oral cavity cancer", "Lung cancer", "Stomach cancer", "Liver cancer"],
     answer: 1,
-    explanation: "Breast cancer now has the highest age-standardized incidence rate (ASIR) in Indian females, surpassing cervical cancer. The ASIR for breast cancer in India is approximately 25.8 per 100,000, while cervical cancer is around 18.0 per 100,000 (GLOBOCAN 2020 data)."
+    explanation: "Mizoram has the highest age-standardized incidence rate for lung cancer in Indian males, with rates approaching those seen in high-income countries. This is attributed to very high smoking prevalence in Mizoram (one of the highest in India), along with use of smoked meats. Mizoram also has high rates of stomach cancer. The PBCR at Aizawl in Mizoram consistently records these elevated rates, highlighting the need for targeted tobacco control in northeastern states."
   },
   {
     id: 6,
-    question: "Age-Standardized Rate (ASR) in cancer epidemiology is calculated using which standard population?",
-    options: ["Indian standard population 2011", "WHO World Standard Population", "Segi World Standard Population", "United Nations Standard Population"],
+    question: "The Segi World Standard Population used for calculating Age-Standardized Rates (ASR) consists of which total population?",
+    options: ["100,000 persons across 5 age groups", "1,000,000 persons across 18 age groups", "100,000 persons across 18 five-year age groups", "10,000 persons across 10 age groups"],
     answer: 2,
-    explanation: "Age-Standardized Rate (ASR) for cancer is calculated using the Segi World Standard Population (1960), which allows comparison of cancer rates between different populations by removing the effect of different age structures. This is the convention used in GLOBOCAN and IARC publications."
+    explanation: "The Segi World Standard Population (1960), used by IARC and GLOBOCAN for cancer ASR calculation, consists of a hypothetical population of 100,000 persons distributed across 18 five-year age groups (0-4, 5-9, ..., 85+). The age-specific rates from the observed population are applied to this standard population to calculate the number of expected cases, which are then summed and expressed per 100,000. This allows comparison across populations with different age structures."
   },
   {
     id: 7,
-    question: "Which trend is most accurately observed in tobacco-related cancers in urban India over the past two decades?",
-    options: ["Steadily increasing incidence", "Declining incidence due to tobacco control measures", "No significant change", "Increasing in females but declining in males"],
+    question: "Which trend in breast cancer incidence in India is MOST accurately described?",
+    options: ["Declining in urban areas due to better screening detection", "Rising in both urban and rural areas, more steeply in urban areas, linked to lifestyle changes", "Stable for two decades with no significant change", "Rising only in postmenopausal age groups"],
     answer: 1,
-    explanation: "Tobacco-related cancers (lung, oral) are showing a declining trend in urban India over the past two decades, largely attributed to tobacco control measures under the Cigarettes and Other Tobacco Products Act (COTPA) 2003 and increased awareness. In contrast, breast cancer incidence is rising due to lifestyle changes."
+    explanation: "Breast cancer incidence in India is rising in both urban and rural areas, but more steeply in urban areas. This rising trend is linked to lifestyle changes including delayed first childbirth, reduced parity, shorter breastfeeding duration, increased obesity, sedentary lifestyle, and use of oral contraceptives and hormone replacement therapy. The age of onset in India (premenopausal, peak 40-50 years) differs from Western countries (postmenopausal, peak 60-70 years), suggesting different etiological contributions."
   },
   {
     id: 8,
-    question: "The cancer Mortality-to-Incidence (M:I) ratio is an indicator of which aspect of cancer control?",
-    options: ["Cancer screening coverage", "Cancer treatment effectiveness and survival", "Cancer prevention program success", "Environmental carcinogen exposure"],
+    question: "A cancer registry reports an age-standardized incidence rate of 20 per 100,000 and a mortality rate of 14 per 100,000 for a specific cancer. The Mortality-to-Incidence ratio of 0.70 suggests:",
+    options: ["Excellent survival with 70% 5-year survival rate", "Poor prognosis with only 30% surviving, indicating advanced stage diagnosis and/or poor treatment", "The cancer has a 70% cure rate", "70% of cases are detected at early stage"],
     answer: 1,
-    explanation: "The Mortality-to-Incidence (M:I) ratio reflects cancer treatment effectiveness, healthcare access, and overall survival. A lower M:I ratio indicates better survival and treatment outcomes. India has a high M:I ratio for several cancers (e.g., cervical, oral), indicating late-stage diagnosis and limited treatment access compared to high-income countries."
+    explanation: "A Mortality-to-Incidence (M:I) ratio of 0.70 indicates poor prognosis - approximately 70% of diagnosed patients will die from the disease, implying only 30% long-term survival. High M:I ratios are characteristic of cancers presenting at late stages and/or with limited treatment efficacy. For context, India has high M:I ratios for cervical cancer (0.50), stomach cancer (0.80+), and pancreatic cancer (0.90+), while breast cancer M:I in India (0.50) is higher than in USA (0.20), reflecting poorer survival."
   },
   {
     id: 9,
-    question: "Which childhood cancer is most common in India?",
-    options: ["Neuroblastoma", "Wilms tumor", "Acute Lymphoblastic Leukemia (ALL)", "Medulloblastoma"],
-    answer: 2,
-    explanation: "Acute Lymphoblastic Leukemia (ALL) is the most common childhood cancer in India, as in most parts of the world. It accounts for approximately 25-30% of all childhood cancers. India carries a substantial global burden of childhood cancer, with cure rates lower than high-income countries due to treatment abandonment and delayed diagnosis."
+    question: "The IICC (International Incidence of Childhood Cancer) classification system is used in childhood cancer epidemiology for which specific reason?",
+    options: ["Children's cancers are classified by stage rather than site like adult cancers", "Childhood cancers are classified primarily by morphology and cell of origin rather than by anatomic site", "IICC provides age-standardized rates using a pediatric standard population", "IICC focuses only on leukemias and lymphomas"],
+    answer: 1,
+    explanation: "The International Classification of Childhood Cancer (ICCC) classifies childhood cancers primarily by morphology (cell type/histology) and cell of origin rather than by primary anatomic site, as used for adult cancers. This is because childhood cancers are predominantly embryonal tumors and hematologic malignancies where histology defines the entity (e.g., ALL vs AML; Wilms tumor vs neuroblastoma) rather than location. This classification is used by the Automated Childhood Cancer Information System (ACCIS) and IARC for childhood cancer epidemiology."
   },
   {
     id: 10,
-    question: "The 5-year relative survival rate for breast cancer in India is approximately which value compared to the USA?",
-    options: ["Similar (85-90%)", "India 60-65% vs USA 90%", "India 40% vs USA 75%", "India 80% vs USA 85%"],
-    answer: 1,
-    explanation: "The 5-year relative survival rate for breast cancer in India is approximately 60-65%, compared to approximately 90% in the USA. This disparity is largely due to late-stage diagnosis in India (majority presenting at stage III-IV vs stage I-II in USA), limited treatment access, and socioeconomic factors."
+    question: "The net survival measure in cancer epidemiology differs from observed survival in that:",
+    options: ["Net survival measures only cancer-specific deaths while excluding deaths from other causes", "Net survival includes all deaths regardless of cause", "Net survival is the same as relative survival", "Net survival cannot be calculated using population-based registry data"],
+    answer: 0,
+    explanation: "Net survival (also called cancer-specific survival or cause-specific survival when using death certificates) represents survival from cancer in the hypothetical scenario where cancer is the only possible cause of death, eliminating competing causes of mortality. It allows comparison of cancer survival between populations with different background mortality rates and age structures. Relative survival (observed survival / expected survival from life tables) is the most common approximation of net survival used in population-based registry studies, including CONCORD studies by LSHTM."
   },
   {
     id: 11,
-    question: "Northeast India has distinctively high rates of which cancers compared to the rest of India?",
-    options: ["Breast and cervical cancer", "Lung and bladder cancer", "Stomach and nasopharyngeal cancer", "Liver and pancreatic cancer"],
-    answer: 2,
-    explanation: "Northeast India, particularly states like Mizoram, Nagaland, and Arunachal Pradesh, has distinctively high incidence rates of stomach cancer and nasopharyngeal cancer. These patterns are attributed to dietary habits (smoked and salted meats, pickled vegetables), high prevalence of H. pylori infection, and Epstein-Barr virus (EBV) for nasopharyngeal cancer, along with ethnic factors."
+    question: "Rural cancer registries in India consistently show which pattern compared to urban registries?",
+    options: ["Higher rates of breast cancer and lower rates of cervical cancer", "Higher rates of infection-related cancers (cervical, stomach, liver) and lower rates of lifestyle-related cancers (breast, colorectal)", "Similar cancer profiles as urban registries", "Higher rates of lung cancer due to indoor biomass fuel combustion"],
+    answer: 1,
+    explanation: "Rural PBCRs in India (e.g., Barshi, Wardha) consistently show: higher incidence of infection-attributable cancers including cervical cancer (high HPV prevalence, no screening), stomach cancer (high H. pylori burden), and oral cancer (smokeless tobacco use). Urban PBCRs show higher incidence of lifestyle-related cancers including breast cancer, colorectal cancer, and thyroid cancer. This urban-rural divide reflects differential exposure to infectious agents, lifestyle factors, and access to screening/healthcare."
   },
   {
     id: 12,
-    question: "According to projections, the total number of new cancer cases in India by 2025 is estimated to be approximately:",
-    options: ["800,000", "1.2 million", "1.57 million", "2.0 million"],
-    answer: 2,
-    explanation: "According to ICMR-NCDIR projections, India is expected to have approximately 1.57 million new cancer cases by 2025. This represents a significant increase from the estimated 1.39 million in 2020, driven by population growth, aging, and changing risk factor profiles. This projection underscores the urgent need for cancer control programs."
+    question: "Cancer projections methodology used by ICMR-NCDIR involves which primary approach?",
+    options: ["Agent-based modeling using individual patient data", "Age-period-cohort statistical modeling applied to current registry trends with demographic projections", "Machine learning prediction models using social media health data", "Expert consensus Delphi method"],
+    answer: 1,
+    explanation: "ICMR-NCDIR uses age-period-cohort (APC) statistical modeling applied to historical cancer registry trend data combined with demographic projections (population growth, aging) from census data and UN population projections. The methodology accounts for: age effects (inherent cancer risk at different ages), period effects (changes in exposure, detection), and cohort effects (generational differences in risk factor exposure). The NORDPRED software is commonly used. Projections assume continuation of current trends and are inherently uncertain."
   },
   {
     id: 13,
-    question: "Which form of tobacco use is most strongly associated with oral cavity cancer in India?",
-    options: ["Cigarette smoking", "Bidi smoking", "Smokeless tobacco (chewing tobacco/gutka)", "Hookah/waterpipe"],
+    question: "The Population Attributable Fraction (PAF) for tobacco in causing lung cancer in Indian males is approximately:",
+    options: ["20-30%", "40-50%", "60-80%", "90%+"],
     answer: 2,
-    explanation: "Smokeless tobacco use (chewing tobacco, gutka, khaini, pan masala with tobacco) is most strongly associated with oral cavity cancer in India. Smokeless tobacco contains potent carcinogens including tobacco-specific nitrosamines (TSNAs), polycyclic aromatic hydrocarbons, and heavy metals. India has one of the highest rates of smokeless tobacco use globally."
+    explanation: "The Population Attributable Fraction (PAF) for tobacco (all forms: cigarettes, bidis) in causing lung cancer in Indian males is approximately 60-80%, lower than in Western countries (where it reaches 85-90% in males) due to the significance of indoor air pollution from biomass fuel combustion and occupational exposures as additional risk factors. In Indian females, tobacco PAF for lung cancer is lower (40-50%) because many non-smoking women develop lung cancer due to indoor air pollution from cooking. PAF = [P(RR-1)] / [1 + P(RR-1)] where P is prevalence of exposure."
   },
   {
     id: 14,
-    question: "The synergistic effect of alcohol and tobacco in cancer causation is best described by which relationship?",
-    options: ["Additive - combined risk equals sum of individual risks", "Multiplicative - combined risk exceeds sum of individual risks", "Antagonistic - alcohol reduces tobacco carcinogenicity", "No interaction - effects are independent"],
+    question: "In assessing the carcinogenicity of alcohol, IARC classifies alcohol consumption as which group, and for which cancers?",
+    options: ["Group 2A (probable), for breast and colorectal cancer only", "Group 1 (definite carcinogen), for cancers of oral cavity, pharynx, larynx, oesophagus, liver, colorectum, and breast", "Group 2B (possible), for liver cancer only", "Group 3 (not classifiable), as evidence is inconsistent"],
     answer: 1,
-    explanation: "Alcohol and tobacco exhibit a multiplicative (synergistic) interaction in causing cancers of the oral cavity, pharynx, larynx, and oesophagus. The combined risk is greater than the sum of individual risks. For example, heavy smokers who are also heavy drinkers have a 35-fold increased risk of oral cancer compared to non-users of both substances."
+    explanation: "IARC classifies alcohol consumption (ethanol) as a Group 1 definite carcinogen for cancers of the oral cavity, pharynx, larynx, oesophagus (squamous cell), liver (hepatocellular carcinoma), colorectum, and female breast. The risk is dose-dependent with no safe threshold - even light drinking increases risk of some cancers (notably breast). Acetaldehyde (the primary metabolite) is the main carcinogenic compound. Alcohol accounts for approximately 5-6% of all cancer deaths globally."
   },
   {
     id: 15,
-    question: "Human Papillomavirus (HPV) is causally associated with which set of cancers?",
-    options: ["Cervical, oropharyngeal, anal, vulvar, vaginal, penile cancers", "Cervical cancer only", "Cervical and breast cancers", "Cervical, lung, and bladder cancers"],
-    answer: 0,
-    explanation: "HPV is causally associated with cervical cancer (99% attributable fraction), oropharyngeal cancer (especially HPV-16), anal cancer, vulvar cancer, vaginal cancer, and penile cancer. HPV-16 and HPV-18 are responsible for approximately 70% of cervical cancers globally. HPV vaccination is the primary prevention strategy."
+    question: "The Population Attributable Fraction (PAF) for infection-attributable cancers globally is approximately:",
+    options: ["5-8%", "15-20%", "30-35%", "50-55%"],
+    answer: 1,
+    explanation: "Globally, approximately 15-20% of all cancers are attributable to infectious agents (de Martel et al., Lancet Oncology 2012). The major contributors are: H. pylori (stomach cancer, MALT lymphoma) - 5.5%; HPV (cervical, oropharyngeal, anal, vulvar, vaginal, penile) - 5.2%; HBV (hepatocellular carcinoma) - 3.7%; HCV (hepatocellular carcinoma) - 2.1%; EBV (Burkitt, Hodgkin, nasopharyngeal) - 1.8%. In low- and middle-income countries, the infection-attributable PAF is higher (approximately 25%), while in high-income countries it is lower (approximately 8%)."
   },
   {
     id: 16,
-    question: "Which infectious agents are classified as definite (Group 1) carcinogens by IARC relevant to Indian cancer burden?",
-    options: ["HPV, HBV, HCV, H. pylori, EBV, HHV-8, HTLV-1", "HPV and H. pylori only", "HBV and HCV only", "EBV and HTLV-1 only"],
-    answer: 0,
-    explanation: "IARC classifies multiple infectious agents as Group 1 (definite) carcinogens: HPV (cervical, oropharyngeal, anal cancers), HBV and HCV (hepatocellular carcinoma), H. pylori (gastric cancer, MALT lymphoma), EBV (Burkitt lymphoma, nasopharyngeal cancer, some Hodgkin lymphoma), HHV-8 (Kaposi's sarcoma), and HTLV-1 (adult T-cell leukemia/lymphoma). These are all relevant to the Indian cancer burden."
+    question: "According to GBD (Global Burden of Disease) 2019 data, ambient air pollution (PM2.5) contributes to what proportion of global lung cancer deaths?",
+    options: ["2-5%", "8-10%", "14-16%", "25-30%"],
+    answer: 2,
+    explanation: "GBD 2019 estimates that ambient particulate matter pollution (PM2.5) is responsible for approximately 14-16% of global lung cancer deaths (approximately 200,000-250,000 deaths annually). In South Asia, particularly India, where PM2.5 levels frequently exceed WHO guidelines by 5-10 times (especially in the Indo-Gangetic Plain), air pollution is an important contributor to lung cancer burden even among non-smokers. Household air pollution from solid fuel combustion adds to this burden, particularly among women."
   },
   {
     id: 17,
-    question: "Obesity is most strongly associated with increased risk of which cancers?",
-    options: ["Lung and bladder cancer", "Endometrial, postmenopausal breast, colorectal, and kidney cancers", "Oral and oesophageal cancers", "Prostate and testicular cancers"],
+    question: "Occupational exposure to which substance is specifically associated with bladder cancer?",
+    options: ["Asbestos", "Benzidine and beta-naphthylamine (aromatic amines)", "Vinyl chloride", "Chromium hexavalent"],
     answer: 1,
-    explanation: "Obesity is most strongly associated with endometrial cancer (3-4 fold increased risk), postmenopausal breast cancer, colorectal cancer, kidney (renal cell) cancer, oesophageal adenocarcinoma, gallbladder cancer, and pancreatic cancer. Mechanisms include hyperinsulinemia, elevated IGF-1, chronic inflammation, and elevated estrogen levels from adipose tissue aromatase activity."
+    explanation: "Aromatic amines, particularly benzidine and beta-naphthylamine, are the classic occupational carcinogens associated with bladder cancer (transitional cell carcinoma). Workers in dye manufacturing, rubber industry, leather industry, and printing industries were historically at high risk. These compounds are hydroxylated in the liver, conjugated, and excreted in urine where they are re-activated by urinary tract epithelium. They are now largely banned in high-income countries but remain occupational hazards in some LMICs including India."
   },
   {
     id: 18,
-    question: "PM2.5 air pollution is classified by IARC as a Group 1 carcinogen most strongly linked to which cancer?",
-    options: ["Bladder cancer", "Lung cancer", "Breast cancer", "Colorectal cancer"],
+    question: "The dose-response relationship for ionizing radiation and cancer follows which model, as established by atomic bomb survivor studies?",
+    options: ["Threshold model - no risk below a safe threshold dose", "Linear no-threshold (LNT) model - risk increases linearly from zero dose with no safe threshold", "Hormesis model - low doses are protective", "Quadratic model - risk increases exponentially with dose"],
     answer: 1,
-    explanation: "IARC classified outdoor air pollution (and PM2.5 specifically) as a Group 1 carcinogen in 2013, most strongly linked to lung cancer. India has among the highest PM2.5 levels globally, particularly in the Indo-Gangetic Plain. Air pollution is estimated to contribute significantly to lung cancer burden in India, even in non-smokers."
+    explanation: "The Linear No-Threshold (LNT) model is the accepted model for ionizing radiation carcinogenesis, based primarily on Life Span Study of Japanese atomic bomb survivors (RERF). It assumes cancer risk increases linearly with dose from zero, with no safe threshold. This conservative model is used for radiation protection policy worldwide (ICRP recommendations). Medical radiation (CT scans, fluoroscopy) contributes to cancer risk in the population, supporting the ALARA principle (As Low As Reasonably Achievable)."
   },
   {
     id: 19,
-    question: "Which occupational cancer association is correctly matched?",
-    options: ["Asbestos - bladder cancer", "Benzene - lung cancer", "Vinyl chloride - angiosarcoma of the liver", "Chromium - mesothelioma"],
-    answer: 2,
-    explanation: "Vinyl chloride monomer is a Group 1 carcinogen specifically associated with angiosarcoma of the liver (hepatic angiosarcoma). Asbestos causes mesothelioma and lung cancer; benzene causes leukemia and lymphomas; chromium (hexavalent) causes lung cancer. These occupational carcinogens are regulated under industrial safety standards."
+    question: "Which dietary pattern is associated with REDUCED colorectal cancer risk based on epidemiological evidence?",
+    options: ["Western diet high in red meat and refined carbohydrates", "High dietary fiber intake from whole grains, fruits, and vegetables", "High animal fat and low carbohydrate (ketogenic) diet", "High dairy and low plant food diet"],
+    answer: 1,
+    explanation: "High dietary fiber intake is consistently associated with reduced colorectal cancer risk in meta-analyses of prospective cohort studies, with approximately 10% risk reduction per 10g/day increase in total fiber intake. Proposed mechanisms include: reduced transit time, dilution and binding of carcinogens, fermentation to short-chain fatty acids (butyrate is antiproliferative), and modulation of gut microbiome. High consumption of fruits and vegetables is also protective. Conversely, red meat, processed meat, and low-fiber diets increase colorectal cancer risk."
   },
   {
     id: 20,
-    question: "BRCA1 and BRCA2 gene mutations are associated with increased lifetime risk of which cancers?",
-    options: ["Breast and ovarian cancers only", "Breast, ovarian, pancreatic, and prostate cancers", "Colon and uterine cancers (Lynch syndrome)", "Multiple endocrine neoplasia"],
-    answer: 1,
-    explanation: "BRCA1 and BRCA2 are tumor suppressor genes involved in DNA repair. Pathogenic variants confer significantly elevated lifetime risk: BRCA1 - breast cancer (55-72%), ovarian cancer (44%), and associated with pancreatic cancer; BRCA2 - breast cancer (45-69%), ovarian cancer (17%), pancreatic cancer, and prostate cancer. BRCA2 mutations also increase male breast cancer risk."
+    question: "Lynch syndrome carriers have an increased lifetime risk of which cancer that is unique compared to BRCA1/2 carriers?",
+    options: ["Ovarian cancer", "Pancreatic cancer", "Endometrial cancer (second most common cancer in Lynch syndrome)", "Breast cancer"],
+    answer: 2,
+    explanation: "Endometrial cancer is the second most common cancer in Lynch syndrome, with lifetime risk of 25-60% depending on the specific MMR gene mutation (highest with MLH1 and MSH2 mutations). This is a critical distinguishing feature from BRCA1/2 carriers where endometrial cancer risk is not significantly elevated. Lynch syndrome also increases ovarian, gastric, small bowel, urinary tract, biliary, brain, and sebaceous gland cancer risks. Women with Lynch syndrome require gynecological cancer surveillance in addition to colorectal cancer screening."
   },
   {
     id: 21,
-    question: "Which reproductive factor most significantly INCREASES breast cancer risk?",
-    options: ["Early age at first full-term pregnancy (<20 years)", "Late menarche (>14 years)", "Multiparity (>4 children)", "Nulliparity or late age at first birth (>30 years)"],
-    answer: 3,
-    explanation: "Nulliparity (never having children) or late age at first full-term birth (>30 years) significantly increases breast cancer risk. Early first full-term pregnancy is protective. Other risk factors include early menarche (<12 years), late menopause (>55 years), and hormone replacement therapy. These factors reflect cumulative estrogen exposure throughout life."
+    question: "Physical inactivity as a cancer risk factor has the highest Population Attributable Fraction (PAF) for which cancer?",
+    options: ["Lung cancer", "Breast cancer (postmenopausal)", "Colon cancer", "Prostate cancer"],
+    answer: 2,
+    explanation: "Colon cancer has the highest PAF attributable to physical inactivity among all cancer types. Physically active individuals have approximately 24% lower colon cancer risk compared to the least active. Proposed mechanisms include: reduced transit time (less contact with carcinogens), reduced insulin/IGF-1 levels, reduced obesity, and reduced inflammatory markers. Breast cancer (postmenopausal) and endometrial cancer also have significant PAFs for physical inactivity. GBD 2019 estimates physical inactivity accounts for approximately 1.5-3% of all cancer deaths."
   },
   {
     id: 22,
-    question: "Red and processed meat consumption is most strongly associated with increased risk of which cancer?",
-    options: ["Gastric cancer", "Colorectal cancer", "Pancreatic cancer", "Bladder cancer"],
+    question: "Epidemiological studies of betel quid (with tobacco) users in India show the highest oral cancer risk in which combination?",
+    options: ["Betel quid alone (no tobacco, no alcohol)", "Betel quid with tobacco and alcohol combined (multiplicative interaction)", "Cigarette smoking alone", "Alcohol alone without betel quid or tobacco"],
     answer: 1,
-    explanation: "Red meat and processed meat are classified by IARC as Group 2A (probable) and Group 1 (definite) carcinogens respectively, most strongly associated with colorectal cancer. Mechanisms include N-nitroso compounds, heterocyclic amines, polycyclic aromatic hydrocarbons from cooking, and heme iron. High dietary fiber intake is protective against colorectal cancer."
+    explanation: "The combination of betel quid with tobacco AND alcohol shows multiplicative interaction for oral cancer risk, producing the highest relative risk. Studies from India (particularly from Trivandrum, Mumbai, and northeast India) show that: betel quid alone has RR approximately 2-3; betel quid with tobacco RR approximately 7-10; adding heavy alcohol use further multiplies the risk (RR 20-40+). This reflects the fact that all three carcinogen exposures act on the same target tissue (oral mucosa) through partly independent but synergistic mechanisms."
   },
   {
     id: 23,
-    question: "Areca nut (betel nut) chewing without tobacco is causally associated with which cancer?",
-    options: ["Lung cancer only", "No cancer risk without tobacco", "Oral submucous fibrosis and oral cancer", "Oesophageal cancer only"],
-    answer: 2,
-    explanation: "Areca nut (betel nut) is classified as a Group 1 carcinogen by IARC even without tobacco. It causes oral submucous fibrosis (OSF), a premalignant condition, and is independently associated with oral cancer. Areca nut contains arecoline and other alkaloids that are mutagenic. In India, pan masala (without tobacco) is also carcinogenic due to areca nut content."
+    question: "Aflatoxin B1, a mycotoxin produced by Aspergillus molds contaminating stored grains and groundnuts, is a risk factor for which cancer?",
+    options: ["Gastric cancer", "Hepatocellular carcinoma (liver cancer)", "Colorectal cancer", "Oesophageal cancer"],
+    answer: 1,
+    explanation: "Aflatoxin B1 (AFB1) is classified by IARC as a Group 1 carcinogen for hepatocellular carcinoma (HCC). AFB1 is hydroxylated to AFB1-8,9-epoxide which forms adducts with guanine in DNA, causing G to T transversion mutations in codon 249 of the TP53 tumor suppressor gene (a characteristic 'mutation hotspot'). AFB1 acts synergistically with chronic HBV infection in HCC causation. In India, aflatoxin contamination of stored groundnuts, maize, and spices is a concern, particularly in humid post-monsoon storage conditions."
   },
   {
     id: 24,
-    question: "Ultraviolet (UV) radiation-induced skin cancer is primarily caused by which mechanism?",
-    options: ["UV-A inducing reactive oxygen species damaging DNA", "UV-B causing pyrimidine dimer formation in DNA (C to T transitions)", "UV-C causing strand breaks in RNA", "Infrared radiation activating proto-oncogenes"],
+    question: "In the epidemiology of tobacco-attributable cancer, the concept of 'pack-years' is calculated as:",
+    options: ["Number of cigarettes per day divided by 20 multiplied by years of smoking", "Number of packs smoked per day multiplied by number of years smoked", "Total lifetime cigarettes smoked divided by 7300", "Number of cigarettes per day minus age of smoking initiation"],
     answer: 1,
-    explanation: "UV-B radiation (280-315 nm) is the primary carcinogenic component of solar UV, causing formation of pyrimidine dimers (cyclobutane pyrimidine dimers and 6-4 photoproducts) in DNA. This leads to characteristic C to T and CC to TT transitions (UV signature mutations). Unrepaired dimers cause mutations in tumor suppressor genes (p53) leading to basal cell carcinoma, squamous cell carcinoma, and melanoma."
+    explanation: "Pack-years = (number of cigarette packs smoked per day) x (number of years smoked). Since 1 pack = 20 cigarettes, smoking 1 pack/day for 30 years = 30 pack-years; smoking 2 packs/day for 15 years = 30 pack-years. Pack-years is a standardized measure of cumulative tobacco exposure used in epidemiological studies and clinical risk assessment (e.g., NLST eligibility required 30+ pack-years). It combines intensity and duration into a single exposure metric, though age at initiation provides additional information about duration of early-life exposure."
   },
   {
     id: 25,
-    question: "According to the Wilson-Jungner criteria for cancer screening, which condition is the MOST important prerequisite for an effective screening program?",
-    options: ["The test must be inexpensive", "The disease must have a recognizable latent or early symptomatic stage", "The screening test must be 100% specific", "The treatment must be curative in all cases"],
+    question: "According to Wilson-Jungner criteria, which statement about the screening test requirement is CORRECT?",
+    options: ["The test must have 100% sensitivity with no false negatives", "The test must be acceptable to the target population and performed under agreed quality standards", "The test must replace diagnostic testing (no further workup needed after positive screen)", "The test must be performed by a physician"],
     answer: 1,
-    explanation: "The Wilson-Jungner criteria (1968) specify that for effective screening, the disease must have a recognizable latent or early symptomatic stage during which intervention improves outcomes. Other key criteria include: important health problem, accepted treatment, adequate facilities available, natural history understood, agreed policy on whom to treat, cost-effective, and the process must be continuous."
+    explanation: "Wilson-Jungner criteria state that the screening test must be: acceptable to the population; performed under adequate conditions with agreed-upon definitions of normal and abnormal; available to all members of the target population; and cost-effective. Perfect sensitivity or specificity is not required - screening tests inherently have false positives and negatives. Positive screen results require diagnostic confirmation. Importantly, a two-stage process (screening test followed by diagnostic confirmation) is the expected model, not replacement of diagnosis."
   },
   {
     id: 26,
-    question: "Visual Inspection with Acetic Acid (VIA) for cervical cancer screening works on which principle?",
-    options: ["Acetic acid stains malignant cells permanently red for biopsy guidance", "Acetowhite reaction: acetic acid causes transient whitening of dysplastic cells with high nuclear protein content", "VIA uses fluorescence to detect HPV DNA", "Acetic acid removes normal squamous epithelium exposing columnar cells"],
+    question: "The sensitivity and specificity of VIA (Visual Inspection with Acetic Acid) for detecting CIN 2+ lesions is approximately:",
+    options: ["Sensitivity 40%, Specificity 95%", "Sensitivity 70-80%, Specificity 70-80%", "Sensitivity 95%, Specificity 95%", "Sensitivity 50%, Specificity 50%"],
     answer: 1,
-    explanation: "VIA works because acetic acid (3-5%) causes transient coagulation and precipitation of cytoplasmic and nuclear proteins in dysplastic cells (which have high nuclear-cytoplasmic ratio and dense nuclear protein content), producing a white appearance (acetowhite). Normal squamous epithelium remains pink. The reaction is transient (fades in 1-2 minutes), and results are read immediately. VIA is suitable for low-resource settings."
+    explanation: "VIA for detecting CIN 2+ (cervical intraepithelial neoplasia grade 2 or worse) has approximately 70-80% sensitivity and 70-80% specificity in meta-analyses of studies from LMICs. Sensitivity is higher than Pap smear (50-60%) but specificity is lower (Pap smear specificity ~95%). HPV DNA testing has the highest sensitivity (90-95%) with lower specificity (80-90%). The tradeoff for VIA is acceptable for low-resource settings given its simplicity, low cost, immediate result, and feasibility for see-and-treat. VIA requires trained providers for consistent performance."
   },
   {
     id: 27,
-    question: "The 'see-and-treat' approach in cervical cancer screening refers to:",
-    options: ["Performing Pap smear and immediate colposcopy in the same visit", "VIA screening followed by immediate cryotherapy for VIA-positive women in the same visit", "HPV DNA testing followed by immediate LEEP procedure", "Visual examination followed by immediate hysterectomy for suspicious lesions"],
-    answer: 1,
-    explanation: "The see-and-treat approach involves VIA screening followed by immediate cryotherapy (or thermal ablation) for women who are VIA-positive in the same visit, without waiting for biopsy confirmation. This single-visit approach (SVA - Single Visit Approach) reduces loss to follow-up, which is a major problem in low-resource settings. The WHO recommends this approach for low-resource settings where follow-up is difficult."
+    question: "The Number Needed to Screen (NNS) for breast cancer mammography to prevent one breast cancer death is approximately:",
+    options: ["50 women screened", "200-250 women screened over 10 years", "1000-2000 women screened over 10 years", "10,000 women screened"],
+    answer: 2,
+    explanation: "Based on meta-analyses of mammography RCTs, the NNS to prevent one breast cancer death is approximately 1,000-2,000 women invited for screening over 10 years (varies by age group: NNS is lower for 60-69 year olds and higher for 40-49 year olds). For every breast cancer death prevented, approximately 10 women will be over-diagnosed and unnecessarily treated. These NNS figures are higher than often portrayed, fueling the mammography screening debate. The absolute benefit must be weighed against harms including false positives, anxiety, and over-diagnosis."
   },
   {
     id: 28,
-    question: "The current evidence-based recommendation for breast cancer screening in average-risk women is:",
-    options: ["Monthly BSE (breast self-examination) starting at age 20", "Annual mammography starting at age 40 for all women", "Mammography every 2 years for women aged 50-69 (organized screening)", "Annual MRI screening starting at age 30 for all women"],
-    answer: 2,
-    explanation: "The strongest evidence supports organized mammographic screening every 2 years for average-risk women aged 50-69 years, which reduces breast cancer mortality by approximately 20-30%. Breast Self-Examination (BSE) has not been shown to reduce mortality in RCTs and may increase unnecessary biopsies. Clinical Breast Examination (CBE) has limited evidence. In India, mammography access is limited, and organized screening programs are not yet nationally implemented."
+    question: "HPV DNA testing as primary cervical cancer screening has which key advantage over Pap smear?",
+    options: ["HPV DNA testing requires fewer trained personnel since results are immediate", "HPV DNA testing has significantly higher sensitivity (90-95%) reducing interval cancers, with potential for extended screening intervals", "HPV DNA testing eliminates the need for colposcopy follow-up", "HPV DNA testing is less expensive than Pap smear in all settings"],
+    answer: 1,
+    explanation: "The primary advantage of HPV DNA testing over Pap smear for cervical cancer screening is its significantly higher sensitivity for detecting CIN 2+ lesions (90-95% vs 50-65% for cytology). This high sensitivity means: (1) fewer interval cancers (cancers occurring between scheduled screens); (2) a negative HPV test provides stronger reassurance, allowing safe extension of screening intervals to 5 years; and (3) better protection with one-time or infrequent screening. However, lower specificity means more women need colposcopy follow-up, and costs are higher in resource-limited settings."
   },
   {
     id: 29,
-    question: "Which statement about oral cancer visual examination screening in India is CORRECT?",
-    options: ["No RCT evidence supports visual examination screening for oral cancer", "An RCT in Kerala (Sankaranarayanan et al.) showed visual examination screening reduced oral cancer mortality by 34% in tobacco/alcohol users", "Visual examination has 95% sensitivity for oral cancer detection", "Oral cancer screening is not recommended by any Indian health program"],
-    answer: 1,
-    explanation: "The landmark RCT conducted in Kerala (Sankaranarayanan et al., 2005) demonstrated that visual examination screening by trained health workers reduced oral cancer mortality by 34% in tobacco and/or alcohol users. This is the only RCT evidence for any cancer visual examination screening showing mortality reduction. Given India's high tobacco use burden, oral visual examination screening is highly cost-effective and has been incorporated into India's cancer screening programs."
+    question: "The FOBT (Fecal Occult Blood Test)-based colorectal cancer screening program's Number Needed to Screen (NNS) to prevent one CRC death is approximately:",
+    options: ["100 persons screened over 10 years", "500 persons screened over 10 years", "1,000-1,200 persons screened over 10 years", "5,000 persons screened over 10 years"],
+    answer: 2,
+    explanation: "Based on the four landmark colorectal cancer FOBT screening RCTs (Minnesota, Nottingham, Funen, Gothenburg), the NNS to prevent one CRC death over 10 years with annual or biennial FOBT is approximately 1,000-1,200 persons. These trials demonstrated 15-33% relative risk reduction in CRC mortality. The Minnesota trial (annual FOBT) showed the highest mortality reduction (33%). Importantly, colonoscopy (the diagnostic follow-up for positive FOBT) itself carries risks including perforation and bleeding (approximately 1 in 1,000-2,000 procedures)."
   },
   {
     id: 30,
-    question: "Fecal Occult Blood Test (FOBT) for colorectal cancer screening is based on which principle?",
-    options: ["Detection of carcinoembryonic antigen (CEA) in stool", "Detection of hemoglobin in stool using guaiac or immunochemical methods", "Detection of colorectal cancer DNA mutations in stool", "Detection of bile acids in stool"],
+    question: "The NLST (National Lung Screening Trial) demonstrated which key finding about LDCT lung cancer screening?",
+    options: ["25% reduction in all-cause mortality with annual LDCT", "20% reduction in lung cancer mortality compared to chest X-ray in high-risk smokers", "50% reduction in lung cancer incidence", "LDCT increased lung cancer overdiagnosis with no mortality benefit"],
     answer: 1,
-    explanation: "FOBT detects hidden (occult) blood in stool. Guaiac FOBT (gFOBT) uses the peroxidase-like activity of hemoglobin to catalyze a color reaction. Fecal Immunochemical Test (FIT) uses antibodies specific to human hemoglobin, making it more sensitive and specific. Randomized trials have shown that annual/biennial FOBT reduces colorectal cancer mortality by 15-33%. It is the recommended first-line screening test in many national programs."
+    explanation: "The NLST (2011, NEJM), enrolling 53,454 high-risk current or former smokers aged 55-74, found that 3 annual LDCT scans reduced lung cancer mortality by 20% compared to chest X-ray. All-cause mortality was reduced by 6.7%. However, 39.1% of LDCT participants had at least one positive result, and 96.4% of positive screens were false positives. The NELSON trial (2020) confirmed these findings with 24% mortality reduction in men. LDCT is currently recommended for eligible high-risk smokers but has implementation challenges including cost, radiation, and false positives."
   },
   {
     id: 31,
-    question: "The PSA (Prostate-Specific Antigen) test for prostate cancer screening is controversial primarily because:",
-    options: ["PSA testing is too expensive for routine use", "PSA leads to significant overdiagnosis and overtreatment of indolent cancers without clear mortality benefit in all populations", "PSA has very low sensitivity for detecting prostate cancer", "PSA testing is not approved by FDA"],
+    question: "Lead-time bias in cancer screening evaluation means:",
+    options: ["Screening programs detect smaller, more slowly growing tumors", "Survival appears improved simply because diagnosis occurs earlier without actually prolonging life", "Screening programs improve survival by catching cancers at a curable stage", "Earlier diagnosis leads to earlier treatment with genuine survival benefit"],
     answer: 1,
-    explanation: "PSA screening is controversial because it leads to significant overdiagnosis (detecting cancers that would never cause symptoms) and overtreatment (surgery/radiation with side effects like incontinence and impotence) without a clearly demonstrated reduction in overall mortality. The PLCO trial showed no mortality benefit while ERSPC showed modest benefit. Major organizations give conflicting recommendations. PSA screening requires shared decision-making between clinician and patient."
+    explanation: "Lead-time bias occurs when cancer screening appears to improve survival (measured from diagnosis to death) because the time of diagnosis is advanced (lead time), not because death is actually postponed. For example, if a cancer would be diagnosed symptomatically in 2022 and cause death in 2024 (2-year survival), but screening detects it in 2020 and the person still dies in 2024 (now 4-year survival), survival appears doubled without any actual life extension. To avoid lead-time bias, cancer screening trials should measure cancer-specific MORTALITY at the population level, not survival from diagnosis."
   },
   {
     id: 32,
-    question: "Low-Dose CT (LDCT) screening for lung cancer is recommended for which high-risk group based on the NLST trial?",
-    options: ["All adults above 40 years", "Current or former smokers aged 55-80 years with 30+ pack-year history", "All current smokers regardless of age or duration", "Former smokers who quit more than 15 years ago"],
-    answer: 1,
-    explanation: "Based on the National Lung Screening Trial (NLST, 2011), LDCT screening is recommended for high-risk individuals: current or former smokers aged 55-80 years with at least 30 pack-year smoking history (and former smokers who quit within the past 15 years). NLST showed 20% reduction in lung cancer mortality. In India, LDCT screening is not yet implemented nationally due to cost and infrastructure constraints."
+    question: "Length-time bias in cancer screening evaluation refers to:",
+    options: ["Slower-growing (more indolent) cancers are preferentially detected by periodic screening because they have a longer detectable preclinical phase", "Screening programs are longer and therefore detect more cancers", "Cancer prognosis is worse when detected in between scheduled screening intervals", "Screening is more effective in older versus younger age groups"],
+    answer: 0,
+    explanation: "Length-time bias (also called length-biased sampling) occurs because periodic screening preferentially detects slower-growing, more indolent tumors that have a longer sojourn time (detectable preclinical phase). Rapidly progressing cancers are more likely to occur as interval cancers (between screening rounds). This makes screen-detected cancers appear to have better prognosis than clinically detected cancers, but this is partly an artifact of case mix - not a true treatment benefit. Length-time bias inflates apparent screening benefit in non-randomized comparisons; RCTs with randomization by INVITATION are needed."
   },
   {
     id: 33,
-    question: "Under India's National Programme for Non-Communicable Diseases (NPCDCS) and Ayushman Bharat, cancer screening is offered for which three cancers at Health and Wellness Centres?",
-    options: ["Lung, liver, and prostate cancers", "Oral, cervical, and breast cancers", "Colorectal, stomach, and oesophageal cancers", "Leukemia, lymphoma, and brain tumors"],
+    question: "Under Ayushman Bharat Health and Wellness Centres (HWC), the target population age for cancer screening (oral, cervical, breast) under NPCDCS is:",
+    options: ["All individuals above 18 years", "Adults aged 30 years and above", "Women aged 25-65 years only", "Adults aged 40-70 years"],
     answer: 1,
-    explanation: "Under NPCDCS and Ayushman Bharat's Health and Wellness Centres (HWCs), population-based screening is offered for three common cancers: oral cancer (visual examination), cervical cancer (VIA), and breast cancer (clinical breast examination - CBE). These were chosen based on high burden in India, availability of cost-effective screening tests, and feasibility in primary care settings. Target group is adults aged 30 years and above."
+    explanation: "Under the NPCDCS and Ayushman Bharat HWC cancer screening component, the target population for screening of oral cancer (visual examination), cervical cancer (VIA), and breast cancer (clinical breast examination) is adults aged 30 years and above. This threshold was chosen based on the age distribution of these cancers in India and the practicability of implementation at the primary care level. ASHAs and ANMs are trained to perform initial screening, with positive cases referred to Community Health Centres or District Hospitals."
   },
   {
     id: 34,
-    question: "Opportunistic cancer screening differs from organized (population-based) screening in which fundamental way?",
-    options: ["Opportunistic screening is more effective in reducing cancer mortality", "Opportunistic screening occurs when patients visiting healthcare facilities are screened; organized screening systematically invites a defined target population", "Organized screening only occurs in private hospitals", "Opportunistic screening uses more advanced diagnostic tests"],
+    question: "The Trivandrum oral cancer screening RCT (Sankaranarayanan et al.) was designed as which type of study, and what was its primary finding?",
+    options: ["Case-control study showing 5-fold risk reduction with screening", "Cluster randomized trial showing 34% mortality reduction in tobacco/alcohol users screened by trained health workers", "Cohort study showing 50% reduction in late-stage oral cancer", "Cross-sectional study demonstrating high oral cancer prevalence in Kerala"],
     answer: 1,
-    explanation: "Opportunistic screening occurs when patients who visit health facilities for other reasons are offered screening (provider- or patient-initiated). It is ad hoc and lacks systematic follow-up. Organized (population-based) screening systematically identifies and invites a defined target population, has quality assurance, centralized call-recall systems, monitoring, and evaluation. Organized screening achieves higher coverage, reduces inequity, and is more effective at reducing cancer mortality at the population level."
+    explanation: "The Trivandrum oral cancer screening trial was a cluster randomized controlled trial conducted in Kerala (Sankaranarayanan et al., 2005, Lancet). Clusters of villages were randomized to intervention (visual examination by trained health workers + referral of suspicious lesions) or control. Primary finding: 34% statistically significant reduction in oral cancer mortality among tobacco and/or alcohol users who were screened. This trial provided the world's only RCT evidence for visual examination screening reducing cancer mortality, and formed the evidence base for including oral cancer screening in India's national programs."
   },
   {
     id: 35,
-    question: "Over-diagnosis in cancer screening refers to:",
-    options: ["False positive results requiring unnecessary biopsies", "Detection and treatment of cancers that would never have caused symptoms or death during a patient's lifetime", "Incorrect staging of cancer at diagnosis", "Delay in reading screening test results"],
+    question: "Quantification of overdiagnosis in prostate cancer PSA screening is challenging because it requires:",
+    options: ["Only comparison of PSA-screened vs unscreened cohort survival rates", "Long follow-up to determine the proportion of screen-detected cancers that would never have caused symptoms or death during remaining lifetime, accounting for competing mortality", "Simply counting false positive biopsy results", "Comparison of PSA levels in different age groups"],
     answer: 1,
-    explanation: "Over-diagnosis in cancer screening refers to the detection of true cancers (histologically confirmed) that would never have caused symptoms or death during the patient's lifetime if left undetected. These indolent cancers are treated unnecessarily, causing harm without benefit. Over-diagnosis is a recognized problem in breast cancer mammography screening, thyroid cancer screening, and PSA-based prostate cancer screening. It must be distinguished from false positives."
+    explanation: "Quantifying overdiagnosis in PSA screening is methodologically difficult because it requires: (1) very long follow-up (often exceeding natural lifespan) to observe which screen-detected cancers would have remained asymptomatic for life; (2) adjustment for lead time (without which overdiagnosis is overestimated); (3) accounting for competing causes of death (men dying of other causes cannot be evaluated); and (4) data from randomized trials with long follow-up. Estimates of PSA overdiagnosis range widely from 23-84% of screen-detected prostate cancers, reflecting genuine methodological uncertainty."
   },
   {
     id: 36,
-    question: "In low- and middle-income countries (LMICs) like India, the MOST cost-effective cervical cancer screening strategy is:",
-    options: ["Annual Pap smear starting at age 21", "Single lifetime VIA or HPV DNA test at age 35, followed by see-and-treat", "Triennial colposcopy starting at age 25", "Annual HPV DNA testing starting at age 18"],
-    answer: 1,
-    explanation: "Modeling studies and WHO recommendations for LMICs demonstrate that a single lifetime screen (at age 35 using VIA or HPV DNA testing) followed by immediate treatment (see-and-treat) is the most cost-effective strategy. This approach can reduce cervical cancer mortality by 25-36%. Frequency can be increased to 2-3 lifetime screens for greater benefit. This is more practical than annual screening in resource-limited settings."
+    question: "The screening interval for cervical cancer using HPV DNA testing as the primary test is recommended as:",
+    options: ["Annual", "Every 2 years", "Every 3 years (same as Pap smear)", "Every 5 years"],
+    answer: 3,
+    explanation: "Because HPV DNA testing has very high sensitivity (90-95%), a negative HPV test provides strong reassurance that CIN 2+ lesions are absent. This high sensitivity justifies extending the screening interval to every 5 years for HPV-negative women, compared to every 3 years for Pap smear-negative women. The 5-year interval for HPV-based screening is supported by evidence from European trials (NTCC Italy, POBASCAM Netherlands, ARTISTIC UK) and is endorsed by WHO guidelines. This extended interval also makes HPV-based screening feasible in low-resource settings with 1-2 lifetime screens."
   },
   {
     id: 37,
-    question: "The recommended HPV DNA screening interval in the WHO 90-70-90 cervical cancer elimination strategy for countries with HPV testing capacity is:",
-    options: ["Annual HPV testing", "Every 2 years", "Every 5 years (HPV DNA test at age 35 and 45)", "Every 10 years"],
-    answer: 2,
-    explanation: "WHO's 90-70-90 elimination strategy for cervical cancer includes: 90% of girls vaccinated with HPV vaccine by age 15, 70% of women screened with a high-performance test by age 35 and again by age 45, and 90% of women with detected disease receiving treatment. The HPV DNA test at ages 35 and 45 (every 5 years/2 lifetime screens) is the recommended strategy for high-income countries and those with HPV testing capacity."
+    question: "The organized colorectal cancer screening program using FIT (Fecal Immunochemical Test) as compared to guaiac FOBT has which key advantage?",
+    options: ["FIT requires dietary restrictions before collection", "FIT uses antibodies specific to human hemoglobin, eliminating dietary interference, with higher sensitivity for colorectal cancer and advanced adenomas", "FIT is cheaper than guaiac FOBT in all settings", "FIT requires only one stool sample versus three for guaiac FOBT and identifies any gastrointestinal bleeding"],
+    answer: 1,
+    explanation: "FIT (Fecal Immunochemical Test) advantages over guaiac FOBT: (1) uses antibodies specific to human hemoglobin, so no dietary restrictions (no need to avoid red meat, aspirin, vitamin C as required for gFOBT); (2) higher sensitivity for colorectal cancer (79% vs 69%) and advanced adenomas; (3) requires fewer samples (1 vs 3 for gFOBT); (4) automated analysis reduces subjective interpretation. FIT has largely replaced guaiac FOBT in organized screening programs in Europe, Australia, Japan, and Taiwan. Positivity rate is approximately 5-10%, requiring follow-up colonoscopy."
   },
   {
     id: 38,
-    question: "The primary objective of India's National Cancer Control Programme (NCCP/NPCCP) includes all EXCEPT:",
-    options: ["Primary prevention of tobacco-related cancers", "Early detection and treatment of cancer", "Equitable cancer treatment through District Cancer Care units", "Mandatory genetic testing for all cancer patients"],
-    answer: 3,
-    explanation: "India's National Cancer Control Programme objectives include: (1) primary prevention of tobacco-related and other cancers; (2) early detection and downstaging through screening programs; (3) strengthening treatment facilities and making treatment equitable (District Cancer Care centers); (4) palliative care and pain relief; and (5) research and training. Mandatory genetic testing for all cancer patients is not an objective of the NCCP."
+    question: "The primary objectives of the National Cancer Control Programme (NCCP) in India include cancer prevention, early detection, and:",
+    options: ["Manufacturing cancer drugs domestically to reduce costs", "Strengthening treatment services and palliative care through Cancer Care facilities at different levels of healthcare", "Training all MBBS graduates as oncologists", "Establishing cancer research centers only in IIMs"],
+    answer: 1,
+    explanation: "India's National Cancer Control Programme (launched 1975, revised 1984-85, integrated into NPCDCS in 2010) has four core objectives: (1) Primary prevention - especially tobacco control; (2) Early detection/screening - screening for common cancers; (3) Strengthening of treatment facilities - Regional Cancer Centres (RCCs), State Cancer Institutes, Oncology Wings in Medical Colleges, Day Care Chemotherapy Centres; (4) Palliative care and pain relief - oral morphine availability, home care. The programme operates through a hub-and-spoke model from RCCs to district hospitals."
   },
   {
     id: 39,
-    question: "HPV vaccine as primary prevention for cervical cancer is most effective when given to which group?",
-    options: ["Women with active HPV infection", "Girls aged 9-14 years before sexual debut (prior to HPV exposure)", "Women aged 26-45 years as catch-up", "Boys only to prevent oropharyngeal cancer"],
+    question: "Cost-effectiveness analysis (CEA) of HPV vaccination in India compared to no vaccination shows that the intervention is:",
+    options: ["Not cost-effective because cervical cancer treatment is cheap in India", "Cost-effective or cost-saving particularly when delivered through school-based programs to 9-14 year old girls", "Only cost-effective when combined with adult catch-up vaccination", "Not cost-effective because of cold chain infrastructure requirements"],
     answer: 1,
-    explanation: "HPV vaccines are most effective when given to girls aged 9-14 years, before sexual debut and potential HPV exposure. In this age group, 2-dose schedules are sufficient (2-dose series, 6 months apart). Post-exposure vaccination has limited benefit. India introduced HPV vaccination under the Universal Immunization Programme targeting 9-14 year old girls with the indigenously developed quadrivalent HPV vaccine (Cervavac). Catch-up vaccination is recommended up to age 26."
+    explanation: "Multiple cost-effectiveness models for India (Goldie et al., Sankaranarayanan et al.) consistently show HPV vaccination of 9-14 year old girls through school-based programs is cost-effective (ICER well below GDP per capita per DALY averted) or even cost-saving when compared to no vaccination. Key factors: high cervical cancer burden in India (2nd most common female cancer), low cost of domestically produced vaccines (Cervavac, India's quadrivalent HPV vaccine launched 2023), and efficient school-based delivery. Vaccination + screening combinations are most cost-effective."
   },
   {
     id: 40,
-    question: "Hepatitis B vaccination as cancer prevention primarily prevents which cancer?",
-    options: ["Bile duct cancer (cholangiocarcinoma)", "Hepatocellular carcinoma (HCC)", "Colorectal cancer", "Pancreatic cancer"],
+    question: "PAF (Population Attributable Fraction)-based priority setting for cancer prevention in India identifies which intervention as having the highest priority?",
+    options: ["Obesity prevention through physical activity programs", "Tobacco control programs (eliminating tobacco would prevent the largest proportion of cancers)", "Universal colorectal cancer screening", "Reducing red meat consumption"],
     answer: 1,
-    explanation: "Hepatitis B vaccination prevents chronic HBV infection, which is the leading cause of hepatocellular carcinoma (HCC) worldwide. HBV causes approximately 50% of all HCC globally. Taiwan's universal HBV vaccination program begun in 1984 demonstrated a 70% reduction in HCC incidence in vaccinated cohorts compared to unvaccinated - the first demonstration of a vaccine preventing cancer. India has HBV vaccination in its UIP since 2002."
+    explanation: "PAF-based priority setting for cancer prevention in India consistently identifies tobacco control as the highest priority intervention because: (1) high prevalence of tobacco use (28% of adults use tobacco); (2) high relative risk for multiple cancers (oral, lung, pharyngeal, oesophageal, bladder, kidney, pancreatic cancers); (3) tobacco accounts for approximately 40-50% of male cancers and 20% of female cancers in India; (4) PAF for tobacco exceeds that for all other individual risk factors. Eliminating tobacco would prevent more cancer cases and deaths than any other single intervention."
   },
   {
     id: 41,
-    question: "The WHO Three-Step Analgesic Ladder for cancer pain management follows which sequence?",
-    options: ["Opioids first, then NSAIDs, then adjuvants", "Non-opioids (Step 1) -> Weak opioids + non-opioids (Step 2) -> Strong opioids + non-opioids (Step 3)", "Adjuvants first, then weak opioids, then strong opioids", "Strong opioids (Step 1) -> Weak opioids (Step 2) -> Non-opioids (Step 3)"],
+    question: "The WHO 90-70-90 cervical cancer elimination strategy targets the following goals by 2030:",
+    options: ["90% screening coverage, 70% vaccination coverage, 90% treatment for screen-positive women", "90% of girls vaccinated by age 15, 70% of women screened by age 35 and 45, 90% of those with disease receiving treatment", "90% reduction in cervical cancer incidence, 70% reduction in mortality, 90% 5-year survival", "90% HPV vaccine efficacy, 70% population immunity, 90% cancer registry coverage"],
     answer: 1,
-    explanation: "The WHO Three-Step Analgesic Ladder (1986) for cancer pain: Step 1 - mild pain: non-opioids (aspirin, paracetamol, NSAIDs) ± adjuvants; Step 2 - moderate pain persisting: add weak opioids (codeine, tramadol) to non-opioids ± adjuvants; Step 3 - severe pain persisting: replace with strong opioids (morphine, oxycodone, fentanyl) ± non-opioids ± adjuvants. Oral morphine availability is a key challenge in India for palliative care."
+    explanation: "WHO's 90-70-90 global strategy (2020) for cervical cancer elimination by the end of this century requires meeting these targets by 2030 in each country: (1) 90% of girls fully vaccinated with HPV vaccine by age 15; (2) 70% of women screened with a high-performance test by age 35, and again by age 45; (3) 90% of women identified with cervical disease (pre-cancer or invasive) receiving treatment. Countries achieving these targets by 2030 can reduce cervical cancer incidence below the elimination threshold of 4 per 100,000 within decades."
   },
   {
     id: 42,
-    question: "The National Cancer Grid (NCG) of India was established with which primary objective?",
-    options: ["To regulate private cancer hospitals' fee structures", "To connect cancer centers across India for uniform standards of care, research, and telemedicine", "To manage cancer drug procurement for government hospitals", "To conduct cancer screening camps in rural areas"],
+    question: "The National Cancer Grid (NCG) uses which approach to improve cancer care equity in India?",
+    options: ["Mandating all patients to travel to major cancer centers for treatment", "Tumor boards and telemedicine consultations connecting smaller cancer centers to major centers for multidisciplinary opinion", "Providing free cancer drugs from a central pool to all government hospitals", "Training only surgeons in cancer management"],
     answer: 1,
-    explanation: "The National Cancer Grid (NCG), established in 2012 under the Department of Atomic Energy (Tata Memorial Centre) and later supported by DST, connects over 250 cancer centers across India. Its objectives include: establishing uniform standards of cancer care, facilitating tumor boards/multidisciplinary care via telemedicine, training oncologists, conducting collaborative research, and reducing disparities in cancer care quality between metro and non-metro areas."
+    explanation: "The National Cancer Grid uses tumor boards (multidisciplinary cancer conferences) conducted via telemedicine to connect smaller district/state cancer centers with major cancer centers (Tata Memorial Centre, AIIMS, CMC Vellore, etc.). This allows complex cases to receive multidisciplinary expert opinion without patients needing to travel long distances. NCG also standardizes treatment protocols (tumor site-specific guidelines), provides training programs, facilitates clinical trials, and develops a common electronic medical record system. Over 250 cancer centers are members."
   },
   {
     id: 43,
-    question: "The District Cancer Care model in India under NPCDCS involves which level of care?",
-    options: ["Only tertiary cancer centers in state capitals", "District hospital-based care with oncologist support for diagnosis, basic treatment, and referral", "Only home-based palliative care", "Cancer screening only without treatment capacity"],
+    question: "Which indicator best measures cancer care access at the population level in India?",
+    options: ["Number of cancer hospitals per state", "Stage distribution at diagnosis (proportion presenting at Stage I-II vs Stage III-IV)", "Number of chemotherapy drugs in the essential medicines list", "Proportion of oncologists with fellowship training"],
     answer: 1,
-    explanation: "The District Cancer Care model under NPCDCS aims to bring basic cancer care closer to patients by strengthening District Hospitals with: oncology OPDs, trained cancer care nurses, basic diagnostic facilities (biopsy, histopathology), chemotherapy administration, palliative care, and linkage to tertiary centers for surgery/radiation. Day Care Chemotherapy Centres at district level reduce the need for patients to travel to metro cities for every treatment cycle."
+    explanation: "Stage distribution at diagnosis is the best population-level indicator of cancer care access. If the majority of patients present at advanced stage (III-IV), it indicates: poor public awareness, lack of early detection programs, limited healthcare access, financial barriers to seeking care, and ineffective primary care cancer detection. In India, majority of oral, cervical, and breast cancers present at Stage III-IV, unlike in high-income countries. Other indicators include: time from symptom onset to diagnosis, treatment initiation rate, and proportion receiving evidence-based treatment."
   },
   {
     id: 44,
-    question: "A major barrier to cancer treatment access in India is:",
-    options: ["Excess number of oncologists in rural areas", "Geographic concentration of cancer treatment facilities in large cities and high out-of-pocket expenditure", "Overutilization of cancer screening leading to unnecessary treatment", "Mandatory insurance coverage creating wait times"],
+    question: "Cancer survivorship epidemiology in India shows which pattern regarding growing survivor numbers?",
+    options: ["India has fewer cancer survivors because of lower incidence", "Improving early detection and treatment has increased the number of cancer survivors, creating need for long-term follow-up care", "Cancer survivor numbers are declining due to better prevention", "Survivorship rates are similar across rural and urban India"],
     answer: 1,
-    explanation: "Key barriers to cancer treatment access in India include: geographic concentration of cancer centers in large cities (Mumbai, Delhi, Chennai, Kolkata, Bengaluru); high out-of-pocket expenditure (cancer treatment can cost INR 5-20 lakhs); catastrophic health expenditure leading families to financial ruin; lack of trained oncologists in tier 2 and 3 cities; late-stage presentation; and social stigma. Ayushman Bharat PM-JAY provides coverage for cancer treatment up to INR 5 lakhs."
+    explanation: "As cancer detection and treatment improve in India, the cancer survivor population is growing - defined as those living after a cancer diagnosis including during treatment, remission, and cure. Currently India has an estimated 3-4 million cancer survivors. Growing survivor numbers create new demands for: surveillance for recurrence and second cancers, management of long-term treatment toxicities (e.g., cardiotoxicity from anthracyclines, neuropathy from taxanes), psychological support, rehabilitation, fertility counseling, and occupational reintegration. India lacks structured survivorship care programs, and most oncologists are focused on active treatment."
   },
   {
     id: 45,
-    question: "Cancer survivorship care addresses which specific needs of cancer survivors?",
-    options: ["Only monitoring for cancer recurrence", "Physical, psychosocial, financial late effects of treatment; surveillance for recurrence and second cancers; health promotion", "Genetic counseling for family members only", "Palliative and end-of-life care"],
+    question: "The importance of cancer registration for cancer policy is best exemplified by which scenario?",
+    options: ["Cancer registry data directly determines drug prices in India", "PBCR data showing rising breast cancer incidence led to prioritization of breast cancer screening programs and resource allocation in national programs", "Cancer registry data is used to identify individual patients for government insurance", "HBCRs automatically generate treatment protocols for oncologists"],
     answer: 1,
-    explanation: "Cancer survivorship care encompasses comprehensive post-treatment care addressing: surveillance for recurrence and second primary cancers; managing late and long-term physical effects (fatigue, lymphedema, neuropathy, cardiac toxicity); psychosocial support (depression, anxiety, PTSD); fertility/reproductive health; financial toxicity; health promotion (exercise, nutrition, tobacco cessation); and care coordination between oncologists and primary care. India has limited structured survivorship care programs."
+    explanation: "Cancer registry data directly informs policy through trend analysis. A practical example: consistent PBCR data from NCRP showing rising breast cancer incidence surpassing cervical cancer in urban India led to: (1) prioritization of breast cancer in NPCDCS; (2) inclusion of clinical breast examination in HWC screening protocol; (3) allocation of mammography to district hospitals; (4) awareness campaigns targeting breast cancer. Similarly, high oral cancer rates in tobacco-using populations justified oral cancer visual screening program. Without registry data, cancer control programs would lack an evidence base for prioritization."
   },
   {
     id: 46,
-    question: "Cancer registration is important for cancer control primarily because it:",
-    options: ["Provides names of cancer patients for treatment prioritization", "Provides population-based incidence, prevalence, survival data needed for policy, resource allocation, and evaluating prevention programs", "Helps identify cancer patients for insurance claims", "Monitors individual treatment compliance"],
+    question: "The mCessation program for tobacco cessation in India, launched by Ministry of Health and Family Welfare, works by which mechanism?",
+    options: ["Providing free nicotine replacement therapy by mail to registered users", "Delivering personalized motivational text messages to registered tobacco users on mobile phones to support quitting", "Telemedicine consultations with addiction specialists via mobile app", "Social media campaign targeting tobacco manufacturers"],
     answer: 1,
-    explanation: "Cancer registries are the backbone of cancer control programs. They provide: population-based incidence rates for planning screening and prevention programs; trends over time to evaluate effectiveness of interventions; survival data to measure treatment outcomes; prevalence data for service planning; rural-urban and regional variation for equity assessments; and data for research. Without accurate cancer registration, it is impossible to know the true burden or evaluate program impact."
+    explanation: "India's mCessation programme (launched 2016 under WHO FCTC mTobacco Cessation initiative) delivers personalized, motivational text messages (SMS) to tobacco users who voluntarily register (via missed call to 011-22901701). Messages are tailored by tobacco type (smoked vs smokeless), quit status, and motivational stage. Users receive 6 weeks of messages with quit day, pre-quit, and post-quit support. mCessation complements the National Tobacco Quitline (1800-112-356) for telephonic behavioral counseling. Studies show text-based interventions increase quit rates by 1.5-2x compared to no intervention."
   },
   {
     id: 47,
-    question: "India's Tobacco Quitline number, which provides free cessation counseling, is:",
-    options: ["1800-112-356", "1800-180-1104", "104", "1800-233-444"],
-    answer: 0,
-    explanation: "India's National Tobacco Quitline number is 1800-112-356 (toll-free). It provides free telephonic behavioral counseling for tobacco cessation. The service is available in multiple regional languages. It is part of India's comprehensive tobacco control strategy under COTPA and the National Tobacco Control Programme (NTCP). mCessation (mobile-based cessation) is another initiative under India's tobacco control program."
+    question: "ICMR's cancer research priorities include which focus area most directly relevant to the Indian cancer burden?",
+    options: ["Development of novel immunotherapy drugs for melanoma", "Research on tobacco-related oral and lung cancers, cervical cancer HPV biology, and population-based cancer registry strengthening", "Basic research on rare genetic cancer syndromes", "Development of proton beam therapy technology"],
+    answer: 1,
+    explanation: "ICMR's cancer research priorities are aligned with India's cancer burden and focus on: (1) tobacco-related cancers - oral, lung, oesophageal - given India's high tobacco use prevalence; (2) cervical cancer - HPV natural history, vaccination implementation, cost-effective screening in Indian settings; (3) breast cancer - biology of premenopausal presentation, genetics in Indian context; (4) strengthening PBCR network and NCRP methodology; (5) cancer prevention trials in Indian populations; (6) traditional medicine integration evidence; and (7) cancer health economics in Indian context. ICMR funds extramural research grants through these priority areas."
   },
   {
     id: 48,
-    question: "Population Attributable Fraction (PAF) for tobacco in cancer refers to:",
-    options: ["The percentage of smokers who develop cancer", "The proportion of cancer cases in the total population that can be attributed to tobacco use (i.e., would not occur if tobacco were eliminated)", "The relative risk of cancer in tobacco users", "The number of cancer deaths prevented by tobacco control"],
+    question: "Cost-effectiveness analysis (CEA) of cancer screening programs compares interventions using which primary metric?",
+    options: ["Number of cancers detected per rupee spent", "Incremental Cost-Effectiveness Ratio (ICER) - additional cost per additional DALY averted or life-year gained compared to an alternative", "Total budget expenditure for the screening program", "Number of false positives per 1000 screened"],
     answer: 1,
-    explanation: "Population Attributable Fraction (PAF) for tobacco = the proportion of total cancer cases in the population that are attributable to tobacco use, and that would be prevented if tobacco exposure were eliminated. PAF depends on both the prevalence of tobacco use in the population and the relative risk of cancer in tobacco users. In India, tobacco accounts for PAF of approximately 50% for oral cancers, 50-60% for lung cancers, making tobacco control the single most important cancer prevention strategy."
+    explanation: "Cost-effectiveness analysis uses the Incremental Cost-Effectiveness Ratio (ICER) = (Cost of intervention - Cost of comparator) / (Effect of intervention - Effect of comparator), expressed as cost per DALY averted (or cost per life-year gained, or cost per QALYgained). An intervention is considered cost-effective if its ICER falls below the willingness-to-pay threshold (WHO previously recommended 1-3x GDP per capita per DALY, now country-specific thresholds are preferred). For India, cost per DALY averted below approximately USD 1,000-3,000 (INR 80,000-250,000) generally indicates cost-effectiveness."
   },
   {
     id: 49,
-    question: "Lynch syndrome (Hereditary Non-Polyposis Colorectal Cancer - HNPCC) is caused by germline mutations in which genes?",
-    options: ["BRCA1 and BRCA2", "APC and MUTYH genes", "MLH1, MSH2, MSH6, PMS2 (DNA mismatch repair genes)", "TP53 and RB1 genes"],
-    answer: 2,
-    explanation: "Lynch syndrome is caused by germline mutations in DNA mismatch repair (MMR) genes: MLH1, MSH2, MSH6, and PMS2. It is the most common hereditary colorectal cancer syndrome, causing 2-4% of all colorectal cancers. It also increases risk of endometrial, ovarian, gastric, small bowel, urinary tract, and other cancers. Tumors show microsatellite instability (MSI-H). Li-Fraumeni syndrome involves TP53 mutations; FAP involves APC mutations."
+    question: "GLOBOCAN 2020 data for India shows the 5 leading cancer sites in Indian males are (in order by incidence):",
+    options: ["Prostate, lung, colorectum, stomach, bladder", "Lip/oral cavity, lung, stomach, colorectum, oesophagus", "Lung, prostate, colorectum, stomach, liver", "Breast, lung, colorectum, cervix, thyroid"],
+    answer: 1,
+    explanation: "According to GLOBOCAN 2020, the top 5 cancers in Indian males by incidence are: (1) Lip, oral cavity - reflecting the high tobacco use burden (smokeless tobacco, bidi); (2) Lung - tobacco smoking and air pollution; (3) Stomach - H. pylori, dietary factors, highest in northeast India; (4) Colorectum - rising with urbanization and dietary changes; (5) Oesophagus - tobacco, alcohol, hot food consumption. This list emphasizes the tobacco dominance in Indian male cancer epidemiology, contrasting with prostate-dominated profiles seen in Western countries."
   },
   {
     id: 50,
-    question: "The primary prevention strategy with the HIGHEST potential impact on cancer burden reduction in India is:",
-    options: ["Universal genetic screening for BRCA mutations", "Comprehensive tobacco control (prevention of initiation, promotion of cessation, protection from secondhand smoke)", "Annual cancer screening for all adults above 30", "Mandatory antioxidant supplementation"],
+    question: "The Primary prevention of infection-attributable cancers in India's comprehensive cancer control strategy includes which set of interventions?",
+    options: ["Chemoprevention drugs for all high-risk individuals", "HBV vaccination (UIP), HPV vaccination (UIP since 2023), H. pylori detection and treatment research, aflatoxin food safety standards", "Universal population screening for HCV and HBV", "Antibiotic prophylaxis against H. pylori in high-risk communities"],
     answer: 1,
-    explanation: "Comprehensive tobacco control has the highest potential impact on cancer burden reduction in India. Tobacco is responsible for approximately 40-50% of all male cancers and 20% of female cancers in India. Effective tobacco control includes: price/tax increases (most effective), pictorial health warnings, ban on advertising/promotion/sponsorship, smoke-free environments, cessation support, and mass media campaigns - all components of the MPOWER framework (WHO FCTC). No other single intervention can prevent as many cancer deaths."
+    explanation: "India's primary prevention strategy for infection-attributable cancers includes: (1) Hepatitis B vaccination in Universal Immunization Programme (since 2002) - prevents HBV-related liver cancer; (2) HPV vaccination introduced in UIP (2023, girls 9-14 years with Cervavac) - prevents cervical and oropharyngeal cancers; (3) Research on H. pylori eradication as stomach cancer prevention (not yet universally implemented); (4) Food safety regulations limiting aflatoxin in grains and groundnuts (FSSAI standards); (5) Blood safety and infection control programs reducing HCV transmission. Vaccination is the most scalable primary prevention for infection-attributable cancers."
   },
 ];
 

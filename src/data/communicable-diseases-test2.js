@@ -1,568 +1,578 @@
 const questions = [
   {
     id: 1,
-    question: "A healthcare worker sustains a needle-stick injury from a patient known to be HBeAg-positive. Without post-exposure prophylaxis, what is the approximate risk of acquiring Hepatitis B infection?",
-    options: ["1-2%", "6-30%", "0.1-0.3%", "40-60%"],
+    question: "Respiratory droplets produced during coughing are classified as 'large droplets' when they exceed which particle diameter threshold, determining that they will settle by gravity rather than remain airborne?",
+    options: ["1 micron", "5 microns", "10 microns", "50 microns"],
     answer: 1,
-    explanation: "The risk of acquiring Hepatitis B following a needle-stick injury from an HBeAg-positive source is approximately 6-30%. This is significantly higher than HIV (0.3%) or Hepatitis C (1.8%). HBeAg positivity indicates active viral replication and high infectivity."
+    explanation: "The conventional threshold distinguishing large respiratory droplets from droplet nuclei (airborne particles) is 5 microns in diameter, though some authorities use 10 microns. Particles >5 microns settle rapidly by gravity within approximately 1 meter of the source. Particles <5 microns (droplet nuclei) can remain suspended in air for prolonged periods. This size distinction underpins the separation of droplet precautions from airborne precautions in infection control."
   },
   {
     id: 2,
-    question: "A pregnant woman is diagnosed with primary syphilis at 32 weeks of gestation. Which statement best describes the risk of congenital syphilis in this scenario?",
-    options: [
-      "Risk is negligible as Treponema pallidum cannot cross the placenta before 36 weeks",
-      "Transplacental transmission can occur at any gestational age, with highest risk during primary and secondary syphilis",
-      "Transmission only occurs during delivery through contact with genital lesions",
-      "Risk is approximately 5% regardless of the stage of maternal syphilis"
-    ],
+    question: "A healthcare worker sustains a needle-stick injury from a patient with active Hepatitis C infection. Without post-exposure prophylaxis, what is the average risk of acquiring HCV infection from a single percutaneous exposure?",
+    options: ["0.03%", "1.8%", "6-30%", "30-40%"],
     answer: 1,
-    explanation: "Treponema pallidum can cross the placenta at any gestational age. The risk of fetal infection is highest during primary (70-100%) and secondary syphilis (67%) when maternal spirochetemia is greatest. Without treatment, primary syphilis at 32 weeks carries an extremely high risk of congenital syphilis."
+    explanation: "The average risk of HCV transmission following a needle-stick injury from an HCV-positive source is approximately 1.8% (range 0-7%). This is higher than HIV (approximately 0.3% per percutaneous exposure) but lower than HBeAg-positive HBV (6-30%). There is no licensed post-exposure prophylaxis for HCV. Early detection and monitoring followed by treatment with direct-acting antivirals if infection occurs is the current management approach."
   },
   {
     id: 3,
-    question: "In a school, 5 children develop streptococcal pharyngitis within 24 hours of attending the same classroom. The teacher had a sore throat the previous week. This pattern of spread is best characterized as:",
+    question: "Contact transmission can be direct or indirect. Which of the following examples specifically represents DIRECT contact transmission?",
     options: [
-      "Common source outbreak with continuous exposure",
-      "Person-to-person spread via large respiratory droplets",
-      "Airborne transmission via droplet nuclei",
-      "Vehicle-borne transmission via contaminated water"
+      "Transmission of norovirus via a contaminated door handle",
+      "Transmission of scabies via prolonged skin-to-skin contact with an infested person",
+      "Transmission of Salmonella via contaminated poultry served at a buffet",
+      "Transmission of influenza via respiratory droplets landing on a mucous membrane"
     ],
     answer: 1,
-    explanation: "Streptococcus pyogenes (Group A Strep) spreads primarily via large respiratory droplets (>5 microns) during close contact. The clustering of cases in a classroom within 24 hours following exposure to an infectious teacher is classic person-to-person direct droplet transmission. Airborne (droplet nuclei) transmission plays a minimal role in streptococcal pharyngitis."
+    explanation: "Direct contact transmission requires physical contact between the source and the susceptible host without an intermediate object. Scabies (Sarcoptes scabiei) is transmitted by direct prolonged skin-to-skin contact. The mite burrows into skin during close personal contact. A contaminated door handle is fomite (indirect contact) transmission. Food-borne is vehicle-borne. Droplet transmission is its own distinct category, though it involves 'direct' proximity."
   },
   {
     id: 4,
-    question: "A woman with HIV is pregnant. Without any antiretroviral intervention, what proportion of mother-to-child HIV transmission occurs during the intrapartum period?",
-    options: ["5-10%", "15-20%", "50-75%", "85-90%"],
-    answer: 2,
-    explanation: "Without antiretroviral intervention, approximately 50-75% of mother-to-child HIV transmission occurs during labor and delivery (intrapartum). Antepartum (in utero) transmission accounts for 25-40%, and postnatal transmission via breastfeeding accounts for 14-22%. This distribution justifies the importance of intrapartum antiretroviral prophylaxis."
+    question: "Mother-to-child transmission of HIV can occur via three routes. In a breastfeeding population without any antiretroviral intervention, what proportion of total vertical HIV transmission occurs via breastfeeding?",
+    options: ["5-10%", "14-22%", "40-50%", "60-70%"],
+    answer: 1,
+    explanation: "Without antiretroviral intervention, mother-to-child HIV transmission occurs as follows: antepartum (in utero) accounts for approximately 25-40%, intrapartum (during delivery) accounts for approximately 50-75% of non-breastfeeding transmission, and postnatal via breastfeeding accounts for 14-22% of total transmission risk over a 24-month breastfeeding period. Combined risk without any intervention is approximately 20-45%. This distribution guides WHO PMTCT (Prevention of Mother-to-Child Transmission) protocols."
   },
   {
     id: 5,
-    question: "A patient presents with bloody diarrhea after consuming undercooked beef. Stool culture grows E. coli O157:H7. The primary mode of transmission for this pathogen from cattle to humans is:",
+    question: "In the epidemiology of feco-oral transmitted diseases, which of the following best describes a 'four F' pathway of transmission?",
     options: [
-      "Feco-oral route via contaminated food or water",
-      "Direct contact with cattle hide",
-      "Inhalation of aerosolized cattle feces",
-      "Vector-borne transmission via flies"
+      "Fever, Fatigue, Flushing, Failure-to-thrive as clinical indicators of feco-oral disease",
+      "Fluids, Food, Fingers, Flies as vehicles connecting fecal contamination to oral ingestion",
+      "First, Fourth, Fifteenth, and Fortieth day as critical fever intervals for diagnosis",
+      "Fomite, Fungal, Filth, and Flea routes of transmission in endemic areas"
     ],
-    answer: 0,
-    explanation: "E. coli O157:H7 (STEC) is transmitted primarily via the feco-oral route through consumption of contaminated food (especially undercooked ground beef), unpasteurized milk/juice, contaminated water, and person-to-person contact. Cattle are the primary reservoir. The organism is present in cattle feces and contaminates meat during slaughter."
+    answer: 1,
+    explanation: "The 'four F's' (sometimes 'five F's') framework describes the pathways by which fecal contamination reaches a new host: Fluids (contaminated water), Food (contaminated food), Fingers (contaminated hands touching mouth), and Flies (mechanical vectors carrying fecal organisms to food). Sometimes 'Fields' (night soil agricultural practices) is added as a fifth F. This framework was classically used in sanitation program design to identify intervention points for breaking feco-oral transmission."
   },
   {
     id: 6,
-    question: "Which of the following sexually transmitted infections has the highest probability of transmission per unprotected sexual act from an infected to an uninfected partner?",
-    options: ["HIV", "Gonorrhea", "Syphilis", "Herpes Simplex Virus-2"],
-    answer: 1,
-    explanation: "Gonorrhea has one of the highest per-act transmission probabilities among STIs - approximately 50-70% per act from male to female and 20-30% from female to male. HIV per-act transmission is approximately 0.04-0.08% for receptive vaginal sex. Syphilis is approximately 10-30% per act, and HSV-2 is approximately 1-10% per act depending on lesion status."
+    question: "A public health researcher is analyzing the secondary attack rate (SAR) of influenza in households. In one household of 4 susceptible contacts, 3 develop influenza after a single index case. What is the household secondary attack rate?",
+    options: ["25%", "60%", "75%", "100%"],
+    answer: 2,
+    explanation: "Secondary attack rate (SAR) = (Number of new cases among contacts / Number of susceptible contacts exposed) x 100. SAR = (3 new cases / 4 susceptible contacts) x 100 = 75%. The index case is excluded from both numerator and denominator. SAR measures transmission efficiency within a defined exposure group. Household SAR for seasonal influenza is typically 10-30%. A higher SAR indicates more efficient transmission and is used to compare pathogen transmissibility across settings."
   },
   {
     id: 7,
-    question: "A neonate born to a hepatitis B surface antigen (HBsAg) positive mother develops HBV infection despite receiving hepatitis B immunoglobulin and vaccine at birth. The most likely timing of transmission was:",
+    question: "Vertical transmission of Toxoplasma gondii from mother to fetus follows which epidemiological pattern?",
     options: [
-      "First trimester via transplacental route",
-      "During labor and delivery (intrapartum)",
-      "Postnatally via breast milk",
-      "Second trimester via amniotic fluid"
+      "Risk is highest in the first trimester when T. gondii can most easily cross the immature placental barrier",
+      "Risk of transmission increases with gestational age, but severity of fetal disease is greatest when infection occurs in the first trimester",
+      "Risk and severity are both highest in the third trimester due to greater placental permeability",
+      "Vertical transmission risk is constant across all trimesters and is unaffected by gestational age"
     ],
     answer: 1,
-    explanation: "The majority (approximately 95%) of perinatal hepatitis B transmission occurs during labor and delivery (intrapartum). When HBIG and vaccine are given within 12 hours of birth, they are highly effective (85-95% protective) but may fail in cases of in utero infection or very high maternal viral load. The intrapartum period is the primary window of vulnerability."
+    explanation: "Toxoplasma gondii congenital infection follows a classic pattern: transmission probability INCREASES with advancing gestational age (5-15% in first trimester, 30-40% in second, 60-90% in third trimester) due to increasing placental permeability. However, fetal SEVERITY is inversely related to gestational age - first trimester infection causes the most severe disease (spontaneous abortion, severe neurological damage) while third trimester infection may be subclinical at birth but cause chorioretinitis later. This dissociation between risk and severity is epidemiologically important."
   },
   {
     id: 8,
-    question: "A family cluster of typhoid fever is traced to a single food handler with chronic asymptomatic Salmonella Typhi carriage. The gallbladder acts as a reservoir in this case. This transmission scenario best illustrates:",
+    question: "A survey of healthcare workers finds 1.2% seroconversion to HIV annually among those with frequent needle-stick injuries, compared to 0.01% in the general population. The risk ratio for needle-stick exposure represents which type of blood-borne transmission quantification?",
     options: [
-      "Common source, point source outbreak",
-      "Zoonotic transmission with animal reservoir",
-      "Human reservoir with indirect feco-oral route transmission",
-      "Vector-borne transmission with biological vector"
+      "Attributable risk per exposure event",
+      "Per-act transmission probability (infectivity per exposure)",
+      "Cumulative incidence over the study period",
+      "Prevalence-based transmission estimate"
     ],
-    answer: 2,
-    explanation: "Typhoid fever is exclusively a human disease (no animal reservoir). The chronic carrier serves as a human reservoir, shedding S. Typhi in stool/urine. Transmission occurs indirectly via the feco-oral route through contaminated food prepared by the carrier. The gallbladder (and occasionally urinary tract) harbors chronic carriage."
+    answer: 1,
+    explanation: "Per-act transmission probability (also called per-exposure infectivity or attack rate per contact) quantifies the risk of infection from a single defined exposure event. For HIV via needle-stick: approximately 0.3% per percutaneous exposure. For receptive anal intercourse: approximately 1.4% per act. For receptive vaginal intercourse: approximately 0.08% per act. This per-act framework is essential for calculating transmission risk, informing post-exposure prophylaxis decisions, and building mathematical models of HIV spread."
   },
   {
     id: 9,
-    question: "A farmer develops cutaneous anthrax after handling wool from imported sheep. This mode of transmission is best classified as:",
+    question: "During a cholera outbreak, a public health team investigates the waterborne transmission dynamics. Which feature of V. cholerae O1 El Tor biotype transmission makes waterborne outbreaks particularly explosive?",
     options: [
-      "Indirect vehicle-borne transmission via fomite",
-      "Direct zoonotic contact transmission",
-      "Vector-borne biological transmission",
-      "Airborne droplet nuclei transmission"
+      "V. cholerae cannot survive outside the human gut for more than 2 hours",
+      "The organism can multiply in water to very high densities, a very low infectious dose is required, and it survives in aquatic environments for weeks",
+      "V. cholerae is exclusively transmitted by the fecal-oral route via direct person-to-person contact",
+      "Waterborne cholera transmission requires water temperatures below 10 degrees Celsius"
     ],
     answer: 1,
-    explanation: "Cutaneous anthrax from handling infected animal products (wool, hide, hair) represents direct zoonotic contact transmission. Bacillus anthracis spores enter through skin abrasions or cuts during direct handling of infected animals or their products. This is distinct from indirect vehicle transmission, though the wool could also be considered a vehicle."
+    explanation: "V. cholerae O1 El Tor can survive and multiply in aquatic environments, particularly in estuarine and coastal waters associated with zooplankton. The organism can form biofilms and persist for weeks in contaminated water sources. Infectious dose is approximately 10^6-10^8 organisms in healthy adults (lower in those with achlorhydria or on antacids). When contamination of a water supply is heavy, large numbers of people are simultaneously exposed, causing explosive outbreaks. The El Tor biotype shows enhanced environmental persistence compared to classical biotype."
   },
   {
     id: 10,
-    question: "In a blood transfusion recipient, which of the following transfusion-transmitted infections has the longest window period that most significantly challenges blood bank screening?",
-    options: ["HIV", "Hepatitis B virus", "Hepatitis C virus", "Treponema pallidum"],
+    question: "Regarding zoonotic transmission, a hunter develops a febrile illness after skinning and handling an infected rabbit carcass. Ulceroglandular tularemia (Francisella tularensis) is diagnosed. The mode of transmission in this case is:",
+    options: [
+      "Vector-borne biological transmission via tick bite during hunting",
+      "Direct zoonotic contact transmission via skin abrasion during carcass handling",
+      "Airborne transmission via aerosolized rabbit dander",
+      "Feco-oral transmission via contaminated rabbit meat"
+    ],
     answer: 1,
-    explanation: "Hepatitis B has the longest window period of approximately 38-45 days even with 4th generation combination antigen/antibody assays, or up to 59 days with HBsAg-only testing. HBV DNA can be undetectable during the early window period. NAT testing reduces HIV window to ~9 days and HCV to ~7 days. HBV NAT window period remains ~20 days."
+    explanation: "Francisella tularensis can penetrate intact or abraded skin during direct contact with infected animals or carcasses, resulting in ulceroglandular tularemia (skin ulcer at inoculation site with regional lymphadenopathy). Tularemia has multiple transmission routes: direct contact (ulceroglandular), tick/deerfly bite (ulceroglandular), inhalation of aerosolized organisms (pneumonic), ingestion of contaminated water/food (oropharyngeal). The portal of entry determines the clinical form. Skinning rabbits is a classic exposure scenario in endemic areas."
   },
   {
     id: 11,
-    question: "A child develops chickenpox 14 days after close contact with a case of herpes zoster in their grandfather. The route of transmission most likely responsible is:",
+    question: "In the epidemiology of sexual transmission of HIV, which of the following factors most substantially increases the per-act probability of HIV transmission?",
     options: [
-      "Direct contact with vesicular fluid from zoster lesions",
-      "Airborne transmission via droplet nuclei from zoster patient",
-      "Feco-oral route via contaminated surfaces",
-      "Vector-borne transmission via infected arthropods"
+      "Concurrent use of hormonal contraception by the female partner",
+      "High plasma viral load (>100,000 copies/mL) in the HIV-positive partner",
+      "HIV subtype B versus subtype C infection",
+      "Age of the HIV-positive partner"
     ],
-    answer: 0,
-    explanation: "Varicella-zoster virus (VZV) can be transmitted from a herpes zoster patient to a susceptible individual (causing chickenpox, not zoster) primarily via direct contact with vesicular fluid. Airborne transmission from zoster is less efficient than from chickenpox. Disseminated zoster can transmit via airborne route, but localized zoster primarily spreads via direct contact with lesion fluid."
+    answer: 1,
+    explanation: "Plasma viral load is the single most important determinant of HIV sexual transmission probability. The per-act transmission probability increases approximately 2.5-fold for each log10 increase in viral load. Persons with viral load >100,000 copies/mL have approximately 10-fold higher transmission risk than those with 1,000-10,000 copies/mL. This is the biological basis for 'Treatment as Prevention' (TasP) - persons on effective ART with undetectable viral load have effectively zero transmission risk (U=U: Undetectable = Untransmittable)."
   },
   {
     id: 12,
-    question: "Which statement most accurately describes the vertical transmission dynamics of Treponema pallidum compared to HIV?",
+    question: "A village experiences a cluster of Nipah virus infections. Person-to-person spread is documented within hospital settings. Which feature of Nipah virus person-to-person transmission distinguishes it epidemiologically from measles?",
     options: [
-      "Both pathogens have identical transmission rates across all trimesters",
-      "Syphilis transmission risk is highest in early pregnancy while HIV risk is highest at delivery",
-      "HIV transmission risk is highest in the first trimester while syphilis risk is highest at delivery",
-      "Both pathogens are primarily transmitted postnatally via breast milk"
+      "Nipah spreads exclusively via vector-borne routes unlike measles which is airborne",
+      "Nipah virus has a much lower R0 (typically less than 1 in most outbreaks) compared to measles (R0 = 12-18), indicating inefficient person-to-person spread",
+      "Nipah has a shorter incubation period than measles, making case detection easier",
+      "Nipah is transmitted via the feco-oral route while measles is transmitted by droplets"
     ],
     answer: 1,
-    explanation: "Treponema pallidum can cause fetal infection in any trimester but the risk of adverse fetal outcomes is highest when maternal infection occurs early in pregnancy due to prolonged fetal exposure. HIV transmission risk is primarily intrapartum (50-75%) during labor and delivery. Syphilis transmits transplacentally throughout pregnancy with high efficiency during maternal spirochetemia."
+    explanation: "Nipah virus person-to-person transmission occurs via close contact with respiratory secretions or body fluids of infected persons, particularly in nosocomial settings. However, the R0 for Nipah is typically less than 1 in most outbreaks (range 0.33-0.48 in Bangladesh), indicating that the average case infects less than one person and outbreaks self-limit without sustained chains of transmission. This contrasts sharply with measles (R0 = 12-18). This difference in transmissibility reflects fundamental differences in pathogen biology and shedding dynamics."
   },
   {
     id: 13,
-    question: "Mycobacterium tuberculosis is primarily transmitted via airborne droplet nuclei (<5 microns). Which physical property of droplet nuclei allows them to remain suspended in air for prolonged periods?",
+    question: "Wells' equation describes the relationship between droplet nuclei production and airborne infection risk. Which factor in this framework most directly determines whether airborne transmission will occur in an enclosed space?",
     options: [
-      "High lipid content of the mycobacterial cell wall",
-      "Small particle size resulting in negligible settling velocity under Stoke's law",
-      "Active motility of the organism",
-      "Attachment to mucus particles with neutral buoyancy"
+      "The height of the ceiling in the room",
+      "The quantum of infection produced per unit time, ventilation rate, and time of exposure",
+      "The temperature of the room affecting pathogen viability",
+      "The number of windows present in the room"
     ],
     answer: 1,
-    explanation: "Droplet nuclei are particles <5 microns (typically 1-5 microns) produced by evaporation of larger respiratory droplets. Their extremely small size means settling velocity under Stoke's law is negligible, allowing them to remain suspended in air currents for hours. M. tuberculosis survives within these particles due to its resistant cell wall, enabling airborne transmission over long distances."
+    explanation: "The Wells-Riley equation models airborne infection: P = 1 - e^(-Iqpt/Q), where I = number of infectious sources, q = quantum generation rate (infectious doses/hour produced by source), p = breathing rate of susceptible, t = time of exposure, Q = ventilation rate (air changes per hour). Ventilation rate is the primary modifiable engineering control - increasing Q dilutes infectious droplet nuclei concentration. This equation is used to calculate the number of expected cases from airborne exposure and to design ventilation requirements for high-risk settings."
   },
   {
     id: 14,
-    question: "An outbreak of Legionellosis occurs among hotel guests who never had close contact with each other but all used the hotel's whirlpool spa. The mode of transmission here is best described as:",
+    question: "In the Bradley classification of water-related diseases, which category correctly describes guinea worm disease (dracunculiasis)?",
     options: [
-      "Person-to-person droplet transmission",
-      "Water-borne transmission via ingestion of contaminated water",
-      "Airborne transmission via aerosols generated from water source (water-related disease)",
-      "Fomite transmission via contaminated spa surfaces"
+      "Waterborne - transmitted via ingestion of contaminated water",
+      "Water-washed - prevented by increased water quantity for hygiene",
+      "Water-based - an obligate part of the life cycle occurs in water through the copepod intermediate host",
+      "Water-related - the insect vector breeds in water"
     ],
     answer: 2,
-    explanation: "Legionellosis is transmitted via inhalation of aerosols from environmental water sources (cooling towers, whirlpool spas, showers). This falls under 'water-related' transmission in the Bradley classification - disease is water-related because the organism amplifies in water systems and is transmitted via water aerosols, NOT via drinking water. Person-to-person transmission does not occur."
+    explanation: "Dracunculiasis is a water-based disease in Bradley's classification because Dracunculus medinensis has an obligatory aquatic intermediate host - the Cyclops copepod. Infected humans release L1 larvae into water; Cyclops ingest and harbor L3 larvae; humans drink water containing infected Cyclops. The copepod is an obligate intermediate host. This is distinct from waterborne (cholera - ingestion of organisms), water-washed (trachoma - hygiene-dependent), or water-related (malaria - vector breeds in water but water not in life cycle)."
   },
   {
     id: 15,
-    question: "In the Bradley classification of water-associated diseases, cholera would be classified as a 'waterborne' disease. Which of the following diseases is correctly classified as 'water-washed'?",
+    question: "A food safety investigator is analyzing an outbreak where 120 people developed gastroenteritis 18-36 hours after attending a community potluck. Which pathogen has an incubation period most consistent with this timeframe and is commonly associated with potluck settings?",
     options: [
-      "Schistosomiasis",
-      "Typhoid fever",
-      "Trachoma",
-      "Legionellosis"
+      "Staphylococcus aureus enterotoxin (incubation 1-6 hours)",
+      "Salmonella species (incubation 6-48 hours)",
+      "Hepatitis A virus (incubation 15-50 days)",
+      "Bacillus cereus emetic toxin (incubation 1-5 hours)"
     ],
-    answer: 2,
-    explanation: "In Bradley's classification: Waterborne = transmitted via ingested contaminated water (cholera, typhoid). Water-washed (water-scarce) = diseases reduced by increased water quantity for hygiene (trachoma, scabies, lice). Water-based = organism has aquatic intermediate host (schistosomiasis, guinea worm). Water-related = insect vectors breed in water (malaria, dengue). Legionellosis is water-related (aerosol-borne)."
+    answer: 1,
+    explanation: "Salmonella gastroenteritis has an incubation period of 6-48 hours (median 18-36 hours), making it the most consistent pathogen for this outbreak's timeline. It is commonly associated with contaminated poultry, eggs, and other animal products at community events. S. aureus enterotoxin (1-6 hours) and B. cereus emetic toxin (1-5 hours) cause earlier onset. Hepatitis A causes a hepatitis syndrome after a much longer incubation (2-6 weeks). An 18-36 hour incubation strongly suggests bacterial replication rather than preformed toxin."
   },
   {
     id: 16,
-    question: "A community experiences outbreaks of both influenza and measles simultaneously. Which statement correctly distinguishes the airborne transmission characteristics of these two viruses?",
+    question: "Legionella pneumophila is not classified as a 'waterborne' disease in the traditional sense despite being water-associated. Which of the four Bradley categories best describes Legionnaires' disease transmission?",
     options: [
-      "Both spread exclusively via large droplets; neither is truly airborne",
-      "Influenza spreads primarily via large droplets while measles is highly airborne via droplet nuclei",
-      "Measles spreads primarily via large droplets while influenza is airborne",
-      "Both are equally airborne with identical transmission distances"
+      "Waterborne - because Legionella is found in contaminated water sources",
+      "Water-washed - because handwashing prevents most Legionella transmission",
+      "Water-based - because the amoebal intermediate host lives in water",
+      "Water-related (water-dispersed) - because the pathogen amplifies in water systems and transmission is via inhaled aerosols, not ingestion"
     ],
-    answer: 1,
-    explanation: "Measles virus is one of the most efficiently airborne pathogens - it can remain infectious in air for up to 2 hours after an infected person has left a room and can travel through ventilation systems (R0 = 12-18). Influenza transmission involves primarily large droplets (though short-range aerosol transmission occurs), with much lower airborne efficiency. Measles vaccine-preventable outbreaks frequently involve secondary cases who were never in the same room as the index case."
+    answer: 3,
+    explanation: "Legionellosis does not fit classical waterborne (ingestion) transmission. Legionella amplifies in engineered water systems (cooling towers, hot water systems, spa pools) at temperatures of 20-45 degrees Celsius. Transmission occurs via inhalation of fine aerosols containing Legionella, not by drinking contaminated water. In extended Bradley classification, this is sometimes termed 'water-dispersed' or falls under water-related. Person-to-person transmission does not occur. Control focuses on water system temperature management (hot >60 degrees, cold <20 degrees) and biocide treatment."
   },
   {
     id: 17,
-    question: "A nurse develops Staphylococcus aureus wound infection after using a blood pressure cuff that was previously used on an infected patient without proper disinfection. This represents transmission via:",
+    question: "A vehicle-borne outbreak of hepatitis A is investigated at a restaurant. The vehicle is traced to frozen strawberries imported from a region with poor sanitation. In this chain of transmission, the frozen strawberries represent which epidemiological concept?",
     options: [
-      "Droplet transmission from respiratory secretions",
-      "Fomite transmission (indirect contact via contaminated inanimate object)",
-      "Airborne transmission via droplet nuclei",
-      "Vehicle-borne transmission via contaminated water"
+      "A reservoir of hepatitis A virus",
+      "An intermediate host of hepatitis A virus",
+      "A vehicle (inanimate carrier) conveying the pathogen from reservoir to susceptible host",
+      "A mechanical vector of hepatitis A virus"
     ],
-    answer: 1,
-    explanation: "A fomite is any inanimate object that can harbor and transmit infectious agents. The blood pressure cuff serves as a fomite in this scenario. S. aureus can survive on surfaces for weeks to months. This is indirect contact transmission via fomite, distinct from direct contact (person-to-person), vehicle-borne (food/water), or airborne routes."
+    answer: 2,
+    explanation: "A vehicle is an inanimate intermediary that passively carries an infectious agent from a source/reservoir to a susceptible host. Hepatitis A virus does not multiply or change in the frozen strawberries - they merely transport the virus. Common vehicles include water, food, and blood products. This is distinct from a fomite (which is a contact surface), a vector (which is animate), and a reservoir (where the agent normally lives and multiplies). Frozen produce-associated hepatitis A outbreaks are well-documented due to fecal contamination during harvesting in low-income settings."
   },
   {
     id: 18,
-    question: "Regarding fomite survival times, which pathogen can survive on dry surfaces for the LONGEST period?",
+    question: "Regarding fomite transmission of pathogens, which of the following pathogens has been documented to survive on dry environmental surfaces for several WEEKS, making environmental decontamination critical to outbreak control?",
     options: [
-      "Influenza A virus (up to 24 hours)",
-      "HIV (up to 7 days)",
-      "Clostridium difficile spores (up to 5 months)",
-      "Norovirus (up to 2 weeks)"
+      "HIV - survives up to 7 days on dry surfaces",
+      "Influenza A - survives up to 72 hours on stainless steel",
+      "Norovirus - survives 1-4 weeks on environmental surfaces",
+      "Rhinovirus - survives up to 24 hours on hard surfaces"
     ],
     answer: 2,
-    explanation: "Clostridium difficile spores can survive on surfaces for up to 5 months, making environmental contamination a major transmission route in healthcare settings. HIV survives only hours to days on surfaces. Influenza A survives up to 24 hours on hard surfaces. Norovirus can persist 1-4 weeks. C. difficile spores' extreme environmental persistence explains the need for sporicidal disinfectants (bleach) and the difficulty of controlling healthcare-associated outbreaks."
+    explanation: "Norovirus is uniquely resistant to environmental conditions and can survive on surfaces for 1-4 weeks (some studies suggest longer). It is also resistant to many common disinfectants and requires chlorine-based disinfectants (1,000-5,000 ppm) for reliable inactivation. Low infectious dose (10-100 particles) combined with prolonged surface survival makes norovirus the leading cause of foodborne illness outbreaks globally. HIV survives only hours to a few days on surfaces. This persistence profile makes environmental decontamination a cornerstone of norovirus outbreak control in hospitals, cruise ships, and care homes."
   },
   {
     id: 19,
-    question: "During a food-borne outbreak investigation, 40 of 100 people who ate potato salad at a picnic developed gastroenteritis within 2-4 hours. The pathogen most consistent with this incubation period and vehicle is:",
+    question: "Population-level airborne infection control in tuberculosis prevention focuses on which hierarchy of controls?",
     options: [
-      "Salmonella typhi",
-      "Staphylococcus aureus enterotoxin",
-      "Campylobacter jejuni",
-      "Hepatitis A virus"
+      "Administrative controls > Environmental/engineering controls > Personal respiratory protection (in order of priority)",
+      "Personal respiratory protection > Environmental controls > Administrative controls",
+      "Chemoprophylaxis > Vaccination > Environmental controls",
+      "Quarantine > Environmental controls > Administrative controls"
     ],
-    answer: 1,
-    explanation: "Staphylococcal food poisoning (preformed enterotoxin) has the shortest incubation period of 1-6 hours (mean 2-4 hours), caused by preformed heat-stable toxin in food. Salmonella non-typhoidal: 6-48 hours. Campylobacter: 2-5 days. Hepatitis A: 15-50 days. Potato salad (mayonnaise-based, temperature-abused) is a classic vehicle for S. aureus enterotoxin."
+    answer: 0,
+    explanation: "WHO and CDC TB infection control guidelines establish a hierarchy: Administrative controls (first, most impactful) - policies to reduce exposure, early case detection, patient separation, cough etiquette, triage; Environmental/engineering controls (second) - natural or mechanical ventilation, UV germicidal irradiation, HEPA filtration to reduce airborne droplet nuclei concentration; Personal respiratory protection (third, last resort) - N95 respirators for healthcare workers in high-risk settings. Administrative controls are prioritized because they prevent generation of infectious aerosols at the source rather than simply diluting or removing them."
   },
   {
     id: 20,
-    question: "In an outbreak of typhoid fever traced to a contaminated municipal water supply, the epidemic curve shows a sharp rise and fall in cases clustered within the incubation period range of typhoid. This pattern is most consistent with:",
+    question: "An investigation of a Cryptosporidium outbreak in a city traces the source to a chlorinated municipal swimming pool. This exemplifies which category of water-associated transmission, and why does chlorination fail to prevent Cryptosporidium spread?",
     options: [
-      "Propagated (progressive source) epidemic",
-      "Point source epidemic with single exposure",
-      "Continuous common source epidemic",
-      "Mixed epidemic pattern"
+      "Waterborne via drinking water; chlorination failure is due to inadequate dosing",
+      "Water-based via aquatic intermediate host; the oocysts require a snail host to become infective",
+      "Water-related via recreational water; Cryptosporidium oocysts are highly chlorine-resistant and require UV or filtration for removal",
+      "Water-washed disease; prevention requires increasing water quantity rather than water quality"
     ],
-    answer: 1,
-    explanation: "A sharp rise and fall in cases with clustering within one incubation period of a single contamination event represents a point source epidemic. In contrast, continuous common source shows a plateau while cases persist. Propagated epidemics show multiple waves each approximately one incubation period apart. Waterborne outbreaks can be point source (single event) or continuous (ongoing contamination)."
+    answer: 2,
+    explanation: "Cryptosporidium is transmitted via the feco-oral route through contaminated water (recreational or drinking water). Cryptosporidium parvum and C. hominis oocysts are extremely resistant to chlorine disinfection at concentrations used in swimming pools and water treatment - this is a defining feature of the pathogen. Effective control requires UV irradiation (which inactivates oocysts) or adequate filtration (oocysts are 4-6 microns in diameter). Recreational water illness from Cryptosporidium is the leading cause of pool-associated outbreaks in the USA."
   },
   {
     id: 21,
-    question: "Schistosomiasis is classified as a 'water-based' disease in Bradley's classification. What does this designation specifically mean?",
+    question: "In the context of food poisoning outbreaks, which pairing of pathogen, incubation period, and primary vehicle is INCORRECT?",
     options: [
-      "The pathogen is transmitted via contaminated drinking water",
-      "An obligate part of the pathogen's life cycle occurs in an aquatic environment",
-      "The disease can be prevented by improving water supply quantity alone",
-      "Vectors that transmit the disease breed in water"
+      "Clostridium perfringens - 8-22 hours incubation - cooked meat/poultry held at warm temperatures",
+      "Bacillus cereus diarrheal toxin - 8-16 hours incubation - cooked rice, meat, vegetables",
+      "Vibrio parahaemolyticus - 4-96 hours incubation - raw or undercooked seafood",
+      "Listeria monocytogenes - 2-4 hours incubation - deli meats, soft cheeses, smoked fish"
     ],
-    answer: 1,
-    explanation: "Water-based diseases in Bradley's classification are those where an obligate part of the pathogen's life cycle occurs in water or in an aquatic organism. For Schistosoma, miracidia must infect freshwater snails (Bulinus/Biomphalaria species) and cercariae emerge from snails into water to penetrate human skin. The aquatic snail is an obligatory intermediate host. This differs from water-related (vectors breed in water) or waterborne (ingestion-transmitted)."
+    answer: 3,
+    explanation: "Listeria monocytogenes has a highly variable incubation period of 3-70 days (mean 3 weeks for invasive disease), NOT 2-4 hours. This long incubation makes source identification extremely challenging. It causes invasive disease (bacteremia, meningitis, fetal infection) in immunocompromised persons, pregnant women, neonates, and elderly. Other incubation periods are correct: C. perfringens 8-22 hours (heat-resistant spores germinate in reheated food), B. cereus diarrheal 6-15 hours, V. parahaemolyticus 4-96 hours (median 24 hours)."
   },
   {
     id: 22,
-    question: "A hospital reports multiple cases of Aspergillus fumigatus infection in immunocompromised patients during a period of hospital construction. The mode of transmission implicated is:",
+    question: "A large apartment building has multiple cases of tuberculosis. The building investigator finds that 8 of 12 cases live on the same floor served by a single ventilation shaft. This distribution of cases suggests:",
     options: [
-      "Person-to-person droplet transmission from infected patients",
-      "Airborne transmission via aerosolized fungal conidia from disturbed soil/materials",
-      "Vehicle-borne transmission via contaminated intravenous fluids",
-      "Fomite transmission via contaminated medical equipment"
+      "Direct contact transmission between residents sharing the corridor",
+      "A common vehicle (contaminated water supply) serving only that floor",
+      "Airborne transmission facilitated by the shared ventilation system concentrating and distributing infectious droplet nuclei",
+      "Vector-borne transmission with vectors preferring that floor's microenvironment"
     ],
-    answer: 1,
-    explanation: "Aspergillus fumigatus is ubiquitous in the environment, producing small airborne conidia (2-3 microns) that can remain airborne for extended periods. Hospital construction disturbs soil and building materials releasing conidia, dramatically increasing airborne concentrations. Immunocompromised patients (neutropenic, transplant recipients) are at high risk for invasive aspergillosis via inhalation. HEPA filtration and positive pressure rooms are protective measures."
+    answer: 2,
+    explanation: "Clustering of TB cases along a ventilation shaft is a classic finding in building-associated TB outbreaks. Shared ventilation systems can distribute infectious droplet nuclei (<5 microns) from an index case to multiple rooms or units. TB transmission in buildings has been documented to occur over considerable distances when ventilation is recirculated without adequate filtration. This type of outbreak investigation requires ventilation system assessment, consideration of air pressure differentials, and may require specialized environmental sampling for infection control planning."
   },
   {
     id: 23,
-    question: "Which of the following correctly distinguishes droplet transmission from airborne (droplet nuclei) transmission?",
+    question: "Mechanical versus biological vector transmission: a housefly (Musca domestica) carries cholera bacilli on its legs from feces to food. Which feature specifically classifies this as 'mechanical' rather than 'biological' transmission?",
     options: [
-      "Droplet transmission requires close contact (<1 meter) while airborne transmission can occur at longer distances and without direct contact",
-      "Droplets are smaller than droplet nuclei and thus travel further",
-      "Airborne transmission only occurs for pathogens with lipid envelopes",
-      "There is no clinically meaningful distinction between the two modes"
+      "The fly is an insect rather than an arachnid",
+      "V. cholerae does not multiply, change developmental form, or complete any part of its life cycle within the fly",
+      "The fly can only transmit cholera to humans and not to other animals",
+      "Mechanical transmission occurs only during the fly's larval stage"
     ],
-    answer: 0,
-    explanation: "The key distinction: Large respiratory droplets (>5-10 microns) settle quickly by gravity within approximately 1 meter and require close contact for transmission. Droplet nuclei (<5 microns) are the residues of evaporated droplets that remain suspended in air, can travel >1 meter, persist for hours, and may spread through ventilation systems. This distinction drives different infection control precautions (droplet vs. airborne precautions)."
+    answer: 1,
+    explanation: "The defining feature of mechanical transmission is that the arthropod serves as a passive carrier - the pathogen does not multiply, develop, or undergo any part of its life cycle within the vector. The vector simply transports the organism physically on external body surfaces or transiently through the gut. In contrast, biological vectors are essential hosts in which the pathogen undergoes multiplication (propagative), developmental change (cyclodevelopmental), or both (cyclopropagative). Mechanical transmission can also be accomplished by contaminated instruments, hands, or fomites."
   },
   {
     id: 24,
-    question: "Guinea worm disease (dracunculiasis) is classified as a water-based disease. The infective stage that humans encounter is:",
+    question: "A public health surveillance team documents cases of leptospirosis following flooding in a low-lying urban area. The epidemiological link between floodwater and human infection best represents which mode of transmission?",
     options: [
-      "Cercariae that penetrate intact skin during water contact",
-      "Cyclops (copepod) containing L3 larvae ingested via drinking contaminated water",
-      "Infective eggs present on contaminated vegetables",
-      "L3 larvae that penetrate skin from contaminated soil"
+      "Airborne transmission via water vapor containing Leptospira",
+      "Direct vehicle-borne waterborne transmission via ingestion of floodwater",
+      "Indirect contact via floodwater contaminated with Leptospira from rodent urine penetrating intact or abraded skin and mucous membranes",
+      "Vector-borne transmission via aquatic arthropods present in floodwater"
     ],
-    answer: 1,
-    explanation: "Dracunculus medinensis transmission: infected person releases larvae into water (L1) -> Cyclops (water flea/copepod) ingests larvae which develop to L3 -> humans drink contaminated water containing infected Cyclops -> Cyclops digested, L3 larvae penetrate intestinal wall, mature into adults over 10-14 months. This is why filtering drinking water through cloth (to remove Cyclops) is the primary prevention strategy."
+    answer: 2,
+    explanation: "Leptospira interrogans is shed in massive quantities in the urine of infected reservoir hosts (rats, cattle, dogs). Floodwater mixed with rodent urine creates a high-risk environment. Transmission to humans occurs primarily through contact with contaminated water or soil, with Leptospira penetrating through skin abrasions, cuts, or intact mucous membranes (eyes, nose, mouth). Ingestion and inhalation are minor routes. This is indirect contact transmission via contaminated water. Flood events create epidemic conditions by mixing contaminated rodent habitat with human living spaces."
   },
   {
     id: 25,
-    question: "Malaria transmission by Anopheles mosquitoes is classified as cyclopropagative transmission. What specifically distinguishes this from cyclodevelopmental transmission?",
+    question: "Wuchereria bancrofti (causing lymphatic filariasis/elephantiasis) is transmitted by Culex quinquefasciatus in urban settings. What type of biological transmission occurs within the Culex mosquito?",
     options: [
-      "Cyclopropagative involves pathogen multiplication without change in form; cyclodevelopmental involves change in form without multiplication",
-      "Cyclopropagative involves both multiplication AND change in form; cyclodevelopmental involves change in form WITHOUT multiplication",
-      "They are synonymous terms used interchangeably",
-      "Cyclopropagative occurs in the vector's gut; cyclodevelopmental occurs in the vector's salivary glands"
+      "Propagative - W. bancrofti multiplies without changing form in the mosquito",
+      "Cyclopropagative - W. bancrofti both multiplies and changes form in the mosquito",
+      "Cyclodevelopmental - microfilariae develop from L1 to infective L3 without multiplication in the mosquito thoracic muscles",
+      "Transovarial - W. bancrofti passes through mosquito eggs to the next generation"
     ],
-    answer: 1,
-    explanation: "In vector-borne biological transmission: Cyclopropagative = pathogen undergoes BOTH multiplication AND change in form within the vector (e.g., malaria Plasmodium - undergoes sporogony in Anopheles mosquito). Cyclodevelopmental = pathogen undergoes change in form WITHOUT multiplication (e.g., microfilariae developing to infective L3 in mosquitoes). Propagative = multiplication without change in form (e.g., plague bacilli in fleas)."
+    answer: 2,
+    explanation: "Wuchereria bancrofti undergoes cyclodevelopmental transmission in Culex mosquitoes. Ingested microfilariae (L1) develop through L2 to infective L3 larvae within the mosquito's thoracic flight muscles over approximately 10-14 days. This involves change in developmental form WITHOUT multiplication. The L3 larvae migrate to the mouthparts and are deposited on skin during blood feeding. Transovarial transmission does NOT occur. The EIP of approximately 10-14 days means mosquitoes must survive this period before transmitting infection."
   },
   {
     id: 26,
-    question: "The tsetse fly (Glossina species) transmits African trypanosomiasis. This is an example of which type of biological transmission?",
+    question: "The sandfly Phlebotomus argentipes is the primary vector of Visceral Leishmaniasis (kala-azar) in South Asia including India. Regarding the extrinsic incubation period (EIP) of Leishmania donovani in the sandfly, which statement is accurate?",
     options: [
-      "Propagative transmission - Trypanosoma multiplies without changing form",
-      "Cyclodevelopmental transmission - Trypanosoma changes form without multiplication",
-      "Cyclopropagative transmission - Trypanosoma both multiplies and changes form",
-      "Transovarial transmission - Trypanosoma passes through fly eggs to offspring"
+      "EIP is approximately 4-25 days; temperature significantly affects the rate of parasite development",
+      "EIP is fixed at exactly 7 days regardless of environmental temperature",
+      "There is no EIP because Leishmania is transmitted immediately upon the sandfly taking an infected blood meal",
+      "EIP refers only to the time Leishmania spends in the sandfly midgut before being destroyed by digestive enzymes"
     ],
-    answer: 2,
-    explanation: "Trypanosoma brucei undergoes cyclopropagative transmission in the tsetse fly. In the fly's midgut, trypanosomes transform from bloodstream forms to procyclic forms (change in form), multiply extensively, then migrate to salivary glands transforming into metacyclic trypomastigotes (the infective form). Both multiplication and developmental change occur. This is distinct from transovarial transmission (e.g., some tick-borne infections passed through eggs)."
+    answer: 0,
+    explanation: "The extrinsic incubation period for Leishmania in sandflies is approximately 4-25 days depending on ambient temperature, parasite species, and sandfly species. During this period, amastigotes transform to promastigotes in the sandfly midgut, multiply, and develop to infective metacyclic promastigotes that migrate to the proboscis. Temperature critically affects this EIP - warmer temperatures accelerate development. Sandfly lifespan (2-3 weeks) must exceed the EIP for transmission to occur. This temperature-EIP relationship has implications for predicting Leishmaniasis spread with climate change."
   },
   {
     id: 27,
-    question: "Onchocerciasis (river blindness) is transmitted by Simulium (blackfly) species that breed in fast-flowing rivers. The extrinsic incubation period (EIP) for Onchocerca volvulus in the blackfly is approximately:",
-    options: ["2-4 days", "6-8 days", "7-14 days", "20-30 days"],
-    answer: 2,
-    explanation: "The extrinsic incubation period (EIP) for Onchocerca volvulus in Simulium blackflies is approximately 7-14 days, during which microfilariae undergo development to the infective L3 stage. The EIP is the time from when a vector ingests an infectious blood meal until it can transmit the pathogen. Blackflies breed specifically in fast-flowing, well-oxygenated rivers, hence the geographic clustering of disease near rivers ('river blindness')."
+    question: "Which mosquito genus is the principal biological vector of Japanese Encephalitis Virus (JEV), and what type of biological transmission cycle does JEV maintain?",
+    options: [
+      "Anopheles mosquitoes in a direct transmission cycle between pigs and humans",
+      "Culex tritaeniorhynchus in an enzootic cycle between ardeid birds and pigs as amplifying hosts, with humans as dead-end hosts",
+      "Aedes aegypti in an urban cycle similar to dengue with humans as the primary amplifying host",
+      "Mansonia species in a cycle involving domestic animals as the primary reservoir"
+    ],
+    answer: 1,
+    explanation: "Japanese Encephalitis Virus (JEV) is transmitted primarily by Culex tritaeniorhynchus (and related Culex species) in an enzootic cycle involving ardeid birds (herons, egrets) as the primary reservoir and pigs as amplifying hosts. Pigs develop high-titer viremia sufficient to infect mosquitoes. Humans are incidental dead-end hosts who develop insufficient viremia to infect mosquitoes. This epidemiological pattern explains why JE occurs in agricultural areas where pig farming and rice cultivation (Culex breeding sites) coexist near bird habitats, and why humans do not amplify transmission."
   },
   {
     id: 28,
-    question: "A patient from a rural area develops visceral leishmaniasis (kala-azar). The vector responsible for transmission is:",
+    question: "Anopheles stephensi differs from Anopheles gambiae in its ecological preference. This distinction has important implications for malaria vector control. Which statement correctly describes their epidemiological difference?",
     options: [
-      "Anopheles mosquito - cyclodevelopmental transmission",
-      "Phlebotomus sandfly - cyclodevelopmental transmission of promastigotes to amastigotes",
-      "Culex mosquito - propagative transmission",
-      "Ixodes tick - transovarial transmission"
+      "An. stephensi is a rural vector while An. gambiae thrives in urban water storage containers",
+      "An. gambiae is a highly anthropophilic rural African vector; An. stephensi is an urban vector that breeds in wells and water storage containers, currently invading African cities",
+      "Both species have identical vectorial capacity and transmission dynamics",
+      "An. stephensi transmits only P. vivax while An. gambiae transmits only P. falciparum"
     ],
     answer: 1,
-    explanation: "Visceral leishmaniasis is transmitted by Phlebotomus sandfly (in Old World; Lutzomyia in New World). In the sandfly, Leishmania exists as promastigotes (flagellated, extracellular). When transmitted to humans via sandfly bite, they transform to amastigotes (non-flagellated, intracellular in macrophages) - this change in form without multiplication in the vector makes it cyclodevelopmental transmission. The sandfly requires blood from infected host to acquire infection."
+    explanation: "Anopheles gambiae complex is the dominant malaria vector in sub-Saharan Africa, breeding in temporary rain pools and highly anthropophilic (preferentially biting humans). Anopheles stephensi is the primary urban malaria vector in South Asia and the Middle East, uniquely adapted to breed in wells, cisterns, and man-made water storage containers - making it an efficient urban vector. An. stephensi has recently been detected in African cities (Djibouti 2012, Ethiopia, Nigeria), raising major concerns about urban malaria transmission across Africa where urban populations had previously been at lower risk."
   },
   {
     id: 29,
-    question: "Dengue fever is transmitted by Aedes aegypti. Which feature of Aedes aegypti makes it a particularly efficient urban vector?",
+    question: "The vectorial capacity formula (C = ma^2 p^n / -ln p) is used in malaria transmission modeling. In this equation, which component is most directly influenced by insecticide vector control programs?",
     options: [
-      "It breeds exclusively in clean natural water bodies like rivers and lakes",
-      "It is primarily a nocturnal biter, allowing extensive nighttime transmission",
-      "It breeds in small artificial water containers, bites during the day, and has adapted to urban environments",
-      "It undergoes transovarial transmission, maintaining dengue virus across generations"
+      "'a' (daily biting rate on humans) which is fixed by the vector's biology",
+      "'p' (daily vector survival probability) which is reduced by insecticides, dramatically affecting the exponential term p^n",
+      "'n' (extrinsic incubation period) which increases with insecticide exposure",
+      "'m' (vector density per human host) which cannot be influenced by insecticides"
     ],
-    answer: 2,
-    explanation: "Aedes aegypti is the quintessential urban vector because: (1) breeds in small man-made containers (flower pots, discarded tires, water storage vessels), (2) is a daytime feeder (peak biting at dawn and dusk), (3) has adapted to live in close proximity to humans (anthropophilic), (4) takes multiple blood meals from different hosts, amplifying transmission. While transovarial dengue transmission by Aedes has been demonstrated, it is not the primary epidemiological driver."
+    answer: 1,
+    explanation: "In the vectorial capacity equation, 'p' (daily survival probability of the vector) appears twice in the formula: both as p^n (proportion surviving the EIP) and as 1/(-ln p) (life expectancy). Because n (EIP) is approximately 10-12 days for P. falciparum, p^n means even small reductions in daily survival have enormous exponential impact. For example, reducing p from 0.9 to 0.8 reduces p^12 from 0.28 to 0.07 - a 75% reduction in vectorial capacity. This is why indoor residual spraying (IRS) and insecticide-treated nets, which kill or shorten mosquito lifespan, are so effective at reducing malaria transmission."
   },
   {
     id: 30,
-    question: "A mechanical vector differs from a biological vector in which fundamental way?",
+    question: "The Entomological Inoculation Rate (EIR) is a key metric in malaria epidemiology. Which formula correctly defines EIR?",
     options: [
-      "Mechanical vectors are always arthropods while biological vectors include vertebrate animals",
-      "In mechanical transmission, the pathogen does not multiply or undergo developmental changes in the vector",
-      "Mechanical vectors always transmit pathogens transovarially",
-      "Biological vectors transmit only viruses while mechanical vectors transmit only bacteria"
+      "EIR = Number of malaria cases / Number of mosquito bites received",
+      "EIR = Mosquito biting rate x Sporozoite rate (proportion of mosquitoes with infective sporozoites in salivary glands)",
+      "EIR = Vector density / Human population size",
+      "EIR = (Number of infectious mosquitoes / Total mosquitoes) x Duration of transmission season"
     ],
     answer: 1,
-    explanation: "A mechanical vector simply carries the pathogen externally (on body parts) or internally (passes through gut) without the pathogen multiplying or undergoing developmental changes. The vector acts as a passive transport mechanism. Example: Housefly (Musca domestica) mechanically transmits cholera, typhoid, dysentery by carrying organisms on its legs/body. Biological vectors are essential hosts in which the pathogen multiplies and/or develops (mosquitoes for malaria, ticks for Lyme disease)."
+    explanation: "Entomological Inoculation Rate (EIR) = man-biting rate (ma) x sporozoite rate (proportion of Anopheles with sporozoites in salivary glands, determined by ELISA or PCR). EIR represents the number of infective bites received per person per unit time and is the gold standard measure of malaria transmission intensity. EIR ranges from <1 per year in low-transmission settings to >1,000 per year in holoendemic areas of Africa. EIR is used to classify malaria endemicity, evaluate intervention impact, and predict epidemiological patterns."
   },
   {
     id: 31,
-    question: "Bancroftian filariasis is transmitted by Culex quinquefasciatus in urban areas and by Mansonia species in rural areas. What distinguishes Mansonia from Culex as a vector in terms of breeding habits?",
+    question: "WHO bioassay methods for insecticide resistance monitoring in vector populations include which standardized test formats?",
     options: [
-      "Mansonia breeds in fast-flowing rivers while Culex breeds in stagnant water",
-      "Mansonia larvae attach to aquatic plant roots to obtain oxygen, while Culex larvae breathe at the water surface",
-      "Mansonia is exclusively a daytime biter while Culex bites only at night",
-      "Mansonia transmits malaria in addition to filariasis while Culex transmits only filariasis"
+      "Tube dilution test and agar well diffusion test",
+      "Discriminating concentration bioassay (CDC bottle assay) and WHO tube test using insecticide-impregnated papers at discriminating concentrations",
+      "Field spray test and greenhouse bioassay only",
+      "Passive trap monitoring and CDC light trap collections only"
     ],
     answer: 1,
-    explanation: "Mansonia larvae have a distinctive breathing mechanism - they pierce the roots and stems of aquatic plants (water hyacinth, Pistia species) to extract oxygen, meaning they do not need to come to the water surface to breathe. This makes them resistant to conventional larvicidal oil application used against surface-breathing Culex larvae. Control of Mansonia-transmitted filariasis requires removal of aquatic vegetation."
+    explanation: "WHO insecticide resistance monitoring uses two primary bioassay methods: (1) WHO tube test - adult mosquitoes are exposed to insecticide-impregnated papers at discriminating concentrations for defined time periods, and mortality is recorded after 24 hours holding period; (2) CDC bottle assay - mosquitoes are exposed to insecticide-coated bottles at discriminating concentrations for defined periods. A mortality of >98% indicates susceptibility; 90-98% suggests resistance; <90% confirms resistance. These standardized methods allow global comparisons of resistance status and guide insecticide rotation policies."
   },
   {
     id: 32,
-    question: "Rocky Mountain Spotted Fever is transmitted by Dermacentor ticks. Which term describes the transmission of Rickettsia rickettsii from adult female ticks to their offspring through infected eggs?",
+    question: "Transovarial transmission has been demonstrated for which of the following vector-borne pathogens, allowing the vector itself to act as a reservoir across generations?",
     options: [
-      "Transstadial transmission",
-      "Transovarial transmission",
-      "Cyclopropagative transmission",
-      "Mechanical transmission"
+      "Plasmodium falciparum in Anopheles mosquitoes",
+      "Dengue virus in Aedes aegypti - transovarial transmission documented in nature",
+      "Wuchereria bancrofti in Culex quinquefasciatus",
+      "Trypanosoma brucei in Glossina (tsetse fly)"
     ],
     answer: 1,
-    explanation: "Transovarial (transovarian) transmission refers to the passage of an infectious agent from an infected female arthropod to its offspring through infected eggs. This is important for Rickettsia and some arboviruses in ticks. Transstadial transmission refers to the maintenance of infection across developmental stages of the arthropod (e.g., larva to nymph to adult), which is also important for many tick-borne infections including Lyme disease."
+    explanation: "Transovarial (vertical) transmission has been demonstrated for dengue virus in Aedes aegypti and Aedes albopictus in both laboratory and field conditions. Infected female mosquitoes can pass dengue virus to eggs, with infected larvae, pupae, and adults emerging from uninfected blood sources. While the efficiency is variable (<10% transmission rate to offspring), it allows dengue virus to survive inter-epidemic periods without a human blood meal. This is epidemiologically significant as it complicates the concept of inter-epidemic virus persistence. Plasmodium, filarial worms, and Trypanosoma are NOT transmitted transovarially."
   },
   {
     id: 33,
-    question: "The extrinsic incubation period (EIP) of Plasmodium falciparum in Anopheles mosquitoes at 25°C is approximately 10-12 days. How does increasing ambient temperature affect the EIP and malaria transmission?",
+    question: "Vector surveillance programs for Aedes aegypti use the Breteau Index (BI) as a standard entomological indicator. What does the Breteau Index measure?",
     options: [
-      "Higher temperatures lengthen the EIP, reducing transmission potential",
-      "Temperature does not affect the EIP of Plasmodium species",
-      "Higher temperatures (up to the vector's thermal limit) shorten the EIP, increasing transmission potential",
-      "Higher temperatures extend vector lifespan, compensating for unchanged EIP"
+      "Number of adult female Aedes per 100 human residents surveyed",
+      "Number of positive containers per 100 houses inspected (regardless of number of containers per house)",
+      "Percentage of water-holding containers positive for Aedes larvae",
+      "Number of Aedes larvae per liter of water sampled from containers"
     ],
-    answer: 2,
-    explanation: "Temperature critically affects EIP: higher temperatures accelerate Plasmodium sporogonic development in mosquitoes, shortening the EIP. Plasmodium falciparum requires minimum temperature of about 18°C (cannot complete development below this). At 30°C, EIP shortens to approximately 8-9 days vs 10-12 days at 25°C. Shorter EIP means more mosquitoes survive long enough to become infectious, increasing vectorial capacity. This explains why malaria transmission intensifies with warming climate."
+    answer: 1,
+    explanation: "Breteau Index (BI) = Number of positive containers per 100 houses inspected. It is considered the most informative single larval index because it relates both container infestation and house infestation. Other indices: House Index (HI) = percentage of houses with at least one positive container (0-100%); Container Index (CI) = percentage of water-holding containers infested. WHO recommends BI >5 as threshold for dengue outbreak risk. These indices guide source reduction campaigns and help identify high-risk neighborhoods for targeted vector control."
   },
   {
     id: 34,
-    question: "Vector competence and vectorial capacity are related but distinct concepts. Which of the following correctly defines 'vectorial capacity'?",
+    question: "Which of the following correctly describes the epidemiological significance of 'vector competence' in the context of arboviral disease surveillance?",
     options: [
-      "The intrinsic ability of a vector to acquire, maintain, and transmit a pathogen",
-      "The number of potentially infective bites delivered per case per day, incorporating vector abundance, biting rate, daily survival, and EIP",
-      "The minimum infectious dose of pathogen required for vector infection",
-      "The geographic range over which a vector can transmit a pathogen"
+      "Vector competence refers to the geographic range of a vector species and its impact on disease distribution",
+      "Vector competence is the intrinsic, genetically-determined ability of a vector to acquire, replicate, disseminate, and transmit a pathogen, independent of environmental factors",
+      "Vector competence measures the density of vectors required to sustain epidemic transmission",
+      "Vector competence is synonymous with vectorial capacity and both terms are used interchangeably in surveillance"
     ],
     answer: 1,
-    explanation: "Vector competence = intrinsic biological ability of a vector species to transmit a pathogen (laboratory measure, includes midgut infection barrier, dissemination). Vectorial capacity = field measure: C = ma²p^n/(-ln p), where m=vector density per host, a=biting rate, p=daily survival probability, n=EIP in days. It quantifies the rate of new infections generated by all vectors feeding on one infected host per day. It incorporates both biological competence and ecological factors."
+    explanation: "Vector competence is an intrinsic, species-specific biological property determined by genetics. It encompasses four barriers the pathogen must overcome: midgut infection barrier (initial infection of midgut epithelium), midgut escape barrier (dissemination from midgut to hemolymph), salivary gland infection barrier, and salivary gland escape barrier. A competent vector successfully overcomes all barriers. Vectorial capacity incorporates competence but also includes ecological parameters (biting rate, density, survival). A highly competent vector in a region with low density may have lower vectorial capacity than a less competent but extremely abundant vector."
   },
   {
     id: 35,
-    question: "Plague is transmitted by rat fleas (Xenopsylla cheopis). The mode of transmission from flea to human is best described as:",
+    question: "Culex quinquefasciatus is the primary vector of West Nile Virus (WNV) in North America. The transmission cycle of WNV is maintained between mosquitoes and which primary amplifying hosts?",
     options: [
-      "Mechanical transmission via contaminated flea mouthparts",
-      "Biological propagative transmission - Yersinia pestis multiplies in flea gut causing blockage, regurgitated during blood meal",
-      "Cyclodevelopmental transmission with Y. pestis changing form in the flea",
-      "Transovarial transmission from infected female fleas to eggs"
+      "Humans and horses (both are amplifying hosts with high viremia)",
+      "Wild birds (primarily corvids and passerines) with mosquitoes as the bridge vector to humans and horses",
+      "Rodents and domestic animals in a sylvatic cycle",
+      "Pigs and cattle in agricultural settings near wetlands"
     ],
     answer: 1,
-    explanation: "Plague transmission via fleas is biological-propagative: Y. pestis multiplies (propagates) in the flea's proventriculus without changing form, eventually forming a 'block' (clot). When a blocked flea attempts to feed, it cannot swallow blood, becomes increasingly hungry, bites repeatedly, and regurgitates Y. pestis back into the wound. Interestingly, transovarial transmission does NOT occur in fleas. Rats are the reservoir; as rats die, hungry fleas seek alternative hosts including humans."
+    explanation: "West Nile Virus maintains an enzootic cycle between Culex mosquitoes and wild birds, particularly corvids (crows, ravens - which experience high mortality) and passerine birds. Infected birds develop high viremia sufficient to infect feeding mosquitoes. Humans and horses are incidental dead-end hosts with insufficient viremia to infect mosquitoes. The die-off of crows (bird surveillance) served as an early warning system for WNV activity in North America. Human cases occur when Culex bridge vectors feed on both birds and humans. This explains why WNV outbreaks are associated with areas of bird die-off."
   },
   {
     id: 36,
-    question: "Louse-borne typhus (epidemic typhus) is caused by Rickettsia prowazekii transmitted by the human body louse (Pediculus humanus corporis). What is the actual route by which the louse transmits infection to humans?",
+    question: "Ixodes scapularis (black-legged tick) transmits Lyme disease (Borrelia burgdorferi) in North America. The tick undergoes three-host lifecycle stages. At which stage is transmission to humans most commonly documented?",
     options: [
-      "Directly via louse bite as saliva is inoculated into the skin",
-      "Via louse feces contaminating the bite wound or mucous membranes when the host scratches",
-      "Via transovarial transmission with larvae hatching from infected eggs",
-      "Via inhalation of dried louse feces aerosolized from clothing"
+      "Adult female tick, because it is the largest and feeds longest",
+      "Nymphal stage, because nymphs are small (making detection difficult), feed during spring-summer (peak human outdoor activity), and are frequently infected from larval feeding on infected Peromyscus mice",
+      "Larval stage immediately after hatching from eggs",
+      "Adult male tick during mating season"
     ],
     answer: 1,
-    explanation: "The body louse ingests Rickettsia prowazekii during blood meal from a rickettsemic patient. Rickettsiae multiply in the louse's gut epithelium and are shed in large quantities in louse feces. When the louse feeds (causing itch), the host scratches, inoculating infected feces into the bite wound or abraded skin. R. prowazekii is NOT transmitted via louse bite saliva. Dried louse feces (option D) can also transmit via mucous membranes or inhalation, which is relevant for laboratory workers."
+    explanation: "Nymphal Ixodes scapularis ticks are responsible for the majority of human Lyme disease transmission because: (1) nymphs are very small (1-2 mm, poppy seed-sized) and difficult to detect, allowing prolonged attachment without awareness; (2) nymphs are active during spring-summer when human outdoor activity is highest; (3) nymphs became infected as larvae feeding on white-footed mice (Peromyscus leucopus - the primary reservoir) and carry B. burgdorferi at rates of 15-25%. Transmission requires tick attachment for approximately 36-48 hours. Adult ticks are more easily spotted and removed before transmission occurs."
   },
   {
     id: 37,
-    question: "Scrub typhus is caused by Orientia tsutsugamushi transmitted by larval trombiculid mites (chiggers). Which statement about this vector is correct?",
+    question: "The concept of 'cyclodevelopmental transmission' applies to which of the following vector-pathogen pairs?",
     options: [
-      "Only adult mites transmit scrub typhus; larvae are not infectious",
-      "Chigger larvae are the only stage that feeds on humans; transovarial transmission maintains O. tsutsugamushi in mite populations",
-      "Adult mites take multiple blood meals, facilitating efficient transmission",
-      "Scrub typhus mites can be controlled by eliminating rodent populations without affecting transmission risk"
+      "Plasmodium falciparum in Anopheles mosquito (undergoes sporogony with both multiplication and form change)",
+      "Yersinia pestis in Xenopsylla cheopis flea (multiplies in proventriculus without form change)",
+      "Wuchereria bancrofti microfilariae developing to L3 in Culex mosquito thoracic muscles (form change without multiplication)",
+      "Borrelia recurrentis in Pediculus humanus louse (multiplies in hemolymph without form change)"
     ],
-    answer: 1,
-    explanation: "Key features of scrub typhus transmission: (1) Only the LARVAL stage (chiggers) feeds on vertebrates including humans - nymphs and adults are free-living soil predators; (2) Transovarial transmission is essential - O. tsutsugamushi passes from infected females to eggs, maintaining infection in mite populations independent of vertebrate reservoir; (3) Rodents are the primary vertebrate hosts maintaining infection; (4) Chiggers feed only once in their life, making this relationship highly dependent on transovarial maintenance."
+    answer: 2,
+    explanation: "Cyclodevelopmental transmission involves change in developmental form WITHOUT multiplication: Wuchereria bancrofti microfilariae (L1) develop through L2 to infective L3 in Culex mosquito thoracic muscles - they change form three times without multiplying. Plasmodium undergoes cyclopropagative transmission (both multiplication via sporogony AND form change). Y. pestis in fleas undergoes propagative transmission (multiplication without form change). B. recurrentis in lice also undergoes propagative transmission (multiplies in louse hemolymph without developmental change)."
   },
   {
     id: 38,
-    question: "The epidemiological triad (agent-host-environment) is foundational to understanding communicable disease transmission. In the context of tuberculosis, which environmental factor MOST significantly influences transmission dynamics?",
+    question: "The epidemiological triad model (agent-host-environment) proposes that disease occurs when there is an imbalance among these three components. In the context of the COVID-19 pandemic, which change in the ENVIRONMENT component most dramatically altered transmission dynamics in early 2020?",
     options: [
-      "Soil composition and mineral content of the geographic region",
-      "Ventilation and crowding in indoor environments affecting droplet nuclei concentration",
-      "Ambient temperature affecting mycobacterial viability in the environment",
-      "Vector density in the surrounding ecosystem"
+      "Mutation of SARS-CoV-2 leading to higher transmissibility (agent change)",
+      "Waning population immunity from prior coronavirus infections (host change)",
+      "Global travel and trade networks enabling rapid geographic spread of SARS-CoV-2 from a single origin to a pandemic (environment change)",
+      "Increased human population density in megacities (agent-host interface change)"
     ],
-    answer: 1,
-    explanation: "For M. tuberculosis (airborne pathogen), the critical environmental factors are indoor air quality - ventilation, crowding, and sunlight exposure. Poor ventilation in crowded spaces (prisons, shelters, mines) allows accumulation of infectious droplet nuclei, dramatically increasing transmission risk. UV light is tuberculocidal. Temperature and humidity affect survivability but ventilation is the dominant environmental determinant. Crowding is why TB is a disease of poverty and urbanization."
+    answer: 2,
+    explanation: "The environment in the epidemiological triad encompasses physical, biological, and social environments including transportation networks. The unprecedented global air travel and trade network in 2020 constituted a critical environmental change that enabled SARS-CoV-2 to spread from Wuhan, China to 114 countries within 3 months - the fastest pandemic spread in recorded history. This environmental factor (global connectivity) transformed what might have been a regional epidemic into a pandemic. Social environment factors (high-density indoor settings, healthcare system capacity) also constituted key environmental determinants."
   },
   {
     id: 39,
-    question: "What is the difference between a 'reservoir' and a 'source' of infection?",
+    question: "Which of the following correctly describes a 'zoonotic reservoir' in disease epidemiology?",
     options: [
-      "They are synonymous; both refer to the habitat where the pathogen lives and multiplies",
-      "A reservoir is the natural habitat where the pathogen lives and multiplies long-term; the source is the person, animal, or object from which the infection is transmitted directly to the host",
-      "A reservoir refers only to human hosts; a source refers only to environmental contamination",
-      "A source must be animate while a reservoir can be inanimate"
+      "A reservoir that only infects wild animals and cannot infect humans",
+      "Any animal species that maintains the pathogen in nature and from which humans can acquire infection, where the animal host may or may not show disease",
+      "Exclusively domestic animals that serve as sources of human infection",
+      "Water bodies that harbor zoonotic pathogens as primary reservoirs"
     ],
     answer: 1,
-    explanation: "Reservoir = any person, animal, arthropod, plant, soil, or substance in which an infectious agent normally lives and multiplies, on which it depends primarily for survival, and where it reproduces itself. Source = the immediate origin from which the host is infected. These may differ: e.g., in a common source outbreak, the water supply (reservoir) contaminates food (source), from which humans get infected. In malaria, humans are the reservoir (for P. vivax/falciparum) and Anopheles is the source of human infection."
+    explanation: "A zoonotic reservoir is an animal host population that maintains the pathogen in nature and from which spillover transmission to humans occurs. The reservoir animal may be asymptomatic (e.g., bats for Ebola, rabies), may show subclinical infection (e.g., rodents for Lassa fever), or may show disease (e.g., birds for some avian influenza strains). Reservoirs are distinguished from amplifying hosts (which increase pathogen prevalence) and dead-end hosts (which cannot transmit further). Identifying the animal reservoir is critical for zoonotic disease control strategies."
   },
   {
     id: 40,
-    question: "In a typhoid fever case, S. Typhi can exit the human body through multiple portals. Rank the following portals of exit from most to least important for epidemic typhoid transmission:",
+    question: "In the chain of infection, the portal of exit for Mycobacterium tuberculosis is primarily the respiratory tract. However, M. tuberculosis can exit via other portals in extrapulmonary TB. Which portal of exit is relevant in renal tuberculosis and poses a transmission risk via which route?",
     options: [
-      "Respiratory > Fecal > Urinary > Skin",
-      "Fecal > Urinary > Blood (transfusion) > Respiratory",
-      "Urinary > Fecal > Respiratory > Skin shedding",
-      "Blood > Fecal > Urinary > Respiratory"
+      "Skin (cutaneous TB lesions) transmitting via direct skin contact",
+      "Urinary tract (kidneys shedding M. tuberculosis in urine) transmitting via contaminated water in endemic areas",
+      "Gastrointestinal tract (intestinal TB) transmitting via feco-oral route in communities with poor sanitation",
+      "Lymph nodes (cervical TB/scrofula) transmitting via droplets from ulcerating lymph nodes"
     ],
     answer: 1,
-    explanation: "S. Typhi portals of exit: Fecal is the most epidemiologically important (chronic fecal carriers shed 10^9 organisms/gram stool). Urinary exit also important (3-4% become urinary carriers, especially with concurrent Schistosoma haematobium). Blood-borne transmission (transfusion) is possible during bacteremic phase. Respiratory exit is negligible. Fecal-urinary chronological: fecal carriage begins week 1-3, peaks at week 3-4; urinary shedding follows. The feco-oral route drives epidemic spread."
+    explanation: "In renal tuberculosis, M. tuberculosis infects the kidney and is shed in urine (renal bacilluria). Historically, this was relevant when unpasteurized milk from cattle with bovine tuberculosis caused intestinal TB in humans, and when cattle drank water contaminated with human urine containing M. tuberculosis. Urinary TB shedding can theoretically contaminate water sources in low-sanitation settings. While respiratory transmission accounts for >95% of M. tuberculosis transmission, understanding all portals of exit is important for comprehensive chain-of-infection analysis."
   },
   {
     id: 41,
-    question: "The incubation period of cholera is 6 hours to 5 days (typically 1-2 days). During a cholera outbreak, a patient develops symptoms 8 hours after consuming contaminated water. This SHORT incubation period most likely reflects:",
+    question: "The incubation period of a communicable disease has important public health applications. Which statement about incubation periods and their epidemiological use is CORRECT?",
     options: [
-      "A particularly virulent strain with higher toxin production",
-      "A very large infectious dose, overwhelming normal gastric defense mechanisms rapidly",
-      "Pre-formed toxin in the water source (toxin-mediated, similar to S. aureus enterotoxin)",
-      "The patient's compromised immune system accelerating symptom onset"
+      "The minimum incubation period is used to determine the maximum quarantine period needed to detect all cases",
+      "The maximum incubation period defines the outer limit of the exposure window when tracing cases back from symptom onset to identify a common source",
+      "The mean incubation period is irrelevant to public health practice; only the serial interval matters",
+      "Incubation periods are identical for the same disease across all age groups and immune states"
     ],
     answer: 1,
-    explanation: "Cholera incubation period is inversely related to inoculum size. Vibrio cholerae requires a relatively large infective dose (10^6 organisms in immunocompetent persons, lower in achlorhydric patients). A very large inoculum (as occurs from heavily contaminated water during outbreaks or from point source exposure) can overcome gastric acid barrier rapidly, accelerating bacterial multiplication and toxin production. Cholera toxin (CT) itself is not preformed in water - Vibrio must colonize and produce CT in vivo."
+    explanation: "The maximum incubation period determines the quarantine period - individuals exposed to a pathogen are quarantined for the maximum incubation period to detect all possible cases before community release. For COVID-19 (max incubation ~14 days), 14-day quarantine was recommended. The maximum incubation period also defines the backward exposure window for outbreak investigation - when a case is identified, the exposure must have occurred within the maximum incubation period before symptom onset. Incubation periods may vary with age, inoculum size, and immune status."
   },
   {
     id: 42,
-    question: "A measles patient is most infectious during which period relative to the rash appearance?",
+    question: "In a school outbreak of mumps, the epidemic curve shows a single peak followed by a secondary peak approximately 18 days later. The incubation period of mumps is 12-25 days (mean 18 days). This pattern suggests:",
     options: [
-      "Immediately when the rash appears and continues for 2 weeks after rash resolution",
-      "4 days before to 4 days after rash appearance (peak at rash onset)",
-      "Only during the prodromal phase before rash; once rash appears, infectivity ceases",
-      "Exclusively during Koplik's spot phase"
+      "A point source exposure with a very wide range of individual incubation periods",
+      "A two-wave propagated epidemic with person-to-person spread generating a second generation of cases approximately one incubation period after the first wave",
+      "Reinfection of immune individuals with a mutant mumps strain",
+      "Laboratory reporting delays causing artificial bimodal distribution"
     ],
     answer: 1,
-    explanation: "Measles infectious period: 4 days before rash to 4 days after rash appearance. The virus is shed in highest quantities during the prodrome (catarrhal phase) and early rash phase. Koplik's spots appear 1-2 days before rash and coincide with peak viral shedding. After 4 days of rash, patients are generally not infectious. Standard isolation: patients with measles should be placed on airborne precautions and excluded from settings until 4 days after rash onset."
+    explanation: "A propagated (progressive source) epidemic curve shows successive peaks, each approximately one mean incubation period apart from the previous peak. The first peak represents primary cases (exposed to the original source or index case), and the second peak approximately 18 days later represents secondary cases infected by the first-wave cases. This person-to-person spread pattern is characteristic of highly contagious diseases with person-to-person transmission. This pattern is distinct from a point source epidemic (single peak) or continuous source (plateau). Each wave may be smaller if control measures are implemented."
   },
   {
     id: 43,
-    question: "The serial interval and generation time are related but distinct measures. What is the key conceptual difference?",
+    question: "The generation time distribution of SARS-CoV-2 (mean approximately 5-6 days) combined with its serial interval (mean approximately 4-5 days) led to what important epidemiological conclusion about COVID-19 transmission?",
     options: [
-      "Serial interval measures time between symptom onsets in a transmission pair; generation time measures time between infection events (exposure to exposure) in a transmission pair",
-      "Generation time is always longer than serial interval",
-      "Serial interval is used only for vector-borne diseases; generation time for direct transmission",
-      "They are identical concepts measured in different units"
+      "COVID-19 cannot spread before symptom onset since serial interval equals generation time",
+      "The shorter serial interval compared to generation time mathematically implies that substantial pre-symptomatic transmission occurs, since secondary cases develop symptoms before expected if infection only occurred at or after symptom onset",
+      "Both measures indicate that COVID-19 spreads exclusively through symptomatic individuals",
+      "The similar values of serial interval and generation time confirm that post-symptomatic transmission dominates"
     ],
-    answer: 0,
-    explanation: "Serial interval = time between symptom onset in the index case and symptom onset in the secondary case (observable, symptoms-to-symptoms). Generation time = time between the moment of infection of the index case and the moment of infection of the secondary case (often unobservable, infection-to-infection). If pre-symptomatic transmission occurs (as with COVID-19, influenza), serial interval can be shorter than generation time. The distinction is critical for modeling transmission dynamics."
+    answer: 1,
+    explanation: "When the serial interval is shorter than the generation time, this mathematically implies that some transmission occurs before symptom onset in the source (pre-symptomatic transmission). Studies estimated that 40-60% of SARS-CoV-2 transmission occurred pre-symptomatically. This had profound public health implications: symptom-based isolation alone (isolating only symptomatic individuals) would miss pre-symptomatic transmission, necessitating contact tracing, testing, and quarantine of exposed contacts even before they develop symptoms. This pre-symptomatic transmission window was a key driver of the COVID-19 pandemic."
   },
   {
     id: 44,
-    question: "The basic reproduction number (R0) for measles is estimated at 12-18. What does this specifically mean?",
+    question: "The basic reproduction number (R0) of seasonal influenza is approximately 1.2-1.4. How does this compare to measles (R0 = 12-18) in terms of herd immunity requirements and implications for vaccination programs?",
     options: [
-      "One measles case causes 12-18 deaths in an unvaccinated population",
-      "In a fully susceptible population with no interventions, one infectious individual generates an average of 12-18 secondary cases",
-      "Measles has a 12-18 day incubation period",
-      "The herd immunity threshold for measles requires 12-18% of the population to be immune"
+      "Influenza requires higher vaccination coverage than measles because influenza mutates rapidly",
+      "Influenza requires only approximately 20% population immunity for herd protection (HIT = 1-1/1.3 = 23%), compared to approximately 94% for measles, explaining why even modest vaccination coverage can meaningfully reduce influenza burden",
+      "Both diseases require 95% population immunity for herd protection regardless of R0",
+      "R0 does not influence the herd immunity threshold; only vaccine efficacy determines the required coverage"
     ],
     answer: 1,
-    explanation: "R0 (basic reproduction number) = average number of secondary infections produced by one infectious individual in a completely susceptible population, with no interventions. R0 = 12-18 for measles means one case generates 12-18 secondary cases in a fully susceptible population. R0 >1 means epidemic growth; R0 <1 means epidemic dies out. R0 is a theoretical quantity dependent on agent, host susceptibility, and contact patterns - it does NOT directly account for vaccination or immunity."
+    explanation: "Herd immunity threshold (HIT) = 1 - (1/R0). For influenza with R0 = 1.3: HIT = 1 - (1/1.3) = 1 - 0.77 = 0.23 = 23%. For measles R0 = 15: HIT = 1 - (1/15) = 93%. This means influenza programs can meaningfully reduce transmission at much lower vaccination coverage levels, while measles demands near-universal coverage. Additionally, for influenza, natural immunity from infection contributes substantially to seasonal population immunity, explaining why epidemic waves naturally decline. The low R0 of influenza also means that interventions with modest effectiveness can have disproportionate epidemic impact."
   },
   {
     id: 45,
-    question: "Given that measles has an R0 of approximately 15, calculate the minimum herd immunity threshold (HIT) required to prevent sustained transmission.",
-    options: ["33%", "67%", "87%", "93%"],
-    answer: 3,
-    explanation: "Herd immunity threshold (HIT) = 1 - (1/R0). For measles with R0 = 15: HIT = 1 - (1/15) = 1 - 0.067 = 0.933 = 93.3%. This means approximately 93-95% of the population must be immune (through vaccination or prior infection) to prevent sustained measles transmission. This is why measles requires very high (95%+) population vaccine coverage, and even small pockets of unvaccinated individuals can sustain outbreaks."
+    question: "A village of 500 people experiences a gastroenteritis outbreak. 200 people attended a wedding feast. Of the 200 attendees, 80 developed illness within 24 hours. Of the 300 non-attendees, 24 became ill. What is the relative risk of illness from wedding attendance?",
+    options: ["2.5", "3.0", "5.0", "8.0"],
+    answer: 2,
+    explanation: "Attack rate among attendees (exposed) = 80/200 = 40% (0.40). Attack rate among non-attendees (unexposed) = 24/300 = 8% (0.08). Relative Risk (RR) = Attack rate exposed / Attack rate unexposed = 0.40 / 0.08 = 5.0. This means wedding attendees were 5 times more likely to develop gastroenteritis than non-attendees, strongly implicating the wedding feast as the source of the outbreak."
   },
   {
     id: 46,
-    question: "During a foodborne outbreak investigation, 80 persons attended a banquet. 60 ate the shrimp cocktail, of whom 45 became ill. 20 did not eat shrimp, of whom 5 became ill. Calculate the attack rate among those who ate shrimp.",
-    options: ["56.25%", "75%", "80%", "25%"],
+    question: "During the COVID-19 pandemic, the effective reproduction number (Rt) dropped below 1.0 in several countries following implementation of lockdown measures. What does Rt = 0.7 specifically indicate about epidemic dynamics?",
+    options: [
+      "70% of the population has been infected and the epidemic is near its natural end",
+      "Each infectious individual generates on average 0.7 secondary cases, meaning the epidemic is declining and will eventually die out unless Rt rises above 1.0",
+      "Interventions have reduced transmission efficiency by 70% compared to baseline",
+      "The fatality rate has decreased to 0.7% indicating the epidemic is controlled"
+    ],
     answer: 1,
-    explanation: "Attack rate among exposed (ate shrimp) = (ill among exposed / total exposed) x 100 = (45/60) x 100 = 75%. Attack rate among unexposed = (5/20) x 100 = 25%. Relative risk = 75/25 = 3.0, meaning those who ate shrimp were 3 times more likely to become ill. This strongly implicates shrimp as the vehicle. The attributable risk = 75% - 25% = 50% of illness attributable to shrimp consumption."
+    explanation: "When Rt <1, each case generates on average fewer than one secondary case, so the chain of transmission gradually dies out. At Rt = 0.7, each 100 cases lead to 70 secondary cases in the next generation, then 49, then 34, etc. - a geometric decline. The epidemic is shrinking but does not end immediately. If Rt rises above 1.0 again (e.g., due to lifting restrictions, waning immunity, or new variant), epidemic growth resumes. Real-time Rt monitoring was a critical dashboard metric for governments assessing the effectiveness of non-pharmaceutical interventions during COVID-19."
   },
   {
     id: 47,
-    question: "In the context of infectious disease epidemiology, what is the 'effective reproduction number' (Rt or Re) and how does it differ from R0?",
+    question: "A susceptible community has an R0 of 3.0 for measles (simplified example). Currently, 50% of the population is immune through vaccination. What is the effective reproduction number (Rt) and what does it indicate?",
     options: [
-      "Rt is a fixed biological property of the pathogen while R0 changes with population immunity",
-      "Rt is the average number of secondary cases generated by one case at time t, accounting for current population immunity and interventions; unlike R0, it changes over time",
-      "Rt measures only pre-symptomatic transmission while R0 measures symptomatic transmission",
-      "Rt and R0 are identical; the different notation is purely conventional"
+      "Rt = 3.0; vaccination has no effect on transmission",
+      "Rt = 1.5; the epidemic is growing since Rt >1, indicating insufficient vaccine coverage to prevent transmission",
+      "Rt = 0.5; the epidemic is declining since Rt <1, indicating sufficient herd immunity",
+      "Rt = 2.0; the epidemic is growing slowly"
     ],
     answer: 1,
-    explanation: "R0 is a theoretical maximum in a fully susceptible population with no control measures. Rt (effective reproduction number) = R0 x (proportion of population still susceptible) = R0 x S/N. As immunity builds (through infection or vaccination) or interventions are implemented, Rt decreases. When Rt <1, the epidemic is declining. Real-time Rt monitoring was critical during COVID-19 for evaluating intervention effectiveness. Rt >1 indicates growing epidemic regardless of R0 value."
+    explanation: "Rt = R0 x (proportion susceptible) = R0 x (1 - proportion immune) = 3.0 x (1 - 0.5) = 3.0 x 0.5 = 1.5. Since Rt = 1.5 >1, the epidemic is still growing, though more slowly than in a fully susceptible population (where Rt = R0 = 3.0). To stop transmission, the herd immunity threshold must be reached: HIT = 1 - (1/R0) = 1 - (1/3) = 67%. With only 50% immune, the community has not reached the threshold and sustained transmission will continue. An additional 17% of the population needs to be immunized to achieve herd protection."
   },
   {
     id: 48,
-    question: "A susceptible individual is exposed to a case of chickenpox. The incubation period of chickenpox is 14-21 days. If the exposed individual is going to develop chickenpox, from which day post-exposure would they be expected to be infectious to others?",
+    question: "In the SIR (Susceptible-Infected-Recovered) mathematical model of infectious disease transmission, the epidemic threshold theory states that an epidemic can occur only when which condition is met?",
     options: [
-      "Only from the day rash appears",
-      "From 1-2 days before rash appearance (late incubation) through 5 days after rash onset or until all lesions crust",
-      "Only during the first 3 days of rash when lesions are vesicular",
-      "From the first day of exposure through the entire incubation period"
+      "The number of infected individuals exceeds 1% of the total population",
+      "The density of susceptible individuals (S) exceeds the epidemic threshold N/R0, where N is total population and R0 is the basic reproduction number",
+      "The recovered population exceeds the susceptible population in size",
+      "The pathogen mutation rate exceeds the immune response clearance rate"
     ],
     answer: 1,
-    explanation: "Varicella (chickenpox) infectious period: begins 1-2 days BEFORE rash appearance (when the infected person may feel prodromal symptoms but has no visible rash) through 5 days after rash onset OR until all lesions have crusted (whichever is later). This pre-rash infectivity makes containment challenging. The incubation period is 10-21 days (mean 14 days). This pre-symptomatic infectious period is why isolation must begin before rash and why secondary cases appear before the source case's rash is recognized."
+    explanation: "In epidemic threshold theory derived from the SIR model, an epidemic can only be initiated and sustained when S > N/R0, i.e., when the number of susceptibles exceeds a threshold determined by total population and R0. Equivalently, the fraction susceptible must exceed 1/R0. When vaccination reduces susceptibles below this threshold, herd immunity is achieved and introduction of a case will not cause a sustained epidemic. This is the mathematical basis for the herd immunity threshold (HIT = 1 - 1/R0). At the threshold, Rt = R0 x (S/N) = R0 x (1/R0) = 1, the tipping point between growth and decline."
   },
   {
     id: 49,
-    question: "A malaria patient with P. vivax returns to a non-endemic country after travel to a malaria-endemic region. Despite appropriate treatment with chloroquine, new episodes of malaria occur 6 and 11 months later. These late relapses are best explained by:",
+    question: "A researcher studies the chain of infection for Ebola Virus Disease (EVD). In terms of reservoir, portal of exit, mode of transmission, portal of entry, and susceptible host - which element in the chain of infection is the most effective point for breaking EVD transmission at the population level?",
     options: [
-      "Re-infection from local mosquitoes in the non-endemic country",
-      "Chloroquine resistance of P. vivax blood-stage parasites",
-      "Reactivation of dormant liver-stage hypnozoites that were not eliminated by chloroquine",
-      "Persistence of drug-resistant gametocytes in the bloodstream"
+      "Eliminating the reservoir (fruit bats) through culling programs",
+      "Mode of transmission interruption through safe burial practices, contact tracing with isolation, and strict PPE use - since EVD spreads via direct contact with body fluids of symptomatic cases",
+      "Increasing host resistance through mass immunization of entire populations in affected regions",
+      "Blocking all portals of entry by applying topical antiseptics to all community members"
     ],
-    answer: 2,
-    explanation: "P. vivax (and P. ovale) form hypnozoites - dormant liver-stage parasites that can reactivate weeks to years later causing true relapses. Chloroquine treats only blood-stage infection and does not eliminate hypnozoites. Primaquine (or tafenoquine) is required for radical cure (elimination of hypnozoites). Relapse timing varies by P. vivax strain: 'tropical' strains relapse in 3-6 weeks; 'temperate' strains may have long-latency relapses of 6-12 months, explaining late relapses in returned travelers."
+    answer: 1,
+    explanation: "Ebola transmission occurs via direct contact with blood or body fluids of symptomatic EVD patients (and corpses, which are highly infectious). The most effective and feasible intervention point in the chain is at the mode of transmission: (1) safe and dignified burials prevent transmission from infectious corpses at funerals; (2) contact tracing with isolation of cases breaks person-to-person chains; (3) strict PPE use in healthcare settings prevents nosocomial amplification. Culling fruit bats is not feasible, effective, or humane. Vaccines (rVSV-ZEBOV) are now available but ring vaccination (targeting contacts) rather than mass vaccination is the strategy used."
   },
   {
     id: 50,
-    question: "In a refugee camp, an outbreak of meningococcal meningitis occurs. Neisseria meningitidis is identified. The 'carrier state' in meningococcal disease is epidemiologically important because:",
+    question: "In basic compartmental epidemiological models (SIR/SEIR), what does the addition of an 'E' (Exposed) compartment in the SEIR model specifically account for that the simpler SIR model does not?",
     options: [
-      "Carriers develop fulminant disease within 48 hours without antibiotic prophylaxis",
-      "Asymptomatic nasopharyngeal carriage rates of 5-25% in populations mean carriers vastly outnumber cases and drive transmission through droplet spread",
-      "Carriers are immune to all serogroups of N. meningitidis permanently",
-      "The carrier state lasts for life without antibiotic treatment"
+      "The E compartment accounts for environmental contamination as a source of infection",
+      "The E compartment represents individuals who have been infected but are in the latent (incubation) period - infected but not yet infectious - which introduces a time delay between infection and the ability to transmit, critically affecting the modeled epidemic curve shape and timing",
+      "The E compartment tracks individuals who are exposed to the pathogen but have innate immunity and will not develop infection",
+      "The E compartment models the effect of vaccination on reducing susceptibility before exposure"
     ],
     answer: 1,
-    explanation: "N. meningitidis nasopharyngeal carrier rates are 5-10% in general populations and up to 25-40% in crowded settings (military barracks, colleges, refugee camps). Asymptomatic carriers vastly outnumber clinical cases (ratio approximately 100-1000 carriers per case) and are the primary source of transmission via respiratory droplets and direct contact. Carriage typically lasts weeks to months (not lifelong). Chemoprophylaxis (rifampicin, ciprofloxacin) eliminates carriage in close contacts to interrupt transmission chains."
+    explanation: "In the SEIR model, the 'E' (Exposed) compartment represents individuals who have been infected but are in the incubation/latent period and are NOT YET infectious. This biologically corresponds to the time from infection to onset of infectiousness. Adding this compartment introduces a time delay (corresponding to the latent period) that smooths and delays the epidemic peak compared to the SIR model. The rate of moving from E to I (infected-infectious) is 1/latent period. SEIR models better replicate real epidemic dynamics for diseases with significant incubation periods (COVID-19, measles, influenza). For diseases with very short latent periods, the simpler SIR approximation may suffice."
   }
 ];
 

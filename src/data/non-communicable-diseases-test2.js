@@ -1,353 +1,353 @@
 const questions = [
   {
     id: 1,
-    question: "Which of the following is considered the single leading modifiable risk factor for non-communicable diseases globally?",
-    options: ["Physical inactivity", "Tobacco use", "Unhealthy diet", "Harmful alcohol use"],
+    question: "According to the Global Adult Tobacco Survey India (GATS-2) 2016-17, what was the overall prevalence of tobacco use (any form) among adults aged 15 years and above in India?",
+    options: ["18.4%", "28.6%", "42.4%", "12.1%"],
     answer: 1,
-    explanation: "Tobacco use is recognized as the single leading modifiable risk factor for NCDs globally, responsible for approximately 8 million deaths per year. It is a major risk factor for cardiovascular disease, cancer, chronic respiratory disease, and diabetes."
+    explanation: "GATS-2 India (2016-17) reported that 28.6% of adults (15 years and above) used some form of tobacco, covering both smoked and smokeless forms. This represented a decline from GATS-1 (2009-10) when prevalence was 34.6%, indicating a significant reduction over seven years. Among men, tobacco use prevalence was 42.4%, and among women it was 14.2%."
   },
   {
     id: 2,
-    question: "In India, which form of tobacco is most commonly used and is associated with oral cancer?",
-    options: ["Cigarettes", "Bidi", "Gutka (smokeless tobacco with betel nut)", "Hookah"],
-    answer: 2,
-    explanation: "Gutka, a mixture of tobacco, betel nut (areca nut), lime, and other ingredients, is the most widely used smokeless tobacco in India and is strongly associated with oral submucous fibrosis and oral cancer. Bidi is the most commonly smoked form of tobacco in India, but gutka is the most commonly used overall form of tobacco."
+    question: "In India, which form of tobacco use is more prevalent than cigarette smoking and contributes most to the overall tobacco burden according to GATS-2 data?",
+    options: ["Bidi smoking", "Smokeless tobacco (SLT) use", "Hookah use", "Cigarette smoking"],
+    answer: 1,
+    explanation: "According to GATS-2 (2016-17), smokeless tobacco (SLT) use at 21.4% was significantly more prevalent than smoked tobacco (10.7%) in India. Common SLT products include khaini, gutka, betel quid with tobacco, and zarda. India accounts for approximately 90% of the global smokeless tobacco burden. Bidi is the most common smoked product (8.4%), more prevalent than cigarettes (3.4%)."
   },
   {
     id: 3,
-    question: "The Cigarettes and Other Tobacco Products Act (COTPA) 2003 mandates that pictorial health warnings on tobacco product packages must cover what minimum percentage of the package surface?",
-    options: ["40%", "50%", "85%", "100%"],
-    answer: 2,
-    explanation: "As per the amended COTPA rules effective from April 2016, pictorial health warnings must cover at least 85% of the principal display area of tobacco product packages in India. This is one of the largest mandated warning sizes globally."
+    question: "Section 6 of COTPA 2003 prohibits the sale of tobacco products to and by minors. What is the age threshold defined under this section?",
+    options: ["Below 16 years", "Below 18 years", "Below 21 years", "Below 14 years"],
+    answer: 1,
+    explanation: "Section 6 of COTPA 2003 prohibits the sale of tobacco products to persons below 18 years of age and also prohibits the sale of tobacco products by persons below 18 years. It also bans the sale of tobacco products within 100 yards of educational institutions. These provisions aim to prevent tobacco uptake among youth by restricting their access to tobacco products."
   },
   {
     id: 4,
-    question: "Which article of the WHO Framework Convention on Tobacco Control (FCTC) deals with protection from exposure to tobacco smoke (passive smoking)?",
-    options: ["Article 6", "Article 8", "Article 11", "Article 14"],
+    question: "The WHO MPOWER package for tobacco control includes six evidence-based policies. What does the letter 'M' in MPOWER stand for?",
+    options: ["Marketing restrictions on tobacco products", "Monitor tobacco use and prevention policies", "Mandate smoke-free environments", "Mobilize community action"],
     answer: 1,
-    explanation: "Article 8 of the WHO FCTC deals with protection from exposure to tobacco smoke and requires parties to adopt measures providing universal protection from exposure to tobacco smoke in indoor workplaces, public transport, indoor public places, and other public places."
+    explanation: "In the WHO MPOWER package, 'M' stands for Monitor tobacco use and prevention policies. The full MPOWER package comprises: Monitor (M), Protect people from tobacco smoke (P), Offer help to quit tobacco use (O), Warn about the dangers of tobacco (W), Enforce bans on tobacco advertising, promotion and sponsorship (E), and Raise taxes on tobacco (R). This comprehensive framework supports implementation of the WHO FCTC."
   },
   {
     id: 5,
-    question: "Passive smoking (secondhand smoke exposure) in non-smokers is associated with which of the following increased risks?",
-    options: ["25-30% increased risk of lung cancer", "10% increased risk of ischemic heart disease only", "Only respiratory tract infections in children", "No significant cardiovascular risk"],
-    answer: 0,
-    explanation: "Non-smokers exposed to secondhand smoke have approximately 25-30% increased risk of developing lung cancer. Passive smoking is also associated with a 25-30% increased risk of ischemic heart disease, increased risk of stroke, and respiratory problems in children including asthma and respiratory tract infections."
+    question: "Article 13 of the WHO Framework Convention on Tobacco Control (FCTC) mandates that parties implement a comprehensive ban on which aspect of tobacco marketing?",
+    options: ["Only television advertising", "All tobacco advertising, promotion, and sponsorship (TAPS)", "Only sponsorship of sporting events", "Internet advertising only"],
+    answer: 1,
+    explanation: "Article 13 of the WHO FCTC requires parties to implement a comprehensive ban on all tobacco advertising, promotion, and sponsorship (TAPS). The article recognizes that a comprehensive ban is necessary because partial bans allow the tobacco industry to shift promotional activity to unregulated channels. Studies show that comprehensive TAPS bans reduce tobacco consumption, particularly among youth. India's COTPA Section 5 gives effect to this obligation."
   },
   {
     id: 6,
-    question: "The 'Smoking Attributable Fraction' (SAF) is calculated using which formula?",
-    options: ["SAF = (RR - 1) / RR", "SAF = P(RR - 1) / [P(RR - 1) + 1]", "SAF = Incidence in smokers / Incidence in non-smokers", "SAF = Prevalence of smoking x Relative risk"],
+    question: "When calculating the smoking-attributable fraction (SAF) using the formula SAF = P(RR-1) / [P(RR-1)+1], if the prevalence of smoking (P) is 30% and the relative risk (RR) of lung cancer in smokers is 15, what is the approximate SAF?",
+    options: ["0.72 (72%)", "0.81 (81%)", "0.54 (54%)", "0.91 (91%)"],
     answer: 1,
-    explanation: "The Smoking Attributable Fraction (SAF) is calculated using the formula: SAF = P(RR-1) / [P(RR-1) + 1], where P is the prevalence of smoking in the population and RR is the relative risk of the disease in smokers compared to non-smokers. This represents the proportion of disease in the population attributable to smoking."
+    explanation: "Using SAF = P(RR-1) / [P(RR-1)+1]: P = 0.30, RR = 15, (RR-1) = 14. Numerator = 0.30 x 14 = 4.2. Denominator = 4.2 + 1 = 5.2. SAF = 4.2 / 5.2 = 0.808, approximately 0.81 or 81%. This means approximately 81% of lung cancer cases in this population would be attributable to smoking. The SAF is a measure of the proportion of disease burden that would be eliminated if the risk factor were removed."
   },
   {
     id: 7,
-    question: "The AUDIT (Alcohol Use Disorders Identification Test) is a screening tool developed by which organization, and a score of 8 or more indicates what?",
-    options: ["CDC; alcohol dependence", "WHO; hazardous or harmful alcohol use", "NIAAA; alcohol abuse disorder", "ICMR; need for detoxification"],
+    question: "Passive smoking (secondhand smoke exposure) in the workplace is associated with what approximate increase in the risk of lung cancer among non-smoking workers?",
+    options: ["5-10% increased risk", "20-30% increased risk", "50-60% increased risk", "No significant increased risk"],
     answer: 1,
-    explanation: "AUDIT (Alcohol Use Disorders Identification Test) was developed by the WHO. It consists of 10 questions covering alcohol consumption, drinking behavior, and alcohol-related problems. A score of 8 or more (out of 40) indicates hazardous or harmful alcohol use requiring intervention. Scores of 20 or above suggest alcohol dependence."
+    explanation: "Epidemiological studies and meta-analyses consistently show that non-smoking workers chronically exposed to secondhand smoke in workplaces have approximately 20-30% increased risk of developing lung cancer. This evidence formed the scientific basis for smoke-free workplace legislation globally. IARC has classified secondhand smoke as a Group 1 carcinogen. In India, COTPA Section 4 prohibits smoking in workplaces and public places to protect non-smokers."
   },
   {
     id: 8,
-    question: "Which of the following diseases has the STRONGEST causal association with chronic alcohol use?",
-    options: ["Gastric cancer", "Alcoholic liver cirrhosis", "Pancreatic cancer", "Esophageal adenocarcinoma"],
+    question: "Concerning the price elasticity of demand for tobacco in low- and middle-income countries (LMICs), which of the following statements reflects the consensus evidence?",
+    options: ["Demand for tobacco is perfectly inelastic; price increases have no effect", "A 10% increase in tobacco price reduces tobacco consumption by approximately 4-8% in LMICs", "Price increases affect consumption only in high-income countries", "Price elasticity is the same for cigarettes and smokeless tobacco"],
     answer: 1,
-    explanation: "Alcoholic liver cirrhosis has the strongest causal association with chronic alcohol use. Approximately 90% of heavy drinkers develop alcoholic fatty liver, 20-30% develop alcoholic hepatitis, and 10-20% develop cirrhosis. Alcohol is also causally associated with cancers of the oral cavity, pharynx, esophagus, liver, colorectum, and breast."
+    explanation: "Evidence from LMICs consistently shows that the price elasticity of demand for tobacco is approximately -0.4 to -0.8, meaning a 10% increase in price reduces tobacco consumption by approximately 4-8%. LMICs tend to have higher price elasticity than high-income countries, making taxation particularly effective. WHO and the NCI Tobacco Economics report recommend raising tobacco taxes to at least 75% of the retail price as the most effective single measure to reduce tobacco use."
   },
   {
     id: 9,
-    question: "Brief interventions for hazardous alcohol use in primary care settings are based on which framework?",
-    options: ["FRAMES (Feedback, Responsibility, Advice, Menu, Empathy, Self-efficacy)", "SMART goals only", "12-step Alcoholics Anonymous model", "Motivational interviewing stage 3 only"],
-    answer: 0,
-    explanation: "Brief interventions for alcohol are based on the FRAMES framework: Feedback (personalized feedback on drinking), Responsibility (personal responsibility for change), Advice (clear advice to change), Menu (menu of strategies), Empathy (empathic counseling style), and Self-efficacy (building confidence). Brief interventions of 5-15 minutes have been shown to be effective in reducing hazardous alcohol use."
+    question: "The National Tobacco Control Programme (NTCP) in India is implemented through a which tier structure and what is its primary implementing unit at the district level?",
+    options: ["Two-tier: State and District Health Societies", "Three-tier: National, State Tobacco Control Cells, and District Tobacco Control Cells (DTCCs)", "Four-tier: National, State, District, and Block levels equally", "Single tier: Central government directly"],
+    answer: 1,
+    explanation: "The NTCP operates through a three-tier structure. At the national level, the Ministry of Health and Family Welfare oversees the program. State Tobacco Control Cells (STCCs) at the state level coordinate implementation. District Tobacco Control Cells (DTCCs) are the primary implementing units, responsible for awareness campaigns, enforcement support, cessation services, and monitoring at the district level. The program was launched in 2007-08 and has been progressively scaled up."
   },
   {
     id: 10,
-    question: "Which pharmacological agent for tobacco cessation is a partial agonist at the alpha4-beta2 nicotinic acetylcholine receptor and is considered the most effective single pharmacotherapy for smoking cessation?",
-    options: ["Bupropion SR", "Nortriptyline", "Varenicline (Champix)", "Nicotine replacement therapy patch"],
-    answer: 2,
-    explanation: "Varenicline (brand name Champix/Chantix) is a partial agonist at the alpha4-beta2 nicotinic acetylcholine receptor. It reduces craving and withdrawal symptoms while also blocking the rewarding effects of smoking. Meta-analyses show varenicline is the most effective single pharmacotherapy for smoking cessation, approximately doubling quit rates compared to placebo and being superior to bupropion."
+    question: "Evidence from large-scale studies on pictorial health warnings (PHWs) on tobacco packs shows that PHWs are most effective in which population group?",
+    options: ["Long-term addicted adult smokers", "Youth and low-literacy populations who benefit most from visual communication", "Only highly educated adults who read text warnings", "PHWs have no demonstrated effectiveness"],
+    answer: 1,
+    explanation: "Research consistently shows that pictorial health warnings are particularly effective among youth (helping prevent uptake) and low-literacy populations who are better reached by visual messages than text alone. PHWs increase health knowledge, promote quit intentions, and reduce tobacco use. Studies from countries implementing large PHWs (Australia, Canada, Brazil) demonstrate that larger, more graphic warnings are more effective. India's 85% PHW requirement is evidence-based."
   },
   {
     id: 11,
-    question: "The economic burden of tobacco in India, including direct healthcare costs and indirect productivity losses, was estimated at approximately how much in recent studies?",
-    options: ["Rs. 5,000 crore per year", "Rs. 27,500 crore per year", "Rs. 1,04,500 crore per year", "Rs. 2,00,000 crore per year"],
-    answer: 2,
-    explanation: "Studies including one published in the Indian Journal of Public Health estimated the economic burden of tobacco use in India at approximately Rs. 1,04,500 crore (about USD 22 billion) per year, including direct healthcare costs for treating tobacco-related diseases and indirect costs from premature mortality and morbidity. This significantly exceeds revenue collected from tobacco taxes."
+    question: "According to WHO estimates, what percentage of all NCD deaths globally are attributable to tobacco use annually?",
+    options: ["5%", "16%", "29%", "40%"],
+    answer: 1,
+    explanation: "WHO estimates that tobacco use causes approximately 8 million deaths per year globally, representing roughly 16% of all NCD deaths. Tobacco causes approximately 71% of all lung cancer deaths, 42% of chronic respiratory disease deaths, and about 10% of cardiovascular disease deaths. It is the leading single preventable cause of death. In India, tobacco attributable mortality is estimated at approximately 1.3 million deaths annually."
   },
   {
     id: 12,
-    question: "Under COTPA 2003, smoking in which of the following places is NOT prohibited?",
-    options: ["Hotels with more than 30 rooms (designated smoking rooms allowed)", "Airports", "Schools and colleges", "Government offices"],
-    answer: 0,
-    explanation: "Under COTPA 2003 Section 4, smoking is prohibited in all public places. However, hotels with 30 or more rooms, restaurants with seating capacity of 30 or more, and airports are allowed to provide designated smoking rooms/areas that are fully enclosed with negative air pressure. All other public places including schools, colleges, and government offices must be completely smoke-free."
+    question: "The AUDIT-C (Alcohol Use Disorders Identification Test - Consumption) is a shortened 3-question version of the full AUDIT tool. A score of 3 or more in women and 4 or more in men on AUDIT-C indicates:",
+    options: ["Alcohol dependence requiring detoxification", "Hazardous or harmful drinking warranting further assessment", "Safe drinking levels", "Need for hospitalization"],
+    answer: 1,
+    explanation: "The AUDIT-C consists of the first 3 questions of the full AUDIT, covering frequency of drinking, typical quantity, and frequency of heavy episodic drinking. A score of 3 or more in women and 4 or more in men indicates hazardous or harmful drinking and warrants further assessment using the full AUDIT or clinical evaluation. The AUDIT-C is widely used in primary care settings for efficient alcohol screening. It has good sensitivity (73-86%) and specificity (89-91%) for identifying unhealthy alcohol use."
   },
   {
     id: 13,
-    question: "Trans fatty acids (TFAs) increase cardiovascular risk primarily by which mechanism?",
-    options: ["Increasing HDL cholesterol only", "Increasing LDL cholesterol and decreasing HDL cholesterol simultaneously", "Decreasing total cholesterol", "Increasing HDL and LDL cholesterol equally"],
+    question: "The WHO's best buys for NCD prevention include population-level dietary interventions. Which of the following is classified as a WHO 'best buy' for unhealthy diet?",
+    options: ["Individual dietary counseling for all adults", "Mandatory front-of-pack nutrition labeling, reformulation of food products to reduce salt/sugar/fat, and restrictions on marketing of unhealthy foods to children", "Providing free vitamin supplements to all", "Banning all processed foods"],
     answer: 1,
-    explanation: "Trans fatty acids (TFAs) have a uniquely adverse lipid profile effect - they both increase LDL ('bad') cholesterol AND decrease HDL ('good') cholesterol simultaneously. This dual effect makes TFAs particularly harmful for cardiovascular health. WHO recommends limiting TFA intake to less than 1% of total energy intake, and India's FSSAI has set limits on TFA content in foods."
+    explanation: "WHO best buys for unhealthy diet at the population level include: mandatory front-of-pack nutrition labeling, food reformulation to reduce salt, sugar, and saturated fats, restrictions on marketing of unhealthy foods and beverages to children, and fiscal policies (taxes on sugary beverages). These population-level interventions are cost-effective because they reach the entire population without requiring individual behavioral change, consistent with the population strategy of Geoffrey Rose."
   },
   {
     id: 14,
-    question: "The FSSAI (Food Safety and Standards Authority of India) regulations limit the amount of trans fats in foods to what maximum percentage of total fats?",
-    options: ["5% by 2022, with complete elimination by 2025", "2% by 2022 (reduced from earlier 5% limit)", "10% currently with phased reduction", "No current regulatory limit"],
+    question: "The Food Safety and Standards Authority of India (FSSAI) is responsible for setting food safety standards under which legislation?",
+    options: ["Prevention of Food Adulteration Act 1954", "Food Safety and Standards Act 2006", "Essential Commodities Act 1955", "Consumer Protection Act 2019"],
     answer: 1,
-    explanation: "FSSAI amended regulations to limit trans fats in partially hydrogenated vegetable oils, vanaspati, margarine, and bakery shortenings to 2% of total fats by January 2022, reduced from a previous limit of 5%. This is part of India's commitment to WHO's REPLACE initiative to eliminate industrially produced trans fats."
+    explanation: "FSSAI was established under the Food Safety and Standards Act (FSSA) 2006, which replaced the Prevention of Food Adulteration Act (PFA) 1954 and consolidated multiple food-related laws. FSSAI regulates food safety, sets standards for food products including limits for trans fats, additives, contaminants, and pesticide residues, and implements front-of-pack labeling regulations. Its public health mandate includes reducing diet-related NCD risk at the population level."
   },
   {
     id: 15,
-    question: "According to WHO guidelines (2020), the recommended amount of moderate-intensity aerobic physical activity per week for adults is:",
-    options: ["75 minutes per week", "150-300 minutes per week", "60 minutes per day (420 minutes per week)", "30 minutes per day on at least 3 days per week"],
+    question: "The WHO 2020 Global Physical Activity Guidelines for the first time included recommendations for which additional population group not covered in previous guidelines?",
+    options: ["Pregnant women", "Children under 5 years of age and people living with chronic conditions/disabilities", "Adults over 65 years", "Adolescents aged 12-17 years"],
     answer: 1,
-    explanation: "WHO 2020 Global Guidelines on Physical Activity recommend that adults (18-64 years) should do at least 150-300 minutes of moderate-intensity aerobic physical activity per week, OR 75-150 minutes of vigorous-intensity activity, OR an equivalent combination. These guidelines also recommend muscle-strengthening activities on 2 or more days per week."
+    explanation: "The 2020 WHO Global Guidelines on Physical Activity and Sedentary Behaviour for the first time included recommendations for children under 5 years of age and for people living with chronic conditions (such as cardiovascular disease, type 2 diabetes, cancer, and HIV) and people with disabilities. Previous guidelines (2010) did not cover these groups. The 2020 guidelines also formally recognized sedentary behavior as an independent risk factor and provided recommendations to reduce it."
   },
   {
     id: 16,
-    question: "Prolonged sedentary behavior (sitting for long periods) is associated with increased risk of NCDs even in people who meet physical activity guidelines. Which of the following statements about sedentary behavior is CORRECT?",
-    options: ["Only total physical activity time matters; sedentary time has no independent effect", "Prolonged sedentary time is independently associated with adverse health outcomes regardless of physical activity level", "Sedentary behavior is only harmful if less than 1 hour of activity per day", "Screen time is the only form of sedentary behavior that increases NCD risk"],
+    question: "According to NFHS-5 (2019-21) data, what proportion of Indian women aged 15-49 years consume vegetables daily, and why is this a significant NCD risk indicator?",
+    options: ["95% consume vegetables daily; no significant concern", "Only about 22% consume green leafy vegetables daily; inadequate vegetable intake is a major population-level diet risk factor for NCDs", "50% consume sufficient vegetables; borderline adequate", "Data not available in NFHS-5"],
     answer: 1,
-    explanation: "WHO 2020 guidelines recognize that prolonged sedentary behavior is independently associated with adverse health outcomes (type 2 diabetes, cardiovascular disease, cancer, and all-cause mortality) regardless of whether an individual meets physical activity recommendations. Breaking up sedentary time throughout the day is recommended, and the guidelines for the first time included recommendations to limit sedentary behavior."
+    explanation: "NFHS-5 data reveal that only approximately 22% of women aged 15-49 consume green leafy vegetables daily. Inadequate fruit and vegetable consumption is a major population-level dietary risk factor for NCDs including cardiovascular disease, diabetes, and several cancers. WHO estimates that low fruit and vegetable intake causes approximately 1.7 million deaths globally per year. This data underscores the need for population-level dietary promotion policies in India."
   },
   {
     id: 17,
-    question: "In India, according to NFHS-5 (2019-21), what percentage of women and men are classified as overweight or obese (BMI >= 25 kg/m2)?",
-    options: ["Women 10%, Men 8%", "Women 24%, Men 23%", "Women 40%, Men 35%", "Women 15%, Men 12%"],
+    question: "The rationale for using lower BMI cutoffs for defining obesity in Asian populations (overweight >= 23, obese >= 27.5 kg/m2) compared to WHO standard cutoffs is primarily based on which evidence?",
+    options: ["Asian populations are naturally lighter so standard cutoffs are inappropriate", "Asian populations have higher percentage body fat and central adiposity at lower BMI values, with metabolic complications occurring at lower BMI thresholds", "Lower cutoffs are used only for administrative convenience", "Asian cutoffs are used because Asians have smaller skeletal frames"],
     answer: 1,
-    explanation: "According to NFHS-5 (2019-21), approximately 24% of women and 23% of men in India are overweight or obese (BMI >= 25 kg/m2). This represents a significant increase from previous NFHS surveys and reflects the growing obesity epidemic in India driven by nutrition transition, urbanization, and sedentary lifestyles."
+    explanation: "The scientific rationale for lower BMI cutoffs in Asian populations is that, at equivalent BMI, Asians (including South Asians) have higher percentage body fat, greater visceral/abdominal adiposity, and develop metabolic complications (insulin resistance, type 2 diabetes, hypertension, dyslipidemia) at lower BMI values than European populations. Studies from India show that metabolic risk increases significantly at BMI >= 23 kg/m2 and >= 27.5 kg/m2 in Indians, corresponding to WHO standard overweight and obese thresholds."
   },
   {
     id: 18,
-    question: "For Asian populations including Indians, the WHO recommends lower BMI cutoff points for obesity classification. Which of the following represents the correct Asian-specific BMI cutoffs?",
-    options: ["Overweight: BMI >= 25, Obese: BMI >= 30 (same as Western)", "Overweight: BMI >= 23, Obese: BMI >= 27.5", "Overweight: BMI >= 20, Obese: BMI >= 25", "Overweight: BMI >= 22, Obese: BMI >= 28"],
+    question: "Which of the following best describes the 'nutrition transition' phenomenon occurring in India and contributing to the NCD epidemic?",
+    options: ["A shift from malnutrition to food security with no NCD implications", "A shift from traditional diets (high fiber, low fat, low sugar) toward energy-dense diets (high fat, high sugar, low fiber) combined with reduced physical activity, creating a double burden of malnutrition", "Only urban populations are affected by nutrition transition", "Nutrition transition refers only to increased protein intake"],
     answer: 1,
-    explanation: "For Asian populations including South Asians, WHO recommends lower BMI cutoffs: Overweight at BMI >= 23 kg/m2, and Obese at BMI >= 27.5 kg/m2. These lower cutoffs are used because Asians have a higher percentage of body fat and greater risk of metabolic complications at lower BMI values compared to Western populations."
+    explanation: "The nutrition transition in India represents a shift from traditional diets high in whole grains, pulses, and vegetables toward energy-dense, nutrient-poor diets high in saturated fats, refined carbohydrates, added sugars, and salt, combined with reduced physical activity due to mechanization and urbanization. This creates India's 'double burden of malnutrition' - persistent undernutrition alongside rapidly rising overweight, obesity, and diet-related NCDs. Both urban and increasingly rural populations are affected."
   },
   {
     id: 19,
-    question: "For Asian men and women, what are the waist circumference cutoff values recommended for defining abdominal obesity by the International Diabetes Federation (IDF)?",
-    options: ["Men >= 102 cm, Women >= 88 cm", "Men >= 90 cm, Women >= 80 cm", "Men >= 85 cm, Women >= 75 cm", "Men >= 94 cm, Women >= 80 cm"],
+    question: "The IDF worldwide definition of metabolic syndrome (2006) requires central obesity plus at least TWO of the following additional criteria. Which option correctly lists the four additional criteria?",
+    options: ["Fasting glucose >= 126 mg/dL, TG >= 200 mg/dL, HDL < 40 mg/dL (men) or < 50 mg/dL (women), BP >= 140/90 mmHg", "Fasting glucose >= 100 mg/dL, TG >= 150 mg/dL, HDL < 40 mg/dL (men) or < 50 mg/dL (women), BP >= 130/85 mmHg", "Fasting glucose >= 110 mg/dL, TG >= 175 mg/dL, HDL < 35 mg/dL, BP >= 135/90 mmHg", "Fasting glucose >= 100 mg/dL, TG >= 150 mg/dL, LDL >= 130 mg/dL, BP >= 130/85 mmHg"],
     answer: 1,
-    explanation: "The IDF recommends ethnicity-specific waist circumference cutoffs for abdominal obesity. For South/Southeast Asians (including Indians), the cutoffs are Men >= 90 cm and Women >= 80 cm. These are lower than European cutoffs (Men >= 94 cm, Women >= 80 cm for IDF, or Men >= 102 cm, Women >= 88 cm for ATP III). Abdominal obesity is a key component of metabolic syndrome."
+    explanation: "The IDF 2006 metabolic syndrome definition requires central obesity (obligatory criterion) plus at least 2 of: (1) Raised triglycerides >= 150 mg/dL or on treatment; (2) Reduced HDL-C < 40 mg/dL in men, < 50 mg/dL in women, or on treatment; (3) Raised blood pressure >= 130 mmHg systolic or >= 85 mmHg diastolic, or on treatment; (4) Raised fasting plasma glucose >= 100 mg/dL or previously diagnosed type 2 diabetes. Metabolic syndrome prevalence in India is estimated at 25-40% of adults."
   },
   {
     id: 20,
-    question: "According to the IDF (2006) criteria for metabolic syndrome, which of the following is the CENTRAL/OBLIGATORY criterion?",
-    options: ["Fasting glucose >= 100 mg/dL", "Blood pressure >= 130/85 mmHg", "Central obesity (ethnicity-specific waist circumference)", "Triglycerides >= 150 mg/dL"],
-    answer: 2,
-    explanation: "According to the IDF 2006 criteria for metabolic syndrome, central obesity (measured by waist circumference using ethnicity-specific cutoffs) is the CENTRAL/OBLIGATORY criterion. In addition to central obesity, at least 2 of the following 4 criteria must be present: raised triglycerides (>=150 mg/dL), reduced HDL-cholesterol, raised blood pressure (>=130/85 mmHg), or raised fasting plasma glucose (>=100 mg/dL or diagnosed T2DM)."
+    question: "The term 'ultra-processed foods' (Group 4 in NOVA classification) is best characterized by which feature?",
+    options: ["Foods that have been cooked or heated", "Industrial formulations containing mostly food-derived substances and additives with little or no whole food, designed for hyper-palatability and long shelf life", "Any food that has been refrigerated", "Foods with more than 5 ingredients"],
+    answer: 1,
+    explanation: "NOVA Group 4 ultra-processed foods are industrial formulations that typically contain little or no whole food. They consist mostly of chemically modified food substances (refined starches, hydrogenated oils, hydrolyzed proteins) plus additives including artificial flavors, colors, emulsifiers, preservatives, and sweeteners. Examples include packaged snacks, instant noodles, carbonated drinks, and reconstituted meat products. Studies link UPF consumption with obesity, type 2 diabetes, cardiovascular disease, cancer, and all-cause mortality."
   },
   {
     id: 21,
-    question: "Ultra-processed foods (UPFs) are classified using which internationally recognized classification system?",
-    options: ["WHO NOVA classification", "FAO Nutrient Profiling System", "FSSAI Star Rating System", "Codex Alimentarius classification"],
-    answer: 0,
-    explanation: "Ultra-processed foods are classified using the NOVA food classification system, developed by researchers at the University of Sao Paulo. NOVA classifies foods into 4 groups based on the degree of processing: Group 1 (unprocessed/minimally processed), Group 2 (processed culinary ingredients), Group 3 (processed foods), and Group 4 (ultra-processed food products). UPFs typically contain additives, flavoring agents, and undergo multiple industrial processing steps."
+    question: "The PREDIMED trial (Prevención con Dieta Mediterránea) provided level 1 evidence for which dietary intervention in cardiovascular disease prevention?",
+    options: ["Low-fat diet reduces cardiovascular events by 30%", "Mediterranean diet supplemented with olive oil or nuts reduces major cardiovascular events by approximately 30% compared to a low-fat control diet", "High-protein diet prevents myocardial infarction", "Gluten-free diet reduces stroke risk"],
+    answer: 1,
+    explanation: "The PREDIMED trial (published 2013, re-analyzed 2018) was a randomized controlled trial in Spain involving 7,447 high-risk participants. It demonstrated that a Mediterranean diet supplemented with extra-virgin olive oil or mixed nuts reduced the incidence of major cardiovascular events (MI, stroke, cardiovascular death) by approximately 30% compared to a low-fat control diet. This is one of the strongest RCT-level dietary evidence for cardiovascular prevention through a whole-diet approach."
   },
   {
     id: 22,
-    question: "The DASH (Dietary Approaches to Stop Hypertension) diet is characterized by which of the following?",
-    options: ["High protein, low carbohydrate, moderate fat", "High fruits and vegetables, low-fat dairy, reduced sodium, limited saturated fats", "Ketogenic diet with very low carbohydrates", "Mediterranean diet with high olive oil consumption"],
+    question: "The average daily salt consumption in India, as estimated by dietary surveys, compared to the WHO recommended target of less than 5 grams per day, is approximately:",
+    options: ["3-4 grams per day (below WHO target)", "8-11 grams per day (exceeding WHO target by 60-120%)", "5 grams per day (meeting WHO target)", "15-20 grams per day"],
     answer: 1,
-    explanation: "The DASH diet emphasizes high consumption of fruits and vegetables (8-10 servings/day), low-fat dairy products, whole grains, lean meats, nuts and legumes, while limiting sodium (1500-2300 mg/day), saturated fats, and added sugars. Clinical trials have demonstrated DASH diet reduces systolic blood pressure by 8-14 mmHg, making it an effective non-pharmacological intervention for hypertension."
+    explanation: "Dietary surveys estimate India's average salt consumption at approximately 8-11 grams per day, well above the WHO target of less than 5 grams per day. High salt intake is the leading dietary risk factor for hypertension. Sources of dietary salt in India include salt added during cooking (dominant source unlike Western countries), processed foods, and naturally occurring sodium. Population-level salt reduction strategies are a priority WHO best buy for NCD prevention."
   },
   {
     id: 23,
-    question: "The National Institute of Nutrition (NIN) Hyderabad publishes India-specific dietary guidelines. The recommended daily intake of fruits and vegetables for Indians as per NIN guidelines is:",
-    options: ["100g fruits + 100g vegetables per day", "At least 400g (5 portions) of fruits and vegetables per day", "Only 2 portions of fruits, unlimited vegetables", "300g fruits + 200g vegetables separately"],
+    question: "The National Institute of Nutrition (NIN) Dietary Guidelines for Indians (2011, revised 2024) recommend consuming how many food groups daily for a balanced diet?",
+    options: ["Three food groups (cereals, vegetables, protein)", "Seven food groups including cereals, pulses, milk, eggs/fish/meat, fruits, vegetables, and fats/oils", "Five food groups based on the food pyramid", "Only plant-based food groups"],
     answer: 1,
-    explanation: "NIN's Dietary Guidelines for Indians recommend consuming at least 400g of fruits and vegetables per day (approximately 5 portions), consistent with WHO recommendations. The guidelines emphasize consuming a variety of colorful fruits and vegetables to ensure adequate intake of micronutrients, fiber, and phytochemicals. These guidelines also recommend limiting salt to 5g/day and sugar to less than 10% of total energy."
+    explanation: "NIN's Dietary Guidelines for Indians recommend consuming foods from all major food groups daily: cereals and millets (major energy source), pulses and legumes (protein), milk and milk products (calcium), eggs, fish, and meat or plant-protein alternatives, vegetables (including dark green leafy vegetables), fruits, and fats and oils in moderation. The guidelines also recommend limiting salt to 5g/day, sugar to below 10% of total energy, and processed/ultra-processed foods."
   },
   {
     id: 24,
-    question: "Which of the following statements about the Mediterranean diet and NCD prevention is CORRECT?",
-    options: ["Mediterranean diet is primarily beneficial for weight loss only", "Mediterranean diet is associated with reduced risk of cardiovascular disease, type 2 diabetes, and certain cancers", "Mediterranean diet has no significant effect on cardiovascular outcomes", "Mediterranean diet is not applicable to Indian populations"],
+    question: "Sugar-sweetened beverage (SSB) consumption is a significant NCD risk factor. Evidence from prospective cohort studies linking SSB consumption to type 2 diabetes risk shows approximately what increase in risk per additional serving per day?",
+    options: ["No significant association", "Approximately 13-26% increased risk of type 2 diabetes per additional daily serving", "50% increased risk per serving", "Only a risk factor in children, not adults"],
     answer: 1,
-    explanation: "The Mediterranean diet, characterized by high consumption of olive oil, legumes, unrefined cereals, fruits, vegetables, moderate fish and dairy, and low meat consumption, is associated with significant reductions in cardiovascular disease risk (PREDIMED trial showed 30% risk reduction), type 2 diabetes, metabolic syndrome, and certain cancers. Its principles of whole foods, plant-based eating, and healthy fats are applicable across populations."
+    explanation: "Meta-analyses of prospective cohort studies show that each additional daily serving of sugar-sweetened beverages (approximately 250-355 mL) is associated with approximately 13-26% increased risk of type 2 diabetes, independent of BMI and total caloric intake. The mechanism involves direct effects of rapidly absorbed sugars on glycemic load and insulin resistance, as well as indirect effects through weight gain. SSB taxation is a WHO best buy for NCD prevention."
   },
   {
     id: 25,
-    question: "Hypertension is called the 'silent killer' because:",
-    options: ["It kills patients in their sleep", "It is usually asymptomatic until complications develop, leading to delayed diagnosis", "It kills more people than any other single disease", "Medications for hypertension have silent side effects"],
+    question: "Geoffrey Rose's 'prevention paradox' states that a measure bringing large community benefit may offer little benefit to individual participants. Which example best illustrates this paradox?",
+    options: ["Treating patients with established hypertension with medications", "Population-wide moderate reduction in salt intake preventing many strokes, with each individual's personal absolute risk reduction being small", "Screening high-risk individuals for colorectal cancer", "Providing antihypertensive drugs to all adults over 60"],
     answer: 1,
-    explanation: "Hypertension is called the 'silent killer' because it is typically asymptomatic (without symptoms) for many years while causing progressive damage to target organs including the heart, brain, kidneys, and eyes. This asymptomatic nature leads to delayed diagnosis and treatment, allowing complications such as stroke, myocardial infarction, heart failure, and renal failure to develop. In India, approximately 30% of adults have hypertension but awareness is low."
+    explanation: "Geoffrey Rose's prevention paradox is well illustrated by population-level salt reduction: a shift of the entire population's blood pressure distribution downward by even 2-3 mmHg through salt reduction prevents large numbers of cardiovascular events at the population level, yet any individual's personal risk reduction is very small. This contrasts with the high-risk strategy where identifiable individuals gain substantial personal benefit. The paradox explains why population strategies can be politically difficult despite being highly effective."
   },
   {
     id: 26,
-    question: "Geoffrey Rose's strategy for prevention distinguishes between two approaches. The 'high-risk strategy' differs from the 'population strategy' in that:",
-    options: ["High-risk strategy targets the entire population for risk reduction", "High-risk strategy identifies and treats individuals above a defined risk threshold, while population strategy shifts the entire risk distribution", "Population strategy is more expensive than high-risk strategy", "High-risk strategy is only used for infectious diseases"],
+    question: "In the framework of prevention levels for NCDs, which level of prevention does tobacco taxation represent?",
+    options: ["Primary prevention only (after risk factor is present)", "Primordial prevention (preventing risk factor development) AND primary prevention (reducing existing tobacco use)", "Secondary prevention (early detection)", "Tertiary prevention (preventing complications)"],
     answer: 1,
-    explanation: "Geoffrey Rose distinguished the high-risk strategy (identifying and treating individuals above a risk threshold) from the population strategy (shifting the entire population's risk distribution through environmental and societal changes). The population strategy prevents more cases overall because most cases come from people at moderate risk who are more numerous. Rose's 'prevention paradox' states that a measure that brings large benefit to the community may offer little to the participating individual."
+    explanation: "Tobacco taxation operates at multiple prevention levels simultaneously. It is primordial prevention when it discourages young people from ever starting to smoke, preventing adoption of the risk factor itself. It is primary prevention when it motivates existing smokers to quit, thereby removing the risk factor before disease develops. This dual action makes tobacco taxation one of the most cost-effective public health interventions. The WHO MPOWER package places tobacco taxation (R = Raise taxes) as a cornerstone measure."
   },
   {
     id: 27,
-    question: "Primordial prevention for cardiovascular disease refers to:",
-    options: ["Secondary prevention after first myocardial infarction", "Prevention of risk factors from developing in the first place through social and environmental measures", "Screening of asymptomatic individuals for subclinical disease", "Tertiary prevention through cardiac rehabilitation"],
+    question: "The Diabetes Prevention Program (DPP) trial's lifestyle intervention achieved its 58% reduction in diabetes incidence through which specific behavioral targets?",
+    options: ["Reducing caloric intake by 1000 kcal/day and exercising 300 minutes/week", "Achieving at least 7% weight loss through reduced fat and caloric intake, and at least 150 minutes per week of moderate physical activity", "Achieving BMI below 25 kg/m2 and zero alcohol consumption", "Low-carbohydrate diet and daily walking for 60 minutes"],
     answer: 1,
-    explanation: "Primordial prevention aims to prevent the development of risk factors themselves in the population, particularly in children and young adults. It involves societal, environmental, and policy measures such as healthy school environments, physical activity promotion, food policies limiting unhealthy foods, tobacco control policies, and creating healthy urban environments. This contrasts with primary prevention (preventing disease in those with risk factors), secondary prevention (early detection), and tertiary prevention (preventing complications)."
+    explanation: "The DPP lifestyle intervention had two specific behavioral goals: (1) at least 7% weight loss from baseline body weight through reduced dietary fat and caloric intake, and (2) at least 150 minutes per week of moderate-intensity physical activity (equivalent to brisk walking). The intervention was delivered through 16 individual sessions over 24 weeks followed by monthly contacts. Achieving these targets reduced progression from pre-diabetes to type 2 diabetes by 58% over 3 years compared to placebo."
   },
   {
     id: 28,
-    question: "The Diabetes Prevention Program (DPP) trial demonstrated that intensive lifestyle modification in pre-diabetic individuals reduced progression to type 2 diabetes by approximately:",
-    options: ["18% compared to placebo", "31% (same as metformin)", "58% compared to placebo (compared to 31% for metformin)", "75% compared to placebo"],
-    answer: 2,
-    explanation: "The landmark DPP (Diabetes Prevention Program) trial conducted in the USA showed that intensive lifestyle modification (diet and exercise targeting 7% weight loss and 150 minutes of activity per week) reduced progression from pre-diabetes to type 2 diabetes by 58% compared to placebo over 3 years. Metformin reduced progression by 31%. This established lifestyle modification as the cornerstone of diabetes prevention."
+    question: "Population-level prevalence of pre-diabetes (impaired fasting glucose or impaired glucose tolerance) in India is estimated to be approximately what proportion of the adult population?",
+    options: ["5-8% of adults", "15-20% of adults", "35-40% of adults", "50-55% of adults"],
+    answer: 1,
+    explanation: "Studies including ICMR-INDIAB (2017) and various state-level studies estimate pre-diabetes prevalence at approximately 15-20% of the adult population in India (varying by state and urban/rural residence). This represents a huge reservoir of individuals at high risk of developing type 2 diabetes. Given India's adult population of approximately 900 million, this translates to approximately 135-180 million pre-diabetic individuals, making population-level prevention an enormous public health priority."
   },
   {
     id: 29,
-    question: "Pre-diabetes is defined by which of the following criteria according to the American Diabetes Association (ADA)?",
-    options: ["Fasting glucose 100-125 mg/dL OR HbA1c 5.7-6.4% OR 2-hour OGTT glucose 140-199 mg/dL", "Fasting glucose 110-125 mg/dL only", "HbA1c 6.0-6.4% only", "Random glucose 140-199 mg/dL"],
-    answer: 0,
-    explanation: "Pre-diabetes is defined by ADA as: Impaired Fasting Glucose (IFG) with fasting glucose 100-125 mg/dL, OR Impaired Glucose Tolerance (IGT) with 2-hour OGTT glucose 140-199 mg/dL, OR HbA1c 5.7-6.4%. Individuals with pre-diabetes have significantly elevated risk of developing type 2 diabetes and cardiovascular disease and benefit most from preventive interventions."
+    question: "The NPCDCS (National Programme for Prevention and Control of Cancer, Diabetes, CVD and Stroke) cervical cancer screening protocol recommends VIA-based screening for women in which age group and at what frequency?",
+    options: ["All women from age 18, annually", "Women aged 30-65 years, every 5 years", "Women aged 25-49 years, once in a lifetime", "Women aged 40-70 years, every 3 years"],
+    answer: 1,
+    explanation: "Under the NPCDCS guidelines, VIA-based opportunistic screening for cervical cancer is recommended for women aged 30-65 years, with the test to be offered every 5 years. This targets the age group with the highest yield for detecting pre-cancerous lesions (CIN 2+). At Health and Wellness Centers under Ayushman Bharat, trained female health workers perform VIA screening, and positive cases are referred to higher facilities for colposcopy and management."
   },
   {
     id: 30,
-    question: "The NPCDCS (National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke) screening protocol in India recommends opportunistic screening for diabetes using which test at health and wellness centers?",
-    options: ["Only fasting plasma glucose", "Random blood glucose (RBG) using glucometer as first-line opportunistic screening", "HbA1c as first-line test", "Only OGTT (75g glucose)"],
-    answer: 1,
-    explanation: "Under NPCDCS/CPHC (Comprehensive Primary Health Care) guidelines at Health and Wellness Centers, opportunistic screening for diabetes uses Random Blood Glucose (RBG) as the first-line screening test due to its practicality in community settings (no need for fasting). A RBG >= 140 mg/dL warrants confirmatory fasting plasma glucose testing. This approach allows population-level screening without requiring fasting, increasing screening coverage."
+    question: "The WHO's REPLACE initiative for eliminating industrially produced trans fats consists of six action areas. What does the acronym REPLACE stand for?",
+    options: ["Remove, Eliminate, Phase, Limit, Assess, Control, Enforce", "Review dietary fat intake, Eliminate trans fats, Promote healthy fats, Legislation, Assessment, Create awareness, Evaluate progress", "Review policies, Eliminate trans fat sources, Promote alternatives, Legislate, Assess and monitor, Create awareness, Evaluate", "The acronym covers: Review, Eliminate, Promote, Legislate, Assess, Create awareness, Evaluate"],
+    answer: 3,
+    explanation: "WHO's REPLACE (2018) initiative comprises 6 strategic actions: Review dietary sources of industrially produced trans fats and the landscape for required policy change; Eliminate industrially produced trans fats by developing strong policies; Promote the replacement of industrially produced trans fats with healthier fats and oils; Legislate or enact regulatory actions to eliminate industrially produced trans fats; Assess and monitor trans fats content in food supply and changes in trans fat consumption; Create awareness of the negative health impact of trans fats. The target is global elimination by 2023."
   },
   {
     id: 31,
-    question: "Opportunistic screening for hypertension and diabetes is recommended for all adults above what age in India as per NPCDCS guidelines?",
-    options: ["Above 18 years", "Above 30 years", "Above 40 years", "Above 50 years"],
+    question: "Mexico's sugar-sweetened beverage (SSB) tax, implemented in 2014 as a peso-per-liter excise tax, is considered a landmark policy. Evidence from evaluation studies showed what change in SSB purchasing in the first year?",
+    options: ["No change in SSB purchasing", "Approximately 6-12% reduction in SSB purchasing, with larger reductions in low-income households", "50% reduction in SSB purchasing", "Increase in SSB purchasing due to income effects"],
     answer: 1,
-    explanation: "Under NPCDCS and the Comprehensive Primary Health Care framework, opportunistic screening for common NCDs including hypertension, diabetes, and common cancers is recommended for all individuals aged 30 years and above who visit any government health facility for any reason. This age threshold reflects the relatively early onset of NCDs in Indian populations compared to Western populations."
+    explanation: "Evaluation studies of Mexico's SSB tax (1 peso per liter, approximately 10% of average price) showed approximately 6-12% reduction in SSB purchases in the first year, with reductions sustained and growing in subsequent years. Crucially, the largest reductions were observed in low-income households (17% reduction), who are most affected by price changes and bear the greatest burden of obesity-related NCDs. This evidence has informed SSB taxation policies in many countries including India's health cess on aerated drinks."
   },
   {
     id: 32,
-    question: "The 'Polypill' concept for cardiovascular prevention involves combining which drugs in a single tablet?",
-    options: ["Only antihypertensive drugs", "Statin + aspirin + antihypertensive(s) + folic acid in a single pill", "Metformin + aspirin + statin", "ACE inhibitor + calcium channel blocker only"],
-    answer: 1,
-    explanation: "The Polypill concept, proposed by Wald and Law in 2003, involves combining in a single tablet: a statin, aspirin, three antihypertensive drugs (at half standard dose), and folic acid. The theoretical calculation suggested this could reduce heart attacks by 88% and strokes by 80% if taken by all individuals over 55 years. The main advantages are simplicity, improved adherence, and lower cost. Indian-manufactured polypills like Polycap have been studied in clinical trials."
+    question: "Front-of-pack labeling (FOPL) systems for foods are intended to help consumers make healthier choices. Which FOPL system uses a five-color coding scheme based on nutrient profiling and is backed by the strongest evidence for improving consumer food choices?",
+    options: ["India's FSSAI star rating system", "UK's Multiple Traffic Light (MTL)/Nutri-Score hybrid", "The Nutriscore (5-color grading from A to E based on overall nutritional quality)", "Guideline Daily Amounts (GDA) labels"],
+    answer: 2,
+    explanation: "Nutriscore, developed in France and adopted by several European countries, uses a 5-color, 5-letter scale (dark green A to dark red E) based on an algorithm assessing overall nutritional quality per 100g (positive nutrients like fiber, protein, fruits/vegetables; and negative components like sugar, sodium, saturated fat). Systematic reviews show Nutriscore improves consumer ability to identify healthier products compared to GDA labels or traffic light systems. FSSAI is developing an Indian FOPL system considering consumer behavior in the Indian context."
   },
   {
     id: 33,
-    question: "Current guidelines on aspirin use for PRIMARY prevention of cardiovascular disease recommend:",
-    options: ["Aspirin 75-100 mg daily for all adults over 50 years", "Aspirin is no longer routinely recommended for primary prevention; risk-benefit ratio is unfavorable due to bleeding risk", "Aspirin 325 mg daily for high-risk primary prevention", "Aspirin only for diabetic patients over 40 years"],
+    question: "Workplace wellness programs targeting NCD risk factors are evaluated using which key metric that assesses economic returns?",
+    options: ["Number of employees attending health screenings", "Return on Investment (ROI), with evidence suggesting ROI of approximately $3-6 savings for every $1 invested in comprehensive programs", "Number of sick days taken by employees", "Employee satisfaction scores"],
     answer: 1,
-    explanation: "Updated guidelines (ACC/AHA 2019, USPSTF 2022) no longer recommend routine aspirin for primary cardiovascular prevention. The ASPREE, ARRIVE, and ASCEND trials showed that aspirin's bleeding risk (GI bleeding, hemorrhagic stroke) largely offsets its cardiovascular benefit in primary prevention. Aspirin remains recommended for secondary prevention (established cardiovascular disease). The 2022 USPSTF recommends against initiating aspirin for primary prevention in adults 60 years and older."
+    explanation: "Workplace wellness programs targeting tobacco cessation, physical activity, healthy eating, and hypertension management are evaluated using Return on Investment (ROI). Systematic reviews and meta-analyses suggest that comprehensive workplace wellness programs yield approximately $3-6 in savings (reduced healthcare costs, reduced absenteeism, improved productivity) for every $1 invested. WHO recommends workplace wellness as part of a multi-sector approach to NCD prevention. In India, large industries and public sector undertakings are encouraged to implement workplace health programs."
   },
   {
     id: 34,
-    question: "Population-level salt reduction is a priority NCD prevention strategy. WHO recommends reducing sodium intake to less than what amount per day for adults?",
-    options: ["Less than 5 grams of salt (2 grams sodium) per day", "Less than 2 grams of salt per day", "Less than 10 grams of salt per day", "Less than 1 gram of sodium per day"],
-    answer: 0,
-    explanation: "WHO recommends reducing salt intake to less than 5 grams per day (approximately 2 grams of sodium) for adults. Current average salt intake in India is approximately 8-11 grams per day. Salt reduction strategies include reformulation of processed foods, front-of-pack labeling, consumer education, and fiscal measures. A 1g/day reduction in population salt intake is estimated to prevent approximately 1.25 million deaths globally per year."
+    question: "Population-level salt reduction strategies include food reformulation, public education, and fiscal measures. Evidence from Finland's salt reduction program, which reduced average salt intake from 12g/day to 9g/day over decades, showed which population health outcome?",
+    options: ["No change in cardiovascular mortality", "Significant reduction in stroke and coronary heart disease mortality (approximately 75-80% decline in cardiovascular mortality over 30 years)", "Increase in cardiovascular events due to iodine deficiency", "Only blood pressure reduction with no mortality benefit"],
+    answer: 1,
+    explanation: "Finland's salt reduction program, initiated in the 1970s with mandatory front-of-pack 'high salt' labeling and food industry reformulation, successfully reduced average salt intake from approximately 12g/day to 9g/day. Over 30 years, Finland recorded approximately 75-80% decline in both stroke and coronary heart disease mortality. While multiple factors contributed, this is considered one of the most dramatic improvements in cardiovascular mortality achieved through a public health program, and validates population-level salt reduction as an effective strategy."
   },
   {
     id: 35,
-    question: "Statins for PRIMARY prevention of cardiovascular disease are recommended based on which criteria?",
-    options: ["All adults over 40 years regardless of risk", "Individuals with LDL-cholesterol above 160 mg/dL regardless of overall risk", "Based on overall cardiovascular risk assessment (10-year CVD risk >= 7.5-10%), not LDL alone", "Only for individuals with both hypertension and diabetes"],
-    answer: 2,
-    explanation: "Current guidelines recommend statins for primary prevention based on overall 10-year cardiovascular risk (using tools like Pooled Cohort Equations, Framingham Risk Score, or WHO/ISH risk charts) rather than LDL-cholesterol alone. ACC/AHA guidelines recommend statin therapy for individuals with 10-year ASCVD risk >= 7.5-10%. For intermediate-risk patients (7.5-20%), additional risk-enhancing factors are considered. This risk-based approach avoids treating low-risk individuals unnecessarily."
+    question: "The 'Polycap' polypill trial conducted primarily in India evaluated which population and showed what primary outcome?",
+    options: ["Patients with established MI; 40% reduction in recurrence", "Individuals with at least one cardiovascular risk factor; significant reductions in blood pressure and LDL cholesterol compared to individual components (TIPS trial)", "Primary prevention in all adults over 50; no benefit", "Patients with heart failure; improved ejection fraction"],
+    answer: 1,
+    explanation: "The TIPS (The Indian Polycap Study) trial evaluated Polycap (containing thiazide, atenolol, ramipril, simvastatin, and aspirin) in individuals aged 45-80 years with at least one cardiovascular risk factor. The trial demonstrated significant reductions in blood pressure (7.4 mmHg systolic), heart rate, and LDL cholesterol compared to individual components, with a safety profile similar to placebo. Follow-up trials (TIPS-3, 2021) showed Polycap reduced major cardiovascular events by 21% in intermediate-risk individuals, supporting the polypill concept for primary prevention."
   },
   {
     id: 36,
-    question: "Which of the following lifestyle interventions has been shown in clinical trials to reduce systolic blood pressure by the GREATEST amount?",
-    options: ["Aerobic exercise (30 min, 5 days/week)", "DASH diet alone", "Sodium restriction to less than 2g/day", "Combination of DASH diet + sodium restriction"],
-    answer: 3,
-    explanation: "The combination of DASH diet plus sodium restriction produces the greatest reduction in blood pressure in clinical trials. The DASH-Sodium trial showed that combining the DASH diet with low sodium intake (1500 mg/day) reduced systolic blood pressure by 8.9 mmHg in normotensive individuals and by 11.5 mmHg in hypertensive individuals. DASH diet alone reduces SBP by 5-6 mmHg, and sodium restriction alone by 3-5 mmHg."
+    question: "In the context of NCD surveillance, what does the STEPS survey methodology developed by WHO measure, and how often has India conducted STEPS surveys?",
+    options: ["STEPS measures infectious disease burden annually; India has conducted it 5 times", "STEPS is a standardized approach measuring behavioral risk factors (Step 1), physical measurements (Step 2), and biochemical measurements (Step 3) for NCDs; India conducted its first national STEPS survey in 2017-18", "STEPS measures only tobacco and alcohol use", "STEPS is a clinical assessment tool for individual patients"],
+    answer: 1,
+    explanation: "WHO STEPS (STEPwise approach to Surveillance) is a standardized methodology for collecting NCD risk factor data at the population level. Step 1 collects behavioral data (tobacco, alcohol, diet, physical activity) through questionnaires. Step 2 adds physical measurements (height, weight, blood pressure). Step 3 adds biochemical measurements (blood glucose, cholesterol). India conducted its first comprehensive national STEPS survey in 2017-18, providing the most complete national data on NCD risk factor prevalence, showing 28.5% hypertension prevalence, 7.3% diabetes prevalence, and high tobacco use rates."
   },
   {
     id: 37,
-    question: "For diabetes prevention in India, which lifestyle intervention target has been validated as most important in the Indian Diabetes Prevention Programme (IDPP)?",
-    options: ["Achieving complete normoglycemia through very low calorie diet", "Moderate physical activity (30 min/day) and dietary modification showing 28.5% risk reduction", "Weight loss of more than 10% body weight", "Pharmacological intervention with metformin as first-line"],
+    question: "The WHO Global Action Plan for the Prevention and Control of NCDs 2013-2030 sets a target of reducing premature mortality from the four major NCDs by what percentage by 2030?",
+    options: ["10% reduction", "25% reduction (one third reduction by 2030 from 2015 baseline)", "50% reduction", "15% reduction"],
     answer: 1,
-    explanation: "The Indian Diabetes Prevention Programme (IDPP) demonstrated that lifestyle modification (LSM) with moderate physical activity (30 min/day of brisk walking) and dietary changes reduced progression from IGT to diabetes by 28.5% over 3 years in Asian Indians, while metformin reduced risk by 26.4%. Combination of both reduced risk by 28.2%. This Indian trial showed similar but somewhat smaller effects than the US DPP, and established feasibility in South Asian populations."
+    explanation: "The WHO Global Action Plan for NCDs 2013-2030 (updated from original 2025 target) aims for a one-third reduction in premature mortality (deaths between ages 30-70 years) from cardiovascular disease, cancer, diabetes, and chronic respiratory diseases by 2030. This is achieved through a combination of risk factor reduction (25% reduction in tobacco use, 10% reduction in harmful alcohol use, halt the rise in obesity and diabetes) and strengthening health systems for NCD management. India has incorporated these targets into its National NCD Action Plan."
   },
   {
     id: 38,
-    question: "Primary prevention of cervical cancer includes which of the following vaccines and is most effective when administered at what age?",
-    options: ["HPV vaccine types 6, 11, 16, 18; most effective when given before sexual debut (9-14 years)", "HBV vaccine; most effective after age 18", "HPV vaccine only for women over 25 years", "Combined HPV and HSV vaccine; given after first sexual encounter"],
-    answer: 0,
-    explanation: "Primary prevention of cervical cancer includes HPV vaccination targeting HPV types 16 and 18 (responsible for 70% of cervical cancers) and types 6 and 11 (responsible for genital warts). The vaccine is most effective when administered before sexual debut, ideally at 9-14 years (pre-adolescent girls). India's CERVAVAC (indigenous quadrivalent HPV vaccine) has been developed and approved. Three doses are recommended if started after 15 years; two doses suffice for 9-14 year olds."
+    question: "The first indigenous HPV vaccine developed in India, CERVAVAC, was manufactured by which institution and what strains does it target?",
+    options: ["ICMR; targets HPV 16, 18, 31, 45", "Serum Institute of India; targets HPV 6, 11, 16, and 18 (quadrivalent)", "Bharat Biotech; targets HPV 16 and 18 only (bivalent)", "AIIMS; targets all oncogenic HPV strains"],
+    answer: 1,
+    explanation: "CERVAVAC is India's first indigenous quadrivalent HPV vaccine, developed and manufactured by the Serum Institute of India in collaboration with the Department of Biotechnology. It targets HPV types 6, 11, 16, and 18. Types 16 and 18 are responsible for approximately 70% of cervical cancers globally and in India, while types 6 and 11 cause genital warts. CERVAVAC was approved in 2022 and included in the Universal Immunization Programme for girls aged 9-14 years, making HPV vaccination accessible at lower cost."
   },
   {
     id: 39,
-    question: "The VIA (Visual Inspection with Acetic Acid) test for cervical cancer screening is recommended in low-resource settings primarily because:",
-    options: ["It has higher sensitivity than Pap smear", "It is immediate (results available at same visit), low cost, requires no laboratory, and is suitable for single-visit approach (screen and treat)", "It detects all HPV types", "It is the only WHO-recommended test"],
+    question: "The sensitivity and specificity of VIA (Visual Inspection with Acetic Acid) for detecting CIN 2+ (moderate to severe cervical pre-cancer) compared to colposcopy-directed biopsy is approximately:",
+    options: ["Sensitivity 30-40%, Specificity 95-99% (very specific, not sensitive)", "Sensitivity 70-80%, Specificity 70-80% (moderate sensitivity and specificity)", "Sensitivity 95-98%, Specificity 50-60% (high sensitivity, low specificity)", "Sensitivity 50-60%, Specificity 60-70%"],
     answer: 1,
-    explanation: "VIA (Visual Inspection with Acetic Acid) is recommended for low-resource settings because it provides immediate results (within 1-2 minutes), is low-cost, requires no laboratory infrastructure, and enables a single-visit screen-and-treat approach (treatment with cryotherapy at the same visit). Its sensitivity is approximately 70-80% and specificity 70-80%. WHO recommends VIA-based screening every 3-5 years for women aged 30-49 years where colposcopy and cytology are unavailable."
+    explanation: "Systematic reviews report VIA sensitivity for detecting CIN 2+ approximately 70-80% and specificity approximately 70-80%, with variation depending on provider training, population, and reference standard. While HPV DNA testing has higher sensitivity (approximately 90%), VIA's advantage in low-resource settings is immediate results allowing same-visit treatment. Provider training significantly impacts VIA performance. The WHO recommends VIA as a second-choice screening method after HPV testing."
   },
   {
     id: 40,
-    question: "The current WHO recommendation for cervical cancer screening strategy, in order of preference, is:",
-    options: ["Pap smear first, then VIA, then HPV testing", "HPV DNA testing as first choice, then VIA as second choice, then Pap smear as third choice", "VIA only in developing countries", "Colposcopy for all women over 25 years"],
+    question: "Breast cancer mammography screening programs are evaluated using several metrics. What is 'over-diagnosis' in the context of mammography screening, and why is it a public health concern?",
+    options: ["Diagnosing cancer incorrectly as benign", "Detection and treatment of cancers that would never have caused symptoms or death during a woman's lifetime, leading to unnecessary treatment and harm", "Missing cancers that are present (false negatives)", "Diagnosing benign conditions as cancer"],
     answer: 1,
-    explanation: "WHO's 2021 updated cervical cancer screening and treatment guidelines recommend HPV DNA testing as the first-choice screening test, followed by VIA as the second choice, and cytology (Pap smear) as the third choice for settings with strong laboratory capacity. HPV testing has higher sensitivity (approximately 90%) than VIA or cytology, and when combined with appropriate follow-up, provides more effective cervical cancer prevention."
+    explanation: "Over-diagnosis in mammography screening refers to the detection and treatment of breast cancers that would never have progressed to cause symptoms or death during the woman's natural lifetime. These include slow-growing tumors and ductal carcinoma in situ (DCIS) that may regress spontaneously. Over-diagnosis is a significant public health concern because it leads to unnecessary surgery, radiation, and chemotherapy with attendant harm, anxiety, and cost. Estimates of mammography over-diagnosis range from 11% to 52% of screen-detected cancers, contributing to ongoing debate about optimal screening strategies."
   },
   {
     id: 41,
-    question: "Mammography screening for breast cancer is most commonly recommended for which age group, and at what interval?",
-    options: ["Age 25-40, annually", "Age 40-74, every 1-2 years (recommendations vary by organization)", "Age 50-80, every 5 years", "Age 30-60, every 6 months"],
+    question: "The 'screen-and-treat' approach for cervical cancer prevention, using VIA followed by immediate cryotherapy, is recommended for which clinical scenario?",
+    options: ["Any VIA positive result regardless of lesion size or location", "VIA positive results where the lesion is small enough for cryotherapy (does not extend into the canal, covers less than 75% of the cervix, and is not suspicious for invasive cancer)", "All women over 40 years regardless of VIA result", "Only for women with confirmed HPV infection"],
     answer: 1,
-    explanation: "Mammography screening recommendations vary among organizations but generally target women aged 40-74 years. ACS recommends annual mammography from age 45 (with option to start at 40); USPSTF recommends biennial (every 2 years) mammography for women 40-74 years. In India, due to younger age at presentation and different risk profile, screening recommendations are adapted. Mammography reduces breast cancer mortality by approximately 15-20% in screened populations."
+    explanation: "The single-visit screen-and-treat approach recommends immediate cryotherapy for VIA-positive women when the lesion meets specific criteria: the lesion should not extend into the endocervical canal, should cover less than 75% of the ectocervix, and should not be suspicious for invasive cancer. Women not meeting criteria are referred for colposcopy. This approach maximizes the benefit of single-visit screening by avoiding loss-to-follow-up between screening and treatment visits, which is a major problem in low-resource settings."
   },
   {
     id: 42,
-    question: "Oral visual examination (OVE) as a secondary prevention strategy for oral cancer is particularly relevant in India due to high prevalence of which risk behavior?",
-    options: ["Alcohol consumption only", "Smokeless tobacco use (gutka/khaini/pan masala) and betel nut chewing causing oral submucous fibrosis and leukoplakia", "Cigarette smoking in urban areas", "HPV infection in oral cavity"],
+    question: "The Kerala Oral Cancer Prevention Trial (by Sankaranarayanan et al.) demonstrated that oral visual examination (OVE) by trained health workers reduced oral cancer mortality in which population?",
+    options: ["All adults regardless of risk behavior", "Tobacco users and alcohol drinkers who underwent periodic OVE screening had significant reduction in oral cancer mortality (approximately 34% in high-risk subjects)", "Only patients with existing leukoplakia", "Only women above 45 years"],
     answer: 1,
-    explanation: "Oral visual examination is particularly important in India because of the high prevalence of smokeless tobacco use (gutka, khaini, pan masala) and betel nut (areca nut) chewing, which cause premalignant lesions including oral submucous fibrosis and leukoplakia. India has one of the highest incidences of oral cancer globally. OVE by trained health workers can detect premalignant lesions, and a clinical trial in Kerala demonstrated that OVE-based screening in high-risk individuals reduced oral cancer mortality."
+    explanation: "The landmark cluster randomized controlled trial by Sankaranarayanan et al. in Kerala demonstrated that three rounds of OVE screening at 3-year intervals significantly reduced oral cancer mortality among high-risk subjects (tobacco users and/or alcohol drinkers). The intervention arm showed approximately 34% reduction in oral cancer mortality among high-risk individuals who complied with screening. This is one of the few RCTs demonstrating mortality reduction from cancer screening in a low-resource setting and established evidence for OVE in India."
   },
   {
     id: 43,
-    question: "Betel nut (areca nut) is classified by the International Agency for Research on Cancer (IARC) as:",
-    options: ["Group 2B (possibly carcinogenic)", "Group 1 (carcinogenic to humans), even without tobacco", "Group 2A (probably carcinogenic)", "Not classified as carcinogenic"],
-    answer: 1,
-    explanation: "IARC has classified betel nut (areca nut) as a Group 1 carcinogen (carcinogenic to humans) even in the ABSENCE of tobacco. Areca nut is associated with oral submucous fibrosis and oral cancer. The combination of areca nut with tobacco (as in gutka) significantly amplifies the carcinogenic risk. This is particularly relevant for India where areca nut chewing is culturally prevalent in many regions."
+    question: "Population Attributable Fraction (PAF) for cancer due to tobacco in India is highest for which cancer site?",
+    options: ["Breast cancer", "Cervical cancer", "Lung cancer (and oral cavity cancer due to smokeless tobacco)", "Colorectal cancer"],
+    answer: 2,
+    explanation: "The PAF for tobacco (both smoked and smokeless forms) in India is highest for lung cancer (approximately 85-90% of lung cancers attributable to tobacco) and oral cavity/oropharyngeal cancers (approximately 80-85% attributable to tobacco and areca nut, reflecting India's unique smokeless tobacco burden). The combination of bidi and cigarette smoking for lung cancer and gutka/khaini use for oral cancers creates India's distinctive tobacco-attributable cancer profile. India has one of the highest burdens of oral cancer globally due to smokeless tobacco use."
   },
   {
     id: 44,
-    question: "Hepatitis B virus (HBV) vaccination as primary prevention is critically important for preventing which cancer?",
-    options: ["Pancreatic cancer", "Hepatocellular carcinoma (liver cancer)", "Cholangiocarcinoma", "Colorectal cancer"],
+    question: "Helicobacter pylori eradication as a primary prevention strategy for gastric cancer has been supported by evidence from which type of studies?",
+    options: ["Only case-control studies", "Randomized controlled trials showing that H. pylori eradication reduces gastric cancer incidence by approximately 30-50% in high-incidence populations", "Only animal experiments", "Ecological studies with no RCT evidence"],
     answer: 1,
-    explanation: "HBV vaccination is a primary prevention strategy for hepatocellular carcinoma (HCC/liver cancer). Chronic HBV infection is the leading cause of HCC globally, responsible for approximately 50-55% of HCC cases. Universal infant HBV vaccination has been shown to dramatically reduce HCC incidence in countries like Taiwan. India's Universal Immunization Programme includes HBV vaccine at birth, 6 weeks, 10 weeks, and 14 weeks."
+    explanation: "Multiple RCTs, particularly from East Asian high-incidence populations (China, Japan, South Korea), have demonstrated that H. pylori eradication with antibiotic therapy reduces the incidence of gastric cancer by approximately 30-50%. A Cochrane review and multiple meta-analyses support this evidence. The benefit is greater when eradication occurs before premalignant lesions (intestinal metaplasia) develop. This has led to population-level H. pylori eradication programs in some high-incidence countries and WHO recognition of H. pylori eradication as a cancer prevention strategy."
   },
   {
     id: 45,
-    question: "Asbestos is classified as a Group 1 carcinogen and is primarily associated with which malignancy in occupationally exposed workers?",
-    options: ["Lung adenocarcinoma only", "Mesothelioma (pleural and peritoneal) and lung cancer", "Bladder cancer", "Leukemia"],
+    question: "Aflatoxin contamination of foods is monitored by food safety authorities as part of which regulatory framework, and what is the maximum permissible limit for aflatoxin B1 in food commodities in India?",
+    options: ["No regulatory limits exist in India for aflatoxins", "FSSAI regulations set limits of 10 micrograms per kilogram (10 ppb) for aflatoxin B1 in food", "FSSAI permits up to 50 micrograms per kg for aflatoxin B1", "Only aflatoxin M1 in milk is regulated; groundnut aflatoxins are unregulated"],
     answer: 1,
-    explanation: "Asbestos (all forms - chrysotile, crocidolite, amosite) is classified as a Group 1 carcinogen and is the primary cause of malignant mesothelioma (cancer of the pleura and peritoneum). Asbestos exposure also significantly increases lung cancer risk, particularly in smokers (synergistic effect). The latency period for mesothelioma is typically 20-50 years after exposure. Despite banning in many countries, asbestos remains in use in some industries in India."
+    explanation: "FSSAI regulations set maximum limits for aflatoxins in foods in India. The limit for total aflatoxins (B1+B2+G1+G2) in most food commodities is 10 micrograms per kilogram (10 ppb), with aflatoxin B1 specifically limited to 10 ppb. For aflatoxin M1 in milk, the limit is 0.5 ppb. India also has aflatoxin limits for groundnuts, spices, and maize. Aflatoxin monitoring is important given India's tropical climate favoring Aspergillus growth and significant groundnut, spice, and cereal production."
   },
   {
     id: 46,
-    question: "Benzene is a Group 1 carcinogen particularly associated with which type of cancer in occupationally exposed workers?",
-    options: ["Liver cancer", "Leukemia (particularly acute myeloid leukemia - AML)", "Bladder cancer", "Mesothelioma"],
+    question: "Occupational exposure to which carcinogen is specifically associated with increased risk of bladder cancer, and in which occupational groups is this risk highest?",
+    options: ["Benzene; rubber workers", "Aromatic amines (beta-naphthylamine, benzidine); dye, rubber, and leather workers", "Asbestos; construction workers", "Vinyl chloride; PVC workers"],
     answer: 1,
-    explanation: "Benzene is classified as a Group 1 carcinogen and is primarily associated with leukemia, particularly acute myeloid leukemia (AML) and other hematological malignancies including non-Hodgkin lymphoma and multiple myeloma. Benzene is found in petroleum products, rubber industry, shoe manufacturing, and traffic-related air pollution. Workers in petrochemical, rubber, and paint industries have the highest occupational exposure."
+    explanation: "Aromatic amines, particularly beta-naphthylamine and benzidine, are IARC Group 1 carcinogens specifically associated with bladder cancer. Workers in dye manufacturing, rubber industry, leather goods manufacturing, and printing are at highest risk. These chemicals are absorbed through the skin and lungs, metabolized to carcinogenic N-hydroxy compounds, and concentrated in the bladder during excretion, causing urothelial damage. Occupational bladder cancer prevention requires workplace exposure monitoring, substitution with safer chemicals, and personal protective equipment."
   },
   {
     id: 47,
-    question: "Vinyl chloride monomer is a Group 1 carcinogen associated with which rare cancer?",
-    options: ["Mesothelioma", "Hepatic angiosarcoma (liver blood vessel tumor)", "Hepatocellular carcinoma", "Cholangiocarcinoma"],
+    question: "UV radiation as a risk factor for skin cancer: WHO's INTERSUN program promotes which primary prevention measure at the population level to reduce UV exposure?",
+    options: ["Avoiding all outdoor activity", "Use of UV Index to guide sun protection behavior, promotion of sun-protective clothing, sunscreens, and shade-seeking especially between 10am-4pm when UV is highest", "Mandatory sunscreen use laws", "Reducing stratospheric ozone depletion"],
     answer: 1,
-    explanation: "Vinyl chloride monomer (VCM), used in the production of polyvinyl chloride (PVC), is classified as a Group 1 carcinogen and is specifically associated with hepatic angiosarcoma, a rare and highly aggressive cancer of the blood vessels of the liver. Workers in PVC manufacturing plants are primarily at risk. The latency period can be 10-30 years. This association was first identified in workers at B.F. Goodrich facilities in the 1970s."
+    explanation: "WHO's INTERSUN Global UV Project promotes population-level skin cancer prevention through the UV Index - a standardized measure of UV radiation intensity published in weather forecasts. Prevention messages include using the UV Index to guide protection decisions, seeking shade (especially 10am-4pm), wearing sun-protective clothing and hats, using SPF 30+ broad-spectrum sunscreen, and avoiding sun beds. In India, although skin cancer is less common than in fair-skinned populations, UV protection is increasingly important especially in outdoor workers."
   },
   {
     id: 48,
-    question: "Helicobacter pylori (H. pylori) is classified as a Group 1 carcinogen associated with which cancers?",
-    options: ["Esophageal cancer and colorectal cancer", "Gastric cancer (adenocarcinoma) and gastric MALT lymphoma", "Pancreatic cancer and liver cancer", "Oral cancer and pharyngeal cancer"],
+    question: "The WHO best buys for cancer prevention include which set of interventions classified as highly cost-effective with strong evidence?",
+    options: ["Screening all adults over 30 for all cancers", "Tobacco taxation and smoke-free policies, HPV vaccination, hepatitis B vaccination, and VIA-based cervical cancer screening in LMICs", "Providing chemoprevention drugs (tamoxifen) to all women", "Universal cancer genetic testing programs"],
     answer: 1,
-    explanation: "H. pylori, classified as a Group 1 carcinogen by IARC, is causally associated with gastric adenocarcinoma (approximately 75% of non-cardia gastric cancers are attributable to H. pylori) and gastric MALT (Mucosa-Associated Lymphoid Tissue) lymphoma. H. pylori eradication has been shown to reduce gastric cancer risk and is the treatment of choice for MALT lymphoma. India has high H. pylori prevalence (70-80%), contributing to gastric cancer burden."
+    explanation: "WHO best buys for cancer prevention include: tobacco taxation and comprehensive tobacco control (MPOWER) for tobacco-related cancers; HPV vaccination for cervical cancer prevention; Hepatitis B vaccination for liver cancer prevention; VIA-based cervical cancer screening for early detection in LMICs; and hepatitis C treatment for liver cancer prevention. These are considered best buys because they are highly cost-effective, feasible in resource-limited settings, and address the largest preventable cancer burdens globally."
   },
   {
     id: 49,
-    question: "Aflatoxin B1, produced by Aspergillus species contaminating stored grains and nuts, is a Group 1 carcinogen primarily associated with which cancer?",
-    options: ["Colorectal cancer", "Hepatocellular carcinoma (liver cancer), synergistic with HBV", "Esophageal cancer", "Lung cancer"],
+    question: "In cancer screening program evaluation, 'lead time bias' refers to which phenomenon that can falsely appear to show benefit?",
+    options: ["Bias introduced by selecting healthier individuals for screening (healthy volunteer effect)", "The apparent improvement in survival after diagnosis that occurs simply because cancer is detected earlier, without the patient actually living longer (earlier detection extends time from diagnosis to death without changing time from birth to death)", "Detecting slow-growing cancers that would not have caused death (over-diagnosis)", "Differences in treatment quality between screened and unscreened groups"],
     answer: 1,
-    explanation: "Aflatoxin B1 is the most potent naturally occurring carcinogen known, produced by Aspergillus flavus and A. parasiticus contaminating stored cereals, groundnuts, and spices in humid conditions. It is classified as a Group 1 carcinogen primarily associated with hepatocellular carcinoma. Crucially, aflatoxin B1 and HBV infection act SYNERGISTICALLY - individuals with both HBV infection and aflatoxin exposure have 30-fold higher HCC risk than those with HBV alone (5-fold). This is highly relevant in tropical regions including parts of India."
+    explanation: "Lead time bias occurs when screening detects cancer earlier in its natural history, increasing the apparent survival time from diagnosis to death, without actually extending the patient's total lifespan. For example, if cancer would normally present symptomatically at age 60 and cause death at age 63 (3-year survival), but screening detects it at age 57, the patient still dies at 63 but now appears to have had 6-year survival. This falsely appears to show benefit. Properly designed randomized controlled trials measuring cause-specific mortality rather than survival are needed to avoid lead time bias."
   },
   {
     id: 50,
-    question: "Epstein-Barr virus (EBV) is associated with which of the following malignancies?",
-    options: ["Nasopharyngeal carcinoma, Burkitt lymphoma, Hodgkin lymphoma, and post-transplant lymphoproliferative disorder", "Cervical cancer and anal cancer only", "Hepatocellular carcinoma and MALT lymphoma", "Kaposi's sarcoma and primary CNS lymphoma only"],
-    answer: 0,
-    explanation: "EBV (also known as Human Herpesvirus 4) is classified as a Group 1 carcinogen associated with multiple malignancies: nasopharyngeal carcinoma (NPC, especially in Southeast Asian and North African populations), Burkitt lymphoma (endemic form), Hodgkin lymphoma (EBV-positive cases), and post-transplant lymphoproliferative disorder (PTLD) in immunocompromised individuals. EBV is also associated with gastric carcinoma (EBV-associated gastric cancer) in a subset of gastric adenocarcinomas."
+    question: "ICMR's cancer research priorities for NCD prevention in India focus primarily on which areas given India's specific cancer epidemiology?",
+    options: ["Exclusively on chemotherapy drug development", "Population-based cancer registries to establish incidence/mortality data, tobacco-related cancer prevention research, cervical cancer screening optimization, oral cancer early detection, and cancer risk factor surveillance in Indian populations", "Only genetic research on cancer susceptibility", "Clinical trials of imported cancer drugs"],
+    answer: 1,
+    explanation: "ICMR's cancer research priorities reflect India's cancer burden profile: (1) expanding the National Cancer Registry Programme (NCRP) to improve population-based incidence and mortality data; (2) tobacco-related cancer prevention research given India's unique smokeless and smoked tobacco burden; (3) optimizing cervical cancer screening for Indian conditions including evaluation of HPV testing vs VIA; (4) oral cancer early detection and OVE program optimization; (5) establishing cancer risk factor PAFs using Indian data; and (6) evaluating indigenous CERVAVAC HPV vaccine effectiveness. These priorities address cancers where India has the highest burden and greatest prevention potential."
   },
 ];
 

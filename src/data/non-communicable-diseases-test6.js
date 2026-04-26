@@ -1,353 +1,603 @@
 const questions = [
   {
     id: 1,
-    question: "According to the GOLD (Global Initiative for Chronic Obstructive Lung Disease) definition, COPD is characterized by persistent airflow limitation that is usually progressive and associated with an enhanced chronic inflammatory response. The post-bronchodilator spirometric criterion for COPD diagnosis is:",
-    options: ["FEV1/FVC ratio < 0.8", "FEV1/FVC ratio < 0.7", "FEV1 < 80% of predicted", "FVC < 70% of predicted"],
+    question: "The Burden of Obstructive Lung Disease (BOLD) study used a standardized protocol to estimate COPD prevalence using post-bronchodilator spirometry. The primary reason spirometry-based surveys are considered the gold standard for COPD prevalence estimation over questionnaire-based surveys is:",
+    options: [
+      "Questionnaires are more expensive to administer than spirometers",
+      "COPD is largely asymptomatic in early stages and spirometry detects airflow obstruction before symptoms appear, reducing under-estimation",
+      "Spirometry measures blood oxygen saturation accurately",
+      "Questionnaire-based surveys require longer field time than spirometry"
+    ],
     answer: 1,
-    explanation: "GOLD defines COPD as post-bronchodilator FEV1/FVC ratio < 0.7 (fixed ratio). This ratio confirms persistent airflow limitation and is the standard spirometric criterion for COPD diagnosis globally, including in India. Using the fixed ratio (< 0.7) rather than the lower limit of normal (LLN) is the GOLD-recommended approach for clinical diagnosis."
+    explanation: "COPD is frequently underdiagnosed because it remains asymptomatic or mildly symptomatic until significant lung function loss has occurred. Questionnaire-based surveys that rely on self-reported symptoms (cough, breathlessness) substantially underestimate true COPD prevalence. Post-bronchodilator spirometry, using the GOLD criterion of FEV1/FVC < 0.7, detects persistent airflow limitation regardless of symptom status. The BOLD study used this standardized spirometric protocol across 41 sites internationally, and Indian data from BOLD showed COPD prevalence of approximately 7-14% in adults aged 40 years and above."
   },
   {
     id: 2,
-    question: "As per GOLD 2023 guidelines, a patient with COPD has post-bronchodilator FEV1/FVC < 0.7 and FEV1 of 45% of predicted. This patient would be classified as GOLD stage:",
-    options: ["GOLD 1 (Mild)", "GOLD 2 (Moderate)", "GOLD 3 (Severe)", "GOLD 4 (Very Severe)"],
+    question: "According to the Global Burden of Disease (GBD) 2019 study, the estimated number of people living with COPD in India was approximately:",
+    options: [
+      "10 million",
+      "25 million",
+      "55 million",
+      "90 million"
+    ],
     answer: 2,
-    explanation: "GOLD staging is based on post-bronchodilator FEV1 % predicted (with FEV1/FVC < 0.7 confirmed): GOLD 1 (Mild): FEV1 >= 80%; GOLD 2 (Moderate): 50% <= FEV1 < 80%; GOLD 3 (Severe): 30% <= FEV1 < 50%; GOLD 4 (Very Severe): FEV1 < 30%. An FEV1 of 45% falls in the 30-50% range, making this GOLD 3 (Severe)."
+    explanation: "GBD 2019 estimates indicate approximately 55 million people in India live with COPD, the highest absolute burden of any country globally. India accounts for approximately one-third of the global COPD burden. The high burden is attributable to high tobacco smoking prevalence (particularly bidi smoking), widespread biomass fuel combustion for cooking and heating, outdoor air pollution, occupational dust exposures, and a large and ageing population base. COPD was the second leading cause of death in India in GBD 2019."
   },
   {
     id: 3,
-    question: "In India, a major and unique risk factor for COPD in women in rural areas, distinct from the pattern seen in developed countries, is:",
-    options: ["Cigarette smoking", "Biomass fuel combustion for cooking", "Occupational dust exposure in factories", "Outdoor air pollution from vehicles"],
-    answer: 1,
-    explanation: "In India, biomass fuel (wood, cow dung, crop residue) combustion for cooking and heating is a major risk factor for COPD in women, particularly in rural areas. Women spend long hours cooking in poorly ventilated kitchens, leading to high levels of indoor smoke exposure. This is a significant epidemiological difference from developed countries where cigarette smoking predominates as the primary COPD risk factor in both sexes."
+    question: "Population attributable fraction (PAF) analysis of COPD risk factors in India reveals that the relative contribution of biomass fuel exposure compared to tobacco smoking differs from high-income countries. In Indian women with COPD, the PAF for biomass fuel combustion is estimated to be:",
+    options: [
+      "Less than 10% because most Indian women do not smoke",
+      "Around 50%, similar to tobacco smoking in men",
+      "Greater than 50%, making it the dominant attributable risk in this group",
+      "Negligible as indoor air pollution does not cause COPD"
+    ],
+    answer: 2,
+    explanation: "In Indian women, biomass fuel combustion accounts for more than 50% of the population attributable fraction for COPD, making it the dominant risk factor in this demographic. Studies from Kolkata, Delhi, and rural south India have consistently shown that women who cook with biomass fuels (wood, cow dung, crop residue) on traditional chulhas in poorly ventilated kitchens have 2-4 times the COPD risk compared to women using clean fuels. This is epidemiologically distinct from men, where tobacco (particularly bidi) smoking is the primary risk factor. The Pradhan Mantri Ujjwala Yojana (PMUY) distributing LPG connections to BPL households is a key COPD prevention policy."
   },
   {
     id: 4,
-    question: "The Global Burden of Disease (GBD) study indicates that India has one of the highest burdens of COPD globally. The estimated number of COPD cases in India is approximately:",
-    options: ["5 million", "15 million", "55 million", "100 million"],
-    answer: 2,
-    explanation: "India bears a disproportionately high burden of COPD. GBD estimates suggest approximately 55 million people in India are affected by COPD, making it one of the countries with the highest absolute number of COPD cases globally. This large burden is attributed to high rates of tobacco smoking, extensive biomass fuel use, occupational exposures, and a large population base."
+    question: "The Indian Study on Epidemiology of Asthma, Respiratory Symptoms and Chronic Bronchitis (INSEARCH) is a landmark multi-site Indian epidemiology study. Which of the following findings is most consistent with INSEARCH study data on COPD prevalence?",
+    options: [
+      "COPD prevalence was uniform across all Indian states at approximately 2%",
+      "COPD prevalence among adults aged 35 years and above was approximately 4-6% overall, with higher rates in rural areas",
+      "COPD was found exclusively in smokers with no cases among non-smokers",
+      "COPD prevalence was higher in women than men across all sites"
+    ],
+    answer: 1,
+    explanation: "The INSEARCH study, conducted across 12 sites in India representing different geographical and socioeconomic contexts, found COPD prevalence (based on spirometry) of approximately 4-6% among adults aged 35 years and above. The study showed significant heterogeneity across sites, with higher rates in northern and central India. Importantly, INSEARCH confirmed substantial COPD prevalence among non-smokers (particularly women with biomass fuel exposure), underscoring that tobacco-centric COPD prevention strategies are insufficient for India. The study also highlighted the significant undiagnosed fraction."
   },
   {
     id: 5,
-    question: "During an acute exacerbation of COPD (AECOPD), the first-line bronchodilator treatment that should be administered is:",
-    options: ["Long-acting beta-2 agonist (LABA) inhaler", "Short-acting beta-2 agonist (SABA) with or without short-acting anticholinergic", "Intravenous aminophylline", "Oral montelukast"],
+    question: "COPD mortality trends in India from GBD data show that COPD age-standardized death rates in India have been changing over time. The most accurate description of this trend is:",
+    options: [
+      "COPD age-standardized death rates have increased rapidly due to tobacco and pollution",
+      "COPD age-standardized death rates have declined over recent decades due to reduced biomass fuel use and tobacco control, but absolute deaths continue to rise due to population growth and ageing",
+      "COPD death rates are stable and have not changed in 30 years",
+      "India has lower COPD death rates than global averages"
+    ],
     answer: 1,
-    explanation: "During AECOPD, short-acting bronchodilators (SABDs) are the mainstay of acute treatment. Short-acting beta-2 agonists (SABAs like salbutamol) with or without short-acting muscarinic antagonists (SAMAs like ipratropium) are recommended as first-line bronchodilators. Systemic corticosteroids (prednisolone 40 mg/day for 5 days) and antibiotics (if indicated by increased sputum purulence) are also key components of AECOPD management."
+    explanation: "GBD data show a paradox: COPD age-standardized death rates have declined in India due to improvements in nutrition, reduced childhood respiratory infections (which impair lung development), some reduction in biomass fuel use, and tobacco control measures. However, absolute COPD deaths have increased because of population growth and demographic ageing. India had approximately 1 million COPD deaths in GBD 2019. This pattern — declining age-standardized rates but rising absolute burden — is characteristic of many NCDs in India's epidemiological transition."
   },
   {
     id: 6,
-    question: "A key spirometric feature that helps differentiate COPD from bronchial asthma is:",
-    options: ["FEV1/FVC ratio < 0.7", "Significant bronchodilator reversibility (FEV1 increase > 12% and 200 mL post-bronchodilator)", "Low peak expiratory flow rate", "Reduced FVC"],
+    question: "The Air Quality Index (AQI) in India is calculated by the Central Pollution Control Board (CPCB). Epidemiological evidence on ambient air pollution and respiratory disease in Indian cities shows that for every 10 microgram/m3 increase in PM2.5 concentration, respiratory mortality risk increases by approximately:",
+    options: [
+      "Less than 0.5%",
+      "1-3%",
+      "10-15%",
+      "50-60%"
+    ],
     answer: 1,
-    explanation: "Significant bronchodilator reversibility (increase in FEV1 > 12% AND > 200 mL above baseline after bronchodilator) favors a diagnosis of asthma over COPD. In COPD, airflow limitation is not fully reversible - the FEV1/FVC ratio remains < 0.7 post-bronchodilator. In asthma, airflow limitation is typically variable and reversible. However, overlap (ACO - Asthma-COPD Overlap) can occur, especially in older smokers with history of asthma."
+    explanation: "Meta-analyses of cohort studies from Asia, including pooled analysis from India, show that each 10 microgram/m3 increase in long-term PM2.5 exposure is associated with a 1-3% increase in all-cause respiratory mortality. For COPD-specific mortality, the effect is somewhat larger. Most Indian cities regularly exceed the NAAQS (National Ambient Air Quality Standard) for PM2.5 of 60 microgram/m3 annual mean (itself 12 times the revised WHO guideline of 5 microgram/m3). The National Clean Air Programme (NCAP) launched in 2019 targets 20-30% reduction in PM2.5 in 102 non-attainment cities by 2024."
   },
   {
     id: 7,
-    question: "The Global Asthma Network (GAN) Phase I study found that the prevalence of asthma symptoms in Indian children (6-7 years) was approximately:",
-    options: ["2-3%", "6-7%", "12-15%", "20-25%"],
+    question: "Asthma prevalence among Indian children: The Global Asthma Network (GAN) Phase I study in India and prior ISAAC (International Study of Asthma and Allergies in Childhood) data show that asthma prevalence in 13-14 year old Indian adolescents has been:",
+    options: [
+      "Declining over time, now below 2%",
+      "Increasing in urban areas, with urban adolescents showing higher prevalence (approximately 6-10%) than rural adolescents",
+      "Uniform at 15% across all states regardless of urbanization",
+      "Higher in rural than urban adolescents due to farm exposures"
+    ],
     answer: 1,
-    explanation: "Studies including the Global Asthma Network data suggest asthma symptom prevalence in Indian children aged 6-7 years is approximately 6-7%, though there is considerable regional variation. India has a large absolute burden due to its population size. Urban children tend to have higher rates than rural children, attributed to outdoor air pollution, allergen exposure, and the 'hygiene hypothesis'."
+    explanation: "ISAAC Phase I to III data from India and GAN data show that asthma symptom prevalence is higher in urban Indian adolescents (approximately 6-10% for current wheeze in 13-14 year olds) compared to rural counterparts. Urban asthma is associated with outdoor air pollution, indoor allergen exposure (house dust mite, cockroach), reduced microbial diversity (hygiene hypothesis), and increased obesity. India has an estimated 30-35 million people with asthma, of whom children form a substantial proportion. The National Programme for Prevention and Control of Asthma (under NP-NCD) focuses on awareness and spirometry access."
   },
   {
     id: 8,
-    question: "Which of the following is the most important modifiable risk factor for the development of bronchial asthma in genetically susceptible individuals?",
-    options: ["Exposure to indoor allergens (house dust mite, cockroach, mold)", "Air pollution from industry", "Consumption of processed foods", "Physical inactivity"],
-    answer: 0,
-    explanation: "Indoor allergen exposure, particularly house dust mite (HDM), cockroach allergens, pet dander, and mold, is the most important modifiable environmental risk factor for asthma development and exacerbation in genetically susceptible individuals. In India, house dust mite is the predominant allergen. Sensitization to indoor allergens in early childhood is a key trigger for asthma development. Other risk factors include tobacco smoke, respiratory infections, obesity, and occupational exposures."
+    question: "The WHO Global Burden of Disease attributable to household air pollution from solid fuel use is estimated globally. The fraction of COPD deaths attributable to household air pollution from solid fuels globally, according to GBD estimates, is approximately:",
+    options: [
+      "Less than 5%",
+      "About 30-40%",
+      "About 70-80%",
+      "Almost 100%"
+    ],
+    answer: 1,
+    explanation: "GBD 2019 estimates that household air pollution from solid fuel combustion is responsible for approximately 30-40% of global COPD deaths, making it one of the two dominant COPD risk factors alongside tobacco smoking. In South Asia, this fraction is even higher due to the extensive use of biomass fuels. Globally, household air pollution from solid fuels causes approximately 3.8 million premature deaths per year from all causes (COPD, pneumonia, ischemic heart disease, stroke, lung cancer). India bears the highest national burden due to its large population still using solid fuels."
   },
   {
     id: 9,
-    question: "A peak flow meter is used to measure peak expiratory flow rate (PEFR) in asthma management. The 'traffic light' system for asthma self-management uses PEFR % of personal best. A PEFR of 40-60% of personal best indicates:",
-    options: ["Green zone - continue regular medications", "Yellow/Amber zone - increase reliever medication and seek medical advice", "Red zone - emergency treatment needed", "Blue zone - reduce medications"],
+    question: "Occupational lung disease surveillance in India: Which of the following is the largest category of occupational lung disease by estimated prevalence in India?",
+    options: [
+      "Byssinosis (cotton textile workers)",
+      "Silicosis (stone quarry, mining, and sandblasting workers)",
+      "Asbestosis (shipbreaking and construction workers)",
+      "Occupational asthma from isocyanate exposure"
+    ],
     answer: 1,
-    explanation: "The traffic light asthma action plan uses PEFR % of personal best: Green zone (> 80%): well-controlled, continue regular medications; Yellow/Amber zone (50-80%): caution, increase reliever bronchodilator, consider oral corticosteroids, seek medical advice; Red zone (< 50%): emergency, use reliever immediately, seek urgent medical care or go to hospital. A PEFR of 40-60% falls in the amber/yellow zone requiring increased treatment and medical consultation."
+    explanation: "Silicosis (caused by inhalation of crystalline silica dust) is the most prevalent occupational lung disease in India, with an estimated 3-6 million workers at risk and hundreds of thousands of cases. High-risk industries include stone quarrying (Rajasthan, Andhra Pradesh), mining (coal and metal mines), agate industry (Khambhat, Gujarat), sandblasting, construction, and foundry work. India's Rajasthan state, with its extensive sandstone quarrying, has the highest burden. Silicosis is recognized under the Employees' State Insurance Act and Factories Act, and the National Silicosis Policy (2013) mandated dust control measures and compensation for silicosis victims."
   },
   {
     id: 10,
-    question: "Pulmonary rehabilitation (PR) in COPD is a comprehensive intervention. The minimum duration recommended for a pulmonary rehabilitation program to achieve clinically meaningful improvements in exercise capacity and quality of life is:",
-    options: ["2 weeks", "4 weeks", "6-8 weeks", "12 months"],
-    answer: 2,
-    explanation: "GOLD guidelines recommend that pulmonary rehabilitation programs should be at least 6-8 weeks in duration (with some evidence suggesting 8 weeks provides better outcomes than 4 weeks) to achieve clinically meaningful improvements in exercise capacity (6-minute walk distance) and health-related quality of life. PR programs typically include exercise training, education, nutritional counseling, and psychosocial support. PR is one of the most cost-effective interventions in COPD management."
+    question: "COPD exacerbation epidemiology in India: Acute exacerbations of COPD (AECOPD) are major drivers of COPD mortality and hospitalization costs. Studies show that moderate-to-severe COPD patients in India experience on average how many exacerbations per year?",
+    options: [
+      "Less than 0.5 exacerbations per year",
+      "1-2 exacerbations per year",
+      "5-6 exacerbations per year",
+      "More than 10 exacerbations per year"
+    ],
+    answer: 1,
+    explanation: "Studies from India show that patients with moderate-to-severe COPD experience approximately 1-2 exacerbations per year on average, consistent with global COPD literature. However, a subgroup of patients (approximately 20-30%) are 'frequent exacerbators' (2 or more exacerbations per year) and drive disproportionate healthcare costs. In India, respiratory infections (particularly Streptococcus pneumoniae, Haemophilus influenzae, and influenza viruses) are the most common triggers of AECOPD. Air pollution episodes (dust storms, crop burning-related haze) are associated with AECOPD clustering, particularly in north India."
   },
   {
     id: 11,
-    question: "Indoor air pollution from biomass fuel combustion in India is measured by a key particulate matter indicator. The PM2.5 concentration in kitchens using biomass fuels in India can exceed WHO guidelines by how much?",
-    options: ["2-5 times the WHO guideline of 15 ug/m3 annual mean", "10-50 times the WHO guideline", "Equal to WHO guideline levels", "Below WHO guideline levels"],
+    question: "Pulmonary function survey methodology: When conducting a population-based spirometry survey in India, which quality control criterion is mandatory for a spirometric test to be considered acceptable according to ATS/ERS standards?",
+    options: [
+      "The patient must be aged above 50 years and have smoked for at least 10 pack-years",
+      "At least 3 technically acceptable maneuvers with start-of-test criteria met, good effort plateau, and FEV1 and FVC values within 150 mL of each other (reproducibility criterion)",
+      "The FVC must be above 3 liters for men and above 2 liters for women",
+      "A peak expiratory flow rate above 500 L/min must be achieved"
+    ],
     answer: 1,
-    explanation: "Studies from India have consistently shown that PM2.5 concentrations in kitchens using biomass fuels (wood, cow dung, crop residue) can reach 500-2000 ug/m3 during cooking, which is 10-50 times or more above the WHO annual mean PM2.5 guideline of 5 ug/m3 (revised 2021). This massive exposure contributes to COPD, acute lower respiratory infections, lung cancer, and cardiovascular disease. The Pradhan Mantri Ujjwala Yojana (PMUY) aims to provide LPG connections to reduce biomass exposure."
+    explanation: "ATS/ERS 2019 spirometry standards require: (1) Acceptability: at least 3 acceptable maneuvers with good start (back-extrapolated volume < 5% FVC or < 0.1 L), absence of cough in first second, no early termination; (2) Reproducibility: FEV1 and FVC from the best two acceptable maneuvers must be within 150 mL of each other (or 100 mL if FVC < 1 L). These quality criteria are essential in population surveys like BOLD and INSEARCH to ensure that COPD prevalence estimates are not inflated by poor-quality spirometry. Training field technicians and using dedicated spirometry quality control software are critical for large-scale Indian surveys."
   },
   {
     id: 12,
-    question: "Occupational COPD is an important entity. Which of the following occupational exposures is most strongly associated with the development of occupational COPD in India?",
-    options: ["Keyboard and computer use", "Coal dust and silica dust exposure in mining", "Fluorescent lighting exposure", "Air-conditioned office environments"],
+    question: "The BOLD (Burden of Obstructive Lung Disease) study provided spirometry-based COPD prevalence estimates globally. The key methodological innovation of the BOLD study compared to earlier epidemiological surveys was:",
+    options: [
+      "Using self-reported doctor diagnosis of COPD as the primary outcome",
+      "Standardized post-bronchodilator spirometry with a centralized quality control protocol and harmonized analysis, enabling valid comparisons across sites globally",
+      "Restricting the study only to smokers with 20 or more pack-years",
+      "Using peak expiratory flow rate instead of FEV1/FVC as the primary diagnostic criterion"
+    ],
     answer: 1,
-    explanation: "Coal dust and silica dust exposure in mining (coal miners, stone quarry workers, sandblasters) is strongly associated with occupational COPD in India. Other significant occupational causes include cotton dust (byssinosis in textile workers), grain dust, cadmium fumes, isocyanates, and biomass/wood dust. The Ministry of Labour estimates millions of Indian workers are exposed to occupational respiratory hazards. Occupational COPD may account for 10-20% of all COPD in industrialized populations."
+    explanation: "The BOLD study's key innovation was standardizing the entire spirometry protocol: validated equipment calibration, centralized technician training, standardized pre-bronchodilator and post-bronchodilator (400 mcg salbutamol) spirometry, and centralized quality grading of all spirograms. This enabled valid cross-national comparisons of COPD prevalence. Earlier surveys used varying definitions and methods, making comparisons unreliable. BOLD found that COPD prevalence varied from 3.7% to 19.0% across 41 sites globally, with India showing significant site-to-site variation based on smoking rates and biomass fuel use."
   },
   {
     id: 13,
-    question: "According to Kidney Disease: Improving Global Outcomes (KDIGO) guidelines, Chronic Kidney Disease (CKD) is defined as abnormalities of kidney structure or function, present for more than:",
-    options: ["1 month", "2 months", "3 months", "6 months"],
-    answer: 2,
-    explanation: "KDIGO defines CKD as abnormalities of kidney structure or function, present for more than 3 months, with implications for health. The 3-month threshold distinguishes CKD from acute kidney injury (AKI). CKD diagnosis requires either: eGFR < 60 mL/min/1.73m2, OR markers of kidney damage (albuminuria, urine sediment abnormalities, imaging abnormalities, history of kidney transplant), present for more than 3 months."
+    question: "The SEEK (Screening and Early Evaluation of Kidney Disease) study was a cross-sectional CKD prevalence study in India. The SEEK study found CKD prevalence of approximately 17% in the studied population. Which definition of CKD was used in SEEK to identify prevalent CKD cases?",
+    options: [
+      "Self-reported kidney disease or dialysis use only",
+      "eGFR < 60 mL/min/1.73m2 or presence of proteinuria (dipstick 1+ or above) measured at a single time point",
+      "Serum creatinine above 2 mg/dL on two occasions at least 3 months apart",
+      "History of recurrent urinary tract infections"
+    ],
+    answer: 1,
+    explanation: "The SEEK study used a cross-sectional design measuring eGFR (estimated GFR using MDRD equation) and dipstick proteinuria to identify CKD at a single time point, defining CKD as eGFR < 60 mL/min/1.73m2 OR proteinuria 1+ or above. The 17.2% prevalence found in SEEK is likely an overestimate of true CKD prevalence because single-point measurements cannot distinguish true CKD (requiring >3 months duration) from acute kidney disease or transient proteinuria. Despite this limitation, SEEK provided the most comprehensive national data on CKD burden in India and highlighted that most CKD cases (stages 1-3) were undiagnosed and unaware of their condition."
   },
   {
     id: 14,
-    question: "KDIGO classifies CKD into stages based on GFR. A patient with eGFR of 25 mL/min/1.73m2 would be classified as CKD stage:",
-    options: ["Stage 2 (eGFR 60-89)", "Stage 3b (eGFR 30-44)", "Stage 4 (eGFR 15-29)", "Stage 5 (eGFR < 15)"],
+    question: "CKD-MBD (Chronic Kidney Disease - Mineral Bone Disorder) is a systemic complication of CKD. From a population epidemiology perspective, which stage of CKD does secondary hyperparathyroidism typically begin to emerge as a significant population-level complication?",
+    options: [
+      "CKD Stage 1 (eGFR >= 90)",
+      "CKD Stage 2 (eGFR 60-89)",
+      "CKD Stage 3 (eGFR 30-59), particularly Stage 3b",
+      "Only at CKD Stage 5 (ESRD requiring dialysis)"
+    ],
     answer: 2,
-    explanation: "KDIGO GFR-based CKD staging: Stage 1: eGFR >= 90 (with kidney damage markers); Stage 2: eGFR 60-89; Stage 3a: eGFR 45-59; Stage 3b: eGFR 30-44; Stage 4: eGFR 15-29; Stage 5: eGFR < 15 (kidney failure/ESRD). An eGFR of 25 mL/min/1.73m2 falls in Stage 4, which is severely decreased kidney function and the stage where preparation for renal replacement therapy begins."
+    explanation: "Secondary hyperparathyroidism (SHPT), a key manifestation of CKD-MBD, begins to emerge at CKD Stage 3 (eGFR 30-59 mL/min/1.73m2), particularly in Stage 3b (eGFR 30-44). At this stage, reduced renal activation of vitamin D (calcitriol) and impaired phosphate excretion trigger PTH elevation. By Stage 4-5, SHPT becomes nearly universal. From a public health surveillance perspective, monitoring PTH and mineral markers should begin at Stage 3. This is particularly relevant in India where baseline vitamin D deficiency is already prevalent in the general population, potentially accelerating CKD-MBD progression."
   },
   {
     id: 15,
-    question: "In India, the two leading risk factors responsible for the majority of CKD cases requiring dialysis are:",
-    options: ["Glomerulonephritis and polycystic kidney disease", "Diabetes mellitus and hypertension", "Obstructive uropathy and recurrent urinary tract infections", "Analgesic nephropathy and herbal medicine use"],
+    question: "Dialysis access in India: The Pradhan Mantri National Dialysis Programme (PMNDP) was launched under the National Health Mission (NHM) to provide free hemodialysis to BPL patients. As of recent data, PMNDP has established dialysis units primarily at which level of the healthcare system?",
+    options: [
+      "Sub-centres and primary health centres (PHCs)",
+      "District hospitals",
+      "Only AIIMS and premier government medical colleges",
+      "Exclusively through private sector PPP arrangements without any government facilities"
+    ],
     answer: 1,
-    explanation: "Diabetes mellitus and hypertension are the two leading causes of CKD and ESRD in India, together accounting for approximately 40-50% of all cases requiring renal replacement therapy (dialysis/transplant). The rising prevalence of both conditions in India is driving the epidemic of CKD. Diabetic nephropathy is the most common single cause in urban India, while hypertensive nephrosclerosis is also a major contributor. CKD burden in India is estimated at 17% of the adult population (SEEK study)."
+    explanation: "PMNDP established hemodialysis units primarily at district hospitals (DHs) across India, making dialysis accessible at the district level through a public-private partnership (PPP) model. The programme provides free hemodialysis to patients below the poverty line (BPL). By 2022-23, PMNDP had established over 900 dialysis units across 35 states/UTs providing approximately 25-30 lakh dialysis sessions annually. However, coverage remains inadequate relative to India's estimated ESRD burden (approximately 2.2 lakh new ESRD cases per year). Peritoneal dialysis (CAPD) is less common in India due to cost and lack of awareness."
   },
   {
     id: 16,
-    question: "The Indian CKD Registry data and studies like SEEK (Screening and Early Evaluation of Kidney Disease) suggest the prevalence of CKD in India is approximately:",
-    options: ["1-2% of the adult population", "5-8% of the adult population", "17% of the adult population", "30% of the adult population"],
+    question: "Organ transplantation rates in India: India's deceased donor organ transplantation rate (deceased donor transplants per million population, or pmp) compared to Spain (the global leader) is:",
+    options: [
+      "Similar to Spain at approximately 46 pmp",
+      "Half of Spain's rate at approximately 23 pmp",
+      "Extremely low at approximately 0.8-1.0 pmp, compared to Spain's 46 pmp",
+      "Zero, as India only performs living donor transplants"
+    ],
     answer: 2,
-    explanation: "The SEEK (Screening and Early Evaluation of Kidney Disease) study, one of the largest CKD epidemiology studies from India, found a CKD prevalence of approximately 17.2% in the Indian adult population. This high prevalence is attributed to high rates of diabetes, hypertension, and other risk factors. India has an estimated 7.85 million people with CKD Stage 5 (ESRD) requiring renal replacement therapy, but only a fraction receive adequate treatment due to cost barriers."
+    explanation: "India's deceased donor organ transplantation rate is extremely low at approximately 0.8-1.0 per million population (pmp), compared to Spain's approximately 46 pmp (global leader) and the USA's approximately 40 pmp. Despite the Transplantation of Human Organs and Tissues Act (THOTA) 1994 (amended 2011) and the National Organ and Tissue Transplant Organisation (NOTTO) coordinating efforts, India faces major barriers: low awareness of brain death concept, family refusal, inadequate ICU infrastructure for donor maintenance, and poor coordination. Living donor transplantation (primarily kidney and liver) dominates in India. Approximately 5,000-6,000 kidney transplants are performed annually in India."
   },
   {
     id: 17,
-    question: "Regarding renal replacement therapy (RRT) in India, the primary barrier preventing patients with ESRD from receiving adequate dialysis or transplantation is:",
-    options: ["Shortage of dialysis machines", "High cost of treatment and lack of universal health coverage", "Lack of trained nephrologists in all districts", "Inadequate ESRD patient education"],
-    answer: 1,
-    explanation: "The primary barrier to RRT in India is the high cost of treatment and absence of universal health coverage. Hemodialysis costs approximately Rs. 15,000-25,000 per month, and kidney transplantation costs Rs. 5-10 lakhs or more. Only a small fraction of ESRD patients can afford long-term dialysis privately. Government programs like Pradhan Mantri National Dialysis Programme (PMNDP) under NHM aim to provide free dialysis in district hospitals, but coverage remains insufficient for the large burden."
+    question: "The CKD-diabetes-hypertension triad in India represents a major convergent burden. Among patients with type 2 diabetes in India, the approximate proportion who develop diabetic nephropathy (CKD attributable to diabetes) over their lifetime is:",
+    options: [
+      "Less than 5%",
+      "10-15%",
+      "30-40%",
+      "More than 70%"
+    ],
+    answer: 2,
+    explanation: "Approximately 30-40% of patients with type 2 diabetes develop diabetic nephropathy (diabetic kidney disease, DKD) over their lifetime. In India, given the high prevalence of type 2 diabetes (approximately 77 million diagnosed cases - IDF 2021) and suboptimal glycemic and blood pressure control, DKD represents an enormous burden. The CKD-diabetes-hypertension triad creates a vicious cycle: diabetes causes CKD, CKD worsens hypertension, and hypertension accelerates CKD progression. Each year, approximately 1.5-2 lakh diabetic patients in India progress to ESRD requiring renal replacement therapy."
   },
   {
     id: 18,
-    question: "The most effective strategy for primary prevention of CKD at the population level in India, targeting the two leading risk factors, is:",
-    options: ["Universal kidney function screening in all adults above 18 years", "Prevention and optimal control of diabetes mellitus and hypertension through lifestyle modification and medication adherence", "Widespread use of herbal kidney-protective supplements", "Restriction of NSAID use only"],
-    answer: 1,
-    explanation: "Since diabetes mellitus and hypertension are the two leading causes of CKD in India, prevention and optimal control of these conditions is the most effective population-level CKD prevention strategy. This includes: blood pressure control to < 130/80 mmHg (with RAS blockade - ACE inhibitors/ARBs preferred), glycemic control (HbA1c < 7%), lifestyle modification (salt restriction, weight management, physical activity, smoking cessation), and ensuring medication adherence. Early detection through urine albumin-to-creatinine ratio (UACR) screening in high-risk groups is also important."
+    question: "Osteoporosis burden in India: Community-based studies estimate what proportion of Indian women aged 50 years and above have osteoporosis (T-score <= -2.5)?",
+    options: [
+      "Less than 5%",
+      "About 10%",
+      "20-30%",
+      "More than 60%"
+    ],
+    answer: 2,
+    explanation: "Studies from India estimate that 20-30% of Indian women aged 50 years and above have osteoporosis (T-score <= -2.5 on DXA), with an additional 30-40% having osteopenia (T-score -1.0 to -2.5). India has an estimated 50 million osteoporotic individuals. Key Indian-specific risk factors include: widespread vitamin D deficiency (affecting 70-90% of the population due to dietary habits, sun avoidance, and pigmented skin), low calcium intake (average Indian dietary calcium intake is approximately 400 mg/day against the recommended 1000 mg/day), early menopause, low body weight, and physical inactivity. Hip fracture incidence is increasing with India's ageing population."
   },
   {
     id: 19,
-    question: "Osteoporosis is characterized by reduced bone mineral density (BMD) and increased fracture risk. Osteoporosis is defined by a T-score of:",
-    options: ["T-score >= -1.0 (normal)", "T-score between -1.0 and -2.5 (osteopenia)", "T-score <= -2.5", "T-score <= -3.0"],
-    answer: 2,
-    explanation: "WHO defines osteoporosis by dual-energy X-ray absorptiometry (DXA) T-score: Normal: T-score >= -1.0; Osteopenia (low bone mass): T-score between -1.0 and -2.5; Osteoporosis: T-score <= -2.5; Severe osteoporosis: T-score <= -2.5 with one or more fragility fractures. In India, osteoporosis is common due to widespread vitamin D deficiency, calcium-poor diets, and low peak bone mass. Post-menopausal women and elderly men are at highest risk."
+    question: "The National Sickle Cell Anaemia Elimination Mission launched by the Government of India in 2023 targets elimination of sickle cell disease by 2047. The Mission's primary population-level strategy is:",
+    options: [
+      "Universal newborn screening for sickle cell disease in all hospitals",
+      "Universal screening of tribal and high-prevalence populations aged 0-40 years using HPLC/sickling tests, with premarital and prenatal counseling to prevent new births with SCD",
+      "Providing hydroxyurea treatment free of cost to all sickle cell trait carriers",
+      "Establishing bone marrow transplant centres in all tribal districts"
+    ],
+    answer: 1,
+    explanation: "The National Sickle Cell Anaemia Elimination Mission (2023-2047) focuses on: (1) Universal screening of individuals aged 0-40 years in tribal and high-prevalence districts using point-of-care tests (HPLC confirmation); (2) Creating a national registry of SCD patients and carriers; (3) Premarital and prenatal genetic counseling for carrier couples; (4) Prenatal diagnosis for carrier couples to prevent new SCD births; (5) Comprehensive management for existing patients. The mission targets tribal belts across Odisha, Chhattisgarh, Jharkhand, Gujarat, Maharashtra, and Madhya Pradesh where carrier prevalence can reach 10-40% in specific communities."
   },
   {
     id: 20,
-    question: "Sickle cell disease (SCD) has a significant burden in tribal populations of India. Which region of India has the highest prevalence of sickle cell trait and disease?",
-    options: ["Northern India (Punjab, Haryana, UP)", "Southern India (Kerala, Tamil Nadu)", "Central and Western tribal belts (Odisha, Chhattisgarh, Jharkhand, MP, Gujarat, Maharashtra tribals)", "North-Eastern states (Assam, Meghalaya)"],
-    answer: 2,
-    explanation: "Sickle cell disease (homozygous HbSS) and sickle cell trait (HbAS) are highly prevalent in tribal populations of central and western India, particularly in Odisha, Chhattisgarh, Jharkhand, Madhya Pradesh, Gujarat (particularly Bharuch district), and Maharashtra (Vidarbha region). Prevalence of sickle cell trait in some tribal groups can be 5-40%. The National Sickle Cell Anaemia Elimination Mission was launched in 2023 to eliminate SCD by 2047, focusing on tribal areas."
+    question: "Beta-thalassemia carrier screening in India: The estimated carrier (trait) frequency of beta-thalassemia in the general Indian population is approximately 3-4%. In which of the following communities is the carrier frequency substantially higher?",
+    options: [
+      "Scheduled Tribes of Northeast India",
+      "Sindhis, Punjabis, Gujaratis, and Bengalis, where carrier frequency may reach 5-17%",
+      "Brahmins of South India",
+      "Buddhist communities of Ladakh and Sikkim"
+    ],
+    answer: 1,
+    explanation: "While the general Indian population has a beta-thalassemia carrier frequency of 3-4%, certain communities have much higher rates: Sindhis (up to 11%), Punjabis (6-8%), Gujaratis (up to 9%), and Bengali communities (5-7%). The high carrier frequency in these migrant communities is attributed to founder effects and historical consanguinity. The Federation of Indian Thalassaemia Societies recommends community-specific premarital screening programs targeting these high-frequency groups. Prevention through carrier identification, genetic counseling, and prenatal diagnosis could prevent the majority of new thalassemia major births."
   },
   {
     id: 21,
-    question: "Beta-thalassemia major in India: the estimated number of children born with beta-thalassemia major each year in India is approximately:",
-    options: ["100-200 children/year", "1,000 children/year", "10,000-12,000 children/year", "50,000 children/year"],
+    question: "Fluorosis endemic areas in India: Dental and skeletal fluorosis are significant public health problems. The National Programme for Prevention and Control of Fluorosis (NPPCF) identifies how many states in India as endemic for fluorosis?",
+    options: [
+      "5 states",
+      "12 states",
+      "19 states",
+      "All 28 states"
+    ],
     answer: 2,
-    explanation: "India has one of the world's highest burdens of thalassemia. Approximately 10,000-12,000 children with beta-thalassemia major are born each year in India. The carrier (trait) frequency of beta-thalassemia in India is 3-4% in the general population, with higher frequencies in certain communities (Sindhis, Punjabis, Gujaratis, Bengalis). Premarital screening, prenatal diagnosis, and pre-implantation genetic diagnosis are preventive strategies. India has an estimated 1-1.5 lakh patients with thalassemia major currently."
+    explanation: "The National Programme for Prevention and Control of Fluorosis (NPPCF), launched in 2008-09, identified 19 states in India as endemic for fluorosis (both dental and skeletal): Andhra Pradesh, Telangana, Rajasthan, Gujarat, Uttar Pradesh, Punjab, Haryana, Bihar, Madhya Pradesh, Jharkhand, Odisha, Tamil Nadu, West Bengal, Karnataka, Chhattisgarh, Maharashtra, Uttarakhand, Assam, and Jammu & Kashmir. Approximately 66 million people are exposed to groundwater fluoride exceeding 1.5 mg/L. NPPCF strategies include: alternative safe water supply, defluoridation, nutritional interventions (calcium and vitamin C to reduce fluoride absorption), and health education."
   },
   {
     id: 22,
-    question: "Dental fluorosis in India is caused by excess fluoride in drinking water. The WHO-recommended maximum permissible limit of fluoride in drinking water to prevent dental fluorosis while ensuring adequate protection against dental caries is:",
-    options: ["0.5 mg/L", "1.0 mg/L", "1.5 mg/L", "4.0 mg/L"],
-    answer: 2,
-    explanation: "WHO recommends a maximum fluoride concentration of 1.5 mg/L in drinking water. The Bureau of Indian Standards (BIS) also specifies 1.5 mg/L as the permissible limit. At levels < 0.5 mg/L, dental caries increases; at 0.5-1.5 mg/L, optimal protection against caries with minimal fluorosis; at > 1.5 mg/L, dental fluorosis risk increases; at > 4 mg/L, skeletal fluorosis can occur. India has 65 million people exposed to excess fluoride (> 1.5 mg/L), particularly in Rajasthan, Gujarat, Andhra Pradesh, Telangana, and parts of Tamil Nadu."
+    question: "The DMFT index is the key metric used in dental caries epidemiology surveys. What does the abbreviation DMFT stand for, and what is the approximate mean DMFT score in 12-year-old Indian children according to National Oral Health Survey data?",
+    options: [
+      "Decayed, Missing, Filled Teeth; mean DMFT approximately 5.0 in 12-year-olds",
+      "Decayed, Missing, Filled Teeth; mean DMFT approximately 1.5-2.0 in 12-year-olds",
+      "Damaged, Malformed, Fractured Teeth; mean DMFT approximately 3.0 in 12-year-olds",
+      "Dental, Mucosal, Fluorosis, Trauma index; mean DMFT approximately 4.0 in 12-year-olds"
+    ],
+    answer: 1,
+    explanation: "DMFT stands for Decayed, Missing, Filled Teeth index - the sum of teeth that are decayed (D), missing due to caries (M), or filled/restored (F) per individual. The WHO target is a mean DMFT of <= 1.0 in 12-year-olds by 2020. National Oral Health Survey of India data shows mean DMFT in 12-year-old Indian children is approximately 1.5-2.0, with significant variation by state, urban-rural status, and socioeconomic group. Urban children and those with higher sugar intake tend to have higher DMFT. The National Oral Health Programme under NP-NCD promotes school dental health, fluoride toothpaste use, and sugar reduction."
   },
   {
     id: 23,
-    question: "Folic acid supplementation for prevention of neural tube defects (NTDs) is a key public health intervention. The recommended dose of folic acid for all women of reproductive age for NTD prevention is:",
-    options: ["0.1 mg (100 mcg) daily", "0.4 mg (400 mcg) daily", "4 mg (4000 mcg) daily for high-risk women", "10 mg daily"],
+    question: "Birth defect surveillance in India: The Indian Council of Medical Research (ICMR) Birth Defects Surveillance Project identified the birth prevalence of major congenital anomalies in India. The overall birth prevalence of all major congenital anomalies in India is approximately:",
+    options: [
+      "0.5 per 1,000 live births",
+      "5-6 per 1,000 live births",
+      "20-25 per 1,000 live births",
+      "50 per 1,000 live births"
+    ],
     answer: 1,
-    explanation: "WHO and national guidelines recommend 0.4 mg (400 mcg) of folic acid daily for all women of reproductive age, ideally starting at least 1 month before conception and continuing through the first trimester (12 weeks). This reduces NTD risk (spina bifida, anencephaly) by up to 70%. Women with a previous NTD-affected pregnancy should take 4 mg/day (high-dose). India's antenatal care program includes folic acid supplementation under the Mother and Child Tracking System and Janani Suraksha Yojana."
+    explanation: "The ICMR Birth Defects Surveillance Project and other Indian studies estimate the overall birth prevalence of major congenital anomalies at approximately 5-6 per 1,000 live births for hospital-based surveillance. Community-based estimates, which capture stillbirths and home deliveries, suggest rates of 20-25 per 1,000 births, consistent with WHO estimates for LMICs. Major categories include: neural tube defects (0.5-2/1000), Down syndrome, congenital heart disease (8-10/1000), cleft lip/palate, and limb anomalies. The National Birth Defects Surveillance Programme under the RBSK (Rashtriya Bal Swasthya Karyakram) screens newborns and children for 30 birth defects."
   },
   {
     id: 24,
-    question: "The Carrea of Rheumatoid Arthritis (RA) in India: Rheumatoid Arthritis is an autoimmune inflammatory joint disease. The prevalence of RA in India is approximately:",
-    options: ["0.05% of population", "0.5-1% of population", "5% of population", "10% of population"],
-    answer: 1,
-    explanation: "Rheumatoid arthritis affects approximately 0.5-1% of the Indian adult population (similar to global prevalence of 0.5-1%). In India, it predominantly affects women (female to male ratio 3:1), with peak onset in the 4th-5th decade. RA causes significant disability, reduced work productivity, and impaired quality of life. Early aggressive treatment with DMARDs (disease-modifying antirheumatic drugs), particularly methotrexate, is the cornerstone of management to prevent joint destruction."
+    question: "Musculoskeletal disorder burden in India: According to GBD 2019, low back pain is the leading cause of years lived with disability (YLDs) in India. The approximate proportion of working-age Indian adults who experience low back pain in any given year is:",
+    options: [
+      "Less than 5%",
+      "About 10%",
+      "20-30%",
+      "More than 50%"
+    ],
+    answer: 2,
+    explanation: "GBD 2019 estimates that approximately 20-30% of working-age Indian adults experience low back pain in any given year, making it the leading cause of years lived with disability (YLDs) in India — surpassing even depression and iron-deficiency anaemia. Risk factors at the population level include heavy physical labour (agriculture, construction), prolonged sitting (office workers), poor ergonomics, obesity, and psychosocial stress. India lacks a national low back pain registry or dedicated surveillance programme. NP-NCD has now incorporated musculoskeletal disorders, but population-level interventions for low back pain remain nascent."
   },
   {
     id: 25,
-    question: "According to the Global Burden of Disease (GBD) study, depression is the leading cause of disability globally. The metric used to measure this disability burden is:",
-    options: ["Case fatality rate (CFR)", "Years Lived with Disability (YLDs)", "Disability Adjusted Life Years (DALYs) from mortality only", "Incidence rate per 100,000 population"],
+    question: "According to GBD 2019, depression (major depressive disorder) ranks as the leading single cause of which specific burden metric globally?",
+    options: [
+      "Years of Life Lost (YLLs) due to premature death",
+      "Years Lived with Disability (YLDs)",
+      "Age-standardized incidence rate",
+      "Case fatality rate across all causes"
+    ],
     answer: 1,
-    explanation: "Depression is the leading single cause of Years Lived with Disability (YLDs) globally. YLDs measure the years of healthy life lost due to living with a health condition (as opposed to YLLs - years of life lost due to premature death). DALYs = YLLs + YLDs. Depression contributes enormously to YLDs because of its high prevalence and the substantial functional impairment it causes. The GBD 2019 study ranked major depressive disorder as the third largest contributor to DALYs globally."
+    explanation: "Major depressive disorder (MDD) is the leading single cause of Years Lived with Disability (YLDs) globally, according to GBD 2019. YLDs measure the burden of living with a disabling health condition weighted by severity. Depression causes profound functional impairment across social, occupational, and personal domains. Unlike many NCDs, depression has relatively low direct mortality but enormous disability burden. GBD 2019 estimated 280 million people globally live with depression. In India, GBD data estimate approximately 57 million people with depression, contributing substantially to India's overall disease burden."
   },
   {
     id: 26,
-    question: "The National Mental Health Survey (NMHS) 2016 of India, the largest ever mental health epidemiology survey in India, found that the prevalence of mental disorders (excluding tobacco use disorders) among Indian adults was approximately:",
-    options: ["1-2%", "5-7%", "10-13.7%", "25-30%"],
-    answer: 2,
-    explanation: "The NMHS 2016, conducted across 12 states covering approximately 34,800 adults, found the prevalence of mental disorders (excluding tobacco use disorders) to be 10.6% (or 13.7% including tobacco use). Common mental disorders (depression, anxiety) accounted for the majority. The survey found: depression 2.7%, anxiety disorders 3.1%, alcohol use disorder 4.6%, bipolar disorder 0.3%, schizophrenia and other psychoses 0.9%. NMHS highlighted the enormous treatment gap and urban-rural disparities in mental healthcare."
+    question: "The National Mental Health Survey (NMHS) 2016 of India was conducted under the leadership of NIMHANS. Regarding the NMHS 2016 findings on mental health service utilization, which statement is most accurate?",
+    options: [
+      "More than 75% of persons with mental disorders had accessed treatment in the previous 12 months",
+      "Only 13.3% of persons with mental disorders had received treatment in the previous 12 months, highlighting a treatment gap exceeding 86%",
+      "Treatment gap was highest for schizophrenia at less than 30%",
+      "Urban and rural treatment gaps were similar at approximately 50%"
+    ],
+    answer: 1,
+    explanation: "NMHS 2016 found that only 13.3% of persons with mental disorders had received treatment or were in contact with a health service in the preceding 12 months, implying a treatment gap exceeding 86%. The treatment gap was highest for common mental disorders (depression, anxiety) and alcohol/substance use disorders. Schizophrenia had a relatively lower treatment gap (approximately 30-35%) because severe symptoms often compel families to seek some form of care. Treatment gap was substantially worse in rural areas compared to urban areas, and among those with lower educational attainment and lower income. NMHS also found that median duration of untreated illness was 2-4 years for most disorders."
   },
   {
     id: 27,
-    question: "The treatment gap for mental illness in India, as highlighted by the NMHS 2016 and other studies, refers to the proportion of people with mental disorders who do not receive treatment. The treatment gap in India is estimated to be:",
-    options: ["20-30%", "40-50%", "70-80% or more", "95% or more"],
-    answer: 2,
-    explanation: "The treatment gap for mental illness in India is enormous, estimated at 70-80% or higher for most mental disorders. NMHS 2016 found that only 13.3% of persons with mental disorders had received any treatment in the past 12 months, meaning approximately 86.7% did not receive treatment. For severe mental disorders like schizophrenia and bipolar disorder, treatment gap is 70-80%; for common mental disorders (depression, anxiety), it is even higher. Key barriers include stigma, lack of awareness, shortage of mental health professionals, poor access, and cost."
+    question: "The District Mental Health Programme (DMHP) coverage in India: As per the National Health Mission data, DMHP has been extended to all 717 districts of India. The primary human resource component of DMHP at the district level includes:",
+    options: [
+      "Appointing a senior psychiatrist, clinical psychologist, psychiatric social worker, and psychiatric nurse at the district hospital level",
+      "Deploying community health workers (ASHAs) as the sole mental health providers",
+      "Establishing residential psychiatric hospitals in every district",
+      "Training only private sector general practitioners in mental health"
+    ],
+    answer: 0,
+    explanation: "The DMHP staffing model at each district includes a core team of: (1) Psychiatrist, (2) Clinical Psychologist, (3) Psychiatric Social Worker (PSW), and (4) Psychiatric Nurse. This multidisciplinary team is positioned at the district hospital to provide outpatient, inpatient (limited beds), and community outreach mental health services. The team also trains and supervises general health staff at PHCs and CHCs in mental health identification and management. In practice, many DMHP positions remain vacant due to shortage of trained mental health professionals — India has approximately 0.3 psychiatrists per 100,000 population, against the WHO recommended minimum of 1 per 100,000."
   },
   {
     id: 28,
-    question: "The District Mental Health Programme (DMHP) was launched in India in 1996 as part of the National Mental Health Programme (NMHP). The DMHP primarily aims to:",
-    options: ["Establish large psychiatric hospitals in all districts", "Integrate mental health services into the general health services at the district level", "Provide free psychiatric medications only at government medical colleges", "Train traditional healers as mental health professionals"],
+    question: "The Mental Healthcare Act 2017 (MHA 2017) decriminalized attempted suicide in India. This was achieved by amending which provision?",
+    options: [
+      "Abolishing Section 302 (murder) of the Indian Penal Code",
+      "Adding a presumption of severe stress in Section 309 IPC, making prosecution effectively not applicable for persons who attempt suicide",
+      "Introducing life imprisonment for repeated suicide attempts",
+      "Removing all mental illness-related provisions from the Constitution of India"
+    ],
     answer: 1,
-    explanation: "DMHP, launched in Bellary district of Karnataka in 1996, aims to integrate mental health services into existing general health services at the district level. Key components include: training of general health staff (doctors, nurses, ANMs) in mental health; outpatient mental health services at district hospitals; provision of essential psychiatric drugs at PHCs; community awareness programs; and referral linkages. NMHP (1982) provided the national framework, while DMHP operationalized it at the district level. Currently DMHP is implemented in all 717 districts of India."
+    explanation: "Section 115 of the Mental Healthcare Act 2017 states: 'Notwithstanding anything contained in Section 309 of the IPC (1860), any person who attempts to commit suicide shall be presumed, unless proved otherwise, to have severe stress and shall not be tried and punished under the said Section.' This effectively decriminalized attempted suicide by creating a presumption of severe stress. Section 309 IPC itself was not repealed, but MHA 2017 made prosecution under it virtually impossible. This is a major public health advance as criminalization of suicide attempts was a barrier to help-seeking. The Bharatiya Nyaya Sanhita 2023 (replacing IPC) formally omitted Section 309."
   },
   {
     id: 29,
-    question: "The Mental Healthcare Act 2017 (MHA 2017) of India represents a landmark legislation for mental health. Which of the following is a key provision of MHA 2017?",
-    options: ["Mandatory hospitalization for all persons with severe mental illness", "Right to access mental healthcare and treatment at government hospitals free of cost for persons below poverty line", "Criminalization of attempted suicide", "Prohibition of community mental health services"],
+    question: "Suicide epidemiology in India: According to NCRB Accidental Deaths and Suicides in India (ADSI) 2022, the overall suicide rate per 100,000 population in India is approximately:",
+    options: [
+      "3-4 per 100,000",
+      "12-13 per 100,000",
+      "25-30 per 100,000",
+      "50 per 100,000"
+    ],
     answer: 1,
-    explanation: "MHA 2017 (replaced MHA 1987) has several landmark provisions: (1) Right to access mental healthcare and treatment at affordable cost or free for BPL individuals; (2) Decriminalization of attempted suicide (Section 309 IPC effectively decriminalized); (3) Advance directives (nominated representative system); (4) Prohibition of electroconvulsive therapy (ECT) without anesthesia; (5) Right to equality and non-discrimination; (6) Mental illness defined broadly. MHA 2017 shifted from custodial to rights-based approach in mental healthcare aligned with UN Convention on Rights of Persons with Disabilities (CRPD)."
+    explanation: "NCRB ADSI data consistently shows India's suicide rate at approximately 12-13 per 100,000 population. In 2022, India recorded approximately 1,70,000 suicides (crude rate approximately 12.4 per 100,000). The male suicide rate (approximately 18/100,000) is approximately twice the female rate (approximately 6/100,000), though India has a lower male-to-female suicide ratio than most Western countries. Among occupational groups, daily wage workers and homemakers (housewives) contribute the highest absolute numbers. India's Aarogyasri and iCall helplines, and WHO-aligned NIMHANS suicide prevention guidelines, are key national response elements."
   },
   {
     id: 30,
-    question: "According to NCRB (National Crime Records Bureau) data on suicides in India, which state consistently reports the highest absolute number of suicides annually?",
-    options: ["Uttar Pradesh", "Maharashtra", "Tamil Nadu or Maharashtra (varying by year)", "Kerala"],
-    answer: 2,
-    explanation: "NCRB data shows that Maharashtra and Tamil Nadu consistently rank highest in absolute number of suicides in India. In recent years (NCRB 2022 data), Maharashtra reported the highest number followed by Tamil Nadu and Madhya Pradesh. However, in terms of suicide RATE per 100,000 population, smaller states like Sikkim, Andaman & Nicobar, Puducherry, and Chhattisgarh have had higher rates. India's overall suicide rate is approximately 12-13 per 100,000 population. Farmers/agricultural workers, daily wage workers, and students are vulnerable groups."
+    question: "Farmer suicide epidemiology in India: NCRB data shows that the proportion of suicides among farmers/cultivators as a percentage of total suicides in India is approximately:",
+    options: [
+      "Less than 3% in recent years",
+      "6-8% in recent years",
+      "25-30% in recent years",
+      "More than 50% of all suicides"
+    ],
+    answer: 1,
+    explanation: "NCRB data shows that farmers and cultivators constitute approximately 6-8% of total suicides in recent years (2019-2022). While this represents tens of thousands of deaths annually, the proportion has declined from earlier peaks (15-20% in early 2000s). Maharashtra (particularly Vidarbha), Karnataka, and Andhra Pradesh/Telangana report the highest absolute numbers of farmer suicides. Risk factors include crop failure, indebtedness, lack of irrigation, volatile market prices, and inadequate social protection. The PM Kisan Samman Nidhi and crop insurance schemes (PMFBY) represent policy responses to address agricultural distress underlying farmer suicides."
   },
   {
     id: 31,
-    question: "NCRB Accidental Deaths & Suicides in India (ADSI) 2021 data shows that the most common method of suicide in India is:",
-    options: ["Firearms", "Poisoning (agricultural pesticides)", "Hanging", "Drowning"],
-    answer: 2,
-    explanation: "According to NCRB data, hanging is consistently the most common method of suicide in India, accounting for approximately 45-50% of all suicides. The second most common method is poisoning (predominantly organophosphate pesticide ingestion in agricultural communities), followed by drowning, self-immolation, and jumping from buildings. Restricting access to means (particularly organophosphate pesticides and medications) is a key suicide prevention strategy. WHO recommends means restriction as one of the most evidence-based suicide prevention interventions."
+    question: "The epidemiology of alcohol use in India from NMHS 2016: The prevalence of alcohol use disorder in Indian men aged 18-45 years is substantially higher than in women. This male predominance in alcohol use disorder in India is best explained by which sociological and epidemiological factor?",
+    options: [
+      "Biological differences in alcohol metabolism between Indian men and women",
+      "Social and cultural norms that strongly discourage women from drinking, creating a large gender differential; women who do drink face greater stigma and social sanctions",
+      "Government regulations prohibiting alcohol sales to women",
+      "Indian women have genetic protection against alcohol addiction"
+    ],
+    answer: 1,
+    explanation: "The extreme gender differential in alcohol use disorder in India (NMHS 2016: men 9.1%, women 0.5%) is primarily driven by deeply entrenched social and cultural norms that strongly stigmatize drinking among women. These norms suppress alcohol use initiation in women, and women who drink face severe social sanctions (family rejection, marital difficulties, community ostracism). This is distinct from Western countries where gender differences are narrowing. However, female drinking is increasing in urban, educated, and higher-income Indian women. Policy implications: alcohol control measures in India must be gender-sensitive, recognizing that the burden and social context differ markedly by sex."
   },
   {
     id: 32,
-    question: "Alcohol Use Disorder (AUD) epidemiology in India: The NMHS 2016 found that alcohol use disorder was the most common mental disorder in India excluding tobacco. The prevalence of alcohol use disorder in Indian adults is approximately:",
-    options: ["0.5%", "2.3%", "4.6%", "10%"],
+    question: "Epilepsy epidemiology: The estimated prevalence of active epilepsy in India is approximately 5.59 per 1,000 population (ILAE/WHO data). India's epilepsy burden in absolute numbers is estimated at approximately:",
+    options: [
+      "500,000 people",
+      "5 million people",
+      "12 million people",
+      "50 million people"
+    ],
     answer: 2,
-    explanation: "NMHS 2016 found that alcohol use disorder (including harmful use and dependence) had a prevalence of 4.6% among Indian adults, making it the single most common mental/substance use disorder when tobacco use was excluded. Alcohol use is predominantly a male problem in India (male prevalence ~9.1%, female ~0.5%). Alcohol is associated with liver cirrhosis, road traffic accidents, domestic violence, and other NCDs. India's per capita alcohol consumption has been rising, particularly among youth."
+    explanation: "With a population of approximately 1.4 billion and epilepsy prevalence of approximately 5.59-12 per 1,000, India has an estimated 10-12 million people with epilepsy — the second-largest national epilepsy burden after China. India accounts for approximately 25% of the global epilepsy burden. The condition is associated with significant stigma, discrimination, marriage barriers, and employment restrictions. Neurocysticercosis (pork tapeworm brain infection) is an important potentially preventable cause of epilepsy in India. The National Programme for Treatment of Epilepsy (embedded in DMHP/NP-NCD) provides free antiepileptic drugs through government facilities."
   },
   {
     id: 33,
-    question: "In the context of opioid use disorder in India, which state has been identified as having the highest burden of opioid/heroin use, particularly along drug trafficking routes?",
-    options: ["Rajasthan", "Punjab", "Bihar", "West Bengal"],
-    answer: 1,
-    explanation: "Punjab has the highest documented burden of opioid use disorder in India, attributed to its proximity to the 'Golden Crescent' drug trafficking route (Afghanistan-Pakistan-India). Studies estimate 2-3% of Punjab's population may be dependent on opioids (heroin, pharmaceutical opioids). The problem is compounded by unemployment, migration, and easy availability. The 2019 Punjab Opioid Dependence Survey estimated 8.8 lakh persons dependent on opioids in Punjab. Opioid Substitution Therapy (OST) with buprenorphine-naloxone is the evidence-based treatment for opioid dependence."
+    question: "Dementia and India's ageing population: India's population aged 60 years and above is projected to reach what proportion of total population by 2050, creating the demographic context for increasing dementia burden?",
+    options: [
+      "5% of total population",
+      "10% of total population",
+      "20% of total population",
+      "40% of total population"
+    ],
+    answer: 2,
+    explanation: "India's population aged 60 years and above is projected to reach approximately 20% of total population (approximately 340 million) by 2050, according to UN Population Division projections and the Longitudinal Ageing Study in India (LASI). Currently (2021), the elderly population is approximately 10%. This demographic shift will dramatically increase the burden of dementia, as the incidence doubles with every 5 years of age above 65. ARDSI estimates India's dementia cases will increase from approximately 5.3 million (2020) to approximately 14 million by 2050. India lacks a national dementia policy, and most dementia care falls on unpaid family caregivers."
   },
   {
     id: 34,
-    question: "Epilepsy epidemiology in India: The prevalence of epilepsy in India is approximately 5.59 per 1,000 population. The treatment gap for epilepsy (proportion of those with active epilepsy not receiving treatment) in rural India is estimated to be:",
-    options: ["10-20%", "30-40%", "50-60%", "75-90%"],
-    answer: 3,
-    explanation: "The treatment gap for epilepsy in rural India is alarmingly high at 75-90%. Studies from rural India have consistently shown that the vast majority of people with epilepsy (PWE) do not receive treatment. Key factors include: poverty and inability to afford medications, stigma and discrimination, lack of awareness about epilepsy as a treatable neurological condition, shortage of neurologists (India has only ~1,500 neurologists for 1.4 billion people), and preference for faith healers. Community-based programs using generic antiepileptic drugs (phenobarbitone, carbamazepine) distributed through PHCs have been shown to reduce the treatment gap."
+    question: "Mental health integration into primary care: Evidence from WHO mhGAP implementation studies globally shows that training primary care providers using mhGAP significantly improves detection and management of priority mental disorders. In India, what percentage of PHCs have trained staff in mhGAP or equivalent mental health protocols under DMHP/NP-NCD?",
+    options: [
+      "More than 80% of all PHCs",
+      "About 50% of PHCs",
+      "Less than 20-30% of PHCs, with highly uneven coverage across states",
+      "Zero, as mental health is exclusively delivered at district hospitals"
+    ],
+    answer: 2,
+    explanation: "Despite DMHP policy mandating mental health integration at PHC level, implementation data show that less than 20-30% of Indian PHCs have consistently trained staff in mental health screening and management. Coverage is highly uneven — southern states (Kerala, Tamil Nadu, Karnataka) and some northeastern states have better integration than north Indian states. Key barriers include: frequent transfers of trained staff without retraining replacements, stock-outs of essential psychiatric medicines at PHCs, competing priorities of general health staff, and inadequate supervision from district DMHP teams. Scaling up mhGAP training and ensuring drug availability are the most critical next steps."
   },
   {
     id: 35,
-    question: "According to the Alzheimer's and Related Disorders Society of India (ARDSI), the estimated number of people with dementia in India is approximately:",
-    options: ["1 million", "5.3 million", "15 million", "30 million"],
+    question: "The NIMHANS National Mental Health Survey 2016 found significant variation in mental disorder prevalence between urban metro, urban non-metro, and rural areas. Which pattern best describes this urban-rural variation?",
+    options: [
+      "Mental disorder prevalence was uniformly distributed with no urban-rural difference",
+      "Urban metro areas had higher prevalence of common mental disorders (depression, anxiety) and substance use disorders compared to rural areas",
+      "Rural areas had uniformly higher prevalence of all mental disorders due to poverty",
+      "Mental disorders were found exclusively in urban populations"
+    ],
     answer: 1,
-    explanation: "ARDSI and GBD estimates indicate approximately 5.3 million people are living with dementia in India (as of recent estimates), with Alzheimer's disease being the most common type (60-70% of cases). Projections suggest this number will double every 20 years due to India's ageing population. Risk factors include age, low education, hypertension, diabetes, and lack of cognitive engagement. India lacks a national dementia policy, and awareness about dementia remains extremely low, with most cases undiagnosed. Dementia contributes significantly to the growing NCD burden in India."
+    explanation: "NMHS 2016 found that urban metro populations had higher prevalence of common mental disorders (CMD - depression, anxiety) and alcohol use disorders compared to rural populations. Urban stressors (job insecurity, social isolation, commuting stress, competitive pressure) contribute to higher CMD rates in cities. However, treatment gap was higher in rural areas despite lower prevalence, due to lack of services. Psychoses (schizophrenia, bipolar disorder) showed less clear urban-rural differences, consistent with global literature. Overall mental disorder burden (all conditions combined) was higher in urban than rural India per NMHS 2016."
   },
   {
     id: 36,
-    question: "Schizophrenia affects approximately what percentage of the global population, and what is the primary evidence-based treatment?",
-    options: ["0.1-0.2% globally; psychotherapy alone", "0.5-1% globally; antipsychotic medications combined with psychosocial interventions", "5% globally; electroconvulsive therapy (ECT)", "10% globally; long-term hospitalization"],
-    answer: 1,
-    explanation: "Schizophrenia has a global lifetime prevalence of approximately 0.5-1%, with similar rates across countries and cultures. NMHS 2016 found a prevalence of 0.9% for schizophrenia and other psychoses in India. First-line treatment consists of antipsychotic medications (second-generation/atypical antipsychotics preferred for new-onset cases) combined with psychosocial interventions (family psychoeducation, cognitive behavioral therapy, vocational rehabilitation). The treatment gap for schizophrenia in India is 70-80%, meaning most patients do not receive adequate treatment."
+    question: "Mental health research priorities in India identified by the ICMR Task Force on Mental Health include which of the following as the most critical research gap?",
+    options: [
+      "Development of new psychiatric drugs for schizophrenia",
+      "Epidemiology of rare psychiatric conditions in specialized tertiary care settings",
+      "Implementation science — understanding how to effectively scale up evidence-based mental health interventions in resource-limited Indian contexts, including task-sharing and digital health approaches",
+      "Neuroscience research on brain imaging in academic institutions only"
+    ],
+    answer: 2,
+    explanation: "ICMR's mental health research priorities emphasize implementation science as the critical gap — India has adequate evidence that interventions like mhGAP, task-sharing, and community-based care work, but lacks evidence on how to scale them effectively in diverse Indian contexts. Key research priorities include: (1) Implementation of task-sharing models (training ASHAs, ANMs, and general practitioners); (2) Digital and m-Health interventions for mental health screening and treatment adherence; (3) Reducing stigma through community-based campaigns; (4) Suicide prevention strategies at population level; and (5) Mental health financing mechanisms. Pure drug development research is not identified as an immediate national priority given existing treatment options."
   },
   {
     id: 37,
-    question: "Collaborative/Integrated care models for mental health in primary care have been shown to be effective. In India, the mhGAP (Mental Health Gap Action Programme) Intervention Guide by WHO has been adapted for use in:",
-    options: ["Only tertiary care hospitals", "Primary and secondary healthcare settings by non-specialist health workers", "Community mental health workers only with no medical training", "Exclusively private psychiatric clinics"],
+    question: "The Longitudinal Ageing Study in India (LASI) Wave 1 data (2017-19), which covered 72,250 individuals aged 45 years and above across India, found the prevalence of self-reported depressive symptoms (using CIDI-SF) among older Indian adults. What did LASI data reveal about depression in the elderly?",
+    options: [
+      "Depression was rare in Indian elderly at less than 1% prevalence",
+      "Approximately 8.7% of adults aged 45 and above had significant depressive symptoms, with higher rates in women and those in lower socioeconomic quintiles",
+      "Depression prevalence was equal across all age groups above 45 years",
+      "Rural elderly had lower depression prevalence than urban elderly in LASI data"
+    ],
     answer: 1,
-    explanation: "WHO's mhGAP Intervention Guide (mhGAP-IG) is specifically designed for use by non-specialist health workers in primary and secondary care settings in low- and middle-income countries (LMICs). In India, it has been adapted under DMHP/NMHP to train general practitioners, medical officers, nurses, and ANMs at PHCs and CHCs to identify and manage priority mental, neurological, and substance use (MNS) conditions. Priority conditions include depression, psychosis, epilepsy, alcohol/substance use disorders, suicide risk, and child/adolescent mental health problems."
+    explanation: "LASI Wave 1 found that approximately 8.7% of adults aged 45 and above had significant depressive symptoms meeting CIDI-SF threshold, with a higher prevalence in women (10.5%) than men (6.8%). Depression prevalence increased with age and was inversely associated with socioeconomic status, education level, and social support. Widowed individuals had significantly higher rates. Importantly, LASI also showed very low treatment rates for depression among the elderly — fewer than 5% of those with depression were receiving any treatment, reflecting the combined barriers of stigma, lack of recognition, limited geriatric mental health services, and cost."
   },
   {
     id: 38,
-    question: "India has one of the world's highest burdens of road traffic injuries (RTIs). According to the Ministry of Road Transport and Highways (MoRTH) data, the approximate number of road traffic deaths in India per year is:",
-    options: ["30,000-40,000", "80,000-90,000", "1,50,000-1,80,000", "5,00,000"],
+    question: "Road traffic injury (RTI) burden in India: According to WHO Global Status Report on Road Safety and MoRTH data, India accounts for what approximate fraction of global road traffic deaths despite having only about 2% of the world's vehicles?",
+    options: [
+      "2% of global road traffic deaths",
+      "5% of global road traffic deaths",
+      "11% of global road traffic deaths",
+      "30% of global road traffic deaths"
+    ],
     answer: 2,
-    explanation: "MoRTH data consistently shows approximately 1,50,000-1,80,000 road traffic deaths in India annually, making India one of the countries with the highest absolute road traffic mortality globally. India accounts for about 11% of global road accident deaths while having only 2% of world's vehicles - indicating extremely poor road safety. Two-wheelers are involved in the majority of fatalities. The Sustainable Development Goal (SDG) 3.6 targets halving global road traffic deaths by 2030. India's National Road Safety Policy and Decade of Action 2021-2030 are key initiatives."
+    explanation: "India accounts for approximately 11% of global road traffic deaths (approximately 1.5-1.8 lakh deaths/year) despite having only about 2% of the world's vehicles — indicating extremely high crash risk per vehicle. This disparity reflects: poor road design (no pedestrian infrastructure, inadequate lighting, lack of median barriers), heterogeneous traffic (pedestrians, cyclists, two-wheelers, heavy trucks sharing roads), weak traffic law enforcement, high proportion of older vehicles without safety features, and inadequate post-crash emergency response. SDG 3.6 targets halving global road traffic deaths by 2030. The Decade of Action for Road Safety 2021-2030 aligns India's National Road Safety Policy with this target."
   },
   {
     id: 39,
-    question: "The National Road Safety Policy of India emphasizes the 'Safe System Approach' to road safety. The four pillars of the Safe System Approach are:",
-    options: ["Safe roads, safe vehicles, safe speeds, and safe road users", "Traffic laws, vehicle inspection, driver licensing, and road construction", "Police enforcement, ambulance services, hospital trauma care, and insurance", "Speed cameras, breathalyzer tests, seatbelt checks, and helmet laws"],
-    answer: 0,
-    explanation: "The Safe System Approach to road safety, adopted by WHO and incorporated in India's road safety frameworks, is built on four pillars: (1) Safe Roads - road design and infrastructure that protects users from errors; (2) Safe Vehicles - vehicles with safety features (airbags, ABS, ESC); (3) Safe Speeds - speed limits that match human injury tolerance (30 km/h in urban areas near schools/pedestrians); (4) Safe Road Users - education, enforcement, and behavior change. This approach acknowledges that humans make errors and the road system must be designed to prevent fatalities even when errors occur."
+    question: "RTI risk factors at the population level: Which vehicle category is involved in the highest proportion of road traffic fatalities in India according to MoRTH data?",
+    options: [
+      "Pedestrians (those not in vehicles)",
+      "Two-wheelers (motorcycles and scooters)",
+      "Heavy motor vehicles (trucks, buses)",
+      "Cars and jeeps"
+    ],
+    answer: 1,
+    explanation: "Two-wheelers (motorcycles and scooters) are involved in the highest proportion of road traffic fatalities in India, accounting for approximately 44-47% of all road accident deaths according to MoRTH 2022 data. India has the world's largest two-wheeler fleet (approximately 220 million), and many riders lack helmets, drive unlicensed, and mix with high-speed traffic on undivided highways. Pedestrians are the second largest group (approximately 15-20% of deaths). Helmet use laws exist under the Motor Vehicles Amendment Act 2019, and helmet use surveillance in India shows wide variation between high-enforcement states (Kerala approximately 80%) and low-enforcement states (approximately 20-30%)."
   },
   {
     id: 40,
-    question: "Drowning is a significant preventable cause of death in India, particularly among children. Which age group is most vulnerable to drowning deaths in India?",
-    options: ["Infants (0-1 year)", "Children aged 1-14 years", "Young adults aged 25-34 years", "Elderly aged > 65 years"],
+    question: "Drowning prevention in India: The WHO and UNICEF recommend five evidence-based drowning prevention strategies. Which of the following is considered the single most effective drowning prevention intervention for children under 5 years in LMICs?",
+    options: [
+      "Universal swimming lessons for all children from birth",
+      "Installation of four-sided barriers (fencing) isolating water bodies from children's play areas",
+      "Banning all water bodies near residential areas",
+      "Providing life jackets to all residents in flood-prone areas"
+    ],
     answer: 1,
-    explanation: "Children aged 1-14 years are the most vulnerable age group for drowning deaths in India and globally. In India, drowning is estimated to cause approximately 36,000-40,000 deaths annually, with children disproportionately affected. Risk factors include proximity to open water bodies (ponds, wells, rivers, waterlogged fields), lack of swimming ability, inadequate supervision, and lack of barriers around water. WHO Global Report on Drowning (2014) recommends: installing barriers around water, teaching children to swim, training bystanders in resuscitation, and setting safe swimming areas."
+    explanation: "WHO Global Report on Drowning (2014) identifies installation of four-sided barriers (fencing) isolating open water bodies from child play and living areas as the single most cost-effective drowning prevention intervention for children under 5 years in low- and middle-income countries. This passive environmental intervention requires no ongoing behaviour change. India's rural landscape has numerous unguarded ponds, wells, irrigation channels, and rivers near habitations, creating extreme drowning risk. Other WHO-recommended strategies include: day care crèche provision (removing children from hazardous water environments), teaching swimming and water safety, training bystanders in CPR, and improving boat safety."
   },
   {
     id: 41,
-    question: "Falls are the leading cause of injury-related mortality and morbidity in the elderly in India. The most important modifiable risk factor for falls in the elderly is:",
-    options: ["Female sex", "Polypharmacy (taking 5 or more medications)", "Living in urban areas", "Having a college education"],
-    answer: 1,
-    explanation: "Polypharmacy (taking 5 or more medications simultaneously) is a major and modifiable risk factor for falls in the elderly. Many medications commonly used in older adults - sedatives, hypnotics, antidepressants, antihypertensives, and antidiabetics - can cause orthostatic hypotension, dizziness, sedation, and impaired balance, increasing fall risk. Other key modifiable risk factors include impaired vision, muscle weakness, environmental hazards (loose rugs, poor lighting, lack of grab bars), cognitive impairment, and vestibular disorders. Comprehensive fall prevention programs include exercise (balance training, tai chi), medication review, vision correction, and home modification."
+    question: "Falls in the elderly: India's Longitudinal Ageing Study (LASI) Wave 1 data found that approximately what proportion of adults aged 60 years and above reported at least one fall in the past two years?",
+    options: [
+      "Less than 5%",
+      "About 10%",
+      "Approximately 20%",
+      "More than 50%"
+    ],
+    answer: 2,
+    explanation: "LASI Wave 1 found that approximately 20% of Indian adults aged 60 years and above reported at least one fall in the preceding two years. Falls are the leading cause of injury-related disability in the elderly, and in India, hip fractures due to osteoporotic falls carry a one-year mortality of approximately 20-25%. Risk factors for falls in Indian elderly include: polypharmacy, low vitamin D and calcium (impaired muscle strength), cataracts (unaddressed visual impairment is common), environmental hazards (uneven floors, lack of handrails), and muscle weakness from sedentary behaviour. Fall prevention programs integrating exercise (particularly Tai Chi and balance training), vision correction, and home modification are underimplemented in India."
   },
   {
     id: 42,
-    question: "Violence against women (VAW) in India: The National Family Health Survey (NFHS-5) 2019-21 found that the proportion of married women aged 18-49 who experienced spousal violence (physical, sexual, or emotional violence) in India is approximately:",
-    options: ["5-8%", "18-29%", "45-60%", "70-80%"],
+    question: "Violence epidemiology in India: According to NCRB Crime in India 2022 data, the rate of reported crimes against women (per 100,000 women population) has been changing. Which trend best describes violence against women data in India from NCRB?",
+    options: [
+      "Reported crimes against women have declined steadily over the last decade",
+      "Reported crimes against women have increased in absolute numbers and rate, partly due to improved reporting after legislative reforms (Criminal Law Amendment Act 2013 post-Nirbhaya case)",
+      "Crimes against women are uniformly distributed across all states with no geographical variation",
+      "Domestic violence (IPV) is not captured in NCRB data and is entirely unmeasured"
+    ],
     answer: 1,
-    explanation: "NFHS-5 (2019-21) found that 29.3% of ever-married women aged 18-49 in India had experienced spousal violence (physical, sexual, or emotional) since age 15. This indicates nearly 1 in 3 married Indian women experiences intimate partner violence (IPV). The rate has declined from 33.3% in NFHS-4 (2015-16). States with highest rates included Bihar (40%), UP (38%), and Manipur (48%). The Protection of Women from Domestic Violence Act 2005 (PWDVA) provides civil remedies, while Section 498A IPC addresses cruelty by husband/relatives."
+    explanation: "NCRB data shows that reported crimes against women (including rape, domestic violence under Section 498A IPC/Section 85 BNS, stalking, and trafficking) have increased in absolute numbers over the past decade. This increase reflects both a genuine increase in violence and substantially improved reporting following legislative reforms after the 2012 Delhi gang rape case (Criminal Law Amendment Act 2013, which expanded definitions of sexual assault, introduced life imprisonment for gangrape, and created fast-track courts). Uttar Pradesh, Rajasthan, and Maharashtra consistently report the highest absolute numbers of crimes against women, but smaller states can have higher rates per population. NCRB does capture domestic violence under 'Cruelty by Husband or His Relatives' (Section 498A IPC/Section 85 BNS)."
   },
   {
     id: 43,
-    question: "Burn injuries in India: India has a high burden of burn injuries, particularly affecting women. The major cause of burn injuries and burn-related deaths in women in India is:",
-    options: ["Industrial accidents", "Burns from fireworks during festivals", "Kitchen fire accidents (cooking-related burns with kerosene stoves and open fires)", "Electrical burns from power lines"],
-    answer: 2,
-    explanation: "Kitchen fire accidents (cooking-related burns) are the most common cause of severe burns and burn-related deaths in Indian women. Kerosene stoves (which are unstable and prone to explosions) and open cooking fires (chulhas) are major risk factors. India is estimated to have 700,000-1,000,000 burn injuries annually, with women aged 15-35 most affected. Additionally, a proportion of 'kitchen fires' in women may represent stove dowry deaths/attempts - a medico-legal concern. Transition to LPG/electric cooking (via PMUY) is a key preventive strategy."
+    question: "Burn injury epidemiology in India: The estimated annual incidence of burn injuries requiring medical attention in India, and the population most disproportionately affected, are:",
+    options: [
+      "Approximately 10,000 burns per year; elderly males most affected",
+      "Approximately 700,000-1,000,000 burns per year; women of reproductive age (15-40 years) most disproportionately represented in severe burns and burn deaths",
+      "Approximately 50,000 burns per year; industrial workers exclusively",
+      "Approximately 5 million burns per year; evenly distributed across all demographics"
+    ],
+    answer: 1,
+    explanation: "India estimates 700,000-1,000,000 burn injuries per year requiring medical attention, with approximately 120,000-140,000 deaths annually — among the highest burn mortality globally. Women of reproductive age (15-40 years) are disproportionately represented in severe burns and burn deaths, primarily due to cooking-related accidents with kerosene stoves and open fires (chulhas). The medico-legal overlap with dowry-related violence ('bride burning') is significant and requires careful investigation in young married women with burns. National Burn Care Policy (2010) recommendations include: burn prevention education, LPG access, national burn registry, and establishment of regional burn centres."
   },
   {
     id: 44,
-    question: "Occupational injuries in India are a major public health concern. Which industry sector has the highest rate of occupational fatalities and injuries in India?",
-    options: ["Information technology (IT) sector", "Construction industry", "Retail and hospitality sector", "Financial services sector"],
+    question: "Occupational injury surveillance in India: The Directorate General Factory Advice Service and Labour Institutes (DGFASLI) compiles occupational injury statistics from registered factories. A major limitation of India's occupational injury surveillance system is:",
+    options: [
+      "Over-reporting of minor injuries from all sectors including agriculture and informal employment",
+      "DGFASLI statistics cover only registered factories under the Factories Act, missing the enormous burden in the unorganized/informal sector (agriculture, construction, domestic work) which employs over 90% of India's workforce",
+      "India has too few factories to generate meaningful occupational injury data",
+      "Occupational injury data in India is more complete than European Union member states"
+    ],
     answer: 1,
-    explanation: "The construction industry consistently reports the highest rates of occupational fatalities and serious injuries in India. Falls from height, being struck by falling objects, electrocution, and machinery accidents are the leading causes of construction fatalities. India's construction sector employs approximately 51 million workers, most in the informal sector without social security or workers' compensation coverage. Other high-risk industries include mining, manufacturing, and agriculture. The Factories Act 1948, Building and Other Construction Workers Act 1996, and Employees' State Insurance Act 1948 provide occupational safety frameworks, but enforcement is weak."
+    explanation: "India's occupational injury surveillance system is severely limited because DGFASLI data covers only registered factories under the Factories Act 1948, which represents a small fraction of India's total workforce. Over 90% of India's 500+ million workforce is employed in the informal/unorganized sector (agriculture, construction, domestic service, small enterprises, hawkers), which has no mandatory injury reporting system. Agricultural injuries (from machinery, pesticide exposure, animal attacks) alone are estimated to cause 40,000-60,000 deaths annually. A comprehensive National Occupational Safety and Health Registry covering both formal and informal sectors is a major surveillance gap identified by the WHO Regional Office for SEARO."
   },
   {
     id: 45,
-    question: "NFHS-5 (2019-21) data on overweight and obesity in India shows that the prevalence of overweight and obesity (BMI >= 25 kg/m2) among women aged 15-49 years in India is approximately:",
-    options: ["5-8%", "15-20%", "24%", "40%"],
-    answer: 2,
-    explanation: "NFHS-5 (2019-21) found that 24% of women and 22.9% of men aged 15-49 in India were overweight or obese (BMI >= 25 kg/m2). This represents a significant increase from NFHS-4 (20.6% women, 18.9% men). Importantly, India uses Asian BMI cutoffs where overweight is BMI 23-24.9 and obesity is BMI >= 25 kg/m2, as Asian populations have higher metabolic risk at lower BMI. Urban residents have significantly higher obesity rates than rural residents. Kerala, Goa, Andaman & Nicobar Islands, and Puducherry have the highest obesity prevalence."
+    question: "Obesity prevalence India NFHS-5: NFHS-5 (2019-21) data compared to NFHS-4 (2015-16) shows which significant trend in overweight and obesity in India?",
+    options: [
+      "Overweight/obesity prevalence declined from NFHS-4 to NFHS-5 due to government nutrition campaigns",
+      "Overweight/obesity prevalence (BMI >= 25 kg/m2) increased from NFHS-4 to NFHS-5 in both men and women across all states, with rapid increases in southern and smaller states",
+      "Obesity increased only in metropolitan cities and declined in rural areas",
+      "Obesity prevalence was stable with no change between NFHS-4 and NFHS-5"
+    ],
+    answer: 1,
+    explanation: "NFHS-5 (2019-21) showed significant increases in overweight/obesity compared to NFHS-4 (2015-16): among women aged 15-49, overweight/obesity (BMI >= 25) increased from 20.6% to 24.0%; among men aged 15-49, from 18.9% to 22.9%. All states showed increases except a few. Notably, some of the highest prevalence was recorded in smaller states: Puducherry (48.4% women), Andaman & Nicobar (46.7% women), and Sikkim (40.9% women). This trajectory, if unchecked, will drive dramatic increases in diabetes, hypertension, cardiovascular disease, and certain cancers. The Fit India Movement, Eat Right India, and POSHAN Abhiyaan are policy responses."
   },
   {
     id: 46,
-    question: "Childhood obesity trends in India: The Comprehensive National Nutrition Survey (CNNS) 2016-18 found overweight/obesity prevalence in school-going children aged 5-9 years. What trend best describes childhood obesity in India?",
-    options: ["Childhood obesity is declining due to government nutrition programs", "Childhood obesity is a growing concern primarily in urban areas and higher socioeconomic groups, increasing over time", "Childhood obesity prevalence is equal between urban and rural children", "Childhood obesity is not a significant public health concern in India"],
-    answer: 1,
-    explanation: "CNNS 2016-18 found overweight/obesity prevalence of 4% among children aged 5-9 years, with significant urban-rural disparities (urban children having 2-3 times higher rates than rural). Childhood obesity in India is increasing, particularly in urban areas and among higher socioeconomic strata, driven by: consumption of ultra-processed foods and sugar-sweetened beverages, increased screen time, reduced physical activity, and sedentary lifestyles. The double burden of malnutrition (coexistence of undernutrition and overnutrition) is India's major nutritional challenge. Childhood obesity increases risk of adult obesity, T2DM, hypertension, and cardiovascular disease."
+    question: "Childhood obesity surveillance in India: The Comprehensive National Nutrition Survey (CNNS) 2016-18 assessed overweight and obesity in Indian children. Which urban-rural gradient was observed for childhood overweight/obesity?",
+    options: [
+      "Rural children had higher overweight/obesity rates than urban children",
+      "Overweight/obesity was equally prevalent in urban and rural children",
+      "Urban children had 2-3 times higher overweight/obesity rates than rural children, particularly in the 10-19 year age group",
+      "No childhood overweight was detected in any region surveyed by CNNS"
+    ],
+    answer: 2,
+    explanation: "CNNS 2016-18 found a clear urban-rural gradient: urban children had approximately 2-3 times higher overweight/obesity rates than rural children, with the gradient most pronounced in the 10-19 year adolescent group. Urban adolescent overweight prevalence was approximately 10-12% compared to approximately 4-5% in rural adolescents. The driving factors include: increased access to and marketing of ultra-processed foods, sugar-sweetened beverages, reduced active transportation (use of private vehicles/e-rickshaws), increased screen/sedentary time, and reduced outdoor play space in urban settings. Double burden of malnutrition (coexisting stunting/wasting and overweight within same households and communities) is a major challenge for Indian nutrition policy."
   },
   {
     id: 47,
-    question: "Metabolic syndrome is defined by the presence of multiple cardiometabolic risk factors. Using the Joint Interim Statement (JIS) 2009 definition (harmonized criteria), metabolic syndrome requires at least 3 of 5 criteria. Which combination correctly identifies 3 of the 5 criteria for metabolic syndrome?",
-    options: ["Elevated fasting glucose (>= 100 mg/dL), elevated total cholesterol (>= 200 mg/dL), and hypertension (>= 130/85 mmHg)", "Central obesity (waist circumference with population-specific cut-offs), elevated triglycerides (>= 150 mg/dL), and reduced HDL cholesterol", "High LDL cholesterol (>= 160 mg/dL), elevated creatinine, and obesity (BMI >= 30)", "Elevated HbA1c (>= 6.5%), proteinuria, and impaired fasting glucose"],
-    answer: 1,
-    explanation: "JIS 2009 harmonized criteria for metabolic syndrome requires >= 3 of 5 criteria: (1) Central obesity: elevated waist circumference using population-specific cut-offs (for South Asians: men >= 90 cm, women >= 80 cm); (2) Elevated triglycerides: >= 150 mg/dL; (3) Reduced HDL-cholesterol: < 40 mg/dL (men), < 50 mg/dL (women); (4) Elevated blood pressure: >= 130/85 mmHg or on treatment; (5) Elevated fasting glucose: >= 100 mg/dL or on treatment. Studies suggest metabolic syndrome prevalence in India is 25-35%, with higher rates in urban areas and women."
+    question: "Metabolic syndrome prevalence in India: Population-based studies using NCEP-ATP III or IDF/JIS criteria estimate the prevalence of metabolic syndrome in Indian adults. The approximate prevalence in urban Indian adults is:",
+    options: [
+      "Less than 5%",
+      "About 10%",
+      "25-35%",
+      "More than 60%"
+    ],
+    answer: 2,
+    explanation: "Multiple community-based studies from urban India (Chennai Urban Rural Epidemiology Study - CURES, Chandigarh Urban Diabetes Study, Mumbai studies) estimate metabolic syndrome prevalence at 25-35% in urban adults using harmonized JIS 2009 criteria. The CURES study from Chennai found metabolic syndrome in approximately 26% of urban adults. Prevalence is higher in women (particularly post-menopausal), those with sedentary occupations, and higher BMI. Metabolic syndrome substantially increases risk of type 2 diabetes (5-fold), cardiovascular disease (2-fold), and CKD. Rural Indian metabolic syndrome prevalence is lower at approximately 10-20%, but is rapidly increasing with urbanization."
   },
   {
     id: 48,
-    question: "Bariatric surgery in India: According to the Federation of Indian Chambers of Commerce & Industry (FICCI) and clinical guidelines, which BMI threshold makes an Indian patient eligible for bariatric surgery in the presence of obesity-related comorbidities (diabetes, hypertension)?",
-    options: ["BMI >= 25 kg/m2", "BMI >= 30 kg/m2 (general global threshold)", "BMI >= 32.5 kg/m2 with comorbidities (Asian-adapted lower threshold)", "BMI >= 40 kg/m2 only"],
+    question: "Physical activity surveillance in India: The Indian Council of Medical Research India Diabetes (ICMR-INDIAB) study assessed leisure time physical activity in Indian adults. What proportion of Indian adults meet the WHO recommended minimum of 150 minutes of moderate-intensity physical activity per week?",
+    options: [
+      "More than 75% of Indian adults meet the recommendation",
+      "About 50% of Indian adults meet the recommendation",
+      "Less than 25% of Indian adults meet the leisure-time physical activity recommendation, though total physical activity (including occupational activity) may be higher in manual workers",
+      "Physical activity surveys have not been conducted at national level in India"
+    ],
     answer: 2,
-    explanation: "Asian bariatric surgery guidelines (endorsed by IFSO - International Federation for the Surgery of Obesity) recommend lower BMI thresholds for Asians compared to Western guidelines: BMI >= 37.5 kg/m2 without comorbidities; BMI >= 32.5 kg/m2 with major comorbidities (type 2 diabetes, hypertension, OSA, etc.); consideration at BMI >= 27.5 kg/m2 for inadequately controlled type 2 diabetes alone. These lower thresholds recognize that Asian populations develop obesity-related metabolic complications at lower BMI values. Roux-en-Y gastric bypass and sleeve gastrectomy are the most common procedures performed in India."
+    explanation: "ICMR-INDIAB and other Indian studies show that fewer than 25% of Indian adults meet the WHO leisure-time physical activity recommendations (150 min/week moderate intensity). However, this figure is nuanced: a large proportion of India's workforce (agricultural and construction workers) engage in high occupational physical activity, which does provide health benefits. Among urban, educated, and sedentary-occupation adults, physical inactivity rates exceeding 50-60% are documented. Physical inactivity is the fourth leading risk factor for global mortality (WHO). India's Fit India Movement (2019), PMYY (Pradhan Mantri Yog Yojana), and Active India campaign target population-level physical activity promotion."
   },
   {
     id: 49,
-    question: "WHO recommends a minimum amount of moderate-intensity physical activity per week for health benefits in adults. The recommended minimum is:",
-    options: ["75 minutes of moderate-intensity activity per week", "150-300 minutes of moderate-intensity aerobic activity per week", "30 minutes only on weekends (60 minutes total)", "500 minutes of vigorous activity per week"],
-    answer: 1,
-    explanation: "WHO Global Guidelines on Physical Activity and Sedentary Behaviour (2020) recommend: Adults (18-64 years): 150-300 minutes of moderate-intensity aerobic activity, OR 75-150 minutes of vigorous-intensity aerobic activity, OR an equivalent combination per week, plus muscle-strengthening activities on 2 or more days per week. Children/adolescents: 60 minutes of moderate-to-vigorous activity daily. India's National Programme for Prevention and Control of NCDs (NP-NCD) promotes physical activity through initiatives like 'Fit India Movement' and 'Khelo India'. Less than 25% of Indian adults meet physical activity recommendations."
+    question: "NCD multimorbidity epidemiology in India: Multimorbidity (having two or more chronic NCDs simultaneously) is an emerging epidemiological concern. Studies from India estimate what prevalence of multimorbidity among adults aged 45 years and above?",
+    options: [
+      "Less than 5%",
+      "About 10-15%",
+      "20-30%",
+      "More than 60%"
+    ],
+    answer: 2,
+    explanation: "LASI Wave 1 and cross-sectional studies from urban India estimate NCD multimorbidity prevalence at 20-30% among adults aged 45 years and above. The most common dyads are hypertension + diabetes, hypertension + cardiovascular disease, and diabetes + musculoskeletal disorders. Multimorbidity is associated with: higher healthcare costs (polypharmacy, multiple specialist visits), poorer quality of life, worse treatment outcomes, and greater caregiver burden. India's NCD programme (NP-NCD) has traditionally been organized as vertical, disease-specific programmes, which is suboptimal for managing multimorbid patients. Integrated NCD care models with chronic care teams at PHC level are now being promoted under Health and Wellness Centres (HWCs)."
   },
   {
     id: 50,
-    question: "The impact of sedentary lifestyle and excessive screen time on health has been recognized as a growing public health concern in India. Excessive screen time in children is associated with all of the following EXCEPT:",
-    options: ["Increased risk of obesity and metabolic syndrome", "Sleep disturbances and reduced sleep duration", "Improved academic performance and cognitive development", "Increased risk of depression, anxiety, and social isolation"],
-    answer: 2,
-    explanation: "Excessive screen time (defined as > 2 hours/day for children aged 2-18 years by various guidelines) is associated with: increased obesity risk (sedentary behavior + exposure to food advertising); sleep disturbances (blue light suppresses melatonin); depression, anxiety, cyberbullying, and poor social skills; reduced physical activity; and delayed language development in toddlers. It is NOT associated with improved academic performance or cognitive development - in fact, excessive passive screen time is associated with poorer academic outcomes. WHO 2019 guidelines recommend NO screen time for children under 2 years, and limiting to 1 hour for children 3-4 years. India's POSHAN Abhiyaan now includes screen time counseling as part of early childhood development guidance."
+    question: "Sedentary behaviour surveillance in India: Excessive sedentary time (sitting time) independent of physical activity level is associated with increased NCD risk. Studies on occupational sedentary time in Indian office workers show:",
+    options: [
+      "Indian office workers sit for less than 4 hours per day on average, within safe limits",
+      "Indian office workers average 8-10 hours of sitting per day, with sedentary time associated with higher prevalence of obesity, metabolic syndrome, and cardiovascular risk factors independent of leisure-time physical activity",
+      "Screen time and sitting time have no health effects in non-obese individuals",
+      "Sedentary behaviour data in India is completely absent and no studies have been conducted"
+    ],
+    answer: 1,
+    explanation: "Studies of urban Indian office workers (IT professionals, government employees, call centre staff) show average daily sitting times of 8-10 hours, substantially exceeding recommended limits. Sedentary behaviour surveillance data from India (WHO STEPS surveys, urban NCD cohorts) demonstrates that prolonged sitting time is independently associated with obesity, abdominal adiposity, higher fasting glucose, dyslipidaemia, and hypertension — even after adjusting for leisure-time physical activity. This phenomenon ('active couch potato' — some who exercise regularly but still sit for 8-10 hours show metabolic risk) is increasingly recognized. India's NCD prevention strategy needs population-level sedentary behaviour reduction campaigns beyond merely increasing physical activity."
   }
 ];
 

@@ -1,603 +1,538 @@
 const questions = [
   {
     id: 1,
-    question: "A 45-year-old obese man presents with polyuria, polydipsia, and fatigue for 3 months. Fasting plasma glucose is 132 mg/dL on two separate occasions. C-peptide level is normal. Which of the following is the most appropriate diagnosis?",
-    options: [
-      "Type 1 diabetes mellitus",
-      "Type 2 diabetes mellitus",
-      "Impaired fasting glucose",
-      "Latent autoimmune diabetes in adults (LADA)"
-    ],
-    answer: 1,
-    explanation: "Type 2 diabetes mellitus is characterized by insulin resistance and relative insulin deficiency, commonly occurring in obese middle-aged adults. FPG >= 126 mg/dL on two occasions meets the ADA/WHO diagnostic criteria. Normal C-peptide indicates preserved beta-cell function, distinguishing it from Type 1 DM where C-peptide is low/absent. LADA would show positive islet autoantibodies. IFG is defined as FPG 100-125 mg/dL (ADA) or 110-125 mg/dL (WHO)."
+    question: "According to the IDF Diabetes Atlas 10th edition (2021), approximately how many adults aged 20-79 years were living with diabetes globally?",
+    options: ["337 million", "422 million", "537 million", "643 million"],
+    answer: 2,
+    explanation: "The IDF Diabetes Atlas 10th edition (2021) estimated that approximately 537 million adults (20-79 years) were living with diabetes globally, representing a prevalence of 10.5%. This figure is projected to rise to 643 million by 2030 and 783 million by 2045, underscoring the scale of the global diabetes epidemic."
   },
   {
     id: 2,
-    question: "According to WHO 2006 and ADA 2024 criteria, which of the following correctly defines the diagnostic threshold for diabetes mellitus using HbA1c?",
-    options: [
-      "HbA1c >= 6.0%",
-      "HbA1c >= 6.5%",
-      "HbA1c >= 7.0%",
-      "HbA1c >= 7.5%"
-    ],
+    question: "The ICMR-INDIAB study (Phase 1, 2011) provided the first large-scale nationally representative diabetes prevalence estimate for India. What was the estimated national prevalence of diabetes from this study?",
+    options: ["4.6%", "7.3%", "10.4%", "13.1%"],
     answer: 1,
-    explanation: "ADA 2010 onwards and subsequently adopted widely, HbA1c >= 6.5% (48 mmol/mol) is diagnostic of diabetes mellitus when measured by a NGSP-certified method standardized to the DCCT assay. HbA1c 5.7-6.4% indicates prediabetes (ADA) or 'increased risk.' WHO adopted HbA1c >= 6.5% as a diagnostic criterion in 2011. HbA1c >= 6.0% falls in the 'at risk' category, not diagnostic."
+    explanation: "The ICMR-INDIAB Phase 1 study (Anjana et al., Diabetologia, 2011) estimated the national prevalence of diabetes in India at 7.3%, with significant urban-rural and state-level variation. Tamil Nadu and Maharashtra showed higher rates, while states like Jharkhand had lower prevalence. This study used WHO 2006 diagnostic criteria and was based on a large stratified multistage cluster sample across four states and one union territory."
   },
   {
     id: 3,
-    question: "In the WHO 75g oral glucose tolerance test (OGTT), which 2-hour plasma glucose value is used to diagnose diabetes mellitus?",
+    question: "Which of the following best describes the key epidemiological difference between Type 1 and Type 2 diabetes at the population level relevant to disease burden estimation?",
     options: [
-      ">= 140 mg/dL",
-      ">= 160 mg/dL",
-      ">= 200 mg/dL",
-      ">= 180 mg/dL"
+      "Type 1 diabetes accounts for 30-40% of all diabetes globally and is more common in low-income countries",
+      "Type 2 diabetes accounts for 90-95% of all diabetes globally, while Type 1 accounts for 5-10%",
+      "Type 1 and Type 2 have equal global prevalence but differ only in age of onset",
+      "Type 2 diabetes predominates only in high-income countries due to sedentary lifestyles"
     ],
-    answer: 2,
-    explanation: "According to WHO criteria, a 2-hour plasma glucose >= 200 mg/dL (11.1 mmol/L) during a 75g OGTT is diagnostic of diabetes mellitus. A 2-hour value of 140-199 mg/dL defines Impaired Glucose Tolerance (IGT). OGTT is the gold standard for diagnosing gestational diabetes and IGT. The fasting criterion is >= 126 mg/dL (7.0 mmol/L)."
+    answer: 1,
+    explanation: "Type 2 diabetes accounts for approximately 90-95% of all diabetes cases globally, while Type 1 accounts for 5-10%. This distinction has major implications for population-level burden estimation and surveillance. Type 2 is strongly associated with older age, obesity, physical inactivity, and urbanization, making it the primary driver of the global diabetes epidemic. Type 1 has an autoimmune etiology and peaks in childhood/adolescence, with higher incidence in Scandinavian and Northern European countries."
   },
   {
     id: 4,
-    question: "A 28-year-old pregnant woman at 26 weeks gestation has a 75g OGTT. Results: fasting 92 mg/dL, 1-hour 185 mg/dL, 2-hour 153 mg/dL. According to IADPSG/WHO 2013 criteria, what is the diagnosis?",
+    question: "For population-level screening programs, the WHO/ADA fasting plasma glucose (FPG) cutoff used to diagnose diabetes is:",
     options: [
-      "Normal glucose tolerance in pregnancy",
-      "Gestational diabetes mellitus",
-      "Overt diabetes in pregnancy",
-      "Impaired glucose tolerance"
+      "FPG >= 6.1 mmol/L (110 mg/dL)",
+      "FPG >= 6.5 mmol/L (117 mg/dL)",
+      "FPG >= 7.0 mmol/L (126 mg/dL)",
+      "FPG >= 7.8 mmol/L (140 mg/dL)"
     ],
-    answer: 1,
-    explanation: "According to IADPSG (International Association of Diabetes and Pregnancy Study Groups) 2010 criteria adopted by WHO 2013, GDM is diagnosed if any ONE of the following thresholds is met during a 75g OGTT: fasting >= 92 mg/dL, 1-hour >= 180 mg/dL, 2-hour >= 153 mg/dL. Here fasting is 92 mg/dL (meets threshold) and 2-hour is 153 mg/dL (meets threshold), confirming GDM. Overt diabetes requires fasting >= 126 mg/dL or 2-hour >= 200 mg/dL or random >= 200 mg/dL."
+    answer: 2,
+    explanation: "The WHO/ADA diagnostic criterion for diabetes using fasting plasma glucose is >= 7.0 mmol/L (126 mg/dL). In population screening programs such as the India STEPS survey and NFHS, this cutoff identifies individuals with probable diabetes requiring confirmatory testing. The cutoff of 6.1 mmol/L (110 mg/dL) defines WHO Impaired Fasting Glucose (IFG), while 7.8 mmol/L (140 mg/dL) is the 2-hour OGTT threshold distinguishing IGT from normal."
   },
   {
     id: 5,
-    question: "Which of the following is NOT a component of the WHO 1999 metabolic syndrome definition?",
-    options: [
-      "Insulin resistance or Type 2 diabetes",
-      "Blood pressure >= 140/90 mmHg",
-      "Triglycerides >= 150 mg/dL",
-      "LDL cholesterol >= 130 mg/dL"
-    ],
-    answer: 3,
-    explanation: "The WHO 1999 metabolic syndrome criteria require insulin resistance (Type 2 DM, IFG, IGT, or low insulin sensitivity) PLUS two or more of: hypertension (BP >= 140/90 mmHg or on antihypertensives), dyslipidemia (TG >= 150 mg/dL and/or HDL < 35 mg/dL in men, < 39 mg/dL in women), central obesity (WHR > 0.9 men, > 0.85 women, or BMI > 30 kg/m²), microalbuminuria (UAE >= 20 mcg/min). LDL cholesterol is NOT a component of the WHO metabolic syndrome definition. IDF 2006 uses waist circumference as the central requirement."
+    question: "Gestational Diabetes Mellitus (GDM) prevalence in India is among the highest globally. Based on population surveys using IADPSG/WHO 2013 criteria, the estimated GDM prevalence in India is approximately:",
+    options: ["1-3%", "5-8%", "10-20%", "25-35%"],
+    answer: 2,
+    explanation: "GDM prevalence in India ranges from approximately 10-20% depending on the diagnostic criteria applied and the geographic region studied, which is significantly higher than the global average of about 14% (IDF 2021). Urban women in southern India, including Tamil Nadu and Karnataka, show some of the highest rates. The high GDM burden has major public health implications as it increases future risk of Type 2 diabetes in both the mother (7-fold increased risk) and the offspring."
   },
   {
     id: 6,
-    question: "The MODY (Maturity Onset Diabetes of the Young) most commonly associated with mutations in the glucokinase gene (GCK), causing mild stable hyperglycemia, is:",
+    question: "In the WHO STEPS survey (STEPwise Approach to NCD Risk Factor Surveillance), which primary biochemical indicator is used to measure diabetes prevalence at the population level?",
     options: [
-      "MODY 1 (HNF-4alpha)",
-      "MODY 2 (GCK)",
-      "MODY 3 (HNF-1alpha)",
-      "MODY 5 (HNF-1beta)"
+      "Fasting plasma glucose measured after an 8-12 hour overnight fast",
+      "HbA1c measured from dried blood spots",
+      "2-hour post-glucose load plasma glucose (OGTT)",
+      "Random capillary blood glucose with glucometer"
     ],
-    answer: 1,
-    explanation: "MODY 2 is caused by heterozygous loss-of-function mutations in the glucokinase (GCK) gene. Glucokinase acts as a glucose sensor in pancreatic beta cells; its mutation raises the glucose threshold for insulin secretion, leading to mild, stable, non-progressive fasting hyperglycemia (typically 5.5-8 mmol/L). MODY 3 (HNF-1alpha) is the most common MODY and is progressive with good response to sulfonylureas. MODY 1 (HNF-4alpha) and MODY 5 (HNF-1beta) are associated with progressive beta-cell failure and renal abnormalities (MODY 5), respectively."
+    answer: 0,
+    explanation: "The WHO STEPS survey uses fasting plasma glucose (FPG) as the primary biochemical indicator for population-level diabetes surveillance. Participants are instructed to fast for 8-12 hours before the survey. The standardized STEPS methodology enables cross-country and cross-time comparison of NCD risk factor data. India has conducted STEPS surveys to obtain population-representative prevalence data for planning NCD prevention programs under the National NCD Action Plan."
   },
   {
     id: 7,
-    question: "A 60-year-old Type 2 diabetic presents to the emergency with blood glucose 650 mg/dL, serum osmolality 340 mOsm/kg, pH 7.35, and serum ketones negative. What is the diagnosis?",
+    question: "The urban-rural gradient for diabetes prevalence in India, as documented in the ICMR-INDIAB study, is best described as:",
     options: [
-      "Diabetic ketoacidosis (DKA)",
-      "Hyperosmolar hyperglycemic state (HHS)",
-      "Lactic acidosis",
-      "Euglycemic DKA"
+      "Rural areas have higher diabetes prevalence due to high-carbohydrate diets and physical stress",
+      "Urban areas consistently show higher diabetes prevalence than rural areas across Indian states",
+      "Urban and rural prevalence are approximately equal, with differences explained only by age distribution",
+      "Urban-rural differences have disappeared in southern Indian states due to equalized dietary patterns"
     ],
     answer: 1,
-    explanation: "Hyperosmolar Hyperglycemic State (HHS) is characterized by: severe hyperglycemia (typically > 600 mg/dL), markedly elevated serum osmolality (> 320 mOsm/kg), absence of significant ketosis or acidosis (pH > 7.30, bicarbonate > 15 mEq/L), and profound dehydration. It occurs predominantly in Type 2 diabetics with enough residual insulin to prevent ketogenesis but not hyperglycemia. DKA features pH < 7.30, significant ketosis, and usually lower glucose (250-500 mg/dL). Mortality of HHS (5-20%) is higher than DKA (< 1% in expert centers)."
+    explanation: "The ICMR-INDIAB study consistently demonstrated that urban areas show higher diabetes prevalence than rural areas across Indian states. For example, in Tamil Nadu, urban prevalence was 18.6% versus 9.8% in rural areas. This urban-rural gradient is attributed to sedentary lifestyles, dietary transitions (refined carbohydrates, high-calorie foods), obesity, and greater diagnostic access in urban areas. This gradient is also observed in NFHS-5 data on measured blood glucose levels."
   },
   {
     id: 8,
-    question: "Which microvascular complication of diabetes is the LEADING cause of new cases of blindness in adults aged 20-74 years in developed countries?",
+    question: "According to the IDF consensus definition (2005), the diagnosis of metabolic syndrome requires central obesity as an essential criterion. For South Asian populations, the waist circumference cutoffs are:",
     options: [
-      "Diabetic nephropathy",
-      "Diabetic peripheral neuropathy",
-      "Diabetic retinopathy",
-      "Diabetic macular edema alone"
+      ">= 94 cm for men and >= 80 cm for women",
+      ">= 90 cm for men and >= 80 cm for women",
+      ">= 85 cm for men and >= 75 cm for women",
+      ">= 102 cm for men and >= 88 cm for women"
     ],
-    answer: 2,
-    explanation: "Diabetic retinopathy is the leading cause of new-onset blindness in working-age adults (20-74 years) in developed countries. It affects approximately one-third of people with diabetes. Proliferative diabetic retinopathy and diabetic macular edema are the vision-threatening stages. Diabetic nephropathy is the leading cause of end-stage renal disease (ESRD), while peripheral neuropathy is the most common microvascular complication overall. All three are microvascular complications driven by chronic hyperglycemia."
+    answer: 1,
+    explanation: "The IDF 2005 consensus definition of metabolic syndrome requires central obesity as an essential criterion. For South Asians (and most Asian populations), ethnicity-specific waist circumference cutoffs are >= 90 cm for men and >= 80 cm for women, which are lower than the European cutoffs (>= 94 cm men, >= 80 cm women). Additionally, any two of the following are required: raised triglycerides (>= 1.7 mmol/L), reduced HDL-C, raised blood pressure (>= 130/85 mmHg), or raised fasting plasma glucose (>= 5.6 mmol/L). The lower South Asian cutoffs reflect higher metabolic risk at lower waist circumference values."
   },
   {
     id: 9,
-    question: "According to the IDF Diabetes Atlas 2021, which country has the highest ABSOLUTE number of people living with diabetes?",
+    question: "The WHO definition of Impaired Fasting Glucose (IFG) used in international surveillance differs from the ADA definition. The WHO IFG cutoff is:",
     options: [
-      "India",
-      "United States of America",
-      "China",
-      "Pakistan"
+      "Fasting plasma glucose 5.6-6.9 mmol/L (100-125 mg/dL)",
+      "Fasting plasma glucose 6.1-6.9 mmol/L (110-125 mg/dL)",
+      "Fasting plasma glucose 5.0-5.9 mmol/L (90-106 mg/dL)",
+      "Fasting plasma glucose 6.5-6.9 mmol/L (117-124 mg/dL)"
     ],
-    answer: 2,
-    explanation: "According to IDF Diabetes Atlas 2021 (10th edition), China has the highest absolute number of people with diabetes (approximately 140.9 million), followed by India (approximately 74.2 million), and the USA (approximately 32.2 million). However, India is projected to have the highest burden by 2045. The IDF estimated 537 million adults (20-79 years) live with diabetes globally in 2021, expected to rise to 783 million by 2045."
+    answer: 1,
+    explanation: "The WHO definition of Impaired Fasting Glucose (IFG) is fasting plasma glucose 6.1-6.9 mmol/L (110-125 mg/dL), while the ADA uses a lower cutoff of 5.6-6.9 mmol/L (100-125 mg/dL). The WHO cutoff is more commonly used in international epidemiological surveillance and STEPS surveys for cross-country comparisons. The ADA cutoff identifies more individuals as having prediabetes, leading to higher prevalence estimates. This definitional difference is important when comparing IFG prevalence data across studies."
   },
   {
     id: 10,
-    question: "Impaired Fasting Glucose (IFG) according to ADA 2024 criteria is defined as fasting plasma glucose of:",
+    question: "Impaired Glucose Tolerance (IGT) is defined by the WHO as a 2-hour post-load plasma glucose (75g OGTT) value of:",
     options: [
-      "100-125 mg/dL",
-      "110-125 mg/dL",
-      "110-139 mg/dL",
-      "100-139 mg/dL"
+      "7.0-10.9 mmol/L (126-196 mg/dL)",
+      "7.8-11.0 mmol/L (140-198 mg/dL)",
+      "6.5-7.8 mmol/L (117-140 mg/dL)",
+      "8.0-11.1 mmol/L (144-200 mg/dL)"
     ],
-    answer: 0,
-    explanation: "ADA defines IFG as fasting plasma glucose 100-125 mg/dL (5.6-6.9 mmol/L). WHO and many international organizations use a higher threshold of 110-125 mg/dL (6.1-6.9 mmol/L) for IFG. Impaired Glucose Tolerance (IGT) is defined by both ADA and WHO as 2-hour OGTT plasma glucose 140-199 mg/dL (7.8-11.0 mmol/L). Both IFG and IGT represent 'prediabetes' states associated with increased risk of progression to Type 2 DM and cardiovascular disease."
+    answer: 1,
+    explanation: "WHO defines Impaired Glucose Tolerance (IGT) as a 2-hour post-load plasma glucose (75g OGTT) of 7.8-11.0 mmol/L (140-198 mg/dL) with fasting glucose below the diabetic threshold. IGT is a significant population-level indicator for future Type 2 diabetes risk (approximately 5-10% annual conversion rate) and is associated with independently increased cardiovascular risk. The ICMR-INDIAB study found substantial IGT prevalence across Indian states, often exceeding diabetes prevalence in rural areas."
   },
   {
     id: 11,
-    question: "The primary pathophysiological mechanism underlying insulin resistance in Type 2 diabetes mellitus involves:",
+    question: "The economic burden of diabetes at the population level, as estimated in the IDF Diabetes Atlas, is measured using which approach?",
     options: [
-      "Autoimmune destruction of pancreatic beta cells",
-      "Post-receptor defect in insulin signaling pathway (IRS-1/PI3K/Akt)",
-      "Reduced synthesis of proinsulin",
-      "Increased glucagon secretion as the primary event"
+      "Direct medical costs of hospitalization and insulin procurement only",
+      "Total health expenditure attributable to diabetes, including direct and indirect costs",
+      "Cost per quality-adjusted life year (QALY) lost due to diabetes complications",
+      "Proportion of national GDP allocated to diabetes care programs"
     ],
     answer: 1,
-    explanation: "Insulin resistance in Type 2 DM primarily involves defects in the post-receptor insulin signaling pathway. After insulin binds its receptor (tyrosine kinase), normal signaling proceeds via IRS-1 (Insulin Receptor Substrate-1) phosphorylation, activating PI3K (phosphoinositide 3-kinase), which phosphorylates Akt/PKB, leading to GLUT-4 translocation for glucose uptake. In insulin resistance, serine phosphorylation of IRS-1 (caused by excess free fatty acids, inflammation, etc.) impairs this cascade. Autoimmune beta-cell destruction is the mechanism in Type 1 DM. Increased glucagon is a secondary contributing factor (the 'bihormonal hypothesis')."
+    explanation: "The IDF Diabetes Atlas estimates the economic burden using total health expenditure attributable to diabetes, encompassing direct costs (outpatient visits, medications, hospitalizations, management of complications) and indirect costs (lost productivity, absenteeism, premature mortality). The 10th edition (2021) estimated global diabetes-related health expenditure at USD 966 billion, representing approximately 9% of global adult health expenditure. India's high diabetes burden translates to substantial economic loss, particularly affecting working-age adults."
   },
   {
     id: 12,
-    question: "A 38-year-old woman with Type 1 diabetes since age 12 is found to have urine albumin-to-creatinine ratio (UACR) of 45 mg/g on two out of three samples over 3 months, with eGFR 68 mL/min/1.73m2. According to KDIGO 2022, what stage of diabetic kidney disease does she have?",
+    question: "Diabetes-attributable mortality at the population level in India is best estimated using which epidemiological approach?",
     options: [
-      "CKD G2 A1 - normal to mildly reduced eGFR with normal albuminuria",
-      "CKD G2 A2 - normal to mildly reduced eGFR with moderately increased albuminuria",
-      "CKD G3a A2 - mildly to moderately reduced eGFR with moderately increased albuminuria",
-      "CKD G3a A1 - mildly to moderately reduced eGFR with normal albuminuria"
+      "Counting only deaths where diabetes is listed as the primary cause in hospital records",
+      "Population-attributable fraction using community diabetes prevalence and mortality relative risk from prospective cohort studies",
+      "Verbal autopsy data from civil registration alone",
+      "Facility-based death audits restricted to tertiary care hospitals"
     ],
     answer: 1,
-    explanation: "KDIGO CKD staging uses eGFR categories (G1-G5) and albuminuria categories (A1-A3). eGFR 60-89 mL/min/1.73m2 = G2 (mildly reduced). UACR 30-299 mg/g = A2 (moderately increased albuminuria, previously called 'microalbuminuria'). Therefore, this patient has CKD G2 A2. eGFR 45-59 = G3a. UACR < 30 mg/g = A1 (normal to mildly increased). The combination of eGFR 68 (G2) and UACR 45 mg/g (A2) gives CKD G2 A2, representing early diabetic nephropathy."
+    explanation: "Diabetes-attributable mortality is most accurately estimated using the Population-Attributable Fraction (PAF), calculated as: PAF = Pe(RR-1)/[Pe(RR-1)+1], where Pe is the community-level diabetes prevalence and RR is the relative risk of mortality from prospective cohort studies. This approach captures the indirect role diabetes plays in cardiovascular deaths, renal failure, and infections — causes often not coded as 'diabetes deaths' in vital registration. Relying solely on direct death certificate data substantially underestimates diabetes mortality due to poor cause-of-death coding in India."
   },
   {
     id: 13,
-    question: "According to the ACC/AHA 2017 hypertension guidelines, Stage 1 hypertension is defined as:",
-    options: [
-      "SBP 130-139 mmHg or DBP 80-89 mmHg",
-      "SBP 140-159 mmHg or DBP 90-99 mmHg",
-      "SBP 120-129 mmHg and DBP < 80 mmHg",
-      "SBP >= 160 mmHg or DBP >= 100 mmHg"
-    ],
-    answer: 0,
-    explanation: "ACC/AHA 2017 guidelines lowered hypertension thresholds significantly. The new classification: Normal: < 120/80 mmHg; Elevated: SBP 120-129 and DBP < 80 mmHg; Stage 1 HTN: SBP 130-139 OR DBP 80-89 mmHg; Stage 2 HTN: SBP >= 140 OR DBP >= 90 mmHg; Hypertensive crisis: SBP > 180 and/or DBP > 120 mmHg. This contrasts with JNC 8 (2014) which maintained the treatment threshold at >= 140/90 mmHg (or >= 150/90 for those > 60 years). Option C describes 'Elevated' blood pressure in ACC/AHA 2017 classification."
+    question: "According to WHO Global Health Observatory and GBD 2019 data, cardiovascular diseases (CVDs) are responsible for approximately what proportion of all global deaths annually?",
+    options: ["15%", "22%", "32%", "44%"],
+    answer: 2,
+    explanation: "CVDs are the leading cause of death globally, responsible for approximately 32% of all global deaths (approximately 17.9 million deaths per year). Ischemic heart disease accounts for about 16% of global deaths, making it the single leading cause, while stroke accounts for about 11%. In India, CVDs account for approximately 27-30% of all deaths based on GBD 2019 data and SRS-based estimates, with premature CVD deaths (before age 70) being disproportionately higher than in high-income countries."
   },
   {
     id: 14,
-    question: "Atherosclerosis pathogenesis begins primarily with:",
+    question: "The GBD study data for India consistently identify which condition as the leading cause of CVD-related DALYs (Disability-Adjusted Life Years)?",
     options: [
-      "Smooth muscle cell proliferation in the media",
-      "Endothelial dysfunction and subendothelial accumulation of oxidized LDL",
-      "Platelet aggregation on intact endothelium",
-      "Calcification of the tunica adventitia"
+      "Rheumatic heart disease",
+      "Ischemic heart disease",
+      "Hemorrhagic stroke",
+      "Peripheral artery disease"
     ],
     answer: 1,
-    explanation: "The 'response to injury' hypothesis (Ross 1976, updated) describes atherosclerosis beginning with endothelial dysfunction/injury caused by risk factors (hypertension, dyslipidemia, smoking, diabetes). This leads to increased permeability and subendothelial accumulation of LDL, which undergoes oxidation (ox-LDL). Monocytes adhere to activated endothelium, migrate into the intima, differentiate into macrophages, engulf ox-LDL to form foam cells - the hallmark of the fatty streak, the earliest atherosclerotic lesion. Smooth muscle cell migration and proliferation (from media to intima) and platelet aggregation occur later in plaque progression."
+    explanation: "Ischemic heart disease contributes the highest CVD burden in India in terms of DALYs, according to GBD study data. India has experienced a rapid rise in ischemic heart disease over recent decades, with a younger age of onset compared to high-income countries (mean age of first MI approximately 6-10 years earlier). The ICMR-PHFI-IHMe report on India's Burden of Disease (2017) confirmed ischemic heart disease as the leading single cause of death and DALYs, reflecting accelerated epidemiological transition."
   },
   {
     id: 15,
-    question: "The Framingham Heart Study's 10-year cardiovascular risk score includes all of the following variables EXCEPT:",
-    options: [
-      "Age and sex",
-      "Total cholesterol and HDL cholesterol",
-      "Systolic blood pressure and treatment status",
-      "Body mass index and waist circumference"
-    ],
-    answer: 3,
-    explanation: "The Framingham 10-year CVD risk score (Wilson et al. 1998; updated versions) includes: age, sex, total cholesterol, HDL cholesterol, systolic blood pressure (and whether treated), diabetes status (yes/no), and smoking status. BMI and waist circumference are NOT included in the classic Framingham score, despite being important CVD risk factors. The ACC/AHA Pooled Cohort Equations (2013) similarly do not include BMI. The Framingham score was developed from the Framingham Heart Study cohort in Massachusetts and is primarily validated for White and Black American populations."
+    question: "In global NCD burden analyses and the WHO 25x25 target framework, 'premature CVD death' is defined as death from CVD occurring before what age?",
+    options: ["Before 50 years", "Before 60 years", "Before 70 years", "Before 75 years"],
+    answer: 2,
+    explanation: "Premature CVD (and NCD) death is defined as death occurring before age 70 years. The WHO Global Action Plan for NCDs targets a 25% relative reduction in premature NCD mortality (30-70 years) by 2025 compared to 2010 baseline. India has a particularly high burden of premature CVD deaths — over 50% of ischemic heart disease deaths in India occur in individuals under 70 years, substantially higher than in high-income countries where CVD predominantly affects older age groups."
   },
   {
     id: 16,
-    question: "A 58-year-old hypertensive smoker presents with sudden onset severe headache ('thunderclap headache'), neck stiffness, and photophobia. CT scan shows blood in the subarachnoid space. What type of stroke is this?",
+    question: "The INTERHEART study calculated Population Attributable Fractions (PAF) for nine modifiable risk factors for acute myocardial infarction across 52 countries. Globally, which risk factor had the highest PAF for MI?",
     options: [
-      "Ischemic stroke - cardioembolic",
-      "Intracerebral hemorrhage",
-      "Subarachnoid hemorrhage",
-      "Lacunar infarct"
+      "Hypertension",
+      "Smoking",
+      "Abnormal lipids (ApoB/ApoA1 ratio)",
+      "Diabetes mellitus"
     ],
     answer: 2,
-    explanation: "Subarachnoid hemorrhage (SAH) is characterized by sudden severe 'thunderclap' headache (worst headache of life), meningeal signs (neck stiffness, photophobia), and blood in the subarachnoid space on CT. SAH accounts for about 5% of all strokes; 85% are due to ruptured saccular (berry) aneurysms. Intracerebral hemorrhage causes blood in brain parenchyma (not subarachnoid space) and typically presents with focal deficits. Ischemic stroke (80% of all strokes) would not show blood on CT acutely. Lacunar infarcts are small deep infarcts from small vessel disease."
+    explanation: "The INTERHEART study (Yusuf et al., Lancet 2004) found that abnormal lipids, measured by the ApoB/ApoA1 ratio, had the highest PAF for acute MI globally (49.2%), followed by smoking (35.7%), psychosocial factors (32.5%), abdominal obesity (20.1%), hypertension (17.9%), diabetes (9.9%), low fruit/vegetable intake (13.7%), physical inactivity (12.2%), and alcohol (6.7%). The nine factors collectively accounted for over 90% of the PAF for MI. This study highlighted the universality of CVD risk factors across different geographic and ethnic populations."
   },
   {
     id: 17,
-    question: "According to the Global Burden of Disease study, cardiovascular diseases account for approximately what percentage of all deaths globally?",
+    question: "NFHS-5 (2019-21) measured blood pressure in adults aged 15 years and above in India. The prevalence of elevated blood pressure (>= 140/90 mmHg) reported in NFHS-5 was approximately:",
     options: [
-      "15%",
-      "24%",
-      "32%",
-      "42%"
+      "10% in men and 8% in women",
+      "24% in men and 21% in women",
+      "38% in men and 34% in women",
+      "50% in men and 45% in women"
     ],
-    answer: 2,
-    explanation: "According to the Global Burden of Disease (GBD) 2019 data and WHO, cardiovascular diseases are the leading cause of death globally, accounting for approximately 32% of all global deaths (approximately 17.9 million deaths per year). Ischemic heart disease and stroke together account for the majority of CVD deaths. In India, CVD accounts for approximately 28-30% of all deaths. The WHO NCD Global Monitoring Framework 2017 reports cardiovascular diseases as responsible for the largest proportion of premature NCD deaths."
+    answer: 1,
+    explanation: "NFHS-5 (2019-21) reported that approximately 24% of men and 21% of women aged 15 years and above had elevated blood pressure (>= 140/90 mmHg or currently taking medication for it). This represents a significant increase from NFHS-4 (2015-16) estimates (13% men, 12% women using the same definition). NFHS-5 also found that awareness, treatment, and control rates for hypertension were low, with only about 12% of hypertensive men and 19% of hypertensive women having their blood pressure controlled — indicating a large treatment gap."
   },
   {
     id: 18,
-    question: "In acute coronary syndrome (ACS), the finding that distinguishes NSTEMI from unstable angina is:",
+    question: "The Framingham Risk Score is applied in public health for which population-level purpose?",
     options: [
-      "Presence of chest pain at rest",
-      "ST-segment depression on ECG",
-      "Elevation of cardiac biomarkers (troponin I or T)",
-      "Response to sublingual nitrates"
+      "Determining eligibility for bariatric surgery in clinical settings",
+      "Estimating 10-year CVD risk for population risk stratification and targeted preventive intervention planning",
+      "Calculating global DALYs attributable to cardiovascular disease in GBD analyses",
+      "Setting health insurance premiums based on cardiovascular mortality projections"
     ],
-    answer: 2,
-    explanation: "Both unstable angina (UA) and NSTEMI present without persistent ST-segment elevation, may have ST depression/T-wave changes, and cause chest pain at rest. The critical distinguishing feature is elevation of cardiac biomarkers - specifically troponin I or troponin T (high-sensitivity troponin preferred). In NSTEMI, myocardial necrosis occurs causing troponin release. In UA, there is no myocardial necrosis and biomarkers remain normal. STEMI is defined by persistent ST-elevation plus biomarker rise. Response to nitrates does not reliably distinguish the two entities."
+    answer: 1,
+    explanation: "The Framingham Risk Score (variables: age, sex, total cholesterol, HDL-C, systolic blood pressure, antihypertensive treatment, smoking, diabetes) estimates 10-year CVD risk. At the population level, it is used for risk stratification: identifying high-risk groups for targeted preventive interventions, monitoring trends in population-level cardiovascular risk, and evaluating the impact of prevention programs. It is widely used in NCD program planning, though its calibration in non-Western populations like South Asians has limitations and recalibration or alternative scores (SCORE, WHO CVD risk charts) may be preferred."
   },
   {
     id: 19,
-    question: "Rheumatic heart disease (RHD) predominantly affects which heart valve in the majority of cases?",
+    question: "GBD study data on global stroke epidemiology indicate that compared to high-income countries (HICs), stroke in low- and middle-income countries (LMICs) like India:",
     options: [
-      "Aortic valve alone",
-      "Mitral valve (mitral stenosis being the most common lesion)",
-      "Tricuspid valve",
-      "Pulmonary valve"
+      "Has lower incidence but similar case fatality rates",
+      "Occurs predominantly in older age groups with lower premature mortality",
+      "Has higher incidence, occurs at younger ages, and contributes to disproportionately more stroke-related deaths and DALYs",
+      "Is predominantly hemorrhagic rather than ischemic, unlike in HICs"
     ],
-    answer: 1,
-    explanation: "Rheumatic heart disease results from repeated episodes of acute rheumatic fever (ARF) caused by group A beta-hemolytic Streptococcus. The mitral valve is involved in the majority of cases (65-70% of isolated valve disease). Mitral stenosis is the most characteristic and common lesion (pure MS or MS with MR). Combined mitral and aortic valve involvement occurs in about 25% of cases. Isolated aortic valve disease occurs in about 5%. Tricuspid and pulmonary involvement is rare in isolation. RHD remains a leading cause of cardiovascular morbidity in low-middle income countries including India."
+    answer: 2,
+    explanation: "GBD data show that LMICs bear a disproportionately higher stroke burden: higher incidence rates, younger age of occurrence, and higher case fatality compared to HICs. LMICs account for approximately 87% of global stroke-related deaths and DALYs despite having better population-level primary prevention opportunities. India's stroke incidence has been rising, driven by hypertension (the most important modifiable risk factor), diabetes, tobacco use, and air pollution. The younger age of stroke onset in India represents a major loss of productive years."
   },
   {
     id: 20,
-    question: "Which of the following lipid abnormalities is the MOST COMMON dyslipidemia pattern in Type 2 diabetes mellitus?",
+    question: "Rheumatic Heart Disease (RHD) represents a significant CVD burden in India. Which population group bears the highest RHD prevalence, and what is the primary epidemiological driver?",
     options: [
-      "Elevated LDL-C with normal triglycerides",
-      "Low HDL-C, elevated triglycerides, and small dense LDL particles (diabetic dyslipidemia)",
-      "Isolated elevated total cholesterol",
-      "Elevated Lp(a) with normal triglycerides"
+      "Elderly urban males due to cumulative hypertension exposure and valvular calcification",
+      "Children and young adults in low-income settings due to repeated untreated streptococcal throat infections causing acute rheumatic fever",
+      "Middle-aged urban women due to estrogen-related valvular changes and autoimmune mechanisms",
+      "Adults aged 50-70 years in periurban areas due to delayed healthcare-seeking behavior"
     ],
     answer: 1,
-    explanation: "The characteristic diabetic dyslipidemia (atherogenic dyslipidemia) in Type 2 DM consists of: elevated triglycerides (due to increased hepatic VLDL production from insulin resistance), low HDL-C, and predominantly small dense LDL particles (sdLDL, more atherogenic than large buoyant LDL). Total LDL-C may be normal or only mildly elevated, making it a particularly insidious pattern. Insulin resistance increases free fatty acid flux to liver, increasing VLDL synthesis and TG. CETP activity exchanges TG for cholesterol esters, depleting HDL and creating sdLDL. This triad substantially increases cardiovascular risk."
+    explanation: "RHD predominantly affects children and young adults in low-income settings. It results from repeated episodes of Acute Rheumatic Fever (ARF) following untreated Group A Streptococcal pharyngitis, leading to progressive valvular damage. Poor housing conditions, household overcrowding, and limited access to antibiotics are key social determinants. India accounts for approximately one-third to one-quarter of global RHD deaths. The GBD 2019 estimated approximately 39 million prevalent RHD cases globally, with South Asia being the highest-burden region."
   },
   {
     id: 21,
-    question: "The INTERHEART study identified what fraction of the population-attributable risk (PAR) for acute myocardial infarction that could be explained by 9 modifiable risk factors?",
+    question: "Which surveillance system in India is specifically designed to monitor NCD risk factors including CVD risk factors (tobacco, alcohol, diet, physical activity, blood pressure, blood glucose, cholesterol) at the population level?",
     options: [
-      "Over 50%",
-      "Over 70%",
-      "Over 90%",
-      "Over 99%"
+      "Integrated Disease Surveillance Programme (IDSP) — focused on infectious disease outbreaks",
+      "India WHO STEPS Survey — standardized NCD risk factor surveillance",
+      "Sample Registration System (SRS) — cause of death recording",
+      "National Family Health Survey (NFHS) — covers only reproductive and child health indicators"
     ],
-    answer: 2,
-    explanation: "The INTERHEART study (Yusuf et al., Lancet 2004), a large case-control study across 52 countries with 15,152 MI cases and 14,820 controls, demonstrated that 9 modifiable risk factors (abnormal lipids, smoking, hypertension, diabetes, abdominal obesity, psychosocial factors, low fruit/vegetable consumption, physical inactivity, and excessive alcohol) collectively accounted for over 90% of the population-attributable risk for acute MI. Abnormal ApoB/ApoA1 ratio had the highest PAR (49%), followed by smoking (36%). This study highlighted the universality of CVD risk factors across different geographic and ethnic populations."
+    answer: 1,
+    explanation: "The India STEPS Survey (WHO STEPwise Approach to Surveillance) is specifically designed to monitor NCD risk factors at the population level using a standardized three-step methodology: behavioral questionnaire, physical measurements, and biochemical measurements. India conducted STEPS surveys to obtain representative prevalence data for NCD risk factors (tobacco use, physical inactivity, diet, blood pressure, blood glucose, cholesterol), which are used for planning NCD prevention programs and monitoring progress toward WHO Global NCD targets."
   },
   {
     id: 22,
-    question: "Heart failure with reduced ejection fraction (HFrEF) is defined as heart failure with left ventricular ejection fraction (LVEF) of:",
-    options: [
-      "< 55%",
-      "< 50%",
-      "< 45%",
-      "< 40%"
-    ],
-    answer: 3,
-    explanation: "According to ESC 2021 and ACC/AHA 2022 heart failure guidelines, HFrEF is defined as heart failure with LVEF < 40%. Heart failure with preserved ejection fraction (HFpEF) has LVEF >= 50%. A new category 'heart failure with mildly reduced ejection fraction' (HFmrEF) covers LVEF 41-49% (ESC 2021). Previously, HFmrEF was called 'heart failure with mid-range ejection fraction.' Guideline-directed medical therapy (GDMT) with ACE inhibitors/ARBs/ARNIs, beta-blockers, MRAs, and SGLT-2 inhibitors has mortality benefit specifically in HFrEF (LVEF < 40%)."
+    question: "Population surveys in India including STEPS surveys estimate the prevalence of raised total cholesterol (>= 200 mg/dL) in Indian adults to be approximately:",
+    options: ["5-10%", "13-17%", "25-30%", "40-50%"],
+    answer: 2,
+    explanation: "Population surveys in India, including state-level STEPS surveys and community-based studies, estimate dyslipidemia (total cholesterol >= 200 mg/dL) prevalence at approximately 25-30% in Indian adults, with urban populations showing consistently higher rates. The ICMR study on dyslipidemia in urban Indian adults (DISHA study) and multiple STEPS surveys confirm this range. Rising dyslipidemia prevalence — driven by dietary transitions, physical inactivity, and increasing obesity — is a major contributor to the growing atherosclerotic CVD burden in India."
   },
   {
     id: 23,
-    question: "Sudden cardiac death (SCD) is most commonly caused by which arrhythmia in adults with structural heart disease?",
+    question: "The 'socioeconomic gradient' in CVD epidemiology, observed globally, is best described as:",
     options: [
-      "Complete heart block (third-degree AV block)",
-      "Ventricular fibrillation (VF)",
-      "Atrial fibrillation with rapid ventricular response",
-      "Torsades de pointes"
+      "CVD incidence is uniformly highest among the wealthiest socioeconomic groups in all countries",
+      "In HICs, CVD burden has progressively shifted to lower socioeconomic groups; in LMICs, lower socioeconomic strata increasingly bear a higher CVD burden",
+      "Socioeconomic status has no consistent independent relationship with CVD after adjusting for behavioral risk factors",
+      "Middle-income groups have the highest CVD risk due to transitional dietary patterns and partial access to healthcare"
     ],
     answer: 1,
-    explanation: "Ventricular fibrillation (VF) is the most common mechanism of sudden cardiac death (SCD), accounting for approximately 75-80% of cases in adults. VF typically occurs in the setting of structural heart disease, most commonly coronary artery disease (responsible for 80% of SCD in Western populations). VF causes immediate loss of organized cardiac output. Torsades de pointes (a specific polymorphic VT) is a cause of SCD mainly in long QT syndrome but is less common overall. Complete heart block can cause asystole and SCD but is less frequent. SCD accounts for approximately 50% of all cardiovascular deaths."
+    explanation: "The socioeconomic gradient in CVD is well-documented: in high-income countries, CVD risk has progressively shifted toward lower socioeconomic groups as wealthier groups adopted healthier lifestyles, while in LMICs including India, CVD increasingly affects lower socioeconomic strata due to limited access to prevention, poor hypertension control, higher tobacco exposure, and dietary risk factors. GBD data show that lower socioeconomic quintiles in India have higher CVD mortality rates — reflecting both higher risk factor exposure and poorer access to effective care."
   },
   {
     id: 24,
-    question: "According to the WHO STEPS surveillance framework, the 'Step 1' of the STEPwise approach to NCD risk factor surveillance involves:",
+    question: "In Omran's epidemiological transition framework, what stage is India predominantly experiencing regarding the CVD burden?",
     options: [
-      "Biochemical measurements (blood glucose, lipids)",
-      "Physical measurements (height, weight, waist circumference, blood pressure)",
-      "Questionnaire-based assessment of behavioral risk factors",
-      "Medical record review for clinical diagnoses"
+      "Stage 1 (Pestilence and Famine): CVD from nutritional deficiencies and infections",
+      "Stage 2 (Receding Pandemics): CVD predominantly from rheumatic disease and infections",
+      "Stage 3 (Degenerative and Man-made Diseases): rising atherosclerotic CVD driven by behavioral risk factors",
+      "Stage 4 (Delayed Degenerative Diseases): CVD burden shifting to older age groups with effective prevention"
     ],
     answer: 2,
-    explanation: "The WHO STEPwise Approach to NCD Risk Factor Surveillance (STEPS) consists of three steps: Step 1 - Questionnaire (behavioral risk factors: tobacco use, alcohol consumption, physical activity, diet/fruit and vegetable intake); Step 2 - Physical measurements (height, weight, waist circumference, blood pressure, heart rate); Step 3 - Biochemical measurements (fasting blood glucose, total cholesterol, sometimes urinary creatinine for salt intake). The framework is designed to be implemented in a stepwise manner with increasing resources, allowing countries to collect comparable data for monitoring NCD risk factors over time."
+    explanation: "India is predominantly in Stage 3 of Omran's epidemiological transition (Degenerative and Man-made Diseases), characterized by rising atherosclerotic CVD and stroke driven by tobacco use, dietary changes, sedentary lifestyles, and urbanization. However, India exhibits a unique 'compressed' or 'polarized' transition — atherosclerotic CVD coexists with significant rheumatic heart disease and infection-related cardiovascular mortality, especially in rural and low-income populations. This reflects heterogeneity across Indian states, with southern and western states more advanced in transition than eastern and central states."
   },
   {
     id: 25,
-    question: "According to GLOBOCAN 2020, which cancer has the highest incidence globally (both sexes combined)?",
-    options: [
-      "Lung cancer",
-      "Breast cancer",
-      "Colorectal cancer",
-      "Prostate cancer"
-    ],
-    answer: 1,
-    explanation: "According to GLOBOCAN 2020 (IARC), breast cancer surpassed lung cancer to become the most commonly diagnosed cancer globally for the first time, with an estimated 2.26 million new cases (11.7% of all cancers). Lung cancer came second with 2.21 million cases, followed by colorectal cancer (1.93 million), prostate cancer (1.41 million), and stomach cancer (1.09 million). For cancer mortality, lung cancer remains the leading cause of cancer deaths globally (1.8 million deaths, 18% of all cancer deaths). This global ranking reflects rising breast cancer incidence in low-middle income countries."
+    question: "GLOBOCAN 2020 data from IARC estimated the total number of new cancer cases globally to be approximately:",
+    options: ["12.1 million", "15.5 million", "19.3 million", "24.8 million"],
+    answer: 2,
+    explanation: "GLOBOCAN 2020 (IARC) estimated approximately 19.3 million new cancer cases and 10.0 million cancer deaths globally in 2020. Breast cancer surpassed lung cancer for the first time as the most commonly diagnosed cancer globally (2.26 million cases), while lung cancer remained the leading cause of cancer death (1.8 million deaths). These data are the primary global reference for cancer burden estimation and are used for national cancer control planning, resource allocation, and international comparisons."
   },
   {
     id: 26,
-    question: "In India, according to National Cancer Registry Programme (NCRP) data, the MOST COMMON cancer in WOMEN is:",
-    options: [
-      "Cervical cancer",
-      "Breast cancer",
-      "Ovarian cancer",
-      "Colorectal cancer"
-    ],
+    question: "According to ICMR-NCDIR National Cancer Registry Programme data, which cancer is currently the most common among females in India?",
+    options: ["Cervical cancer", "Breast cancer", "Ovarian cancer", "Colorectal cancer"],
     answer: 1,
-    explanation: "According to NCRP/ICMR-NCDIR data (Three-Year Report 2012-2014 and subsequent reports), breast cancer has overtaken cervical cancer as the most common cancer in women in India overall, particularly in urban areas. However, there is significant geographic variation: cervical cancer remains the most common in rural areas and northeastern states. In terms of the national aggregate, breast cancer is now the leading cancer in Indian women (approximately 28-30 per 100,000 ASR in urban registries). Cervical cancer is a close second. Together, breast and cervical cancers account for approximately 60% of all cancers in Indian women."
+    explanation: "Breast cancer has overtaken cervical cancer as the most common cancer among Indian women, as per recent ICMR-NCDIR data (Three-Year Reports). However, there is significant geographic variation: cervical cancer remains the leading cancer in several states, particularly northeastern states and rural areas. Nationally, breast cancer accounts for approximately 27-28% of all female cancers, followed by cervical cancer (~18%), ovarian cancer, and corpus uteri cancer. The shift reflects both rising breast cancer incidence (reproductive risk factors, urbanization) and declining cervical cancer incidence in some areas due to screening."
   },
   {
     id: 27,
-    question: "The International Agency for Research on Cancer (IARC) classifies tobacco smoking as a Group 1 carcinogen. Group 1 classification means:",
+    question: "A Population-Based Cancer Registry (PBCR) differs from a Hospital-Based Cancer Registry (HBCR) in which fundamental methodological way?",
     options: [
-      "Possibly carcinogenic to humans (limited evidence)",
-      "Probably carcinogenic to humans (sufficient animal evidence, limited human evidence)",
-      "Carcinogenic to humans (sufficient evidence of carcinogenicity in humans)",
-      "Not classifiable as to carcinogenicity to humans"
+      "PBCR records cancer mortality data while HBCR records cancer incidence data",
+      "PBCR captures all incident cancer cases in a defined geographic population to calculate true incidence rates; HBCR records cases attending a specific hospital and cannot generate population-based rates",
+      "PBCR is maintained only in metropolitan areas while HBCR covers rural regions",
+      "PBCR relies exclusively on histopathological confirmation while HBCR uses clinical diagnoses"
     ],
-    answer: 2,
-    explanation: "IARC Monographs classify agents into 4 groups based on strength of evidence: Group 1 - Carcinogenic to humans (sufficient evidence of carcinogenicity in humans); Group 2A - Probably carcinogenic to humans (limited human evidence but sufficient animal evidence); Group 2B - Possibly carcinogenic to humans (limited evidence in humans and animals); Group 3 - Not classifiable as to carcinogenicity to humans; Group 4 - Probably not carcinogenic to humans (only one agent: caprolactam). Tobacco smoking (Group 1) causes cancers of lung, oral cavity, pharynx, esophagus, stomach, pancreas, kidney, bladder, cervix, and acute myeloid leukemia."
+    answer: 1,
+    explanation: "A Population-Based Cancer Registry (PBCR) systematically captures all new cancer cases (incident cases) occurring in a defined geographic population during a defined period, enabling calculation of age-standardized incidence rates (ASIR) representative of that population. These rates are used for epidemiological analysis, burden estimation, and program planning. An Hospital-Based Cancer Registry (HBCR) records all cancer patients attending a specific hospital — useful for studying patient characteristics, treatment patterns, and survival outcomes, but it cannot calculate true population-based incidence rates because its denominator (catchment population) is undefined."
   },
   {
     id: 28,
-    question: "The Population-Based Cancer Registry (PBCR) collects cancer incidence data from a defined geographic population. ICMR-NCDIR coordinates the cancer registry network in India. How does PBCR differ from Hospital-Based Cancer Registry (HBCR)?",
-    options: [
-      "PBCR records only mortality data while HBCR records incidence data",
-      "PBCR provides population-based incidence rates useful for planning; HBCR reflects case mix of patients attending that hospital",
-      "PBCR is maintained by private hospitals while HBCR is maintained by government hospitals",
-      "PBCR collects histopathology data while HBCR collects clinical data only"
-    ],
-    answer: 1,
-    explanation: "PBCR (Population-Based Cancer Registry) collects data on all new cancer cases occurring in a defined geographic area/population, allowing calculation of age-standardized incidence rates (ASR) representative of that population. HBCR (Hospital-Based Cancer Registry) records all cancer cases diagnosed and/or treated at a specific hospital, reflecting that institution's case mix but not generalizable to the population. PBCR is essential for calculating cancer burden, risk, and planning prevention programs. ICMR-NCDIR (National Centre for Disease Informatics and Research) in Bengaluru coordinates India's NCRP with both types of registries. India has over 30 PBCRs and multiple HBCRs."
+    question: "According to ICMR-NCDIR National Cancer Registry data, which is the most common cancer among males in India?",
+    options: ["Prostate cancer", "Colorectal cancer", "Lip and oral cavity cancer", "Lung cancer"],
+    answer: 2,
+    explanation: "Lip and oral cavity cancer is the most common cancer among Indian males according to ICMR-NCDIR National Cancer Registry Programme data, accounting for approximately 11-16% of all male cancers depending on the registry. This high burden is directly attributable to the high prevalence of tobacco use (cigarette smoking, bidi smoking, and smokeless tobacco/betel quid chewing) among Indian men. Oral cancers in India account for approximately 30% of global oral cancer burden, making tobacco control the most impactful intervention for reducing male cancer burden in India."
   },
   {
     id: 29,
-    question: "In the TNM staging system for cancer, 'N2' generally denotes:",
+    question: "Age-Standardized Incidence Rate (ASIR) of cancer is calculated and preferred over crude incidence rates because:",
     options: [
-      "No regional lymph node metastasis",
-      "Metastasis to ipsilateral regional lymph nodes",
-      "Metastasis to multiple regional lymph nodes or contralateral nodes (site-specific definition)",
-      "Distant metastasis to lymph nodes"
+      "It adjusts for differences in healthcare access and diagnostic capacity across populations",
+      "It removes the confounding effect of different population age structures, enabling valid comparisons across regions and time periods",
+      "It weights cancer rates by population density to produce geographically uniform estimates",
+      "It adjusts for differences in case ascertainment completeness between registries"
     ],
-    answer: 2,
-    explanation: "In the AJCC/UICC TNM classification: T - primary tumor extent; N - regional lymph node involvement; M - distant metastasis. N categories: N0 - no regional lymph node metastasis; N1 - metastasis to 1-3 regional lymph nodes (or ipsilateral single nodes in some sites); N2 - metastasis to 4+ regional lymph nodes, or contralateral/bilateral nodes (site-specific, e.g., in breast cancer N2 = ipsilateral axillary nodes fixed/matted, or internal mammary nodes without axillary); N3 - more extensive regional node involvement. M0 = no distant metastasis; M1 = distant metastasis. The exact N2 definition varies by primary cancer site in the TNM system."
+    answer: 1,
+    explanation: "Age-Standardized Incidence Rate (ASIR) adjusts for differences in age structures of populations using a standard population (typically the WHO World Standard Population based on Segi's 1960 world population), allowing valid epidemiological comparisons of cancer incidence across countries, regions, and over time. Since cancer incidence is strongly age-dependent (rising sharply with age), a population with more elderly individuals will show higher crude rates independent of any true difference in cancer risk. ASIR is the primary metric used in GLOBOCAN and ICMR-NCDIR reports."
   },
   {
     id: 30,
-    question: "Visual Inspection with Acetic Acid (VIA) is used as a cervical cancer screening tool in low-resource settings. What is the principle behind VIA?",
-    options: [
-      "Acetic acid stains dysplastic cells blue",
-      "Acetowhitening - acetic acid causes reversible coagulation of proteins in abnormal/dysplastic cells, making them appear white",
-      "Acetic acid dissolves mucus to allow better visualization of the transformation zone",
-      "Acetic acid reacts with HPV viral proteins to produce a visible precipitate"
-    ],
+    question: "The IARC Monographs programme classifies agents according to strength of carcinogenicity evidence. Which group classification indicates that an agent is 'probably carcinogenic to humans'?",
+    options: ["Group 1", "Group 2A", "Group 2B", "Group 3"],
     answer: 1,
-    explanation: "VIA (Visual Inspection with Acetic Acid) uses 3-5% acetic acid applied to the cervix; abnormal cells (CIN/dysplasia) with high nuclear protein density undergo reversible acetowhitening - the acetic acid coagulates nuclear proteins, causing the abnormal epithelium to appear white ('acetowhite') against the normal pink squamous epithelium. The transformation zone (squamocolumnar junction) is the target area. VIA is recommended by WHO as a screen-and-treat approach in low-resource settings (LMIC) due to its low cost and immediate result capability. Sensitivity is approximately 70-80%, specificity 70-85% depending on the setting."
+    explanation: "IARC classification: Group 1 = Carcinogenic to humans (sufficient human evidence); Group 2A = Probably carcinogenic to humans (limited human evidence + sufficient animal evidence, or strong mechanistic evidence); Group 2B = Possibly carcinogenic to humans (limited evidence in humans or animals); Group 3 = Not classifiable as to carcinogenicity. Examples: Group 1 includes tobacco smoke, HPV, HBV, HCV, aflatoxin, benzene; Group 2A includes red meat, acrylamide, glyphosate; Group 2B includes coffee (previously classified; now Group 3), pickled vegetables."
   },
   {
     id: 31,
-    question: "The age-standardized incidence rate (ASR) of cancer is calculated using which standard population?",
+    question: "In evaluating population-based cancer screening programs, which indicator measures the ability of a screening test to correctly identify all true positive cancer cases in the screened population?",
     options: [
-      "The population of the country being studied",
-      "WHO World Standard Population (Segi/Doll, modified by WHO)",
-      "The population of India for Indian data",
-      "The oldest available national census data"
+      "Specificity — proportion of true negatives correctly identified",
+      "Positive predictive value — proportion of screen-positives who truly have cancer",
+      "Sensitivity — proportion of true positives correctly identified by the screening test",
+      "Negative predictive value — proportion of screen-negatives who truly do not have cancer"
     ],
-    answer: 1,
-    explanation: "Age-Standardized Rate (ASR) uses the WHO World Standard Population (originally developed by Segi 1960, modified by Doll and subsequently by WHO) to allow comparison of cancer rates across populations and time periods by removing the effect of different age structures. The WHO World Standard Population assigns proportional weights to each 5-year age group. ASR is expressed per 100,000 population per year. In India, NCRP/ICMR-NCDIR uses the WHO World Standard Population for calculating ASRs to enable international comparisons. Using the country's own population would prevent meaningful comparison between nations."
+    answer: 2,
+    explanation: "Sensitivity is the proportion of individuals with the disease (true positives) who are correctly identified as positive by the screening test: Sensitivity = TP/(TP+FN). In cancer screening programs, high sensitivity is critical to minimize missed cancer cases (false negatives), which may progress to advanced stages before clinical detection. For example, mammography sensitivity for breast cancer is approximately 80-90% and VIA sensitivity for CIN is approximately 70-80%. Sensitivity is a key program evaluation indicator alongside specificity, PPV, and coverage."
   },
   {
     id: 32,
-    question: "Which of the following is the MOST COMMON cancer in MEN in India according to NCRP data?",
+    question: "Temporal trends in cancer incidence from registry data are analyzed using which statistical method to identify statistically significant changes in trend direction and quantify the rate of change?",
     options: [
-      "Lung cancer",
-      "Colorectal cancer",
-      "Lip and oral cavity cancer",
-      "Prostate cancer"
+      "Simple linear regression on annual age-standardized incidence rates",
+      "Joinpoint regression analysis to calculate Annual Percent Change (APC) and Average Annual Percent Change (AAPC)",
+      "Log-rank test to compare survival trends between cancer registry periods",
+      "Poisson regression adjusted for population growth rates"
     ],
-    answer: 2,
-    explanation: "According to NCRP/ICMR-NCDIR data for India, lip and oral cavity cancer is the most common cancer in men, accounting for approximately 11-16% of all male cancers. This reflects the high prevalence of tobacco use (smoking and smokeless tobacco/betel quid) in India. Lung cancer is second or third depending on the registry. Prostate cancer has a relatively low incidence in India compared to Western countries. This pattern differs markedly from Western nations where prostate cancer (USA) or colorectal cancer top the list. The high oral cancer burden in India is directly attributable to tobacco and areca nut use."
+    answer: 1,
+    explanation: "Joinpoint regression analysis is the standard statistical method for analyzing temporal trends in cancer incidence and mortality. It identifies 'joinpoints' — years where statistically significant changes in trend direction occur — and calculates Annual Percent Change (APC) for each trend segment. The overall Average Annual Percent Change (AAPC) summarizes the trend over the entire period. This method is used by IARC, NCI SEER program, and ICMR-NCDIR for cancer trend analysis. Increasing AAPC indicates rising incidence; decreasing AAPC indicates declining incidence."
   },
   {
     id: 33,
-    question: "Five-year relative survival rate for cancer is calculated as:",
+    question: "The five-year relative survival rate for cancer, used as a standard metric for comparing cancer outcomes across populations, is calculated as:",
     options: [
-      "Proportion of cancer patients alive at 5 years after diagnosis",
-      "Observed survival in cancer patients divided by expected survival in a matched general population without cancer, expressed as percentage",
-      "Number of cancer patients surviving 5 years divided by total cancer deaths",
-      "Proportion of patients completing 5-year cancer treatment"
+      "Proportion of all cancer patients alive exactly 5 years after diagnosis",
+      "Ratio of observed survival probability of cancer patients to the expected survival of a comparable cancer-free population over 5 years, expressed as a percentage",
+      "Number of cancer patients surviving 5 years divided by total cancer-related deaths in that period",
+      "Proportion of cancer patients who completed full treatment and survived 5 years"
     ],
     answer: 1,
-    explanation: "Five-year relative survival rate = (Observed survival in cancer cohort / Expected survival in a matched general population of same age, sex, and year) x 100. This measure accounts for deaths from all causes in the cancer cohort while adjusting for background mortality, providing a measure closer to the 'net cancer survival' - survival attributable to the cancer. It is preferred over crude 5-year survival which doesn't account for competing causes of death. High relative survival (e.g., thyroid cancer ~98%) indicates favorable prognosis; low rates (pancreatic cancer ~11%) indicate poor prognosis. Used by SEER (USA) and cancer registries worldwide."
+    explanation: "Five-year relative survival rate = (Observed survival in cancer cohort / Expected survival in a matched cancer-free population of same age, sex, and calendar period) x 100. This metric eliminates the effect of competing (non-cancer) causes of death, providing a measure of net survival attributable to the cancer. India's cancer registry-based relative survival data (from PBCR survival studies by ICMR-NCDIR) show substantially lower rates than HICs for most cancers, reflecting later stage at diagnosis, lower treatment access, and differences in cancer biology."
   },
   {
     id: 34,
-    question: "HELICOBACTER PYLORI infection is classified by IARC as a Group 1 carcinogen for which cancer?",
+    question: "The Cancer Mortality-to-Incidence Ratio (MIR) is used as a population-level indicator for which purpose?",
     options: [
-      "Colorectal cancer",
-      "Hepatocellular carcinoma",
-      "Gastric (stomach) cancer",
-      "Esophageal squamous cell carcinoma"
+      "Measuring the 30-day case fatality rate after cancer diagnosis",
+      "Estimating cancer care effectiveness and survival at the population level — a higher MIR indicates poorer outcomes",
+      "Calculating the relative mortality risk of cancer patients compared to the general population",
+      "Estimating the proportion of cancer deaths attributable to late-stage presentation"
     ],
-    answer: 2,
-    explanation: "Helicobacter pylori is classified as a Group 1 carcinogen (IARC Monograph Vol 61, 1994; reaffirmed) specifically for gastric (stomach) cancer and gastric MALT lymphoma. H. pylori infection causes chronic active gastritis, leading to atrophic gastritis, intestinal metaplasia, dysplasia, and ultimately gastric adenocarcinoma (Correa cascade). H. pylori accounts for approximately 75% of all gastric cancers globally. Stomach cancer is the 5th most common cancer globally (GLOBOCAN 2020). HBV and HCV are Group 1 carcinogens for hepatocellular carcinoma; HPV for cervical cancer; Schistosoma haematobium for bladder cancer."
+    answer: 1,
+    explanation: "The Mortality-to-Incidence Ratio (MIR) is calculated as cancer mortality rate divided by cancer incidence rate for a given cancer type and population. It serves as an ecological proxy for cancer survival and health system effectiveness: a MIR close to 1.0 indicates poor survival (most diagnosed patients die), typically seen in LMICs with late-stage diagnosis and limited treatment access. A low MIR (e.g., 0.2 for thyroid cancer) indicates high survival. India has relatively high MIRs for breast, cervical, and colorectal cancers compared to HICs, reflecting delayed diagnosis and treatment gaps."
   },
   {
     id: 35,
-    question: "Breast self-examination (BSE), clinical breast examination (CBE), and mammography are methods of breast cancer detection. Which approach has been shown to reduce breast cancer MORTALITY in randomized controlled trials?",
+    question: "GLOBOCAN cancer projections for future years (e.g., 2040) are generated using which primary methodological approach?",
     options: [
-      "Breast self-examination",
-      "Clinical breast examination alone",
-      "Mammographic screening",
-      "Ultrasound breast screening"
+      "Applying current age-standardized incidence and mortality rates to future demographic projections from UN World Population Prospects",
+      "Agent-based modeling of future cancer risk factor exposure trends",
+      "Simple extrapolation of absolute cancer case numbers from the most recent GLOBOCAN year",
+      "Monte Carlo simulation of future screening program scale-up scenarios"
     ],
-    answer: 2,
-    explanation: "Mammographic screening is the only breast cancer screening method with proven mortality reduction in multiple randomized controlled trials (the Swedish Two-County Trial, HIP Trial, etc.). Meta-analyses show approximately 15-20% reduction in breast cancer mortality in women aged 50-69 years invited for mammography. Breast self-examination (BSE) has not been shown to reduce mortality (Shanghai RCT showed no mortality benefit, more biopsies). Clinical breast examination alone has insufficient RCT evidence for mortality reduction. WHO recommends mammography screening in organized programs for women aged 50-69 where quality control can be assured."
+    answer: 0,
+    explanation: "GLOBOCAN cancer projections for future years use demographic projections from the UN World Population Prospects (projected population size and age structure) combined with current age-standardized incidence and mortality rates. This 'demographic projection' approach provides estimates useful for health system planning and resource allocation, but assumes that current rates remain constant — it does not account for future changes in risk factor exposure, screening programs, or treatment advances. GLOBOCAN projects approximately 28.4 million new cancer cases globally by 2040."
   },
   {
     id: 36,
-    question: "India's National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke (NPCDCS) includes screening for which three cancers at the community level?",
-    options: [
-      "Lung, stomach, and colorectal cancers",
-      "Oral, cervical, and breast cancers",
-      "Cervical, ovarian, and breast cancers",
-      "Oral, lung, and cervical cancers"
-    ],
+    question: "Population Attributable Fraction (PAF) for tobacco as a risk factor for oral cancer in India is estimated using Levin's formula. If tobacco use prevalence (Pe) in the population is 30% and the relative risk (RR) of oral cancer in tobacco users is 5.0, the PAF is approximately:",
+    options: ["30%", "55%", "71%", "87%"],
     answer: 1,
-    explanation: "India's NPCDCS (launched 2010, now integrated into Comprehensive Primary Health Care under Ayushman Bharat) includes population-level screening for: oral cancer (visual examination for tobacco/areca nut users), cervical cancer (VIA/VILI for women aged 30-65 years), and breast cancer (CBE for women aged 30-65 years). These three cancers were selected based on their high burden in India and availability of feasible, cost-effective screening tools for low-resource settings. Cervical cancer screening uses VIA (Visual Inspection with Acetic Acid) as a primary tool, with HPV DNA testing being scaled up under the revised guidelines."
+    explanation: "Using Levin's formula: PAF = Pe(RR-1) / [Pe(RR-1) + 1] = 0.30 x (5-1) / [0.30 x (5-1) + 1] = 0.30 x 4 / [0.30 x 4 + 1] = 1.2 / 2.2 = 0.545 ≈ 55%. This means approximately 55% of oral cancer cases in this population are attributable to tobacco use and could theoretically be prevented by eliminating tobacco use. PAF is the key metric for prioritizing interventions — higher PAF exposures represent greater prevention potential. Tobacco use accounts for the largest PAF for oral, lung, esophageal, and bladder cancers in India."
   },
   {
     id: 37,
-    question: "The concept of 'clonal evolution' in cancer describes:",
+    question: "India's National Cancer Registry Programme (NCRP), coordinated by ICMR-NCDIR (Bengaluru), currently operates approximately how many Population-Based Cancer Registries (PBCRs) across India?",
     options: [
-      "The process by which cancer cells metastasize to distant organs",
-      "The sequential accumulation of genetic mutations in a single cell lineage, conferring selective growth advantage, leading to malignant transformation",
-      "The spread of cancer within a tissue without lymphatic involvement",
-      "The process by which cancer cells escape immune surveillance"
+      "5 PBCRs, covering only the four metropolitan cities and Bangalore",
+      "Approximately 30 PBCRs covering urban and rural areas across multiple states",
+      "Over 100 PBCRs providing near-complete national geographic coverage",
+      "8 PBCRs covering only state capitals in major Indian states"
     ],
     answer: 1,
-    explanation: "Clonal evolution (Nowell 1976) describes how cancer arises from a single cell that acquires genetic mutations over time. Each subsequent mutation that confers a growth advantage leads to clonal expansion of that cell population - natural selection at the cellular level. Vogelstein's multistep carcinogenesis model of colorectal cancer (APC mutation → K-ras → DCC → p53 → invasive cancer) is a classic example. Hallmarks of cancer (Hanahan and Weinberg 2000, updated 2011) include: sustained proliferative signaling, evading growth suppressors, resisting cell death, enabling replicative immortality, inducing angiogenesis, activating invasion/metastasis, among others."
+    explanation: "India's ICMR-NCDIR (National Centre for Disease Informatics and Research) coordinates approximately 30 Population-Based Cancer Registries (PBCRs) covering both urban and rural areas across multiple Indian states and union territories, though complete national geographic coverage is yet to be achieved. PBCRs in cities like Mumbai, Delhi, Chennai, Bangalore, Bhopal, and rural registries in Barshi, Cachar, and East Khasi Hills provide diverse geographic representation. NCRP data constitute India's contribution to GLOBOCAN and CI5 (Cancer Incidence in Five Continents)."
   },
   {
     id: 38,
-    question: "COPD (Chronic Obstructive Pulmonary Disease) is diagnosed spirometrically when post-bronchodilator FEV1/FVC ratio is:",
+    question: "COPD burden in India is substantially higher than global average estimates, partly because of which India-specific exposure that is the primary driver in rural Indian women but not in women in high-income countries?",
     options: [
-      "< 0.80",
-      "< 0.75",
-      "< 0.70",
-      "< 0.65"
+      "High altitude hypoxia exposure in Himalayan border populations",
+      "Biomass fuel combustion for cooking causing prolonged indoor air pollution exposure",
+      "Occupational asbestos exposure in textile manufacturing workers",
+      "High ambient pollen levels from native Indian plant species"
     ],
-    answer: 2,
-    explanation: "According to GOLD (Global Initiative for Chronic Obstructive Lung Disease) guidelines, COPD is confirmed by post-bronchodilator FEV1/FVC < 0.70 (< 70%). This fixed ratio criterion is used despite debate about its overdiagnosis of COPD in the elderly and underdiagnosis in the young (where LLN - lower limit of normal - may be more appropriate). GOLD severity classification (after confirming obstruction): GOLD 1 (mild): FEV1 >= 80% predicted; GOLD 2 (moderate): 50% <= FEV1 < 80%; GOLD 3 (severe): 30% <= FEV1 < 50%; GOLD 4 (very severe): FEV1 < 30% predicted. Tobacco smoking is the most important risk factor for COPD globally; biomass fuel exposure is equally important in India/LMICs."
+    answer: 1,
+    explanation: "Biomass fuel combustion (wood, crop residues, cow dung cakes) for cooking is a major driver of COPD in India, disproportionately affecting rural women and children who spend prolonged hours in poorly ventilated kitchens. IHME and GBD study data rank household air pollution from solid fuels as one of the leading risk factors for COPD in India, comparable to tobacco in terms of PAF. This distinguishes India's COPD epidemiology from HICs where cigarette smoking is the dominant etiology. Approximately 60% of Indian households use solid fuels for cooking (NFHS-5)."
   },
   {
     id: 39,
-    question: "According to WHO BMI classification, which BMI range defines 'Obesity Class II'?",
+    question: "Based on GBD study data for India, what are the leading attributable risk factors for Chronic Kidney Disease (CKD) burden in India currently?",
     options: [
-      "BMI 25.0-29.9 kg/m2",
-      "BMI 30.0-34.9 kg/m2",
-      "BMI 35.0-39.9 kg/m2",
-      "BMI >= 40.0 kg/m2"
+      "Glomerulonephritis from streptococcal and malarial infections",
+      "Diabetes mellitus and hypertension as the leading metabolic causes",
+      "Lead and cadmium nephrotoxicity from occupational and environmental exposure",
+      "Analgesic nephropathy from widespread NSAID and ayurvedic herbal medicine use"
     ],
-    answer: 2,
-    explanation: "WHO BMI classification: Underweight < 18.5; Normal weight 18.5-24.9; Overweight (pre-obese) 25.0-29.9; Obesity Class I 30.0-34.9; Obesity Class II 35.0-39.9; Obesity Class III (morbid obesity) >= 40.0 kg/m2. For Asian populations (including Indians), WHO/IOTF recommends lower thresholds: overweight >= 23 kg/m2, obesity >= 27.5 kg/m2, with action points at 23 (increased risk) and 27.5 (high risk). This is because Asians have higher body fat percentage and metabolic risk at lower BMIs compared to Caucasians."
+    answer: 1,
+    explanation: "Diabetes mellitus and hypertension are the leading attributable risk factors for CKD in India, according to GBD study data, mirroring the global pattern. Diabetic nephropathy (DN) and hypertensive nephrosclerosis are increasingly the dominant causes of CKD and end-stage renal disease (ESRD) in India, replacing the historically prominent glomerulonephritis and obstructive uropathies. As diabetes (affecting approximately 101 million) and hypertension (approximately 315 million) prevalence rises in India, the downstream CKD burden is projected to increase substantially."
   },
   {
     id: 40,
-    question: "Chronic Kidney Disease (CKD) is defined as abnormalities of kidney structure or function present for MORE THAN:",
-    options: [
-      "1 month",
-      "2 months",
-      "3 months",
-      "6 months"
-    ],
+    question: "The National Mental Health Survey of India (NMHS, 2015-16), the largest nationally representative mental health survey, estimated what lifetime prevalence of any mental disorder in India?",
+    options: ["3.4%", "7.5%", "13.7%", "22.4%"],
     answer: 2,
-    explanation: "KDIGO (Kidney Disease: Improving Global Outcomes) 2012 defines CKD as abnormalities of kidney structure or function, present for > 3 months, with implications for health. Criteria include: eGFR < 60 mL/min/1.73m2 (categories G3a-G5), OR markers of kidney damage (albuminuria, urine sediment abnormalities, electrolyte/tubular disorders, structural abnormalities on imaging, kidney transplant history), regardless of eGFR, present for > 3 months. The 3-month criterion distinguishes CKD from acute kidney injury (AKI). Diabetes and hypertension are the leading causes of CKD globally. CKD affects approximately 10-15% of adults worldwide."
+    explanation: "The NMHS (2015-16), conducted by NIMHANS Bengaluru across 12 states, estimated the lifetime prevalence of any mental disorder in India at approximately 13.7%, meaning about 150 million individuals needed active mental health interventions. The survey found a massive treatment gap — fewer than 30% of those with mental disorders received treatment. Common mental disorders (depression, anxiety disorders) had the highest prevalence. The NMHS data are the primary national reference for mental health burden estimation and planning under the National Mental Health Policy 2014."
   },
   {
     id: 41,
-    question: "The WHO 'Global Action Plan for the Prevention and Control of NCDs 2013-2020' (extended to 2030) set a target of reducing premature NCD mortality by what percentage by 2025 compared to 2010 baseline?",
+    question: "NFHS-5 (2019-21) documented the trend in overweight and obesity prevalence in India. Which finding best reflects the NFHS-5 data on obesity?",
     options: [
-      "10% relative reduction",
-      "25% relative reduction",
-      "33% relative reduction",
-      "50% relative reduction"
+      "Overweight/obesity prevalence declined from NFHS-4 to NFHS-5 due to improved food security programs",
+      "Overweight/obesity (BMI >= 25 kg/m2) prevalence increased in both men and women between NFHS-4 (2015-16) and NFHS-5 (2019-21)",
+      "Overweight/obesity is confined to urban populations with negligible rural prevalence in NFHS-5",
+      "Overweight/obesity prevalence in India plateaued at levels similar to NFHS-3 (2005-06)"
     ],
     answer: 1,
-    explanation: "The WHO Global Action Plan for Prevention and Control of NCDs 2013-2020 established the '25x25' target: a 25% relative reduction in premature mortality from cardiovascular diseases, cancers, diabetes, and chronic respiratory diseases by 2025 compared to the 2010 baseline. The plan also set 9 voluntary global targets including: 10% reduction in harmful alcohol use, 10% reduction in physical inactivity, 30% reduction in mean salt intake, 30% reduction in tobacco use prevalence, 25% reduction in raised blood pressure prevalence or halt the rise, halt the rise in obesity and diabetes, and coverage of treatment for cardiovascular diseases and prevention of heart attacks and strokes. The plan was extended to 2030 in alignment with SDGs."
+    explanation: "NFHS-5 (2019-21) documented an increase in overweight/obesity prevalence compared to NFHS-4 (2015-16) in both sexes. The percentage of women with BMI >= 25 kg/m2 increased from 20.6% to 24.0%, and men from 18.9% to 22.9%. This increasing trend is observed in both urban and rural areas, though urban prevalence remains higher. The simultaneous presence of underweight (18.7% of women) and overweight/obesity represents the 'double burden of malnutrition' within India, reflecting the complex nutritional transition."
   },
   {
     id: 42,
-    question: "The epidemiological transition theory (Omran 1971) describes a shift in mortality patterns. India is currently considered to be in which stage of epidemiological transition?",
+    question: "In the GBD disease classification framework, road traffic injuries (RTIs) are categorized under which broad disease group, and why is this relevant for NCD surveillance?",
     options: [
-      "Stage 1: Age of pestilence and famine",
-      "Stage 2: Age of receding pandemics",
-      "Stage 3: Age of degenerative and man-made diseases",
-      "A transitional stage between Stage 2 and Stage 3 (experiencing double burden of disease)"
+      "RTIs are classified as NCDs in GBD, alongside cancer, CVD, and diabetes",
+      "RTIs are classified under 'Injuries' — a separate GBD category distinct from NCDs — but share surveillance frameworks and risk factors with NCDs in national programs",
+      "RTIs are classified as maternal and neonatal disorders due to their impact on reproductive-age adults",
+      "RTIs are classified as communicable diseases because of their association with alcohol consumption"
     ],
-    answer: 3,
-    explanation: "India is in an epidemiological transition phase, experiencing the 'double burden of disease' - continuing high burden of communicable diseases (TB, malaria, diarrheal diseases, malnutrition) alongside rapidly rising NCDs (CVD, diabetes, cancer, COPD). This corresponds to a transitional stage between Omran's Stage 2 (receding pandemics) and Stage 3 (degenerative diseases). Omran's stages: Stage 1 - pestilence and famine (high mortality, low life expectancy); Stage 2 - receding pandemics (improving sanitation/nutrition); Stage 3 - degenerative/man-made diseases (NCDs predominate). Developed countries are in Stage 3-4 (delayed degenerative disease age). This double burden creates immense challenges for India's health system."
+    answer: 1,
+    explanation: "In the GBD framework, injuries (including road traffic injuries) form a separate cause category alongside communicable diseases and NCDs. However, WHO's NCD surveillance frameworks and national NCD action plans often include injury prevention given shared risk determinants (alcohol, inadequate infrastructure). India has one of the highest road traffic mortality rates globally — approximately 1.5 lakh deaths officially (MoRTH) to over 3 lakh deaths (WHO estimates after accounting for under-reporting) annually. RTIs are a leading cause of death in those aged 15-49 years."
   },
   {
     id: 43,
-    question: "According to Global Burden of Disease 2019 data for India, NCDs account for approximately what percentage of total deaths in India?",
-    options: [
-      "30-35%",
-      "45-50%",
-      "55-60%",
-      "62-65%"
-    ],
-    answer: 3,
-    explanation: "According to GBD 2019 data, NCDs account for approximately 63-65% of all deaths in India. The leading NCD causes of death in India are cardiovascular diseases (~28% of total deaths), chronic respiratory diseases (~11%), cancers (~8%), and diabetes (~3%). Despite this high NCD burden, India continues to face significant communicable disease mortality, illustrating the double burden. The ICMR-PHFI-IHMe India burden of disease report (2017) estimated that NCDs contributed 61.8% of India's total disease burden (measured in DALYs) in 2016, up from 30.5% in 1990 - a doubling in 25 years."
+    question: "Based on recent GBD study data and SRS-based estimates, NCDs account for approximately what proportion of total mortality in India?",
+    options: ["38%", "49%", "63%", "76%"],
+    answer: 2,
+    explanation: "Based on GBD 2019 study data, NCDs account for approximately 63% of all deaths in India. Cardiovascular diseases contribute the largest share (~28%), followed by chronic respiratory diseases (~11%), cancers (~8%), and diabetes (~3%). This proportion has been increasing over decades as communicable disease mortality declines — GBD estimated NCDs accounted for only 30.5% of India's DALYs in 1990, rising to 61.8% by 2016, confirming rapid epidemiological transition. The SRS Medical Certification of Cause of Death (MCCD) data, though covering limited urban areas, also confirms the dominant NCD mortality burden."
   },
   {
     id: 44,
-    question: "Road traffic injuries in India - according to Ministry of Road Transport data, India accounts for approximately what proportion of global road traffic deaths despite having a much smaller fraction of global vehicles?",
+    question: "The WHO '25x25' NCD target refers to which specific global commitment?",
     options: [
-      "3-5%",
-      "6-8%",
-      "11-12%",
-      "18-20%"
+      "Achieving a 25% reduction in NCD incidence in persons under 25 years of age by 2025",
+      "A 25% relative reduction in premature mortality from the four major NCDs between 2010 and 2025",
+      "Ensuring 25% of countries achieve functional population-based NCD surveillance by 2025",
+      "Reducing 25 specific NCD risk factors by a quarter by the year 2025"
     ],
-    answer: 2,
-    explanation: "India consistently accounts for approximately 11% of global road traffic deaths (approximately 150,000-160,000 deaths per year per MoRTH data, though WHO estimates are higher ~300,000+ when accounting for under-reporting), despite having only about 1% of the world's vehicles. Road traffic injuries are a leading cause of death in young adults aged 15-29 years globally and in India. The WHO Global Status Report on Road Safety 2023 places India among the top 5 countries for road traffic deaths. Two-wheelers account for the majority of RTI deaths in India. Road traffic injuries contribute significantly to India's NCD and injury burden and are a target in the WHO Sustainable Development Goals (SDG 3.6: halve road traffic deaths by 2030)."
+    answer: 1,
+    explanation: "The WHO '25x25' target, adopted in the WHO Global Action Plan for NCDs (2013-2020), aims for a 25% relative reduction in premature mortality (deaths in ages 30-70 years) from the four major NCDs — cardiovascular diseases, cancers, chronic respiratory diseases, and diabetes — by 2025 compared to the 2010 baseline. Achieving this requires progress on specific risk factor targets: tobacco, harmful alcohol use, physical inactivity, salt/sodium intake, and metabolic targets (blood pressure, diabetes/obesity). A 2022 WHO progress report indicated that most countries are off-track to achieve this target."
   },
   {
     id: 45,
-    question: "Blindness due to cataract in India - the National Programme for Control of Blindness and Visual Impairment (NPCBVI) target is to reduce the prevalence of blindness to what level?",
+    question: "The WHO Global Action Plan for NCDs (2013-2030) includes nine voluntary global targets. Which of the following is an accurately stated quantified target from this plan?",
     options: [
-      "< 1% by 2020",
-      "< 0.3% by 2020",
-      "< 0.5% by 2025",
-      "< 2% by 2030"
+      "A 50% relative reduction in tobacco use prevalence by 2025",
+      "A 30% relative reduction in tobacco use prevalence by 2025",
+      "A 25% absolute reduction in physical inactivity prevalence by 2025",
+      "Elimination of raised blood pressure (>= 140/90 mmHg) in all adults by 2030"
     ],
     answer: 1,
-    explanation: "India's National Programme for Control of Blindness (NPCB, now NPCBVI - National Programme for Control of Blindness and Visual Impairment) set a target of reducing the prevalence of blindness from 1.4% (1990 baseline) to < 0.3% by 2020. Cataract accounts for approximately 62-66% of blindness in India, making it the leading cause. Other causes include corneal blindness (~7%), glaucoma (~6%), refractive errors (~1%), posterior segment disorders, and others. The Cataract Surgical Rate (CSR) in India was approximately 6,000-7,000 per million population. India has made significant progress through cataract surgical camps and secondary eye care infrastructure."
+    explanation: "The WHO Global Action Plan voluntary targets include: 30% relative reduction in tobacco use prevalence; at least 10% relative reduction in harmful alcohol use; 10% relative reduction in prevalence of insufficient physical activity; 30% relative reduction in mean population salt/sodium intake; 25% relative reduction in prevalence of raised blood pressure or halt the rise; halt the rise in obesity and diabetes; at least 50% of eligible people receive drug therapy/counselling for prevention of heart attacks and strokes; 80% availability of affordable essential NCD medicines and basic technologies; and 25% relative reduction in premature NCD mortality."
   },
   {
     id: 46,
-    question: "Mental health disorders globally - according to WHO and GBD 2019 data, depression is estimated to affect approximately how many people worldwide?",
+    question: "The WHO STEPwise Approach to NCD Risk Factor Surveillance (STEPS) is organized into three sequential steps. What does Step 3 (biochemical measurements) specifically include?",
     options: [
-      "100 million",
-      "280 million",
-      "400 million",
-      "650 million"
+      "Administration of a standardized questionnaire on tobacco, alcohol, diet, and physical activity",
+      "Physical measurements including height, weight, waist circumference, hip circumference, and blood pressure",
+      "Laboratory-based biochemical measurements including fasting blood glucose, total cholesterol, and other blood analytes",
+      "Ecological assessment of community-level food environments and physical activity infrastructure"
     ],
-    answer: 1,
-    explanation: "WHO estimates that depression affects approximately 280 million people worldwide (approximately 3.8% of the global population), including 5.0% of adults and 5.7% of adults older than 60 years. Depression is the leading cause of disability globally, measured by YLDs (Years Lived with Disability) in GBD studies. Globally, mental disorders account for approximately 10-13% of the global burden of disease. In India, GBD 2017 estimated that mental disorders contributed approximately 4.7% of total DALYs. The WHO 2022 World Mental Health Report highlighted that COVID-19 increased global rates of anxiety and depression by ~25% in 2020."
+    answer: 2,
+    explanation: "The three steps of WHO STEPS surveillance are: Step 1 — Questionnaire (behavioral risk factors: tobacco use, alcohol consumption, diet, physical activity); Step 2 — Physical measurements (height, weight, waist circumference, hip circumference, blood pressure, heart rate); Step 3 — Biochemical measurements (fasting blood glucose, total cholesterol, HDL-C, triglycerides, and optionally urinary creatinine/sodium for salt intake estimation). The modular design allows countries to implement all three steps or a subset based on available resources and capacity, with each step providing additional granularity for NCD risk factor profiling."
   },
   {
     id: 47,
-    question: "The COMMON RISK FACTORS approach to NCD prevention is based on the concept that many major NCDs share common upstream risk factors. Which of the following correctly lists the FOUR major behavioral risk factors identified by WHO for NCDs?",
+    question: "Tobacco use is identified as the most important 'shared risk factor' for multiple NCDs. Which set of NCDs is tobacco use causally linked to at the population level?",
     options: [
-      "Tobacco use, alcohol use, physical inactivity, and unhealthy diet",
-      "Tobacco use, hypertension, diabetes, and obesity",
-      "Physical inactivity, stress, air pollution, and alcohol use",
-      "Tobacco use, high sodium intake, sedentary behavior, and poverty"
+      "Only lung cancer and COPD — respiratory conditions primarily",
+      "Cardiovascular diseases (CVD), multiple cancers, type 2 diabetes, and COPD",
+      "Only cancers and cardiovascular disease, with limited evidence for diabetes",
+      "Primarily cancers (20+ types) but not cardiovascular diseases in non-smokers"
     ],
-    answer: 0,
-    explanation: "WHO identifies four major modifiable behavioral risk factors that drive the four main NCDs (cardiovascular diseases, cancers, chronic respiratory diseases, diabetes): (1) Tobacco use, (2) Harmful use of alcohol, (3) Physical inactivity, and (4) Unhealthy diet (high in salt, saturated/trans fats, free sugars; low in fruits, vegetables, whole grains). These behavioral risk factors lead to four key metabolic risk factors: raised blood pressure, raised blood glucose, dyslipidemia, and overweight/obesity. The 'Common Risk Factor Approach' (Sheiham & Watt 2000) advocates addressing these shared determinants through integrated programs rather than disease-by-disease approaches."
+    answer: 1,
+    explanation: "Tobacco use is causally linked to multiple NCDs: cardiovascular diseases (atherosclerosis, MI, stroke — through endothelial dysfunction, platelet activation, and dyslipidemia), multiple cancers (lung, oral cavity, pharynx, larynx, esophagus, stomach, pancreas, kidney, bladder, cervix, acute myeloid leukemia), type 2 diabetes (approximately 30-40% higher risk in smokers), and COPD (primary cause in HICs). This makes tobacco control the single highest-priority intervention in integrated NCD prevention programs, with the greatest population-level health impact achievable through a single policy lever (tobacco taxation being the 'best buy')."
   },
   {
     id: 48,
-    question: "Non-alcoholic fatty liver disease (NAFLD) and its progressive form NASH (Non-Alcoholic Steatohepatitis) are considered hepatic manifestations of:",
+    question: "The 'double burden of disease' in countries like India refers specifically to which epidemiological phenomenon?",
     options: [
-      "Excessive alcohol consumption",
-      "Metabolic syndrome and insulin resistance",
-      "Viral hepatitis B coinfection",
-      "Autoimmune hepatitis"
+      "The simultaneous occurrence of two major infectious disease epidemics (e.g., TB and HIV) in the same population",
+      "The coexistence of a high burden of communicable diseases alongside a rapidly rising burden of non-communicable diseases in the same population",
+      "The dual burden of maternal/child mortality alongside adult NCD mortality competing for limited health resources",
+      "The simultaneous epidemic of obesity and undernutrition occurring within the same households in transitional economies"
     ],
     answer: 1,
-    explanation: "NAFLD/NASH is strongly associated with metabolic syndrome and insulin resistance. It is considered the hepatic manifestation of metabolic syndrome. Risk factors include obesity, Type 2 diabetes, dyslipidemia, and hypertension. NAFLD (steatosis alone) can progress to NASH (steatosis + inflammation + ballooning degeneration) → fibrosis → cirrhosis → hepatocellular carcinoma. NAFLD affects approximately 25-30% of the global population and 9-32% of Indians (rising with urbanization). It is now renamed MASLD (Metabolic Dysfunction-Associated Steatotic Liver Disease) by consensus in 2023. Unlike alcoholic liver disease, NAFLD/MASLD occurs without significant alcohol consumption."
+    explanation: "The 'double burden of disease' refers to the coexistence of high communicable disease burden (infectious diseases, malnutrition-related conditions, maternal and child health problems) alongside rapidly rising non-communicable disease burden in the same population or country. India and most LMICs face this double burden, where health systems must simultaneously address traditional health challenges and the emerging NCD epidemic — straining limited financial, infrastructural, and human resources. The GBD data for India show both TB and ischemic heart disease among the top causes of DALYs, exemplifying this double burden."
   },
   {
     id: 49,
-    question: "The WHO Global NCD Action Plan includes monitoring using 25 indicators. Which of the following is a 'best buy' intervention for NCDs recommended by WHO as cost-effective?",
+    question: "In Omran's epidemiological transition model, Stage 2 (the 'Age of Receding Pandemics') is characterized by which of the following patterns?",
     options: [
-      "Universal bariatric surgery programs for obesity",
-      "Routine cardiac catheterization for all high-risk adults",
-      "Tax increases on tobacco and alcohol products",
-      "Population-wide lipid screening with statin prophylaxis"
+      "NCDs surpass communicable diseases as the leading cause of death, with life expectancy exceeding 65 years",
+      "Declining mortality from infectious diseases, improving life expectancy (30-50 years), and early emergence of chronic diseases beginning to rise",
+      "High and fluctuating mortality predominantly from infectious diseases, pestilence, and famine with low life expectancy",
+      "Delayed onset of degenerative diseases due to improved medical care, with most deaths occurring after age 70"
     ],
-    answer: 2,
-    explanation: "WHO 'Best Buys' are highly cost-effective NCD interventions that are feasible to implement even in low-resource settings. Tobacco-related best buys include: raising tobacco taxes (most cost-effective), smoke-free legislation, health warning labels, mass media campaigns, and tobacco cessation support. Alcohol best buys include: raising alcohol taxes, restricting access, and advertising bans. Unhealthy diet best buys include salt reduction, trans-fat elimination, and marketing restrictions on unhealthy foods to children. Physical activity best buys include public awareness campaigns. These population-level measures have high impact at low cost per DALY averted. Bariatric surgery and universal catheterization are not WHO 'best buys' due to high cost and limited scalability in LMICs."
+    answer: 1,
+    explanation: "In Omran's epidemiological transition model (1971), Stage 2 ('Age of Receding Pandemics') is characterized by: declining mortality from infectious diseases due to improved nutrition and sanitation (preceding medical interventions), declining famine-related mortality, improving life expectancy (rising from approximately 30 toward 50 years), falling fertility rates beginning, and early emergence of chronic degenerative diseases beginning to contribute to mortality. This stage preceded the classic NCD-dominant Stage 3. Stage 1 ('Pestilence and Famine') has high fluctuating mortality; Stage 3 ('Degenerative and Man-made Diseases') has NCD dominance; Stage 4 ('Delayed Degenerative Diseases') features successful prevention."
   },
   {
     id: 50,
-    question: "According to the IDF Diabetes Atlas 2021, India has the second highest number of adults with diabetes. However, India's diabetes prevalence (%) in adults aged 20-79 years is lower than China's. The ICMR-INDIAB Phase 1-4 national study (2019-2020) estimated the overall diabetes prevalence in India to be approximately:",
+    question: "Which indicator is used by WHO and national NCD programs to quantify the 'treatment gap' for NCDs — the proportion of those affected who are not receiving effective care — at the population level in national surveys like NFHS?",
     options: [
-      "4.3%",
-      "7.3%",
-      "11.4%",
-      "15.2%"
+      "Proportion of NCD patients who received surgical or specialist intervention compared to those requiring it",
+      "The cascade of care: proportion of those with the NCD who are (1) aware of their diagnosis, (2) receiving treatment, and (3) achieving control of the condition",
+      "Number of NCD specialists per 100,000 population relative to WHO recommended staffing norms",
+      "Percentage of the national health budget allocated to NCD prevention versus curative NCD care"
     ],
-    answer: 2,
-    explanation: "The ICMR-INDIAB (Indian Council of Medical Research - India Diabetes) study, the largest nationally representative diabetes study in India (Anjana et al., Lancet Diabetes & Endocrinology, 2023), reported that the age-standardized prevalence of diabetes in India was approximately 11.4% (with significant state-wise variation ranging from 3.31% in Uttar Pradesh to 26.4% in Goa). The study used WHO 2011 diagnostic criteria (FPG >= 126 mg/dL, 2h PG >= 200 mg/dL, or HbA1c >= 6.5%, or known diabetic). This translates to approximately 101 million people with diabetes in India. Prediabetes prevalence was estimated at 15.3% (approximately 136 million), highlighting the future burden of diabetes in India."
+    answer: 1,
+    explanation: "The NCD treatment gap is quantified using the 'cascade of care' (or 'care continuum') framework: among all individuals with a given NCD (e.g., hypertension, diabetes) in the population, what proportion are (1) aware of their condition (diagnosed), (2) on treatment, and (3) have the condition controlled to target. NFHS-5 data illustrated India's large treatment gap: for hypertension, approximately 45% of hypertensive adults were aware, approximately 40% were on treatment, and only 12-19% had controlled BP. For diabetes, similar gaps exist. This cascade data directly informs where to strengthen the health system response."
   }
 ];
 
