@@ -18,6 +18,38 @@ import rmTest5 from './data/research-methodology-test5'
 import rmTest6 from './data/research-methodology-test6'
 import rmTest7 from './data/research-methodology-test7'
 import rmTest8 from './data/research-methodology-test8'
+import dtTest1 from './data/diagnostic-tests-test1'
+import dtTest2 from './data/diagnostic-tests-test2'
+import dtTest3 from './data/diagnostic-tests-test3'
+import dtTest4 from './data/diagnostic-tests-test4'
+import dtTest5 from './data/diagnostic-tests-test5'
+import dtTest6 from './data/diagnostic-tests-test6'
+import dtTest7 from './data/diagnostic-tests-test7'
+import dtTest8 from './data/diagnostic-tests-test8'
+import cdTest1 from './data/communicable-diseases-test1'
+import cdTest2 from './data/communicable-diseases-test2'
+import cdTest3 from './data/communicable-diseases-test3'
+import cdTest4 from './data/communicable-diseases-test4'
+import cdTest5 from './data/communicable-diseases-test5'
+import cdTest6 from './data/communicable-diseases-test6'
+import cdTest7 from './data/communicable-diseases-test7'
+import cdTest8 from './data/communicable-diseases-test8'
+import ncdTest1 from './data/non-communicable-diseases-test1'
+import ncdTest2 from './data/non-communicable-diseases-test2'
+import ncdTest3 from './data/non-communicable-diseases-test3'
+import ncdTest4 from './data/non-communicable-diseases-test4'
+import ncdTest5 from './data/non-communicable-diseases-test5'
+import ncdTest6 from './data/non-communicable-diseases-test6'
+import ncdTest7 from './data/non-communicable-diseases-test7'
+import ncdTest8 from './data/non-communicable-diseases-test8'
+import rchTest1 from './data/rch-nutrition-test1'
+import rchTest2 from './data/rch-nutrition-test2'
+import rchTest3 from './data/rch-nutrition-test3'
+import rchTest4 from './data/rch-nutrition-test4'
+import rchTest5 from './data/rch-nutrition-test5'
+import rchTest6 from './data/rch-nutrition-test6'
+import rchTest7 from './data/rch-nutrition-test7'
+import rchTest8 from './data/rch-nutrition-test8'
 import './App.css'
 
 const tests = [
@@ -37,6 +69,38 @@ const tests = [
   { id: 14, title: "Research Methodology - Test 6 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest6, description: "Clinical trial phases, adaptive designs, herd immunity, overdiagnosis, Fagan nomogram" },
   { id: 15, title: "Research Methodology - Test 7 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest7, description: "Mendelian randomization, propensity scores, CONSORT/STROBE, immortal time bias" },
   { id: 16, title: "Research Methodology - Test 8 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest8, description: "Case-crossover, DALYs, Bradford Hill criteria, publication bias, mass vs targeted screening" },
+  { id: 17, title: "Diagnostic Tests - Test 1 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest1, description: "Core fundamentals: sensitivity, specificity, PPV/NPV, ROC basics, likelihood ratios" },
+  { id: 18, title: "Diagnostic Tests - Test 2 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest2, description: "Clinical scenarios: cancer screening, infectious disease, cardiac biomarkers, drug screening" },
+  { id: 19, title: "Diagnostic Tests - Test 3 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest3, description: "Calculation-heavy: 2x2 tables, Bayes theorem, LR calculations, Youden index" },
+  { id: 20, title: "Diagnostic Tests - Test 4 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest4, description: "Serial/parallel testing, Bayesian reasoning, advanced ROC analysis, interval likelihood ratios" },
+  { id: 21, title: "Diagnostic Tests - Test 5 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest5, description: "Sensitivity-specificity tradeoffs, spectrum bias, verification bias, gold standard issues" },
+  { id: 22, title: "Diagnostic Tests - Test 6 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest6, description: "Predictive values & prevalence, base rate neglect, diagnostic accuracy measures" },
+  { id: 23, title: "Diagnostic Tests - Test 7 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest7, description: "ROC curves & test comparison: AUC, optimal cutoffs, SROC curves, DeLong method" },
+  { id: 24, title: "Diagnostic Tests - Test 8 - 50 MCQs", questions: 50, category: "Diagnostic Tests", data: dtTest8, description: "Comprehensive: decision analysis, kappa, STARD/QUADAS, integrated clinical scenarios" },
+  { id: 25, title: "Communicable Diseases - Test 1 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest1, description: "Core fundamentals: TB, HIV, malaria, dengue basics" },
+  { id: 26, title: "Communicable Diseases - Test 2 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest2, description: "Modes of transmission: direct, indirect, vector-borne, chain of infection" },
+  { id: 27, title: "Communicable Diseases - Test 3 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest3, description: "TB & HIV epidemiology and control: NTEP, NACP, India-specific programs" },
+  { id: 28, title: "Communicable Diseases - Test 4 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest4, description: "Malaria & dengue epidemiology and control: NVBDCP, vector indices, elimination" },
+  { id: 29, title: "Communicable Diseases - Test 5 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest5, description: "Outbreak investigation: detection, descriptive/analytical epi, response measures" },
+  { id: 30, title: "Communicable Diseases - Test 6 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest6, description: "Other communicable diseases: VPDs, waterborne, respiratory, zoonotic" },
+  { id: 31, title: "Communicable Diseases - Test 7 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest7, description: "Immunization & national programs: UIP, Mission Indradhanush, AMR, emerging infections" },
+  { id: 32, title: "Communicable Diseases - Test 8 - 50 MCQs", questions: 50, category: "Communicable Diseases", data: cdTest8, description: "Comprehensive mixed: co-infections, epi calculations, program management, applied outbreaks" },
+  { id: 33, title: "Non-Communicable Diseases - Test 1 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest1, description: "Core fundamentals: diabetes, CVD, cancer, other NCDs overview" },
+  { id: 34, title: "Non-Communicable Diseases - Test 2 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest2, description: "Risk factors & prevention: tobacco, alcohol, diet, physical activity, screening" },
+  { id: 35, title: "Non-Communicable Diseases - Test 3 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest3, description: "Diabetes deep dive: epidemiology, diagnosis, complications, NPCDCS" },
+  { id: 36, title: "Non-Communicable Diseases - Test 4 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest4, description: "CVD deep dive: hypertension, IHD, stroke, INTERHEART, prevention" },
+  { id: 37, title: "Non-Communicable Diseases - Test 5 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest5, description: "Cancer deep dive: registries, risk factors, screening, NPCCP" },
+  { id: 38, title: "Non-Communicable Diseases - Test 6 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest6, description: "Other NCDs: COPD, CKD, mental health, injuries, obesity" },
+  { id: 39, title: "Non-Communicable Diseases - Test 7 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest7, description: "NCD epidemiology in India: NPCDCS, WHO frameworks, surveillance studies" },
+  { id: 40, title: "Non-Communicable Diseases - Test 8 - 50 MCQs", questions: 50, category: "Non-Communicable Diseases", data: ncdTest8, description: "Comprehensive mixed: complex scenarios, epi calculations, policy, emerging issues" },
+  { id: 41, title: "RCH & Nutrition - Test 1 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest1, description: "Core fundamentals: maternal health, child health, malnutrition indicators, national schemes" },
+  { id: 42, title: "RCH & Nutrition - Test 2 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest2, description: "Maternal health programs: ANC, intranatal/postnatal care, family planning, JSY/JSSK" },
+  { id: 43, title: "RCH & Nutrition - Test 3 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest3, description: "Child health programs: newborn care, IMNCI, immunization, RBSK" },
+  { id: 44, title: "RCH & Nutrition - Test 4 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest4, description: "Malnutrition indicators: anthropometry, SAM/MAM management, micronutrient deficiencies" },
+  { id: 45, title: "RCH & Nutrition - Test 5 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest5, description: "Nutrition programs: ICDS, POSHAN Abhiyaan, IYCF, food fortification" },
+  { id: 46, title: "RCH & Nutrition - Test 6 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest6, description: "National health schemes: NHM, Ayushman Bharat, reproductive health, health information" },
+  { id: 47, title: "RCH & Nutrition - Test 7 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest7, description: "Demographic indicators: fertility, population dynamics, health surveys, data sources" },
+  { id: 48, title: "RCH & Nutrition - Test 8 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest8, description: "Comprehensive mixed: complex scenarios, calculations, program evaluation, emerging issues" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
