@@ -10,6 +10,14 @@ import biostatTest5 from './data/biostatistics-test5'
 import biostatTest6 from './data/biostatistics-test6'
 import biostatTest7 from './data/biostatistics-test7'
 import biostatTest8 from './data/biostatistics-test8'
+import rmTest1 from './data/research-methodology-test1'
+import rmTest2 from './data/research-methodology-test2'
+import rmTest3 from './data/research-methodology-test3'
+import rmTest4 from './data/research-methodology-test4'
+import rmTest5 from './data/research-methodology-test5'
+import rmTest6 from './data/research-methodology-test6'
+import rmTest7 from './data/research-methodology-test7'
+import rmTest8 from './data/research-methodology-test8'
 import './App.css'
 
 const tests = [
@@ -21,6 +29,14 @@ const tests = [
   { id: 6, title: "Biostatistics - Test 6 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest6, description: "Transformations, probability trees, serial/parallel testing, power analysis" },
   { id: 7, title: "Biostatistics - Test 7 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest7, description: "Skewed data, likelihood ratios, p-value misconceptions, non-parametric equivalents" },
   { id: 8, title: "Biostatistics - Test 8 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest8, description: "Grouped data, Chebyshev's inequality, Poisson/binomial applications, multiple corrections" },
+  { id: 9, title: "Research Methodology - Test 1 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest1, description: "Core fundamentals: study designs, incidence/prevalence, RR/OR, bias, screening" },
+  { id: 10, title: "Research Methodology - Test 2 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest2, description: "Clinical contexts: drug trials, vaccination studies, hospital-based studies" },
+  { id: 11, title: "Research Methodology - Test 3 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest3, description: "Calculation-heavy: person-time, Mantel-Haenszel OR, serial testing, lead-time bias" },
+  { id: 12, title: "Research Methodology - Test 4 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest4, description: "Crossover trials, factorial designs, cluster RCTs, Berkson's/Neyman bias, PPV/NPV" },
+  { id: 13, title: "Research Methodology - Test 5 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest5, description: "Ecological studies, ITT vs per-protocol, PAR%, effect modification, ROC curves" },
+  { id: 14, title: "Research Methodology - Test 6 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest6, description: "Clinical trial phases, adaptive designs, herd immunity, overdiagnosis, Fagan nomogram" },
+  { id: 15, title: "Research Methodology - Test 7 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest7, description: "Mendelian randomization, propensity scores, CONSORT/STROBE, immortal time bias" },
+  { id: 16, title: "Research Methodology - Test 8 - 50 MCQs", questions: 50, category: "Research Methodology", data: rmTest8, description: "Case-crossover, DALYs, Bradford Hill criteria, publication bias, mass vs targeted screening" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
