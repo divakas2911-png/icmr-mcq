@@ -6,6 +6,7 @@ function TestDetail({ test, onBack, onStart }) {
         <div className="logo">ICMR</div>
         <h1>{test.title}</h1>
         <p className="subtitle">Indian Council of Medical Research</p>
+        {test.description && <p className="test-detail-desc">{test.description}</p>}
       </header>
 
       <section className="info-cards">

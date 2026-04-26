@@ -5,6 +5,7 @@ function TestScreen({ questions, testTitle, onFinish, onQuit }) {
   const [answers, setAnswers] = useState({})
   const [showConfirmQuit, setShowConfirmQuit] = useState(false)
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
+  const [showAnswers, setShowAnswers] = useState(false)
   const [elapsed, setElapsed] = useState(0)
   const timerRef = useRef(null)
 
@@ -123,6 +124,57 @@ function TestScreen({ questions, testTitle, onFinish, onQuit }) {
           </button>
         )}
       </div>
+
+      {/* Show Answers button */}
+      {Object.keys(answers).length > 0 && (
+        <button
+          className="ts-nav-btn ts-nav-answers"
+          onClick={() => setShowAnswers(!showAnswers)}
+        >
+          {showAnswers ? 'Hide Answers' : `Show Answers (${Object.keys(answers).length})`}
+        </button>
+      )}
+
+      {/* Answers panel for answered questions */}
+      {showAnswers && (
+        <section className="ts-answers-panel">
+          <h3 className="ts-answers-title">Answers for Attempted Questions</h3>
+          {questions.map((item, i) => {
+            const userAnswer = answers[item.id]
+            if (userAnswer === undefined) return null
+            const isCorrect = userAnswer === item.answer
+            return (
+              <div key={item.id} className={`rs-q ${isCorrect ? 'rs-q-correct' : 'rs-q-wrong'}`}>
+                <div className="rs-q-header">
+                  <span className="rs-q-num">Q{i + 1}</span>
+                  <span className={`rs-q-badge ${isCorrect ? 'rs-badge-correct' : 'rs-badge-wrong'}`}>
+                    {isCorrect ? 'Correct' : 'Wrong'}
+                  </span>
+                </div>
+                <p className="rs-q-text">{item.question}</p>
+                <div className="rs-options">
+                  {item.options.map((opt, oi) => {
+                    let cls = 'rs-opt'
+                    if (oi === item.answer) cls += ' rs-opt-correct'
+                    if (oi === userAnswer && !isCorrect) cls += ' rs-opt-wrong'
+                    return (
+                      <div key={oi} className={cls}>
+                        <span className="rs-opt-letter">{String.fromCharCode(65 + oi)}</span>
+                        <span>{opt}</span>
+                        {oi === item.answer && <span className="rs-opt-tag">Correct</span>}
+                        {oi === userAnswer && oi !== item.answer && <span className="rs-opt-tag rs-opt-tag-wrong">Your answer</span>}
+                      </div>
+                    )
+                  })}
+                </div>
+                <div className="rs-explanation">
+                  <strong>Explanation:</strong> {item.explanation}
+                </div>
+              </div>
+            )
+          })}
+        </section>
+      )}
 
       {/* Question palette */}
       <div className="ts-palette">

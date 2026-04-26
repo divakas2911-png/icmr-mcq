@@ -1,4 +1,7 @@
+import { useState } from 'react'
+
 function ResultScreen({ questions, answers, testTitle, timeTaken, onBack }) {
+  const [showAnswers, setShowAnswers] = useState(false)
   const total = questions.length
   let correct = 0
   let wrong = 0
@@ -69,45 +72,57 @@ function ResultScreen({ questions, answers, testTitle, timeTaken, onBack }) {
         </div>
       </section>
 
-      {/* Detailed answers */}
-      <section className="rs-detail">
-        <h2>Detailed Answers &amp; Explanations</h2>
-        {questions.map((q, i) => {
-          const userAnswer = answers[q.id]
-          const isCorrect = userAnswer === q.answer
-          const isUnanswered = userAnswer === undefined
+      {/* Toggle answers button */}
+      <button
+        className="start-btn rs-toggle-btn"
+        onClick={() => setShowAnswers(!showAnswers)}
+      >
+        {showAnswers ? 'Hide Answers' : 'Show Answers'}
+      </button>
 
-          return (
-            <div key={q.id} className={`rs-q ${isUnanswered ? 'rs-q-skipped' : isCorrect ? 'rs-q-correct' : 'rs-q-wrong'}`}>
-              <div className="rs-q-header">
-                <span className="rs-q-num">Q{i + 1}</span>
-                <span className={`rs-q-badge ${isUnanswered ? 'rs-badge-skipped' : isCorrect ? 'rs-badge-correct' : 'rs-badge-wrong'}`}>
-                  {isUnanswered ? 'Skipped' : isCorrect ? 'Correct' : 'Wrong'}
-                </span>
+      {/* Detailed answers (only answered questions) */}
+      {showAnswers && (
+        <section className="rs-detail">
+          <h2>Detailed Answers &amp; Explanations</h2>
+          {questions.map((q, i) => {
+            const userAnswer = answers[q.id]
+            const isCorrect = userAnswer === q.answer
+            const isUnanswered = userAnswer === undefined
+
+            if (isUnanswered) return null
+
+            return (
+              <div key={q.id} className={`rs-q ${isCorrect ? 'rs-q-correct' : 'rs-q-wrong'}`}>
+                <div className="rs-q-header">
+                  <span className="rs-q-num">Q{i + 1}</span>
+                  <span className={`rs-q-badge ${isCorrect ? 'rs-badge-correct' : 'rs-badge-wrong'}`}>
+                    {isCorrect ? 'Correct' : 'Wrong'}
+                  </span>
+                </div>
+                <p className="rs-q-text">{q.question}</p>
+                <div className="rs-options">
+                  {q.options.map((opt, oi) => {
+                    let cls = 'rs-opt'
+                    if (oi === q.answer) cls += ' rs-opt-correct'
+                    if (oi === userAnswer && !isCorrect) cls += ' rs-opt-wrong'
+                    return (
+                      <div key={oi} className={cls}>
+                        <span className="rs-opt-letter">{String.fromCharCode(65 + oi)}</span>
+                        <span>{opt}</span>
+                        {oi === q.answer && <span className="rs-opt-tag">Correct</span>}
+                        {oi === userAnswer && oi !== q.answer && <span className="rs-opt-tag rs-opt-tag-wrong">Your answer</span>}
+                      </div>
+                    )
+                  })}
+                </div>
+                <div className="rs-explanation">
+                  <strong>Explanation:</strong> {q.explanation}
+                </div>
               </div>
-              <p className="rs-q-text">{q.question}</p>
-              <div className="rs-options">
-                {q.options.map((opt, oi) => {
-                  let cls = 'rs-opt'
-                  if (oi === q.answer) cls += ' rs-opt-correct'
-                  if (oi === userAnswer && !isCorrect) cls += ' rs-opt-wrong'
-                  return (
-                    <div key={oi} className={cls}>
-                      <span className="rs-opt-letter">{String.fromCharCode(65 + oi)}</span>
-                      <span>{opt}</span>
-                      {oi === q.answer && <span className="rs-opt-tag">Correct</span>}
-                      {oi === userAnswer && oi !== q.answer && <span className="rs-opt-tag rs-opt-tag-wrong">Your answer</span>}
-                    </div>
-                  )
-                })}
-              </div>
-              <div className="rs-explanation">
-                <strong>Explanation:</strong> {q.explanation}
-              </div>
-            </div>
-          )
-        })}
-      </section>
+            )
+          })}
+        </section>
+      )}
 
       <button className="start-btn" onClick={onBack}>Back to Tests</button>
     </div>
