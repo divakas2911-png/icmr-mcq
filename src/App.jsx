@@ -50,6 +50,22 @@ import rchTest5 from './data/rch-nutrition-test5'
 import rchTest6 from './data/rch-nutrition-test6'
 import rchTest7 from './data/rch-nutrition-test7'
 import rchTest8 from './data/rch-nutrition-test8'
+import geneticsTest1 from './data/genetics-test1'
+import geneticsTest2 from './data/genetics-test2'
+import geneticsTest3 from './data/genetics-test3'
+import geneticsTest4 from './data/genetics-test4'
+import geneticsTest5 from './data/genetics-test5'
+import geneticsTest6 from './data/genetics-test6'
+import geneticsTest7 from './data/genetics-test7'
+import geneticsTest8 from './data/genetics-test8'
+import geneticsTest9 from './data/genetics-test9'
+import geneticsTest10 from './data/genetics-test10'
+import geneticsTest11 from './data/genetics-test11'
+import geneticsTest12 from './data/genetics-test12'
+import geneticsTest13 from './data/genetics-test13'
+import geneticsTest14 from './data/genetics-test14'
+import geneticsTest15 from './data/genetics-test15'
+import geneticsTest16 from './data/genetics-test16'
 import './App.css'
 
 const tests = [
@@ -101,6 +117,22 @@ const tests = [
   { id: 46, title: "RCH & Nutrition - Test 6 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest6, description: "National health schemes: NHM, Ayushman Bharat, reproductive health, health information" },
   { id: 47, title: "RCH & Nutrition - Test 7 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest7, description: "Demographic indicators: fertility, population dynamics, health surveys, data sources" },
   { id: 48, title: "RCH & Nutrition - Test 8 - 50 MCQs", questions: 50, category: "RCH & Nutrition", data: rchTest8, description: "Comprehensive mixed: complex scenarios, calculations, program evaluation, emerging issues" },
+  { id: 49, title: "Genetics - Test 1 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest1, description: "Mendelian genetics, molecular genetics, chromosomal disorders, population genetics, epigenetics" },
+  { id: 50, title: "Genetics - Test 2 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest2, description: "DNA structure & replication, transcription & RNA processing, translation, gene regulation" },
+  { id: 51, title: "Genetics - Test 3 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest3, description: "Genomics, next-generation sequencing, bioinformatics, epigenomics & functional genomics" },
+  { id: 52, title: "Genetics - Test 4 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest4, description: "Cancer genetics, immunogenetics & HLA, developmental genetics, gene therapy & CAR-T" },
+  { id: 53, title: "Genetics - Test 5 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest5, description: "Clinical genetics & inherited disorders, microbial genetics, statistical genetics & linkage" },
+  { id: 54, title: "Genetics - Test 6 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest6, description: "Cell biology & cell cycle, protein structure & function, synthetic biology, bioethics & biosafety" },
+  { id: 55, title: "Genetics - Test 7 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest7, description: "Evolution & phylogenetics, quantitative genetics, model organisms, applied & population genetics" },
+  { id: 56, title: "Genetics - Test 8 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest8, description: "Comprehensive mixed: calculations, clinical scenarios, research methods & emerging tools" },
+  { id: 57, title: "Genetics - Test 9 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest9, description: "Advanced Mendelian genetics: epistasis, penetrance, expressivity, lethal alleles, complementation" },
+  { id: 58, title: "Genetics - Test 10 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest10, description: "Chromosomal biology & cytogenetics: FISH, CGH, karyotyping, rearrangements, cancer cytogenetics" },
+  { id: 59, title: "Genetics - Test 11 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest11, description: "RNA biology & gene regulation: operons, eukaryotic transcription, ncRNA, splicing, translation" },
+  { id: 60, title: "Genetics - Test 12 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest12, description: "Recombinant DNA technology & gene editing: CRISPR, PCR variants, cloning, base editing, NGS" },
+  { id: 61, title: "Genetics - Test 13 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest13, description: "Human genetic diseases & clinical genetics: inherited disorders, cancer syndromes, counseling" },
+  { id: 62, title: "Genetics - Test 14 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest14, description: "Genomics, GWAS & personalized medicine: HGP, SNPs, polygenic scores, pharmacogenomics" },
+  { id: 63, title: "Genetics - Test 15 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest15, description: "Epigenetics & chromatin biology: DNA methylation, histone modifications, 3D genome, cancer" },
+  { id: 64, title: "Genetics - Test 16 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest16, description: "Comprehensive advanced: pedigree analysis, HWE calculations, gene therapy, precision medicine" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
