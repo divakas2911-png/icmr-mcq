@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Translation efficiency at each codon depends on the abundance of the cognate tRNA (highly expressed genes use codons matched to abundant tRNAs — 'codon optimization'). Rare codons (decoded by rare tRNAs) slow elongation. This regulated pausing affects co-translational protein folding by giving the nascent peptide time to fold domain-by-domain, and also affects mRNA stability. Codon optimization is used biotechnologically to increase recombinant protein yield."
   }
 ];
+
+export default questions

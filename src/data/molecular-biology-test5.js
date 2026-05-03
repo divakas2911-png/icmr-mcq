@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Integrating multi-omics: Active enhancers: H3K27ac + H3K4me1 + ATAC-seq signal + p300/Mediator ChIP-seq. Poised/primed enhancers: H3K4me1 + ATAC-seq, but H3K27ac absent (± H3K27me3). Active promoters: H3K4me3 + H3K27ac + ATAC-seq. Bivalent promoters: H3K4me3 + H3K27me3. This multi-dimensional view of the regulatory landscape (as performed in ENCODE, Roadmap Epigenomics, Blueprint, FANTOM5 projects) reveals cell-type-specific regulatory elements active in each differentiation state, disease condition, or developmental stage."
   }
 ];
+
+export default questions

@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Intron definition vs exon definition: (1) Intron definition: U1 snRNP-5'SS + U2AF-3'SS interact across a short intron (<200-300 bp typical) — SR proteins bridge across the intron. Predominates in lower eukaryotes (S. cerevisiae — short introns), and for short human introns; (2) Exon definition: U1-5'SS (downstream) interacts with SF1/U2AF-3'SS (upstream) across the short exon (50-250 bp) via SR proteins; SR proteins' RS domain bridges U1-70K (at downstream 5'SS) to U2AF65 (at upstream 3'SS) across the exon. Predominates in metazoans with long introns (average >3 kb); (3) At 'exon definition to intron definition' transition: two pairs of cross-exon interactions flip to single cross-intron pair (mechanism unclear, possibly via stable spliceosome complexes). Important for understanding cassette exon AS regulation."
   }
 ];
+
+export default questions

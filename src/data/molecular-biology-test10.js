@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Biased agonism (functional selectivity) describes the ability of different ligands (biased agonists) to stabilize distinct receptor conformations that preferentially engage G-proteins or β-arrestins. This concept is therapeutically important — β-arrestin-biased opioids (like TRV130) may provide analgesia with fewer G-protein-mediated side effects (respiratory depression, constipation)."
   }
 ];
+
+export default questions

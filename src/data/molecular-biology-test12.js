@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Blinatumomab (BiTE — bispecific T cell engager): one arm binds CD19 on B cell tumor cells; other arm binds CD3ε on T cells. This brings T cells into proximity with tumor cells, forming a cytolytic synapse — enabling T cell killing of CD19+ tumor cells independent of antigen-specific TCR recognition. MHC-unrestricted killing. Used in relapsed/refractory B-ALL. T cell redirection is also achieved by tebentafusp (TCR-CD3ε bispecific)."
   }
 ];
+
+export default questions

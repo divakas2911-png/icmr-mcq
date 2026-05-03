@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Alon's group showed that certain network motifs (patterns of 3 or more nodes) appear much more frequently in E. coli's transcription regulatory network than expected by chance (random networks). FFLs (especially the coherent type 1 FFL — A activates B, A activates C, B activates C) have functional advantages: coherent FFLs provide sign-sensitive delay (quick OFF, delayed ON — filtering transient signals). This overrepresentation suggests positive selection for circuits with specific information-processing properties."
   }
 ];
+
+export default questions

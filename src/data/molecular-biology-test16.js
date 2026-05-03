@@ -350,3 +350,5 @@ export const questions = [
     explanation: "DSB-free precision editing rationale: CRISPR-Cas9 creates DSBs that are predominantly repaired by NHEJ (creating indels) in most cell types — indels are useful for gene disruption but not for correcting pathogenic point mutations (requires HDR, which is inefficient in post-mitotic cells). Base editors (CBE: C→T; ABE: A→G) and prime editors (any point mutation + small indels) use nCas9 or dCas9 — no DSBs → no NHEJ-mediated indels → higher precision. Critical for therapeutic correction of single-base mutations (sickle cell Hbs E6V for ABE; Huntington's CAG expansion correction for prime editing; α1-antitrypsin deficiency E342K for ABE)."
   }
 ];
+
+export default questions

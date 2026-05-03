@@ -350,3 +350,5 @@ export const questions = [
     explanation: "RecFOR pathway (repairs ssDNA gaps, important for lagging-strand gap repair): (1) RecF binds ATP, recognizes ssDNA-dsDNA junctions (the edges of gaps); (2) RecOR: RecO binds SSB and displaces it from ssDNA; RecR stimulates RecO activity and stabilizes RecOR on ssDNA; RecOR together with RecF form a complex that loads RecA onto SSB-coated ssDNA at the 5' edge of the gap; (3) RecA extends the filament into the gap 5'→3'; (4) RecA filament on the gap allows: template switching (daughter strand gap repair using complementary sequence), or RecA-mediated repair synthesis. RecFOR is essential in recBC mutants and for repair of UV-induced ssDNA gaps on lagging strand."
   }
 ];
+
+export default questions

@@ -350,3 +350,5 @@ export const questions = [
     explanation: "SARS-CoV-2's polybasic furin cleavage site (RRAR↓S) at S1/S2 allows furin-like proteases (expressed in many cell types including airway epithelium) to pre-cleave spike in producer cells. This pre-processed spike is more fusion-competent and allows more efficient TMPRSS2-mediated priming at the cell surface (vs endosomal cathepsin entry). This likely contributes to SARS-CoV-2's superior transmission compared to SARS-CoV-1."
   }
 ];
+
+export default questions

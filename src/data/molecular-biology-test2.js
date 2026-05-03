@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Single-molecule RNA FISH and live-cell imaging (MS2 loops) revealed that most genes transcribe in stochastic 'bursts' — multiple rapid rounds of transcription (burst size) followed by refractory OFF periods (burst frequency). Both burst size and frequency are gene-specific and regulated by enhancers, TFs, and chromatin state. This underlies cell-to-cell variability (noise) in gene expression."
   }
 ];
+
+export default questions

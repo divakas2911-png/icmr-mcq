@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Cell Hashing (MULTI-seq, TotalSeq): lipid-modified or antibody-conjugated DNA hashtag oligonucleotides (HTOs) label cells from different samples with unique barcodes before pooling → single 10x Genomics run processes multiple samples → computationally demultiplex by HTO identity. CITE-seq simultaneously reads HTOs (surface protein barcodes via antibody-oligo conjugates) and transcriptome. Benefits: reduces cost (amortize fixed costs), eliminates batch effects (samples processed together), identifies doublets (cells with >1 HTO = droplet doublets)."
   }
 ];
+
+export default questions

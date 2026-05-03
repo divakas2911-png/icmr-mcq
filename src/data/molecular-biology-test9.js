@@ -350,3 +350,5 @@ export const questions = [
     explanation: "Anfinsen experiment (1957-1961, Nobel Prize 1972): (1) RNase A (124 aa, 4 disulfide bonds): fully denatured with 8M urea + β-mercaptoethanol (reduces all S-S bonds) → <1% activity; (2) Remove denaturants by dialysis and allow reoxidation → 100% activity restored → native structure reformed spontaneously; (3) Thermodynamic hypothesis: the native conformation is the one with the lowest Gibbs free energy under physiological conditions; the amino acid sequence determines the native structure; (4) Limitation: 'Levinthal paradox' — random sampling of all conformations would take billions of years; real folding is fast → directed, hierarchical folding (secondary structure first, hydrophobic collapse, etc.); (5) In vivo: chaperones (HSP70, GroEL) assist many proteins that cannot fold efficiently alone (preventing aggregation, but not providing structural information)."
   }
 ];
+
+export default questions

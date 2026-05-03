@@ -350,3 +350,5 @@ export const questions = [
     explanation: "The Vogelstein model of CRC progression: APC mutation (initiating event in >80% of sporadic CRC — normal mucosa → early adenoma) → KRAS mutation (early → intermediate adenoma) → SMAD4/TGFβRII mutation (intermediate → late adenoma) → TP53 mutation (late adenoma → carcinoma). APC loss activates Wnt/β-catenin. KRAS drives proliferation. TP53 loss enables invasiveness. The serrated pathway (BRAF V600E + MLH1 methylation → MSI-H CRC) is an alternative route."
   }
 ];
+
+export default questions

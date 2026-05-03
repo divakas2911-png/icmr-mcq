@@ -350,3 +350,5 @@ export const questions = [
     explanation: "TCGA (US NIH): ~20,000 tumor samples from 33 cancer types; multi-platform profiling (WES, CNA, DNA methylation, mRNA, miRNA, protein). Identified: molecular subtypes (e.g., 4 breast cancer subtypes), driver genes per cancer type, mutational signatures (COSMIC catalog). ICGC (international): 50 cancer types, >25,000 genomes. Pan-Cancer Analysis of Whole Genomes (PCAWG, 2020): 2,658 whole cancer genomes across 38 cancer types; discovered non-coding drivers, mutational processes, timing of mutations. These datasets enable precision oncology, biomarker discovery, and understanding cancer evolution."
   }
 ];
+
+export default questions

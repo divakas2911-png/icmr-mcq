@@ -350,3 +350,5 @@ export const questions = [
     explanation: "WRN-MSI synthetic lethality: Chan et al. (2019) identified that MSI cancer cells have a specific dependency on WRN helicase, which is not seen in microsatellite-stable (MSS) cells. The mechanism involves MSI cells' dependence on WRN to resolve secondary structures (G4s, hairpins) at expanded poly(AT) and other repeats. WRN inhibitors (e.g., HRO761, VVD-214) selectively kill MSI-H cancer cells. This is a promising therapeutic approach since ~15% of colorectal, 22% of endometrial, and variable proportions of gastric/ovarian/pancreatic cancers are MSI-H."
   }
 ];
+
+export default questions
