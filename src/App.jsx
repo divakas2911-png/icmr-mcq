@@ -66,6 +66,22 @@ import geneticsTest13 from './data/genetics-test13'
 import geneticsTest14 from './data/genetics-test14'
 import geneticsTest15 from './data/genetics-test15'
 import geneticsTest16 from './data/genetics-test16'
+import molecularBiologyTest1 from './data/molecular-biology-test1'
+import molecularBiologyTest2 from './data/molecular-biology-test2'
+import molecularBiologyTest3 from './data/molecular-biology-test3'
+import molecularBiologyTest4 from './data/molecular-biology-test4'
+import molecularBiologyTest5 from './data/molecular-biology-test5'
+import molecularBiologyTest6 from './data/molecular-biology-test6'
+import molecularBiologyTest7 from './data/molecular-biology-test7'
+import molecularBiologyTest8 from './data/molecular-biology-test8'
+import molecularBiologyTest9 from './data/molecular-biology-test9'
+import molecularBiologyTest10 from './data/molecular-biology-test10'
+import molecularBiologyTest11 from './data/molecular-biology-test11'
+import molecularBiologyTest12 from './data/molecular-biology-test12'
+import molecularBiologyTest13 from './data/molecular-biology-test13'
+import molecularBiologyTest14 from './data/molecular-biology-test14'
+import molecularBiologyTest15 from './data/molecular-biology-test15'
+import molecularBiologyTest16 from './data/molecular-biology-test16'
 import './App.css'
 
 const tests = [
@@ -133,6 +149,22 @@ const tests = [
   { id: 62, title: "Genetics - Test 14 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest14, description: "Genomics, GWAS & personalized medicine: HGP, SNPs, polygenic scores, pharmacogenomics" },
   { id: 63, title: "Genetics - Test 15 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest15, description: "Epigenetics & chromatin biology: DNA methylation, histone modifications, 3D genome, cancer" },
   { id: 64, title: "Genetics - Test 16 - 50 MCQs", questions: 50, category: "Genetics", data: geneticsTest16, description: "Comprehensive advanced: pedigree analysis, HWE calculations, gene therapy, precision medicine" },
+  { id: 65, title: "Molecular Biology - Test 1 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest1, description: "DNA Structure, Replication & Chromosomes" },
+  { id: 66, title: "Molecular Biology - Test 2 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest2, description: "Transcription — Prokaryotic & Eukaryotic" },
+  { id: 67, title: "Molecular Biology - Test 3 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest3, description: "Translation & Protein Synthesis" },
+  { id: 68, title: "Molecular Biology - Test 4 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest4, description: "Gene Expression Regulation — Prokaryotes" },
+  { id: 69, title: "Molecular Biology - Test 5 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest5, description: "Gene Expression Regulation — Eukaryotes" },
+  { id: 70, title: "Molecular Biology - Test 6 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest6, description: "DNA Damage & Repair" },
+  { id: 71, title: "Molecular Biology - Test 7 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest7, description: "Recombination, Transposons & Mobile Elements" },
+  { id: 72, title: "Molecular Biology - Test 8 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest8, description: "RNA Processing, Splicing & ncRNA" },
+  { id: 73, title: "Molecular Biology - Test 9 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest9, description: "Protein Structure, Folding & PTMs" },
+  { id: 74, title: "Molecular Biology - Test 10 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest10, description: "Cell Signaling & Signal Transduction" },
+  { id: 75, title: "Molecular Biology - Test 11 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest11, description: "Molecular Virology" },
+  { id: 76, title: "Molecular Biology - Test 12 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest12, description: "Molecular Immunology" },
+  { id: 77, title: "Molecular Biology - Test 13 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest13, description: "Cancer Molecular Biology" },
+  { id: 78, title: "Molecular Biology - Test 14 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest14, description: "Molecular Techniques & Diagnostics" },
+  { id: 79, title: "Molecular Biology - Test 15 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest15, description: "Genomics, Proteomics & Bioinformatics" },
+  { id: 80, title: "Molecular Biology - Test 16 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest16, description: "Comprehensive Advanced Mixed" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
