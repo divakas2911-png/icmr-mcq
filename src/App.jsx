@@ -82,6 +82,7 @@ import molecularBiologyTest13 from './data/molecular-biology-test13'
 import molecularBiologyTest14 from './data/molecular-biology-test14'
 import molecularBiologyTest15 from './data/molecular-biology-test15'
 import molecularBiologyTest16 from './data/molecular-biology-test16'
+import microscopyStainingTest1 from './data/microscopy-staining-microbial-test1'
 import './App.css'
 
 const tests = [
@@ -165,6 +166,7 @@ const tests = [
   { id: 78, title: "Molecular Biology - Test 14 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest14, description: "Molecular Techniques & Diagnostics" },
   { id: 79, title: "Molecular Biology - Test 15 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest15, description: "Genomics, Proteomics & Bioinformatics" },
   { id: 80, title: "Molecular Biology - Test 16 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest16, description: "Comprehensive Advanced Mixed" },
+  { id: 81, title: "Microscopy, Staining & Microbial - Test 1 - 50 MCQs", questions: 50, category: "Microscopy & Microbiology", data: microscopyStainingTest1, description: "Microscopy principles, staining techniques, microbial structure & identification" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
