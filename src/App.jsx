@@ -83,6 +83,36 @@ import molecularBiologyTest14 from './data/molecular-biology-test14'
 import molecularBiologyTest15 from './data/molecular-biology-test15'
 import molecularBiologyTest16 from './data/molecular-biology-test16'
 import microscopyStainingTest1 from './data/microscopy-staining-microbial-test1'
+import bioethicsTest1 from './data/bioethics-test1'
+import bioethicsTest2 from './data/bioethics-test2'
+import bioethicsTest3 from './data/bioethics-test3'
+import bioethicsTest4 from './data/bioethics-test4'
+import bioethicsTest5 from './data/bioethics-test5'
+import bioethicsTest6 from './data/bioethics-test6'
+import bioethicsTest7 from './data/bioethics-test7'
+import bioethicsTest8 from './data/bioethics-test8'
+import englishIdiomsTest1 from './data/english-idioms-test1'
+import englishIdiomsTest2 from './data/english-idioms-test2'
+import englishPhrasesTest1 from './data/english-phrases-test1'
+import englishPhrasesTest2 from './data/english-phrases-test2'
+import englishSpellingsTest1 from './data/english-spellings-test1'
+import englishSpellingsTest2 from './data/english-spellings-test2'
+import englishAnimalGroupsTest1 from './data/english-animal-groups-test1'
+import englishAnimalGroupsTest2 from './data/english-animal-groups-test2'
+import englishSynonymsTest1 from './data/english-synonyms-test1'
+import englishSynonymsTest2 from './data/english-synonyms-test2'
+import englishMeaningsTest1 from './data/english-meanings-test1'
+import englishMeaningsTest2 from './data/english-meanings-test2'
+import englishAntonymsTest1 from './data/english-antonyms-test1'
+import englishAntonymsTest2 from './data/english-antonyms-test2'
+import gkHealthAffairsTest1 from './data/gk-health-affairs-test1'
+import gkHealthAffairsTest2 from './data/gk-health-affairs-test2'
+import gkGovtSchemesTest1 from './data/gk-govt-schemes-test1'
+import gkGovtSchemesTest2 from './data/gk-govt-schemes-test2'
+import gkIcmrTest1 from './data/gk-icmr-test1'
+import gkIcmrTest2 from './data/gk-icmr-test2'
+import gkHealthBodiesTest1 from './data/gk-health-bodies-test1'
+import gkHealthBodiesTest2 from './data/gk-health-bodies-test2'
 import './App.css'
 
 const tests = [
@@ -167,6 +197,36 @@ const tests = [
   { id: 79, title: "Molecular Biology - Test 15 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest15, description: "Genomics, Proteomics & Bioinformatics" },
   { id: 80, title: "Molecular Biology - Test 16 - 50 MCQs", questions: 50, category: "Molecular Biology", data: molecularBiologyTest16, description: "Comprehensive Advanced Mixed" },
   { id: 81, title: "Microscopy, Staining & Microbial - Test 1 - 50 MCQs", questions: 50, category: "Microscopy & Microbiology", data: microscopyStainingTest1, description: "Microscopy principles, staining techniques, microbial structure & identification" },
+  { id: 82, title: "Bioethics - Test 1 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest1, description: "Principles of bioethics: autonomy, beneficence, non-maleficence, justice" },
+  { id: 83, title: "Bioethics - Test 2 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest2, description: "Informed consent: elements, types, exceptions, vulnerable populations" },
+  { id: 84, title: "Bioethics - Test 3 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest3, description: "ICMR ethical guidelines: 2017 guidelines, IEC, regulatory provisions" },
+  { id: 85, title: "Bioethics - Test 4 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest4, description: "Research ethics: Helsinki, Nuremberg, ICH-GCP, equipoise, placebo ethics" },
+  { id: 86, title: "Bioethics - Test 5 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest5, description: "Ethics committees & regulatory framework: IEC, CDSCO, international bodies" },
+  { id: 87, title: "Bioethics - Test 6 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest6, description: "Vulnerable populations: children, mentally ill, pregnant women, prisoners, tribal" },
+  { id: 88, title: "Bioethics - Test 7 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest7, description: "Publication ethics, scientific misconduct, authorship & data ethics" },
+  { id: 89, title: "Bioethics - Test 8 - 50 MCQs", questions: 50, category: "Bioethics", data: bioethicsTest8, description: "Comprehensive: AI ethics, genetics, public health, end of life, global bioethics" },
+  { id: 90, title: "English: Idioms & Proverbs - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishIdiomsTest1, description: "Idiom meanings, proverb meanings, fill-in-the-blank, usage & origin" },
+  { id: 91, title: "English: Idioms & Proverbs - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishIdiomsTest2, description: "Advanced idioms, lesser-known proverbs, scenario-based application" },
+  { id: 92, title: "English: Phrases - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishPhrasesTest1, description: "Phrasal verbs, Latin/French phrases, fill-in-the-blank, expression replacement" },
+  { id: 93, title: "English: Phrases - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishPhrasesTest2, description: "Advanced phrasal verbs, formal/literary phrases, contextual usage" },
+  { id: 94, title: "English: Spellings - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishSpellingsTest1, description: "Correct spelling, misspelled words, confusing pairs, medical/scientific terms" },
+  { id: 95, title: "English: Spellings - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishSpellingsTest2, description: "Tricky spellings, homophones, near-homophones, subtle errors" },
+  { id: 96, title: "English: Animal Groups - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishAnimalGroupsTest1, description: "Collective nouns for animals: birds, mammals, marine, insects" },
+  { id: 97, title: "English: Animal Groups - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishAnimalGroupsTest2, description: "Rare collective nouns, reverse identification, correct/incorrect pairs" },
+  { id: 98, title: "English: Synonyms - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishSynonymsTest1, description: "Advanced synonyms, context-based, odd one out, sentence substitution" },
+  { id: 99, title: "English: Synonyms - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishSynonymsTest2, description: "GRE-level synonyms, nuanced vocabulary, contextual shade differences" },
+  { id: 100, title: "English: Word Meanings - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishMeaningsTest1, description: "Advanced word meanings, one-word substitution, foreign words in English" },
+  { id: 101, title: "English: Word Meanings - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishMeaningsTest2, description: "Polysemous words, one-word substitution, foreign phrases from 10+ languages" },
+  { id: 102, title: "English: Antonyms - Test 1 - 50 MCQs", questions: 50, category: "English", data: englishAntonymsTest1, description: "Advanced antonyms, context-based, non-antonym identification, sentence reversal" },
+  { id: 103, title: "English: Antonyms - Test 2 - 50 MCQs", questions: 50, category: "English", data: englishAntonymsTest2, description: "GRE-level antonyms, nuanced opposites, contextual antonym selection" },
+  { id: 104, title: "GK: Health Current Affairs - Test 1 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthAffairsTest1, description: "WHO initiatives, India health indicators, outbreaks, health policies, awards" },
+  { id: 105, title: "GK: Health Current Affairs - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthAffairsTest2, description: "WHO health days, vaccination updates, global agreements, medical breakthroughs" },
+  { id: 106, title: "GK: Government Schemes - Test 1 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkGovtSchemesTest1, description: "Ayushman Bharat, MCH schemes, nutrition programmes, disease control" },
+  { id: 107, title: "GK: Government Schemes - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkGovtSchemesTest2, description: "NHM, health insurance, WASH schemes, mental health, digital health" },
+  { id: 108, title: "GK: ICMR Based - Test 1 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkIcmrTest1, description: "ICMR history, institutes, research contributions, guidelines, fellowships" },
+  { id: 109, title: "GK: ICMR Based - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkIcmrTest2, description: "ICMR institutes deep dive, COVID response, networks, collaborations, legacy" },
+  { id: 110, title: "GK: Health Bodies - Test 1 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthBodiesTest1, description: "Central health bodies, regulatory bodies, research institutions, WHO, state bodies" },
+  { id: 111, title: "GK: Health Bodies - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthBodiesTest2, description: "Specialized institutes, biotech bodies, surveillance, WHO structure, accreditation" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
