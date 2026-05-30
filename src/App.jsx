@@ -113,6 +113,14 @@ import gkIcmrTest1 from './data/gk-icmr-test1'
 import gkIcmrTest2 from './data/gk-icmr-test2'
 import gkHealthBodiesTest1 from './data/gk-health-bodies-test1'
 import gkHealthBodiesTest2 from './data/gk-health-bodies-test2'
+import mockTest1 from './data/mock-test-1'
+import mockTest2 from './data/mock-test-2'
+import mockTest3 from './data/mock-test-3'
+import mockTest4 from './data/mock-test-4'
+import mockTest5 from './data/mock-test-5'
+import mockTest6 from './data/mock-test-6'
+import mockTest7 from './data/mock-test-7'
+import mockTest8 from './data/mock-test-8'
 import './App.css'
 
 const tests = [
@@ -227,6 +235,14 @@ const tests = [
   { id: 109, title: "GK: ICMR Based - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkIcmrTest2, description: "ICMR institutes deep dive, COVID response, networks, collaborations, legacy" },
   { id: 110, title: "GK: Health Bodies - Test 1 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthBodiesTest1, description: "Central health bodies, regulatory bodies, research institutions, WHO, state bodies" },
   { id: 111, title: "GK: Health Bodies - Test 2 - 50 MCQs", questions: 50, category: "General Knowledge", data: gkHealthBodiesTest2, description: "Specialized institutes, biotech bodies, surveillance, WHO structure, accreditation" },
+  { id: 112, title: "Mock Test 1 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest1, description: "Full-length mock: Research Methodology, Biostatistics, Diagnostics, Communicable & Non-Communicable Diseases, Bioethics, Molecular Biology, Microbiology, English, GK" },
+  { id: 113, title: "Mock Test 2 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest2, description: "Full-length mock: Ecological studies, Chi-square/ANOVA, Bayes theorem, COVID-19, Metabolic syndrome, Belmont Report, DNA repair, Bacterial toxins, Phrasal verbs, Nobel prizes" },
+  { id: 114, title: "Mock Test 3 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest3, description: "Full-length mock: Bradford Hill criteria, Survival analysis, Screening biases, Leprosy/Rabies, Nutrition deficiencies, Research misconduct, Population genetics, Staining techniques, Analogies, SDGs" },
+  { id: 115, title: "Mock Test 4 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest4, description: "Full-length mock: Crossover trials, Poisson distribution, ELISA/Western blot, STIs/Helminths, RHD/COPD/CKD, Organ transplant ethics, Restriction enzymes, Fungal/Parasitic infections, Medical terminology, ICMR institutes" },
+  { id: 116, title: "Mock Test 5 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest5, description: "Full-length mock: Berkson's/Neyman bias, Mantel-Haenszel, Pharmacogenomics, Emerging infections, Tobacco control, Digital health ethics, CRISPR/Gene therapy, Flow cytometry, Idioms, Government health schemes" },
+  { id: 117, title: "Mock Test 6 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest6, description: "Full-length mock: GRADE system, Mixed-effects models, Screening programs, One Health, Double burden of malnutrition, AI ethics, Epigenetics, AMR mechanisms, Reading comprehension, Global health declarations" },
+  { id: 118, title: "Mock Test 7 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest7, description: "Full-length mock: Randomization techniques, Epidemic curves, Cancer biomarkers, Hand hygiene/Waste management, FCTC MPOWER, Vulnerable populations, Blotting techniques, Specimen collection, Grammar, Indian medical research" },
+  { id: 119, title: "Mock Test 8 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest8, description: "Full-length mock: Program evaluation, Spatial epidemiology, AI in diagnostics, Pandemic preparedness, Health promotion models, Publication ethics, Single-cell sequencing, Vaccines, Medical etymology, National Health Policy" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
