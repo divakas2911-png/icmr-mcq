@@ -121,6 +121,14 @@ import mockTest5 from './data/mock-test-5'
 import mockTest6 from './data/mock-test-6'
 import mockTest7 from './data/mock-test-7'
 import mockTest8 from './data/mock-test-8'
+import mockTest9 from './data/mock-test-9'
+import mockTest10 from './data/mock-test-10'
+import mockTest11 from './data/mock-test-11'
+import mockTest12 from './data/mock-test-12'
+import mockTest13 from './data/mock-test-13'
+import mockTest14 from './data/mock-test-14'
+import mockTest15 from './data/mock-test-15'
+import mockTest16 from './data/mock-test-16'
 import './App.css'
 
 const tests = [
@@ -243,6 +251,14 @@ const tests = [
   { id: 117, title: "Mock Test 6 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest6, description: "Full-length mock: GRADE system, Mixed-effects models, Screening programs, One Health, Double burden of malnutrition, AI ethics, Epigenetics, AMR mechanisms, Reading comprehension, Global health declarations" },
   { id: 118, title: "Mock Test 7 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest7, description: "Full-length mock: Randomization techniques, Epidemic curves, Cancer biomarkers, Hand hygiene/Waste management, FCTC MPOWER, Vulnerable populations, Blotting techniques, Specimen collection, Grammar, Indian medical research" },
   { id: 119, title: "Mock Test 8 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest8, description: "Full-length mock: Program evaluation, Spatial epidemiology, AI in diagnostics, Pandemic preparedness, Health promotion models, Publication ethics, Single-cell sequencing, Vaccines, Medical etymology, National Health Policy" },
+  { id: 120, title: "Mock Test 9 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest9, description: "Full-length mock: Case-crossover design, Bland-Altman analysis, Fagan nomogram, Kala-azar/Scrub typhus, RHD/Sickle cell/Fluorosis, Nuremberg Code/CIOMS, Southern/Northern blotting, Widal test/ZN staining, Synonyms, WHO regions/Alma-Ata" },
+  { id: 121, title: "Mock Test 10 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest10, description: "Full-length mock: Propensity scores/Instrumental variables, Poisson/Zero-inflated models, Decision curve analysis, COVID variants/Nipah/Ebola, Air pollution/Silicosis/Lead toxicity, Dual-use/Pandemic ethics, Epigenetic clocks/ChIP-seq, Biofilms/Quorum sensing, Latin medical terms, Nobel prizes/Global Fund" },
+  { id: 122, title: "Mock Test 11 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest11, description: "Full-length mock: Factorial/Crossover/N-of-1 trials, Competing risks/Fine-Gray model, Multiplex PCR/LAMP, Hepatitis elimination/MDR-TB/HIV PrEP, Stroke/CKD/Diabetic retinopathy, Gene drive/Genetic privacy ethics, RNAi/miRNA/lncRNA, Mycobacterial culture/Parasitology, Health idioms, ICMR institutes" },
+  { id: 123, title: "Mock Test 12 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest12, description: "Full-length mock: Verbal autopsy/LQAS/SMART surveys, Life tables/Demographic methods, Cardiac biomarkers/Tumor markers, Cholera/Typhoid/Rotavirus/WASH, Childhood obesity/Geriatric health/Palliative care, End-of-life/Organ donation ethics, Inborn errors of metabolism, Blood/CSF/Urine culture, Medical eponyms, SRS/NFHS/DLHS" },
+  { id: 124, title: "Mock Test 13 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest13, description: "Full-length mock: Cluster RCTs/Stepped-wedge/SPIRIT, PCA/Factor analysis/Cronbach's alpha, Immunochromatography/Flow cytometry, Leprosy/Filariasis/Soil-transmitted helminths, Oral health/Blindness/Occupational health, Biobank governance/IP rights, Proteomics/Mass spectrometry, Anaerobic culture/Dermatophytes, Paragraph coherence, NMC Act/FSSAI" },
+  { id: 125, title: "Mock Test 14 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest14, description: "Full-length mock: Health technology assessment/ICER, Bayesian statistics/Credible intervals, Pharmacogenomics/Liquid biopsy, AMR surveillance/ESKAPE/Colistin resistance, Cancer registries/TNM staging/HPV vaccination, AI ethics/Digital health privacy, CRISPR/Base editing/CAR-T therapy, CLSI breakpoints/MIC, Reading comprehension, Digital India/ABDM/CoWIN" },
+  { id: 126, title: "Mock Test 15 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest15, description: "Full-length mock: Systematic reviews/PRISMA/GRADE, SEM/Mediation analysis/DAGs, Point-of-care ultrasound/Wearables, Measles-rubella elimination/Malaria RTS,S, Mental health/PHQ-9/Substance use, Indigenous research ethics/FPIC, Microbiome/16S rRNA/Metabolomics, Viral serology/Hepatitis panel, Antonyms/Analogies, NITI Aayog/SDGs/Essential medicines" },
+  { id: 127, title: "Mock Test 16 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest16, description: "Full-length mock: Real-world evidence/Pragmatic trials, Multiple imputation/E-value/IPTW, AI in diagnostics/Digital biomarkers, Pandemic preparedness/Genomic surveillance, Social determinants/Planetary health, Global health ethics/Open science, Single-cell multi-omics/Organoids, Phage therapy/Nanopore sequencing, Critical reasoning, One Health India/Genome India Project" },
 ]
 
 const categories = [...new Set(tests.map(t => t.category))]
