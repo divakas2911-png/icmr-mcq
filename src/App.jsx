@@ -131,7 +131,7 @@ import mockTest15 from './data/mock-test-15'
 import mockTest16 from './data/mock-test-16'
 import './App.css'
 
-const tests = [
+const tests = [/*
   { id: 1, title: "Biostatistics - Test 1 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest1, description: "Core fundamentals across all 5 syllabus topics" },
   { id: 2, title: "Biostatistics - Test 2 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest2, description: "Clinical contexts (hemoglobin, BP, vaccine trials, ICU)" },
   { id: 3, title: "Biostatistics - Test 3 - 50 MCQs", questions: 50, category: "Biostatistics", data: biostatTest3, description: "Calculation-heavy problems, tricky scenarios" },
@@ -259,7 +259,7 @@ const tests = [
   { id: 125, title: "Mock Test 14 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest14, description: "Full-length mock: Health technology assessment/ICER, Bayesian statistics/Credible intervals, Pharmacogenomics/Liquid biopsy, AMR surveillance/ESKAPE/Colistin resistance, Cancer registries/TNM staging/HPV vaccination, AI ethics/Digital health privacy, CRISPR/Base editing/CAR-T therapy, CLSI breakpoints/MIC, Reading comprehension, Digital India/ABDM/CoWIN" },
   { id: 126, title: "Mock Test 15 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest15, description: "Full-length mock: Systematic reviews/PRISMA/GRADE, SEM/Mediation analysis/DAGs, Point-of-care ultrasound/Wearables, Measles-rubella elimination/Malaria RTS,S, Mental health/PHQ-9/Substance use, Indigenous research ethics/FPIC, Microbiome/16S rRNA/Metabolomics, Viral serology/Hepatitis panel, Antonyms/Analogies, NITI Aayog/SDGs/Essential medicines" },
   { id: 127, title: "Mock Test 16 - 100 MCQs", questions: 100, category: "Mock Tests", data: mockTest16, description: "Full-length mock: Real-world evidence/Pragmatic trials, Multiple imputation/E-value/IPTW, AI in diagnostics/Digital biomarkers, Pandemic preparedness/Genomic surveillance, Social determinants/Planetary health, Global health ethics/Open science, Single-cell multi-omics/Organoids, Phage therapy/Nanopore sequencing, Critical reasoning, One Health India/Genome India Project" },
-]
+*/]
 
 const categories = [...new Set(tests.map(t => t.category))]
 
